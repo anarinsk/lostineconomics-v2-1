@@ -1,6 +1,156 @@
-<h1 id="math-behind-pca">Math Behind PCA</h1>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Math Behind PCA | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Math Behind PCA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PCA의 수학적 이해" />
+<meta property="og:description" content="PCA의 수학적 이해" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-17T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"PCA의 수학적 이해","headline":"Math Behind PCA","@type":"BlogPosting","dateModified":"2019-05-17T00:00:00-05:00","datePublished":"2019-05-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Math Behind PCA | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Math Behind PCA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PCA의 수학적 이해" />
+<meta property="og:description" content="PCA의 수학적 이해" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-17T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"PCA의 수학적 이해","headline":"Math Behind PCA","@type":"BlogPosting","dateModified":"2019-05-17T00:00:00-05:00","datePublished":"2019-05-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h2 id="tl-dr">tl; dr</h2>
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    // remove paragraph tags in rendered toc (happens from notebooks)
+    var toctags = document.querySelectorAll(".toc-entry")
+    toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Math Behind PCA</h1><p class="page-description">PCA의 수학적 이해</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-05-17T00:00:00-05:00" itemprop="datePublished">
+        May 17, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#math">math</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#machine-learning">machine-learning</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#tl-dr">tl; dr</a></li>
+<li class="toc-entry toc-h2"><a href="#pca">PCA</a></li>
+<li class="toc-entry toc-h2"><a href="#objective-function-for-pca">Objective function for PCA?</a></li>
+<li class="toc-entry toc-h2"><a href="#variance-maximization">Variance Maximization</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#variance-covariance-matrix">Variance-covariance matrix</a></li>
+<li class="toc-entry toc-h3"><a href="#eigenvalue는-어떻게-등장하나">eigenvalue는 어떻게 등장하나?</a></li>
+<li class="toc-entry toc-h3"><a href="#properties-of-var-cov-matrix">Properties of var-cov matrix</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#대칭-행렬">대칭 행렬</a></li>
+<li class="toc-entry toc-h4"><a href="#positive-definite">Positive-definite</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#principal-component">Principal component?</a></li>
+<li class="toc-entry toc-h2"><a href="#마침내-차원-축소">마침내 차원 축소</a></li>
+<li class="toc-entry toc-h2"><a href="#key-questions">Key Questions</a></li>
+<li class="toc-entry toc-h2"><a href="#resource">Resource</a></li>
+</ul><h2 id="tl-dr">
+<a class="anchor" href="#tl-dr" aria-hidden="true"><span class="octicon octicon-link"></span></a>tl; dr</h2>
 
 <ul>
   <li>PCA를 차원을 축소하는 방법으로 막연하게 이해하지 말자. PCA 역시 다른 방법처럼 어떤 목적 함수를 최적화하는 방법의 하나다.</li>
@@ -8,13 +158,15 @@
   <li>PCA가 스크린으로 활용할 벡터가 하나가 아니라고 할 때, 이 여러 개의 스크린 벡터를 활용해 거리를 최소화하는 과정(즉 분산의 합을 극대화하는 과정)에서 eigenvalue와 eigenvector가 등장한다.</li>
 </ul>
 
-<h2 id="pca">PCA</h2>
+<h2 id="pca">
+<a class="anchor" href="#pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>PCA</h2>
 
 <p>“차원의 저주”라는 표현이 있다. 언뜻 보면 자명한 이야기 같지만, 곰곰이 생각해보면 모호한 구석이 많다. 관찰 수는 많을수록 좋은데 차원은 관찰과 어떻게 다를까? 쉽게 생각해보자. 관찰 수란 활용할 수 있는 샘플의 수다. 이는 당연히 많을수록 좋다. (물론 미칠 듯이 많으면 새로운 문제가 발생하긴 하나, 대체로 우리는 샘플이 부족해서 문제를 겪는다) 하나의 샘플에서 관찰 가능한 변수가 7개라고 해보자. 샘플 수에 따라서는 적당해 보일 수 있다.</p>
 
 <p>그런데, 샘플은 100 개인데, 한 샘플에서 관찰할 수 있는 포인트가 1,000 개라고 치자. 이 데이터 셋은 10만 개의 개별 포인트를 지닌 제법 큰 데이터 셋이지만 별 쓸모는 없다. 관찰 수에 비해서 개체의 차원이 지나치게 크기 때문이다. 이럴 경우 어떻게 차원을 줄이면 좋을까? 쉽게 생각할 수 있는 방법은 1,000 개의 특징들을 좀 줄여보는 것이다. 주성분분석(Principal Component Analysis)은 이를 위해 필요한 방법이다.</p>
 
-<h2 id="objective-function-for-pca">Objective function for PCA?</h2>
+<h2 id="objective-function-for-pca">
+<a class="anchor" href="#objective-function-for-pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>Objective function for PCA?</h2>
 
 <p>대체로 많은 PCA에 관한 설명들이 원래 하고 싶은 게 무엇인지에 관해 묻지 않는다. PCA란 데이터의 특성을 압축하는 방법이라는 이야기만 할 뿐. 수학적으로 말하면 목적함수에 관한 질문이고 우리는 먼저 이 질문에 집중하겠다.</p>
 
@@ -43,16 +195,16 @@
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable rowspacing="0.24999999999999992em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo fence="true">(</mo><mi mathvariant="normal">∥</mi><msub><mi>x</mi><mi>i</mi></msub><msup><mi mathvariant="normal">∥</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mi>w</mi><mo>⋅</mo><msub><mi>x</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo fence="true">)</mo></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><munder><munder><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi mathvariant="normal">∥</mi><msub><mi>x</mi><mi>i</mi></msub><msup><mi mathvariant="normal">∥</mi><mn>2</mn></msup></mrow><mo stretchy="true">⏟</mo></munder><mrow><mo stretchy="false">(</mo><mo>∗</mo><mo stretchy="false">)</mo></mrow></munder><mo>−</mo><mn>2</mn><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><mi>w</mi><mo>⋅</mo><msub><mi>x</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
 \mathrm{MSE}(w) &amp; = \dfrac{1}{n}\sum_{i=1}^n \left( \Vert x_i \Vert^2 - 2(w \cdot x_i)^2 + 1 \right)  \\
 &amp; = \underbrace{1 +  \dfrac{1}{n}\sum_{i=1}^n \Vert x_i \Vert^2}_{(\ast)}  - 2\dfrac{1}{n}\sum_{i=1}^n  (w \cdot x_i)^2
-\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:8.006132000000001em;vertical-align:-3.7530660000000005em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.2530660000000005em;"><span style="top:-6.2530660000000005em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">S</span><span class="mord mathrm">E</span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mclose">)</span></span></span><span style="top:-3.024em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.7530660000000005em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.2530660000000005em;"><span style="top:-6.2530660000000005em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mord">∥</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span></span><span style="top:-3.024em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.651397em;"><span style="top:-1.0007280000000003em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">∗</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.6513970000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span class="svg-align" style="top:-1.7257280000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
+\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:8.006132000000001em;vertical-align:-3.7530660000000005em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.2530660000000005em;"><span style="top:-6.2530660000000005em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">M</span><span class="mord mathrm">S</span><span class="mord mathrm">E</span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mclose">)</span></span></span><span style="top:-3.024em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.7530660000000005em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.2530660000000005em;"><span style="top:-6.2530660000000005em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mord">∥</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span></span><span style="top:-3.024em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.651397em;"><span style="top:-1.0007280000000003em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">∗</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.6513970000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord munder"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span class="svg-align" style="top:-1.7257280000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMinYMin slice"><path d="M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
  35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
  0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
--331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M199572 214
+-331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z"></path></svg></span><span class="brace-center" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMidYMin slice"><path d="M199572 214
 c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
  53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
  11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
--5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/></svg></span><span class="brace-right" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'><path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
+-5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z"></path></svg></span><span class="brace-right" style="height:0.548em;"><svg width="400em" height="0.548em" viewbox="0 0 400000 548" preserveaspectratio="xMaxYMin slice"><path d="M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
  28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
--174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/></svg></span></span></span><span style="top:-3.6513970000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∥</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.925669em;"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.825669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.7530660000000005em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+-174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z"></path></svg></span></span></span><span style="top:-3.6513970000000002em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∥</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord">∥</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.925669em;"><span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.825669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.7530660000000005em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
 <p>MSE를 최소화하는 게 목표라고 하자. 목적함수를 최적화 하기 위해서는 $w$를 조정할 수 있다. $(*)$는 $w$를 포함하고 있지 않으므로 나머지 부분을 최소화하면 MSE가 극대화된다.</p>
 
@@ -60,9 +212,11 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 <p>이 식이 성립하는 이유는 일반적으로 $\mathrm{Var}(y)= \mathrm{E}(y^2) - (\mathrm{E}(y))^2$이 성립하기 때문이다.  그리고 앞에서 보았듯이 $\mathrm{E} (w \cdot x_i) = 0$ 성립한다. 따라서 MSE를 최소화한다는 것은 $\mathrm{Var}_i [\cdot]$을 최대화하는 것과 같게 된다. PCA에 분산에 관한 이야기가 자꾸 나오는 것은 이 때문이다.</p>
 
-<h2 id="variance-maximization">Variance Maximization</h2>
+<h2 id="variance-maximization">
+<a class="anchor" href="#variance-maximization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variance Maximization</h2>
 
-<h3 id="variance-covariance-matrix">Variance-covariance matrix</h3>
+<h3 id="variance-covariance-matrix">
+<a class="anchor" href="#variance-covariance-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variance-covariance matrix</h3>
 
 <p>왜 분산이 등장하는지를 파악했으니 분산 최대화를 계산해볼 차례다.  아래 행렬 $X$를 통해 쉽게 분산-공분산 행렬을  나타낼 수 있다. $x_i^j$ 에서 $i (=1,2,\dotsc, n)$는 관찰을, $j(=1,2,\dotsc,k)$는 피쳐를 나타낸다.</p>
 
@@ -91,7 +245,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>cov</mtext><mo stretchy="false">(</mo><msup><mi>x</mi><mi>i</mi></msup><mo separator="true">,</mo><msup><mi>x</mi><mi>j</mi></msup><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>x</mi><mi>k</mi><mi>i</mi></msubsup><msubsup><mi>x</mi><mi>k</mi><mi>j</mi></msubsup></mrow><annotation encoding="application/x-tex">\text{cov}(x^i, x^j) = \dfrac{1}{n-1}\sum_{k=1}^{n} x^i_k x^j_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.124664em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">cov</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9425719999999999em;"><span style="top:-2.3986920000000005em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013079999999999em;"><span></span></span></span></span></span></span></span></span></span></span>
 
-<h3 id="eigenvalue는-어떻게-등장하나">eigenvalue는 어떻게 등장하나?</h3>
+<h3 id="eigenvalue는-어떻게-등장하나">
+<a class="anchor" href="#eigenvalue%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%93%B1%EC%9E%A5%ED%95%98%EB%82%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>eigenvalue는 어떻게 등장하나?</h3>
 
 <p>임의의 단위 벡터 $w$와 그 프로젝션을 다시 적어보자. 표기를 간단히 하기 위해서 상첨자는 생략한다. 이제 하나의 벡터가 아니라 $X$라는 매트릭스 전체에 대해서 프로젝션을 하면 아래와 같다.</p>
 
@@ -131,10 +286,12 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 <p>앞서 $\lambda$가 분산이 된다고 말했다. 잠깐, 분산이라면 항상 0보다 커야 하는데, $\lambda$가 0보다 크다는 보장이 있는가? 이 문제를 포함하여 앞에서 정리하지 못한 몇 가지 문제를 모아서 살펴보자.</p>
 
-<h3 id="properties-of-var-cov-matrix">Properties of var-cov matrix</h3>
+<h3 id="properties-of-var-cov-matrix">
+<a class="anchor" href="#properties-of-var-cov-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properties of var-cov matrix</h3>
 <p>분산-공분산 행렬은 아래와 같은 두 가지 특징을 지닌다.</p>
 
-<h4 id="대칭-행렬">대칭 행렬</h4>
+<h4 id="대칭-행렬">
+<a class="anchor" href="#%EB%8C%80%EC%B9%AD-%ED%96%89%EB%A0%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>대칭 행렬</h4>
 
 <p>우선, 분산-공분산 행렬이므로 대칭이다. 행렬이 대칭일 경우 아이겐밸류는 모두 실수이며 아이겐벡터들은 서로 직교(orthogonal)한다.</p>
 
@@ -145,10 +302,11 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <p>분산-공분산 행렬의 이 특징이 PCA의 흥미로운 점 하나를 드러난다. 2 차원 평면에서 사 분면을 떠올려보자. 사 분면을 구성하는 $x$, $y$ 축은 서로 직교한다. 2 차원 평면 위에 어떤 관찰에 대해서 PCA를 했다고 하자. PCA의 스크린으로 두 개를 사용했고, 해당 스크린이 아이겐벡터라면 이 두 벡터는 서로 직교한다. 즉, 원래 직교했던 두 축에서 직교하는 다른 두 축으로 좌표의 기준을 이동하는 개념이다. 즉 PCA는 분산을 가장 크게 하는 방식으로 좌표축을 이동하는 방법이라고 이해하면 좋겠다. PCA에 관한 소개에서 아래의 그림처럼 축을 돌린 예시가 자주 등장하는 까닭이기도 하겠다.<sup id="fnref:5"><a href="#fn:5" class="footnote">3</a></sup></p>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-math_pca/blob/master/assets/imgs/pca_example.png?raw=true" width="500" />
+  <img src="https://github.com/anarinsk/lie-math_pca/blob/master/assets/imgs/pca_example.png?raw=true" width="500">
 </kbd></p>
 
-<h4 id="positive-definite">Positive-definite</h4>
+<h4 id="positive-definite">
+<a class="anchor" href="#positive-definite" aria-hidden="true"><span class="octicon octicon-link"></span></a>Positive-definite</h4>
 
 <p>$\Sigma$는 준양정행렬(positive semi-definite) 행렬이다.<sup id="fnref:1"><a href="#fn:1" class="footnote">4</a></sup> 즉,</p>
 
@@ -158,7 +316,8 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 <p>이 경우 모든 아이겐밸류의 값은 음수가 되지 않는다. 앞서 아이겐밸류가 분산이 된다는 사실을 보았다. 아이겐밸류가 음수가 될 수 없고 따라서 분산이 될 수 있다.</p>
 
-<h2 id="principal-component">Principal component?</h2>
+<h2 id="principal-component">
+<a class="anchor" href="#principal-component" aria-hidden="true"><span class="octicon octicon-link"></span></a>Principal component?</h2>
 
 <p>프로젝션 스크린 벡터 $w$에 따른 극대화 문제를 풀면 아이겐밸류와 아이겐벡터를 각각 하나씩 얻게 된다. $k$ 개의 스크린 벡터 혹은 아이겐벡터가 가능하다고 할 때,  분산(아이겐밸류)이 큰 순서대로 아이겐벡터를 정렬한다고 생각해보자. 이렇게 정렬하면 프로젝션 스크린 벡터 중에서 MSE를 더 줄일 수 있는 벡터 순으로 정렬하는 셈이다. 이렇게 분산이 큰 순서대로 나열한 서로 다른 스크린벡터가 바로 주성분(pricipal component)다.</p>
 
@@ -180,11 +339,13 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi><munder><mo><mtext>Var</mtext></mo><mi>i</mi></munder></mi><mo stretchy="false">[</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>⋅</mo><msup><mi>w</mi><mi>j</mi></msup><mo stretchy="false">)</mo></mrow><msup><mi>w</mi><mi>j</mi></msup><mo stretchy="false">]</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msup><mi>λ</mi><mi>j</mi></msup></mrow><annotation encoding="application/x-tex">\underset{i}{\text{Var}}[\sum_{j=1}^k {( x_i \cdot w^j) } w^j] = \sum_{j=1}^k {\lambda^j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.2498900000000006em;vertical-align:-1.4137769999999998em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.372336em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord">Var</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.727664em;"><span></span></span></span></span></span></span><span class="mopen">[</span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8361130000000006em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span><span class="mclose">)</span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.2498900000000006em;vertical-align:-1.4137769999999998em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8361130000000006em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h2 id="마침내-차원-축소">마침내 차원 축소</h2>
+<h2 id="마침내-차원-축소">
+<a class="anchor" href="#%EB%A7%88%EC%B9%A8%EB%82%B4-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>마침내 차원 축소</h2>
 
 <p>이제 마침내 차원 축소를 다룰 수 있다!  앞서 MSE 최소화 문제에서 보았듯이 분산이 클수록 좋다. 임의의 갯수로 주성분을 취한다고 할 때 의 기준은 분산이 큰 순서이고  분산은 아이겐밸류와 같다. $l(&lt;k)$ 개의 주성분을 취할 때 취할 때 아이겐밸류가 큰 순서대로 취하면 되겠다.<sup id="fnref:3"><a href="#fn:3" class="footnote">5</a></sup></p>
 
-<h2 id="key-questions">Key Questions</h2>
+<h2 id="key-questions">
+<a class="anchor" href="#key-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Questions</h2>
 
 <p><strong>Q1.</strong> MSE 최소화는 무엇으로 연결되는가?</p>
 
@@ -210,31 +371,73 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
   <p>분산이 큰 순서대로 $k$ 개의 주성분 중에서 임의로 $l(&lt;k)$ 개의 아이겐벡터를 선택하는 것이다. 그리고 이 아이겐벡터는 일종의 피처에 관한 가중치로 이해할 수 있다.</p>
 </blockquote>
 
-<h2 id="resource">Resource</h2>
+<h2 id="resource">
+<a class="anchor" href="#resource" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resource</h2>
 
 <p>이 글은 아래 자료를 바탕으로 만들었습니다.</p>
 
 <p>https://www.stat.cmu.edu/~cshalizi/350/lectures/10/lecture-10.pdf</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4OTk2MjBdfQ==
+eyJoaXN0b3J5IjpbLTY2NzA3Mzg1MV19
 -->
 <div class="footnotes">
   <ol>
     <li id="fn:4">
-      <p>사실 여기 적은 1계 조건은 엄밀하지 않다. 이해를 돕기 위해서 여러가지를 퉁쳤는데, 최적화의 결과는 동일하다. 보다 상세한 도출은 <a href="https://stats.stackexchange.com/questions/10251/what-is-the-objective-function-of-pca">여기</a>를 참고하시기 바란다. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+      <p>사실 여기 적은 1계 조건은 엄밀하지 않다. 이해를 돕기 위해서 여러가지를 퉁쳤는데, 최적화의 결과는 동일하다. 보다 상세한 도출은 <a href="https://stats.stackexchange.com/questions/10251/what-is-the-objective-function-of-pca">여기</a>를 참고하시기 바란다. <a href="#fnref:4" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:2">
-      <p>흥미로운 일치를 확인하셨는지? 제약 하 극대화에서 라그랑쥬 승수와 아이겐밸류를 나타내는 수학 기호가 모두 $\lambda$다. 약간 소름 돋는 대목이다. 일치는 여기서 끝나지 않는다. 라그랑쥬 승수는 제약 하의 극대화에서 잠재 가격(shadow price)로 불리기도 한다. 이는 해당 조건이 제약하는 자원의 잠재적인 가치를 나타낸다. 이는 분산이 클수록 MSE가 작다는 PCA의 목적 함수의 해석과 일치한다. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>흥미로운 일치를 확인하셨는지? 제약 하 극대화에서 라그랑쥬 승수와 아이겐밸류를 나타내는 수학 기호가 모두 $\lambda$다. 약간 소름 돋는 대목이다. 일치는 여기서 끝나지 않는다. 라그랑쥬 승수는 제약 하의 극대화에서 잠재 가격(shadow price)로 불리기도 한다. 이는 해당 조건이 제약하는 자원의 잠재적인 가치를 나타낸다. 이는 분산이 클수록 MSE가 작다는 PCA의 목적 함수의 해석과 일치한다. <a href="#fnref:2" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:5">
-      <p>하나 주의할 점이 있다. 이 그림은 차원 회전에 관한 것이지 차원 축소에 관한 것이 아니다. 즉, 변이가 잘 드러나도록 축을 회전할 수 있다는 예시다. 축소는 다른 문제인데, 아래 본문의 내용에서 보듯이 축을 돌려 변이를 상당 부분 설명했다면 변이의 설명력이 낮은 축들을 제거할 수 있다는 것이 차원 축소다. <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+      <p>하나 주의할 점이 있다. 이 그림은 차원 회전에 관한 것이지 차원 축소에 관한 것이 아니다. 즉, 변이가 잘 드러나도록 축을 회전할 수 있다는 예시다. 축소는 다른 문제인데, 아래 본문의 내용에서 보듯이 축을 돌려 변이를 상당 부분 설명했다면 변이의 설명력이 낮은 축들을 제거할 수 있다는 것이 차원 축소다. <a href="#fnref:5" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:1">
-      <p>증명은 몹시 간단하다. $w^T \Sigma w$ 라고 하자. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>증명은 몹시 간단하다. $w^T \Sigma w$ 라고 하자. <a href="#fnref:1" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:3">
-      <p>주성분의 갯수를 취하는 방법은 PCA에 관한 튜토리얼에서 항상 등장하는 주제이니 구글링을 해서 확인하시면 되겠다. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>주성분의 갯수를 취하는 방법은 PCA에 관한 튜토리얼에서 항상 등장하는 주제이니 구글링을 해서 확인하시면 되겠다. <a href="#fnref:3" class="reversefootnote">↩</a></p>
     </li>
   </ol>
 </div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/machine-learning/2019/05/17/math-pca.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
