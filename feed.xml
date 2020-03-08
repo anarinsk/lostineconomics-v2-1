@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T09:19:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T09:31:15-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -29,17 +29,17 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/fastai/fastpages/generate&quot;&gt;https://github.com/fastai/fastpages/generate&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;깃헙에 로그인한 상태에서 이 곳에 접속해 페이지를 생성한다. 페이지를 생성한 후 내 깃헙 계정에서 조금 기다리면 “Pull Request”(PR) 메시지가 날아온다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;pr&quot;&gt;PR&lt;/h3&gt;
 
 &lt;p&gt;PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시지에 친절하게 설명이 되어 있으니 그대로 따라하면 된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;링크를 눌러 웹 페이지에서 private key와 public 키를 생성한다. RSA, 4069를 선택하도록 하다.&lt;/li&gt;
@@ -49,7 +49,7 @@
 
 &lt;p&gt;마지막으로 PR를 수락하고 이를 merge하면 준비가 완료된다. 깃헙이 작업을 하는 동안 잠시 기다리면 된다. 작업 상태가 궁금하면 github actions 탭을 확인하면 된다. 설치가 끝나면 아래와 같이 생성된 페이지를 확인할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/fastpages/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://anarinsk.github.io/test-fastpages/&quot;&gt;https://anarinsk.github.io/test-fastpages/&lt;/a&gt;&lt;/p&gt;
 
@@ -179,10 +179,10 @@
       &lt;li&gt;fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다.&lt;/li&gt;
       &lt;li&gt;따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTkyNjI0MCwtMTk0MjkxODE5NCwxNj
-c3NzM0MDc1LC04ODA3NjQ1ODYsLTE0ODI3NTk5NzAsLTYxOTk5
-MTcxNCwyMDU4MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MC
-wxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbLTIwMTE1NTI3OTYsLTQzNTkyNjI0MCwtMT
+k0MjkxODE5NCwxNjc3NzM0MDc1LC04ODA3NjQ1ODYsLTE0ODI3
+NTk5NzAsLTYxOTk5MTcxNCwyMDU4MjQ2NzEyLDE0NDUwODAyOT
+QsLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
 --&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
