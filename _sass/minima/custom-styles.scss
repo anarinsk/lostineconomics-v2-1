@@ -2,3 +2,8 @@
 @import "minima/fastpages-styles";
 
 // Add your styles below
+// make non-headings slightly lighter
+.post-content p, .post-content li {
+   font-size: 17px;
+   color: #515151;
+}
