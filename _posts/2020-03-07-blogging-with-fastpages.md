@@ -11,7 +11,7 @@ categories: [coding-tool, web-tool]
 ## tl; dr 
 
 * 깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자. 
-* 디자인은 포기하시라, 마. (지금 만으로도 너무 훌륭하니까!)
+* 디자인은 포기하시라, 마. (지금으로도 사실 훌륭하니까!)
 
 ## Blog with Github 
 
@@ -119,9 +119,9 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 ### Post 작성 
 
-통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅을 `2020-03-07-blogging-with-fastpages.md`다. 
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 `2020-03-07-blogging-with-fastpages.md`다. 
 
-글 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
+둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다. 
 
 ```yml 
 ---
@@ -147,7 +147,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTk5OTM2NiwxNjkzNjc2MTc1LDY0Mj
+eyJoaXN0b3J5IjpbLTU0NDIyNTIzNSwxNjkzNjc2MTc1LDY0Mj
 IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
 NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
 g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
