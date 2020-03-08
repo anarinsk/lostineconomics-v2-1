@@ -51,8 +51,8 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 ![]({{ site.baseurl }}/images/fastpages/fig_3.png){: style="textalign:center; " width="700"}
 
 1. 링크를 눌러 웹 페이지에서 private key와 public 키를 생성한다. RSA, 4069를 선택하도록 하다. 
-2. 새 sceret을 생성하고 private key를 넣어준다. 이름은 반드시 `SSH_DEPOLY_KEY`를 해야 한다. 
-3. 여기에 public key를 넣어주면 된다. 이름은 임의로 지정하면 된다. 
+2. 두번째의 링크를 눌러 새 sceret을 생성하고 private key를 넣어준다. 이름은 반드시 `SSH_DEPLOY_KEY`로 해야 한다. 
+3. 세번째의 링크를 눌러 deploy key를 생성하고 여기에 public key를 넣어주면 된다. 이름은 임의로 지정하면 된다. 
 
 마지막으로 PR를 수락하고 이를 merge하면 준비가 완료된다. 깃헙이 작업을 하는 동안 잠시 기다리면 된다. 작업 상태가 궁금하면 github actions 탭을 확인하면 된다. 설치가 끝나면 아래와 같이 생성된 페이지를 확인할 수 있다. 
 
@@ -142,8 +142,9 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTE1NTI3OTYsLTQzNTkyNjI0MCwtMT
-k0MjkxODE5NCwxNjc3NzM0MDc1LC04ODA3NjQ1ODYsLTE0ODI3
-NTk5NzAsLTYxOTk5MTcxNCwyMDU4MjQ2NzEyLDE0NDUwODAyOT
-QsLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtND
+M1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2
+NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MT
+IsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
+
 -->
