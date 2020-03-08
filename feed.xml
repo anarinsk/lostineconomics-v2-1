@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:37:07-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T18:17:34-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -10,8 +10,6 @@
 &lt;p&gt;깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 그렇게 하고 있다. 블로그를 운영하기 위해서는 Hugo, Jekyll의 도구를 사용하면 전문적인 블로그 운영도 가능하다. 이 툴들의 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다.&lt;/p&gt;
 
 &lt;p&gt;Hugo의 경우 R의 &lt;a href=&quot;https://bookdown.org/yihui/blogdown/&quot;&gt;BlogDown&lt;/a&gt; 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;미리 말하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.&lt;/p&gt;
 
 &lt;p&gt;이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다.&lt;/p&gt;
 
@@ -28,7 +26,7 @@
 &lt;h3 id=&quot;before-we-go&quot;&gt;Before we go&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;이하의 글에서 [your-id]라고 표기된 부분은 각자의 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 복붙하지 마시라는 말씀.&lt;/li&gt;
+  &lt;li&gt;이하의 글에서 [your-x-id]라고 표기된 부분은 x라는 서비스의 각자 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 그냥 복붙하지 마시라는 말씀.&lt;/li&gt;
   &lt;li&gt;[repo root]는 해당 리퍼지토리의 최상위 디렉토리를 나타낸다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -132,8 +130,10 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_include&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt;의 적당한 줄에 `&lt;!-- the google_analytics_id gets auto inserted from the config file --&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_include&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt;의 적당한 줄에 아래 코드를 넣어준다.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;```&lt;!-- the google_analytics_id gets auto inserted from the config file --&gt;&lt;/p&gt;
 
 &lt;!--
 
@@ -154,39 +154,39 @@
   gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
 &lt;/script&gt;
 
-&lt;p&gt;`를 넣어준다.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
 
-&lt;ul&gt;
-  &lt;li&gt;google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
+## 활용 
 
-&lt;h2 id=&quot;활용&quot;&gt;활용&lt;/h2&gt;
+### Post 작성 
 
-&lt;h3 id=&quot;post-작성&quot;&gt;Post 작성&lt;/h3&gt;
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 `2020-03-07-blogging-with-fastpages.md`다. 
 
-&lt;p&gt;통상적인 &lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt; 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 &lt;code class=&quot;highlighter-rouge&quot;&gt;년도-월-일-이름.md&lt;/code&gt; 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;2020-03-07-blogging-with-fastpages.md&lt;/code&gt;다.&lt;/p&gt;
+둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다. 
 
-&lt;p&gt;둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다.&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 글의 레이아웃, 보통이라면 post로 두면 된다. &lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 목차 출력 여부 &lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 코멘트 기능 사용 여부 &lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Free Your Blog with Github&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 제목 &lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;github에서 무료 블로그를!&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 제목 아래 부제목 &lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coding-tool&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;web-tool&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# tag 혹은 카테고리 &lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+```yml 
+---
+layout: post # 글의 레이아웃, 보통이라면 post로 두면 된다. 
+toc: false # 목차 출력 여부 
+comments: true # 코멘트 기능 사용 여부 
+title: Free Your Blog with Github # 제목 
+description: github에서 무료 블로그를! # 제목 아래 부제목 
+categories: [coding-tool, web-tool] # tag 혹은 카테고리 
+---
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt;으로 감싼 후 안에 정보를 넣으면 된다.&lt;/p&gt;
 
 &lt;h3 id=&quot;fastpage의-몇가지-장점&quot;&gt;fastpage의 몇가지 장점&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;보통 github 기반의 블로그를 만들면, &lt;code class=&quot;highlighter-rouge&quot;&gt;[your-id].github.io&lt;/code&gt;만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 &lt;code class=&quot;highlighter-rouge&quot;&gt;anarinsk.github.io/lostineconomics-v2-1&lt;/code&gt;다.&lt;/li&gt;
+  &lt;li&gt;보통 github 기반의 블로그를 만들면, &lt;code class=&quot;highlighter-rouge&quot;&gt;[your-git-id].github.io&lt;/code&gt;만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 &lt;code class=&quot;highlighter-rouge&quot;&gt;anarinsk.github.io/lostineconomics-v2-1&lt;/code&gt;다.&lt;/li&gt;
   &lt;li&gt;강력한 장점은 &lt;code class=&quot;highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_notebooks&lt;/code&gt;에 파일을 넣어주면 된다.&lt;/li&gt;
   &lt;li&gt;디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다.&lt;/li&gt;
   &lt;li&gt;매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다.
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://stackedit.io/app#&quot;&gt;stackedit&lt;/a&gt;의 경우 github 저장을 지원하기 때문에 해당 repo의 &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/&lt;/code&gt; 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://stackedit.io/app#&quot;&gt;stackedit&lt;/a&gt;의 경우 github 저장을 지원하기 때문에 해당 repo의 &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts/&lt;/code&gt; 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. stackedit의 활용에 관해서는 &lt;a href=&quot;https://anarinsk.github.io/lie-build_lie/&quot;&gt;이 포스팅&lt;/a&gt;을 참고하면 좋겠다.&lt;/li&gt;
       &lt;li&gt;fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다.&lt;/li&gt;
       &lt;li&gt;따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.&lt;/li&gt;
     &lt;/ul&gt;
@@ -204,10 +204,10 @@ wxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1MjIwMDczN119
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;자세한 내용은 &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll&quot;&gt;여기&lt;/a&gt;을 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;자세한 내용은 &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll&quot;&gt;여기&lt;/a&gt;을 참고하라. 미리 말하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;그래서 내가 이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 것이다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 이유다. 이에 관해서는 &lt;a href=&quot;https://anarinsk.github.io/lie-build_lie/&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><summary type="html">tl; dr</summary></entry><entry><title type="html">Using Git ‘Smoothly’ in Windows 10</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html" rel="alternate" type="text/html" title="Using Git ‘Smoothly’ in Windows 10" /><published>2020-03-05T00:00:00-06:00</published><updated>2020-03-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;

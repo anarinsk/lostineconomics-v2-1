@@ -180,8 +180,6 @@ window.onload = wrap_img;
 
 <p>Hugo의 경우 R의 <a href="https://bookdown.org/yihui/blogdown/">BlogDown</a> 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-<p>미리 말하면 <code class="highlighter-rouge">fastpages</code>는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.</p>
-
 <p>이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다.</p>
 
 <ol>
@@ -197,7 +195,7 @@ window.onload = wrap_img;
 <h3 id="before-we-go">Before we go</h3>
 
 <ul>
-  <li>이하의 글에서 [your-id]라고 표기된 부분은 각자의 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 복붙하지 마시라는 말씀.</li>
+  <li>이하의 글에서 [your-x-id]라고 표기된 부분은 x라는 서비스의 각자 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 그냥 복붙하지 마시라는 말씀.</li>
   <li>[repo root]는 해당 리퍼지토리의 최상위 디렉토리를 나타낸다.</li>
 </ul>
 
@@ -301,8 +299,10 @@ window.onload = wrap_img;
 </code></pre></div></div>
 
 <ul>
-  <li><code class="highlighter-rouge">[repo root]/_include</code>의 <code class="highlighter-rouge">head.html</code>의 적당한 줄에 `<!-- the google_analytics_id gets auto inserted from the config file --></li>
+  <li><code class="highlighter-rouge">[repo root]/_include</code>의 <code class="highlighter-rouge">head.html</code>의 적당한 줄에 아래 코드를 넣어준다.</li>
 </ul>
+
+<p>```<!-- the google_analytics_id gets auto inserted from the config file --></p>
 
 <!--
 
@@ -323,39 +323,39 @@ window.onload = wrap_img;
   gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
 </script>
 
-<p>`를 넣어준다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
 
-<ul>
-  <li>google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다.</li>
-</ul>
+## 활용 
 
-<h2 id="활용">활용</h2>
+### Post 작성 
 
-<h3 id="post-작성">Post 작성</h3>
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 `2020-03-07-blogging-with-fastpages.md`다. 
 
-<p>통상적인 <code class="highlighter-rouge">md</code> 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 <code class="highlighter-rouge">년도-월-일-이름.md</code> 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 <code class="highlighter-rouge">2020-03-07-blogging-with-fastpages.md</code>다.</p>
+둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다. 
 
-<p>둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다.</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span> <span class="c1"># 글의 레이아웃, 보통이라면 post로 두면 된다. </span>
-<span class="na">toc</span><span class="pi">:</span> <span class="no">false</span> <span class="c1"># 목차 출력 여부 </span>
-<span class="na">comments</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># 코멘트 기능 사용 여부 </span>
-<span class="na">title</span><span class="pi">:</span> <span class="s">Free Your Blog with Github</span> <span class="c1"># 제목 </span>
-<span class="na">description</span><span class="pi">:</span> <span class="s">github에서 무료 블로그를!</span> <span class="c1"># 제목 아래 부제목 </span>
-<span class="na">categories</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">coding-tool</span><span class="pi">,</span> <span class="nv">web-tool</span><span class="pi">]</span> <span class="c1"># tag 혹은 카테고리 </span>
-<span class="nn">---</span>
+```yml 
+---
+layout: post # 글의 레이아웃, 보통이라면 post로 두면 된다. 
+toc: false # 목차 출력 여부 
+comments: true # 코멘트 기능 사용 여부 
+title: Free Your Blog with Github # 제목 
+description: github에서 무료 블로그를! # 제목 아래 부제목 
+categories: [coding-tool, web-tool] # tag 혹은 카테고리 
+---
 </code></pre></div></div>
+
+<p><code class="highlighter-rouge">---</code>으로 감싼 후 안에 정보를 넣으면 된다.</p>
 
 <h3 id="fastpage의-몇가지-장점">fastpage의 몇가지 장점</h3>
 
 <ul>
-  <li>보통 github 기반의 블로그를 만들면, <code class="highlighter-rouge">[your-id].github.io</code>만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 <code class="highlighter-rouge">anarinsk.github.io/lostineconomics-v2-1</code>다.</li>
+  <li>보통 github 기반의 블로그를 만들면, <code class="highlighter-rouge">[your-git-id].github.io</code>만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 <code class="highlighter-rouge">anarinsk.github.io/lostineconomics-v2-1</code>다.</li>
   <li>강력한 장점은 <code class="highlighter-rouge">ipynb</code> 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. <code class="highlighter-rouge">[repo root]/_notebooks</code>에 파일을 넣어주면 된다.</li>
   <li>디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다.</li>
   <li>매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다.
     <ul>
-      <li><a href="https://stackedit.io/app#">stackedit</a>의 경우 github 저장을 지원하기 때문에 해당 repo의 <code class="highlighter-rouge">_posts/</code> 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다.</li>
+      <li><a href="https://stackedit.io/app#">stackedit</a>의 경우 github 저장을 지원하기 때문에 해당 repo의 <code class="highlighter-rouge">_posts/</code> 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. stackedit의 활용에 관해서는 <a href="https://anarinsk.github.io/lie-build_lie/">이 포스팅</a>을 참고하면 좋겠다.</li>
       <li>fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다.</li>
       <li>따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.</li>
     </ul>
@@ -373,10 +373,10 @@ wxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1MjIwMDczN119
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>자세한 내용은 <a href="https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">여기</a>을 참고하라. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>자세한 내용은 <a href="https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">여기</a>을 참고하라. 미리 말하면 <code class="highlighter-rouge">fastpages</code>는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>그래서 내가 이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 것이다. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 이유다. 이에 관해서는 <a href="https://anarinsk.github.io/lie-build_lie/">이 포스팅</a>을 참고하라. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
