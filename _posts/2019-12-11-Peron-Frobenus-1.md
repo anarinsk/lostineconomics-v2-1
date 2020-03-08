@@ -1,13 +1,12 @@
 ---
 toc: true
+layout: post
 comments: true
+title: Perron-Frobenius Theorem, part 1
 description: 페론-프로베니우스의 정리, 핵심 정리
 categories: [math,  matrix-theory]
 
 ---
-
-
-# Perron-Frobenius Theorem, part 1
 
 ## tl;dr 
 
@@ -371,7 +370,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk4ODUyMzAsLTIxMTczOTM1MjAsLT
-I2NjIwMDIyMCw3NDExOTk4ODQsLTE2MDI5NjQyOCwzNTk0MzIx
-ODQsMTAwNzM4NjYyNl19
+eyJoaXN0b3J5IjpbMjEyMTU5OTY3XX0=
 -->
