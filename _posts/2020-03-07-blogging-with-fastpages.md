@@ -19,7 +19,7 @@ categories: [coding-tool, web-tool]
 
 Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.[^1] 
 
-미리 말하면 fastpages는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다. 
+미리 말하면 `fastpages`는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다. 
 
 [^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라.  
 
@@ -154,10 +154,10 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0Mj
-IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
-NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
-g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
-NDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3Mz
-ddfQ==
+eyJoaXN0b3J5IjpbODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNj
+c2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5Niwt
+MjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nz
+c3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkx
+NzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLD
+EyNTIyMDA3MzddfQ==
 -->
