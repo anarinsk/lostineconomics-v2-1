@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T18:17:34-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T18:33:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -109,6 +109,7 @@
 	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#515151&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;ul&gt;
   &lt;li&gt;google analytics
     &lt;ul&gt;
@@ -133,7 +134,7 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_include&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt;의 적당한 줄에 아래 코드를 넣어준다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;```&lt;!-- the google_analytics_id gets auto inserted from the config file --&gt;&lt;/p&gt;
+&lt;p&gt;            &lt;!-- the google_analytics_id gets auto inserted from the config file --&gt;&lt;/p&gt;
 
 &lt;!--
 
@@ -154,26 +155,26 @@
   gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
 &lt;/script&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
+&lt;ul&gt;
+  &lt;li&gt;google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
 
-## 활용 
+&lt;h2 id=&quot;활용&quot;&gt;활용&lt;/h2&gt;
 
-### Post 작성 
+&lt;h3 id=&quot;post-작성&quot;&gt;Post 작성&lt;/h3&gt;
 
-통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 `2020-03-07-blogging-with-fastpages.md`다. 
+&lt;p&gt;통상적인 &lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt; 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 &lt;code class=&quot;highlighter-rouge&quot;&gt;년도-월-일-이름.md&lt;/code&gt; 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅의 파일 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;2020-03-07-blogging-with-fastpages.md&lt;/code&gt;다.&lt;/p&gt;
 
-둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다. 
+&lt;p&gt;둘째, 포스팅 만 앞에 yml을 넣어 해당 포스트에 관한 정보를 지정해야 한다.&lt;/p&gt;
 
-```yml 
----
-layout: post # 글의 레이아웃, 보통이라면 post로 두면 된다. 
-toc: false # 목차 출력 여부 
-comments: true # 코멘트 기능 사용 여부 
-title: Free Your Blog with Github # 제목 
-description: github에서 무료 블로그를! # 제목 아래 부제목 
-categories: [coding-tool, web-tool] # tag 혹은 카테고리 
----
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 글의 레이아웃, 보통이라면 post로 두면 된다. &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 목차 출력 여부 &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;comments&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 코멘트 기능 사용 여부 &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Free Your Blog with Github&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 제목 &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;github에서 무료 블로그를!&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 제목 아래 부제목 &lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coding-tool&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;web-tool&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# tag 혹은 카테고리 &lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt;으로 감싼 후 안에 정보를 넣으면 된다.&lt;/p&gt;
