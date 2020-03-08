@@ -1,8 +1,173 @@
-<h1 id="perron-frobenius-theorem-part-2">Perron-Frobenius Theorem, part 2</h1>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Perron-Frobenius Theorem, part 2 | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Perron-Frobenius Theorem, part 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="P-F의 정리를 활용해 투입-산출 모형을 살펴보자" />
+<meta property="og:description" content="P-F의 정리를 활용해 투입-산출 모형을 살펴보자" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-20T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"P-F의 정리를 활용해 투입-산출 모형을 살펴보자","headline":"Perron-Frobenius Theorem, part 2","@type":"BlogPosting","dateModified":"2019-12-20T00:00:00-06:00","datePublished":"2019-12-20T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Perron-Frobenius Theorem, part 2 | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Perron-Frobenius Theorem, part 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="P-F의 정리를 활용해 투입-산출 모형을 살펴보자" />
+<meta property="og:description" content="P-F의 정리를 활용해 투입-산출 모형을 살펴보자" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-20T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"P-F의 정리를 활용해 투입-산출 모형을 살펴보자","headline":"Perron-Frobenius Theorem, part 2","@type":"BlogPosting","dateModified":"2019-12-20T00:00:00-06:00","datePublished":"2019-12-20T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h2 id="input-out-model">Input-out Model</h2>
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
 
-<h3 id="model">Model</h3>
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    // remove paragraph tags in rendered toc (happens from notebooks)
+    var toctags = document.querySelectorAll(".toc-entry")
+    toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Perron-Frobenius Theorem, part 2</h1><p class="page-description">P-F의 정리를 활용해 투입-산출 모형을 살펴보자</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-12-20T00:00:00-06:00" itemprop="datePublished">
+        Dec 20, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#math">math</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#matrix-theory">matrix-theory</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#input-out-model">Input-out Model</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#model">Model</a></li>
+<li class="toc-entry toc-h3"><a href="#productive-economy">Productive economy</a></li>
+<li class="toc-entry toc-h3"><a href="#productive-matrix">Productive matrix</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#hawkins-simon-condition">Hawkins-Simon Condition</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#lemma-1">Lemma 1</a></li>
+<li class="toc-entry toc-h3"><a href="#lemma-2">Lemma 2</a></li>
+<li class="toc-entry toc-h3"><a href="#lemma-3">Lemma 3</a></li>
+<li class="toc-entry toc-h3"><a href="#lemma-4">Lemma 4</a></li>
+<li class="toc-entry toc-h3"><a href="#theorem-1">Theorem 1</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#proof">Proof</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#hawkins-simon-condition-1">Hawkins-Simon Condition</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#1--2">1 → 2</a></li>
+<li class="toc-entry toc-h3"><a href="#1--2-1">1 ← 2</a></li>
+<li class="toc-entry toc-h3"><a href="#eigenvalues--eigenvectors">Eigenvalues &amp; Eigenvectors</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#some-applications">Some Applications</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#steady-state-growth-rate">Steady-state growth rate</a></li>
+<li class="toc-entry toc-h3"><a href="#equilibrium-price">Equilibrium price</a></li>
+</ul>
+</li>
+</ul><h2 id="input-out-model">
+<a class="anchor" href="#input-out-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Input-out Model</h2>
+
+<h3 id="model">
+<a class="anchor" href="#model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model</h3>
 
 <p>투입-산출 모형을 생각해보자. $a_{ij}$는 $j$ 재화 1 단위를 생산하는 데 필요한 $i$ 재화의 양, 이라고 하자. 이렇게 되면, 열 벡터 $A_j$는 아래과 같다. 그 의미는 $j$ 재화 1단위를 생산하는 데 필요한 $1, \dotsc, n$ 까지 필요한 재화의 양이다.</p>
 
@@ -24,7 +189,8 @@ a_{nj}
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mo>…</mo><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mi>A</mi><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mrow><mtext>where </mtext><mstyle scriptlevel="0" displaystyle="false"><mi>x</mi><mo>=</mo><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><msub><mi>x</mi><mi>n</mi></msub><msup><mo stretchy="false">]</mo><mi>T</mi></msup></mstyle></mrow></mrow><annotation encoding="application/x-tex">x_1 A_1 + \dotsc + x_n A_n = A x,~\text{where $x = [x_1, \cdots, x_n]^T$}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0913309999999998em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord">where </span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mopen">[</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h3 id="productive-economy">Productive economy</h3>
+<h3 id="productive-economy">
+<a class="anchor" href="#productive-economy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Productive economy</h3>
 
 <p>생산물 벡터 $x$를 생산하는 데 투입 벡터 $Ax$가 필요하다면 순 생산물 벡터는 아래와 같다.</p>
 
@@ -38,7 +204,8 @@ a_{nj}
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mo stretchy="false">(</mo><mi>I</mi><mo>−</mo><mi>A</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>b</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = (I-A)^{-1} b \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
-<h3 id="productive-matrix">Productive matrix</h3>
+<h3 id="productive-matrix">
+<a class="anchor" href="#productive-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Productive matrix</h3>
 
 <p>원래 바실리  레온티에프 (동지?)가 제시했던 생산적인 행렬 $A$의 정의는 살짝 더 엄격하다. 원래 $A$의 정의는 다음과 같다.</p>
 
@@ -46,11 +213,13 @@ a_{nj}
 
 <p>잘 생각해보면 경제적인 의미가 있다. 뒤에 다시 나오겠지만, $A x$는 어떤 의미를 지닐까? 원하는 생산량이 $x$라면 이에 필요한 투입량이 $Ax$다. 즉, $x - Ax$란 다음 기 (목표) 산출에서 이를 위해 필요한 이번 기 투입 산출을 뺀 것이다. 이 값이 양이어야 한다는 것이다. 이 값이 음이라면 생산적이지 못한 것이다. 만일 $\boldsymbol{0}$ 벡터라면 연속적인 생산이 불가능한 상태가 된다.</p>
 
-<h2 id="hawkins-simon-condition">Hawkins-Simon Condition</h2>
+<h2 id="hawkins-simon-condition">
+<a class="anchor" href="#hawkins-simon-condition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hawkins-Simon Condition</h2>
 
 <p>이를 보장해주는 것이 호킨스-사이먼 조건(Hawkins-Simon condition) 이다. H-S 조건을 증명하기에 앞서 몇가지 렘마를 깔아보도록 하자. 앞으로 특별한 언급이 없는 이상 벡터와 매트릭스는 적당한 크기(차원)을 지니고 있다고 가정하겠다.</p>
 
-<h3 id="lemma-1">Lemma 1</h3>
+<h3 id="lemma-1">
+<a class="anchor" href="#lemma-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lemma 1</h3>
 
 <blockquote>
   <p>두 개의 벡터 $x^1$, $x^2$가 있다고 하자. if $x^1 \geq x^2$ and $A \geq 0$, then $A x_1 \geq A x_2$.</p>
@@ -58,7 +227,8 @@ a_{nj}
 
 <p>증명은 간단하니 생략하도록 한다. 직접 계산해보면 된다.</p>
 
-<h3 id="lemma-2">Lemma 2</h3>
+<h3 id="lemma-2">
+<a class="anchor" href="#lemma-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lemma 2</h3>
 
 <blockquote>
   <p>만일 $A$ 가 생산적 행렬이라면, $A^s$의 모든 원소는 $s \to \infty$에 따라서 0으로 수렴한다.</p>
@@ -98,7 +268,8 @@ a_{nj}
 
 <p>이는 임의의 $x_j \geq 0$에 대해서 항상 성립해야 한다. 따라서, $\lim_{k \to \infty} a^k_{ij} = 0$이 성립해야 한다.</p>
 
-<h3 id="lemma-3">Lemma 3</h3>
+<h3 id="lemma-3">
+<a class="anchor" href="#lemma-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lemma 3</h3>
 
 <blockquote>
   <p>만일 $A$가 생산적 행렬이고 어떤 $x$에 대해서 $x \geq Ax$가 성립하면, $x \geq 0$</p>
@@ -112,7 +283,8 @@ a_{nj}
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≥</mo><munder><mo><mi>lim</mi><mo>⁡</mo></mo><mrow><mi>k</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mi>A</mi><mi>k</mi></msup><mi>x</mi><mo>=</mo><mn>0.</mn></mrow><annotation encoding="application/x-tex">x \geq \lim_{k \to \infty} A^k x = 0.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.6512159999999998em;vertical-align:-0.7521079999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-2.347892em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">→</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">lim</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7521079999999999em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">.</span></span></span></span></span>
 
-<h3 id="lemma-4">Lemma 4</h3>
+<h3 id="lemma-4">
+<a class="anchor" href="#lemma-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lemma 4</h3>
 
 <blockquote>
   <p>If $A$ 가 생산적 행렬이라면, $(I-A)$ is non-singular.</p>
@@ -120,7 +292,8 @@ a_{nj}
 
 <p>증명은 간단하다. $(I-A)$가 singular 라고 가정하자. 그렇다면, $x \neq 0$이면서, $(I-A) x = 0$인 $x$가 존재하게 된다. $(I-A)(-x) = 0$ 역시 마찬가지라고 성립한다. $-x \geq 0$가 성립해야 하는데, 이를 만족시키는 $x$는 $x = 0$가 유일하다. 이는  $x \neq 0$ 전제와 모순된다.</p>
 
-<h3 id="theorem-1">Theorem 1</h3>
+<h3 id="theorem-1">
+<a class="anchor" href="#theorem-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Theorem 1</h3>
 
 <p>비음의 벡터 $d$가 있을 때, $A$가 생산적일 때,</p>
 
@@ -128,13 +301,15 @@ a_{nj}
 
 <p>는 유니크한 비음의 해를 지닌다.</p>
 
-<h4 id="proof">Proof</h4>
+<h4 id="proof">
+<a class="anchor" href="#proof" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof</h4>
 <p>Lemma 4에 따르면, $(I-A)$는 비특이(nonsingular) 행렬이다. 따라서 위 시스템의 해 $x^*$는 유니크하다. 아울러, $d \geq 0$이므로,</p>
 
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>−</mo><mi>A</mi><mo stretchy="false">)</mo><msup><mi>x</mi><mo>∗</mo></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(I-A) x^*  \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mclose">)</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>
 가 성립한다. $A$는 생산적이고 위 식이 성립하므로 Lemma 3에 따라서 $x^* \geq 0$.</p>
 
-<h2 id="hawkins-simon-condition-1">Hawkins-Simon Condition</h2>
+<h2 id="hawkins-simon-condition-1">
+<a class="anchor" href="#hawkins-simon-condition-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hawkins-Simon Condition</h2>
 
 <ol>
   <li>A는 생산적</li>
@@ -146,7 +321,8 @@ a_{nj}
 
 <p>먼저 1과 2가 동치임을 증명해보자.</p>
 
-<h3 id="1--2">1 → 2</h3>
+<h3 id="1--2">
+<a class="anchor" href="#1--2" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 → 2</h3>
 
 <p>A가 생산적 행렬이며, Lemma 4에 의해서 $(I-A)^{-1}$이 존재함을 알 수 있다.</p>
 
@@ -170,7 +346,8 @@ a_{nj}
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>−</mo><mi>A</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(I-A)^{-1} \geq 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
-<h3 id="1--2-1">1 ← 2</h3>
+<h3 id="1--2-1">
+<a class="anchor" href="#1--2-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 ← 2</h3>
 
 <p>$(I-A)^{-1} \geq 0$가 성립한다고 하자. 임의의 $d &gt; 0$를 잡으면 $x = (I-A)^{-1} d \geq 0$ 가 성립한다. 이때,</p>
 
@@ -180,7 +357,8 @@ a_{nj}
 
 <p>나머지 증명은 테크니컬한 문제이므로 생략하자.</p>
 
-<h3 id="eigenvalues--eigenvectors">Eigenvalues &amp; Eigenvectors</h3>
+<h3 id="eigenvalues--eigenvectors">
+<a class="anchor" href="#eigenvalues--eigenvectors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eigenvalues &amp; Eigenvectors</h3>
 
 <p>이제 생산적 행렬의 아이겐밸류와 아이겐벡터를 고민해보도록 하자. 생산적 행렬의 정의 $x - Ax &gt; 0$에서 출발해보자. 만일 아이겐밸류 $\lambda$가 존재한다면 그 값은 어때야 할까? 즉,</p>
 
@@ -192,9 +370,11 @@ a_{nj}
 
 <p>식의 마지막은 각각 $\lambda_{\rm pf} &lt; 1$ 그리고 $x_{\rm pf} \geq 0$로부터 성립한다.</p>
 
-<h2 id="some-applications">Some Applications</h2>
+<h2 id="some-applications">
+<a class="anchor" href="#some-applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some Applications</h2>
 
-<h3 id="steady-state-growth-rate">Steady-state growth rate</h3>
+<h3 id="steady-state-growth-rate">
+<a class="anchor" href="#steady-state-growth-rate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Steady-state growth rate</h3>
 
 <p>투입계수 행렬 $A$를 지닌 어떤 경제를 상정하자. $A$가 생산적 행렬이라고 하자. 그리고 금기 초의 투입물 벡터를 $x_0$라고 하자. 금기 말에 생산물 벡터를 $x_1$이라고 하면, 아래의 관계가 성립한다.</p>
 
@@ -214,7 +394,8 @@ a_{nj}
 
 <p>이때 $\dfrac{1}{1+g}$는 아이겐밸류, $x_0$는 아이겐벡터임을 알 수 있다. $A$가 생산적 행렬이기 때문에 아이겐밸류는 $[0,1)$ 사이에 존재하게 된다. 따라서, $g = \dfrac{1}{\lambda}-1 &gt; 0$로 성장하게 된다.</p>
 
-<h3 id="equilibrium-price">Equilibrium price</h3>
+<h3 id="equilibrium-price">
+<a class="anchor" href="#equilibrium-price" aria-hidden="true"><span class="octicon octicon-link"></span></a>Equilibrium price</h3>
 
 <p>투입계수 행렬이 $A$인 경제를 생각하자. 각 재화를 생산하는 기업의 이윤율이 모두 $\pi$로 동일하다고 하자. 이때 가격 백터 $p = [p_1, \dotsc, p_n]^T$가 균형 가격이 되기 위한 조건은 무엇일까? 우선 $i$ 기업의 이윤을 따져보자. $i$ 기업이 생산물 1 단위를 생산하기 위해 필요한 원자재는 ($i$ 자신의 물건을 포함해) $n$ 개이고 그 각각 필요량은 $a_{1i}, \dotsc, a_{ni}$가 된다. 이들을 시장가격 $p_\cdot$으로 조달해와야 하므로 1단위당 원자재의 가격은 $a_{1i} p_1 + \dotsc + a_{ni} p_n$이 된다. 이제 원료 가격에 마크업 $\pi$를 붙이면 이것이 해당 기업이 설정한 균형 가격이 된다. 즉,</p>
 
@@ -231,12 +412,53 @@ a_{nj}
 <p>아이겐벡터는 스케일링이 가능하다. 즉, 가격 벡터는 다루기 편한 방식으로 정규화화면 된다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzcyNDM4OSwyMzUwMjk0NzBdfQ==
+eyJoaXN0b3J5IjpbLTUyMTE1NTc1Ml19
 -->
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>통상적인 경우 임의의 재화 하나의 가격을 1로 둔다. 이런 재화를 단위재(numeraire)라고 부른다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>통상적인 경우 임의의 재화 하나의 가격을 1로 둔다. 이런 재화를 단위재(numeraire)라고 부른다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
     </li>
   </ol>
 </div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
