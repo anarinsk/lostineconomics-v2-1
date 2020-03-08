@@ -86,7 +86,8 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 	- css를 다룰 줄 안다면 블로그의 많은 것은 커스터마이즈할 수 있다. 
 	- `[repo root]/_sass/minima`안에 보면 `custom-styles.scss`와 `fastpages-styles.scss` 두 개가 있다. `custom-styles.scss`에 부가 내용을 수정하면 스타일을 바꿀 수 있다. 
 	- 예를 들어 기본 텍스트의 크기를 바꾸고 싶다면, 
-```
+	
+```css
 .post-content  p, .post-content  li {
 	font-size: 17px; # 원래 값은 20px
 	color: #515151;
@@ -95,7 +96,8 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 - google analytics 
 	- 먼저 google analytics id가 필요하다. 알아서 발급 받으시라.  
 	- 구글 페이지에도 안내가 되어 있지만, `gs` 모듈을 활용하기 위해서 `[repo root]/_include`에 `google_analytics.html`과 같은 파일을 만들어 아래의 내용을 넣는다. 물론 자신의 analytics id로 바꿔 넣어야 한다. 
-```
+
+```html
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script  async  src="https://www.googletagmanager.com/gtag/js?id=[your-ga-id]"></script>
 <script>
@@ -109,9 +111,13 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 - `[repo root]/_include`의 `head.html`의 적당한 자리에 아래 코드를 넣는다. 
 
-```
+
+```html
 {%- include google_analytics.html -%}
 ```
+
+- google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
+
 
 ## 활용 
 
@@ -142,7 +148,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI3NTk5NzAsLTYxOTk5MTcxNCwyMD
-U4MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MCwxMjUyMjAw
-NzM3XX0=
+eyJoaXN0b3J5IjpbLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNj
+E5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5
+NjYwLDEyNTIyMDA3MzddfQ==
 -->
