@@ -473,4 +473,6 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .post-content p, .post-content li { font-size: 17px; color: #515151; }
 
+.post img { display: block; border: 1px solid #021a40; vertical-align: top; margin-left: auto; margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */
