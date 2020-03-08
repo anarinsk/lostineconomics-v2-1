@@ -33,7 +33,7 @@ Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지�
 
 ## fastpages by fast.ai 
 
-일단 별도의 인스톨 과정 필요 없다. 사전에 준비해야 할 것은 깃헙 계정 뿐이다. 
+일단 별도의 인스톨 과정이 필요 없다! 사전에 준비해야 할 것은 깃헙 계정 뿐.
 
 ### 페이지 생성 
 
@@ -119,7 +119,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 ### Post 작성 
 
-통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅을 `2020-03-7-blogging-with-fastpages.md`다. 
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅을 `2020-03-07-blogging-with-fastpages.md`다. 
 
 글 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
 
@@ -147,9 +147,10 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzY3NjE3NSw2NDIyMTQxODksMTQyOT
-AwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3OTYsLTQzNTkyNjI0
-MCwtMTk0MjkxODE5NCwxNjc3NzM0MDc1LC04ODA3NjQ1ODYsLT
-E0ODI3NTk5NzAsLTYxOTk5MTcxNCwyMDU4MjQ2NzEyLDE0NDUw
-ODAyOTQsLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbMTk4MTk5OTM2NiwxNjkzNjc2MTc1LDY0Mj
+IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
+NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
+g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
+NDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3Mz
+ddfQ==
 -->
