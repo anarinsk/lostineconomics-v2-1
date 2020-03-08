@@ -144,11 +144,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 * 강력한 장점은 `ipynb` 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. `[repo root]/_notebooks`에 파일을 넣어주면 된다.  
 * 디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다. 
 * 매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다. 
-	* stackedit의 경우 github 저장을 지원하기 때문에 해당 repo의 `_post` 항목을 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. 
+	* [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_post` 항목을 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. 
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNj
-E5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5
-NjYwLDEyNTIyMDA3MzddfQ==
+eyJoaXN0b3J5IjpbMTY3NzczNDA3NSwtODgwNzY0NTg2LC0xND
+gyNzU5OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMiwxNDQ1MDgw
+Mjk0LC00NTI1OTk2NjAsMTI1MjIwMDczN119
 -->
