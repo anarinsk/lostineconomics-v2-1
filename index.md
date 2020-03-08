@@ -3,12 +3,16 @@ layout: home
 search_exclude: true
 ---
 
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+![](images/title/catandme.jpg "https://github.com/anarinsk/lostineconomics-v2"){: style="float: right; margin-left: 25px" width="220"}
+A useless and aimless blog by <br/>
+허준석 Junsok Huhh | Ph.D. in Economics, Currently working as a data scientist
 
-![](images/diagram.png "https://github.com/fastai/fastpages")
 
-[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
+If you are interested in me and/or this blog, check [this]({{ site.baseurl }}/about) out! 
 
-You can edit the `index.md` file to change this content.
+<br/>
+<br/>
+<br/>
+<br/>
 
 # Posts
