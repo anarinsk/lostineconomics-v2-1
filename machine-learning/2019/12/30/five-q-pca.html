@@ -1,6 +1,158 @@
-<h1 id="five-deadly-questions-on-regression-and-pca">Five (Deadly!) Questions on Regression and PCA</h1>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Five (Deadly!) Questions on Regression and PCA | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Five (Deadly!) Questions on Regression and PCA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PCA에 관해 알고 싶은 다섯 가지" />
+<meta property="og:description" content="PCA에 관해 알고 싶은 다섯 가지" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-30T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"PCA에 관해 알고 싶은 다섯 가지","headline":"Five (Deadly!) Questions on Regression and PCA","@type":"BlogPosting","dateModified":"2019-12-30T00:00:00-06:00","datePublished":"2019-12-30T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Five (Deadly!) Questions on Regression and PCA | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Five (Deadly!) Questions on Regression and PCA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="PCA에 관해 알고 싶은 다섯 가지" />
+<meta property="og:description" content="PCA에 관해 알고 싶은 다섯 가지" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-30T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"PCA에 관해 알고 싶은 다섯 가지","headline":"Five (Deadly!) Questions on Regression and PCA","@type":"BlogPosting","dateModified":"2019-12-30T00:00:00-06:00","datePublished":"2019-12-30T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h2 id="question-one">Question One</h2>
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    // remove paragraph tags in rendered toc (happens from notebooks)
+    var toctags = document.querySelectorAll(".toc-entry")
+    toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Five (Deadly!) Questions on Regression and PCA</h1><p class="page-description">PCA에 관해 알고 싶은 다섯 가지</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-12-30T00:00:00-06:00" itemprop="datePublished">
+        Dec 30, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#machine-learning">machine-learning</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#question-one">Question One</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#in-common">In common</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#regression">Regression</a></li>
+<li class="toc-entry toc-h4"><a href="#pca">PCA</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#difference">Difference</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#objective-function">Objective function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#question-two">Question Two</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#eigenvectors-in-pca">Eigenvectors in PCA</a></li>
+<li class="toc-entry toc-h3"><a href="#sub-question">Sub-question</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#question-three">Question Three</a></li>
+<li class="toc-entry toc-h2"><a href="#question-four">Question Four</a></li>
+<li class="toc-entry toc-h2"><a href="#question-five">Question Five</a></li>
+</ul><h2 id="question-one">
+<a class="anchor" href="#question-one" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question One</h2>
 
 <blockquote>
   <p>PCA는 Regression과 다른가요?</p>
@@ -8,11 +160,13 @@
 
 <p>좋은 질문이다. 아예 둘을 다른 방법이라고 보면 속편하겠지만 한번 쯤 이 질문을 고민해봤을 것이다.  답은 같기도 하고 다르기도 하다, 되겠다.</p>
 
-<h3 id="in-common">In common</h3>
+<h3 id="in-common">
+<a class="anchor" href="#in-common" aria-hidden="true"><span class="octicon octicon-link"></span></a>In common</h3>
 
 <p>우선 둘 다 MSE(Mean Squared Error)를 극소화하는 목적함수를 지니고 있다. 차례로 살펴보자.</p>
 
-<h4 id="regression">Regression</h4>
+<h4 id="regression">
+<a class="anchor" href="#regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regression</h4>
 
 <p>회귀분석의 목적함수와 극소화는 아래와 같다.</p>
 
@@ -39,14 +193,15 @@ x^1 ~ \dotsc ~ x^k
 
 <p>where $x^j = [x_1^j, \dotsc, x_n^j]^T$ for $j = 1, \dotsc, k$. 즉 $x^j \in {\mathbb R}^n$ 벡터 $k$ 개로 이루어진 벡터 공간, 즉 $X$의 열 공간(column space)으로 $y$를 투영(project)한다는 의미이다. 이 열 공간은 $n$ 차원 안에 속한 $k$ 차원의 초평면이라는 점을 기억해두자. 아래 그림을 참고하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup></p>
 
-<p align="center"><kbd>  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="350" /></kbd></p>
+<p align="center"><kbd>  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="350"></kbd></p>
 <p>한편 위의 식을 연립방정식의 관점에서 바라보자.</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mi>β</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">X \beta = y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span></span>
 
 <p>$X \in {\mathbb n \times k}$의 경우 $n &gt; k$이므로, 위 연립방정식의 해 $\beta$는 일반적으로 존재할 수 없다.  따라서 해 대신에 MSE를 극소화하는 새로운 목적 함수를 잡았다고 보면 좋다.</p>
 
-<h4 id="pca">PCA</h4>
+<h4 id="pca">
+<a class="anchor" href="#pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>PCA</h4>
 
 <p>한편, PCA의 최소화는 다음의 목적 함수로 구현된다.</p>
 
@@ -67,17 +222,20 @@ x^1 ~ \dotsc ~ x^k
 
 <p>역시 개념적으로 말하면 PCA는 $k$ 차원의 벡터가 $n$ 개 있을 때, $n$ 개의 벡터들을 길이 1의 유닛 벡터 $w( \in {\mathbb R}^{k})$로 프로젝션할 때, 그 거리 제곱의 합을 최소화하는 $w$를 찾는 것이다.</p>
 
-<h3 id="difference">Difference</h3>
+<h3 id="difference">
+<a class="anchor" href="#difference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Difference</h3>
 
 <p>MSE를 극소화한다는 점은 같지만, 목적 함수의 형태와 목적 함수를 극대화하는 선택 변수가 다르다.</p>
 
-<h4 id="objective-function">Objective function</h4>
+<h4 id="objective-function">
+<a class="anchor" href="#objective-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Objective function</h4>
 
 <p>회귀 분석부터 보자. 회귀 분석은 $n$ 차원의 $y$를 $k$ 차원의 컬럼 스페이스를 지닌 $X$의 컬럼 스페이스로 프로젝션하는 것이다. 이때 프로젝션되는 위치가 곧 MSE를 극소화해주는 가중치, $k$ 차원의 $\beta$가 된다. 위 그림에서 보듯이 $y$에서 X 평면의 거리를 최소화하는 방법은 평면으로 수선의 발을 내리는 것 이외에는 없다. 즉 프로젝션 자체가 거리 최소화가 된다.</p>
 
 <p>이제 PCA를 보자. PCA는 $X \in {\mathbb R}^{n \times k}$가 있을 때 이를 투영할 길이 1의 또다른 벡터 $w(\in {\mathbb R}^{k})$를 찾는 것이다. PCA의 경우 타겟 변수 같은 것이 없다. 그저 $k$ 의 벡터가 $n$ 개 있을 때 이들을 투영한 거리가 최소화되도록 유닛 벡터 $w$를 잡는다.</p>
 
-<h2 id="question-two">Question Two</h2>
+<h2 id="question-two">
+<a class="anchor" href="#question-two" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Two</h2>
 
 <blockquote>
   <p>PCA에서 아이겐밸류와 아이겐벡터는 어떻게 등장하게 되나요?</p>
@@ -95,7 +253,8 @@ x^1 ~ \dotsc ~ x^k
 
 <p>여기서 PCA가 MSE를 극소화하는 문제에서 출발했지만 왜 차원 축소의 문제로 변했는지 알 수 있다. MSE 최소화라는 목적 함수에서 볼 때 이를 달성하는 $k$ 개의 아이겐벡터 중에서 임의로 $l(&lt;k)$ 개를 선택할 수 있게 해준다.</p>
 
-<h3 id="eigenvectors-in-pca">Eigenvectors in PCA</h3>
+<h3 id="eigenvectors-in-pca">
+<a class="anchor" href="#eigenvectors-in-pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eigenvectors in PCA</h3>
 
 <p>PCA 분석에서 등장하는 아이겐벡터는 너무 좋은 특징을 지니고 있다. 우선, 해당 아이겐벡터는 서로 직교한다. 즉,</p>
 
@@ -108,12 +267,13 @@ x^1 ~ \dotsc ~ x^k
 <p>아마도 PCA를 2차원에 도해할 경우 아래와 같은 그림을 많이 봤을 것이다.</p>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/PCA-2D.png?raw=true" width="350" />
+  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/PCA-2D.png?raw=true" width="350">
 </kbd></p>
 
 <p>1개의 관찰이 2차원 벡터이므로 이 자료에서는 두 개의 주성분이 나올 것이다. 이 두 개의 주성분은 반드시 직교(orthogonal)해야 할까? 꼭 그렇다는 장담은 없다. 그런데 앞서 살펴본 MSE의 극소화 과정에서 도출되는 결과에 따라서 주성분들끼리는 반드시 직교해야 한다. 이른바 ‘주성분’이 대칭 행렬(분산-공분산 행렬)에서 나온 아이겐밸류이기 때문이다. 그림에서 보듯이 하나의 주성분(북동향)이 다른 주성분(북서향)보다 크다. 만일 여기서 차원축소를 한다면 첫번째 주성분을 택하게 될 것이다. 일반적으로 $n$ 개의 주성분이 있을 때 이중 $k$ 개를 택한다면, 분산이 큰 순서대로 $k$개를 택하면 된다.</p>
 
-<h3 id="sub-question">Sub-question</h3>
+<h3 id="sub-question">
+<a class="anchor" href="#sub-question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sub-question</h3>
 
 <blockquote>
   <p>PCA에서 차원 축소의 의미를 보다 구체적으로 설명해주실 수 있을까요?</p>
@@ -145,7 +305,8 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi><munder><mo><mo stretchy="false">[</mo><msup><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">C</mi></mrow><mn>1</mn></msup><mo separator="true">,</mo><mtext> </mtext><mo>…</mo><mtext> </mtext><mo separator="true">,</mo><msup><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">C</mi></mrow><mi>l</mi></msup><mo stretchy="false">]</mo></mo><mrow><mi>n</mi><mo>×</mo><mi>l</mi></mrow></munder></mi></mrow><annotation encoding="application/x-tex">\underset{n \times l}{ [{\rm PC}^1,~\dotsc~,{\rm PC}^l] }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9827769999999998em;vertical-align:-1.060439em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9223379999999999em;"><span style="top:-2.097892em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">×</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mopen">[</span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathrm">P</span><span class="mord mathrm">C</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.887338em;"><span style="top:-3.1362300000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathrm">P</span><span class="mord mathrm">C</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9223379999999999em;"><span style="top:-3.1362300000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.060439em;"><span></span></span></span></span></span></span></span></span></span></span>
 
-<h2 id="question-three">Question Three</h2>
+<h2 id="question-three">
+<a class="anchor" href="#question-three" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Three</h2>
 
 <blockquote>
   <p>그림으로 보다 쉽게 볼 수는 없을까요?</p>
@@ -154,7 +315,7 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 <p>그림으로 간단하게 살펴보자.<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup></p>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/regression.png?raw=true" width="700" />
+  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/regression.png?raw=true" width="700">
 </kbd></p>
 
 <p>먼저 회귀 분석이다. $y$를 $x$에 대해서 회귀($y \sim x$)하는 경우와 $x$를 $y$에 대해서 회귀($x \sim y$)하는 경우는 다르다.</p>
@@ -165,12 +326,13 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 </ul>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/pca.png?raw=true" width="700" />
+  <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/pca.png?raw=true" width="700">
 </kbd></p>
 
 <p>PCA는 그림에서 보듯이 관찰에서 임의의 벡터 $w = (w_1, w_2)$로 프로젝션한다. 즉, 그림에서 분홍색이 나타내는 바와 같다.</p>
 
-<h2 id="question-four">Question Four</h2>
+<h2 id="question-four">
+<a class="anchor" href="#question-four" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Four</h2>
 
 <blockquote>
   <p>하나는 지도 학습, 다른 하나는 비지도 학습으로 이해하면 될까요?</p>
@@ -178,7 +340,8 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 
 <p>얼추 맞는 이야기라고 생각한다. 기계 학습에 조예가 없어서 자신있게 답하기는 힘들다. 다만 회귀 분석이 일종의 정답지($y$)를 갖고 있는 형태이기 때문에 지도 학습이 될 것이고 PCA의 경우 정답지 없이 관찰 전체를 대상으로 하기 때문에 비지도 학습으로 볼 수도 있겠다.</p>
 
-<h2 id="question-five">Question Five</h2>
+<h2 id="question-five">
+<a class="anchor" href="#question-five" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Five</h2>
 
 <blockquote>
   <p>회귀 분석과 PCA를 섞을 수 있는 방법은 없나요?</p>
@@ -196,15 +359,56 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 <p>그런데 PCA 회귀는 그다지 많이 사용되지 않는다. 왜 그럴까? 보통 기계 학습에서는 회귀 분석을 예측(prediction)의 한 가지 방법으로 이해하곤 한다. 회귀 분석은 선형이기 때문에 사실 여타의 비선형 기계 학습 방법에 비해서 예측 기법으로서는 원시적인 방법이다. 하지만 회귀 분석은 높은 해석력을 지니고 있다. 만일 적절 $X$를 선정할 수 한다면, 인과관계를 해석하는 틀로서도 활용할 수도 있다. 회귀 분석에서 $\beta$를 살피고 이를 해석하는 경우가 많은 것이 이 때문이다. 그런데 PCA 회귀를 할 경우 이러한 회귀 분석의 장점이 거의 사라지고 만다. 축소된 PC를 해석하는 것이 쉽지 않기 때문이다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgxMDE2NTddfQ==
+eyJoaXN0b3J5IjpbLTE3NTI1OTIzMDZdfQ==
 -->
 <div class="footnotes">
   <ol>
     <li id="fn:2">
-      <p>보다 상세한 내용은 <a href="https://anarinsk.github.io/lie-regression/">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>보다 상세한 내용은 <a href="https://anarinsk.github.io/lie-regression/">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:1">
-      <p><a href="https://shankarmsy.github.io/posts/pca-vs-lr.html">여기</a>에서 가져왔다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p><a href="https://shankarmsy.github.io/posts/pca-vs-lr.html">여기</a>에서 가져왔다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
     </li>
   </ol>
 </div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
