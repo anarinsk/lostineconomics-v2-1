@@ -1,12 +1,12 @@
 ---
 toc: true
 comments: true
-description: 가우스-조르단 소거법 
+layout: post 
+title: Gauss-Jordan Elimination Algorithm
+description: 가우스-조르단 소거법을 알아보자
 categories: [math, matrix-theory]
 
 ---
-
-# Gauss-Jordan Elimination Algorithm
 
 ## How to solve linear system 
 
@@ -108,5 +108,5 @@ $X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.
 [https://en.wikipedia.org/wiki/Gaussian_elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1NjEwMTUwXX0=
+eyJoaXN0b3J5IjpbLTE1NTM5NzU5MjldfQ==
 -->
