@@ -17,7 +17,7 @@ categories: [coding-tool, web-tool]
 
 깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 그렇게 하고 있다. 블로그를 운영하기 위해서는 Hugo, Jekyll의 도구를 사용하면 전문적인 블로그 운영도 가능하다. 이 툴들의 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다. 
 
-Hugo의 경우 R의 [`BlogDown`]([https://bookdown.org/yihui/blogdown/](https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.[^1]
+Hugo의 경우 R의 `BlogDown`(https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.[^1]
 
 [^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라.  
 
@@ -27,7 +27,9 @@ Hugo의 경우 R의 [`BlogDown`]([https://bookdown.org/yihui/blogdown/](https://
 2. html을 되도록 쓰지 않고, md 형태로 작성한 후 바로 반영이 되어야 한다. 
 3.  무료로 제한 없이 호스팅이 가능해야 한다. 
 
-3은 깃헙이 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 이 글에서 소개할 `fastpages`는 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다.
+3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 트레이드오프랄까... 
+
+이 글에서 소개할 `fastpages`는 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 
 
 ## fastpages by fast.ai 
 
@@ -145,7 +147,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1Mzk3Mjk3MywxNDI5MDA3NzEsLTIzND
+eyJoaXN0b3J5IjpbMTA0NDc5NTA2NiwxNDI5MDA3NzEsLTIzND
 M0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4
 MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MC
 wtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUy
