@@ -1,12 +1,12 @@
 ---
+layout: post
 toc: true
 comments: true
+title: Perron-Frobenius Theorem, part 2
 description: P-F의 정리를 활용해 투입-산출 모형을 살펴보자 
 categories: [math,  matrix-theory]
 
 ---
-
-# Perron-Frobenius Theorem, part 2
 
 ## Input-out Model 
 
@@ -295,5 +295,5 @@ $$
 [^1]: 통상적인 경우 임의의 재화 하나의 가격을 1로 둔다. 이런 재화를 단위재(numeraire)라고 부른다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzcyNDM4OSwyMzUwMjk0NzBdfQ==
+eyJoaXN0b3J5IjpbLTUyMTE1NTc1Ml19
 -->
