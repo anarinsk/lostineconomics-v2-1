@@ -106,7 +106,9 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 	gtag('set', {'user_id':  'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
 </script>
 ```
+
 - `[repo root]/_include`의 `head.html`의 적당한 자리에 아래 코드를 넣는다. 
+
 ```
 {%- include google_analytics.html -%}
 ```
@@ -140,6 +142,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTk5MTcxNCwyMDU4MjQ2NzEyLDE0ND
-UwODAyOTQsLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbLTE0ODI3NTk5NzAsLTYxOTk5MTcxNCwyMD
+U4MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MCwxMjUyMjAw
+NzM3XX0=
 -->
