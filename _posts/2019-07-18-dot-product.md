@@ -1,6 +1,8 @@
 ---
+layout: post
 toc: false
 comments: true
+title: Dot Product
 description: 닷 프로덕트, 내적을 이해해보자 
 categories: [math]
 
@@ -146,5 +148,5 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQ1MjYyMDNdfQ==
+eyJoaXN0b3J5IjpbMTQzOTE3NzMwM119
 -->
