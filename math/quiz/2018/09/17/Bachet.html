@@ -1,0 +1,92 @@
+<h1 id="weighing-problem-of-bachet-de-méziriac">Weighing Problem of Bachet de Méziriac</h1>
+
+<h2 id="problem">Problem</h2>
+
+<p>수리 퍼즐로 유명한 제수이트파 수도사 바셰(Bachet de Méziriac)의 저울 문제를 함 풀어보자. 문제는 다음과 같다.</p>
+<ul>
+  <li>1~40 사이의 임의의 무게를 지니는 어떤 짐이 있다고 하자.</li>
+  <li>이 짐의 무게를 저울에 달아 무게를 파악하는 것이 목적이다.</li>
+  <li>자연수 스케일을 지니는 임의의 추를 이용할 수 있다.</li>
+  <li>추를 달 때 저울 양쪽을 모두 이용할 수 있다. 즉, 무게를 파악하는 데 짐을 단 쪽도 추를 올려 놓을 수 있다.</li>
+</ul>
+
+<p>이때 1~40 사이의 임의의 무게를 지닌 짐의 무게를 측정하기 위해 필요한 최소한 추는 어떤 것인가?</p>
+
+<h2 id="key-insight">Key insight</h2>
+
+<p>사실 일종의 인덕션 문제다. 그런데 문제의 핵심에 접근하기는 쉽지는 않다. 우선 표기법부터 정하고 가자. 자연수 $x$라는 무게를 지닌 추는 $x$W으로 표기한다. 즉, $10$W는 10이라는 무게를 지닌 추를 의미한다. 필요한 경우 W앞에 괄호를 붙여 사용하도록 하자. 아래에서 $n$은 해당 상황에서 적절하게 큰 자연수를 나타낸다.</p>
+
+<ul>
+  <li>이제, ${ 1, 2, \dotsc, n }$의 무게를 모두 표현할 수 있는 추의 집합 $\omega$가 있다고 하자.</li>
+  <li>여기에 $2n+1$의 무게를 지닌 추 $(2n+1)$W 하나를 추가해보자. 추 집합 $\omega$에 $(2n+1)$W 라는 추 하나를 추가했을 때 추가로 표현할 수 있는 무게는 얼마나 확장될까? 먼저 $\omega$에 이 새로운 추를 추가한 추 집합을 $\omega’$이라고 하자. 즉,</li>
+</ul>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mo>+</mo></msup><mo>=</mo><mo stretchy="false">{</mo><mi>w</mi><mi mathvariant="normal">∣</mi><mi>w</mi><mo>∈</mo><mi>ω</mi><mo>∪</mo><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">W</mi><mo stretchy="false">}</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\omega^+ = \{ w | w \in \omega \cup \{ (2n+1) {\rm W} \} \}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.821331em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.821331em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.55556em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∪</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord"><span class="mord"><span class="mord mathrm" style="margin-right:0.01389em;">W</span></span></span><span class="mclose">}</span><span class="mclose">}</span></span></span></span></span>
+
+<ul>
+  <li>$(2n+1)$W를 추가해 더 측정할 수 있는 무게는 다음과 같다.
+    <ul>
+      <li>당연히 무게 $2n+1$이 추가된다.</li>
+      <li>${ 2n+2, 2n+3, \dotsc, 3n+1 }$의 무게를 이 추 조합으로 측정할 수 있다. 짐이 해당 범위의 무게를 지닌다면, 짐을 왼쪽에 그리고 오른쪽에 $(2n+1)$W와 $\omega$를 적절하게 올리면 된다.</li>
+      <li>다음으로 짐의 무게가 ${ n+1, n+2, \dotsc, 2n}$에 속한 경우에도 $\omega$ 그리고 $(2n+1)$W의 조합으로 무게 측정이 가능하다. 이는 $(2n+1)$W를 오른쪽에 두고, 왼쪽에 짐과 $\omega$를 조합함으로써 저울의 균형을 맞출 수 있다.</li>
+    </ul>
+  </li>
+  <li>결론적으로 추 집합 $\omega^+$으로 ${ 1,2, \dotsc, n, n+1, n+2, \dotsc, 2n, 2n+1, 2n+2, \dotsc, 3n+1}$ 무게를 측정할 수 있다.</li>
+</ul>
+
+<h1 id="induction">Induction</h1>
+
+<p>위의 사실을 알고 있는 상태에서 이제 induction을 통해 해법을 알아보자. 위의 예에서 무게 $n$ 까지 측정할 수 있는 추의 조합 $\underline\omega$가 무게의 측정을 위해 필요한 추의 최소 집합이라면, 하나를 추가해 측정할 수 있는 $3n+1$의 무게까지는 기존 $\underline\omega$ 에 $(2n+1)$W가 원소로 추가된 집합, 즉 추 집합 $\underline\omega^+$가 최소 추의 조합이 된다. $\underline\omega$에  더해진 추는 단 하나이기 때문이다.</p>
+
+<ul>
+  <li>만일, $n+1$ 무게까지의 $\underline\omega$ 추 조합으로 측정이 가능했다면 이는 애초에 $n$까지 측정하는 최소 추 집합이라는  $\underline\omega$의 정의에 위배된다. 
+-만일 $w^*$가 ${ 1, 2, \dotsc, n, n+x} (x = 1, 2, …, 2n+1)$를 측정하기 위해 필요한 표현하는 최소의 추 조합의 집합이다. 그리고 정의에 따라서이라면? 이런 경우는 어떻게 생각해야 할까? 이 경우 $\underline\omega$은 $n+1$까지 측정하기 위해 필요한는 최소의 추 조합은 아니라고 하자. 이때될 수 없어야 한다. 그렇다면, $n+1$의 무게를 측정하기 위해서는 최소한 하나 이상의 추가 필요하다. 이때 앞서 보았듯이 $(2n+1)$W의 추를 추가함으로써 $n+1$, $n+x$를 모두 측정할 수 있음을 보았표시했다. 즉, 1부터 $n+x$까지 순차적으로 존재하는 자연수 무게를 하나 더 측정하기 위해 필요한 최소 추 집합의 집합에는 $\underline\omega^+$가 반드시 속하게 된다.</li>
+</ul>
+
+<p>이제 인덕션을 전개해보자. 포함된다.</p>
+
+<ul>
+  <li>무게 $1$을 재기 위한 최소한의 추 조합은 $1$W이다.</li>
+  <li>$2 \times 1+1$의 무게를 지니는 $3$W의 추를 추가하면, $1$W, $3$W의 조합은 ${1,2,3,4}$ 무게를 측정할 수 있다. 여기서 $4$는 $3 \times 1+1$에서 비롯한다.</li>
+  <li>$2 \times 4+1$의 무게를 지니는 $9$W의 추를 추가하면, $1$W, $3$W, $9$W의 조합은 ${1,2,\dotsc, 13}$ 무게를 측정할 수 있다. $13$은 $3 \times 4+1$에서 나온다.</li>
+  <li>여기에 $2 \times 13+1$의 무게를 지니는 $27$W의 추를 추가하면, $1$W, $3$W, $9$W, $27$W의 조합은  ${1,2,\dotsc, 40}$의 무게를 측정할 수 있다. 표로 정리해보자.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">추가로 필요한 추의 무게</th>
+      <th style="text-align: center">측정 가능한 무게의 상한</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">$1$</td>
+      <td style="text-align: center">$1$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$2\times 1 + 1 = 3$</td>
+      <td style="text-align: center">$3 \times 1 + 1 = 4$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$2\times 4 + 1 = 9$</td>
+      <td style="text-align: center">$3 \times 4 + 1 = 13$</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$2\times 13 + 1 = 27$</td>
+      <td style="text-align: center">$3 \times 13 + 1 = 40$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg3NjkwNTg3MCwtNDk0Njg3MzI5LC04Nz
+Y5MDU4NzAsLTE2Mzc1OTA1MTEsLTYyNDM1MTYxMSwtOTM1ODI0
+MDYwLC0xNDg2NDI5Nzc5LC0xMTU1MjgwOTQ3LC03MzQyMzgyNT
+ksLTEwNjY5Njk0MTMsLTE4OTY5MzkwNDMsNDkzMDUyMzM1LC0x
+OTgxNjg3NTk0LDY1NzExNzkyNSw4Njc1OTE0MDcsMzYwMDgyMz
+Q1LDEyMzA4NTgzODgsLTExNTQ3MDExMDAsLTY3MzM4MzY3Niwt
+NDY0MzQ4MDY3XX0=
+-->
