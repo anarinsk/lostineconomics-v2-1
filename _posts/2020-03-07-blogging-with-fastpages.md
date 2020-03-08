@@ -29,7 +29,7 @@ Hugo의 경우 R의 `BlogDown`(https://bookdown.org/yihui/blogdown/) 패키지�
 
 3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 트레이드오프랄까... 
 
-이 글에서 소개할 `fastpages`는 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 
+이 글에서 소개할 `fastpages`는 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다.
 
 ## fastpages by fast.ai 
 
@@ -147,9 +147,9 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDc5NTA2NiwxNDI5MDA3NzEsLTIzND
-M0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4
-MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MC
-wtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUy
-NTk5NjYwLDEyNTIyMDA3MzddfQ==
+eyJoaXN0b3J5IjpbNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0Mz
+Q2NTk2LC0yMDExNTUyNzk2LC00MzU5MjYyNDAsLTE5NDI5MTgx
+OTQsMTY3NzczNDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5OTcwLC
+02MTk5OTE3MTQsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC00NTI1
+OTk2NjAsMTI1MjIwMDczN119
 -->
