@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:16:24-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:21:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -194,12 +194,12 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDgwMjkwMSw4NTQ4ODQ0MCwtNzMwNz
-I3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwt
-MjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5MjYyNDAsLTE5ND
-I5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5
-OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC
-00NTI1OTk2NjAsMTI1MjIwMDczN119
+eyJoaXN0b3J5IjpbLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMD
+cyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEs
+LTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOT
+QyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1
+OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NC
+wtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
