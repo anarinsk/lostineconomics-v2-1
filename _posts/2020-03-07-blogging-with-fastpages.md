@@ -87,9 +87,9 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 	- `[repo root]/_sass/minima`안에 보면 `custom-styles.scss`와 `fastpages-styles.scss` 두 개가 있다. `custom-styles.scss`에 부가 내용을 수정하면 스타일을 바꿀 수 있다. 
 	- 예를 들어 기본 텍스트의 크기를 바꾸고 싶다면, 
 ```
-	.post-content  p, .post-content  li {
-		font-size: 17px; # 원래 값은 20px
-		color: #515151;
+.post-content  p, .post-content  li {
+	font-size: 17px; # 원래 값은 20px
+	color: #515151;
 	}
 ```
 - google analytics 
@@ -141,6 +141,6 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTQ3MTA1NiwxNDQ1MDgwMjk0LC00NT
+eyJoaXN0b3J5IjpbMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC00NT
 I1OTk2NjAsMTI1MjIwMDczN119
 -->
