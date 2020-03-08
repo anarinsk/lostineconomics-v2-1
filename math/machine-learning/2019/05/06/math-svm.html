@@ -193,18 +193,18 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h3"><a href="#derivation-of-svm-optimization-problem">Derivation of SVM optimization problem</a></li>
 <li class="toc-entry toc-h3"><a href="#optimization-by-wolfe-duality">Optimization by Wolfe duality</a></li>
-<li class="toc-entry toc-h3"><a href="#compute-bf-w--and-b">Compute $\bf w$  and $b$</a></li>
+<li class="toc-entry toc-h3"><a href="#compute-w-and-b">Compute w and b</a></li>
 <li class="toc-entry toc-h3"><a href="#limitation">Limitation</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#데이터에-노이즈가-있을-경우">데이터에 노이즈가 있을 경우</a></li>
-<li class="toc-entry toc-h4"><a href="#데이터-자체가-선형으로-분리되지-않을-경우">데이터 자체가 선형으로 분리되지 않을 경우</a></li>
+<li class="toc-entry toc-h5"><a href="#데이터에-노이즈가-있을-경우">데이터에 노이즈가 있을 경우</a></li>
+<li class="toc-entry toc-h5"><a href="#데이터-자체가-선형으로-분리되지-않을-경우">데이터 자체가 선형으로 분리되지 않을 경우</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#soft-margin-svm">Soft Margin SVM</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#what-is-c">What is $C$</a></li>
+<li class="toc-entry toc-h3"><a href="#what-is-c">What is C</a></li>
 <li class="toc-entry toc-h3"><a href="#kernel-trick">Kernel Trick</a></li>
 </ul>
 </li>
@@ -452,8 +452,8 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>KKT 조건이란 부등식 제약을 푸는 테크닉이다. 즉, $\alpha_i &gt;0$의 제약이 유효하다면 제약을 만족시키기 위해서는 $y_i (\mathbf{w} \cdot {\bf x}^* + b) -1 = 0$이 만족해야 한다. 이렇게 제약이 걸리는 경우에 위치한 $x^*$가 바로 ‘서포트 벡터’다. 반면, $\alpha_i =0$는 제약이 등호로 걸릴 필요가 없는 트레이닝 셋의 관찰들이다. 이들은 분류 하이퍼플레인까지의 길이가 서포트 벡터의 길이보다 크다.</p>
 
-<h3 id="compute-bf-w--and-b">
-<a class="anchor" href="#compute-bf-w--and-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compute $\bf w$  and $b$</h3>
+<h3 id="compute-w-and-b">
+<a class="anchor" href="#compute-w-and-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compute w and b</h3>
 
 <p>$\bf w$ 의 경우 1계 조건에서 쉽게 얻을 수 있다.</p>
 
@@ -480,12 +480,12 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 
 <p>앞서 본 것을 이른바 hard margin SVM이다. 즉, 서포트 벡터 사이의 마진을 획일적으로 적용하는 분류 알고리듬이다. 하드 마진 SVM은 다음의 두가지 경우에 취약하다.</p>
 
-<h4 id="데이터에-노이즈가-있을-경우">
-<a class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%90-%EB%85%B8%EC%9D%B4%EC%A6%88%EA%B0%80-%EC%9E%88%EC%9D%84-%EA%B2%BD%EC%9A%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>데이터에 노이즈가 있을 경우</h4>
+<h5 id="데이터에-노이즈가-있을-경우">
+<a class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%90-%EB%85%B8%EC%9D%B4%EC%A6%88%EA%B0%80-%EC%9E%88%EC%9D%84-%EA%B2%BD%EC%9A%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>데이터에 노이즈가 있을 경우</h5>
 <p>하드 마진의 큰 문제는 아웃라이어에 취약할 수 밖에 없다는 것이다. 풀어서 말하면 제약이 선형이고 그 제약이 강력하다는 데 있다. 트레이닝 데이터에 이런 저런 노이즈가 있을 경우 하드 마진은 아예 계산이 불가능할 수 있다. 이때 사용하는 기법이 soft margin SVM이다.</p>
 
-<h4 id="데이터-자체가-선형으로-분리되지-않을-경우">
-<a class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9E%90%EC%B2%B4%EA%B0%80-%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B6%84%EB%A6%AC%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%84-%EA%B2%BD%EC%9A%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>데이터 자체가 선형으로 분리되지 않을 경우</h4>
+<h5 id="데이터-자체가-선형으로-분리되지-않을-경우">
+<a class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9E%90%EC%B2%B4%EA%B0%80-%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C-%EB%B6%84%EB%A6%AC%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%84-%EA%B2%BD%EC%9A%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>데이터 자체가 선형으로 분리되지 않을 경우</h5>
 <p>애초부터 데이터 자체가 선형을 통한 분류를 허용하지 않을 경우에는 비선형 분류를 사용할 수 있다. 이때 동원하는 테크닉이 커널 트릭 (kernel trick)이다.</p>
 
 <h2 id="soft-margin-svm">
@@ -504,7 +504,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><msub><mi>α</mi><mi>i</mi></msub><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum_{i=1}^m \alpha_i y_i = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
 <h3 id="what-is-c">
-<a class="anchor" href="#what-is-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is $C$</h3>
+<a class="anchor" href="#what-is-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is C</h3>
 
 <p>정규화 파라미터인 $C$를 어떻게 이해할까? 식 그대로 보면, $\boldsymbol \zeta$를 얼마나 중요하게 최적화 문제에 반영할 것인지가 중요하다. 다시 말하면 이는 에러를 어떻게 볼 것인가와 연결되어 있다. 만일 $C$가 양의 무한대 값이라면 이는 하드 마진과 동일하다. 만일 $C=0$ 이라면 $\alpha_i=0$가 된다. 이는 사실상 선형 제약이 사라지게 되는 결과가 된다. 따라서 하이퍼플레인이 어떤 것도 분류하기 못하게 될 것이다. 즉, C는 하드 마진과 소프트 마진 사이를 적절하게 조절하는 역할을 수행한다.</p>
 
@@ -537,7 +537,7 @@ M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlis
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTUxODc3XX0=
+eyJoaXN0b3J5IjpbLTE4MTI3MjQwNzEsLTg4MTUxODc3XX0=
 -->
 <div class="footnotes">
   <ol>
