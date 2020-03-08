@@ -21,7 +21,7 @@ Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지�
 
 [^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라.  
 
-이상적인 형태이 블로그 툴이랄 무엇일까? 내 생각은 이렇다. 
+이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다. 
 
 1. 최초의 설정 및 초기 디자인 요소를 제외하면 코드를 수정할 필요가 없어야 한다.
 2. html을 되도록 쓰지 않고, md 형태로 작성한 후 바로 반영이 되어야 한다. 
@@ -152,10 +152,10 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNjM5MDE0OSwxNjkzNjc2MTc1LDY0Mj
-IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
-NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
-g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
-NDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3Mz
-ddfQ==
+eyJoaXN0b3J5IjpbLTIwNjE3NDg3NjMsMTY5MzY3NjE3NSw2ND
+IyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3
+OTYsLTQzNTkyNjI0MCwtMTk0MjkxODE5NCwxNjc3NzM0MDc1LC
+04ODA3NjQ1ODYsLTE0ODI3NTk5NzAsLTYxOTk5MTcxNCwyMDU4
+MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MCwxMjUyMjAwNz
+M3XX0=
 -->
