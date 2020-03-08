@@ -1,6 +1,8 @@
 ---
+layout: post
 toc: true
 comments: true
+title: Eigenvalues and Eigenvectors
 description: 고유치와 고유벡터에 관해 알아보자. 
 categories: [math, matrix-theory]
 
@@ -219,6 +221,5 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjE3MDIxNSwtMzUyMDA0NjE3LDEwMj
-MwMjY4NDldfQ==
+eyJoaXN0b3J5IjpbLTIxMTE5OTI5OTZdfQ==
 -->
