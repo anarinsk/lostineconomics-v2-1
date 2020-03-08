@@ -37,18 +37,18 @@ Hugo의 경우 R의 [`BlogDown`]([https://bookdown.org/yihui/blogdown/](https://
 
 [https://github.com/fastai/fastpages/generate](https://github.com/fastai/fastpages/generate)
 
-![]({{ site.baseurl }}/images/fastpages/fig_1.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/fastpages/fig_1.png){: style="textalign:center; " width="700"}
 
 
 깃헙에 로그인한 상태에서 이 곳에 접속해 페이지를 생성한다. 페이지를 생성한 후 내 깃헙 계정에서 조금 기다리면 "Pull Request"(PR) 메시지가 날아온다. 
 
-![]({{ site.baseurl }}/images/fastpages/fig_2.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/fastpages/fig_2.png){: style="textalign:center; " width="700"}
 
 ### PR
 
 PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시지에 친절하게 설명이 되어 있으니 그대로 따라하면 된다. 
 
-![]({{ site.baseurl }}/images/fastpages/fig_3.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/fastpages/fig_3.png){: style="textalign:center; " width="700"}
 
 1. 링크를 눌러 웹 페이지에서 private key와 public 키를 생성한다. RSA, 4069를 선택하도록 하다. 
 2. 새 sceret을 생성하고 private key를 넣어준다. 이름은 반드시 `SSH_DEPOLY_KEY`를 해야 한다. 
@@ -56,7 +56,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 마지막으로 PR를 수락하고 이를 merge하면 준비가 완료된다. 깃헙이 작업을 하는 동안 잠시 기다리면 된다. 작업 상태가 궁금하면 github actions 탭을 확인하면 된다. 설치가 끝나면 아래와 같이 생성된 페이지를 확인할 수 있다. 
 
-![]({{ site.baseurl }}/images/fastpages/fig_4.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/fastpages/fig_4.png){: style="textalign:center; " width="700"}
 
 [https://anarinsk.github.io/test-fastpages/](https://anarinsk.github.io/test-fastpages/)
 
@@ -142,8 +142,8 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTkyNjI0MCwtMTk0MjkxODE5NCwxNj
-c3NzM0MDc1LC04ODA3NjQ1ODYsLTE0ODI3NTk5NzAsLTYxOTk5
-MTcxNCwyMDU4MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MC
-wxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbLTIwMTE1NTI3OTYsLTQzNTkyNjI0MCwtMT
+k0MjkxODE5NCwxNjc3NzM0MDc1LC04ODA3NjQ1ODYsLTE0ODI3
+NTk5NzAsLTYxOTk5MTcxNCwyMDU4MjQ2NzEyLDE0NDUwODAyOT
+QsLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
 -->
