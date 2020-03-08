@@ -13,7 +13,7 @@ categories: [coding-tool, web-tool]
 * 깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자. 
 * 디자인은 포기하시라, 마. (지금으로도 사실 훌륭하니까!)
 
-## Blog with Github 
+## Blogging with Github 
 
 깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 그렇게 하고 있다. 블로그를 운영하기 위해서는 Hugo, Jekyll의 도구를 사용하면 전문적인 블로그 운영도 가능하다. 이 툴들의 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다. 
 
@@ -156,7 +156,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTUwMzY1NCw4NTQ4ODQ0MCwtNzMwNz
+eyJoaXN0b3J5IjpbLTM2NDgwMjkwMSw4NTQ4ODQ0MCwtNzMwNz
 I3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwt
 MjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5MjYyNDAsLTE5ND
 I5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5
