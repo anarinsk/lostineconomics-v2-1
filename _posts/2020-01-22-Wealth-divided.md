@@ -67,7 +67,7 @@ $$
 - 분해 식을 통해서 크게 세가지 변동을 구분할 수 있다. 
 	- $s$의 변화 
 	- $$\dfrac{\overline{W}_{e,i,71}}{\overline{W}_{e,71}}$$: 기준 연도의 부 계층의 차이 
-	-  $\dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}$: 기준 연도 대비 특정 부 계층의 연도별 변화 
+	-  $$\dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}$$: 기준 연도 대비 특정 부 계층의 연도별 변화 
 
 - 이 세 가지에 분해 요소 중에서 시간을 따라가지 않은 두 번째를 제외하고 나머지에 대해서 반사실(counterfactual)을 적용해보자. 
 
@@ -202,6 +202,6 @@ $$
 - A, B에서 보듯이 소득과 부 모두 유유상종 혼 상태의 가구가 평균보다 두 배 가량 높다. 하지만 C, D에서 보듯이 이를 각 해당 연도의 유유상종 혼 인구가 점유한 부의 비율과 유유상종 혼 인구의 비율로 나눈 수치는 거의 일정한 수준을 유지하고 있다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyNzA3MTQ4LC0yNjMwNDU3NjYsMTIxNT
-EzNzcxN119
+eyJoaXN0b3J5IjpbLTEzMjU2Mzk5MzIsNDkyNzA3MTQ4LC0yNj
+MwNDU3NjYsMTIxNTEzNzcxN119
 -->
