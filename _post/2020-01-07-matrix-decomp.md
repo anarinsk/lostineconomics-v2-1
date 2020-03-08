@@ -2,14 +2,11 @@
 toc: true
 layout: post
 comments: true
+title: Matrix Decomposition 
 description: 행렬 분해를 한 방에 정리해보자 
 categories: [math, matrix-theory]
 
 ---
-
-
-# Matrix Decomposition
-
 
 ## Summary in advance 
 
@@ -323,5 +320,5 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2MjM5NzQ0XX0=
+eyJoaXN0b3J5IjpbMTcxNjY2ODcyOSw0MTYyMzk3NDRdfQ==
 -->
