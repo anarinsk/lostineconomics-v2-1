@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:06:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:11:44-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -11,7 +11,7 @@
 
 &lt;p&gt;Hugo의 경우 R의 &lt;a href=&quot;https://bookdown.org/yihui/blogdown/&quot;&gt;BlogDown&lt;/a&gt; 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;미리 말하면 fastpages는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.&lt;/p&gt;
+&lt;p&gt;미리 말하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.&lt;/p&gt;
 
 &lt;p&gt;이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다.&lt;/p&gt;
 
@@ -194,12 +194,12 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0Mj
-IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
-NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
-g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
-NDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3Mz
-ddfQ==
+eyJoaXN0b3J5IjpbODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNj
+c2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5Niwt
+MjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nz
+c3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkx
+NzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLD
+EyNTIyMDA3MzddfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
