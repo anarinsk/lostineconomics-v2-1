@@ -33,7 +33,8 @@ Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지�
 
 ### Before we go
 
-이하의 글에서 [your-id]라고 표기된 부분은 각자의 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 복붙하지 마시라는 말
+- 이하의 글에서 [your-id]라고 표기된 부분은 각자의 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 복붙하지 마시라는 말씀. 
+- [repo root]는 해당 리퍼지토리의 최상위 디렉토리를 나타낸다. 
 
 ## fastpages by fast.ai 
 
@@ -151,7 +152,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODA3NzQ3MiwxNjkzNjc2MTc1LDY0Mj
+eyJoaXN0b3J5IjpbMTMzNjM5MDE0OSwxNjkzNjc2MTc1LDY0Mj
 IxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5
 NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLT
 g4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgy
