@@ -120,7 +120,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 </script>
 ```
 
-- `[repo root]/_include`의 `head.html`의 적당한 줄에 `{%- include google_analytics.html -%}`를 넣어준다. 
+- `[repo root]/_include`의 `head.html`의 적당한 줄에 ` {%- include google_analytics.html -%} `를 넣어준다. 
 
 - google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
 
@@ -156,10 +156,10 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDgwMjkwMSw4NTQ4ODQ0MCwtNzMwNz
-I3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwt
-MjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5MjYyNDAsLTE5ND
-I5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5
-OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC
-00NTI1OTk2NjAsMTI1MjIwMDczN119
+eyJoaXN0b3J5IjpbLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMD
+cyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEs
+LTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOT
+QyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1
+OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NC
+wtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
 -->
