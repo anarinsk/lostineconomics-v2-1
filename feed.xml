@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T08:50:43-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T08:52:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -145,7 +145,8 @@
 
 ### Post 작성 
 
-통상적인 `md` 파일로 작성하면 된다. 다만, 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 Jekyl
+다만, 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
 
 ```yml 
 ---
@@ -162,7 +163,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 &lt;ul&gt;
   &lt;li&gt;보통 github 기반의 블로그를 만들면, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;자기ID&quot;.github.io&lt;/code&gt;만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 &lt;code class=&quot;highlighter-rouge&quot;&gt;anarinsk.github.io/lostineconomics-v2-1&lt;/code&gt;다.&lt;/li&gt;
-  &lt;li&gt;강력한 장점은 &lt;code class=&quot;highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;강력한 장점은 &lt;code class=&quot;highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_notebooks&lt;/code&gt;에 파일을 넣어주면 된다.&lt;/li&gt;
   &lt;li&gt;디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다.&lt;/li&gt;
   &lt;li&gt;매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다.
     &lt;ul&gt;
@@ -170,7 +171,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
       &lt;li&gt;fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다.&lt;/li&gt;
       &lt;li&gt;따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA5MTg3NzUsMTI1MjIwMDczN119
+eyJoaXN0b3J5IjpbMTE3MTQ5MTg3OSwxMjUyMjAwNzM3XX0=
 --&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
