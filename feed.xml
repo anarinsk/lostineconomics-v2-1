@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T08:52:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T08:52:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -145,8 +145,9 @@
 
 ### Post 작성 
 
-통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 Jekyl
-다만, 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
+통상적인 `md` 파일로 작성하면 된다. 두 가지만 주의하면 된다. 우선 파일 이름을 `년도-월-일-이름.md` 형태로 넣어야 한다. 그래야 fastpages가 컴파일을 할 수 있다. 예를 들어 이 포스팅을 `2020-03-7-blogging-with-fastpages.md`다. 
+
+글 앞에 yml 명령어를 넣어 해당 포스트에 관한 정보를 넣어주면 된다. 
 
 ```yml 
 ---
@@ -171,7 +172,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
       &lt;li&gt;fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다.&lt;/li&gt;
       &lt;li&gt;따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTQ5MTg3OSwxMjUyMjAwNzM3XX0=
+eyJoaXN0b3J5IjpbLTQ1MjU5OTY2MCwxMjUyMjAwNzM3XX0=
 --&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
