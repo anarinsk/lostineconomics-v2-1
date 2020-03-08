@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:21:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T17:37:07-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -181,7 +181,7 @@
 &lt;h3 id=&quot;fastpage의-몇가지-장점&quot;&gt;fastpage의 몇가지 장점&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;보통 github 기반의 블로그를 만들면, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;자기ID&quot;.github.io&lt;/code&gt;만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 &lt;code class=&quot;highlighter-rouge&quot;&gt;anarinsk.github.io/lostineconomics-v2-1&lt;/code&gt;다.&lt;/li&gt;
+  &lt;li&gt;보통 github 기반의 블로그를 만들면, &lt;code class=&quot;highlighter-rouge&quot;&gt;[your-id].github.io&lt;/code&gt;만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 &lt;code class=&quot;highlighter-rouge&quot;&gt;anarinsk.github.io/lostineconomics-v2-1&lt;/code&gt;다.&lt;/li&gt;
   &lt;li&gt;강력한 장점은 &lt;code class=&quot;highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;[repo root]/_notebooks&lt;/code&gt;에 파일을 넣어주면 된다.&lt;/li&gt;
   &lt;li&gt;디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다.&lt;/li&gt;
   &lt;li&gt;매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다.
@@ -194,12 +194,12 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMD
-cyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEs
-LTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOT
-QyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1
-OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NC
-wtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
+eyJoaXN0b3J5IjpbMTk1MzY1MzEwNywtMTQwNDQxMjc0Myw4NT
+Q4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5
+LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00Mz
+U5MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0
+NTg2LC0xNDgyNzU5OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMi
+wxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1MjIwMDczN119
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
