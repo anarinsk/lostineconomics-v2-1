@@ -121,7 +121,9 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 - `[repo root]/_include`의 `head.html`의 적당한 줄에 아래 코드를 넣어준다. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {%- include google_analytics.html -%}
+````
+{% include google_analytics.html %}
+````
 
 - google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
 
