@@ -1,6 +1,155 @@
-<h1 id="understanding-regression">Understanding Regression</h1>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Understanding Regression | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Understanding Regression" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
+<meta property="og:description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"회귀분석, 기하학적으로 한 방에 깨우치기","headline":"Understanding Regression","@type":"BlogPosting","dateModified":"2019-10-25T00:00:00-05:00","datePublished":"2019-10-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Understanding Regression | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Understanding Regression" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
+<meta property="og:description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"회귀분석, 기하학적으로 한 방에 깨우치기","headline":"Understanding Regression","@type":"BlogPosting","dateModified":"2019-10-25T00:00:00-05:00","datePublished":"2019-10-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h2 id="tldr">tl;dr</h2>
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    // remove paragraph tags in rendered toc (happens from notebooks)
+    var toctags = document.querySelectorAll(".toc-entry")
+    toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Understanding Regression</h1><p class="page-description">회귀분석, 기하학적으로 한 방에 깨우치기</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-10-25T00:00:00-05:00" itemprop="datePublished">
+        Oct 25, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#math">math</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#econometrics">econometrics</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#tldr">tl;dr</a></li>
+<li class="toc-entry toc-h2"><a href="#공간에서-바라본-회귀분석">공간에서 바라본 회귀분석</a></li>
+<li class="toc-entry toc-h2"><a href="#덤-회귀-분석과-pca는-서로-얼마나-다를까">덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#공통점">공통점</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#feature">Feature</a></li>
+<li class="toc-entry toc-h4"><a href="#차원-축소">차원 축소</a></li>
+<li class="toc-entry toc-h4"><a href="#극소화">극소화</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#차이점">차이점</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#supervised-or-unsupervised">Supervised or Unsupervised?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2 id="tldr">
+<a class="anchor" href="#tldr" aria-hidden="true"><span class="octicon octicon-link"></span></a>tl;dr</h2>
 
 <ul>
   <li>회귀분석을 선형 대수를 통해서 이해하면 새로운 깨달음을 얻을 수 있다.</li>
@@ -8,12 +157,13 @@
   <li>선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과하다.</li>
 </ul>
 
-<h2 id="공간에서-바라본-회귀분석">공간에서 바라본 회귀분석</h2>
+<h2 id="공간에서-바라본-회귀분석">
+<a class="anchor" href="#%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C-%EB%B0%94%EB%9D%BC%EB%B3%B8-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>공간에서 바라본 회귀분석</h2>
 
 <p>여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치기 쉬운 회귀분석의 ‘핵심’을 살피는 것이다. <a href="https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient">crossvalidated</a>에서 아래 그림을 보는 순간 일종의 ‘돈오돈수’가 강림했다. (이렇게 이해하면 쉬웠을 것을…)</p>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="450" />
+  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="450">
 </kbd></p>
 
 <p>먼저 우리에게 익숙한 회귀분석 모델을 매트릭스로 적어보자.</p>
@@ -23,7 +173,7 @@
 <p>식에 관한 자세한 설명 역시 생략한다. 대충 $n$ 개의 관찰 수과 $k$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/simpe_reg.png?raw=true" width="500" />
+  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/simpe_reg.png?raw=true" width="500">
 </kbd></p>
 
 <p>위 그림은 1개의 regressor가 존재할 때 이것과 regressand를 그대로 2차원 평면에 관찰 수만큼 찍은 것이다. 첫번째 그림에서 “Observed Y”는 점 하나가 $n$ 개의 regressand를 모두 포괄한다. $\mathbf{Y} \in {\mathbb R}^{n}$ 벡터, 즉 $n$ 차원 벡터이고, 이것이 회귀식 좌변의 관찰값 $n$ 개를 표현한다.</p>
@@ -33,7 +183,7 @@
 <p>이렇게 생각하면 좋겠다. $x_i \in {\mathbb R}^{n}$ 벡터가 $k(&lt;n)$ 개 있다고 하자. 이는 $n$ 보다 차원이 낮기 때문에 기하학적으로는 $n$ 차원 공간에서 초평면(hyperplane)으로 나타날 것이다. 위 그림에서 컬럼 스페이스가 평면으로 표현되는 것은 이러한 취지다. 3차원 벡터의 열 공간이 생성하는 초평면을 예시하면 아래와 같다.</p>
 
 <p align="center"><kbd>
-  <img src="https://miro.medium.com/max/2240/1*VUmUxo3G2UTugIiZ26Pusw@2x.jpeg" width="400" />
+  <img src="https://miro.medium.com/max/2240/1*VUmUxo3G2UTugIiZ26Pusw@2x.jpeg" width="400">
 </kbd></p>
 
 <p>col $\mathbf X$의 최대 차원, 즉 $\mathbf X$의 랭크(위수)는 무엇일까? 회귀분석에서는 대체로 $n &gt; k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원의 크기가 $k$를 넘을 수 없다. 그리고 잘 된 회귀분석이라면 ${\rm rank}(\mathbf X) = k$를 만족한다.</p>
@@ -43,7 +193,7 @@
 
 <p>회귀분석의 목표는 regressor를 통해서, 더 정확하게는 regressor의 집합이 생성하는 공간을 통해서 regressand를 ‘가장’ 잘 설명하는 것이다. 회귀분석이란 regressand와 ‘닮은’ 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 이런 지점을 찾는 연산자(operator)가 회귀분석 계수 $\hat{\boldsymbol \beta}$이다. 즉,</p>
 
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi mathvariant="bold-italic">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy="false">(</mo><msup><mi mathvariant="bold">X</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="bold">X</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><msup><mi mathvariant="bold">X</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="bold">Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{\boldsymbol \beta} = ({\mathbf X}&#x27;{\mathbf X})^{-1} ({\mathbf X}&#x27; \mathbf Y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523199999999998em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578799999999998em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03403em;">β</span></span></span></span><span style="top:-3.26344em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">^</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">X</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">X</span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">X</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathbf" style="margin-right:0.02875em;">Y</span><span class="mclose">)</span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi mathvariant="bold-italic">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy="false">(</mo><msup><mi mathvariant="bold">X</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="bold">X</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><msup><mi mathvariant="bold">X</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi mathvariant="bold">Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{\boldsymbol \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523199999999998em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578799999999998em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03403em;">β</span></span></span></span><span style="top:-3.26344em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">^</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">X</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">X</span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">X</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathbf" style="margin-right:0.02875em;">Y</span><span class="mclose">)</span></span></span></span></span>
 
 <p>그리고 이 연산자를 reggressor의  모음인 col $\mathbf X$에 적용하면,  $\mathbf{X} \hat{\boldsymbol \beta}  =\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 col $\mathbf X$의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $\hat{\mathbf Y} \in {\mathbb R}^n$ 벡터지만, col $\mathbf X(\in {\mathbb R}^k)$내에 위치하고 있다. $n$ 차원이 $k$ 차원으로 축소된 셈이다. 이것이 회귀분석의 핵심이다.</p>
 
@@ -64,8 +214,7 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 <p>아래 그림을 참고하자.</p>
 
 <p align="center"><kbd>
-  <img src="
-https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-vector_comb.png?raw=true" width="450" />
+  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-vector_comb.png?raw=true" width="450">
 </kbd></p>
 
 <p>이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다.</p>
@@ -95,42 +244,90 @@ https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-ve
 
 <p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
 
-<h2 id="덤-회귀-분석과-pca는-서로-얼마나-다를까">덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</h2>
+<h2 id="덤-회귀-분석과-pca는-서로-얼마나-다를까">
+<a class="anchor" href="#%EB%8D%A4-%ED%9A%8C%EA%B7%80-%EB%B6%84%EC%84%9D%EA%B3%BC-pca%EB%8A%94-%EC%84%9C%EB%A1%9C-%EC%96%BC%EB%A7%88%EB%82%98-%EB%8B%A4%EB%A5%BC%EA%B9%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</h2>
 
 <p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
 
-<h3 id="공통점">공통점</h3>
+<h3 id="공통점">
+<a class="anchor" href="#%EA%B3%B5%ED%86%B5%EC%A0%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>공통점</h3>
 
-<h4 id="feature">Feature</h4>
+<h4 id="feature">
+<a class="anchor" href="#feature" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature</h4>
 
 <p>일단 둘 다 $k$ 개의 feature 비슷한 것을 지닌다. 그리고 $n$ 개의 데이터 포인트가 제시된다.</p>
 
-<h4 id="차원-축소">차원 축소</h4>
+<h4 id="차원-축소">
+<a class="anchor" href="#%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>차원 축소</h4>
 
 <p>흔히 PCA를 차원축소의 방법으로 이해하는데, 이 말은 맞다. 반대로 회귀분석은 이와 다르다고 이해하는 경우가 많은데 이 말은 틀리다. 회귀 분석도 어떻게 보면 ‘차원 축소’다. 회귀 분석에서 target 변수는 $n$ 차원 공간 위의 주어진 한 점이다. 우리의 목표는 이 한 점을 잘 설명하는 더 낮은 차원의 어떤 지점을 찾는 것이다. 이런 점에서 본다면 회귀 분석 역시 차원 축소의 한 방법이라고 봐야 할 것이다.</p>
 
-<h4 id="극소화">극소화</h4>
+<h4 id="극소화">
+<a class="anchor" href="#%EA%B7%B9%EC%86%8C%ED%99%94" aria-hidden="true"><span class="octicon octicon-link"></span></a>극소화</h4>
 
 <p>PCA에서 ‘분산 최대화’에 이르기까지 과정을 생략하다보면, PCA를 별도의 어떤 방법으로 인식하곤 한다. 그런데 앞선 포스팅에서 보았듯이 ‘분산 최대화’란 사실 피처 벡터와 이를 예측하기 위한 어떤 벡터 사이의 거리를 최소화하는 과정에서 도출된 결과다. 이런 점에서 본다면, 회귀 분석이든 PCA는 MSE(Mean Square Error)를 최소화한다는 점에서는 목적 함수의 유형은 동일하다.</p>
 
-<h3 id="차이점">차이점</h3>
+<h3 id="차이점">
+<a class="anchor" href="#%EC%B0%A8%EC%9D%B4%EC%A0%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>차이점</h3>
 
-<h4 id="supervised-or-unsupervised">Supervised or Unsupervised?</h4>
+<h4 id="supervised-or-unsupervised">
+<a class="anchor" href="#supervised-or-unsupervised" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supervised or Unsupervised?</h4>
 
 <p>회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwNTE2MjkxLC0xNTg4MDg2MzU5XX0=
+eyJoaXN0b3J5IjpbLTIwNzY4OTYzMTZdfQ==
 --></p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:2">
-      <p>궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. <a href="https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. <a href="https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:3">
-      <p>더 자세한 내용은 <a href="https://anarinsk.github.io/lie-qa_reg_pca/">여기</a>를 참고하자. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>더 자세한 내용은 <a href="https://anarinsk.github.io/lie-qa_reg_pca/">여기</a>를 참고하자. <a href="#fnref:3" class="reversefootnote">↩</a></p>
     </li>
   </ol>
 </div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
