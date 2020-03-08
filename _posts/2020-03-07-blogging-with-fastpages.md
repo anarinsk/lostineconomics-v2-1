@@ -140,11 +140,14 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 * 매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다. 
 	* [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_posts/` 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. 
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
-	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다. 
+	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMT
-E1NTI3OTYsLTQzNTkyNjI0MCwtMTk0MjkxODE5NCwxNjc3NzM0
-MDc1LC04ODA3NjQ1ODYsLTE0ODI3NTk5NzAsLTYxOTk5MTcxNC
-wyMDU4MjQ2NzEyLDE0NDUwODAyOTQsLTQ1MjU5OTY2MCwxMjUy
-MjAwNzM3XX0=
+eyJoaXN0b3J5IjpbMTY1MDY0OTQ2NywxNDI5MDA3NzEsLTIzND
+M0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4
+MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MC
+wtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUy
+NTk5NjYwLDEyNTIyMDA3MzddfQ==
 -->
