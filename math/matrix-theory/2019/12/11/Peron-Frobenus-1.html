@@ -1,6 +1,188 @@
-<h1 id="perron-frobenius-theorem-part-1">Perron-Frobenius Theorem, part 1</h1>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Perron-Frobenius Theorem, part 1 | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Perron-Frobenius Theorem, part 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="페론-프로베니우스의 정리, 핵심 정리" />
+<meta property="og:description" content="페론-프로베니우스의 정리, 핵심 정리" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-11T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"페론-프로베니우스의 정리, 핵심 정리","headline":"Perron-Frobenius Theorem, part 1","@type":"BlogPosting","dateModified":"2019-12-11T00:00:00-06:00","datePublished":"2019-12-11T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Perron-Frobenius Theorem, part 1 | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Perron-Frobenius Theorem, part 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="페론-프로베니우스의 정리, 핵심 정리" />
+<meta property="og:description" content="페론-프로베니우스의 정리, 핵심 정리" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-11T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"페론-프로베니우스의 정리, 핵심 정리","headline":"Perron-Frobenius Theorem, part 1","@type":"BlogPosting","dateModified":"2019-12-11T00:00:00-06:00","datePublished":"2019-12-11T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h2 id="tldr">tl;dr</h2>
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    // remove paragraph tags in rendered toc (happens from notebooks)
+    var toctags = document.querySelectorAll(".toc-entry")
+    toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Perron-Frobenius Theorem, part 1</h1><p class="page-description">페론-프로베니우스의 정리, 핵심 정리</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-12-11T00:00:00-06:00" itemprop="datePublished">
+        Dec 11, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#math">math</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#matrix-theory">matrix-theory</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#tldr">tl;dr</a></li>
+<li class="toc-entry toc-h2"><a href="#definitions">Definitions</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#positive-nonnegative">positive, nonnegative</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#basic-facts">Basic facts</a></li>
+<li class="toc-entry toc-h2"><a href="#regular-nonnegative-matrices">Regular nonnegative matrices</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#for-graph-matrices">For graph matrices</a></li>
+<li class="toc-entry toc-h3"><a href="#examples">Examples</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#not-regular">Not regular</a></li>
+<li class="toc-entry toc-h4"><a href="#regular">Regular</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#perron-frobenius-theorem">Perron-Frobenius theorem</a></li>
+<li class="toc-entry toc-h2"><a href="#for-regular-matrices">For regular matrices</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#for-nonnegative-matrices">For nonnegative matrices</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#markov-chain">Markov chain</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#eigenvalue-1-exists">Eigenvalue 1 exists!</a></li>
+<li class="toc-entry toc-h3"><a href="#1-is-the-largest-eigenvalue">1 is the largest eigenvalue!</a></li>
+<li class="toc-entry toc-h3"><a href="#proof">Proof</a></li>
+<li class="toc-entry toc-h3"><a href="#definition-of-limiting-distribution">Definition of limiting distribution</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#limiting-behavior-of-markov-chain">Limiting Behavior of Markov Chain</a></li>
+<li class="toc-entry toc-h2"><a href="#appendix-irreducibility-and-aperiodicity">Appendix: Irreducibility and Aperiodicity</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#irreducible-matrix">Irreducible matrix</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#irreducible">Irreducible</a></li>
+<li class="toc-entry toc-h4"><a href="#reducible">Reducible</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#aperiodic-matrix">Aperiodic matrix</a></li>
+<li class="toc-entry toc-h3"><a href="#regular-matrix-vs-irreducible-and-aperiodic-matrix">Regular matrix vs irreducible and aperiodic matrix</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#a--b">A → B</a></li>
+<li class="toc-entry toc-h4"><a href="#a--b-1">A ← B</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#comments">Comments</a></li>
+</ul>
+</li>
+</ul><h2 id="tldr">
+<a class="anchor" href="#tldr" aria-hidden="true"><span class="octicon octicon-link"></span></a>tl;dr</h2>
 
 <ul>
   <li>정칙 행렬(regular matrix)의 경우 페론-프로베니우스의 정리는 아이겐밸류와 아이겐벡터에 관해서 강력한 조건을 걸어준다.</li>
@@ -8,9 +190,11 @@
   <li>이 정리를 쓸모 있게 활용할 수 있는 사례는 마르코프 체인의 극한 분포다. 이때 가장 큰 아이겐밸류는 1이 되며, 좌 아이겐벡터와 우 아이겐벡터를 활용해 마르코프 과정의 극한 분포를 아이겐벡터로 손쉽게 구할 수 있다.</li>
 </ul>
 
-<h2 id="definitions">Definitions</h2>
+<h2 id="definitions">
+<a class="anchor" href="#definitions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definitions</h2>
 
-<h3 id="positive-nonnegative">positive, nonnegative</h3>
+<h3 id="positive-nonnegative">
+<a class="anchor" href="#positive-nonnegative" aria-hidden="true"><span class="octicon octicon-link"></span></a>positive, nonnegative</h3>
 
 <ul>
   <li>양(positive): 행렬의 모든 원소가 양의 값을 지닐 때</li>
@@ -19,7 +203,8 @@
 
 <p>벡터 $x$, $y$가 있을 때 $x &gt; y$는 $(x-y)$가 양이라는 뜻이다. 앞으로 벡터와 행렬에 대해서 $&gt;$ 그리고 $\geq$는 모두 원소-단위(element-wise)를 뜻한다.</p>
 
-<h2 id="basic-facts">Basic facts</h2>
+<h2 id="basic-facts">
+<a class="anchor" href="#basic-facts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic facts</h2>
 
 <ul>
   <li>If $A \geq 0$ and $z \geq 0$, then $A z \geq 0$</li>
@@ -35,35 +220,42 @@
   </li>
 </ul>
 
-<h2 id="regular-nonnegative-matrices">Regular nonnegative matrices</h2>
+<h2 id="regular-nonnegative-matrices">
+<a class="anchor" href="#regular-nonnegative-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regular nonnegative matrices</h2>
 
 <p>$A \in \mathbb{R}^{n \times n}$ 그리고 $A \geq 0$를 가정하자. 
 $A$는 다음의 조건을 만족할 때 정치 행렬(regular matrix)이라고 한다. 1보다 큰 정수 $k$에 대해서 $A^k &gt; 0$를 만족한다.</p>
 
-<h3 id="for-graph-matrices">For graph matrices</h3>
+<h3 id="for-graph-matrices">
+<a class="anchor" href="#for-graph-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a>For graph matrices</h3>
 
 <p>노드들 간의 그래프 관계를 가장 쉽게 나타낼 수 있는 것이 행렬이다. 즉, $i, j \in { 1, 2, \dotsc, n }$ 일 때, $A_{ij}&gt;0$이면 $i \to j$의 엣지를 그릴 수 있음을 나타낸다. 이때 $(A^k)_{ij} &gt; 0$와 동치는 $j \to i$ 로 연결되는 길이 $k$의 경로가 존재함을 의미한다.</p>
 
 <p>이때 $A$가 정칙 행렬이 의미는 무엇일까? 이는 모든 노드에서 다른 어떤 노드로 이동하는 임의의 $k$ 길이의 경로가 항상 존재한다는 뜻이다.</p>
 
-<h3 id="examples">Examples</h3>
+<h3 id="examples">
+<a class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
 
-<h4 id="not-regular">Not regular</h4>
+<h4 id="not-regular">
+<a class="anchor" href="#not-regular" aria-hidden="true"><span class="octicon octicon-link"></span></a>Not regular</h4>
 
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 1&amp; 1 \\0&amp; 1 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span>
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 0&amp; 1 \\1&amp; 0 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span></p>
 
-<h4 id="regular">Regular</h4>
+<h4 id="regular">
+<a class="anchor" href="#regular" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regular</h4>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 1&amp; 1&amp; 0 \\0&amp; 0&amp; 1\\ 1&amp;0&amp;0 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
 <p>차이를 알겠는가? $A$가 레귤러 행렬이라면 $A \geq 0$이더라도 $A^k &gt; 0$가 된다.</p>
 
-<h2 id="perron-frobenius-theorem">Perron-Frobenius theorem</h2>
+<h2 id="perron-frobenius-theorem">
+<a class="anchor" href="#perron-frobenius-theorem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Perron-Frobenius theorem</h2>
 
 <p>증명은 일단 생략하자. 그리 어렵지 않지만 페론-프로베니우스 정리 내용이 중요하기 때문에 이에 집중하겠다.</p>
 
-<h2 id="for-regular-matrices">For regular matrices</h2>
+<h2 id="for-regular-matrices">
+<a class="anchor" href="#for-regular-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a>For regular matrices</h2>
 
 <p>$A \geq 0$이고 $A$가 레귤러 행렬이면 아래를 모두 만족한다.</p>
 
@@ -77,7 +269,8 @@ $A$는 다음의 조건을 만족할 때 정치 행렬(regular matrix)이라고 
 
 <p>물론 아이겐벡터는 아이겐스페이스에 속하므로 벡터 전체에 대한 스케일링이 가능하다. $\lambda_{\rm pf}$는 행렬 $A$의 페론-프로베니우스의 근(혹은 PF 아이겐밸류)라고 부른다.</p>
 
-<h3 id="for-nonnegative-matrices">For nonnegative matrices</h3>
+<h3 id="for-nonnegative-matrices">
+<a class="anchor" href="#for-nonnegative-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a>For nonnegative matrices</h3>
 
 <p>$A \geq 0$.</p>
 
@@ -88,7 +281,8 @@ $A$는 다음의 조건을 만족할 때 정치 행렬(regular matrix)이라고 
   <li>아이겐밸류, 아이겐벡터는 유일하지 않다.</li>
 </ul>
 
-<h2 id="markov-chain">Markov chain</h2>
+<h2 id="markov-chain">
+<a class="anchor" href="#markov-chain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Markov chain</h2>
 
 <p>페론-프로베니우스 정리가 가장 아름답게 활용되는 사례는 마르코프 체인 모델이다. 확률 과정(stochastic process) $X_0, X_1, \dotsc, X_n$이 아래와 같은 과정을 따른다고 하자.</p>
 
@@ -129,7 +323,8 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>이것이 증명되면 마르코프 체인의 극한 분포를 찾는데, 페론-프로베니우스의 정리를 활용할 수 있다.</p>
 
-<h3 id="eigenvalue-1-exists">Eigenvalue 1 exists!</h3>
+<h3 id="eigenvalue-1-exists">
+<a class="anchor" href="#eigenvalue-1-exists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eigenvalue 1 exists!</h3>
 
 <p>1의 아이겐밸류가 존재한다. 어떻게 알 수 있을까?</p>
 
@@ -141,11 +336,13 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>앞서 페론-프로베니우스의 정리에 따라서 아이겐밸류 1에 해당하는 유일한 좌 아이겐벡터 $\pi$가 존재한다. 이 좌 아이겐벡터는 당연히 아이겐벡터의 특성을 지니고 있다. 즉, 어떤 상태 $\pi$에서 한번의 확률 과정을 거치더라도 여전히 그 상태에 머물러 있게 된다.</p>
 
-<h3 id="1-is-the-largest-eigenvalue">1 is the largest eigenvalue!</h3>
+<h3 id="1-is-the-largest-eigenvalue">
+<a class="anchor" href="#1-is-the-largest-eigenvalue" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 is the largest eigenvalue!</h3>
 
 <p>페론-프로베니우스의 정리에 따라서 아이겐밸류 1이 가장 큰 아이겐밸류라면, 이에 상응하는 아이겐벡터 $\pi$는 양이며 유일하다. $\pi$는 스케일링이 가능하기 때문에 스케일링을 거치면 $P$에 의해 표현되는 마르코프 체인 확률 과정의 무한 반복, 즉 $P^\infty$가 수렴하는 유일한 분포가 된다. 어떻게 증명할까? 생각보다 쉽다.</p>
 
-<h3 id="proof">Proof</h3>
+<h3 id="proof">
+<a class="anchor" href="#proof" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof</h3>
 
 <p>만일 1 이외의 아이겐밸류 $\hat \lambda &gt; 1$가 존재한다고 하자. 이제 어떤 열 벡터 $x$에 속하는 최대값을 $x_{\max}$라고 하자. 이때 $P x$의 결과 생산되는 열 벡터의 각 원소는 $x_i$ for $i = 1, 2, \dotsc, n$의 컨벡스 결합이다.<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup> 따라서 $Px = x^c$에 속한 어떤 원소 $x_i^c$도 $x_{\max}$ 보다 클 수 없다. 즉,</p>
 
@@ -163,7 +360,8 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>보통 마르코프 체인을 설명할 때 좌 아이겐밸류와 우 아이겐밸류를 구별하지 않는 경우가 있다. 이는 여러모로 손해다. $P$의 정의를 확인하고, 위와 같이 정의한 경우라면 1에 대응하는 좌 아이겐벡터가 극한수렴 분포가 된다. 반대로, 확률 행렬을 $P^T$로 정의했다면 우 아이겐벡터가 극한 분포다.</p>
 
-<h3 id="definition-of-limiting-distribution">Definition of limiting distribution</h3>
+<h3 id="definition-of-limiting-distribution">
+<a class="anchor" href="#definition-of-limiting-distribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definition of limiting distribution</h3>
 
 <p>확률 분포 $\pi = [\pi_0, \pi_1, \pi_2, \dotsc]$는 아래 조건을 만족할 때 마르코프 체인 $P_n$의 극한 분포라고 부른다. 만일</p>
 
@@ -187,7 +385,8 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 \pi
 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4143919999999999em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">→</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">lim</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:4.260000000000001em;vertical-align:-1.8800000000000006em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.352005em;"><span style="top:-1.9499950000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-3.0999950000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-3.1109850000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.352005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.850025em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.3800000000000003em;"><span style="top:-5.2275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.3674999999999997em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span></span></span><span style="top:-2.1674999999999995em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.8800000000000006em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.352005em;"><span style="top:-1.9499950000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-3.0999950000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-3.1109850000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.352005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.850025em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h2 id="limiting-behavior-of-markov-chain">Limiting Behavior of Markov Chain</h2>
+<h2 id="limiting-behavior-of-markov-chain">
+<a class="anchor" href="#limiting-behavior-of-markov-chain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limiting Behavior of Markov Chain</h2>
 
 <p>마르코프 체인은 어떻게 $\pi^*$로 수렴하게 될까? 확률 행렬 $P$의 아이겐밸류 $1 = \lambda_1 &gt; \lambda_2 \geq \dotsc \geq \lambda_n &gt; 0$, 각각에 대응하는 아이겐벡터를 $v_1, v_2, \dotsc, v_n$이라고 하자. 아이겐벡터가 각각 선형독립이라고 가정하자. 이때 아이겐벡터로 구성된 행렬 $Q$는 가역이다. $\pi^T_t  = Q y_t$ 로 나타낼 수 있다. 즉 $Q$의 선형결합을 통해 $n$ 차원의 임의의 벡터를 표현할 수 있다. $\pi$가 열 벡터이기 떄문에 이를 행 벡터로 바꿨다는 점에 유의하자.<sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup> 한편,</p>
 
@@ -201,7 +400,8 @@ y_{t+1} &amp; = D y_t
 <p>두 가지를 상기하자.</p>
 
 <ol>
-  <li>행렬 $A$와 전치 행렬 $A^T$는 동일한 아이겐밸류를 지니게 된다.<sup id="fnref:1"><a href="#fn:1" class="footnote">3</a></sup></li>
+  <li>행렬 $A$와 전치 행렬 $A^T$는 동일한 아이겐밸류를 지니게 된다.<sup id="fnref:1"><a href="#fn:1" class="footnote">3</a></sup>
+</li>
   <li>D는 아이겐밸류로 구성된 대각행렬이다. 편의상 크기 순서대로 나열되어 있다고 하자.</li>
 </ol>
 
@@ -234,11 +434,13 @@ y_{t+1} &amp; = D y_t
 
 <p>이제 $t \to \infty$를 적용해보자. $\lambda_i &lt; \lambda_1 = 1$ for $i = 2, 3, \dotsc, n$이므로, $\pi_{\infty}^T = c_1 v_1$가 된다. $v_1$이 표준화된 확률 분포 벡터이므로 $c_1 =1$이어야 한다.</p>
 
-<h2 id="appendix-irreducibility-and-aperiodicity">Appendix: Irreducibility and Aperiodicity</h2>
+<h2 id="appendix-irreducibility-and-aperiodicity">
+<a class="anchor" href="#appendix-irreducibility-and-aperiodicity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Appendix: Irreducibility and Aperiodicity</h2>
 
 <p>마르코프 체인이 수렴하는 분포를 갖게 될 조건으로 보통 두 가지 조건, 기약성(irreducibility) 그리고 비주기성(aperiodicity)이 제시된다. 먼저 간단히 둘의 내용을 살펴보자.</p>
 
-<h3 id="irreducible-matrix">Irreducible matrix</h3>
+<h3 id="irreducible-matrix">
+<a class="anchor" href="#irreducible-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Irreducible matrix</h3>
 
 <p>기약성의 정의는 아래와 같다.</p>
 
@@ -248,21 +450,24 @@ y_{t+1} &amp; = D y_t
 
 <p>이 정의의 의미는 무엇일까? 일정한 상태를 거치면 $x \to y$ 그리고 $y \to x$로 옮기는 것이 확률적으로 가능하다는 뜻이다. 기약성이란 모든 상태가 교류할 수 있는 상태를 뜻한다. 다시 말하면 어떤 상태에 들어가서 여기서 빠져나올 수 없는 경우가 발생한 가능성이 없을 때 기약성이 성립한다.</p>
 
-<h4 id="irreducible">Irreducible</h4>
+<h4 id="irreducible">
+<a class="anchor" href="#irreducible" aria-hidden="true"><span class="octicon octicon-link"></span></a>Irreducible</h4>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.9</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.4</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.4</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.8</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 0.9&amp; 0.1&amp; 0.0 \\0.4&amp; 0.4&amp; 0.2\\ 0.1&amp; 0.1&amp; 0.8 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">9</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">4</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">4</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h4 id="reducible">Reducible</h4>
+<h4 id="reducible">
+<a class="anchor" href="#reducible" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reducible</h4>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.8</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.2</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0.8</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 1.0&amp; 0.0&amp; 0.0 \\0.1&amp; 0.8&amp; 0.1\\ 0.0&amp; 0.2&amp; 0.8 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">.</span><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">8</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h3 id="aperiodic-matrix">Aperiodic matrix</h3>
+<h3 id="aperiodic-matrix">
+<a class="anchor" href="#aperiodic-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aperiodic matrix</h3>
 
 <p>대충 말하면 마르코프 체인 위의 이동이 예측 가능한 형태로 이루어질 수 있으면 안된다. 먼저 예를 보도록 하자.</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix} 0&amp; 1&amp; 0 \\0&amp; 0&amp; 1\\ 1&amp; 0&amp; 0 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6010299999999997em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0510099999999998em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-2.8099900000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.05101em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span>
 
-<p align="center"><kbd> <img src="https://python.quantecon.org/_static/lecture_specific/finite_markov/mc_aperiodicity1.png" width="400" /> </kbd></p>
+<p align="center"><kbd> <img src="https://python.quantecon.org/_static/lecture_specific/finite_markov/mc_aperiodicity1.png" width="400"> </kbd></p>
 
 <p>각 상태가 일정한 간격으로 존재하게 된다. 즉,</p>
 
@@ -278,7 +483,8 @@ y_{t+1} &amp; = D y_t
 
 <p>이때 $k &gt; 1$이면 주기 행렬이고 $k=1$이면 비주기 행렬이다. $k=1$의 의미는 무엇일까? $t$ 기에 상태 $s$에 있을 때, $t+1$ 기에 역시 $s$에 있을 확률이 양이라는 뜻이다. 그리고 확률 행렬을 구성하는 모든 상태에 주기성이 없을 때, 이러한 확률 행렬을 비주기 행렬이라고 한다.</p>
 
-<h3 id="regular-matrix-vs-irreducible-and-aperiodic-matrix">Regular matrix vs irreducible and aperiodic matrix</h3>
+<h3 id="regular-matrix-vs-irreducible-and-aperiodic-matrix">
+<a class="anchor" href="#regular-matrix-vs-irreducible-and-aperiodic-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regular matrix vs irreducible and aperiodic matrix</h3>
 
 <p>페론-프로베니우스 정리에 따르면 정칙 행렬일 때 극한 분포가 존재하게 된다. 정칙 행렬과 기약 행렬, 비주기 행렬 사이의 수학적 관계는 어떨까? 결론부터 말하면, 둘은 동치다. 증명은 간단하다.</p>
 
@@ -287,7 +493,8 @@ y_{t+1} &amp; = D y_t
   <li>B: 기약 행렬이면서 비주기 행렬</li>
 </ul>
 
-<h4 id="a--b">A → B</h4>
+<h4 id="a--b">
+<a class="anchor" href="#a--b" aria-hidden="true"><span class="octicon octicon-link"></span></a>A → B</h4>
 
 <p><strong>Irreducible</strong></p>
 
@@ -301,11 +508,13 @@ y_{t+1} &amp; = D y_t
 
 <p>${k ,k+1, k+2, \dotsc}$의 gcd는 1이다.</p>
 
-<h4 id="a--b-1">A ← B</h4>
+<h4 id="a--b-1">
+<a class="anchor" href="#a--b-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>A ← B</h4>
 
 <p>기약 행렬이면 언제나 정칙 행렬이다.</p>
 
-<h3 id="comments">Comments</h3>
+<h3 id="comments">
+<a class="anchor" href="#comments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comments</h3>
 
 <p><strong>Irreducible and aperiodic</strong></p>
 
@@ -347,23 +556,62 @@ P^n &amp; =
 <p>따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk4ODUyMzAsLTIxMTczOTM1MjAsLT
-I2NjIwMDIyMCw3NDExOTk4ODQsLTE2MDI5NjQyOCwzNTk0MzIx
-ODQsMTAwNzM4NjYyNl19
+eyJoaXN0b3J5IjpbMjEyMTU5OTY3XX0=
 -->
 <div class="footnotes">
   <ol>
     <li id="fn:2">
-      <p>$p_{i1} x^c_1 + p_{i2} x^c_2 + \dotsb + p_{in} x^c_n$ with $p_{i1} + p_{i2} + \dotsc + p_{in} =1$ for $i = 1, 2, \dotsc, n$ <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>$p_{i1} x^c_1 + p_{i2} x^c_2 + \dotsb + p_{in} x^c_n$ with $p_{i1} + p_{i2} + \dotsc + p_{in} =1$ for $i = 1, 2, \dotsc, n$ <a href="#fnref:2" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:3">
-      <p>사실 기존의 $\pi$가 좌 아이겐벡터였다면 여기서는 이를 우 아이겐벡터로 바꾼 것이다. 물론, 확률 행렬 역시 $P^T$가 되어야 한다. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>사실 기존의 $\pi$가 좌 아이겐벡터였다면 여기서는 이를 우 아이겐벡터로 바꾼 것이다. 물론, 확률 행렬 역시 $P^T$가 되어야 한다. <a href="#fnref:3" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:1">
-      <p>$\det(A^T−\lambda I) = \det((A−\lambda I)^T)=\det(A−\lambda I)$ <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>$\det(A^T−\lambda I) = \det((A−\lambda I)^T)=\det(A−\lambda I)$ <a href="#fnref:1" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:4">
-      <p>확률 행렬의 원소가 0, 1로만 되어 있지 않아도 주기 행렬이 될 수 있다는 사실에 유의하자. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+      <p>확률 행렬의 원소가 0, 1로만 되어 있지 않아도 주기 행렬이 될 수 있다는 사실에 유의하자. <a href="#fnref:4" class="reversefootnote">↩</a></p>
     </li>
   </ol>
 </div>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/2019/12/11/Peron-Frobenus-1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
