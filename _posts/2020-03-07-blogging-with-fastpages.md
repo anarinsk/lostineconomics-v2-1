@@ -19,9 +19,7 @@ categories: [coding-tool, web-tool]
 
 Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.[^1] 
 
-미리 말하면 `fastpages`는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다. 
-
-[^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라.  
+[^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라. 미리 말하면 `fastpages`는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.  
 
 이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다. 
 
@@ -31,13 +29,13 @@ Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지�
 
 3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 트레이드오프랄까... [^2]
 
-[^2]: 그래서 내가 이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 것이다. 
+[^2]: 이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 이유다. 이에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하라. 
 
 이 글에서 소개할 `fastpages`는 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다. 
 
 ### Before we go
 
-- 이하의 글에서 [your-id]라고 표기된 부분은 각자의 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 복붙하지 마시라는 말씀. 
+- 이하의 글에서 [your-x-id]라고 표기된 부분은 x라는 서비스의 각자 계정명 등의 정보를 바꿔서 설정해야 하는 부분이다. 그냥 복붙하지 마시라는 말씀. 
 - [repo root]는 해당 리퍼지토리의 최상위 디렉토리를 나타낸다. 
 
 ## fastpages by fast.ai 
@@ -120,7 +118,13 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 </script>
 ```
 
-- `[repo root]/_include`의 `head.html`의 적당한 줄에 ` {%- include google_analytics.html -%} `를 넣어준다. 
+- `[repo root]/_include`의 `head.html`의 적당한 줄에 아래 코드를 넣어준다. 
+
+```
+
+{%- include google_analytics.html -%}
+
+```
 
 - google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
 
@@ -143,13 +147,15 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 ---
 ```
 
+`---`으로 감싼 후 안에 정보를 넣으면 된다. 
+
 ### fastpage의 몇가지 장점 
 
-* 보통 github 기반의 블로그를 만들면, `[your-id].github.io`만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 `anarinsk.github.io/lostineconomics-v2-1`다. 
+* 보통 github 기반의 블로그를 만들면, `[your-git-id].github.io`만을 주소로 가지게 된다. fastpages를 쓰면 repo 수준의 홈페이지를 운영할 수 있다. 예를 들어, 이 블로그의 주소는 `anarinsk.github.io/lostineconomics-v2-1`다. 
 * 강력한 장점은 `ipynb` 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. `[repo root]/_notebooks`에 파일을 넣어주면 된다.  
 * 디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다. 
 * 매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다. 
-	* [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_posts/` 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. 
+	* [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_posts/` 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. stackedit의 활용에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하면 좋겠다. 
 	* fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	* 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.
 
