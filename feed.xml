@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T06:42:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Using Git ‘Smoothly’ in Windows 10</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html" rel="alternate" type="text/html" title="Using Git ‘Smoothly’ in Windows 10" /><published>2020-03-05T00:00:00-06:00</published><updated>2020-03-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T07:14:34-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Using Git ‘Smoothly’ in Windows 10</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html" rel="alternate" type="text/html" title="Using Git ‘Smoothly’ in Windows 10" /><published>2020-03-05T00:00:00-06:00</published><updated>2020-03-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
 
 &lt;p&gt;단언컨대 git은 곧 문과생도 알아야 할 필수 도구가 될 것이다. 버전 관리가 절실해지는 그리고 코딩이 학제를 넘어선 필수처럼 인정되는, 그런 세상에서 컴퓨터를 끼고 있으면서 git의 사용을 피하기는 힘들 듯 싶다. git에 관한 포스트는 아니니 여기까지 하자.&lt;/p&gt;
 
@@ -2275,9 +2275,7 @@ eyJoaXN0b3J5IjpbNzgxMDE2NTddfQ==
       &lt;p&gt;&lt;a href=&quot;https://shankarmsy.github.io/posts/pca-vs-lr.html&quot;&gt;여기&lt;/a&gt;에서 가져왔다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Five (Deadly!) Questions on Regression and PCA</summary></entry><entry><title type="html">Pagerank</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank.html" rel="alternate" type="text/html" title="Pagerank" /><published>2019-12-24T00:00:00-06:00</published><updated>2019-12-24T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank.html">&lt;h1 id=&quot;pagerank-as-markov-chain&quot;&gt;PageRank as Markov Chain&lt;/h1&gt;
-
-&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Five (Deadly!) Questions on Regression and PCA</summary></entry><entry><title type="html">PageRank as Markov Chain</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank.html" rel="alternate" type="text/html" title="PageRank as Markov Chain" /><published>2019-12-24T00:00:00-06:00</published><updated>2019-12-24T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/markov-chain/2019/12/24/PageRank.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;페이지와 브린이 창안한 페이지랭크 알고리듬은 수학적으로 보면 마르코프 체인의 극한 분포다.&lt;/li&gt;
@@ -2414,8 +2412,7 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
 &lt;a href=&quot;https://www.stat.cmu.edu/~ryantibs/datamining/lectures/03-pr.pdf&quot;&gt;https://www.stat.cmu.edu/~ryantibs/datamining/lectures/03-pr.pdf&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDYwMzI2NCwtODY4NTkxMTIyLC0yMT
-I5ODM3MDgxXX0=
+eyJoaXN0b3J5IjpbLTIxMjYyMjI3NThdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -2423,7 +2420,7 @@ I5ODM3MDgxXX0=
       &lt;p&gt;&lt;a href=&quot;https://anarinsk.github.io/lie-pf1/&quot;&gt;https://anarinsk.github.io/lie-pf1/&lt;/a&gt;을 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">PageRank as Markov Chain</summary></entry><entry><title type="html">Peron Frobenius 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" rel="alternate" type="text/html" title="Peron Frobenius 2" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html">&lt;h1 id=&quot;perron-frobenius-theorem-part-2&quot;&gt;Perron-Frobenius Theorem, part 2&lt;/h1&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">Peron Frobenius 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html" rel="alternate" type="text/html" title="Peron Frobenius 2" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/20/Peron-Frobenius-2.html">&lt;h1 id=&quot;perron-frobenius-theorem-part-2&quot;&gt;Perron-Frobenius Theorem, part 2&lt;/h1&gt;
 
 &lt;h2 id=&quot;input-out-model&quot;&gt;Input-out Model&lt;/h2&gt;
 
