@@ -1,6 +1,8 @@
 ---
 toc: true
+layout: post
 comments: true
+title: Four Fundamental Spaces of Linear Algebra
 description:  선형대수의 four horse men 
 categories: [math, matrix-theory]
 
@@ -309,6 +311,5 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE4NTQzODQsMTA5MjA3MzEwOSwxND
-Q3OTYzOTcxLC0xOTU0NzQyMjg5LC0xMzkxMTM3MjA1XX0=
+eyJoaXN0b3J5IjpbLTE4MDQxMTc1MDJdfQ==
 -->
