@@ -23,7 +23,7 @@ categories: [math, matrix-theory]
 ## LU Decomposition
 
 - $A \in {\mathbb R}^{n \times n}$
-기본적으로는 [가우스-조르단 소거법](https://anarinsk.github.io/lie-gauss_jordan/)을 떠올리면 좋다. 가우스 소거법이란게 뭔가? 우리가 중고등학교 때 배웠던 연립방정식의 해를 얻는 과정이다. LU 방법은 가우스-조르단 소거법은 2단계로 분리한 형태라고 이해하면 된다. 
+기본적으로는 [가우스-조르단 소거법](https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/01/07/Gauss-Jordan.html)을 떠올리면 좋다. 가우스 소거법이란게 뭔가? 우리가 중고등학교 때 배웠던 연립방정식의 해를 얻는 과정이다. LU 방법은 가우스-조르단 소거법은 2단계로 분리한 형태라고 이해하면 된다. 
 
 ### Row operation
 
@@ -320,5 +320,5 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjY2ODcyOV19
+eyJoaXN0b3J5IjpbMTA3NjQwMDcyNSwxNzE2NjY4NzI5XX0=
 -->
