@@ -85,6 +85,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 	- utterances 앱을 깔면, github의 issue 기능을 활용해 코멘트를 관리할 수 있다. 
 	- [인스톨 페이지](ttps://github.com/apps/utterances)의 안내대로 하면 된다. 
 	- 별도로 뭘 까는 것은 아니고 github 계정의 해당 repo를 설정하면 끝. 
+	- 다만 코멘트를 달기 위해서는 github 계정이 필요하다. 
 
 - favicon 
 	- `[repo root]/images`의 favicon.ico를 고치면 된다. 
