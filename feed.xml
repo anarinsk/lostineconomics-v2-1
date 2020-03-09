@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T23:04:37-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T23:09:12-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 └── Procfile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;requirementstxt&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;requirementstxt&quot;&gt;requirements.txt&lt;/h4&gt;
 
 &lt;p&gt;설치해야 하는 Python 패키지를 지정해준다. 아래의 예와 같다.&lt;/p&gt;
 
@@ -91,7 +91,7 @@
 
 &lt;p&gt;이 파일을 자동으로 생성하는 &lt;a href=&quot;https://github.com/bndr/pipreqs&quot;&gt;pipreqs&lt;/a&gt;를 이용해도 된다.&lt;/p&gt;
 
-&lt;h4 id=&quot;setupsh&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;setup.sh&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;setupsh&quot;&gt;setup.sh&lt;/h4&gt;
 
 &lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;~/.streamlit/&lt;/span&gt;
 
@@ -110,14 +110,14 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 
 &lt;p&gt;sh 명령을 실행할 내용을 담고 있다.&lt;/p&gt;
 
-&lt;h4 id=&quot;procfile&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Procfile&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;procfile&quot;&gt;Procfile&lt;/h4&gt;
 
 &lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sh setup.sh &amp;amp;&amp;amp; streamlit run app.py&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;sh 명령을 실행하고 streamlit를 띄우는 명령어를 담고 있다.&lt;/p&gt;
 
-&lt;h4 id=&quot;runtimetxt&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;runtime.txt&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;runtimetxt&quot;&gt;runtime.txt&lt;/h4&gt;
 
 &lt;p&gt;특정 Python 버전이 필요하다면 이 파일을 추가할 수 있다. 파일 안에 담긴 내용은 아래와 같다.&lt;/p&gt;
 
@@ -166,7 +166,7 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 &lt;p&gt;&lt;a href=&quot;https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/&quot;&gt;https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyNDg1ODldfQ==
+eyJoaXN0b3J5IjpbMjQzNzc2NTEsLTEyNjIyNDg1ODldfQ==
 --&gt;</content><author><name></name></author><summary type="html">들어가며</summary></entry><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
 
 &lt;ul&gt;
