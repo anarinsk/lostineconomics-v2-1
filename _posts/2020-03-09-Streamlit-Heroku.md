@@ -84,7 +84,7 @@ project
 └── Procfile
 ```
 
-#### `requirements.txt` 
+#### requirements.txt
 
 설치해야 하는 Python 패키지를 지정해준다. 아래의 예와 같다. 
 
@@ -99,7 +99,7 @@ project
 
 이 파일을 자동으로 생성하는 [pipreqs](https://github.com/bndr/pipreqs)를 이용해도 된다. 
 
-#### `setup.sh` 
+#### setup.sh
 
 ```properties 
 mkdir -p ~/.streamlit/
@@ -119,7 +119,7 @@ port = $PORT\n\
 
 sh 명령을 실행할 내용을 담고 있다. 
 
-#### `Procfile`
+####  Procfile
 
 ```properties 
 web: sh setup.sh && streamlit run app.py
@@ -127,7 +127,7 @@ web: sh setup.sh && streamlit run app.py
 
 sh 명령을 실행하고 streamlit를 띄우는 명령어를 담고 있다. 
 
-#### `runtime.txt`
+#### runtime.txt
 
 특정 Python 버전이 필요하다면 이 파일을 추가할 수 있다. 파일 안에 담긴 내용은 아래와 같다. 
 
@@ -182,5 +182,5 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyNDg1ODldfQ==
+eyJoaXN0b3J5IjpbMjQzNzc2NTEsLTEyNjIyNDg1ODldfQ==
 -->
