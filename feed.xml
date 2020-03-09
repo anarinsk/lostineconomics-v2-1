@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-08T23:09:58-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-09T03:42:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -357,12 +357,13 @@ eyJoaXN0b3J5IjpbMTA1Mjc2NTEwMiwtMTI2MjI0ODU4OV19
 &lt;p&gt;여기서 아무 것도 바꾸지 말고 &lt;code class=&quot;highlighter-rouge&quot;&gt;Submit new issue&lt;/code&gt;를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzY1MzEwNywtMTQwNDQxMjc0Myw4NT
-Q4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5
-LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00Mz
-U5MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0
-NTg2LC0xNDgyNzU5OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMi
-wxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1MjIwMDczN119
+eyJoaXN0b3J5IjpbLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsOD
+U0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4
+OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtND
+M1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2
+NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MT
+IsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
+
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
