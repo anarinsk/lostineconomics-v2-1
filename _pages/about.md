@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-# About 
+# About Me
 
 허준석 Junsok Huhh | Ph.D. in Economics.<br/> 
 Currently works as a data scientist (somewhere in South Korea).
@@ -21,6 +21,9 @@ Hi, I'm Junsok Huhh. If you are interested in me, check my c.v. and contact. The
 ## c.v. 
 [long](https://anarinsk.github.io/cv/long.html) | [short](https://anarinsk.github.io/cv/short.html)
 
-# Page history 
+# History of lostineconomics.com 
 - [v1](https://anarinsk.github.io/) built with markdown on github 
 - [v0](https://lostineconomics.netlify.com/) built with Jekyll on github 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU5NTc5MzI5XX0=
+-->
