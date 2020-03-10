@@ -314,11 +314,11 @@ AA^+ =  (U \boldsymbol{\Sigma} V^T) ( V \boldsymbol{\Sigma}^+ U^T) = U U^T = I_m
 $$
 
 
-## Reference 
+## Sources 
 
 [https://darkpgmr.tistory.com/106](https://darkpgmr.tistory.com/106)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTUzODg1Ml19
+eyJoaXN0b3J5IjpbLTc0OTc3MjU5MSwxNjIxNTM4ODUyXX0=
 -->
