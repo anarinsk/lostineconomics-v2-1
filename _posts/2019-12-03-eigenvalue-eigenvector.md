@@ -153,7 +153,7 @@ $$
 
 직교행렬의 경우 $\boldsymbol{Q}^{-1} = \boldsymbol{Q}^T$가 성립한다.[^2] 이때
 
-[^2]: 직교행렬의 경우 $\boldsymbol{Q}^T \boldsymbol{Q} = \boldsymbol{Q} \boldsymbol{Q}^T = I$가 성립한다. 따라서 $\boldsymbol{Q}^{-1} = \boldsymbol{Q}^T$
+[^2]: 직교행렬의 경우 $\boldsymbol{Q}^T \boldsymbol{Q} = \boldsymbol{Q} \boldsymbol{Q}^T = {\boldsymbol I}$가 성립한다. 따라서 $\boldsymbol{Q}^{-1} = \boldsymbol{Q}^T$
 
 $$
 \boldsymbol{A} \boldsymbol{Q} = [A v_1, A v_2] = [\lambda_1 v_1, \lambda_2 v_2] = [v_1, v_2] 
@@ -223,6 +223,6 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4NDczOTczLDU1Mzk2MTYwMiwtMjExMT
+eyJoaXN0b3J5IjpbLTMzMzM4NTk0LDU1Mzk2MTYwMiwtMjExMT
 k5Mjk5Nl19
 -->
