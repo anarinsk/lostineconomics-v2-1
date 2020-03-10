@@ -95,7 +95,7 @@ $$
 ## Eigendecomposition 
 
 - $A \in {\mathbb R}^{n \times n}$
-- 자세한 내용은 [여기](https://anarinsk.github.io/lie-eigen/)를 참고하면 된다. 
+- 자세한 내용은 [여기](https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/03/eigenvalue-eigenvector.html)를 참고하면 된다. 
 - 행렬 $A$가 가역일 경우 $A = Q \boldsymbol{\lambda}Q^{-1}$로 분해할 수 있다. 
 - 만일 $A$가 가역이고 대칭행렬이라면, $Q^T Q = I$ 이므로 $Q^{-1} = Q^T$가 된다. 따라서 $A = Q \boldsymbol{\lambda}Q^{T}$
 
@@ -320,5 +320,5 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjQwMDcyNSwxNzE2NjY4NzI5XX0=
+eyJoaXN0b3J5IjpbMTYyMTUzODg1Ml19
 -->
