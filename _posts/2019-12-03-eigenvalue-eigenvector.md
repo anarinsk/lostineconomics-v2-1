@@ -60,7 +60,7 @@ $$
 
 3번의 경우 정의대로 하나의 아이겐밸류 $\lambda$에 대해서 두 개 이상의 아이겐벡터가 대응될 때에 해당한다.[^3] 아이겐벡터를 원소로 하는 공간은  벡터 부분 공간이 되며, 이를 아이겐스페이스(eigenspace)라고 부른다. 
 
-[^3]: 얼핏 생각하면 이런 경우가 있나 싶을 수 있다. 가장 좋은 사례는 항등 행렬, ${\mathbf I}_n$이다. 이 항등행렬의 경우 아이겐밸류는 1이고, 대응 가능한 어떤 벡터도 아이겐벡터가 된다. 
+[^3]: 얼핏 생각하면 이런 경우가 있나 싶을 수 있다. 가장 좋은 사례는 항등 행렬, ${\boldsymbol I}_n$이다. 이 항등행렬의 경우 아이겐밸류는 1이고, 대응 가능한 어떤 벡터도 아이겐벡터가 된다. 
 
 ## Determinant and Eigenvalues
 
@@ -73,7 +73,7 @@ $$
 즉, 임의의아이겐밸류, 아이겐벡터 정의에서 $\boldsymbol 0$ 벡터가 아닌 매트릭스 $x$를 $\boldsymbol 0$ 벡터로 만들기 위해서는 위의 행렬식 값이 0이어야 한다. 행렬식이 $\lambda$의 $n$ 차 방정식이고, $n$차 방정식의 근이 각각 아이겐밸류가 된다. 즉, 
 
 $$
-|(\boldsymbol{A} - \lambda I)|  = (\lambda_1 - \lambda) =  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda) 
+|(\boldsymbol{A} - \lambda {\boldsymbol I})|  = (\lambda_1 - \lambda) =  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda) 
 $$
 
 위의 식에서 두가지 사실을 알 수 있다. 
@@ -86,7 +86,7 @@ $$
 원래 행렬의 행렬식과 전치행렬의 행렬식은 같다. 이를 아이겐밸류 계산에 응용해보자. 
 
 $$
-|\boldsymbol{A}^T - \lambda I| = |(\boldsymbol{A}-\lambda I)^T| = |\boldsymbol{A}-\lambda I|
+|\boldsymbol{A}^T - \lambda {\boldsymbol I}| = |(\boldsymbol{A}-\lambda {\boldsymbol I})^T| = |\boldsymbol{A}-\lambda {\boldsymbol I}|
 $$
 
 즉, 원래 행렬 $\boldsymbol{A}$와 전치 행렬 $\boldsymbol{A}^T$는 같은 아이겐밸류를 갖는다. 
@@ -223,6 +223,6 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjA1NDc1NDAsNTUzOTYxNjAyLC0yMT
-ExOTkyOTk2XX0=
+eyJoaXN0b3J5IjpbNDM4NDczOTczLDU1Mzk2MTYwMiwtMjExMT
+k5Mjk5Nl19
 -->
