@@ -58,7 +58,9 @@ $$
 2. $A(\alpha x) = \alpha(A x) = \alpha (\lambda x) = \lambda(\alpha x)$
 3. $A(x_1 + x_2) = A x_1 + A x_2 = \lambda x_1 + \lambda x_2 = \lambda(x_1 + x_2)$
 
-3번의 경우 정의대로 하나의 아이겐밸류 $\lambda$에 대해서 두 개의 아이겐벡터가 존재할 때에 해당한다. 아이겐벡터를 원소로 하는 공간은  벡터 부분 공간이 되며, 이를 아이겐스페이스(eigenspace)라고 부른다. 
+3번의 경우 정의대로 하나의 아이겐밸류 $\lambda$에 대해서 두 개 이상의 아이겐벡터가 대응될 때에 해당한다.[^3] 아이겐벡터를 원소로 하는 공간은  벡터 부분 공간이 되며, 이를 아이겐스페이스(eigenspace)라고 부른다. 
+
+[^3]: 
 
 ## Determinant and Eigenvalues
 
@@ -221,5 +223,5 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTE5OTI5OTZdfQ==
+eyJoaXN0b3J5IjpbMTc5MjA3MjE3NiwtMjExMTk5Mjk5Nl19
 -->
