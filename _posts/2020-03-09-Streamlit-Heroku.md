@@ -30,7 +30,7 @@ R에는 이미 Shiny라는 비슷한 프로젝트가 있다. R의 기능을 활�
 
 ### Workflow 
 
-여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 `hello`를 띄울 수 있다. 만일 가상 환경을 만들었다면 
+여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 `hello`를 띄울 수 있다. 
 
 ```properties
 pip install streamlit 
@@ -182,5 +182,6 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1Mjc2NTEwMiwtMTI2MjI0ODU4OV19
+eyJoaXN0b3J5IjpbMTEyNDg3MTcxMCwxMDUyNzY1MTAyLC0xMj
+YyMjQ4NTg5XX0=
 -->
