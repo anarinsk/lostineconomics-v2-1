@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T18:48:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T18:52:41-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -865,7 +865,7 @@ LU x &amp;amp; = Pb
 
 &lt;ul&gt;
   &lt;li&gt;$A \in {\mathbb R}^{n \times n}$&lt;/li&gt;
-  &lt;li&gt;자세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lie-eigen/&quot;&gt;여기&lt;/a&gt;를 참고하면 된다.&lt;/li&gt;
+  &lt;li&gt;자세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/03/eigenvalue-eigenvector.html&quot;&gt;여기&lt;/a&gt;를 참고하면 된다.&lt;/li&gt;
   &lt;li&gt;행렬 $A$가 가역일 경우 $A = Q \boldsymbol{\lambda}Q^{-1}$로 분해할 수 있다.&lt;/li&gt;
   &lt;li&gt;만일 $A$가 가역이고 대칭행렬이라면, $Q^T Q = I$ 이므로 $Q^{-1} = Q^T$가 된다. 따라서 $A = Q \boldsymbol{\lambda}Q^{T}$&lt;/li&gt;
 &lt;/ul&gt;
@@ -1179,7 +1179,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;p&gt;&lt;a href=&quot;https://darkpgmr.tistory.com/106&quot;&gt;https://darkpgmr.tistory.com/106&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjQwMDcyNSwxNzE2NjY4NzI5XX0=
+eyJoaXN0b3J5IjpbMTYyMTUzODg1Ml19
 --&gt;</content><author><name></name></author><summary type="html">Summary in advance</summary></entry><entry><title type="html">Gauss-Jordan Elimination Algorithm</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/01/07/Gauss-Jordan.html" rel="alternate" type="text/html" title="Gauss-Jordan Elimination Algorithm" /><published>2020-01-07T00:00:00-06:00</published><updated>2020-01-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/01/07/Gauss-Jordan</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/01/07/Gauss-Jordan.html">&lt;h2 id=&quot;how-to-solve-linear-system&quot;&gt;How to solve linear system&lt;/h2&gt;
 
 &lt;ul&gt;
