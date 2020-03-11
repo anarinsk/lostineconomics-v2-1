@@ -158,7 +158,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 	- - fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	- 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.
 
-![]({{ site.baseurl }}/images/fastpages/fig_6.png){: style="textalign:center; " width="250"}
+![]({{ site.baseurl }}/images/fastpages/fig_6.png){: style="textalign:center; " width="700"}
 
 ## Update는 어떻게 하지? 
 
@@ -181,11 +181,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDczOTM0MSwxMzU5MjA4MjEzLDE1ND
-E5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNzEwMjE3OTEsLTEyODE1
-NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcyNzgwMC
-wxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0
-NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MT
-k0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwt
-NjE5OTkxNzE0XX0=
+eyJoaXN0b3J5IjpbODA5ODM4MTcsLTY1MDczOTM0MSwxMzU5Mj
+A4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNzEwMjE3
+OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0NDAsLT
+czMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3
+NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC
+0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4
+Mjc1OTk3MF19
 -->
