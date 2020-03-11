@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T19:54:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T21:23:37-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -189,7 +189,7 @@ YyMjQ4NTg5XX0=
 
 &lt;p&gt;3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 일종의 트레이드오프랄까… &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;이 글에서 소개할 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 깃헙의 기본 웹툴인 Jekyll을 기반으로 1,2를 구현해주는 이상적인 서비스다. 게다가 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다.&lt;/p&gt;
+&lt;p&gt;이 글에서 소개할 fastpages는 깃헙의 기본 웹툴인 Jekyll을 기반으로 1,2를 구현해주는 이상적인 서비스다. 게다가 &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다.&lt;/p&gt;
 
 &lt;h3 id=&quot;before-we-go&quot;&gt;Before we go&lt;/h3&gt;
 
@@ -383,13 +383,13 @@ YyMjQ4NTg5XX0=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5ODM4MTcsLTY1MDczOTM0MSwxMzU5Mj
-A4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNzEwMjE3
-OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0NDAsLT
-czMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3
-NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC
-0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4
-Mjc1OTk3MF19
+eyJoaXN0b3J5IjpbLTE1Njk5NzcwOTUsODA5ODM4MTcsLTY1MD
+czOTM0MSwxMzU5MjA4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUz
+MjEsLTEwNzEwMjE3OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3ND
+MsODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIx
+NDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5Ni
+wtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4
+MDc2NDU4Nl19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
