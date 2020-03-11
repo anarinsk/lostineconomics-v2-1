@@ -29,7 +29,7 @@ categories: [coding-tool, web-tool]
 
 [^2]: 이 블로그의 v1을 html로 만든 이유이기도 하다. v1은 html까지 완성한 후 이를 깃헙이 호스팅하도록 하는 원시적인 방법을 썼다. 이에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하라. 
 
-이 글에서 소개할 fastpages는 깃헙의 기본 웹툴인 Jekyll을 기반으로 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다. 
+이 글에서 소개할 fastpages는 깃헙의 기본 웹툴인 Jekyll을 기반으로 1,2를 구현해주는 이상적인 서비스다. 게다가 fastpages는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다. 
 
 ### Before we go
 
@@ -181,11 +181,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njk5NzcwOTUsODA5ODM4MTcsLTY1MD
-czOTM0MSwxMzU5MjA4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUz
-MjEsLTEwNzEwMjE3OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3ND
-MsODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIx
-NDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5Ni
-wtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4
-MDc2NDU4Nl19
+eyJoaXN0b3J5IjpbLTI1MTE2MzQ0Nyw4MDk4MzgxNywtNjUwNz
+M5MzQxLDEzNTkyMDgyMTMsMTU0MTk1MDAzMywtMTY0OTk4NTMy
+MSwtMTA3MTAyMTc5MSwtMTI4MTU1NzM2MSwtMTQwNDQxMjc0My
+w4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0
+MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC
+00MzU5MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgw
+NzY0NTg2XX0=
 -->
