@@ -25,9 +25,9 @@ categories: [coding-tool, web-tool]
 2. html을 되도록 쓰지 않고, md 형태로 작성한 후 바로 반영이 되어야 한다. 
 3.  무료로 제한 없이 호스팅이 가능해야 한다. 
 
-3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 트레이드오프랄까... [^2]
+3은 깃헙으로 가볍게 해결된다. 1, 2는 사실 좀 어려운 부분이었다. 깃헙을 블로그 툴로 쓰기 위한 일종의 트레이드오프랄까... [^2]
 
-[^2]: 이 블로그의 v1을 html을 완성한 후 이를 깃헙에게 호스팅 시키는 원시적인 방법을 썼던 이유다. 이에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하라. 
+[^2]: 이 블로그의 v1을 html로 만든 이유이기도 하다. v1은 html까지 완성한 후 이를 깃헙이 호스팅하도록 하는 원시적인 방법을 썼다. 이에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하라. 
 
 이 글에서 소개할 `fastpages`는 깃헙의 기본 웹툴인 Jekyll을 기반으로 1,2를 구현해주는 이상적인 서비스다. 게다가 `fastpages`는 ipynb 형태의 노트북, word 파일도 알아서 블로그 페이지로 바꿔준다. 문송한 나로서는 참으로 반가운 서비스다. 
 
@@ -170,11 +170,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMTE2MjM2MywtMTI4MTU1NzM2MSwtMT
-QwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYx
-NzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMD
-ExNTUyNzk2LC00MzU5MjYyNDAsLTE5NDI5MTgxOTQsMTY3Nzcz
-NDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5OTcwLC02MTk5OTE3MT
-QsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1
-MjIwMDczN119
+eyJoaXN0b3J5IjpbLTEwNzEwMjE3OTEsLTEyODE1NTczNjEsLT
+E0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2
+MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMj
+AxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3
+MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNz
+E0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEy
+NTIyMDA3MzddfQ==
 -->
