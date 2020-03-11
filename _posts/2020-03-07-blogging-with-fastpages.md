@@ -153,9 +153,13 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 - 강력한 장점은 `ipynb` 확장자의 노트북 파일을 그대로 포스팅으로 바꿔준다는 것이다. `[repo root]/_notebooks`에 파일을 넣어주면 된다.  
 - 디자인은 포기하라. css나 html을 잘 안다면 커스터마이즈할 여지가 있지만, 그럴 수 있는 사람이라면 Hugo나 Jekyll을 직접 쓰는 편이 나을 수도 있겠다. 
 - 매번 markdown을 에디터에 올려쓰는 것이 불편하다면 웹 에디터를 활용할 수 있다. 
-	- [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_posts/` 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. stackedit의 활용에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하면 좋겠다. 
-	- fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
+	- [stackedit](https://stackedit.io/app#)의 경우 github 저장을 지원하기 때문에 해당 repo의 `_posts/` 아래의 md 문서를 동기화해두면 웹에서 수정 후 동기화하는 것만으로도 포스트의 수정을 쉽게 할 수 있다. stackedit의 활용에 관해서는 [이 포스팅](https://anarinsk.github.io/lie-build_lie/)을 참고하면 좋겠다.  사실 웹에서 이렇게 수준 높은 마크다운 에디터를 제공한다는 사실이 고맙고 놀랍다. (그래서 나는 이 회사에 매년 기부한다!)
+	- - fastpages의 경우 commit이 발생하면 자동으로 블로그의 빌드에 들어간다. 
 	- 따라서 웹 에디터에서 글을 수정한 후 적절한 주소를 지정해주고 동기화를 하면, 즉 커밋을 하면 바뀐 내용을 반영해 블로그가 다시 빌드 된다.
+
+![]({{ site.baseurl }}/images/fastpages/fig_6.png){: style="textalign:center; " width="250"}
+
+	
 
 
 ## Update는 어떻게 하지? 
@@ -170,11 +174,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk5ODUzMjEsLTEwNzEwMjE3OTEsLT
-EyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcy
-NzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLT
-IzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQy
-OTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OT
-k3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwt
-NDUyNTk5NjYwXX0=
+eyJoaXN0b3J5IjpbMTU0MTk1MDAzMywtMTY0OTk4NTMyMSwtMT
+A3MTAyMTc5MSwtMTI4MTU1NzM2MSwtMTQwNDQxMjc0Myw4NTQ4
+ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LD
+E0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5
+MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0NT
+g2LC0xNDgyNzU5OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMiwx
+NDQ1MDgwMjk0XX0=
 -->
