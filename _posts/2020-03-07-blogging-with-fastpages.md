@@ -159,9 +159,6 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 ![]({{ site.baseurl }}/images/fastpages/fig_6.png){: style="textalign:center; " width="250"}
 
-	
-
-
 ## Update는 어떻게 하지? 
 
 블로그 자체의 Jekyll 기반 코드들도 업데이트될텐데, 이건 어쩌나 생각하셨다면 걱정할 필요가 없다. 깃헙에서 제공하는 PR 기능을 활용해서 내 리포지토리까지 거의 자동으로 업데이트해준다. 다만 커스터마이즈를 많이 했다면 지원이 안될 수도 있다는 점에 유념하시라. 
@@ -169,16 +166,22 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 ![]({{ site.baseurl }}/images/fastpages/fig_5.png){: style="textalign:center; " width="700"}&nbsp; 
 
-여기서 아무 것도 바꾸지 말고 `Submit new issue`를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다. 
+여기서 아무 것도 바꾸지 말고 `Submit new issue`를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다. 처음 페이지를 깔 때처럼 PR을 해주는 형태로 진행된다. 
+
+### 바뀌는 파일들 
+
+아직까지는 사소한 업데이트만 진행되는 듯 싶다. `/_post`의 콘텐트나 `/images` 안의 파일은 바뀌지 않는다. 현재까지 바뀌는 것으로 확인된 내용들은 아래와 같다.
+
+- 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTk1MDAzMywtMTY0OTk4NTMyMSwtMT
-A3MTAyMTc5MSwtMTI4MTU1NzM2MSwtMTQwNDQxMjc0Myw4NTQ4
-ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LD
-E0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5
-MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgwNzY0NT
-g2LC0xNDgyNzU5OTcwLC02MTk5OTE3MTQsMjA1ODI0NjcxMiwx
-NDQ1MDgwMjk0XX0=
+eyJoaXN0b3J5IjpbMTY4MDM1MzgzNCwxNTQxOTUwMDMzLC0xNj
+Q5OTg1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0
+NDEyNzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NS
+w2NDIyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1
+NTI3OTYsLTQzNTkyNjI0MCwtMTk0MjkxODE5NCwxNjc3NzM0MD
+c1LC04ODA3NjQ1ODYsLTE0ODI3NTk5NzAsLTYxOTk5MTcxNCwy
+MDU4MjQ2NzEyXX0=
 -->
