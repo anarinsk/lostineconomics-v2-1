@@ -15,9 +15,7 @@ categories: [coding-tool, web-tool]
 
 ## Blogging with Github 
 
-깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 그렇게 하고 있다. 블로그를 운영하기 위해서는 Hugo, Jekyll의 도구를 사용하면 전문적인 블로그 운영도 가능하다. 이 툴들의 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다. 
-
-Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.[^1] 
+깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 이미 그렇게 하고 있다. Hugo, Jekyll의 도구를 잘 사용하면 상용 수준의 블로그 운영도 가능하다. 물론 이 도구들을 쓸 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다. Hugo의 경우 R의 [BlogDown](https://bookdown.org/yihui/blogdown/) 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 있다.[^1] 
 
 [^1]: 자세한 내용은 [여기](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)을 참고하라. 미리 말하면 `fastpages`는 이런 로컬의 작업을 깃헙 서버에게 대신 시키고 완성된 html은 바로 깃헙 페이지(깃헙의 무료 웹호스팅 서비스)로 보여주는 방식으로 돌아간다. 참으로 은혜로운 서비스다.  
 
@@ -172,11 +170,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsOD
-U0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4
-OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtND
-M1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2
-NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MT
-IsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
-
+eyJoaXN0b3J5IjpbLTczMTE2MjM2MywtMTI4MTU1NzM2MSwtMT
+QwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYx
+NzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMD
+ExNTUyNzk2LC00MzU5MjYyNDAsLTE5NDI5MTgxOTQsMTY3Nzcz
+NDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5OTcwLC02MTk5OTE3MT
+QsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1
+MjIwMDczN119
 -->
