@@ -124,7 +124,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 ![]({{ site.baseurl }}/images/fastpages/code_1.png){: style="textalign:center; " width="250"}
 
-- google analytics의 실시간 항목에서 작동 여부를 확인할 수 있다. 
+- google analytics의 '실시간' 항목에서 작동 여부를 확인할 수 있다. 
 
 ## 활용 
 
@@ -170,11 +170,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzEwMjE3OTEsLTEyODE1NTczNjEsLT
-E0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2
-MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMj
-AxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3
-MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNz
-E0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEy
-NTIyMDA3MzddfQ==
+eyJoaXN0b3J5IjpbLTE2NDk5ODUzMjEsLTEwNzEwMjE3OTEsLT
+EyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcy
+NzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLT
+IzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQy
+OTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2NDU4NiwtMTQ4Mjc1OT
+k3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MTIsMTQ0NTA4MDI5NCwt
+NDUyNTk5NjYwXX0=
 -->
