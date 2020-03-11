@@ -172,12 +172,15 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 아직까지는 사소한 업데이트만 진행되는 듯 싶다. `/_post`의 콘텐트나 `/images` 안의 파일은 바뀌지 않는다. 현재까지 바뀌는 것으로 확인된 내용들은 아래와 같다.
 
-- 
+- `/_pages`
+	- `about.md` 위치  
+- `/_includes`
+	- `head.html` 위치 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MDM1MzgzNCwxNTQxOTUwMDMzLC0xNj
+eyJoaXN0b3J5IjpbMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNj
 Q5OTg1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0
 NDEyNzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NS
 w2NDIyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1
