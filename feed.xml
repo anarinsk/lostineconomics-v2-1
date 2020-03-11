@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T19:01:15-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-10T19:15:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -177,9 +177,7 @@ YyMjQ4NTg5XX0=
 
 &lt;h2 id=&quot;blogging-with-github&quot;&gt;Blogging with Github&lt;/h2&gt;
 
-&lt;p&gt;깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 그렇게 하고 있다. 블로그를 운영하기 위해서는 Hugo, Jekyll의 도구를 사용하면 전문적인 블로그 운영도 가능하다. 이 툴들의 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다.&lt;/p&gt;
-
-&lt;p&gt;Hugo의 경우 R의 &lt;a href=&quot;https://bookdown.org/yihui/blogdown/&quot;&gt;BlogDown&lt;/a&gt; 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 꽤 많다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;깃헙을 통해 static web 기반의 블로그 / 홈페이지를 운영할 수 있다. 많은 분들이 이미 그렇게 하고 있다. Hugo, Jekyll의 도구를 잘 사용하면 상용 수준의 블로그 운영도 가능하다. 물론 이 도구들을 쓸 경우 관리를 위해서는 약간의 번거로움을 감수해야 한다. Hugo의 경우 R의 &lt;a href=&quot;https://bookdown.org/yihui/blogdown/&quot;&gt;BlogDown&lt;/a&gt; 패키지를 활용할 수 있다. Jekyll의 경우 Ruby 기반으로 제작되어서 블로그 관리를 위해서는 local에서 해줘야 하는 작업이 있다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;이상적인 형태의 블로그 툴이란 무엇일까? 내 생각은 이렇다.&lt;/p&gt;
 
@@ -358,13 +356,13 @@ YyMjQ4NTg5XX0=
 &lt;p&gt;여기서 아무 것도 바꾸지 말고 &lt;code class=&quot;highlighter-rouge&quot;&gt;Submit new issue&lt;/code&gt;를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsOD
-U0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4
-OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtND
-M1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3MzQwNzUsLTg4MDc2
-NDU4NiwtMTQ4Mjc1OTk3MCwtNjE5OTkxNzE0LDIwNTgyNDY3MT
-IsMTQ0NTA4MDI5NCwtNDUyNTk5NjYwLDEyNTIyMDA3MzddfQ==
-
+eyJoaXN0b3J5IjpbLTczMTE2MjM2MywtMTI4MTU1NzM2MSwtMT
+QwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYx
+NzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMD
+ExNTUyNzk2LC00MzU5MjYyNDAsLTE5NDI5MTgxOTQsMTY3Nzcz
+NDA3NSwtODgwNzY0NTg2LC0xNDgyNzU5OTcwLC02MTk5OTE3MT
+QsMjA1ODI0NjcxMiwxNDQ1MDgwMjk0LC00NTI1OTk2NjAsMTI1
+MjIwMDczN119
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
