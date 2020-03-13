@@ -87,7 +87,7 @@ $$
 
 이렇게 보면 행렬 $A$는 특정한 방식으로(선형의 방식으로) $x$를 차원이 다른 벡터 $b$로 변환한다.[^2] 이때 $A$의 경우 
 
-[^2]: 함수로서의 행렬 $A$에 열 벡터 $x$
+[^2]: 함수로서의 행렬 $A$에 열 벡터 $x$를 투입했다고 하자. 산출은 행 벡터일까? 열 벡터일까? 열 벡터다. (1 \times 1) 벡터가 나올 수는 있지만 열 벡터가 나온다. 이런 관점에서 이해하면 행렬 $A$의 우측에 열 벡터가 투입되면 열 벡터가 나오고, 좌측에 행 벡터가 투입되면 행 벡터가 나온다. 
 
 $$
 A = 
@@ -312,7 +312,7 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDMwNzg0NywxMjE0MjE5NTE0LDE2Nj
-k3NTY2NTYsMTE2MjMwMTY5MCwtNzEyNTA5NTM4LDQ5OTcxNDEy
-MywtMTgwNDExNzUwMl19
+eyJoaXN0b3J5IjpbNzQ1MjU3OTczLDEyMTQyMTk1MTQsMTY2OT
+c1NjY1NiwxMTYyMzAxNjkwLC03MTI1MDk1MzgsNDk5NzE0MTIz
+LC0xODA0MTE3NTAyXX0=
 -->
