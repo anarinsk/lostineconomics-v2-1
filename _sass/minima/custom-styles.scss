@@ -6,10 +6,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab)
 
+$base-font-family: "Nanum Gothic", san-serif !default;
+
 // Add your styles below
 // make non-headings slightly lighter
-.post-content p, .post-content li {
-   font-family: "Nanum Gothic", san-serif;
+.post-content p, .post-content li {   
    font-size: 16px;
    color: #515151;
 }
