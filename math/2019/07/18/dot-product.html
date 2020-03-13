@@ -167,7 +167,7 @@ window.onload = wrap_img;
   <li>닷 프로덕트 혹은 내적을 기하적으로 이해하면 여러모로 편리하고 기억에도 잘 남는다.</li>
 </ul>
 
-<h2 id="정의">정의</h2>
+<h2 id="definition">Definition</h2>
 
 <p>dot product는 내적이라고도 번역하지만 여기서는 닷 프로덕트로 쓰기로 하겠다. 먼저 정의부터 살펴보자.</p>
 
@@ -194,7 +194,7 @@ window.onload = wrap_img;
 
 <p>닷 프로덕트는 어떻게 도출하는가? 그 기하학적인 구조는 무엇인가?</p>
 
-<h2 id="코사인-법칙-활용하기">코사인 법칙 활용하기</h2>
+<h2 id="with-law-of-cosine">With ‘Law of Cosine’</h2>
 
 <p>우선 정석부터 가보자.  코사인 법칙을 활용해서 닷 프로덕트를 도출할 수 있다. <sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup></p>
 
@@ -220,7 +220,7 @@ window.onload = wrap_img;
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">u</mi><mo>⋅</mo><mi mathvariant="bold">v</mi><mo>=</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">u</mi><mo stretchy="false">∥</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">v</mi><mo stretchy="false">∥</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">v</mi><mo stretchy="false">∥</mo><mo stretchy="false">(</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">u</mi><mo stretchy="false">∥</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">v</mi><mo stretchy="false">∥</mo><mo stretchy="false">∥</mo><msub><mtext>Proj</mtext><mi mathvariant="bold">v</mi></msub><mi mathvariant="bold">u</mi><mo stretchy="false">∥</mo></mrow><annotation encoding="application/x-tex">\mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord mathbf">u</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">∥</span><span class="mord mathbf">u</span><span class="mclose">∥</span><span class="mopen">∥</span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mclose">∥</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">∥</span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mclose">∥</span><span class="mopen">(</span><span class="mopen">∥</span><span class="mord mathbf">u</span><span class="mclose">∥</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">∥</span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mclose">∥</span><span class="mclose">∥</span><span class="mord"><span class="mord text"><span class="mord">Proj</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.066968em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathbf mtight" style="margin-right:0.01597em;">v</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mord mathbf">u</span><span class="mopen">∥</span></span></span></span></span>
 
-<h2 id="기하적-이해">기하적 이해</h2>
+<h2 id="geometrically">Geometrically</h2>
 
 <p>기하적으로 도출하는 흥미로운 방법도 있다.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup> 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.</p>
 
@@ -250,9 +250,9 @@ window.onload = wrap_img;
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">u</mi><mo>⋅</mo><mi mathvariant="bold">v</mi><mo>=</mo><mo stretchy="false">∥</mo><mi mathvariant="bold">u</mi><mo stretchy="false">∥</mo><mo stretchy="false">∥</mo><msub><mtext>Proj</mtext><mi mathvariant="bold">u</mi></msub><mi mathvariant="bold">v</mi><mo stretchy="false">∥</mo></mrow><annotation encoding="application/x-tex">\mathbf u \cdot \mathbf v = \rVert \mathbf u \lVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord mathbf">u</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.44444em;vertical-align:0em;"></span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mclose">∥</span><span class="mord mathbf">u</span><span class="mopen">∥</span><span class="mclose">∥</span><span class="mord"><span class="mord text"><span class="mord">Proj</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.066968em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathbf mtight">u</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mord mathbf" style="margin-right:0.01597em;">v</span><span class="mopen">∥</span></span></span></span></span>
 
-<h2 id="응용">응용</h2>
+<h2 id="applications">Applications</h2>
 
-<h3 id="cosine-유사도">Cosine 유사도</h3>
+<h3 id="cosine-similarity">Cosine similarity</h3>
 
 <p>두 개의 벡터가 얼마나 유사한지를 나타내는 지표로 코사인 유사도라는 게 있다. 위에서 보듯이 두 개의 벡터($\mathbf v, \mathbf u$)가 이루는 각 $\theta$의 코사인 값은 다음과 같다.</p>
 
@@ -260,9 +260,9 @@ window.onload = wrap_img;
 
 <p>두 벡터가 가까울수록 코사인 값이 1에 가깝게 될 것이고, 멀수록 -1에 가깝게 될 것이다.</p>
 
-<h3 id="초평면hyperplane">초평면(hyperplane)</h3>
+<h3 id="hyperplane">Hyperplane</h3>
 
-<p>닷 프로덕트를 이해하고 있으면 기하학 문제를 쉽게 풀 수 있는 게 많다. 가장 좋은 예가 초평면이다. 예를 들어 3차원 공간에서 점 $\mathbf{x}^0 = (x_1^0, x_2^0, x_3^0)$를 지나면서 벡터 $\mathbf{p} = (p_1, p_2, p_3)$에 수직인 평면을 찾고 있다고 하자. 복잡해보이지만 닷 프로덕트를 활용하면 쉽게 풀린다. 즉,</p>
+<p>닷 프로덕트를 이해하고 있으면 기하학 문제를 쉽게 풀 수 있는 게 많다. 가장 좋은 예가 초평면(hyperplane)이다. 예를 들어 3차원 공간에서 점 $\mathbf{x}^0 = (x_1^0, x_2^0, x_3^0)$를 지나면서 벡터 $\mathbf{p} = (p_1, p_2, p_3)$에 수직인 평면을 찾고 있다고 하자. 복잡해보이지만 닷 프로덕트를 활용하면 쉽게 풀린다. 즉,</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">p</mi><mo>⋅</mo><mo stretchy="false">(</mo><mi mathvariant="bold">x</mi><mo>−</mo><msup><mi mathvariant="bold">x</mi><mn>0</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{p} \cdot (\mathbf{x} - \mathbf{x}^0) = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.63889em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathbf">p</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathbf">x</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">x</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span>
 
@@ -273,9 +273,9 @@ window.onload = wrap_img;
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODk3NjkwNiwtMTg2MDk2MzY1LDE1MD
-gxMzQ1NTYsMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMjg0OTE2
-NDgsLTEyMTAzMDIyOTRdfQ==
+eyJoaXN0b3J5IjpbMTYyMTgwNTY5NiwtMjA4OTc2OTA2LC0xOD
+YwOTYzNjUsMTUwODEzNDU1NiwxMDEwMzIxNTM0LDY5OTcyOTU1
+MiwtMTAyODQ5MTY0OCwtMTIxMDMwMjI5NF19
 -->
 <div class="footnotes">
   <ol>
