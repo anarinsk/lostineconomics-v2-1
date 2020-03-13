@@ -8,7 +8,6 @@ categories: [math, econometrics]
 
 ---
 
-# Understanding Regression
 
 ## tl;dr 
 
@@ -16,7 +15,7 @@ categories: [math, econometrics]
 - 회귀분석이라는 것은 PCA와 마찬가지로 차원을 '축소'하는 방법이다. $n$ 개의 관찰을 지닌 어떤 한 대상을 이보다 낮은 $k(<n)$ 개의 변수로 요약하는 것이 핵심이다. 
 - 선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과하다. 
 
-## 공간에서 바라본 회귀분석 
+## Regression in vector space 
 
 여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치기 쉬운 회귀분석의 '핵심'을 살피는 것이다. [crossvalidated](https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient)에서 아래 그림을 보는 순간 일종의 '돈오돈수'가 강림했다. (이렇게 이해하면 쉬웠을 것을...) 
 
@@ -84,6 +83,8 @@ $$
 https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-vector_comb.png?raw=true" width="450">
 </kbd></p>
 
+## R squared as Pythagorean Theorem 
+
 이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 
 
 $\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.[^yhat]
@@ -145,5 +146,6 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMjA4NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbLTY2MDA5OTkyMCw1MjIyMDg0NTAsLTIwNz
+Y4OTYzMTZdfQ==
 -->
