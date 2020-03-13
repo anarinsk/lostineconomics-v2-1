@@ -85,7 +85,9 @@ $$
 \underset{(m \times n)}{A} \underset{(n \times 1)}{x} = \underset{(m \times 1)}{b}
 $$
 
-이렇게 보면 행렬 $A$는 특정한 방식으로(선형의 방식으로) $x$를 차원이 다른 벡터 b로 변환한다. 이때 $A$의 경우 
+이렇게 보면 행렬 $A$는 특정한 방식으로(선형의 방식으로) $x$를 차원이 다른 벡터 $b$로 변환한다.[^2] 이때 $A$의 경우 
+
+[^2]: 함수로서의 행렬 $A$에 열 벡터 $x$
 
 $$
 A = 
@@ -310,7 +312,7 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDIxOTUxNCwxNjY5NzU2NjU2LDExNj
-IzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1
-MDJdfQ==
+eyJoaXN0b3J5IjpbLTMwMDMwNzg0NywxMjE0MjE5NTE0LDE2Nj
+k3NTY2NTYsMTE2MjMwMTY5MCwtNzEyNTA5NTM4LDQ5OTcxNDEy
+MywtMTgwNDExNzUwMl19
 -->
