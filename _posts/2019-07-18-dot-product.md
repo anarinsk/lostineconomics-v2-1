@@ -79,7 +79,7 @@ $$
 Thus, 
 
 $$
- \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
+ \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf u \rVert   ( \lVert \mathbf v \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
 $$
 
 ## 기하적 이해 
@@ -146,6 +146,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMj
-g0OTE2NDgsLTEyMTAzMDIyOTRdfQ==
+eyJoaXN0b3J5IjpbMTUwODEzNDU1NiwxMDEwMzIxNTM0LDY5OT
+cyOTU1MiwtMTAyODQ5MTY0OCwtMTIxMDMwMjI5NF19
 -->
