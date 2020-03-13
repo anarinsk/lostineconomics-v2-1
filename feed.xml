@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T23:48:26-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T23:57:39-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -1264,7 +1264,7 @@ A ~\vert ~ b
 &lt;p align=&quot;center&quot;&gt;&lt;kbd&gt; &lt;img src=&quot;https://github.com/anarinsk/lie-gauss_jordan/blob/master/assets/imgs/row_op.png?raw=true&quot; width=&quot;450&quot; /&gt; &lt;/kbd&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;사실 우리가 중고등학교 때 배워왔던 방정식의 해를 구하는 알고리듬 그대로다.&lt;/li&gt;
+  &lt;li&gt;사실 우리가 중고등학교 때 배워왔던 1차 방정식의 해를 구하는 알고리듬 그대로다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
@@ -1313,7 +1313,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gaussian_elimination&quot;&gt;https://en.wikipedia.org/wiki/Gaussian_elimination&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTM5NzU5MjldfQ==
+eyJoaXN0b3J5IjpbMTQ2MTYzNTI1NCwtMTU1Mzk3NTkyOV19
 --&gt;</content><author><name></name></author><summary type="html">How to solve linear system</summary></entry><entry><title type="html">Four Fundamental Spaces of Linear Algebra</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/31/four-space-LA.html" rel="alternate" type="text/html" title="Four Fundamental Spaces of Linear Algebra" /><published>2019-12-31T00:00:00-06:00</published><updated>2019-12-31T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/31/four-space-LA</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2019/12/31/four-space-LA.html">&lt;h2 id=&quot;tales-of-two-lines&quot;&gt;Tales of Two Lines&lt;/h2&gt;
 
 &lt;p align=&quot;center&quot;&gt;&lt;kbd&gt;
