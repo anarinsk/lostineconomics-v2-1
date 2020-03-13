@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:36:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:38:56-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -168,7 +168,7 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 &lt;!--stackedit_data:
 eyJoaXN0b3J5IjpbMTEyNDg3MTcxMCwxMDUyNzY1MTAyLC0xMj
 YyMjQ4NTg5XX0=
---&gt;</content><author><name></name></author><summary type="html">들어가며</summary></entry><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tl-dr&quot;&gt;tl; dr&lt;/h2&gt;
+--&gt;</content><author><name></name></author><summary type="html">들어가며</summary></entry><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자.&lt;/li&gt;
@@ -365,13 +365,13 @@ YyMjQ4NTg5XX0=
 &lt;p&gt;아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한 이후 커밋 메시지에 “upgrade fastpages”라고 적혀 있는 부분을 확인해서 커스터마이즈한 부분을 적당히 바꾸면 된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages/about.md&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;|includes/custom_head.html&lt;/code&gt; 와 같이 커스터마이즈해둔 파일들도 바뀌게 되는 경우가 종종 있으므로 항상 백업본을 어딘가 로컬에 유지해두는 편이 좋겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTA2NjQ0LDczODUwMTI0NywtMzYyMj
-A1NzU3LDQ5MjkyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02
-NTA3MzkzNDEsMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OT
-g1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEy
-NzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2ND
-IyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3
-OTZdfQ==
+eyJoaXN0b3J5IjpbMzMxMDgzODUyLDExMzEwNjY0NCw3Mzg1MD
+EyNDcsLTM2MjIwNTc1Nyw0OTI5MjI2MjUsLTI1MTE2MzQ0Nyw4
+MDk4MzgxNywtNjUwNzM5MzQxLDEzNTkyMDgyMTMsMTU0MTk1MD
+AzMywtMTY0OTk4NTMyMSwtMTA3MTAyMTc5MSwtMTI4MTU1NzM2
+MSwtMTQwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OT
+M2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2
+XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -382,7 +382,7 @@ OTZdfQ==
       &lt;p&gt;이 블로그의 v1을 html로 만든 이유이기도 하다. v1은 html까지 완성한 후 이를 깃헙이 호스팅하도록 하는 원시적인 방법을 썼다. 이에 관해서는 &lt;a href=&quot;https://anarinsk.github.io/lie-build_lie/&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">tl; dr</summary></entry><entry><title type="html">Using Git ‘Smoothly’ in Windows 10</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html" rel="alternate" type="text/html" title="Using Git ‘Smoothly’ in Windows 10" /><published>2020-03-05T00:00:00-06:00</published><updated>2020-03-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">Using Git ‘Smoothly’ in Windows 10</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html" rel="alternate" type="text/html" title="Using Git ‘Smoothly’ in Windows 10" /><published>2020-03-05T00:00:00-06:00</published><updated>2020-03-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/git/2020/03/05/using-git-w10.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
 
 &lt;p&gt;단언컨대 git은 곧 문과생도 알아야 할 필수 도구가 될 것이다. 버전 관리가 절실해지는 그리고 코딩이 학제를 넘어선 필수처럼 인정되는, 그런 세상에서 컴퓨터를 끼고 있으면서 git의 사용을 피하기는 힘들 듯 싶다. git에 관한 포스트는 아니니 여기까지 하자.&lt;/p&gt;
 
