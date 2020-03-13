@@ -13,8 +13,7 @@ categories: [math]
 
 ## tl;dr 
 
-- 닷 프로덕트 혹은 내적을 기하적으로 이해하면 여러모로 편리하다. 
-- 얼핏보면 닷 프로덕트의 형태가 이해가 안가지만 기하학적으로 이해하면 조금 쉽게 이해할 수 있다. 
+- 닷 프로덕트 혹은 내적을 기하적으로 이해하면 여러모로 편리하고 기억에도 잘 남는다. 
 
 ## 정의  
 
@@ -148,5 +147,5 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTE3NzMwM119
+eyJoaXN0b3J5IjpbLTEyMTAzMDIyOTQsMTQzOTE3NzMwM119
 -->
