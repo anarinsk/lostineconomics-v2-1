@@ -88,6 +88,7 @@ https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-ve
 이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 
 
 $\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.[^yhat]
+
 [^yhat]: 왜 그런지 잠시 따져보자. 앞서 보았듯이 regressor의 평면은 $\alpha_1 x_1 + \dotsb + \alpha_k x_k$ 와 같은 형태의 선형 결합을 통해 달성된다. 즉, $\alpha_i$를 어떻게 잡는지에 따라서 $k$ 차원까지 이 식을 통해서 생성할 수 있다. 그런데 $\overline{\mathbf Y}$는 1차원 즉, 모든 원소가 $\overline{y}$, 즉 $y$의 평균이다. 따라서 이를 만족하는 $\alpha_i$(for $i = 1, \dotsc, k$)를 ${\rm col}~{\mathbf X}$에서 반드시 찾을 수 있다. 
 
 어쨌든 이 코사인 값의 의미는 무엇일까? 
@@ -146,6 +147,6 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5Mjk1MDc2OSw1MjIyMDg0NTAsLTIwNz
-Y4OTYzMTZdfQ==
+eyJoaXN0b3J5IjpbMzg0NDE2NTE1LDE4OTI5NTA3NjksNTIyMj
+A4NDUwLC0yMDc2ODk2MzE2XX0=
 -->
