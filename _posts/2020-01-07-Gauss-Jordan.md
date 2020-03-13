@@ -8,7 +8,7 @@ categories: [math, matrix-theory]
 
 ---
 
-## How to solve linear system 
+## How to Solve Linear System 
 
 - 1차 연립방정식을 풀기 위한 일종의 알고리듬이다. 
 - 흔히 아는 연립방정식의 형태를 행렬식으로 표시해보자. 
@@ -108,5 +108,6 @@ $X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.
 [https://en.wikipedia.org/wiki/Gaussian_elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MTYzNTI1NCwtMTU1Mzk3NTkyOV19
+eyJoaXN0b3J5IjpbLTg4NTA4NTk5NCwxNDYxNjM1MjU0LC0xNT
+UzOTc1OTI5XX0=
 -->
