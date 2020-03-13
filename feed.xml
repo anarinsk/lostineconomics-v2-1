@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-13T00:22:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-13T00:23:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -1405,9 +1405,9 @@ a_{mi}
 
 &lt;p&gt;다시 강조하지만 기본적으로 행렬은 함수다. $A$는 투입 벡터 $x (\in {\mathbb R}^{n})$를 산출 벡터 $b(\in {\mathbb R}^{m})$로 바꾸는 역할을 한다. $A^T$는 투입벡터 $x’ \in {\mathbb R}^m$을 산출벡터 $b’ \in {\mathbb R}^n$으로 바꾼다. 이들 사이에 어떤 관계가 존재할까? 이를 나타내는 것이 길버트 스트랭(Gibert Strang) 선생이 말한 선형대수의 ‘큰 그림’이다. 아래 그림을 보자.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;&lt;kbd&gt;
-  &lt;img src=&quot;https://i.stack.imgur.com/dfZND.png&quot; width=&quot;450&quot; /&gt;
-&lt;/kbd&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2/blob/master/images/four-space/fundamental.png?raw=true&quot; width=&quot;450&quot; /&gt;
+&lt;/p&gt;
 
 &lt;p&gt;그림 자체로 그냥 이해가 간다. 열 공간으로 이해하는 습관이 들었다면, 그림이 뒤집혀야 하지 않나, 싶겠지만 앞서 보았던 연립방정식처럼 $A x = b$의 형태로 이해하면 좋다.&lt;/p&gt;
 
@@ -1607,7 +1607,7 @@ c_1, c_2, -2c_2
   &lt;li&gt;특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.&lt;/li&gt;
   &lt;li&gt;마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODkwNDAxNyw0OTk3MTQxMjMsLTE4MD
+eyJoaXN0b3J5IjpbLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MD
 QxMTc1MDJdfQ==
 --&gt;&lt;/li&gt;
 &lt;/ol&gt;
