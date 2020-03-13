@@ -8,8 +8,6 @@ categories: [math, econometrics, statistics]
 
 ---
 
-# Understanding Logit Regression
-
 ## tl;dr 
 - 로짓 회귀는 우리가 알던 그 '회귀'가 아니야하고는 조금 달라! 
 - 로짓 회귀는 아래와 같은 데이터 모형에 기댄반을 둔 추정법이다. 
@@ -217,5 +215,5 @@ $$
 
 이처럼 한계 효과는 미분을 통해 간단히 도출할 수 있다. 앞서 말했던 측정의 어려운 점이 무엇인지 이제 잘 볼 수 있다. $\boldsymbol{\beta}$의 추정치로 MLE를 통해 구한 $\hat \boldsymbol{\beta}$를 활용한다고 해도, 어떤 $\boldsymbol{x_i}$에서 측정하는지에 따라서 값이 달라진다. 평균(marginal effect at mean)에서 한 번만 측정할 것인지 아니면 $n$개의 모든 데이터 포인트에 대해서 계산한 뒤 이를 평균(average marginal effect)할 것인지 등의 선택이 필요하다. 보통 후자를 많이 활용하고 통계 패키지마다 해당 옵션을 제공하고 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTc3MDA3NTZdfQ==
+eyJoaXN0b3J5IjpbMTQ5OTgxOTEzMywtMTM5NzcwMDc1Nl19
 -->
