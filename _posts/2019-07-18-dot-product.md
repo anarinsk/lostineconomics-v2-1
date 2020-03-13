@@ -85,7 +85,7 @@ $$
 한편 반대로 $\mathbf u$에서 $\mathbf v$로 프로젝션하는 경우를 생각해 볼 수도 있겠다. 
 
 $$
- \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf u \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
+ \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
 $$
 
 
@@ -153,7 +153,7 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwMjg2MTI4LC0xODYwOTYzNjUsMTUwOD
-EzNDU1NiwxMDEwMzIxNTM0LDY5OTcyOTU1MiwtMTAyODQ5MTY0
-OCwtMTIxMDMwMjI5NF19
+eyJoaXN0b3J5IjpbMTg0NzU4ODg3OSwtMTg2MDk2MzY1LDE1MD
+gxMzQ1NTYsMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMjg0OTE2
+NDgsLTEyMTAzMDIyOTRdfQ==
 -->
