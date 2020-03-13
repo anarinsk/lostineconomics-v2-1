@@ -118,6 +118,7 @@ $$
   <img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/four-space/fundamental.png?raw=true" width="450">
 </p>
 
+
 그림 자체로 그냥 이해가 간다. 열 공간으로 이해하는 습관이 들었다면, 그림이 뒤집혀야 하지 않나, 싶겠지만 앞서 보았던 연립방정식처럼 $A x = b$의 형태로 이해하면 좋다.  
 
 ### Row space 
@@ -309,6 +310,7 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2OTc1NjY1NiwxMTYyMzAxNjkwLC03MT
-I1MDk1MzgsNDk5NzE0MTIzLC0xODA0MTE3NTAyXX0=
+eyJoaXN0b3J5IjpbMTMxOTU3OTI5NCwxNjY5NzU2NjU2LDExNj
+IzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1
+MDJdfQ==
 -->
