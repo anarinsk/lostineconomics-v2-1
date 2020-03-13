@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T22:55:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T23:02:03-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -276,7 +276,7 @@ I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.post-content&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.post-content&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;원래&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;값은&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;20px&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#원래값은20px&lt;/span&gt;
 	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#515151&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -365,12 +365,12 @@ I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
 &lt;p&gt;아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한 이후 커밋 메시지에 “upgrade fastpages”라고 적혀 있는 부분을 확인해서 커스터마이즈한 부분을 적당히 바꾸면 된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages/about.md&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;|includes/custom_head.html&lt;/code&gt; 와 같이 커스터마이즈해둔 파일들도 바뀌게 되는 경우가 종종 있으므로 항상 백업본을 어딘가 로컬에 유지해두는 편이 좋겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMDgzODUyLDExMzEwNjY0NCw3Mzg1MD
-EyNDcsLTM2MjIwNTc1Nyw0OTI5MjI2MjUsLTI1MTE2MzQ0Nyw4
-MDk4MzgxNywtNjUwNzM5MzQxLDEzNTkyMDgyMTMsMTU0MTk1MD
-AzMywtMTY0OTk4NTMyMSwtMTA3MTAyMTc5MSwtMTI4MTU1NzM2
-MSwtMTQwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OT
-M2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2
+eyJoaXN0b3J5IjpbMTY1Njg1NjQ0OCwzMzEwODM4NTIsMTEzMT
+A2NjQ0LDczODUwMTI0NywtMzYyMjA1NzU3LDQ5MjkyMjYyNSwt
+MjUxMTYzNDQ3LDgwOTgzODE3LC02NTA3MzkzNDEsMTM1OTIwOD
+IxMywxNTQxOTUwMDMzLC0xNjQ5OTg1MzIxLC0xMDcxMDIxNzkx
+LC0xMjgxNTU3MzYxLC0xNDA0NDEyNzQzLDg1NDg4NDQwLC03Mz
+A3Mjc4MDAsMTY5MzY3NjE3NSw2NDIyMTQxODksMTQyOTAwNzcx
 XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
