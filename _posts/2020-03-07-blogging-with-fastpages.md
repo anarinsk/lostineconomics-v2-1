@@ -168,12 +168,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 ### 바뀌는 파일들 
 
-아직까지는 사소한 업데이트만 진행되는 듯 싶다. `/_post`의 콘텐트나 `/images` 안의 파일은 바뀌지 않는다. 현재까지 바뀌는 것으로 확인된 내용들은 아래와 같다.
-
-- `/_pages`
-	- `about.md` 리셋 
-- `/_includes`
-	- `head.html` 리셋 
+아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한 
 
 때문에  `head.html` 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 `custom_head.html`을 로드하기 때 필요한 개별화 사항은 여기에 넣어두도록 하자. `about.md`는 자주 바뀌지는 않을 것이므로 한번 만들어두고 백업을 해두면 되겠다. 
 
@@ -181,11 +176,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4NTAxMjQ3LC0zNjIyMDU3NTcsNDkyOT
-IyNjI1LC0yNTExNjM0NDcsODA5ODM4MTcsLTY1MDczOTM0MSwx
-MzU5MjA4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNz
-EwMjE3OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0
-NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxND
-I5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2
-MjQwXX0=
+eyJoaXN0b3J5IjpbMzM4NzQwNTc4LDczODUwMTI0NywtMzYyMj
+A1NzU3LDQ5MjkyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02
+NTA3MzkzNDEsMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OT
+g1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEy
+NzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2ND
+IyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3
+OTZdfQ==
 -->
