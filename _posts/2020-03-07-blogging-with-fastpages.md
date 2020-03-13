@@ -168,15 +168,13 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 ### 바뀌는 파일들 
 
-아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한 
-
-때문에  `head.html` 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 `custom_head.html`을 로드하기 때 필요한 개별화 사항은 여기에 넣어두도록 하자. `about.md`는 자주 바뀌지는 않을 것이므로 한번 만들어두고 백업을 해두면 되겠다. 
+아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한 이후 커밋 메시지에 "upgrade fastpages"라고 적혀 있는 부분을 확인해서 커스터마이즈한 부분을 적당히 바꾸면 된다. `_pages/about.md`, `|includes/custom_head.html` 와 같이 커스터마이즈해둔 파일들도 바뀌게 되는 경우가 종종 있으므로 항상 백업본을 어딘가 로컬에 유지해두는 편이 좋겠다. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NzQwNTc4LDczODUwMTI0NywtMzYyMj
+eyJoaXN0b3J5IjpbMTEzMTA2NjQ0LDczODUwMTI0NywtMzYyMj
 A1NzU3LDQ5MjkyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02
 NTA3MzkzNDEsMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OT
 g1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEy
