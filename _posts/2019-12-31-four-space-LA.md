@@ -112,7 +112,7 @@ $$
 
 ## Big Picture of Linear Algebra 
 
-다시 강조하지만 기본적으로 행렬은 함수다. $A$는 투입 벡터 $x (\in {\mathbb R}^{n})$를 산출 벡터 $b(\in {\mathbb R}^{m})$로 바꾸는 역할을 한다. $A^T$는 투입벡터 $x' \in {\mathbb R}^m$을 산출벡터 $b' \in {\mathbb R}^n$으로 바꾼다. 이들 사이에 어떤 관계가 존재할까? 이를 나타내는 것이 길버트 스트랭(Gibert Strang) 선생이 말한 선형대수의 '큰 그림'이다. 아래 그림을 보자. 
+다시 강조하지만 기본적으로 행렬은 함수다. $A$는 투입 벡터 $x (\in {\mathbb R}^{n})$를 산출 벡터 $b(\in {\mathbb R}^{m})$로 바꾸는 역할을 한다. $A^T$는 투입벡터 $x' \in {\mathbb R}^m$을 산출벡터 $b' \in {\mathbb R}^n$으로 바꾼다. 이들 사이에 어떤 관계가 존재할까? 이를 나타내는 것이 길버트 스트랭(Gibert Strang) 선생이 말한 선형대수의 '큰 그림'이다. 아래 그림을 보자.  
 
 <p align="center">
   <img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/four-space/fundamental.png?raw=true" width="450">
@@ -309,6 +309,6 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjMwMTY5MCwtNzEyNTA5NTM4LDQ5OT
-cxNDEyMywtMTgwNDExNzUwMl19
+eyJoaXN0b3J5IjpbMTY2OTc1NjY1NiwxMTYyMzAxNjkwLC03MT
+I1MDk1MzgsNDk5NzE0MTIzLC0xODA0MTE3NTAyXX0=
 -->
