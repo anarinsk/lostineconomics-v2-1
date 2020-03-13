@@ -8,7 +8,7 @@ categories: [coding-tool, web-tool]
 
 ---
 
-## tl; dr 
+## tl;dr 
 
 * 깃헙에서 가장 쉽게 블로그를 빌드할 수 있는 방법을 알아보자. 
 * 디자인은 포기하시라, 마. (지금으로도 사실 훌륭하니까!)
@@ -174,11 +174,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTA2NjQ0LDczODUwMTI0NywtMzYyMj
-A1NzU3LDQ5MjkyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02
-NTA3MzkzNDEsMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OT
-g1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEy
-NzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2ND
-IyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3
-OTZdfQ==
+eyJoaXN0b3J5IjpbMzMxMDgzODUyLDExMzEwNjY0NCw3Mzg1MD
+EyNDcsLTM2MjIwNTc1Nyw0OTI5MjI2MjUsLTI1MTE2MzQ0Nyw4
+MDk4MzgxNywtNjUwNzM5MzQxLDEzNTkyMDgyMTMsMTU0MTk1MD
+AzMywtMTY0OTk4NTMyMSwtMTA3MTAyMTc5MSwtMTI4MTU1NzM2
+MSwtMTQwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OT
+M2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2
+XX0=
 -->
