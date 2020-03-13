@@ -120,10 +120,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 </script>
 ```
 
-- `[repo root]/_include`의 `head.html`의 적당한 줄에 아래 코드를 넣어준다. 
-
-![]({{ site.baseurl }}/images/fastpages/code_1.png){: style="textalign:center; " width="250"}
-
+- `[repo root]/_include`의 `custom_head.html`의 적당한 줄에 아래 코드를 넣어준다. 
 - google analytics의 '실시간' 항목에서 작동 여부를 확인할 수 있다. 
 
 ## 활용 
@@ -181,11 +178,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTE2MzQ0Nyw4MDk4MzgxNywtNjUwNz
-M5MzQxLDEzNTkyMDgyMTMsMTU0MTk1MDAzMywtMTY0OTk4NTMy
-MSwtMTA3MTAyMTc5MSwtMTI4MTU1NzM2MSwtMTQwNDQxMjc0My
-w4NTQ4ODQ0MCwtNzMwNzI3ODAwLDE2OTM2NzYxNzUsNjQyMjE0
-MTg5LDE0MjkwMDc3MSwtMjM0MzQ2NTk2LC0yMDExNTUyNzk2LC
-00MzU5MjYyNDAsLTE5NDI5MTgxOTQsMTY3NzczNDA3NSwtODgw
-NzY0NTg2XX0=
+eyJoaXN0b3J5IjpbNDkyOTIyNjI1LC0yNTExNjM0NDcsODA5OD
+M4MTcsLTY1MDczOTM0MSwxMzU5MjA4MjEzLDE1NDE5NTAwMzMs
+LTE2NDk5ODUzMjEsLTEwNzEwMjE3OTEsLTEyODE1NTczNjEsLT
+E0MDQ0MTI3NDMsODU0ODg0NDAsLTczMDcyNzgwMCwxNjkzNjc2
+MTc1LDY0MjIxNDE4OSwxNDI5MDA3NzEsLTIzNDM0NjU5NiwtMj
+AxMTU1Mjc5NiwtNDM1OTI2MjQwLC0xOTQyOTE4MTk0LDE2Nzc3
+MzQwNzVdfQ==
 -->
