@@ -33,8 +33,8 @@ R에는 이미 Shiny라는 비슷한 프로젝트가 있다. R의 기능을 활�
 여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 `hello`를 띄울 수 있다. 
 
 ```bash
-pip install streamlit 
-steamlit hello
+$ pip install streamlit 
+$ steamlit hello
 ```
 
 대략의 워크플로우는 아래와 같다. 
@@ -65,7 +65,7 @@ steamlit hello
 홈페이지에 들어가서 가입하면 된다. CLI, 즉 터미널 툴은 왜 필요할까? 터미널에서 작업을 하면 좀 더 편하다. CLI를 설치해야 제대로 Heroku를 사용할 수 있다. 아래와 같이 터미널에서 로그인을 한다. 
 
 ```bash 
-heroku login 
+$ heroku login 
 ```
 
 ### 앱 디렉토리에 깃 생성 
@@ -140,8 +140,8 @@ python-3.7.3
 이제 heroku로 나갈 앱을 만들고 보내면 끝이다. master에서 작업했다면 아래와 같이 명령어를 실행하면 된다. 
 
 ```bash 
-heroku create
-git push heroku master
+$ heroku create
+$ git push heroku master
 ```
 
 ## Protips 
@@ -182,6 +182,6 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzAwMjM0MSwxMTI0ODcxNzEwLDEwNT
-I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
+eyJoaXN0b3J5IjpbLTg4NDMyMTY4OSwtMjY3MDAyMzQxLDExMj
+Q4NzE3MTAsMTA1Mjc2NTEwMiwtMTI2MjI0ODU4OV19
 -->
