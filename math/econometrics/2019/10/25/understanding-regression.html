@@ -224,8 +224,7 @@ window.onload = wrap_img;
 
 <p>col $\mathbf X$의 최대 차원, 즉 $\mathbf X$의 랭크(위수)는 무엇일까? 회귀분석에서는 대체로 $n &gt; k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원의 크기가 $k$를 넘을 수 없다. 그리고 잘 된 회귀분석이라면 ${\rm rank}(\mathbf X) = k$를 만족한다.</p>
 
-<p>맨 앞에 제시했던 그림을 다시 보자. 아래 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 몹시 특별한 경우가 아니라면 $\mathbf Y \in {\mathbb R}^{n}$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 그렇다면 회귀분석의 필요도 애초에 없었을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다.[^se] 
-[^se]: 이를 선형 대수에서 배운 연립방정식을 푸는 문제로 이해해도 좋겠다. $A x = b(b \neq \boldsymbol{0})$라고 하자. $n$ 개의 미지수가 유일한 해를 지니고 위해서는 ${\rm rank}(A) = n$이어야 한다. 즉 서로 독립인 식이 $n$ 개 주어져야 고유의 해 $x$를 찾을 수 있다. 그런데 회귀분석은 식이 $k(&lt;n)$ 개만 주어진 상황이다.</p>
+<p>맨 앞에 제시했던 그림을 다시 보자. 아래 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 몹시 특별한 경우가 아니라면 $\mathbf Y \in {\mathbb R}^{n}$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 그렇다면 회귀분석의 필요도 애초에 없었을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다.<sup id="fnref:se"><a href="#fn:se" class="footnote">2</a></sup></p>
 
 <p>회귀분석의 목표는 regressor를 통해서, 더 정확하게는 regressor의 집합이 생성하는 공간을 통해서 regressand를 ‘가장’ 잘 설명하는 것이다. 회귀분석이란 regressand와 ‘닮은’ 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 이런 지점을 찾는 연산자(operator)가 회귀분석 계수 $\hat{\boldsymbol \beta}$이다. 즉,</p>
 
@@ -258,7 +257,7 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다.</p>
 
-<p>$\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(&lt;n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.<sup id="fnref:yhat"><a href="#fn:yhat" class="footnote">2</a></sup></p>
+<p>$\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(&lt;n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.<sup id="fnref:yhat"><a href="#fn:yhat" class="footnote">3</a></sup></p>
 
 <p>어쨌든 이 코사인 값의 의미는 무엇일까?</p>
 
@@ -280,12 +279,12 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 분석의 목표가 회귀분석을 통한 예측이라면, 즉 원래 관찰값과 예측된 값이 얼마나 떨어져 있는지 여부가 중요하다면 $\textrm R^2$는 의미를 지닐 수 있다. 반면, 분석의 목표가 회귀분석을 통한 이러한 종류의 예측이 아니라 특정한 regressor의 인과관계에 관한 추정이라면, $\textrm R^2$는 거의 무시해도 좋다.</p>
 
-<p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup></p>
+<p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2"><a href="#fn:2" class="footnote">4</a></sup></p>
 
 <h2 id="bonus-regression-vs-pca">
 <a class="anchor" href="#bonus-regression-vs-pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bonus: Regression vs PCA</h2>
 
-<p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3"><a href="#fn:3" class="footnote">4</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
+<p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3"><a href="#fn:3" class="footnote">5</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
 
 <h3 id="공통점">
 <a class="anchor" href="#%EA%B3%B5%ED%86%B5%EC%A0%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>공통점</h3>
@@ -313,13 +312,16 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0NDE2NTE1LDE4OTI5NTA3NjksNTIyMj
-A4NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbLTE1OTU2NjY0NDcsMzg0NDE2NTE1LDE4OT
+I5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2MzE2XX0=
 --></p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
       <p>흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:se">
+      <p>이를 선형 대수에서 배운 연립방정식을 푸는 문제로 이해해도 좋겠다. $A x = b(b \neq \boldsymbol{0})$라고 하자. $n$ 개의 미지수가 유일한 해를 지니고 위해서는 ${\rm rank}(A) = n$이어야 한다. 즉 서로 독립인 식이 $n$ 개 주어져야 고유의 해 $x$를 찾을 수 있다. 그런데 회귀분석은 식이 $k(&lt;n)$ 개만 주어진 상황이다. <a href="#fnref:se" class="reversefootnote">↩</a></p>
     </li>
     <li id="fn:yhat">
       <p>왜 그런지 잠시 따져보자. 앞서 보았듯이 regressor의 평면은 $\alpha_1 x_1 + \dotsb + \alpha_k x_k$ 와 같은 형태의 선형 결합을 통해 달성된다. 즉, $\alpha_i$를 어떻게 잡는지에 따라서 $k$ 차원까지 이 식을 통해서 생성할 수 있다. 그런데 $\overline{\mathbf Y}$는 1차원 즉, 모든 원소가 $\overline{y}$, 즉 $y$의 평균이다. 따라서 이를 만족하는 $\alpha_i$(for $i = 1, \dotsc, k$)를 ${\rm col}~{\mathbf X}$에서 반드시 찾을 수 있다. <a href="#fnref:yhat" class="reversefootnote">↩</a></p>
