@@ -12,7 +12,7 @@ categories: [math]
 
 - 닷 프로덕트 혹은 내적을 기하적으로 이해하면 여러모로 편리하고 기억에도 잘 남는다. 
 
-## 정의  
+## Definition  
 
 dot product는 내적이라고도 번역하지만 여기서는 닷 프로덕트로 쓰기로 하겠다. 먼저 정의부터 살펴보자. 
 
@@ -53,7 +53,7 @@ $$
 
 닷 프로덕트는 어떻게 도출하는가? 그 기하학적인 구조는 무엇인가? 
 
-## 코사인 법칙 활용하기 
+## With 'Law of Cosine' 
 
 우선 정석부터 가보자.  코사인 법칙을 활용해서 닷 프로덕트를 도출할 수 있다. [^1]
 
@@ -86,7 +86,7 @@ $$
 $$
 
 
-## 기하적 이해 
+## Geometrically 
 
 기하적으로 도출하는 흥미로운 방법도 있다.[^2] 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.  
 
@@ -123,9 +123,9 @@ $$
 \mathbf u \cdot \mathbf v = \rVert \mathbf u \lVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
 $$
 
-## 응용 
+## Applications 
 
-### Cosine 유사도 
+### Cosine similarity 
 
 두 개의 벡터가 얼마나 유사한지를 나타내는 지표로 코사인 유사도라는 게 있다. 위에서 보듯이 두 개의 벡터($\mathbf v, \mathbf u$)가 이루는 각 $\theta$의 코사인 값은 다음과 같다. 
 
@@ -135,9 +135,9 @@ $$
 
 두 벡터가 가까울수록 코사인 값이 1에 가깝게 될 것이고, 멀수록 -1에 가깝게 될 것이다. 
 
-###  초평면(hyperplane)
+###  Hyperplane
 
-닷 프로덕트를 이해하고 있으면 기하학 문제를 쉽게 풀 수 있는 게 많다. 가장 좋은 예가 초평면이다. 예를 들어 3차원 공간에서 점 $\mathbf{x}^0 = (x_1^0, x_2^0, x_3^0)$를 지나면서 벡터 $\mathbf{p} = (p_1, p_2, p_3)$에 수직인 평면을 찾고 있다고 하자. 복잡해보이지만 닷 프로덕트를 활용하면 쉽게 풀린다. 즉, 
+닷 프로덕트를 이해하고 있으면 기하학 문제를 쉽게 풀 수 있는 게 많다. 가장 좋은 예가 초평면(hyperplane)이다. 예를 들어 3차원 공간에서 점 $\mathbf{x}^0 = (x_1^0, x_2^0, x_3^0)$를 지나면서 벡터 $\mathbf{p} = (p_1, p_2, p_3)$에 수직인 평면을 찾고 있다고 하자. 복잡해보이지만 닷 프로덕트를 활용하면 쉽게 풀린다. 즉, 
 
 $$
 \mathbf{p} \cdot (\mathbf{x} - \mathbf{x}^0) = 0 
@@ -150,7 +150,7 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODk3NjkwNiwtMTg2MDk2MzY1LDE1MD
-gxMzQ1NTYsMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMjg0OTE2
-NDgsLTEyMTAzMDIyOTRdfQ==
+eyJoaXN0b3J5IjpbMTYyMTgwNTY5NiwtMjA4OTc2OTA2LC0xOD
+YwOTYzNjUsMTUwODEzNDU1NiwxMDEwMzIxNTM0LDY5OTcyOTU1
+MiwtMTAyODQ5MTY0OCwtMTIxMDMwMjI5NF19
 -->
