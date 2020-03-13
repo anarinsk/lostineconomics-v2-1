@@ -32,7 +32,7 @@ R에는 이미 Shiny라는 비슷한 프로젝트가 있다. R의 기능을 활�
 
 여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 `hello`를 띄울 수 있다. 
 
-```properties
+```bash
 pip install streamlit 
 steamlit hello
 ```
@@ -64,7 +64,7 @@ steamlit hello
 
 홈페이지에 들어가서 가입하면 된다. CLI, 즉 터미널 툴은 왜 필요할까? 터미널에서 작업을 하면 좀 더 편하다. CLI를 설치해야 제대로 Heroku를 사용할 수 있다. 아래와 같이 터미널에서 로그인을 한다. 
 
-```properties 
+```bash 
 heroku login 
 ```
 
@@ -76,7 +76,7 @@ git을 통해 heroku를 관리하는 게 편하다. git을 쓸 줄 모른다면,
 
 Heroku로 제작한 Streamlit 앱을 푸시하면 자동으로 빌드가 진행된다. 이를 위해서 제작한 앱의 최상위 디렉토리에 아래의 파일을 넣어주자. 
 
-``` 
+```bash 
 project 
 ├── app.py (제작한 앱)
 ├── requirements.txt  
@@ -101,7 +101,7 @@ project
 
 #### setup.sh
 
-```properties 
+```bash  
 mkdir -p ~/.streamlit/
 
 echo "\
@@ -121,7 +121,7 @@ sh 명령을 실행할 내용을 담고 있다.
 
 ####  Procfile
 
-```properties 
+```bash 
 web: sh setup.sh && streamlit run app.py
 ```
 
@@ -131,7 +131,7 @@ sh 명령을 실행하고 streamlit를 띄우는 명령어를 담고 있다.
 
 특정 Python 버전이 필요하다면 이 파일을 추가할 수 있다. 파일 안에 담긴 내용은 아래와 같다. 
 
-```properties 
+```bash 
 python-3.7.3
 ```
 
@@ -139,7 +139,7 @@ python-3.7.3
 
 이제 heroku로 나갈 앱을 만들고 보내면 끝이다. master에서 작업했다면 아래와 같이 명령어를 실행하면 된다. 
 
-```properties
+```bash 
 heroku create
 git push heroku master
 ```
@@ -152,7 +152,7 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 왜 Heroku에서는 이것이 안될까? 간단하다. Heroku는 외부의 웹서버이고 그 웹 서버에 한글 폰트가 없는 것이다. 웹 서버에 한글 폰트를 심어주면 될 것이다. 하지만 어떻게 심을까? 간단하다. 작업 중인 앱의 루트 디렉토리에 다음과 같은 시스템 디렉토리를 하나 생성한다. 
 
-```properties
+```bash 
 /.fonts 
 ```
 
@@ -182,6 +182,6 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDg3MTcxMCwxMDUyNzY1MTAyLC0xMj
-YyMjQ4NTg5XX0=
+eyJoaXN0b3J5IjpbLTI2NzAwMjM0MSwxMTI0ODcxNzEwLDEwNT
+I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
 -->
