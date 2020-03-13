@@ -99,7 +99,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 	
 ```css
 .post-content  p, .post-content  li {
-    font-size: 15px; #원래값은20px
+    font-size: 15px; //원래값은20px
 	color: #515151;
 	}
 ```
@@ -174,7 +174,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Njg1NjQ0OCwzMzEwODM4NTIsMTEzMT
+eyJoaXN0b3J5IjpbMTA0MTgyMTkzMSwzMzEwODM4NTIsMTEzMT
 A2NjQ0LDczODUwMTI0NywtMzYyMjA1NzU3LDQ5MjkyMjYyNSwt
 MjUxMTYzNDQ3LDgwOTgzODE3LC02NTA3MzkzNDEsMTM1OTIwOD
 IxMywxNTQxOTUwMDMzLC0xNjQ5OTg1MzIxLC0xMDcxMDIxNzkx
