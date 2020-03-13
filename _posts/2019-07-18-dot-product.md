@@ -38,7 +38,7 @@ $$
   <img src="https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/perpendicularprojection.jpg?raw=true" width="400">
 </kbd></p>
 
-$\mathbf{u}$ 벡터를 $\mathbf v$ 벡터 위에 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf v}{\mathbf u}$)의 길이와 $\mathbf v$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다.[^3] 즉, 
+$\mathbf{u}$ 벡터를 $\mathbf v$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf v}{\mathbf u}$)의 길이와 $\mathbf v$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다.[^3] 즉, 
 
 $$
 {\mathbf v} \cdot {\mathbf u} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert
@@ -147,5 +147,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTAzMDIyOTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMjg0OTE2NDgsLTEyMTAzMDIyOTRdfQ
+==
 -->
