@@ -38,10 +38,10 @@ $$
   <img src="https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/perpendicularprojection.jpg?raw=true" width="400">
 </kbd></p>
 
-$\mathbf{u}$ 벡터를 $\mathbf v$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf v}{\mathbf u}$)의 길이와 $\mathbf v$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다.[^3] 즉, 
+$\mathbf{v}$ 벡터를 $\mathbf u$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf u}{\mathbf v}$)의 길이와 $\mathbf u$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다.[^3] 즉, 
 
 $$
-{\mathbf v} \cdot {\mathbf u} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert
+{\mathbf v} \cdot {\mathbf u} = \Vert \mathbf u \Vert \Vert {\rm Proj}_{\mathbf u} {\mathbf v} \Vert
 $$
 
 [^3]: 조금만 생각해보시라! 
@@ -83,7 +83,7 @@ $$
 
 ## 기하적 이해 
 
-기하적으로 도출하는 흥미로운 방법도 있다.[^2] 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.  주의할 것은 여기서는 위의 예에서 $\mathbf v$가 여기서는 $\mathbf u$이다. 
+기하적으로 도출하는 흥미로운 방법도 있다.[^2] 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.  
 
 [^2]: 보다 상세한 내용은 [여기]((https://www.youtube.com/watch?v=LyGKycYT2v0&t=610s))를 참고하라. 
 
@@ -118,8 +118,6 @@ $$
 \mathbf u \cdot \mathbf v = \rVert \mathbf u \lVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
 $$
 
-정의를 바꿔 약간 헷갈릴 수 있겠지만, 취지를 이해하는 데에는 큰 문제가 없을 것이다. 
-
 ## 응용 
 
 ### Cosine 유사도 
@@ -147,6 +145,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjg0OTE2NDgsLTEyMTAzMDIyOTRdfQ
-==
+eyJoaXN0b3J5IjpbNjk5NzI5NTUyLC0xMDI4NDkxNjQ4LC0xMj
+EwMzAyMjk0XX0=
 -->
