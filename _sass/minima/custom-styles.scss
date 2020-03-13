@@ -4,11 +4,12 @@
 
 // font loading 
 @import url(https://fonts.googleapis.com/css?family=Nanum+Gothic);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 // Add your styles below
 // make non-headings slightly lighter
-.post-content p, .post-content li {      
+.post-content p, .post-content li {   
+   font-family: "Nanum Gothic", normal;
    font-size: 16px;
    color: #515151;
 }
