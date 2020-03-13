@@ -8,8 +8,6 @@ categories: [math, matrix-theory]
 
 ---
 
-# Eigenvalues and Eigenvectors
-
 ## tl;dr 
 
 - 행렬 대각화를 이루는 방법 중 하나는 아이겐벡터와 아이겐밸류를 재구성하는 것이다. 
@@ -223,6 +221,6 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzM4NTk0LDU1Mzk2MTYwMiwtMjExMT
-k5Mjk5Nl19
+eyJoaXN0b3J5IjpbNzU2MDY2NzUwLC0zMzMzODU5NCw1NTM5Nj
+E2MDIsLTIxMTE5OTI5OTZdfQ==
 -->
