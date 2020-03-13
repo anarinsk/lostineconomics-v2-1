@@ -65,7 +65,7 @@ $ steamlit hello
 홈페이지에 들어가서 가입하면 된다. CLI, 즉 터미널 툴은 왜 필요할까? 터미널에서 작업을 하면 좀 더 편하다. CLI를 설치해야 제대로 Heroku를 사용할 수 있다. 아래와 같이 터미널에서 로그인을 한다. 
 
 ```bash 
-heroku login 
+$ heroku login 
 ```
 
 ### 앱 디렉토리에 깃 생성 
@@ -140,8 +140,8 @@ python-3.7.3
 이제 heroku로 나갈 앱을 만들고 보내면 끝이다. master에서 작업했다면 아래와 같이 명령어를 실행하면 된다. 
 
 ```bash 
-heroku create
-git push heroku master
+$ heroku create
+$ git push heroku master
 ```
 
 ## Protips 
@@ -182,6 +182,6 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Mjg0NDUxLC0yNjcwMDIzNDEsMTEyND
-g3MTcxMCwxMDUyNzY1MTAyLC0xMjYyMjQ4NTg5XX0=
+eyJoaXN0b3J5IjpbLTg4NDMyMTY4OSwtMjY3MDAyMzQxLDExMj
+Q4NzE3MTAsMTA1Mjc2NTEwMiwtMTI2MjI0ODU4OV19
 -->
