@@ -59,6 +59,7 @@ $$
 ## 코사인 법칙 활용하기 
 
 우선 정석부터 가보자.  코사인 법칙을 활용해서 닷 프로덕트를 도출할 수 있다. [^1]
+
 [^1]: [여기](https://math.stackexchange.com/questions/116133/how-to-understand-dot-product-is-the-angles-cosine)를 참고 했다. 
 
 우선 코사인의 법칙부터 살펴보자. 
@@ -145,6 +146,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5NzI5NTUyLC0xMDI4NDkxNjQ4LC0xMj
-EwMzAyMjk0XX0=
+eyJoaXN0b3J5IjpbMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMj
+g0OTE2NDgsLTEyMTAzMDIyOTRdfQ==
 -->
