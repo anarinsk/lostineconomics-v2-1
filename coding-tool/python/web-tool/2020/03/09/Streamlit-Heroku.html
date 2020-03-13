@@ -193,8 +193,8 @@ window.onload = wrap_img;
 
 <p>여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 <code class="highlighter-rouge">hello</code>를 띄울 수 있다.</p>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">pip</span> <span class="err">install</span> <span class="err">streamlit</span> 
-<span class="err">steamlit</span> <span class="err">hello</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>streamlit 
+steamlit hello
 </code></pre></div></div>
 
 <p>대략의 워크플로우는 아래와 같다.</p>
@@ -228,7 +228,7 @@ window.onload = wrap_img;
 
 <p>홈페이지에 들어가서 가입하면 된다. CLI, 즉 터미널 툴은 왜 필요할까? 터미널에서 작업을 하면 좀 더 편하다. CLI를 설치해야 제대로 Heroku를 사용할 수 있다. 아래와 같이 터미널에서 로그인을 한다.</p>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">heroku</span> <span class="err">login</span> 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku login 
 </code></pre></div></div>
 
 <h3 id="앱-디렉토리에-깃-생성">앱 디렉토리에 깃 생성</h3>
@@ -239,8 +239,8 @@ window.onload = wrap_img;
 
 <p>Heroku로 제작한 Streamlit 앱을 푸시하면 자동으로 빌드가 진행된다. 이를 위해서 제작한 앱의 최상위 디렉토리에 아래의 파일을 넣어주자.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project 
-├── app.py (제작한 앱)
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project 
+├── app.py <span class="o">(</span>제작한 앱<span class="o">)</span>
 ├── requirements.txt  
 ├── setup.sh  
 └── Procfile
@@ -262,26 +262,26 @@ window.onload = wrap_img;
 
 <h4 id="setupsh">setup.sh</h4>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">mkdir</span> <span class="err">-p</span> <span class="err">~/.streamlit/</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.streamlit/
 
-<span class="err">echo</span> <span class="err">"</span><span class="se">\
-</span><span class="err">[general]\n</span><span class="se">\
-</span><span class="py">email</span> <span class="p">=</span> <span class="se">\"</span><span class="s">your-email@domain.com</span><span class="se">\"\n\
-</span><span class="s">" &gt; ~/.streamlit/credentials.toml
+<span class="nb">echo</span> <span class="s2">"</span><span class="se">\</span><span class="s2">
+[general]</span><span class="se">\n\</span><span class="s2">
+email = </span><span class="se">\"</span><span class="s2">your-email@domain.com</span><span class="se">\"\n\</span><span class="s2">
+"</span> <span class="o">&gt;</span> ~/.streamlit/credentials.toml
 
-echo "</span><span class="se">\
-</span><span class="s">[server]</span><span class="se">\n\
-</span><span class="s">headless = true</span><span class="se">\n\
-</span><span class="s">enableCORS=false</span><span class="se">\n\
-</span><span class="s">port = $PORT</span><span class="se">\n\
-</span><span class="s">" &gt; ~/.streamlit/config.toml
-</span></code></pre></div></div>
+<span class="nb">echo</span> <span class="s2">"</span><span class="se">\</span><span class="s2">
+[server]</span><span class="se">\n\</span><span class="s2">
+headless = true</span><span class="se">\n\</span><span class="s2">
+enableCORS=false</span><span class="se">\n\</span><span class="s2">
+port = </span><span class="nv">$PORT</span><span class="se">\n\</span><span class="s2">
+"</span> <span class="o">&gt;</span> ~/.streamlit/config.toml
+</code></pre></div></div>
 
 <p>sh 명령을 실행할 내용을 담고 있다.</p>
 
 <h4 id="procfile">Procfile</h4>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="py">web</span><span class="p">:</span> <span class="s">sh setup.sh &amp;&amp; streamlit run app.py</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>web: sh setup.sh <span class="o">&amp;&amp;</span> streamlit run app.py
 </code></pre></div></div>
 
 <p>sh 명령을 실행하고 streamlit를 띄우는 명령어를 담고 있다.</p>
@@ -290,15 +290,15 @@ echo "</span><span class="se">\
 
 <p>특정 Python 버전이 필요하다면 이 파일을 추가할 수 있다. 파일 안에 담긴 내용은 아래와 같다.</p>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">python-3.7.3</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python-3.7.3
 </code></pre></div></div>
 
 <h3 id="create-and-just-push">Create and Just push</h3>
 
 <p>이제 heroku로 나갈 앱을 만들고 보내면 끝이다. master에서 작업했다면 아래와 같이 명령어를 실행하면 된다.</p>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">heroku</span> <span class="err">create</span>
-<span class="err">git</span> <span class="err">push</span> <span class="err">heroku</span> <span class="err">master</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku create
+git push heroku master
 </code></pre></div></div>
 
 <h2 id="protips">Protips</h2>
@@ -309,7 +309,7 @@ echo "</span><span class="se">\
 
 <p>왜 Heroku에서는 이것이 안될까? 간단하다. Heroku는 외부의 웹서버이고 그 웹 서버에 한글 폰트가 없는 것이다. 웹 서버에 한글 폰트를 심어주면 될 것이다. 하지만 어떻게 심을까? 간단하다. 작업 중인 앱의 루트 디렉토리에 다음과 같은 시스템 디렉토리를 하나 생성한다.</p>
 
-<div class="language-properties highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">/.fonts</span> 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/.fonts 
 </code></pre></div></div>
 
 <p>이 디렉토리 안에 필요한 한글 폰트를 넣으면 된다. 그러면 해당 앱이 Heroku로 푸시되었을 때 시스템 폰트로 디렉토리 안의 폰트들이 잘 등록된다.</p>
@@ -335,8 +335,8 @@ echo "</span><span class="se">\
 <p><a href="https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/">https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/</a></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDg3MTcxMCwxMDUyNzY1MTAyLC0xMj
-YyMjQ4NTg5XX0=
+eyJoaXN0b3J5IjpbLTI2NzAwMjM0MSwxMTI0ODcxNzEwLDEwNT
+I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->

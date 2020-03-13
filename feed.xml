@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T22:53:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T22:55:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -24,8 +24,8 @@
 
 &lt;p&gt;여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt;를 띄울 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;streamlit&lt;/span&gt; 
-&lt;span class=&quot;err&quot;&gt;steamlit&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;hello&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit 
+steamlit hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;대략의 워크플로우는 아래와 같다.&lt;/p&gt;
@@ -59,7 +59,7 @@
 
 &lt;p&gt;홈페이지에 들어가서 가입하면 된다. CLI, 즉 터미널 툴은 왜 필요할까? 터미널에서 작업을 하면 좀 더 편하다. CLI를 설치해야 제대로 Heroku를 사용할 수 있다. 아래와 같이 터미널에서 로그인을 한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;heroku&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;login&lt;/span&gt; 
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku login 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;앱-디렉토리에-깃-생성&quot;&gt;앱 디렉토리에 깃 생성&lt;/h3&gt;
@@ -70,8 +70,8 @@
 
 &lt;p&gt;Heroku로 제작한 Streamlit 앱을 푸시하면 자동으로 빌드가 진행된다. 이를 위해서 제작한 앱의 최상위 디렉토리에 아래의 파일을 넣어주자.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;project 
-├── app.py (제작한 앱)
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;project 
+├── app.py &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;제작한 앱&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 ├── requirements.txt  
 ├── setup.sh  
 └── Procfile
@@ -93,26 +93,26 @@
 
 &lt;h4 id=&quot;setupsh&quot;&gt;setup.sh&lt;/h4&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;~/.streamlit/&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; ~/.streamlit/
 
-&lt;span class=&quot;err&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;[general]\n&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;your-email@domain.com&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\n\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &amp;gt; ~/.streamlit/credentials.toml
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+[general]&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+email = &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;your-email@domain.com&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ~/.streamlit/credentials.toml
 
-echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[server]&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;headless = true&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;enableCORS=false&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;port = $PORT&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &amp;gt; ~/.streamlit/config.toml
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+[server]&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+headless = true&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+enableCORS=false&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+port = &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PORT&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;
+&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ~/.streamlit/config.toml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;sh 명령을 실행할 내용을 담고 있다.&lt;/p&gt;
 
 &lt;h4 id=&quot;procfile&quot;&gt;Procfile&lt;/h4&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;py&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sh setup.sh &amp;amp;&amp;amp; streamlit run app.py&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;web: sh setup.sh &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; streamlit run app.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;sh 명령을 실행하고 streamlit를 띄우는 명령어를 담고 있다.&lt;/p&gt;
@@ -121,15 +121,15 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 
 &lt;p&gt;특정 Python 버전이 필요하다면 이 파일을 추가할 수 있다. 파일 안에 담긴 내용은 아래와 같다.&lt;/p&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;python-3.7.3&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python-3.7.3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;create-and-just-push&quot;&gt;Create and Just push&lt;/h3&gt;
 
 &lt;p&gt;이제 heroku로 나갈 앱을 만들고 보내면 끝이다. master에서 작업했다면 아래와 같이 명령어를 실행하면 된다.&lt;/p&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;heroku&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;create&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;heroku&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;master&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku create
+git push heroku master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;protips&quot;&gt;Protips&lt;/h2&gt;
@@ -140,7 +140,7 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 
 &lt;p&gt;왜 Heroku에서는 이것이 안될까? 간단하다. Heroku는 외부의 웹서버이고 그 웹 서버에 한글 폰트가 없는 것이다. 웹 서버에 한글 폰트를 심어주면 될 것이다. 하지만 어떻게 심을까? 간단하다. 작업 중인 앱의 루트 디렉토리에 다음과 같은 시스템 디렉토리를 하나 생성한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-properties highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;/.fonts&lt;/span&gt; 
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/.fonts 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이 디렉토리 안에 필요한 한글 폰트를 넣으면 된다. 그러면 해당 앱이 Heroku로 푸시되었을 때 시스템 폰트로 디렉토리 안의 폰트들이 잘 등록된다.&lt;/p&gt;
@@ -166,8 +166,8 @@ echo &quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\
 &lt;p&gt;&lt;a href=&quot;https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/&quot;&gt;https://blog.jcharistech.com/2019/10/24/how-to-deploy-your-streamlit-apps-to-heroku/&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDg3MTcxMCwxMDUyNzY1MTAyLC0xMj
-YyMjQ4NTg5XX0=
+eyJoaXN0b3J5IjpbLTI2NzAwMjM0MSwxMTI0ODcxNzEwLDEwNT
+I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
 --&gt;</content><author><name></name></author><summary type="html">들어가며</summary></entry><entry><title type="html">Free Your Blog with Github</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html" rel="alternate" type="text/html" title="Free Your Blog with Github" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/web-tool/2020/03/07/blogging-with-fastpages.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
