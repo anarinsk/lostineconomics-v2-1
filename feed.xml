@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:08:04-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:14:23-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -1845,7 +1845,7 @@ eyJoaXN0b3J5IjpbLTE3NTI1OTIzMDZdfQ==
 
 &lt;h2 id=&quot;pagerank&quot;&gt;PageRank?&lt;/h2&gt;
 
-&lt;p&gt;페이지랭크 알고리듬의 핵심이 사실 마르코프 체인이다. &lt;a id=&quot;page-ref&quot;&gt;&lt;a href=&quot;#page&quot;&gt;페이지와 브린의 논문&lt;/a&gt;&lt;/a&gt;에 보면 “random surfer”라는 표현이 나온다. 이게 딱 확률 과정(stochastic process)을 연상시키지 않나? 문득 이런 생각이 들더라.&lt;/p&gt;
+&lt;p&gt;페이지랭크 알고리듬의 핵심이 사실 마르코프 체인이다. 페이지와 브린의 &lt;a href=&quot;&quot;&gt;논문&lt;/a&gt;에 보면 “random surfer”라는 표현이 나온다. 이게 딱 확률 과정(stochastic process)을 연상시키지 않나? 문득 이런 생각이 들더라.&lt;/p&gt;
 
 &lt;p&gt;페이지와 브린의 논문 자체가 마르코프 프로세스를 연상시키지는 않는다. 논문을 보면 페이지랭크 스코어링을 위한 몇 가지 원칙들이 언급되어 있을 뿐이다. 더 많은 아웃바운드 링크를 지닌 웹페이지에 내 페이지가 연결되어 있을 때 내 페이지의 스코어를 계산할 때 해당 페이지의 중요성을 낮춘다. 많은 인바운드 링크를 지닌 페이지에 내 페이지가 연결되어 있다면 이 페이지의 중요성을 높인다. 대략 이런 내용들이다. 사실 페이지랭크를 계산하는 과정 자체는 재귀적인 내용을 포함하고 있기 때문에 직관적으로 이해하기는 쉽지 않다. 페이지랭크 스코어링의 함의를 추리고 그 계산 과정은 잘 돌아보지 않는다. 나도 그랬다.&lt;/p&gt;
 
@@ -1974,7 +1974,8 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
 &lt;a href=&quot;https://www.stat.cmu.edu/~ryantibs/datamining/lectures/03-pr.pdf&quot;&gt;https://www.stat.cmu.edu/~ryantibs/datamining/lectures/03-pr.pdf&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzQ1Njg1MywtMjEyNjIyMjc1OF19
+eyJoaXN0b3J5IjpbLTE2MjQ3NTU5NjEsLTQ5NzQ1Njg1MywtMj
+EyNjIyMjc1OF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
