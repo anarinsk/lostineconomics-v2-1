@@ -94,7 +94,7 @@ PR을 하기 전에 SSH 키를 생성하는 작업을 해줘야 한다. 메시�
 
 - css 
 	- css를 다룰 줄 안다면 블로그의 많은 것은 커스터마이즈할 수 있다. 
-	- `[repo root]/_sass/minima`안에 보면 `custom-styles.scss`와 `fastpages-styles.scss` 두 개가 있다. `custom-styles.scss`에 부가 내용을 수정하면 스타일을 바꿀 수 있다. 
+	- `[repo root]/_sass/minima`안에 보면 `custom-styles.scss`와 `fastpages-styles.scss` 두 개가 있다. `custom-styles.scss`에 부가 내용을 수정하면 스타일을 바꿀 수 있다. 필요한 폰트를 로딩해 설정한다든가 하는 디자인 수정 사항을 여기에 넣으면 된다. 
 	- 예를 들어 기본 텍스트의 크기를 바꾸고 싶다면, 
 	
 ```css
@@ -178,11 +178,11 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjIwNTc1Nyw0OTI5MjI2MjUsLTI1MT
-E2MzQ0Nyw4MDk4MzgxNywtNjUwNzM5MzQxLDEzNTkyMDgyMTMs
-MTU0MTk1MDAzMywtMTY0OTk4NTMyMSwtMTA3MTAyMTc5MSwtMT
-I4MTU1NzM2MSwtMTQwNDQxMjc0Myw4NTQ4ODQ0MCwtNzMwNzI3
-ODAwLDE2OTM2NzYxNzUsNjQyMjE0MTg5LDE0MjkwMDc3MSwtMj
-M0MzQ2NTk2LC0yMDExNTUyNzk2LC00MzU5MjYyNDAsLTE5NDI5
-MTgxOTRdfQ==
+eyJoaXN0b3J5IjpbMTUzMTQwNzE2NiwtMzYyMjA1NzU3LDQ5Mj
+kyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02NTA3MzkzNDEs
+MTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OTg1MzIxLC0xMD
+cxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEyNzQzLDg1NDg4
+NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2NDIyMTQxODksMT
+QyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3OTYsLTQzNTky
+NjI0MF19
 -->
