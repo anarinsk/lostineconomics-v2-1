@@ -50,6 +50,7 @@ $$
 col $\mathbf X$의 최대 차원, 즉 $\mathbf X$의 랭크(위수)는 무엇일까? 회귀분석에서는 대체로 $n > k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원의 크기가 $k$를 넘을 수 없다. 그리고 잘 된 회귀분석이라면 ${\rm rank}(\mathbf X) = k$를 만족한다. 
 
 맨 앞에 제시했던 그림을 다시 보자. 아래 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 몹시 특별한 경우가 아니라면 $\mathbf Y \in {\mathbb R}^{n}$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 그렇다면 회귀분석의 필요도 애초에 없었을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다.[^se] 
+
 [^se]: 이를 선형 대수에서 배운 연립방정식을 푸는 문제로 이해해도 좋겠다. $A x = b(b \neq \boldsymbol{0})$라고 하자. $n$ 개의 미지수가 유일한 해를 지니고 위해서는 ${\rm rank}(A) = n$이어야 한다. 즉 서로 독립인 식이 $n$ 개 주어져야 고유의 해 $x$를 찾을 수 있다. 그런데 회귀분석은 식이 $k(<n)$ 개만 주어진 상황이다. 
 
 회귀분석의 목표는 regressor를 통해서, 더 정확하게는 regressor의 집합이 생성하는 공간을 통해서 regressand를 '가장' 잘 설명하는 것이다. 회귀분석이란 regressand와 '닮은' 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 이런 지점을 찾는 연산자(operator)가 회귀분석 계수 $\hat{\boldsymbol \beta}$이다. 즉, 
@@ -147,6 +148,6 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0NDE2NTE1LDE4OTI5NTA3NjksNTIyMj
-A4NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbLTE1OTU2NjY0NDcsMzg0NDE2NTE1LDE4OT
+I5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2MzE2XX0=
 -->
