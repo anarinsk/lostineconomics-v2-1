@@ -115,7 +115,7 @@ $$
 다시 강조하지만 기본적으로 행렬은 함수다. $A$는 투입 벡터 $x (\in {\mathbb R}^{n})$를 산출 벡터 $b(\in {\mathbb R}^{m})$로 바꾸는 역할을 한다. $A^T$는 투입벡터 $x' \in {\mathbb R}^m$을 산출벡터 $b' \in {\mathbb R}^n$으로 바꾼다. 이들 사이에 어떤 관계가 존재할까? 이를 나타내는 것이 길버트 스트랭(Gibert Strang) 선생이 말한 선형대수의 '큰 그림'이다. 아래 그림을 보자. 
 
 <p align="center">
-  <img src="https://github.com/anarinsk/lostineconomics-v2/blob/master/images/four-space/fundamental.png?raw=true" width="450">
+  <img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/four-space/fundamental.png?raw=true" width="450">
 </p>
 
 그림 자체로 그냥 이해가 간다. 열 공간으로 이해하는 습관이 들었다면, 그림이 뒤집혀야 하지 않나, 싶겠지만 앞서 보았던 연립방정식처럼 $A x = b$의 형태로 이해하면 좋다.  
@@ -309,6 +309,6 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MD
-QxMTc1MDJdfQ==
+eyJoaXN0b3J5IjpbMTE2MjMwMTY5MCwtNzEyNTA5NTM4LDQ5OT
+cxNDEyMywtMTgwNDExNzUwMl19
 -->
