@@ -164,7 +164,7 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 
 ![]({{ site.baseurl }}/images/fastpages/fig_5.png){: style="textalign:center; " width="700"}&nbsp; 
 
-여기서 아무 것도 바꾸지 말고 `Submit new issue`를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다. 처음 페이지를 깔 때처럼 PR을 해주는 형태로 진행된다. 
+여기서 아무 것도 바꾸지 말고 `Submit new issue`를 하면 업데이트 요청이 들어가고 업데이트 사항이 없을 경우는 이슈가 그낭 종결되고 있을 경우는 그대로 따라가면 된다. 처음 페이지를 깔 때처럼 PR을 해주는 형태로 진행된다. 꽤나 영리한 업데이트 방법이다. 
 
 ### 바뀌는 파일들 
 
@@ -175,16 +175,17 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 - `/_includes`
 	- `head.html` 리셋 
 
-때문에  `head.html` 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 `custom_head.html`을 로드하기 때 필요한 
+때문에  `head.html` 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 `custom_head.html`을 로드하기 때 필요한 개별화 사항은 여기에 넣어두도록 하자. `about.md`는 자주 바뀌지는 않을 것이므로 한번 만들어두고 백업을 해두면 되겠다. 
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTEzNDU5MSwtMzYyMjA1NzU3LDQ5Mj
-kyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02NTA3MzkzNDEs
-MTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OTg1MzIxLC0xMD
-cxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEyNzQzLDg1NDg4
-NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2NDIyMTQxODksMT
-QyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3OTYsLTQzNTky
-NjI0MF19
+eyJoaXN0b3J5IjpbNzM4NTAxMjQ3LC0zNjIyMDU3NTcsNDkyOT
+IyNjI1LC0yNTExNjM0NDcsODA5ODM4MTcsLTY1MDczOTM0MSwx
+MzU5MjA4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNz
+EwMjE3OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0
+NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxND
+I5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2
+MjQwXX0=
 -->
