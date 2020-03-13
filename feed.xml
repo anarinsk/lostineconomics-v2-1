@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:33:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-12T20:35:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -362,31 +362,18 @@ YyMjQ4NTg5XX0=
 
 &lt;h3 id=&quot;바뀌는-파일들&quot;&gt;바뀌는 파일들&lt;/h3&gt;
 
-&lt;p&gt;아직까지는 사소한 업데이트만 진행되는 듯 싶다. &lt;code class=&quot;highlighter-rouge&quot;&gt;/_post&lt;/code&gt;의 콘텐트나 &lt;code class=&quot;highlighter-rouge&quot;&gt;/images&lt;/code&gt; 안의 파일은 바뀌지 않는다. 현재까지 바뀌는 것으로 확인된 내용들은 아래와 같다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_pages&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt; 리셋&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/_includes&lt;/code&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; 리셋&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;아직까지는 사소한 업데이트만 진행되는 듯 싶다. PR을 완료한&lt;/p&gt;
 
 &lt;p&gt;때문에  &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;custom_head.html&lt;/code&gt;을 로드하기 때 필요한 개별화 사항은 여기에 넣어두도록 하자. &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt;는 자주 바뀌지는 않을 것이므로 한번 만들어두고 백업을 해두면 되겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4NTAxMjQ3LC0zNjIyMDU3NTcsNDkyOT
-IyNjI1LC0yNTExNjM0NDcsODA5ODM4MTcsLTY1MDczOTM0MSwx
-MzU5MjA4MjEzLDE1NDE5NTAwMzMsLTE2NDk5ODUzMjEsLTEwNz
-EwMjE3OTEsLTEyODE1NTczNjEsLTE0MDQ0MTI3NDMsODU0ODg0
-NDAsLTczMDcyNzgwMCwxNjkzNjc2MTc1LDY0MjIxNDE4OSwxND
-I5MDA3NzEsLTIzNDM0NjU5NiwtMjAxMTU1Mjc5NiwtNDM1OTI2
-MjQwXX0=
+eyJoaXN0b3J5IjpbMzM4NzQwNTc4LDczODUwMTI0NywtMzYyMj
+A1NzU3LDQ5MjkyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02
+NTA3MzkzNDEsMTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OT
+g1MzIxLC0xMDcxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEy
+NzQzLDg1NDg4NDQwLC03MzA3Mjc4MDAsMTY5MzY3NjE3NSw2ND
+IyMTQxODksMTQyOTAwNzcxLC0yMzQzNDY1OTYsLTIwMTE1NTI3
+OTZdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
