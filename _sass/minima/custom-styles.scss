@@ -12,6 +12,7 @@
    font-family: "Nanum Gothic", normal;
    font-size: 16px;
    color: #515151;
+   font-weight: 400;
 }
 
 .post img {
@@ -20,4 +21,8 @@
    vertical-align: top;
    margin-left: auto;
    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-family:"Roboto Slab", normal; 
 }
