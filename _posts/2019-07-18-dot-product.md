@@ -82,6 +82,13 @@ $$
  \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf u \rVert   ( \lVert \mathbf v \rVert \cos \theta) = \lVert \mathbf u \rVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
 $$
 
+한편 반대로 $\mathbf u$에서 $\mathbf v$로 프로젝션하는 경우를 생각해 볼 수도 있겠다. 
+
+$$
+ \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf u \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
+$$
+
+
 ## 기하적 이해 
 
 기하적으로 도출하는 흥미로운 방법도 있다.[^2] 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.  
@@ -146,7 +153,7 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjA5NjM2NSwxNTA4MTM0NTU2LDEwMT
-AzMjE1MzQsNjk5NzI5NTUyLC0xMDI4NDkxNjQ4LC0xMjEwMzAy
-Mjk0XX0=
+eyJoaXN0b3J5IjpbNTcwMjg2MTI4LC0xODYwOTYzNjUsMTUwOD
+EzNDU1NiwxMDEwMzIxNTM0LDY5OTcyOTU1MiwtMTAyODQ5MTY0
+OCwtMTIxMDMwMjI5NF19
 -->
