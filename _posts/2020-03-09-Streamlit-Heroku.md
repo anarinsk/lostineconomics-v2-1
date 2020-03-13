@@ -33,8 +33,8 @@ R에는 이미 Shiny라는 비슷한 프로젝트가 있다. R의 기능을 활�
 여기서 Streamlit를 자세히 설명하지는 않겠다. Python을 써보면 사람이면 예제를 쉽게 따라해보면 된다. 페이지의 설명대로  아래 명령만 실행해봐도 느낌을 한번에 받을 수 있다. 아래와 같이 설치하고 `hello`를 띄울 수 있다. 
 
 ```bash
-pip install streamlit 
-steamlit hello
+$ pip install streamlit 
+$ steamlit hello
 ```
 
 대략의 워크플로우는 아래와 같다. 
@@ -182,6 +182,6 @@ streamlit는 웹에서 즉 브라우저 위에서 돌아가기 때문에 한글�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzAwMjM0MSwxMTI0ODcxNzEwLDEwNT
-I3NjUxMDIsLTEyNjIyNDg1ODldfQ==
+eyJoaXN0b3J5IjpbMTI5Mjg0NDUxLC0yNjcwMDIzNDEsMTEyND
+g3MTcxMCwxMDUyNzY1MTAyLC0xMjYyMjQ4NTg5XX0=
 -->
