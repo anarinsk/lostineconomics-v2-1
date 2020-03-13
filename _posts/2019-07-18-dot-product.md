@@ -76,10 +76,10 @@ $$
 \lVert  \mathbf u -  \mathbf v \rVert^2 = ( \mathbf u -  \mathbf v) \cdot ( \mathbf u -  \mathbf v ) = \lVert \mathbf u \rVert^2 +  \lVert \mathbf v \rVert^2 - 2  (\mathbf u \cdot \mathbf v)
 $$
 
-Thus, 
+따라서 
 
 $$
- \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf u \rVert   ( \lVert \mathbf v \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
+ \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf u \rVert   ( \lVert \mathbf v \rVert \cos \theta) = \lVert \mathbf u \rVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
 $$
 
 ## 기하적 이해 
@@ -146,6 +146,7 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODEzNDU1NiwxMDEwMzIxNTM0LDY5OT
-cyOTU1MiwtMTAyODQ5MTY0OCwtMTIxMDMwMjI5NF19
+eyJoaXN0b3J5IjpbLTE4NjA5NjM2NSwxNTA4MTM0NTU2LDEwMT
+AzMjE1MzQsNjk5NzI5NTUyLC0xMDI4NDkxNjQ4LC0xMjEwMzAy
+Mjk0XX0=
 -->
