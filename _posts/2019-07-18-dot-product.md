@@ -8,9 +8,6 @@ categories: [math]
 
 ---
 
-# Dot Product
-
-
 ## tl;dr 
 
 - 닷 프로덕트 혹은 내적을 기하적으로 이해하면 여러모로 편리하고 기억에도 잘 남는다. 
@@ -153,7 +150,7 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzU4ODg3OSwtMTg2MDk2MzY1LDE1MD
+eyJoaXN0b3J5IjpbLTIwODk3NjkwNiwtMTg2MDk2MzY1LDE1MD
 gxMzQ1NTYsMTAxMDMyMTUzNCw2OTk3Mjk1NTIsLTEwMjg0OTE2
 NDgsLTEyMTAzMDIyOTRdfQ==
 -->
