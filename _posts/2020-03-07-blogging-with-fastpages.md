@@ -171,14 +171,16 @@ categories: [coding-tool, web-tool] # tag 혹은 카테고리
 아직까지는 사소한 업데이트만 진행되는 듯 싶다. `/_post`의 콘텐트나 `/images` 안의 파일은 바뀌지 않는다. 현재까지 바뀌는 것으로 확인된 내용들은 아래와 같다.
 
 - `/_pages`
-	- `about.md` 위치  
+	- `about.md` 리셋 
 - `/_includes`
-	- `head.html` 위치 
+	- `head.html` 리셋 
+
+때문에  `head.html` 파일은 바꾸지 않는 것이 좋다. 어차피 디폴트 상태에서 `custom_head.html`을 로드하기 때 필요한 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTQwNzE2NiwtMzYyMjA1NzU3LDQ5Mj
+eyJoaXN0b3J5IjpbMTE4NTEzNDU5MSwtMzYyMjA1NzU3LDQ5Mj
 kyMjYyNSwtMjUxMTYzNDQ3LDgwOTgzODE3LC02NTA3MzkzNDEs
 MTM1OTIwODIxMywxNTQxOTUwMDMzLC0xNjQ5OTg1MzIxLC0xMD
 cxMDIxNzkxLC0xMjgxNTU3MzYxLC0xNDA0NDEyNzQzLDg1NDg4
