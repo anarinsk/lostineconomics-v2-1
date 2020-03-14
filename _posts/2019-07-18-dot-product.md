@@ -45,15 +45,7 @@ $$
 {\mathbf u} \cdot {\mathbf v} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert = \Vert \mathbf v \Vert (\Vert \mathbf u \Vert \cos\theta) 
 $$
 
-그런데, $\mathbf v$를 $\mathbf u$로 프로젝션하면, 
-
-$$
- \Vert \mathbf u \Vert \Vert {\rm Proj}_{\mathbf u} {\mathbf v} \Vert = \Vert \mathbf u \Vert  (\Vert \mathbf v \Vert \cos\theta) = {\mathbf u} \cdot {\mathbf v} 
-$$
-
-간단히 말해서 닷프로덕트의 정의상 ${\mathbf v} \cdot {\mathbf u} = {\mathbf u} \cdot {\mathbf v}$.
-
-닷 프로덕트는 어떻게 도출하는가? 그 기하학적인 구조는 무엇인가? 
+다시 보면, 닷 프로덕트의 정의상 ${\mathbf v} \cdot {\mathbf u} = {\mathbf u} \cdot {\mathbf v}$인 셈이다. 닷 프로덕트는 어떻게 도출하는가? 그 기하학적인 구조는 무엇인가? 
 
 ## With 'Law of Cosine' 
 
@@ -152,5 +144,5 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDA5Mjc5NiwtMjM0MjM2MTc4XX0=
+eyJoaXN0b3J5IjpbMzcxMzUwNjA1LC0yMzQyMzYxNzhdfQ==
 -->
