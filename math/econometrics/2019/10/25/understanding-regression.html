@@ -165,10 +165,12 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#understanding-regression">Understanding Regression</a>
+<ul>
 <li class="toc-entry toc-h2"><a href="#tldr">tl;dr</a></li>
-<li class="toc-entry toc-h2"><a href="#regression-in-vector-space">Regression in vector space</a></li>
+<li class="toc-entry toc-h2"><a href="#regression-in-vector-space공간에서-바라본-회귀분석">Regression in vector space공간에서 바라본 회귀분석</a></li>
 <li class="toc-entry toc-h2"><a href="#r-squared-as-pythagorean-theorem">R squared as Pythagorean Theorem</a></li>
-<li class="toc-entry toc-h2"><a href="#bonus-regression-vs-pca">Bonus: Regression vs PCA</a>
+<li class="toc-entry toc-h2"><a href="#bonus-regression-vs-pca덤-회귀-분석과-pca는-서로-얼마나-다를까">Bonus: Regression vs PCA덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#공통점">공통점</a>
 <ul>
@@ -184,7 +186,12 @@ window.onload = wrap_img;
 </li>
 </ul>
 </li>
-</ul><h2 id="tldr">
+</ul>
+</li>
+</ul><h1 id="understanding-regression">
+<a class="anchor" href="#understanding-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding Regression</h1>
+
+<h2 id="tldr">
 <a class="anchor" href="#tldr" aria-hidden="true"><span class="octicon octicon-link"></span></a>tl;dr</h2>
 
 <ul>
@@ -193,8 +200,8 @@ window.onload = wrap_img;
   <li>선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과하다.</li>
 </ul>
 
-<h2 id="regression-in-vector-space">
-<a class="anchor" href="#regression-in-vector-space" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regression in vector space</h2>
+<h2 id="regression-in-vector-space공간에서-바라본-회귀분석">
+<a class="anchor" href="#regression-in-vector-space%EA%B3%B5%EA%B0%84%EC%97%90%EC%84%9C-%EB%B0%94%EB%9D%BC%EB%B3%B8-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>Regression in vector space공간에서 바라본 회귀분석</h2>
 
 <p>여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치기 쉬운 회귀분석의 ‘핵심’을 살피는 것이다. <a href="https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient">crossvalidated</a>에서 아래 그림을 보는 순간 일종의 ‘돈오돈수’가 강림했다. (이렇게 이해하면 쉬웠을 것을…)</p>
 
@@ -281,8 +288,8 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2"><a href="#fn:2" class="footnote">4</a></sup></p>
 
-<h2 id="bonus-regression-vs-pca">
-<a class="anchor" href="#bonus-regression-vs-pca" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bonus: Regression vs PCA</h2>
+<h2 id="bonus-regression-vs-pca덤-회귀-분석과-pca는-서로-얼마나-다를까">
+<a class="anchor" href="#bonus-regression-vs-pca%EB%8D%A4-%ED%9A%8C%EA%B7%80-%EB%B6%84%EC%84%9D%EA%B3%BC-pca%EB%8A%94-%EC%84%9C%EB%A1%9C-%EC%96%BC%EB%A7%88%EB%82%98-%EB%8B%A4%EB%A5%BC%EA%B9%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bonus: Regression vs PCA덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</h2>
 
 <p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3"><a href="#fn:3" class="footnote">5</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
 
@@ -312,8 +319,9 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTU2NjY0NDcsMzg0NDE2NTE1LDE4OT
-I5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbLTE5Mjc0MzMwODMsLTE1OTU2NjY0NDcsMz
+g0NDE2NTE1LDE4OTI5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2
+MzE2XX0=
 --></p>
 <div class="footnotes">
   <ol>
