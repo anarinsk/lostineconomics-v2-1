@@ -45,10 +45,13 @@ $$
 $$
 {\mathbf v} \cdot {\mathbf u} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert = \Vert \mathbf v \Vert (\Vert \mathbf u \Vert \cos\theta) 
 $$
+
 그런데, $\mathbf v$를 $\mathbf u$로 프로젝션하면, 
+
 $$
  \Vert \mathbf u \Vert \Vert {\rm Proj}_{\mathbf u} {\mathbf v} \Vert = \Vert \mathbf u \Vert  (\Vert \mathbf v \Vert \cos\theta) = {\mathbf u} \cdot {\mathbf v} 
 $$
+
 간단히 말해서 닷프로덕트의 정의상 ${\mathbf v} \cdot {\mathbf u} = {\mathbf u} \cdot {\mathbf v}$.
 
 닷 프로덕트는 어떻게 도출하는가? 그 기하학적인 구조는 무엇인가? 
@@ -150,7 +153,8 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTgwNTY5NiwtMjA4OTc2OTA2LC0xOD
-YwOTYzNjUsMTUwODEzNDU1NiwxMDEwMzIxNTM0LDY5OTcyOTU1
-MiwtMTAyODQ5MTY0OCwtMTIxMDMwMjI5NF19
+eyJoaXN0b3J5IjpbLTIzNDIzNjE3OCwxNjIxODA1Njk2LC0yMD
+g5NzY5MDYsLTE4NjA5NjM2NSwxNTA4MTM0NTU2LDEwMTAzMjE1
+MzQsNjk5NzI5NTUyLC0xMDI4NDkxNjQ4LC0xMjEwMzAyMjk0XX
+0=
 -->
