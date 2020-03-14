@@ -38,12 +38,11 @@ $$
 $\mathbf{v}$ 벡터를 $\mathbf u$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf u}{\mathbf v}$)의 길이와 $\mathbf u$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다.[^3] 즉, 
 
 $$
-{\mathbf v} \cdot {\mathbf u} = \Vert \mathbf u \Vert \Vert {\rm Proj}_{\mathbf u} {\mathbf v} \Vert
+{\mathbf v} \cdot {\mathbf u} = \Vert \mathbf u \Vert \Vert {\rm Proj}_{\mathbf u} {\mathbf v} \Vert =  \Vert \mathbf u \Vert (\Vert \mathbf v \Vert \cos\theta) 
 $$
 
-[^3]: 조금만 생각해보시라! 
 $$
-{\mathbf v} \cdot {\mathbf u} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert = \Vert \mathbf v \Vert (\Vert \mathbf u \Vert \cos\theta) 
+{\mathbf u} \cdot {\mathbf v} = \Vert \mathbf v \Vert \Vert {\rm Proj}_{\mathbf v} {\mathbf u} \Vert = \Vert \mathbf v \Vert (\Vert \mathbf u \Vert \cos\theta) 
 $$
 
 그런데, $\mathbf v$를 $\mathbf u$로 프로젝션하면, 
@@ -153,5 +152,5 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDIzNjE3OF19
+eyJoaXN0b3J5IjpbMTA1MDA5Mjc5NiwtMjM0MjM2MTc4XX0=
 -->
