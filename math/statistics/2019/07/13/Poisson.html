@@ -160,9 +160,9 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#tldr">tl;dr</a></li>
-<li class="toc-entry toc-h2"><a href="#푸아송-분포는-너는-누구냐">푸아송 분포는 너는 누구냐?</a></li>
-<li class="toc-entry toc-h2"><a href="#푸아송-분포-사실-이항-분포에-왔다">푸아송 분포, 사실 이항 분포에 왔다?</a></li>
-<li class="toc-entry toc-h2"><a href="#푸아송-분포를-도출해보자">푸아송 분포를 도출해보자.</a></li>
+<li class="toc-entry toc-h2"><a href="#defining-poisson-distribution">Defining Poisson Distribution</a></li>
+<li class="toc-entry toc-h2"><a href="#poisson-as-binary">Poisson as Binary</a></li>
+<li class="toc-entry toc-h2"><a href="#deriving-poisson">Deriving Poisson</a></li>
 </ul><h2 id="tldr">
 <a class="anchor" href="#tldr" aria-hidden="true"><span class="octicon octicon-link"></span></a>tl;dr</h2>
 
@@ -171,8 +171,8 @@ window.onload = wrap_img;
   <li>이항 분포의 평균은 $\lambda = n p$이고, 이항 분포에 $p = \frac{\lambda}{n}$을 다시 넣은 후 $n \to \infty$ 극한값을 얻은 결과가 푸아송 분포다.</li>
 </ul>
 
-<h2 id="푸아송-분포는-너는-누구냐">
-<a class="anchor" href="#%ED%91%B8%EC%95%84%EC%86%A1-%EB%B6%84%ED%8F%AC%EB%8A%94-%EB%84%88%EB%8A%94-%EB%88%84%EA%B5%AC%EB%83%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>푸아송 분포는 너는 누구냐?</h2>
+<h2 id="defining-poisson-distribution">
+<a class="anchor" href="#defining-poisson-distribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defining Poisson Distribution</h2>
 
 <p>사실, 푸아송 분포 이해하기 쉽지 않다. 정의부터 먼저 살펴보자. 한글  <a href="https://ko.wikipedia.org/wiki/%ED%91%B8%EC%95%84%EC%86%A1_%EB%B6%84%ED%8F%AC">위키피디어</a>에서  가져왔다.</p>
 
@@ -186,8 +186,8 @@ window.onload = wrap_img;
 
 <p>수학적인 정의는 일단 생략하자. 뒤에서 다시 만나게  될 테니까.  정의만 봐서는 이해가 쉽지 않은 분포다. 직관적인 방식으로 푸아송 분포의 정의를 끌어낼 수는 없을까?<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
-<h2 id="푸아송-분포-사실-이항-분포에-왔다">
-<a class="anchor" href="#%ED%91%B8%EC%95%84%EC%86%A1-%EB%B6%84%ED%8F%AC-%EC%82%AC%EC%8B%A4-%EC%9D%B4%ED%95%AD-%EB%B6%84%ED%8F%AC%EC%97%90-%EC%99%94%EB%8B%A4" aria-hidden="true"><span class="octicon octicon-link"></span></a>푸아송 분포, 사실 이항 분포에 왔다?</h2>
+<h2 id="poisson-as-binary">
+<a class="anchor" href="#poisson-as-binary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Poisson as Binary</h2>
 
 <p>잠시 이항 분포를 떠올려보자. 아마도 모든 확률 관련 수업에서 제일 처음 배우는 분포가 아닐까 한다. 이항 분포란, 1회 시행 시 발생할 확률이 $p\;$인 어떤 사건을 $n$ 번 시행할 때 해당 사건이 $k$ 번 발생할 확률의 분포를 나타낸다. 개별적으로 존재하는 사건이니까 당연히 이산 확률 분포에 속한다. 수학적으로는 아래와 같다.</p>
 
@@ -201,8 +201,8 @@ window.onload = wrap_img;
 
 <p>두 명 이상의 방문자를 수용하려면 이항 분포의 모형을 어떻게 수정해야 할까? 가장 손쉬운 방법은 단위 시간을 바꾸는 것이다. 단위 시간을 하루가 아니라 시간으로 바꿔보자. 하루는 24시간이고 매 시간 동일한 정도로 이용자가 방문한다면,  시간당  1명이 방문할 확률은 0.1/24이 된다. 낮은 확률이지만 이러한 가정에서 하루에 두 명 이상도 방문할 수 있게 된다.</p>
 
-<h2 id="푸아송-분포를-도출해보자">
-<a class="anchor" href="#%ED%91%B8%EC%95%84%EC%86%A1-%EB%B6%84%ED%8F%AC%EB%A5%BC-%EB%8F%84%EC%B6%9C%ED%95%B4%EB%B3%B4%EC%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>푸아송 분포를 도출해보자.</h2>
+<h2 id="deriving-poisson">
+<a class="anchor" href="#deriving-poisson" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deriving Poisson</h2>
 
 <p>이항 분포와 달리 푸아송 분포에서 파라미터는 한 개다. 푸아송 분포의 파라미터 $\lambda$는 단위  시간 당  평균 발생 횟수를 뜻한다. 비율(rate)이라고도 부른다.</p>
 
@@ -253,7 +253,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <p>이항 분포의 확률 혹은 확률 질량 함수의 극한값이 바로 푸아송 분포의 그것이다! 이거 참 재미있는 연결 고리가 아닌가! 사실 푸아송 분포의 정의를 그냥 들여다봐서는 그다지 직관적인 이해를 얻기는 쉽지 않다. 이렇게 이항 분포에서 출발하는 것이 직관적인 이해에는 도움이 된다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyMTQ3ODM3XX0=
+eyJoaXN0b3J5IjpbMTQwMDY0NTAxNSw1NTIxNDc4MzddfQ==
 -->
 <div class="footnotes">
   <ol>
