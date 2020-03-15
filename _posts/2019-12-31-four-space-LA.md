@@ -131,9 +131,8 @@ $$
 A = 
 \begin{bmatrix}
 ~-& r_1^T & -~ \\
-\vphantom{-} & \phantom{-} & \vphantom{-}\\
 ~- & \vdots & -~\\
-\vphantom{-} & \phantom{-} & \vphantom{-}\\
+& & \\
 ~- & r_m^T & -~
 \end{bmatrix} 
 $$
@@ -312,8 +311,8 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMjQwMzIwLC01ODQwNDQ0MDMsMTAyMz
-U3MDI3Myw3NDUyNTc5NzMsMTIxNDIxOTUxNCwxNjY5NzU2NjU2
-LDExNjIzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MD
-QxMTc1MDJdfQ==
+eyJoaXN0b3J5IjpbLTE0MTAwMzM5MjYsMzIyMjQwMzIwLC01OD
+QwNDQ0MDMsMTAyMzU3MDI3Myw3NDUyNTc5NzMsMTIxNDIxOTUx
+NCwxNjY5NzU2NjU2LDExNjIzMDE2OTAsLTcxMjUwOTUzOCw0OT
+k3MTQxMjMsLTE4MDQxMTc1MDJdfQ==
 -->
