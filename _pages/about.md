@@ -24,3 +24,6 @@ Hi, I'm Junsok Huhh. If you are interested in me, check my c.v. and contact. The
 ## History of lostineconomics.com 
 - [v1](https://anarinsk.github.io/) built with markdown on github 
 - [v0](https://lostineconomics.netlify.com/) built with Jekyll on github 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI0MjcxNzA4MF19
+-->
