@@ -133,7 +133,7 @@ A =
 {\rm -} & r_1^T & {\rm -} \\
 {\rm -} & \vdots & {\rm -} \\
 & & \\
-& r_m^T & - \\ 
+{\rn -} & r_m^T & {\rm -}
 \end{bmatrix}
 $$
 
@@ -311,8 +311,8 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDYxNDcyMSwtMTQxMDAzMzkyNiwzMj
-IyNDAzMjAsLTU4NDA0NDQwMywxMDIzNTcwMjczLDc0NTI1Nzk3
-MywxMjE0MjE5NTE0LDE2Njk3NTY2NTYsMTE2MjMwMTY5MCwtNz
-EyNTA5NTM4LDQ5OTcxNDEyMywtMTgwNDExNzUwMl19
+eyJoaXN0b3J5IjpbLTEyMDcwNzUyNDcsLTE0MTAwMzM5MjYsMz
+IyMjQwMzIwLC01ODQwNDQ0MDMsMTAyMzU3MDI3Myw3NDUyNTc5
+NzMsMTIxNDIxOTUxNCwxNjY5NzU2NjU2LDExNjIzMDE2OTAsLT
+cxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1MDJdfQ==
 -->
