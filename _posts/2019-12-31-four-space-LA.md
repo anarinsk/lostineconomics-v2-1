@@ -130,11 +130,11 @@ $$
 $$
 A = 
 \begin{bmatrix}
-- & r_1^T & ~ \\
+{\rm -} & r_1^T & - \\
 - & \vdots & - \\
 & & \\
 - & r_m^T & - \\ 
-\end{bmatrix} 
+\end{bmatrix}
 $$
 
 - $r_i$는 $A$의 $i$ 번째 행을 원소로 하며,  $r_i \in {\mathbb R}^{n}$ 벡터다.  
@@ -311,7 +311,7 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjI1NzgxNywtMTQxMDAzMzkyNiwzMj
+eyJoaXN0b3J5IjpbLTkxMzc1ODYzNywtMTQxMDAzMzkyNiwzMj
 IyNDAzMjAsLTU4NDA0NDQwMywxMDIzNTcwMjczLDc0NTI1Nzk3
 MywxMjE0MjE5NTE0LDE2Njk3NTY2NTYsMTE2MjMwMTY5MCwtNz
 EyNTA5NTM4LDQ5OTcxNDEyMywtMTgwNDExNzUwMl19
