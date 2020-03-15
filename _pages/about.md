@@ -7,7 +7,7 @@ permalink: /about/
 ---
 
 
-## About Me
+## Me
 
 
 허준석 Junsok Huhh | Ph.D. in Economics.<br/> 
@@ -46,5 +46,5 @@ BlogDown on github
 
 This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://github.com/f
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNzEyMjg3XX0=
+eyJoaXN0b3J5IjpbLTE4ODMzMTIzMDgsMjAwNzEyMjg3XX0=
 -->
