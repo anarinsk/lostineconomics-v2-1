@@ -2,8 +2,8 @@
 layout: post
 toc: false
 comments: true
-title: Following Gilbert Strang
-description: 매트릭스 소거법
+title: Following Gilbert Strang 1
+description: 매트릭스 바라보는 법 그리고 소거법
 categories: [math, matrix-theory]
 
 ---
@@ -57,7 +57,7 @@ r_1 \\
 \vdots \\
 r_m
 \end{bmatrix} = 
-x_1 r_1 + \dotsb + x_m  r_n
+x_1 r_1 + \dotsb + x_m  r_m
 $$
 
 이 표기식은 $A$의 로우 벡터가 $x$의 원소들에 의해 선형결합된다는 것을 보여준다. 
@@ -132,5 +132,5 @@ d & b \\
 $$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Mjg0OTA5NV19
+eyJoaXN0b3J5IjpbMTc1NDQ1ODI5MCwxMjkyODQ5MDk1XX0=
 -->
