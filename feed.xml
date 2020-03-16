@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-15T03:07:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-16T07:14:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Streamlit + Heroku</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html" rel="alternate" type="text/html" title="Streamlit + Heroku" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html">&lt;h2 id=&quot;들어가며&quot;&gt;들어가며&lt;/h2&gt;
 
 &lt;p&gt;구슬이 서 말이라도 꿰어야 보배다. 당연하다. 데이터 분석은&lt;/p&gt;
 
@@ -433,8 +433,8 @@ XX0=
 
 &lt;h2 id=&quot;seriously&quot;&gt;Seriously!&lt;/h2&gt;
 
-&lt;p&gt;여기까지 좋은데, git-bash에서 python을 쓰시는 분들이라면 python을 제대로 띄울 수 없다. 해결책은 간단하다. 아래와 같이 실행하면 된다.[^1]
-[^1]: 출처는 &lt;a href=&quot;https://stackoverflow.com/questions/32597209/python-not-working-in-the-command-line-of-git-bash&quot;&gt;여기&lt;/a&gt;다.&lt;/p&gt;
+&lt;p&gt;여기까지 좋은데, git-bash에서 python을 쓰시는 분들이라면 python을 제대로 띄울 수 없다. 해결책은 간단하다. 아래와 같이 실행하면 된다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;winpty python.exe
 Python 3.7.6 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default, Oct  2 2018, 09:18:58&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;copyright&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;credits&quot;&lt;/span&gt; or &lt;span class=&quot;s2&quot;&gt;&quot;license&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;more information.
@@ -448,8 +448,16 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 
 &lt;p&gt;넣은 뒤에 터미널을 재실행하거나 &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;를 실행해주면 된다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjAyMDE0Miw3MjEzNzcxMDJdfQ==
---&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Why</summary></entry><entry><title type="html">The College Wealth Divide</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided.html" rel="alternate" type="text/html" title="The College Wealth Divide" /><published>2020-01-22T00:00:00-06:00</published><updated>2020-01-22T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+eyJoaXN0b3J5IjpbLTE3NTE3MzUxMDQsMTQ2NjAyMDE0Miw3Mj
+EzNzcxMDJdfQ==
+--&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;출처는 &lt;a href=&quot;https://stackoverflow.com/questions/32597209/python-not-working-in-the-command-line-of-git-bash&quot;&gt;여기&lt;/a&gt;다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Why</summary></entry><entry><title type="html">The College Wealth Divide</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided.html" rel="alternate" type="text/html" title="The College Wealth Divide" /><published>2020-01-22T00:00:00-06:00</published><updated>2020-01-22T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/economics/paper-summary/2020/01/22/Wealth-divided.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
 
 &lt;p&gt;The College Wealth Divide: Education and Inequality in America, 1956-2016 &lt;a href=&quot;[https://www.stlouisfed.org/~/media/files/pdfs/hfs/is-college-worth-it/bartscher_kuhn_schularick_college_wealth_divide.pdf?la=en](https://www.stlouisfed.org/~/media/files/pdfs/hfs/is-college-worth-it/bartscher_kuhn_schularick_college_wealth_divide.pdf?la=en)&quot;&gt;download&lt;/a&gt;
 &lt;em&gt;Alina K. Bartscher, Moritz Kuhn, and Moritz Schularick&lt;/em&gt;&lt;/p&gt;
