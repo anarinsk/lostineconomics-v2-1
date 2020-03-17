@@ -120,7 +120,16 @@ $[A \vert I]$와 같은 형태의 augmented matrix를 만든 후, $A$를 $I$로 
 
 ### Example 
 
+$$
+[A|I] = 
+\begin{bmatrix}
+3 &-2 & 4 \\ 
+1 & 0 & 2 \\
+0 & 1 & 0 \\
+\end{bmatrix}
+$$
+
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDIzODk3MiwtNDQyMjg0ODUyXX0=
+eyJoaXN0b3J5IjpbNTc2OTA0ODAxLC00NDIyODQ4NTJdfQ==
 -->
