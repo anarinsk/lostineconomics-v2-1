@@ -226,7 +226,7 @@ E_{3} [A|I] & =
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
-1 & 0 & 2 & \vert & 1 & -2 & 2 \\
+1 & 0 & 0 & \vert & 1 & -2 & 2 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
 0 & 0 & 1 & \vert & -\frac{1}{2} & \frac{3}{2} &  1
 \end{bmatrix} \\
@@ -234,8 +234,8 @@ E_{3} [A|I] & =
 \end{aligned}
 $$
 
-- 이 식을 얻기 위한 가우스-조르단 프로세스는 ${\tilde E_{23}}{\tilde E}_{12}E_{13}E_{31}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. - 이 프로세스의 합이 사실 역행렬 $A^-1$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0ODI2NjM5LC0xMzQ2NzI1MDk5LC0xNT
+eyJoaXN0b3J5IjpbMjcwNjk2NDcxLC0xMzQ2NzI1MDk5LC0xNT
 gzMDQ1OTE2LC00NDIyODQ4NTJdfQ==
 -->
