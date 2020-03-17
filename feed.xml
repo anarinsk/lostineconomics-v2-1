@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T06:28:55-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T06:30:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FX4C-JpTFgY&quot;&gt;3. Multiplication and Inverse Matrices&lt;/a&gt;&lt;/p&gt;
 
@@ -332,12 +332,12 @@ LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
   &lt;li&gt;가상 환경으로 진입한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your-environment]/Scripts/activate 
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;|your-environment|/Scripts/activate 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Powershell을 쓴다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;Activate.ps1&lt;/code&gt;을 실행하면 된다.&lt;/li&gt;
-  &lt;li&gt;이제 실행창 앞에 (&lt;code class=&quot;highlighter-rouge&quot;&gt;[name-of-your-environmet]&lt;/code&gt;)이 떠 있는 것을 볼 수 있다.&lt;/li&gt;
+  &lt;li&gt;이제 실행창 앞에 (&lt;code class=&quot;highlighter-rouge&quot;&gt;|name-of-your-environmet|&lt;/code&gt;)이 떠 있는 것을 볼 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;update-your-venv&quot;&gt;Update your venv&lt;/h3&gt;
@@ -436,9 +436,9 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDAwODgxNDQsLTE3MjYzMjIyOTAsLT
-MwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQx
-MTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTUzNTY5NDk1OCwtMTYwMDA4ODE0NCwtMT
+cyNjMyMjI5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nzc4LC0xMDEy
+MTk4MTQsLTEyNDExNzg4OTVdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
