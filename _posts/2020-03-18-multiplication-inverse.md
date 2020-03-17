@@ -155,8 +155,8 @@ $$
 - 첫번째 행과 두번째 행을 바꾼다. 
 
 $$
-[A|I] \sim
-{\tilde E}_{12} [A|I] = 
+[{\mathbf A}|{\mathbf I}]  \sim 
+{\tilde E}_{12} [{\mathbf A}|{\mathbf I}]  = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 3 &-2 & 4 & \vert & 1 & 0 & 0 \\
@@ -167,8 +167,8 @@ $$
 - 두번째 행과 세번째 행을 바꾼다. 
 
 $$
-[A|I] \sim
-{\tilde E_{23}} [A|I] = 
+[{\mathbf A}|{\mathbf I}] \sim
+{\tilde E_{23}} [{\mathbf A}|{\mathbf I}] = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -180,8 +180,8 @@ $$
 
 $$
 \begin{aligned}
-[A|I] \sim
-E_{13} [A|I] & = 
+[{\mathbf A}|{\mathbf I}] \sim
+E_{13} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -200,8 +200,8 @@ $$
 
 $$
 \begin{aligned}
-[A|I] \sim
-E_{23} [A|I] & = 
+[{\mathbf A}|{\mathbf I}] \sim
+E_{23} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -220,7 +220,7 @@ $$
 
 $$
 \begin{aligned}
-[A|I] \sim
+[{\mathbf A}|{\mathbf I}] \sim
 E_{31} [A|I] & = 
 \begin{bmatrix}
 1 + 0 & 0 + 0 & 2 + (-2) & \vert & 0 + 1 & 1 + (-3) & 0 + 2\\
@@ -260,8 +260,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzk3MDI1OTIsLTkyMzM2MjE0NywyMD
-M5OTgxMzIyLDg3ODE2NTc3NSwyNjQzNjI1NjgsMjcwNjk2NDcx
-LC0xMzQ2NzI1MDk5LC0xNTgzMDQ1OTE2LC00NDIyODQ4NTJdfQ
-==
+eyJoaXN0b3J5IjpbLTMwNzI1MTY3NiwtOTIzMzYyMTQ3LDIwMz
+k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
+LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
