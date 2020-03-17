@@ -40,7 +40,11 @@ b_{n1}
 \end{bmatrix} = b_{11} A_1 + \dotsc + b_{n1} A_n = C_1
 $$
 
-- 즉, 매트릭스 $A$의 열 벡터 $A_i$가 있을 때 이를 B의 각 열 벡터로 선형결합한 것이 $C$가 된다. 
+- 즉, 매트릭스 $A$의 열 벡터 $A_i$가 있을 때 이를 B의 각 열 벡터로 선형결합한 것이 $\mathbf C$의 각 열을 구성하게 된다. 
+
+$$
+{\mathbf C} = [
+$$
 
 $$
 [A_1 \dotsc A_n] 
@@ -242,7 +246,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0NjM3NjIzLC05MjMzNjIxNDcsMjAzOT
+eyJoaXN0b3J5IjpbOTcwODcxNDg4LC05MjMzNjIxNDcsMjAzOT
 k4MTMyMiw4NzgxNjU3NzUsMjY0MzYyNTY4LDI3MDY5NjQ3MSwt
 MTM0NjcyNTA5OSwtMTU4MzA0NTkxNiwtNDQyMjg0ODUyXX0=
 -->
