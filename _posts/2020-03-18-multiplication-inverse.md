@@ -153,7 +153,7 @@ E_{23} [A|I] =
 \end{bmatrix}
 $$
 
-* 첫번째 행에 $-3$을 곱하고 이를 세번째 행에 다시 더한다. 
+* 첫번째 행에 $-3$을 곱하고 이를 세번째 행과 더한 후 세번째 행에 둔다. 
 
 $$
 \begin{aligned}
@@ -173,7 +173,27 @@ E_{13} [A|I] & =
 \end{aligned}
 $$
 
-* 두번째 행에 2를 곱한 후 이를 세번째 행과 다시 더한다. 
+* 두번째 행에 2를 곱한 후 이를 세번째 행에 더하여 세번째 행에 둔다. 
+
+$$
+\begin{aligned}
+[A|I] \sim
+E_{23}^\prime [A|I] & = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 + 0 &-2 + 2 & -2 + 0& \vert & 1 + 0 & -3 + 0 &  0 + 2
+\end{bmatrix} \\
+& = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 & \vert & 1 & -3 &  2
+\end{bmatrix}
+\end{aligned}
+$$
+
+- 첫번째 행과 세번째 행을 더한 후 이를 첫번째 행에 둔다. 
 
 $$
 \begin{aligned}
@@ -216,6 +236,6 @@ $$
 
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_{12}E_{23}E_{13}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTU5OTg5MCwtMTU4MzA0NTkxNiwtND
+eyJoaXN0b3J5IjpbMTEyNTM5MTcwMiwtMTU4MzA0NTkxNiwtND
 QyMjg0ODUyXX0=
 -->
