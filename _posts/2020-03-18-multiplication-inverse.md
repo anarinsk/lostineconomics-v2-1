@@ -136,25 +136,26 @@ $$
 E_{12} [A|I] = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
-3 &-2 & 4 & \vert & 1 & 0 & 0
+3 &-2 & 4 & \vert & 1 & 0 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1 
 \end{bmatrix}
-0 & 1 & 0 & \vert & 0 & 0 & 1 \\
-
 $$
 
-* 
+* 두번째 행과 세번째 행을 바꾼다. 
 
 $$
 [A|I] \sim
 E_{23} [A|I] = 
 \begin{bmatrix}
-3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-1 & 0 & 2 & \vert & 0 & 1 & 0
+3 &-2 & 4 & \vert & 1 & 0 & 0
 \end{bmatrix}
 $$
 
+* 첫번째 행에 $-3$을 곱하고 이를 세번째 행에 더하
+
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjA3NDI1MCwtNDQyMjg0ODUyXX0=
+eyJoaXN0b3J5IjpbLTIxMzY2MDM3NjIsLTQ0MjI4NDg1Ml19
 -->
