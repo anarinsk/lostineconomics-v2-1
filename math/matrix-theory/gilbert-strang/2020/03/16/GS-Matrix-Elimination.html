@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="매트릭스 바라보는 법 그리고 소거법" />
 <meta property="og:description" content="매트릭스 바라보는 법 그리고 소거법" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-16T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"매트릭스 바라보는 법 그리고 소거법","headline":"Following Gilbert Strang 1","dateModified":"2020-03-16T00:00:00-05:00","datePublished":"2020-03-16T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html","@context":"https://schema.org"}</script>
+{"description":"매트릭스 바라보는 법 그리고 소거법","headline":"Following Gilbert Strang 1","dateModified":"2020-03-16T00:00:00-05:00","datePublished":"2020-03-16T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -30,13 +30,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="매트릭스 바라보는 법 그리고 소거법" />
 <meta property="og:description" content="매트릭스 바라보는 법 그리고 소거법" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-16T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"매트릭스 바라보는 법 그리고 소거법","headline":"Following Gilbert Strang 1","dateModified":"2020-03-16T00:00:00-05:00","datePublished":"2020-03-16T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html","@context":"https://schema.org"}</script>
+{"description":"매트릭스 바라보는 법 그리고 소거법","headline":"Following Gilbert Strang 1","dateModified":"2020-03-16T00:00:00-05:00","datePublished":"2020-03-16T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -150,6 +150,9 @@ window.onload = wrap_img;
         &nbsp;
       
         <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#matrix-theory">matrix-theory</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#gilbert-strang">gilbert-strang</a>
         
       
       </p>
@@ -298,7 +301,8 @@ d &amp; b \\
 \end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span></span></span><span style="top:-2.4099999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500000000000004em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span></span>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDQ1ODI5MCwxMjkyODQ5MDk1XX0=
+eyJoaXN0b3J5IjpbMTU5NzgyNDQ1LDE3NTQ0NTgyOTAsMTI5Mj
+g0OTA5NV19
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
@@ -309,7 +313,7 @@ eyJoaXN0b3J5IjpbMTc1NDQ1ODI5MCwxMjkyODQ5MDk1XX0=
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" hidden></a>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/16/GS-Matrix-Elimination.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

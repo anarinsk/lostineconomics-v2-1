@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬" />
 <meta property="og:description" content="매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-18T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬","headline":"Following Gilbert Strang 2","dateModified":"2020-03-18T00:00:00-05:00","datePublished":"2020-03-18T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html","@context":"https://schema.org"}</script>
+{"description":"매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬","headline":"Following Gilbert Strang 2","dateModified":"2020-03-18T00:00:00-05:00","datePublished":"2020-03-18T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -30,13 +30,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬" />
 <meta property="og:description" content="매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-18T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬","headline":"Following Gilbert Strang 2","dateModified":"2020-03-18T00:00:00-05:00","datePublished":"2020-03-18T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html","@context":"https://schema.org"}</script>
+{"description":"매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬","headline":"Following Gilbert Strang 2","dateModified":"2020-03-18T00:00:00-05:00","datePublished":"2020-03-18T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -150,6 +150,9 @@ window.onload = wrap_img;
         &nbsp;
       
         <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#matrix-theory">matrix-theory</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#gilbert-strang">gilbert-strang</a>
         
       
       </p>
@@ -408,9 +411,9 @@ E_{3} [A|I] &amp; =
   <li>이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다.</li>
   <li>이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OT
-Y0NzEsLTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1
-Ml19
+eyJoaXN0b3J5IjpbMjAzOTk4MTMyMiw4NzgxNjU3NzUsMjY0Mz
+YyNTY4LDI3MDY5NjQ3MSwtMTM0NjcyNTA5OSwtMTU4MzA0NTkx
+NiwtNDQyMjg0ODUyXX0=
 --></li>
 </ul>
 
@@ -422,7 +425,7 @@ Ml19
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" hidden></a>
+</script><a class="u-url" href="/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
