@@ -44,11 +44,11 @@ $ |your-directory|/python.exe -m venv [your-environmet]
 - 가상 환경으로 진입한다. 
 
 ```bash
-$ [your-environment]/Scripts/activate 
+$ |your-environment|/Scripts/activate 
 ```
 
 - Powershell을 쓴다면, `Activate.ps1`을 실행하면 된다. 
-- 이제 실행창 앞에 (`[name-of-your-environmet]`)이 떠 있는 것을 볼 수 있다. 
+- 이제 실행창 앞에 (`|name-of-your-environmet|`)이 떠 있는 것을 볼 수 있다. 
 
 ### Update your venv 
 
@@ -128,7 +128,7 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDAwODgxNDQsLTE3MjYzMjIyOTAsLT
-MwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQx
-MTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTUzNTY5NDk1OCwtMTYwMDA4ODE0NCwtMT
+cyNjMyMjI5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nzc4LC0xMDEy
+MTk4MTQsLTEyNDExNzg4OTVdfQ==
 -->
