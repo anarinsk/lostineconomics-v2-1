@@ -17,7 +17,7 @@ categories: [coding-tool, python]
 ### Assumption 
 
 * 당신은 윈도 이용자다. 
-* "|this-is-desc|"와 같이 표현된 것은 각자의 컴퓨팅 환경을 의미한다. 
+* |this-is-desc|와 같이 표현된 것에서 "this-is-desc"는 각자의 컴퓨팅 환경을 뜻한다. 적당하게 이해하시라.  
 * git bash와 같이 bash 환경을 쓸 경우 슬래시(`/`)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(`\`)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다. 
 
 ## Install 
@@ -128,7 +128,7 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3ODQyODY4LC0xNjAwMDg4MTQ0LC0xNz
-I2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0OTg2MDQ3NzgsLTEwMTIx
-OTgxNCwtMTI0MTE3ODg5NV19
+eyJoaXN0b3J5IjpbMjA2NDkzNTE0MCw4Mzc4NDI4NjgsLTE2MD
+AwODgxNDQsLTE3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYw
+NDc3OCwtMTAxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
 -->
