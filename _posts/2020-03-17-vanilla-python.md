@@ -75,7 +75,7 @@ $ py -3 -m pip_review --local --interactive # 설치된 패키지 업데이트 �
 - 아래 명령처럼 하면 된다. 원하는 버전에 python을 직접 호출해서 가상 환경을 만든다. 
 
 ```bash 
-$ [your-directory]> C:\Python34\python.exe -m venv [your-venv]
+$ |your-directory|> C:\Python34\python.exe -m venv |your-venv|
 ```
 
 ### With VS Code 
@@ -108,7 +108,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - 원하는 버전의 python을 실행하려면 이를 응용하면 되겠다. 
 
 ```bash
-$ winpty [your-python-directory]/python.exe
+$ winpty |your-python-directory|/python.exe
 ```
 
 - 매번 이렇게 실행할 수 없으니 git bash 환경에 넣어두자. 
@@ -128,7 +128,7 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA3NzkzMTAsLTE2MDAwODgxNDQsLT
-E3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAx
-MjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbODM3ODQyODY4LC0xNjAwMDg4MTQ0LC0xNz
+I2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0OTg2MDQ3NzgsLTEwMTIx
+OTgxNCwtMTI0MTE3ODg5NV19
 -->
