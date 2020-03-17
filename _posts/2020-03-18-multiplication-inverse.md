@@ -134,18 +134,17 @@ $$
 
 - 만일 $A$의 한 열이 모두 0이면 singular 
 		- 왜냐하면, 나머지 열을 조합하는 $x$의 원소를 0으로 놓고 해당 열을 조합하는 $x$는 0이 아닌 다른 숫자를 넣으면 $x \neq 0$인 $A x = 0$를 얻을 수 있다. 
-
 - 만일 $A$의 한 열과 다른 열이 스칼라 값을 곱해 구해진다면 singular 
 		- 비슷한 논리로 이해할 수 있다. 두 열을 제외한 다른 $x$의 원소를 0으로 두고 해당 두 열을 적절한 수로 곱하면, $x \neq 0$인 $A x = 0$를 얻을 수 있다. 
 
 ## Using Gauss Jordan For Inverse Matices 
 
-$[A \vert I]$와 같은 형태의 augmented matrix를 만든 후, $A$를 $I$로 만드는 가우스-조르단 프로세스를 반복하면, $I$ 자리에 $A^{-1}$을 얻게 된다. 
+$[{\mathbf A} \vert {\mathbf I}]$와 같은 형태의 augmented matrix를 만든 후, $\mathbf A$를 $\mathbf I$로 만드는 가우스-조르단 프로세스를 반복하면, $\mathbf I$ 자리에 ${\mathbf A}^{-1}$을 얻게 된다. 
 
 ### Example 
 
 $$
-[A|I] = 
+[{\mathbf A}|{\mathbf I}] = 
 \begin{bmatrix}
 3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
 1 & 0 & 2 & \vert & 0 & 1 & 0\\
@@ -261,7 +260,8 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY5MjQzNiwtOTIzMzYyMTQ3LDIwMz
-k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
-LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTE2Nzk3MDI1OTIsLTkyMzM2MjE0NywyMD
+M5OTgxMzIyLDg3ODE2NTc3NSwyNjQzNjI1NjgsMjcwNjk2NDcx
+LC0xMzQ2NzI1MDk5LC0xNTgzMDQ1OTE2LC00NDIyODQ4NTJdfQ
+==
 -->
