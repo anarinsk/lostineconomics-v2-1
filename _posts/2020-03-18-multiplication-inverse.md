@@ -133,7 +133,7 @@ $$
 
 $$
 [A|I] \sim
-E_{12} [A|I] = 
+{\tilde E}_{12} [A|I] = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 3 &-2 & 4 & \vert & 1 & 0 & 0 \\
@@ -145,7 +145,7 @@ $$
 
 $$
 [A|I] \sim
-E_{23} [A|I] = 
+{\tilde E_{23}} [A|I] = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -234,8 +234,8 @@ E_{3} [A|I] & =
 \end{aligned}
 $$
 
-- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_{12}E_{23}E_{13}E_{31}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 ${\tilde E_{23}}{\tilde E}_{12}E_{13}E_{31}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLT
-Q0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTU0ODI2NjM5LC0xMzQ2NzI1MDk5LC0xNT
+gzMDQ1OTE2LC00NDIyODQ4NTJdfQ==
 -->
