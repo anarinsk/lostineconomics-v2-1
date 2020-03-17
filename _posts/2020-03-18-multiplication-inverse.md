@@ -21,7 +21,7 @@ $$
 \underbrace{\mathbf A}_{m \times n} \underbrace{\mathbf B}_{n \times p} = {\mathbf C}
 $$
 
-- $c_{ij}$는 뭘까? $A$의 $i$ 행 벡터와 $B$의 $j$ 열 벡터의 곱이다. 즉, 
+- $c_{ij}$는 뭘까? $\mathbf A$의 $i$ 행 벡터와 $B$의 $j$ 열 벡터의 곱이다. 즉, 
 
 $$
 c_{ij} = \sum_{k}^n a_{ik} b_{kj}
@@ -242,8 +242,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTUwODA5MDEsLTkyMzM2MjE0NywyMD
-M5OTgxMzIyLDg3ODE2NTc3NSwyNjQzNjI1NjgsMjcwNjk2NDcx
-LC0xMzQ2NzI1MDk5LC0xNTgzMDQ1OTE2LC00NDIyODQ4NTJdfQ
-==
+eyJoaXN0b3J5IjpbNjMyNDkzNDUsLTkyMzM2MjE0NywyMDM5OT
+gxMzIyLDg3ODE2NTc3NSwyNjQzNjI1NjgsMjcwNjk2NDcxLC0x
+MzQ2NzI1MDk5LC0xNTgzMDQ1OTE2LC00NDIyODQ4NTJdfQ==
 -->
