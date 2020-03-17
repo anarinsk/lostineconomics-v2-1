@@ -153,7 +153,7 @@ E_{23} [A|I] =
 \end{bmatrix}
 $$
 
-* 첫번째 행에 $-3$을 곱하고 이를 세번째 행에 더한다. 
+* 첫번째 행에 $-3$을 곱하고 이를 세번째 행에 다시 더한다. 
 
 $$
 \begin{aligned}
@@ -173,10 +173,28 @@ E_{13} [A|I] & =
 \end{aligned}
 $$
 
-* 두번째 행에 2를 더한 후 이를 세번쨰
+* 두번째 행에 2를 곱한 후 이를 세번째 행과 다시 더한다. 
+
+$$
+\begin{aligned}
+[A|I] \sim
+E_{23} [A|I] & = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 &-2 & -2 & \vert & 1 & -3 &  0
+\end{bmatrix} \\
+& = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 &-2 & -2 & \vert & 1 & -3 &  0
+\end{bmatrix}
+\end{aligned}
+$$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA5NTM2ODgsLTE1ODMwNDU5MTYsLT
-Q0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTQ0MTYzNDgwOCwtMTU4MzA0NTkxNiwtND
+QyMjg0ODUyXX0=
 -->
