@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-16T19:02:30-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Vanilla Python with Virtual ENV</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html" rel="alternate" type="text/html" title="Vanilla Python with Virtual ENV" /><published>2020-03-17T00:00:00-05:00</published><updated>2020-03-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-16T19:04:45-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Vanilla Python with Virtual ENV</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html" rel="alternate" type="text/html" title="Vanilla Python with Virtual ENV" /><published>2020-03-17T00:00:00-05:00</published><updated>2020-03-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
 
 &lt;p&gt;아나콘다 사가 개발한 Conda는 무척 훌륭한 패키지다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.&lt;/p&gt;
 
@@ -7,7 +7,7 @@
 &lt;ul&gt;
   &lt;li&gt;당신은 윈도 이용자다.&lt;/li&gt;
   &lt;li&gt;“[this-is-desc]”와 같이 표현된 것은 각자의 컴퓨팅 환경을 의미한다.&lt;/li&gt;
-  &lt;li&gt;git bash와 같이 bash 환경을 쓸 경우 슬래시(“/”)를 그냥 윈도 커맨드를 쓸 경우 역슬래시(“&quot;)를 써야 한다. 아래에서는 git bash 환경을 기본으로 둔다.&lt;/li&gt;
+  &lt;li&gt;git bash와 같이 bash 환경을 쓸 경우 슬래시(&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;)를 그냥 윈도 커맨드를 쓸 경우 역슬래시(&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;)를 써야 한다. 아래에서는 git bash 환경을 기본으로 둔다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
@@ -144,8 +144,8 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMT
-I0MTE3ODg5NV19
+eyJoaXN0b3J5IjpbLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMT
+AxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
 --&gt;</content><author><name></name></author><summary type="html">Why</summary></entry><entry><title type="html">Following Gilbert Strang 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html" rel="alternate" type="text/html" title="Following Gilbert Strang 1" /><published>2020-03-16T00:00:00-05:00</published><updated>2020-03-16T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/16/GS-Matrix-Elimination.html">&lt;h2 id=&quot;what&quot;&gt;What&lt;/h2&gt;
 
 &lt;ul&gt;
