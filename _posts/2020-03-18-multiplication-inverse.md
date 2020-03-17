@@ -128,7 +128,7 @@ $$
 - 증명은 간단하다. 
 	- $\mathbf A$의 역행렬이 존재하고, $x \neq 0$라고 하자.
 	- ${\mathbf A}^{-1} {\mathbf A} x = {\mathbf A}^{-1} 0 = 0$
-	- 따라서 ${\mathbf I}x = {\mathbf 0}$이 되고, $x \neq 0$와 전제와 모순이다.  
+	- 따라서 ${\mathbf I}x = {0}$이 되고, $x \neq 0$와 전제와 모순이다.  
 
 ### Singularity 
 
@@ -260,6 +260,6 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 ${\mathbf A}^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDE2NDQxNiwxODIwODcwMDQsMjE3NT
+eyJoaXN0b3J5IjpbMTU3NjI3ODkzOCwxODIwODcwMDQsMjE3NT
 UwOTA0XX0=
 -->
