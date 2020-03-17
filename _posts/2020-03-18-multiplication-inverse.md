@@ -182,19 +182,39 @@ E_{23} [A|I] & =
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-0 &-2 & -2 & \vert & 1 & -3 &  0
+0 + 0 &-2 + 2 & -2 + 0& \vert & 1 + 0 & -3 + 0 &  0 + 2
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-0 &-2 & -2 & \vert & 1 & -3 &  0
+0 & 0 & -2 & \vert & 1 & -3 &  2
+\end{bmatrix}
+\end{aligned}
+$$
+
+* 세번째 행에 $-1/2$을 곱한다. 
+
+$$
+\begin{aligned}
+[A|I] \sim
+E_{3} [A|I] & = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 + 0 &-2 + 2 & -2 + 0& \vert & 1 + 0 & -3 + 0 &  0 + 2
+\end{bmatrix} \\
+& = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 & \vert & 1 & -3 &  2
 \end{bmatrix}
 \end{aligned}
 $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTYzNDgwOCwtMTU4MzA0NTkxNiwtND
+eyJoaXN0b3J5IjpbMTcxNDAyOTQzNSwtMTU4MzA0NTkxNiwtND
 QyMjg0ODUyXX0=
 -->
