@@ -178,7 +178,7 @@ $$
 $$
 \begin{aligned}
 [A|I] \sim
-E_{23}^\prime [A|I] & = 
+E_{23} [A|I] & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -198,7 +198,7 @@ $$
 $$
 \begin{aligned}
 [A|I] \sim
-E_{23}^\prime [A|I] & = 
+E_{31} [A|I] & = 
 \begin{bmatrix}
 1 + 0 & 0 + 0 & 2 + (-2) & \vert & 0 + 1 & 1 + (-3) & 0 + 2\\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -226,7 +226,7 @@ E_{3} [A|I] & =
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
-1 & 0 & 2 & \vert & 1 &  & 0 \\
+1 & 0 & 2 & \vert & 1 & -2 & 2 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
 0 & 0 & 1 & \vert & -\frac{1}{2} & \frac{3}{2} &  1
 \end{bmatrix} \\
@@ -234,8 +234,8 @@ E_{3} [A|I] & =
 \end{aligned}
 $$
 
-- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_{12}E_{23}E_{13}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_{12}E_{23}E_{13}E_{31}E^\prime_{23}E_{3}$으로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzIwODgwOTUsLTE1ODMwNDU5MTYsLT
+eyJoaXN0b3J5IjpbLTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLT
 Q0MjI4NDg1Ml19
 -->
