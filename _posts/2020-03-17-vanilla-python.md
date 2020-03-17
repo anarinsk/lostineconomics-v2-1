@@ -10,7 +10,9 @@ categories: [coding-tool, python]
 
 ## Why
 
-아나콘다 사가 개발한 Conda는 무척 훌륭한 패키지다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다. 
+아나콘다 사가 개발한 conda는 무척 훌륭한 도구다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.[^1]
+
+[^1]: conda가 여러모로 편하다. 하지만 conda를 써야겠다면, conda 전체를 깔지 말고 minconda를 써보시기를 권한다. conda는 쓸 데 없는 것을 너무 많이 깔아버리거든... 
 
 ### Assumption 
 
@@ -126,6 +128,6 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMT
-AxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTE3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMT
+Q5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
 -->
