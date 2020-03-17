@@ -178,7 +178,7 @@ $$
 $$
 \begin{aligned}
 [A|I] \sim
-E_{23} [A|I] & = 
+E_{23}^\p [A|I] & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -214,8 +214,8 @@ E_{3} [A|I] & =
 \end{aligned}
 $$
 
-- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E$
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_{3}E_{23}E_{13}E_{23}$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MzkxMjQ4OSwtMTU4MzA0NTkxNiwtND
-QyMjg0ODUyXX0=
+eyJoaXN0b3J5IjpbLTIwMTQyNzUyMTksLTE1ODMwNDU5MTYsLT
+Q0MjI4NDg1Ml19
 -->
