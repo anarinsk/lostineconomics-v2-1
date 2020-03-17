@@ -38,7 +38,7 @@ categories: [coding-tool, python]
 - 해당 디렉토리 안에서  가상 환경을 생성한다. 
 
 ```bash 
-$ |your-directory|/python.exe -m venv [your-environmet]
+$ |your-directory|/python.exe -m venv |your-environmet|
 ```
 
 - 가상 환경으로 진입한다. 
@@ -128,7 +128,7 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTY5NDk1OCwtMTYwMDA4ODE0NCwtMT
-cyNjMyMjI5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nzc4LC0xMDEy
-MTk4MTQsLTEyNDExNzg4OTVdfQ==
+eyJoaXN0b3J5IjpbLTEwMTA3NzkzMTAsLTE2MDAwODgxNDQsLT
+E3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAx
+MjE5ODE0LC0xMjQxMTc4ODk1XX0=
 -->
