@@ -52,7 +52,7 @@ b_{ni}
 $$
 
 $$
-{\mathbf C} = [{\rm col } C_1 \dotsc {\rm col } C_p]
+{\mathbf C} = [\text{col }C_1 \dotsc \text{col } C_p]
 $$
 
 
@@ -72,7 +72,12 @@ B_{n}
 $$
 
 $$
-{\mathbf B} = [C_1 \dotsc, C_p]
+{\mathbf B} =
+\begin{bmatrix} 
+\text{row } C_1 \\
+\vdots \\
+\text{row } C_m
+\end{bmatrix}
 $$
 
 
@@ -252,7 +257,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTE5MTc4OCwtOTIzMzYyMTQ3LDIwMz
+eyJoaXN0b3J5IjpbMTQ2MDE2MjM0MiwtOTIzMzYyMTQ3LDIwMz
 k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
 LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
