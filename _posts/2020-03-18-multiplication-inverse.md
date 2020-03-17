@@ -123,13 +123,24 @@ $[A \vert I]$와 같은 형태의 augmented matrix를 만든 후, $A$를 $I$로 
 $$
 [A|I] = 
 \begin{bmatrix}
-3 &-2 & 4 \\ 
-1 & 0 & 2 \\
-0 & 1 & 0 \\
+3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
+1 & 0 & 2 & \vert & 0 & 1 & 0\\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
 \end{bmatrix}
 $$
 
+* 두번째 행과 세번째 행을 바꾼다. 
+
+[A|I] ~
+\begin{bmatrix}
+3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+1 & 0 & 2 & \vert & 0 & 1 & 0
+\end{bmatrix}
+$$
+
+
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2OTA0ODAxLC00NDIyODQ4NTJdfQ==
+eyJoaXN0b3J5IjpbMTk4MTcxOTQ3NSwtNDQyMjg0ODUyXX0=
 -->
