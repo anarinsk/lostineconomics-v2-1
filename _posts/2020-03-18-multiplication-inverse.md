@@ -156,16 +156,19 @@ $$
 * 첫번째 행에 $-3$을 곱하고 이를 세번째 행에 더한다. 
 
 $$
+\begin{aligned}
 [A|I] \sim
 E_{13} [A|I] = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-3+(-3) &-2 & 4 & \vert & 1 & 0 & 0
+3+(-3) &-2 + 0 & 4 + (-6)& \vert & 1 + 0 & 0 + (-3) & 0 + 0
 \end{bmatrix}
+\end{aligned}
 $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTUzMjQ3NDI5MiwtMTU4MzA0NTkxNiwtND
+QyMjg0ODUyXX0=
 -->
