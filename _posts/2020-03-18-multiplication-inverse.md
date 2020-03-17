@@ -4,7 +4,7 @@ toc: false
 comments: true
 title: Following Gilbert Strang 2
 description: 매트릭스 곱을 이해하는 4가지 방법 그리고 역행렬 
-categories: [math, matrix-theory]
+categories: [math, matrix-theory, gilbert-strang]
 
 ---
 
@@ -237,7 +237,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OT
-Y0NzEsLTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1
-Ml19
+eyJoaXN0b3J5IjpbMjAzOTk4MTMyMiw4NzgxNjU3NzUsMjY0Mz
+YyNTY4LDI3MDY5NjQ3MSwtMTM0NjcyNTA5OSwtMTU4MzA0NTkx
+NiwtNDQyMjg0ODUyXX0=
 -->
