@@ -131,7 +131,9 @@ $$
 
 * 두번째 행과 세번째 행을 바꾼다. 
 
-[A|I] ~
+$$
+[A|I] \sim
+E_{23} [A|I] = 
 \begin{bmatrix}
 3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -142,5 +144,5 @@ $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTcxOTQ3NSwtNDQyMjg0ODUyXX0=
+eyJoaXN0b3J5IjpbODEwMjIyMjY2LC00NDIyODQ4NTJdfQ==
 -->
