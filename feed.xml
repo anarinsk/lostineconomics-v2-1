@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T02:32:30-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T02:32:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FX4C-JpTFgY&quot;&gt;3. Multiplication and Inverse Matrices&lt;/a&gt;&lt;/p&gt;
 
@@ -246,9 +246,9 @@ E_{3} [A|I] &amp;amp; =
 
 &lt;ul&gt;
   &lt;li&gt;이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다.&lt;/li&gt;
-  &lt;li&gt;이 프로세스의 합이 사실 역행렬 $A^{-1$이다. 
+  &lt;li&gt;이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMjUxNzE1LDI2NDM2MjU2OCwyNzA2OT
+eyJoaXN0b3J5IjpbODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OT
 Y0NzEsLTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1
 Ml19
 --&gt;&lt;/li&gt;
