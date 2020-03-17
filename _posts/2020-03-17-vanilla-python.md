@@ -44,7 +44,7 @@ $ |your-directory|/python.exe -m venv |your-environmet|
 - 가상 환경으로 진입한다. 
 
 ```bash
-$ |your-environment|/Scripts/activate 
+$ |your-python-directory|/Scripts/activate 
 ```
 
 - Powershell을 쓴다면, `Activate.ps1`을 실행하면 된다. 
@@ -128,8 +128,8 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDYxNzg1NjYsMjA2NDkzNTE0MCw4Mz
-c4NDI4NjgsLTE2MDAwODgxNDQsLTE3MjYzMjIyOTAsLTMwNDg4
-NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQxMTc4OD
-k1XX0=
+eyJoaXN0b3J5IjpbLTEyMzIwNjY5NTUsLTE5MDYxNzg1NjYsMj
+A2NDkzNTE0MCw4Mzc4NDI4NjgsLTE2MDAwODgxNDQsLTE3MjYz
+MjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5OD
+E0LC0xMjQxMTc4ODk1XX0=
 -->
