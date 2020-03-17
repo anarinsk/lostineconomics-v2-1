@@ -68,11 +68,11 @@ $$
 B_{1} \\
 \vdots \\
 B_{n}
-\end{bmatrix} = a_{11} B_1 + \dotsc + a_{in} B_n = \text{row } C_i, \text{for } i = 1, \dotsc, p
+\end{bmatrix} = a_{11} B_1 + \dotsc + a_{in} B_n = \text{row } C_i, \text{for } i = 1, \dotsc, m
 $$
 
 $$
-{\mathbf B} =
+{\mathbf C} =
 \begin{bmatrix} 
 \text{row } C_1 \\
 \vdots \\
@@ -93,7 +93,7 @@ $$
 B_{1} \\
 \vdots \\
 B_{n}
-\end{bmatrix} = A_1 B_1 + \dotsb + A_n B_n
+\end{bmatrix} = \underbrace{A_1 B_1}_{(m \times 1) \timex p} + \dotsb + A_n B_n
 $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_4.png){: style="textalign:center; " width="500"}
@@ -257,7 +257,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDE2MjM0MiwtOTIzMzYyMTQ3LDIwMz
+eyJoaXN0b3J5IjpbMTMzODY4MDYxMCwtOTIzMzYyMTQ3LDIwMz
 k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
 LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
