@@ -202,19 +202,20 @@ E_{3} [A|I] & =
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-0 & 0 & -2 * (-\frac{1}{2}) & \vert & \frac{1}{2} & -3*(-\frac{1}{2} & -\frac{2}{2}
+0 & 0 & -2 * (-\frac{1}{2}) & \vert & \frac{1}{2} & -3*(-\frac{1}{2}) & -\frac{2}{2}
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-0 & 0 & -2 & \vert & 1 & -3 &  2
-\end{bmatrix}
+0 & 0 & 1 & \vert & -\frac{1}{2} & \frac{3}{2} &  1
+\end{bmatrix} \\
+& = [I \vert A^{-1}]
 \end{aligned}
 $$
 
-![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjcwNjMwMiwtMTU4MzA0NTkxNiwtND
+eyJoaXN0b3J5IjpbMTI2MzkxMjQ4OSwtMTU4MzA0NTkxNiwtND
 QyMjg0ODUyXX0=
 -->
