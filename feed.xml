@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T06:32:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-17T06:33:56-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FX4C-JpTFgY&quot;&gt;3. Multiplication and Inverse Matrices&lt;/a&gt;&lt;/p&gt;
 
@@ -374,7 +374,7 @@ LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
   &lt;li&gt;아래 명령처럼 하면 된다. 원하는 버전에 python을 직접 호출해서 가상 환경을 만든다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your-directory]&amp;gt; C:&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;ython34&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;ython.exe &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your-venv]
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;|your-directory|&amp;gt; C:&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;ython34&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;ython.exe &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;with-vs-code&quot;&gt;With VS Code&lt;/h3&gt;
@@ -415,7 +415,7 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
   &lt;li&gt;원하는 버전의 python을 실행하려면 이를 응용하면 되겠다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;winpty &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;your-python-directory]/python.exe
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;winpty |your-python-directory|/python.exe
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -436,9 +436,9 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTA3NzkzMTAsLTE2MDAwODgxNDQsLT
-E3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAx
-MjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbODM3ODQyODY4LC0xNjAwMDg4MTQ0LC0xNz
+I2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0OTg2MDQ3NzgsLTEwMTIx
+OTgxNCwtMTI0MTE3ODg5NV19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
