@@ -129,7 +129,20 @@ $$
 \end{bmatrix}
 $$
 
-* 두번째 행과 세번째 행을 바꾼다. 
+* 첫번째 행과 두번째 행을 바꾼다. 
+
+$$
+[A|I] \sim
+E_{12} [A|I] = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+3 &-2 & 4 & \vert & 1 & 0 & 0
+\end{bmatrix}
+0 & 1 & 0 & \vert & 0 & 0 & 1 \\
+
+$$
+
+* 
 
 $$
 [A|I] \sim
@@ -141,8 +154,7 @@ E_{23} [A|I] =
 \end{bmatrix}
 $$
 
-
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwMjIyMjY2LC00NDIyODQ4NTJdfQ==
+eyJoaXN0b3J5IjpbLTk4NjA3NDI1MCwtNDQyMjg0ODUyXX0=
 -->
