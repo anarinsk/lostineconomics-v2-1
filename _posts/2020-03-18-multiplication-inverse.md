@@ -93,7 +93,7 @@ $$
 B_{1} \\
 \vdots \\
 B_{n}
-\end{bmatrix} = \underbrace{A_1 B_1}_{(m \times 1) \timex p} + \dotsb + A_n B_n
+\end{bmatrix} = \underbrace{A_1 B_1}_{(m \times 1) \times (1 \times p)} + \dotsb + A_n B_n
 $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_4.png){: style="textalign:center; " width="500"}
@@ -107,7 +107,7 @@ $$
 - 정의상 보면, 정방행렬 $A$에 대해서 역행렬 $A^{-1}$은 
 
 $$
-A A^{-1} = I, \text{ also } A^{-1} A = I
+{\mathbf A} {\mathbf A}^{-1} = {\math I, \text{ also } {\mathbf A}^{-1} {\mathbf A} = {\mathbf I}
 $$
 
 - 역행렬이 존재하는 정방행렬을 non-singluar or invertible matrices라고 부른다. 
@@ -116,7 +116,7 @@ $$
 - 역행렬을 구하는 과정을 따져보자. 
 
 $$
-A [A^{-1}_1, \dotsc A^{-1}_n] = I 
+{\matbf A} [A^{-1}_1, \dotsc A^{-1}_n] = I 
 $$
 
 - $A^{-1}_i$는 역행렬 $A^-1$의 컬럼 벡터 
@@ -257,7 +257,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODY4MDYxMCwtOTIzMzYyMTQ3LDIwMz
+eyJoaXN0b3J5IjpbMTMxODg3NTE4NCwtOTIzMzYyMTQ3LDIwMz
 k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
 LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
