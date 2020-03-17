@@ -17,8 +17,8 @@ categories: [coding-tool, python]
 ### Assumption 
 
 * 당신은 윈도 이용자다. 
-* "[this-is-desc]"와 같이 표현된 것은 각자의 컴퓨팅 환경을 의미한다. 
-* git bash와 같이 bash 환경을 쓸 경우 슬래시(`/`)를 그냥 윈도 커맨드를 쓸 경우 역슬래시(`\`)를 써야 한다. 아래에서는 git bash 환경을 기본으로 둔다. 
+* "|this-is-desc|"와 같이 표현된 것은 각자의 컴퓨팅 환경을 의미한다. 
+* git bash와 같이 bash 환경을 쓸 경우 슬래시(`/`)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(`\`)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다. 
 
 ## Install 
 
@@ -38,7 +38,7 @@ categories: [coding-tool, python]
 - 해당 디렉토리 안에서  가상 환경을 생성한다. 
 
 ```bash 
-$ [your-directory]/python.exe -m venv [your-environmet]
+$ |your-directory|/python.exe -m venv [your-environmet]
 ```
 
 - 가상 환경으로 진입한다. 
@@ -128,6 +128,7 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMT
-Q5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTE2MDAwODgxNDQsLTE3MjYzMjIyOTAsLT
+MwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5ODE0LC0xMjQx
+MTc4ODk1XX0=
 -->
