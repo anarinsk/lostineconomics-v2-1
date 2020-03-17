@@ -221,7 +221,7 @@ $$
 $$
 \begin{aligned}
 [{\mathbf A}|{\mathbf I}] \sim
-E_{31} [A|I] & = 
+E_{31} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
 1 + 0 & 0 + 0 & 2 + (-2) & \vert & 0 + 1 & 1 + (-3) & 0 + 2\\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -240,8 +240,8 @@ $$
 
 $$
 \begin{aligned}
-[A|I] \sim
-E_{3} [A|I] & = 
+[{\mathbf A}|{\mathbf I}] \sim
+E_{3} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
 1 & 0 & 0 & \vert & 1 & -2 & 2 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
@@ -253,14 +253,14 @@ E_{3} [A|I] & =
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
 0 & 0 & 1 & \vert & -\frac{1}{2} & \frac{3}{2} &  1
 \end{bmatrix} \\
-& = [I \vert A^{-1}]
+& = [{\mathbf I} \vert {\mathbf A}^{-1}]
 \end{aligned}
 $$
 
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
-- 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
+- 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 ${\mathbf A}^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzI1MTY3NiwtOTIzMzYyMTQ3LDIwMz
+eyJoaXN0b3J5IjpbLTgyNjA2NTc0MCwtOTIzMzYyMTQ3LDIwMz
 k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
 LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
