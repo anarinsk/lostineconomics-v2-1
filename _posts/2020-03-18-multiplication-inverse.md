@@ -107,7 +107,7 @@ $$
 - 정의상 보면, 정방행렬 $A$에 대해서 역행렬 $A^{-1}$은 
 
 $$
-{\mathbf A} {\mathbf A}^{-1} = {\math I, \text{ also } {\mathbf A}^{-1} {\mathbf A} = {\mathbf I}
+{\mathbf A} {\mathbf A}^{-1} = {\mathbf I}, \text{ also } {\mathbf A}^{-1} {\mathbf A} = {\mathbf I}
 $$
 
 - 역행렬이 존재하는 정방행렬을 non-singluar or invertible matrices라고 부른다. 
@@ -116,18 +116,18 @@ $$
 - 역행렬을 구하는 과정을 따져보자. 
 
 $$
-{\matbf A} [A^{-1}_1, \dotsc A^{-1}_n] = I 
+{\mathbf A} [A^{-1}_1, \dotsc A^{-1}_n] = I 
 $$
 
-- $A^{-1}_i$는 역행렬 $A^-1$의 컬럼 벡터 
+- $A^{-1}_i$는 역행렬 $A^{-1}$의 컬럼 벡터 
 - 역행렬을 구하는 문제는 사실 $n$개의 연립방정식을 푸는 문제와 구조상 동일하다. 
 
 ### Another definition 
 
-- $A x = 0$를 만족하는 $0$ 벡터가 아닌 벡터 $x$가 존재하면 singular matrices. 
+- ${\mathbf A} x = 0$를 만족하는 $0$ 벡터가 아닌 벡터 $x$가 존재하면 singular matrix. 
 - 증명은 간단하다. 
-	- $A$의 역행렬이 존재하고, $x \neq 0$라고 하자.
-	- $A^{-1} A x = A^{-1} 0$ &rarr; $Ix = 0$ 모순 
+	- $\mathbf A$의 역행렬이 존재하고, $x \neq 0$라고 하자.
+	- ${\mathbf A}^{-1} {\mathbA x = A^{-1} 0$ &rarr; $Ix = 0$ 모순 
 - 이 사실을 이용해서 알 수 있는 것은? 
 	- 만일 $A$의 한 열이 모두 0이면 singular 
 		- 왜냐하면, 나머지 열을 조합하는 $x$의 원소를 0으로 놓고 해당 열을 조합하는 $x$는 0이 아닌 다른 숫자를 넣으면 $x \neq 0$인 $A x = 0$를 얻을 수 있다. 
@@ -257,7 +257,8 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODg3NTE4NCwtOTIzMzYyMTQ3LDIwMz
-k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
-LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTE1NTg2NTk0MzMsLTkyMzM2MjE0NywyMD
+M5OTgxMzIyLDg3ODE2NTc3NSwyNjQzNjI1NjgsMjcwNjk2NDcx
+LC0xMzQ2NzI1MDk5LC0xNTgzMDQ1OTE2LC00NDIyODQ4NTJdfQ
+==
 -->
