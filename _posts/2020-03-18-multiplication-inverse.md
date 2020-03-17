@@ -18,7 +18,7 @@ categories: [math, matrix-theory, gilbert-strang]
 ### Standard 
 
 $$
-\underbrace{\mathbf A}_{m \times n} \underbrace{\mathbf B}_{n \times p} = {\mathbf C}
+\underbrace{ \mathbf A }_{m \times n} \underbrace{\mathbf B}_{n \times p} = {\mathbf C}
 $$
 
 - $c_{ij}$는 뭘까? $\mathbf A$의 $i$ 행 벡터와 $\mathbf B$의 $j$ 열 벡터의 곱이다. 즉, 
@@ -52,7 +52,7 @@ b_{ni}
 $$
 
 $$
-{\mathbf C} = [C_1 \dotsc, C_p]
+{\mathbf C} = [{\rm col } C_1 \dotsc {\rm col } C_p]
 $$
 
 
@@ -70,6 +70,11 @@ B_{1} \\
 B_{n}
 \end{bmatrix} = a_{11} B_1 + \dotsc + a_{in} B_n = \text{row } C_i, \text{for } i = 1, \dotsc, p
 $$
+
+$$
+{\mathbf B} = [C_1 \dotsc, C_p]
+$$
+
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_3.png){: style="textalign:center; " width="500"}
 
@@ -247,7 +252,7 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 $A^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDcyODg0MSwtOTIzMzYyMTQ3LDIwMz
+eyJoaXN0b3J5IjpbLTI2MTE5MTc4OCwtOTIzMzYyMTQ3LDIwMz
 k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
 LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
 -->
