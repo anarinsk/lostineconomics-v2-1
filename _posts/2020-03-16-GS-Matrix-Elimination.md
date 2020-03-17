@@ -4,7 +4,7 @@ toc: false
 comments: true
 title: Following Gilbert Strang 1
 description: 매트릭스 바라보는 법 그리고 소거법
-categories: [math, matrix-theory]
+categories: [math, matrix-theory, gilbert-strang]
 
 ---
 
@@ -132,5 +132,6 @@ d & b \\
 $$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDQ1ODI5MCwxMjkyODQ5MDk1XX0=
+eyJoaXN0b3J5IjpbMTU5NzgyNDQ1LDE3NTQ0NTgyOTAsMTI5Mj
+g0OTA5NV19
 -->
