@@ -80,7 +80,7 @@ $ [your-directory]> C:\Python34\python.exe -m venv [your-venv]
 
 - VS code에서 해당 가상 환경을 어떻게 인식시킬 수 있을까? 
 - VS Code의 메뉴에서 
-	 - <kbd>File</kbd> → <kbd>Preference</kbd> → <kbd>settings</kbd>
+	 - <kbd>File</kbd> &rarr; <kbd>Preference</kbd> &rarr; <kbd>settings</kbd>
 	 - "python:Pythonpath"로 검색한 후 아래를 브라우징하다보면, 
 	 - 가상 환경이 이름이 `.venv`라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다. 
 
@@ -126,5 +126,6 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTIxOTgxNCwtMTI0MTE3ODg5NV19
+eyJoaXN0b3J5IjpbLTE0OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMT
+I0MTE3ODg5NV19
 -->
