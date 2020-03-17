@@ -202,7 +202,7 @@ E_{3} [A|I] & =
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
-0 + 0 &-2 + 2 & -2 + 0& \vert & 1 + 0 & -3 + 0 &  0 + 2
+0 & 0 & -2 * (-\frac{1}{2}) & \vert & \frac{1}{2} & -3*(-\frac{1}{2} & -\frac{2}{2}
 \end{bmatrix} \\
 & = 
 \begin{bmatrix}
@@ -215,6 +215,6 @@ $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDAyOTQzNSwtMTU4MzA0NTkxNiwtND
+eyJoaXN0b3J5IjpbMTAzNjcwNjMwMiwtMTU4MzA0NTkxNiwtND
 QyMjg0ODUyXX0=
 -->
