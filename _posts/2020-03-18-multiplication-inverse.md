@@ -116,9 +116,11 @@ $$
 
 ## Using Gauss Jordan For Inverse Matices 
 
-$[A \vert I]$와 같은 형태의 augmented matrix를 만든 후, $A$를 $I$로 만드는 가우스-조르단 프로세스를 반복하면, $I$ 자리에 $A^{-1}$을 얻게 된다. 즉, 
+$[A \vert I]$와 같은 형태의 augmented matrix를 만든 후, $A$를 $I$로 만드는 가우스-조르단 프로세스를 반복하면, $I$ 자리에 $A^{-1}$을 얻게 된다. 
+
+### Example 
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbLTE3MDIzODk3MiwtNDQyMjg0ODUyXX0=
 -->
