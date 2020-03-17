@@ -158,17 +158,25 @@ $$
 $$
 \begin{aligned}
 [A|I] \sim
-E_{13} [A|I] = 
+E_{13} [A|I] & = 
 \begin{bmatrix}
 1 & 0 & 2 & \vert & 0 & 1 & 0 \\
 0 & 1 & 0 & \vert & 0 & 0 & 1\\
 3+(-3) &-2 + 0 & 4 + (-6)& \vert & 1 + 0 & 0 + (-3) & 0 + 0
+\end{bmatrix} \\
+& = 
+\begin{bmatrix}
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 &-2 & -2 & \vert & 1 & -3 &  0
 \end{bmatrix}
 \end{aligned}
 $$
 
+* 두번째 행에 2를 더한 후 이를 세번쨰
+
 ![]({{ site.baseurl }}/images/GS-LA/fig_6.jpg){: style="textalign:center; " width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjQ3NDI5MiwtMTU4MzA0NTkxNiwtND
-QyMjg0ODUyXX0=
+eyJoaXN0b3J5IjpbLTEyNTA5NTM2ODgsLTE1ODMwNDU5MTYsLT
+Q0MjI4NDg1Ml19
 -->
