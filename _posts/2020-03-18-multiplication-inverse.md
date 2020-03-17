@@ -116,10 +116,10 @@ $$
 - 역행렬을 구하는 과정을 따져보자. 
 
 $$
-{\mathbf A} [A^{-1}_1, \dotsc A^{-1}_n] = I 
+{\mathbf A} [A^{-1}_1, \dotsc A^{-1}_n] = {\mathbf I}
 $$
 
-- $A^{-1}_i$는 역행렬 $A^{-1}$의 컬럼 벡터 
+- $A^{-1}_i$는 역행렬 ${\mathbf A}^{-1}$의 컬럼 벡터 
 - 역행렬을 구하는 문제는 사실 $n$개의 연립방정식을 푸는 문제와 구조상 동일하다. 
 
 ### Another definition 
@@ -132,10 +132,10 @@ $$
 
 ### Singularity 
 
-- 만일 $A$의 한 열이 모두 0이면 singular 
-		- 왜냐하면, 나머지 열을 조합하는 $x$의 원소를 0으로 놓고 해당 열을 조합하는 $x$는 0이 아닌 다른 숫자를 넣으면 $x \neq 0$인 $A x = 0$를 얻을 수 있다. 
-- 만일 $A$의 한 열과 다른 열이 스칼라 값을 곱해 구해진다면 singular 
-		- 비슷한 논리로 이해할 수 있다. 두 열을 제외한 다른 $x$의 원소를 0으로 두고 해당 두 열을 적절한 수로 곱하면, $x \neq 0$인 $A x = 0$를 얻을 수 있다. 
+- 만일 $\mathbf A$의 한 열이 모두 0이면 singular 
+		- 왜냐하면, 나머지 열을 조합하는 $x$의 원소를 0으로 놓고 해당 열을 조합하는 $x$는 0이 아닌 다른 숫자를 넣으면 $x \neq 0$인 ${\mathbf A} x = 0$를 얻을 수 있다. 
+- 만일 $\mathbf A$의 한 열과 다른 열이 스칼라 값을 곱해 구해진다면 singular 
+		- 비슷한 논리로 이해할 수 있다. 두 열을 제외한 다른 $x$의 원소를 0으로 두고 해당 두 열을 적절한 수로 곱하면, $x \neq 0$인 ${\mathbf A} x = 0$를 얻을 수 있다. 
 
 ## Using Gauss Jordan For Inverse Matices 
 
@@ -260,7 +260,5 @@ $$
 - 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
 - 이 프로세스의 곱, 즉 위에 적은 것이 역행렬 ${\mathbf A}^{-1}$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjA2NTc0MCwtOTIzMzYyMTQ3LDIwMz
-k5ODEzMjIsODc4MTY1Nzc1LDI2NDM2MjU2OCwyNzA2OTY0NzEs
-LTEzNDY3MjUwOTksLTE1ODMwNDU5MTYsLTQ0MjI4NDg1Ml19
+eyJoaXN0b3J5IjpbMjE3NTUwOTA0XX0=
 -->
