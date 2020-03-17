@@ -129,7 +129,7 @@ $$
 \end{bmatrix}
 $$
 
-* 첫번째 행과 두번째 행을 바꾼다. 
+- 첫번째 행과 두번째 행을 바꾼다. 
 
 $$
 [A|I] \sim
@@ -141,7 +141,7 @@ $$
 \end{bmatrix}
 $$
 
-* 두번째 행과 세번째 행을 바꾼다. 
+- 두번째 행과 세번째 행을 바꾼다. 
 
 $$
 [A|I] \sim
@@ -153,7 +153,7 @@ $$
 \end{bmatrix}
 $$
 
-* 첫번째 행에 $-3$을 곱하고 이를 세번째 행과 더한 후 세번째 행에 둔다. 
+- 첫번째 행에 $-3$을 곱하고 이를 세번째 행과 더한 후 세번째 행에 둔다. 
 
 $$
 \begin{aligned}
@@ -173,7 +173,7 @@ E_{13} [A|I] & =
 \end{aligned}
 $$
 
-* 두번째 행에 2를 곱한 후 이를 세번째 행에 더하여 세번째 행에 둔다. 
+- 두번째 행에 2를 곱한 후 이를 세번째 행에 더하여 세번째 행에 둔다. 
 
 $$
 \begin{aligned}
@@ -213,7 +213,7 @@ E_{31} [A|I] & =
 \end{aligned}
 $$
 
-* 세번째 행에 $-1/2$을 곱한다. 
+- 세번째 행에 $-1/2$을 곱한다. 
 
 $$
 \begin{aligned}
@@ -234,8 +234,9 @@ E_{3} [A|I] & =
 \end{aligned}
 $$
 
-- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. - 이 프로세스의 합이 사실 역행렬 $A^-1$이다. 
+- 이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다. 
+- 이 프로세스의 합이 사실 역행렬 $A^-1$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwNjk2NDcxLC0xMzQ2NzI1MDk5LC0xNT
-gzMDQ1OTE2LC00NDIyODQ4NTJdfQ==
+eyJoaXN0b3J5IjpbMjY0MzYyNTY4LDI3MDY5NjQ3MSwtMTM0Nj
+cyNTA5OSwtMTU4MzA0NTkxNiwtNDQyMjg0ODUyXX0=
 -->
