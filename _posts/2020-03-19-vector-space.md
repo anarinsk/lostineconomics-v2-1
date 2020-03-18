@@ -102,7 +102,7 @@ $$
 	- $\mathcal N(\mathbf A) \in \mathbb R^n$
 
 $$
-{\mathbf A} x = c,\text{~where $c \neq \{ 0 \}$}
+{\mathbf A} x = c,\text{~where } c \neq \{0\}
 $$
 
 - 위 식의 해 $x$는 벡터 공간일까? 당연히 아니다! 왜냐하면, $x =0$를 해로 지니지 못하기 때문이다. 
@@ -114,6 +114,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjY1NzkzOSwzNTM0MzQ3OTcsNTM5MT
+eyJoaXN0b3J5IjpbMTg2MDA4NDUzMywzNTM0MzQ3OTcsNTM5MT
 Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
 -->
