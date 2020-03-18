@@ -44,7 +44,7 @@ $$
 
 - P는 행과 열을 적당히 재배치하는 데 동원되는 순열 행렬이며, 0과 1만 원소로 지닌다.[^2]
 
-[^2]: $P$가 왜 필요한지 생각해본 적이 있는가? 보통 대수적인 관점에서 보면 $A=LU$로 충분하다. 하지만 계산의 관점에서 보자. pi
+[^2]: $P$가 왜 필요한지 생각해본 적이 있는가? 보통 대수적인 관점에서 보면 $A=LU$로 충분하다. 하지만 계산의 관점에서 보자. 피봇 원소가 지나치게 작으면 계산이 성가시다. 얘네들은 뒤로 미뤄놓고 0으로 간주하면 계산이 쉽지 않겠는가? 따라서 계산의 관점에서 보면 $P$를 통해 $A$의 피봇을 큰 순서대로 정렬하는 것이 좋다. 
 
 $$
 \begin{aligned}
@@ -322,6 +322,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjA0OTY4NiwtNzQ5NzcyNTkxLDE2Mj
-E1Mzg4NTJdfQ==
+eyJoaXN0b3J5IjpbLTEyODgxMDI5NjUsLTc0OTc3MjU5MSwxNj
+IxNTM4ODUyXX0=
 -->
