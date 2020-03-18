@@ -42,7 +42,9 @@ $$
 P A= LU 
 $$
 
-- P는 행과 열을 적당히 재배치하는 데 동원되는 순열 행렬이며, 0과 1만 원소로 지닌다. 
+- P는 행과 열을 적당히 재배치하는 데 동원되는 순열 행렬이며, 0과 1만 원소로 지닌다.[^2]
+
+[^2]: $P$가 왜 필요한지 생각해본 적이 있는가? 보통 대수적인 관점에서 보면 $A=LU$로 충분하다. 하지만 계산의 관점에서 보자. pi
 
 $$
 \begin{aligned}
@@ -320,5 +322,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTc3MjU5MSwxNjIxNTM4ODUyXX0=
+eyJoaXN0b3J5IjpbMTI3NjA0OTY4NiwtNzQ5NzcyNTkxLDE2Mj
+E1Mzg4NTJdfQ==
 -->
