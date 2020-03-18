@@ -38,10 +38,7 @@ x_1 =
 0 \\
 1 \\
 3 \\
-\end{bmatrix}
-$$
-
-$$
+\end{bmatrix},~ 
 x_2 = 
 \begin{bmatrix}
 2 \\
@@ -59,7 +56,7 @@ $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_7.png){: style="textalign:center; " width="500"}
 
-$V_1 \cap V_2 = \{ 0 \}$
+$V_1 \cap V_2 = \left\{ 0 \right\}$
 
 #### Q2
 
@@ -115,5 +112,5 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Njc2NDc1OV19
+eyJoaXN0b3J5IjpbNzc2MjAwNzcyLDE0OTY3NjQ3NTldfQ==
 -->
