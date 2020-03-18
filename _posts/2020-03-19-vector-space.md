@@ -56,7 +56,7 @@ $$
 
 ![]({{ site.baseurl }}/images/GS-LA/fig_7.png){: style="textalign:center; " width="500"}
 
-$V_1 \cap V_2 = \left\{ 0 \right\}$
+$V_1 \cap V_2 = \curl{ 0}$
 
 #### Q2
 
@@ -112,5 +112,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2MjAwNzcyLDE0OTY3NjQ3NTldfQ==
+eyJoaXN0b3J5IjpbNTM5MTY3NTU1LDc3NjIwMDc3MiwxNDk2Nz
+Y0NzU5XX0=
 -->
