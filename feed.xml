@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-18T22:37:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-18T22:42:35-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -593,7 +593,7 @@ UwOTA0XX0=
   &lt;li&gt;VS Code의 메뉴에서
     &lt;ul&gt;
       &lt;li&gt;&lt;kbd&gt;File&lt;/kbd&gt; → &lt;kbd&gt;Preference&lt;/kbd&gt; → &lt;kbd&gt;settings&lt;/kbd&gt;&lt;/li&gt;
-      &lt;li&gt;“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면,&lt;/li&gt;
+      &lt;li&gt;“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 적당한 디렉토리를 넣으면 되겠다.&lt;/li&gt;
       &lt;li&gt;가상 환경이 이름이 &lt;code class=&quot;highlighter-rouge&quot;&gt;.pyvenv&lt;/code&gt;라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -645,10 +645,11 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzMxMzQyMCwtMTIzMjA2Njk1NSwtMT
-kwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0Mjg2OCwtMTYwMDA4
-ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nz
-c4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVdfQ==
+eyJoaXN0b3J5IjpbLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMT
+IzMjA2Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0
+Mjg2OCwtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0Nz
+I0LC0xNDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVd
+fQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
