@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T01:18:08-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T01:19:45-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -291,7 +291,7 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTMzOTMwNywxNTY5NTc2NjA3LDE2Nz
+eyJoaXN0b3J5IjpbMTU2OTU3NjYwNywxNTY5NTc2NjA3LDE2Nz
 QxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNjQ0MTU5
 MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcxNTA3NDUwMi
 wtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
@@ -299,7 +299,7 @@ wtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. 윈도 코맨드 라인에서 WSL의 버전을 확인하고 싶다면 “wsl -l -v”을 치면 된다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. 윈도 코맨드 라인에서 WSL의 버전을 확인하고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l -v&lt;/code&gt;을 치면 된다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">Following Gilbert Strang 3</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html" rel="alternate" type="text/html" title="Following Gilbert Strang 3" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html">&lt;h2 id=&quot;lu-decomposition&quot;&gt;LU Decomposition&lt;/h2&gt;
