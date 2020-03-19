@@ -139,7 +139,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -252,7 +252,31 @@ alias pip=pip3
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.bash_aliases
 </code></pre></div></div>
 
-<h4 id="bet">Bet</h4>
+<h4 id="better-way">Better way</h4>
+
+<p>리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다. 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python <span class="nt">-V</span>
+Python 2.7.14
+
+<span class="nv">$ </span>which python
+/usr/bin/python
+</code></pre></div></div>
+
+<p>아래와 같이 파이썬 버전과 위치가 뜬다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> /usr/bin/ | <span class="nb">grep </span>python
+python
+python2
+python2.7
+python3
+python3.6
+.....
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">/ㅕㄴㄱ/</code></p>
+
+<h4 id="install-pip">Install pip</h4>
 
 <p>검색을 해보면 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
@@ -394,13 +418,13 @@ alias pip=pip3
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM3NjM3NTQsMjAyMjUyNjE1NCw4MD
-I2MjI1OTgsLTEwMjAwNzY1MzgsLTEzMzE3MjE2ODAsMTQ0MTU3
-MDY0MSwtMTUxMTY4NjE4MCwtOTYwMTU4NzI0LDgwNDUxMzY1OC
-wxNzIzNzM4NjY5LC04MDU0NDAzOTUsLTIwODEzODI5NDQsMTc2
-Njk1NTM3MiwtMTI1MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MT
-UwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUs
-LTQzMzEzMzI2OF19
+eyJoaXN0b3J5IjpbLTIxNTIzNDg1MSwyMDIyNTI2MTU0LDgwMj
+YyMjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcw
+NjQxLC0xNTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LD
+E3MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2
+OTU1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNT
+AzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwt
+NDMzMTMzMjY4XX0=
 -->
 <div class="footnotes">
   <ol>
