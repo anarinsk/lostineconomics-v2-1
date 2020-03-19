@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:58:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:58:53-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -282,6 +282,11 @@ alias pip=pip3
 
 &lt;ul&gt;
   &lt;li&gt;여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -310,7 +315,7 @@ alias pip=pip3
 
 &lt;h2 id=&quot;why&quot;&gt;Why…&lt;/h2&gt;
 
-&lt;p&gt;사실 그냥 윈도에서 파이썬 깔아서 써도 문송한 내 수준에서는 충분하다. Pandas 패키지를 몇 배가 빠르게 돌릴 수 있는 &lt;a href=&quot;https://github.com/modin-project/modin&quot;&gt;modin&lt;/a&gt; 프로젝트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ray&lt;/code&gt;가 리눅스와 macos에서만 돌아간다. 이것 때문에 맥북을 살 수는 없는 노릇 아닌가… 마.&lt;/p&gt;
+&lt;p&gt;사실 그냥 윈도에서 파이썬 깔아서 써도 문송한 내 수준에서는 충분하다. 다만 pandas 패키지를 몇 배 빠르게 돌릴 수 있다는 &lt;a href=&quot;https://github.com/modin-project/modin&quot;&gt;modin&lt;/a&gt; 프로젝트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ray&lt;/code&gt;가 리눅스와 macos에서만 돌아간다. 이것 때문에 맥북을 살 수는 없는 노릇 아닌가… 마.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -321,13 +326,13 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDE1ODcyNCw4MDQ1MTM2NTgsMTcyMz
-czODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUz
-NzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MDMxLD
-E1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00MzMx
-MzMyNjgsLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC0yMDkyMjU3Mj
-MzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIsLTE0ODc1Mzg0MCwt
-MjA2MjE1MTY1MF19
+eyJoaXN0b3J5IjpbLTE2MDk1Mzc3ODYsLTk2MDE1ODcyNCw4MD
+Q1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMDgxMzgy
+OTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MS
+wtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0
+MTczNDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMCwxMzY0NDE1OT
+M3LC0yMDkyMjU3MjMzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIs
+LTE0ODc1Mzg0MF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
