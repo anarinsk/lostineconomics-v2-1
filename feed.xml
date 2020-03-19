@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T00:30:24-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T00:31:52-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -140,15 +140,13 @@ Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
 
 &lt;h2 id=&quot;wsl&quot;&gt;WSL&lt;/h2&gt;
 
-&lt;p&gt;윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.[^1] 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.&lt;/p&gt;
+&lt;p&gt;윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;다운 받아서 설치하고 한번 실행해줘야 한다. 그래야 계정 설정이 된다. 이것까지 마치면 WSL을 쓸 준비 완료다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;900&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;[&lt;/p&gt;
 
 &lt;h2 id=&quot;cmder-for-wsl&quot;&gt;Cmder for WSL&lt;/h2&gt;
 
@@ -295,9 +293,16 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk1NDY2MiwyMDAzODY3NTEyLC0xNz
+eyJoaXN0b3J5IjpbLTg5Njc4NDY3MywyMDAzODY3NTEyLC0xNz
 E1MDc0NTAyLC0xNDg3NTM4NDAsLTIwNjIxNTE2NTBdfQ==
---&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">Following Gilbert Strang 3</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html" rel="alternate" type="text/html" title="Following Gilbert Strang 3" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html">&lt;h2 id=&quot;lu-decomposition&quot;&gt;LU Decomposition&lt;/h2&gt;
+--&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">Following Gilbert Strang 3</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html" rel="alternate" type="text/html" title="Following Gilbert Strang 3" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html">&lt;h2 id=&quot;lu-decomposition&quot;&gt;LU Decomposition&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;큰 이슈는 없다.&lt;/li&gt;
