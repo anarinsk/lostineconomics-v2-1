@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T05:41:04-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T05:42:29-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -210,7 +210,7 @@ Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
 alias pip=pip3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;보통 어떤 포스트의 경우 여기에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python3-pip&lt;/code&gt;로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.&lt;/p&gt;
+&lt;p&gt;aliases를 활성화하기 위해서는 시스템을 재시작해야 한다. Cmder의 창을 내렸다가 다시 올리면 된다. 보통 어떤 포스트의 경우 여기에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python3-pip&lt;/code&gt;로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get purge python-pip
 wget https://bootstrap.pypa.io/get-pip.py
@@ -291,11 +291,11 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTQ0MTk2MSwtODA4MjMzOTkxLC00MT
-E4MTUwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0
-MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNjQ0MTU5MzcsLT
-IwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcxNTA3NDUwMiwtMTQ4
-NzUzODQwLC0yMDYyMTUxNjUwXX0=
+eyJoaXN0b3J5IjpbNjMyOTY5MDE3LC04MDgyMzM5OTEsLTQxMT
+gxNTAzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQw
+NSwtNDMzMTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMj
+A5MjI1NzIzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3
+NTM4NDAsLTIwNjIxNTE2NTBdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
