@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T07:15:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T07:17:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -231,20 +231,20 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 
 &lt;p&gt;만일 가상환경을 쓰고 싶다면, 아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;virtualenv&lt;/code&gt; 같은 걸 써도 무방하겠다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
 &lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동)&lt;/span&gt;
-python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
-&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;  |your-venv|/bin/activate
+~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
+~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;가상환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다. 필요한 파이썬 관련 파일들이 가상 환경 아래 다시 깔리기 때문이다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;정신건강을 위해서 python 개발에 필요한 필수 패키지도 설치해두도록 하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS Code&lt;/h2&gt;
@@ -292,12 +292,15 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 
 &lt;p&gt;깃헙의 재설정이 필요하다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git config &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unset&lt;/span&gt; credential.helper 
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unset&lt;/span&gt; credential.helper 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;우선, 저장된 아이디와 패스워드를 풀자.&lt;/p&gt;
 
 &lt;p&gt;그리고 &lt;a href=&quot;https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8&quot;&gt;여기&lt;/a&gt;를 참고해서 다시 크리덴셜을 받는다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config credential.helper store 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;why&quot;&gt;Why…&lt;/h2&gt;
 
@@ -312,12 +315,12 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3NDI2MzIsLTgwNTQ0MDM5NSwtMjA4MT
-M4Mjk0NCwxNzY2OTU1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5
-OTEsLTQxMTgxNTAzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMT
-Y3NDE3MzQwNSwtNDMzMTMzMjY4LC01OTE5NjM3MDAsMTM2NDQx
-NTkzNywtMjA5MjI1NzIzMywyMDAzODY3NTEyLC0xNzE1MDc0NT
-AyLC0xNDg3NTM4NDAsLTIwNjIxNTE2NTBdfQ==
+eyJoaXN0b3J5IjpbODcwODEwNjgwLC04MDU0NDAzOTUsLTIwOD
+EzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1MywtODA4MjMz
+OTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LD
+E2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNjQ0
+MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcxNTA3ND
+UwMiwtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
