@@ -254,7 +254,7 @@ alias pip=pip3
 
 <h4 id="better-way">Better way</h4>
 
-<p>리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다. 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.</p>
+<p>리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.<sup id="fnref:4"><a href="#fn:4" class="footnote">2</a></sup> 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python <span class="nt">-V</span>
 Python 2.7.14
@@ -328,7 +328,7 @@ Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span cla
 ~<span class="nv">$ </span><span class="nb">source</span> |your-venv|/bin/activate
 </code></pre></div></div>
 
-<p>웬만하면 가상 환경의 이름은 <code class="highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup></p>
+<p>웬만하면 가상 환경의 이름은 <code class="highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
@@ -339,7 +339,7 @@ Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span cla
 </code></pre></div></div>
 
 <h4 id="pip-review">pip-review</h4>
-<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup></p>
+<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">4</a></sup></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install </span>pip-review 
 </code></pre></div></div>
@@ -443,18 +443,21 @@ Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span cla
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwOTU2OTk3LDIwMjI1MjYxNTQsODAyNj
-IyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIxNjgwLDE0NDE1NzA2
-NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgsMT
-cyMzczODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5
-NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MD
-MxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00
-MzMxMzMyNjhdfQ==
+eyJoaXN0b3J5IjpbMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMj
+YyMjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcw
+NjQxLC0xNTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LD
+E3MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2
+OTU1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNT
+AzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwt
+NDMzMTMzMjY4XX0=
 -->
 <div class="footnotes">
   <ol>
     <li id="fn:1">
       <p>V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 <a href="https://www.lesstif.com/pages/viewpage.action?pageId=71401661">여기</a>를 참고하라. 윈도 코맨드 라인에서 WSL의 버전을 확인하고 싶다면 <code class="highlighter-rouge">wsl -l -v</code>을 치면 된다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://codechacha.com/ko/change-python-version/">https://codechacha.com/ko/change-python-version/</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
       <p>대체로 파이썬 가상 환경의 경우 가상 환경 안에 필요한 모든 구동 파일을 지니고 있다. 따라서 pip 같은 경우도 다시 업데이트하는 것이 필요하다. 시스템 파이썬의 pip와 다르기 때문이다. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
