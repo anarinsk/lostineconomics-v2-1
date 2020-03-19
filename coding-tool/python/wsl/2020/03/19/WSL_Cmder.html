@@ -283,7 +283,7 @@ alias pip=pip3
 </code></pre></div></div>
 
 <h4 id="pip-review">pip-review</h4>
-<p>conda 처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.</p>
+<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.{^4]</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install </span>pip-review 
 </code></pre></div></div>
@@ -294,16 +294,17 @@ alias pip=pip3
 <span class="nv">requests</span><span class="o">==</span>0.13.4 is available <span class="o">(</span>you have 0.13.2<span class="o">)</span>
 <span class="nv">redis</span><span class="o">==</span>2.4.13 is available <span class="o">(</span>you have 2.4.9<span class="o">)</span>
 <span class="nv">rq</span><span class="o">==</span>0.3.2 is available <span class="o">(</span>you have 0.3.0<span class="o">)</span>
+</code></pre></div></div>
 
-모든 것을 다 업데이트 하려면, 
+<p>모든 것을 다 업데이트 하려면,</p>
 
-<span class="sb">```</span>bash
-<span class="nv">$ </span>pip-review <span class="nt">--auto</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip-review <span class="nt">--auto</span>
 ... &lt;pip <span class="nb">install </span>output&gt;
+</code></pre></div></div>
 
-Example, run interactively, ask to upgrade <span class="k">for </span>each package:
+<p>각 패키지 별로 문답식으로 진행하려면,</p>
 
-<span class="nv">$ </span>pip-review <span class="nt">--interactive</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip-review <span class="nt">--interactive</span>
 <span class="nv">requests</span><span class="o">==</span>0.14.0 is available <span class="o">(</span>you have 0.13.2<span class="o">)</span>
 Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span class="o">[</span>A]ll, <span class="o">[</span>Q]uit y
 ...
@@ -312,44 +313,51 @@ Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span cl
 <span class="nv">rq</span><span class="o">==</span>0.3.2 is available <span class="o">(</span>you have 0.3.0<span class="o">)</span>
 Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span class="o">[</span>A]ll, <span class="o">[</span>Q]uit y
 ...
+</code></pre></div></div>
 
-Run  <span class="sb">`</span>pip-review <span class="nt">-h</span><span class="sb">`</span>  <span class="k">for </span>a comp
+<h2 id="connect-to-vs-code">Connect to VS Code</h2>
 
-<span class="c">## Connect to VS Code </span>
+<p>이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다.</p>
 
-이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다. 
+<p>VS Code의 extension 중에서 <code class="highlighter-rouge">Remote - WSL</code>이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다.</p>
 
-VS Code의 extension 중에서 <span class="sb">`</span>Remote - WSL<span class="sb">`</span>이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다. 
+<p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_4.png" alt="" style="textalign:center; " width="500" /></p>
 
-<span class="o">![](</span>/lostineconomics-v2-1/images/wsl-cmder/fig_4.png<span class="o">){</span>: <span class="nv">style</span><span class="o">=</span><span class="s2">"textalign:center; "</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"500"</span><span class="o">}</span>
+<p>VS Code 창 아래 왼쪽에 녹색 바를 클릭하면 WSL에 연결할 수 있게 된다.</p>
 
-VS Code 창 아래 왼쪽에 녹색 바를 클릭하면 WSL에 연결할 수 있게 된다. 
+<p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_5.png" alt="" style="textalign:center; " width="500" /></p>
 
-<span class="o">![](</span>/lostineconomics-v2-1/images/wsl-cmder/fig_5.png<span class="o">){</span>: <span class="nv">style</span><span class="o">=</span><span class="s2">"textalign:center; "</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"500"</span><span class="o">}</span>
+<p>이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 생각하면 된다. 필요한 익스텐션 역시 다시 깔아줘야 한다.</p>
 
-이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 생각하면 된다. 필요한 익스텐션 역시 다시 깔아줘야 한다. 
+<p>파이썬 가상 환경을 쓰는 경우 해당 가상 환경에 접근할 수 있어야 한다. 그래야 가상 환경에서 구동되는 파이썬을 쓸 수 있다.</p>
 
-파이썬 가상 환경을 쓰는 경우 해당 가상 환경에 접근할 수 있어야 한다. 그래야 가상 환경에서 구동되는 파이썬을 쓸 수 있다.  
+<ul>
+  <li>파이썬 VS Code 익스텐션을 설치한다.</li>
+  <li>VS Code의 메뉴에서 <kbd>File</kbd> → <kbd>Preference</kbd> → <kbd>settings</kbd></li>
+  <li>“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 찾아서 적당한 디렉토리를 넣으면 되겠다.
+    <ul>
+      <li>가상 환경이 이름이 WSL의 Home에 “.pyvenv”라면, <code class="highlighter-rouge">~/.pyvenv</code>가 된다.</li>
+    </ul>
+  </li>
+</ul>
 
-- 파이썬 VS Code 익스텐션을 설치한다. 
-- VS Code의 메뉴에서 &lt;kbd&gt;File&lt;/kbd&gt; &amp;rarr<span class="p">;</span> &lt;kbd&gt;Preference&lt;/kbd&gt; &amp;rarr<span class="p">;</span> &lt;kbd&gt;settings&lt;/kbd&gt;
-- <span class="s2">"python:Pythonpath"</span>로 검색한 후 아래를 브라우징하다보면, <span class="s2">"Venv path"</span>라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 찾아서 적당한 디렉토리를 넣으면 되겠다. 
-	 - 가상 환경이 이름이 WSL의 Home에 <span class="s2">".pyvenv"</span>라면, <span class="sb">`</span>~/.pyvenv<span class="sb">`</span>가 된다.  
+<p><img src="/lostineconomics-v2-1/images/vanilla-python/vscode.png" alt="" style="textalign:center; " width="500" /></p>
 
-<span class="o">![](</span>/lostineconomics-v2-1/images/vanilla-python/vscode.png<span class="o">){</span>: <span class="nv">style</span><span class="o">=</span><span class="s2">"textalign:center; "</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"500"</span><span class="o">}</span>
+<ul>
+  <li>여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다.</li>
+</ul>
 
-- 여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다. 
+<p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_6.png" alt="" style="textalign:center; " width="500" /></p>
 
-<span class="o">![](</span>/lostineconomics-v2-1/images/wsl-cmder/fig_6.png<span class="o">){</span>: <span class="nv">style</span><span class="o">=</span><span class="s2">"textalign:center; "</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"500"</span><span class="o">}</span>
+<ul>
+  <li>VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.</li>
+</ul>
 
-- VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다. 
+<p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_5.png" alt="" style="textalign:center; " width="500" /></p>
 
-<span class="o">![](</span>/lostineconomics-v2-1/images/wsl-cmder/fig_5.png<span class="o">){</span>: <span class="nv">style</span><span class="o">=</span><span class="s2">"textalign:center; "</span> <span class="nv">width</span><span class="o">=</span><span class="s2">"500"</span><span class="o">}</span>
+<p>이후 VS Code를 이용해 필요한 파일을 불러와도 되고, 아니면 Cmder 창에서 아래와 같이 실행하자.</p>
 
-이후 VS Code를 이용해 필요한 파일을 불러와도 되고, 아니면 Cmder 창에서 아래와 같이 실행하자. 
-
-<span class="sb">```</span>bash 
-code |your-working-python-file.py|
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code |your-working-python-file.py|
 </code></pre></div></div>
 
 <p>실행하면 윈도에 구동되는  VS Code 위에서 WSL 내의 파일들이 뜬다. 편하게 작업할 수 있다.</p>
@@ -381,13 +389,13 @@ code |your-working-python-file.py|
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTUyMDMzMiwtMTUxMTY4NjE4MCwtOT
-YwMTU4NzI0LDgwNDUxMzY1OCwxNzIzNzM4NjY5LC04MDU0NDAz
-OTUsLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1My
-wtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5
-NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNz
-AwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwt
-MTcxNTA3NDUwMl19
+eyJoaXN0b3J5IjpbODA0MTA5NDQsLTE1MTE2ODYxODAsLTk2MD
+E1ODcyNCw4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1
+LC0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLT
+gwODIzMzk5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3
+NjYwNywxNjc0MTczNDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMC
+wxMzY0NDE1OTM3LC0yMDkyMjU3MjMzLDIwMDM4Njc1MTIsLTE3
+MTUwNzQ1MDJdfQ==
 -->
 <div class="footnotes">
   <ol>

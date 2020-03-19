@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T16:11:52-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T16:13:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -254,7 +254,7 @@ alias pip=pip3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;pip-review&quot;&gt;pip-review&lt;/h4&gt;
-&lt;p&gt;conda 처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.&lt;/p&gt;
+&lt;p&gt;conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.{^4]&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -265,16 +265,17 @@ alias pip=pip3
 &lt;span class=&quot;nv&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.13.4 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.13.2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;2.4.13 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 2.4.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.3.2 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.3.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-모든 것을 다 업데이트 하려면, 
+&lt;p&gt;모든 것을 다 업데이트 하려면,&lt;/p&gt;
 
-&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;bash
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--auto&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--auto&lt;/span&gt;
 ... &amp;lt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;output&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Example, run interactively, ask to upgrade &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;each package:
+&lt;p&gt;각 패키지 별로 문답식으로 진행하려면,&lt;/p&gt;
 
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.14.0 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.13.2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;N]o, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;A]ll, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Q]uit y
 ...
@@ -283,44 +284,51 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;span class=&quot;nv&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.3.2 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.3.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;N]o, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;A]ll, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Q]uit y
 ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Run  &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;a comp
+&lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS Code&lt;/h2&gt;
 
-&lt;span class=&quot;c&quot;&gt;## Connect to VS Code &lt;/span&gt;
+&lt;p&gt;이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다.&lt;/p&gt;
 
-이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다. 
+&lt;p&gt;VS Code의 extension 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - WSL&lt;/code&gt;이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다.&lt;/p&gt;
 
-VS Code의 extension 중에서 &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;Remote - WSL&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다. 
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;o&quot;&gt;![](&lt;/span&gt;/lostineconomics-v2-1/images/wsl-cmder/fig_4.png&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textalign:center; &quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;VS Code 창 아래 왼쪽에 녹색 바를 클릭하면 WSL에 연결할 수 있게 된다.&lt;/p&gt;
 
-VS Code 창 아래 왼쪽에 녹색 바를 클릭하면 WSL에 연결할 수 있게 된다. 
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;o&quot;&gt;![](&lt;/span&gt;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textalign:center; &quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 생각하면 된다. 필요한 익스텐션 역시 다시 깔아줘야 한다.&lt;/p&gt;
 
-이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 생각하면 된다. 필요한 익스텐션 역시 다시 깔아줘야 한다. 
+&lt;p&gt;파이썬 가상 환경을 쓰는 경우 해당 가상 환경에 접근할 수 있어야 한다. 그래야 가상 환경에서 구동되는 파이썬을 쓸 수 있다.&lt;/p&gt;
 
-파이썬 가상 환경을 쓰는 경우 해당 가상 환경에 접근할 수 있어야 한다. 그래야 가상 환경에서 구동되는 파이썬을 쓸 수 있다.  
+&lt;ul&gt;
+  &lt;li&gt;파이썬 VS Code 익스텐션을 설치한다.&lt;/li&gt;
+  &lt;li&gt;VS Code의 메뉴에서 &lt;kbd&gt;File&lt;/kbd&gt; → &lt;kbd&gt;Preference&lt;/kbd&gt; → &lt;kbd&gt;settings&lt;/kbd&gt;&lt;/li&gt;
+  &lt;li&gt;“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 찾아서 적당한 디렉토리를 넣으면 되겠다.
+    &lt;ul&gt;
+      &lt;li&gt;가상 환경이 이름이 WSL의 Home에 “.pyvenv”라면, &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;가 된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-- 파이썬 VS Code 익스텐션을 설치한다. 
-- VS Code의 메뉴에서 &amp;lt;kbd&amp;gt;File&amp;lt;/kbd&amp;gt; &amp;amp;rarr&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &amp;lt;kbd&amp;gt;Preference&amp;lt;/kbd&amp;gt; &amp;amp;rarr&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &amp;lt;kbd&amp;gt;settings&amp;lt;/kbd&amp;gt;
-- &lt;span class=&quot;s2&quot;&gt;&quot;python:Pythonpath&quot;&lt;/span&gt;로 검색한 후 아래를 브라우징하다보면, &lt;span class=&quot;s2&quot;&gt;&quot;Venv path&quot;&lt;/span&gt;라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 찾아서 적당한 디렉토리를 넣으면 되겠다. 
-	 - 가상 환경이 이름이 WSL의 Home에 &lt;span class=&quot;s2&quot;&gt;&quot;.pyvenv&quot;&lt;/span&gt;라면, &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;~/.pyvenv&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;가 된다.  
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/vanilla-python/vscode.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;o&quot;&gt;![](&lt;/span&gt;/lostineconomics-v2-1/images/vanilla-python/vscode.png&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textalign:center; &quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;ul&gt;
+  &lt;li&gt;여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다.&lt;/li&gt;
+&lt;/ul&gt;
 
-- 여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다. 
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;o&quot;&gt;![](&lt;/span&gt;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textalign:center; &quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;ul&gt;
+  &lt;li&gt;VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;/li&gt;
+&lt;/ul&gt;
 
-- VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다. 
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;span class=&quot;o&quot;&gt;![](&lt;/span&gt;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;textalign:center; &quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;500&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;이후 VS Code를 이용해 필요한 파일을 불러와도 되고, 아니면 Cmder 창에서 아래와 같이 실행하자.&lt;/p&gt;
 
-이후 VS Code를 이용해 필요한 파일을 불러와도 되고, 아니면 Cmder 창에서 아래와 같이 실행하자. 
-
-&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;bash 
-code |your-working-python-file.py|
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code |your-working-python-file.py|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;실행하면 윈도에 구동되는  VS Code 위에서 WSL 내의 파일들이 뜬다. 편하게 작업할 수 있다.&lt;/p&gt;
@@ -352,13 +360,13 @@ code |your-working-python-file.py|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTUyMDMzMiwtMTUxMTY4NjE4MCwtOT
-YwMTU4NzI0LDgwNDUxMzY1OCwxNzIzNzM4NjY5LC04MDU0NDAz
-OTUsLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1My
-wtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5
-NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNz
-AwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwt
-MTcxNTA3NDUwMl19
+eyJoaXN0b3J5IjpbODA0MTA5NDQsLTE1MTE2ODYxODAsLTk2MD
+E1ODcyNCw4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1
+LC0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLT
+gwODIzMzk5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3
+NjYwNywxNjc0MTczNDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMC
+wxMzY0NDE1OTM3LC0yMDkyMjU3MjMzLDIwMDM4Njc1MTIsLTE3
+MTUwNzQ1MDJdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
