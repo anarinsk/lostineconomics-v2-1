@@ -84,7 +84,7 @@ $ |your-directory|> C:\Python34\python.exe -m venv |your-venv|
 - VS Code의 메뉴에서 
 	 - <kbd>File</kbd> &rarr; <kbd>Preference</kbd> &rarr; <kbd>settings</kbd>
 	 - "python:Pythonpath"로 검색한 후 아래를 브라우징하다보면, 
-	 - 가상 환경이 이름이 `.venv`라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다. 
+	 - 가상 환경이 이름이 `.pyvenv`라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다. 
 
 ![]({{ site.baseurl }}/images/vanilla-python/vscode.png){: style="textalign:center; " width="500"}
 
@@ -128,8 +128,8 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzIwNjY5NTUsLTE5MDYxNzg1NjYsMj
-A2NDkzNTE0MCw4Mzc4NDI4NjgsLTE2MDAwODgxNDQsLTE3MjYz
-MjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMTAxMjE5OD
-E0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbMTcyNzMxMzQyMCwtMTIzMjA2Njk1NSwtMT
+kwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0Mjg2OCwtMTYwMDA4
+ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nz
+c4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVdfQ==
 -->
