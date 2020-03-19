@@ -10,13 +10,15 @@ categories: [coding-tool, python]
 
 ## Why
 
-아나콘다 사가 개발한 Conda는 무척 훌륭한 패키지다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다. 
+아나콘다 사가 개발한 conda는 무척 훌륭한 도구다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.[^1]
+
+[^1]: conda가 여러모로 편하다. 하지만 conda를 써야겠다면, conda 전체를 깔지 말고 minconda를 써보시기를 권한다. conda는 쓸 데 없는 것을 너무 많이 깔아버리거든... 
 
 ### Assumption 
 
 * 당신은 윈도 이용자다. 
-* "[this-is-desc]"와 같이 표현된 것은 각자의 컴퓨팅 환경을 의미한다. 
-* git bash와 같이 bash 환경을 쓸 경우 슬래시(`/`)를 그냥 윈도 커맨드를 쓸 경우 역슬래시(`\`)를 써야 한다. 아래에서는 git bash 환경을 기본으로 둔다. 
+* `|this-is-desc|`와 같이 표현된 것에서 "this-is-desc"는 각자의 컴퓨팅 환경을 뜻한다. 적당하게 이해하시라.  
+* git bash와 같이 bash 환경을 쓸 경우 슬래시(`/`)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(`\`)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다. 
 
 ## Install 
 
@@ -36,17 +38,17 @@ categories: [coding-tool, python]
 - 해당 디렉토리 안에서  가상 환경을 생성한다. 
 
 ```bash 
-$ [your-directory]/python.exe -m venv [your-environmet]
+$ |your-directory|/python.exe -m venv |your-environmet|
 ```
 
 - 가상 환경으로 진입한다. 
 
 ```bash
-$ [your-environment]/Scripts/activate 
+$ |your-python-directory|/Scripts/activate 
 ```
 
 - Powershell을 쓴다면, `Activate.ps1`을 실행하면 된다. 
-- 이제 실행창 앞에 (`[name-of-your-environmet]`)이 떠 있는 것을 볼 수 있다. 
+- 이제 실행창 앞에 (`|name-of-your-environmet|`)이 떠 있는 것을 볼 수 있다. 
 
 ### Update your venv 
 
@@ -73,7 +75,7 @@ $ py -3 -m pip_review --local --interactive # 설치된 패키지 업데이트 �
 - 아래 명령처럼 하면 된다. 원하는 버전에 python을 직접 호출해서 가상 환경을 만든다. 
 
 ```bash 
-$ [your-directory]> C:\Python34\python.exe -m venv [your-venv]
+$ |your-directory|> C:\Python34\python.exe -m venv |your-venv|
 ```
 
 ### With VS Code 
@@ -81,8 +83,8 @@ $ [your-directory]> C:\Python34\python.exe -m venv [your-venv]
 - VS code에서 해당 가상 환경을 어떻게 인식시킬 수 있을까? 
 - VS Code의 메뉴에서 
 	 - <kbd>File</kbd> &rarr; <kbd>Preference</kbd> &rarr; <kbd>settings</kbd>
-	 - "python:Pythonpath"로 검색한 후 아래를 브라우징하다보면, 
-	 - 가상 환경이 이름이 `.venv`라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다. 
+	 - "python:Pythonpath"로 검색한 후 아래를 브라우징하다보면, "Venv path"라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 적당한 디렉토리를 넣으면 되겠다. 
+	 - 가상 환경이 이름이 `.pyvenv`라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다. 
 
 ![]({{ site.baseurl }}/images/vanilla-python/vscode.png){: style="textalign:center; " width="500"}
 
@@ -106,7 +108,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 - 원하는 버전의 python을 실행하려면 이를 응용하면 되겠다. 
 
 ```bash
-$ winpty [your-python-directory]/python.exe
+$ winpty |your-python-directory|/python.exe
 ```
 
 - 매번 이렇게 실행할 수 없으니 git bash 환경에 넣어두자. 
@@ -126,6 +128,9 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwtMT
-AxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMT
+IzMjA2Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0
+Mjg2OCwtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0Nz
+I0LC0xNDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVd
+fQ==
 -->
