@@ -231,7 +231,7 @@ window.onload = wrap_img;
 <p>이렇게 잘 출력되어야 한다. 하지만 매번 <code class="highlighter-rouge">python3.7</code>이라고 칠 수는 없는 노릇이니, 얘가 내가 쓰고 싶은 파이썬이란 점은 bash에게 알려줘야 한다.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~ <span class="c"># 홈으로 이동</span>
-~<span class="nv">$ </span><span class="nb">sudo </span>nano /.bash_aliases 
+~<span class="nv">$ </span><span class="nb">sudo </span>nano ~/.bash_aliases 
 </code></pre></div></div>
 
 <p>우분투 18.04에는 nano 에디터가 들어 있다. 없다면, vim을 써도 된다. 이제 이 파일에 아래과 같은 내용을 적고 저장한다. <code class="highlighter-rouge">sudo</code>를 쓰는 이유는 파일을 생성하게 되기 때문이다.</p>
@@ -242,7 +242,7 @@ alias pip=pip3
 
 <p>aliases를 활성화하기 위해서는 시스템을 재시작해야 한다. 혹은</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">source</span> /.bash_aliases
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">source</span> ~/.bash_aliases
 </code></pre></div></div>
 <p>보통 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
@@ -326,11 +326,12 @@ python <span class="nt">-m</span> venv |your-venv|
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Njk1NTM3MiwtMTI1MDMzNjA1MywtOD
-A4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5NTc2
-NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLD
-EzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcx
-NTA3NDUwMiwtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
+eyJoaXN0b3J5IjpbLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMT
+I1MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3
+NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OC
+wtNTkxOTYzNzAwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAw
+Mzg2NzUxMiwtMTcxNTA3NDUwMiwtMTQ4NzUzODQwLC0yMDYyMT
+UxNjUwXX0=
 -->
 <div class="footnotes">
   <ol>
