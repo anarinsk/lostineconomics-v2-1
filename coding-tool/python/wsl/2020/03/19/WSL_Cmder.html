@@ -197,14 +197,14 @@ window.onload = wrap_img;
 
 <p>우분투의 경우 설치를 한 후 몇 가지 업데이트 작업을 해줘야 한다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="c"># 업데이트 목록 갱신</span>
-<span class="nb">sudo </span>apt-get upgrade <span class="c"># 현재 패키지 업그레이드</span>
-<span class="nb">sudo </span>apt-get dist-upgrade <span class="c"># 신규 업데이트 설치</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt-get update <span class="c"># 업데이트 목록 갱신</span>
+~<span class="nv">$ </span><span class="nb">sudo </span>apt-get upgrade <span class="c"># 현재 패키지 업그레이드</span>
+~<span class="nv">$ </span><span class="nb">sudo </span>apt-get dist-upgrade <span class="c"># 신규 업데이트 설치</span>
 </code></pre></div></div>
 
 <p>몇가지 알아두면 좋은 설정 항목이 있다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg-reconfigure tzdata <span class="c"># 타임존 맞추기 </span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>dpkg-reconfigure tzdata <span class="c"># 타임존 맞추기 </span>
 </code></pre></div></div>
 
 <p>업데이트하는 패키지 기본 주소가 해외다. 국내로 맞추면 다운로드 등에서 조금 유리할 수 있다. 자세한 내용은 <a href="https://twpower.github.io/99-change-apt-get-source-server">여기</a>를 참고하시라.</p>
@@ -215,11 +215,11 @@ window.onload = wrap_img;
 
 <p>우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 써야 할까?</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
-<span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common
-<span class="nb">sudo </span>add-apt-repository ppa:deadsnakes/ppa
-<span class="nb">sudo </span>apt update
-<span class="nb">sudo </span>apt <span class="nb">install </span>python3.7
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt update
+~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common
+~<span class="nv">$ </span><span class="nb">sudo </span>add-apt-repository ppa:deadsnakes/ppa
+~<span class="nv">$ </span><span class="nb">sudo </span>apt update
+~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3.7
 </code></pre></div></div>
 
 <p>이렇게 설치한 후</p>
@@ -242,15 +242,15 @@ alias pip=pip3
 
 <p>aliases를 활성화하기 위해서는 시스템을 재시작해야 한다. 혹은</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">source</span> ~/.bash_aliases
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.bash_aliases
 </code></pre></div></div>
 <p>보통 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get purge python-pip
-wget https://bootstrap.pypa.io/get-pip.py
-<span class="nb">sudo </span>python get-pip.py
-pip <span class="nt">--version</span>
-<span class="nb">rm </span>get-pip.py
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt-get purge python-pip
+~<span class="nv">$ </span>wget https://bootstrap.pypa.io/get-pip.py
+~<span class="nv">$ </span><span class="nb">sudo </span>python get-pip.py
+~<span class="nv">$ </span>pip <span class="nt">--version</span>
+~<span class="nv">$ </span><span class="nb">rm </span>get-pip.py
 </code></pre></div></div>
 
 <p>아래와 같이 나와주면 준비완료다.</p>
@@ -267,7 +267,7 @@ pip <span class="nt">--version</span>
 ~<span class="nv">$ </span><span class="nb">source</span> |your-venv|/bin/activate
 </code></pre></div></div>
 
-<p>가상환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다. 필요한 파이썬 관련 파일들이 가상 환경 아래 다시 깔리기 때문이다.</p>
+<p>왠만하면 가상 환경은 <code class="highlighter-rouge">~/.pyvenv</code>로 하자. 가상환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다. 필요한 파이썬 관련 파일들이 가상 환경 아래 다시 깔리기 때문이다.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
@@ -345,12 +345,12 @@ pip <span class="nt">--version</span>
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwODEwNjgwLC04MDU0NDAzOTUsLTIwOD
-EzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1MywtODA4MjMz
-OTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LD
-E2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNjQ0
-MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcxNTA3ND
-UwMiwtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
+eyJoaXN0b3J5IjpbMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMD
+gxMzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIz
+Mzk5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNy
+wxNjc0MTczNDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMCwxMzY0
+NDE1OTM3LC0yMDkyMjU3MjMzLDIwMDM4Njc1MTIsLTE3MTUwNz
+Q1MDIsLTE0ODc1Mzg0MCwtMjA2MjE1MTY1MF19
 -->
 <div class="footnotes">
   <ol>
