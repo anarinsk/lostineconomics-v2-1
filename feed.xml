@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:35:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:36:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -160,7 +160,7 @@ fQ==
   &lt;li&gt;&lt;kbd&gt;settings&lt;/kbd&gt; →  &lt;kbd&gt;Startup&lt;/kbd&gt; → &lt;kbd&gt;Tasks&lt;/kbd&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;여기 항목 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;{Bash::bash}&lt;/code&gt;를 하나 클론한 후 이름을 적당한 것으로 바꾸도록 하자. 내 경우는 &lt;code class=&quot;highlighter-rouge&quot;&gt;{Bash::WSL}&lt;/code&gt;로 설정했다. 커맨드 필드 아래와 같이 붙여 넣는다. 단축키를 설정하면 편리하게 활용할 수 있다.&lt;/p&gt;
+&lt;p&gt;여기 항목 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;{shell::bash}&lt;/code&gt;를 하나 클론한 후 이름을 적당한 것으로 바꾸도록 하자. 내 경우는 &lt;code class=&quot;highlighter-rouge&quot;&gt;{Bash::WSL}&lt;/code&gt;로 설정했다. 커맨드 필드 아래와 같이 붙여 넣는다. 단축키를 설정하면 편리하게 활용할 수 있다.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;%windir%\system32\bash.exe -new_console ~
 &lt;/code&gt;&lt;/pre&gt;
@@ -171,14 +171,14 @@ fQ==
 
 &lt;p&gt;우분투의 경우 설치를 한 후 몇 가지 업데이트 작업을 해줘야 한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;c&quot;&gt;# 업데이트 목록 갱신&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;c&quot;&gt;# 업데이트 목록 갱신&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade &lt;span class=&quot;c&quot;&gt;# 현재 패키지 업그레이드&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get dist-upgrade &lt;span class=&quot;c&quot;&gt;# 신규 업데이트 설치&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;몇 가지 알아두면 좋은 설정 항목이 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg-reconfigure tzdata &lt;span class=&quot;c&quot;&gt;# 타임존 맞추기 &lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg-reconfigure tzdata &lt;span class=&quot;c&quot;&gt;# 타임존 맞추기 &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;업데이트하는 패키지 기본 주소가 해외다. 국내로 맞추면 다운로드 등에서 조금 유리할 수 있다. 자세한 내용은 &lt;a href=&quot;https://twpower.github.io/99-change-apt-get-source-server&quot;&gt;여기&lt;/a&gt;를 참고하시라.&lt;/p&gt;
@@ -189,7 +189,7 @@ fQ==
 
 &lt;p&gt;우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 설치하고 써야 할까?&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;software-properties-common
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:deadsnakes/ppa
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
@@ -198,8 +198,8 @@ fQ==
 
 &lt;p&gt;이렇게 설치한 후&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python3.7 &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Python 3.7.7 &lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python3.7 &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+Python 3.7.7 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;이렇게 잘 출력되어야 한다. 하지만 매번 &lt;code class=&quot;highlighter-rouge&quot;&gt;python3.7&lt;/code&gt;이라고 칠 수는 없는 노릇이니, 얘가 내가 쓰고 싶은 파이썬이란 점을 bash에게 알려줘야 한다.&lt;/p&gt;
@@ -208,7 +208,7 @@ fQ==
 
 &lt;p&gt;Home 환경에 &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;를 바꿔주는 방법이다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;c&quot;&gt;# 홈으로 이동&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;c&quot;&gt;# 홈으로 이동&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.bash_aliases 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -220,7 +220,7 @@ alias pip=pip3
 
 &lt;p&gt;aliases를 활성화하기 위해서는 시스템을 다시 시작하거나  아래 명령을 시작하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_aliases
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_aliases
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;better-way&quot;&gt;Better way&lt;/h3&gt;
@@ -276,7 +276,7 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;검색을 해보면 어떤 포스트의 경우 여기에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python3-pip&lt;/code&gt;로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get purge python-pip
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get purge python-pip
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget https://bootstrap.pypa.io/get-pip.py
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;python get-pip.py
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
@@ -285,15 +285,15 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;아래와 같이 나와주면 일단 준비 완료다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip (python 3.7)&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;python 3.7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;venv&quot;&gt;venv&lt;/h3&gt;
 
 &lt;p&gt;만일 가상 환경을 쓰고 싶다면, 아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;virtualenv&lt;/code&gt; 같은 걸 써도 무방하겠다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
 &lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동)&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate
@@ -301,23 +301,24 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;정신 건강을 위해서 python 개발에 필요한 필수 패키지도 같이 설치해두도록 하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;pip-review&quot;&gt;pip-review&lt;/h4&gt;
+
 &lt;p&gt;conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review 
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;패키지 상태만 보려면,&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review
 &lt;span class=&quot;c&quot;&gt;#requests==0.13.4 is available (you have 0.13.2)&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#redis==2.4.13 is available (you have 2.4.9)&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#rq==0.3.2 is available (you have 0.3.0)&lt;/span&gt;
@@ -325,13 +326,13 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;모든 것을 다 업데이트 하려면,&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--auto&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--auto&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#... &amp;lt;pip install output&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;각 패키지 별로 문답식으로 진행하려면,&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#requests==0.14.0 is available (you have 0.13.2)&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#Upgrade now? [Y]es, [N]o, [A]ll, [Q]uit y&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#...&lt;/span&gt;
@@ -382,7 +383,7 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;이후 VS Code를 이용해 필요한 파일을 불러와도 되고, 아니면 Cmder 창에서 아래와 같이 실행하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code |your-working-python-file.py|
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code |your-working-python-file.py|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;실행하면 윈도에 구동되는  VS Code 위에서 WSL 내의 파일들이 뜬다. 편하게 작업할 수 있다.&lt;/p&gt;
@@ -391,14 +392,14 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 
 &lt;p&gt;깃헙의 재설정이 필요하다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unset&lt;/span&gt; credential.helper 
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unset&lt;/span&gt; credential.helper 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;우선, 저장된 아이디와 패스워드를 풀자.&lt;/p&gt;
 
 &lt;p&gt;그리고 &lt;a href=&quot;https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8&quot;&gt;여기&lt;/a&gt;를 참고해서 다시 크리덴셜을 받는다. 그리고 저장한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config credential.helper store 
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config credential.helper store 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;why&quot;&gt;Why…&lt;/h2&gt;
@@ -414,7 +415,7 @@ Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&qu
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTA3NzkxOSwxODUyMDkwNDYyLDIwMj
+eyJoaXN0b3J5IjpbMTUxMzAxODg1NywxODUyMDkwNDYyLDIwMj
 I1MjYxNTQsODAyNjIyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIx
 NjgwLDE0NDE1NzA2NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNC
 w4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMDgx
