@@ -301,7 +301,7 @@ There are 2 choices <span class="k">for </span>the alternative python <span clas
 Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span class="o">]</span>, or <span class="nb">type </span>selection number: 2
 </code></pre></div></div>
 
-<h4 id="install-pip">Install pip</h4>
+<h3 id="install-pip">Install pip</h3>
 
 <p>검색을 해보면 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
@@ -338,7 +338,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>python3.7-dev
 </code></pre></div></div>
 
-<h4 id="pip-review">pip-review</h4>
+<h3 id="pip-review">pip-review</h3>
 
 <p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">4</a></sup></p>
 
@@ -348,26 +348,26 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 <p>패키지 상태만 보려면,</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip-review
-<span class="c">#requests==0.13.4 is available (you have 0.13.2)</span>
-<span class="c">#redis==2.4.13 is available (you have 2.4.9)</span>
-<span class="c">#rq==0.3.2 is available (you have 0.3.0)</span>
+<span class="nv">requests</span><span class="o">==</span>0.13.4 is available <span class="o">(</span>you have 0.13.2<span class="o">)</span>
+<span class="nv">redis</span><span class="o">==</span>2.4.13 is available <span class="o">(</span>you have 2.4.9<span class="o">)</span>
+<span class="nv">rq</span><span class="o">==</span>0.3.2 is available <span class="o">(</span>you have 0.3.0<span class="o">)</span>
 </code></pre></div></div>
 
 <p>모든 것을 다 업데이트 하려면,</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip-review <span class="nt">--auto</span>
-<span class="c">#... &lt;pip install output&gt;</span>
+... &lt;pip <span class="nb">install </span>output&gt;
 </code></pre></div></div>
 
 <p>각 패키지 별로 문답식으로 진행하려면,</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip-review <span class="nt">--interactive</span>
-<span class="c">#requests==0.14.0 is available (you have 0.13.2)</span>
-<span class="c">#Upgrade now? [Y]es, [N]o, [A]ll, [Q]uit y</span>
-<span class="c">#...</span>
-<span class="c">#rq==0.3.2 is available (you have 0.3.0)</span>
-<span class="c">#Upgrade now? [Y]es, [N]o, [A]ll, [Q]uit y</span>
-<span class="c">#...</span>
+<span class="nv">requests</span><span class="o">==</span>0.14.0 is available <span class="o">(</span>you have 0.13.2<span class="o">)</span>
+Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span class="o">[</span>A]ll, <span class="o">[</span>Q]uit y
+...
+<span class="nv">rq</span><span class="o">==</span>0.3.2 is available <span class="o">(</span>you have 0.3.0<span class="o">)</span>
+Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span class="o">[</span>A]ll, <span class="o">[</span>Q]uit y
+...
 </code></pre></div></div>
 
 <h2 id="connect-to-vs-code">Connect to VS Code</h2>
@@ -444,13 +444,13 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzAxODg1NywxODUyMDkwNDYyLDIwMj
-I1MjYxNTQsODAyNjIyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIx
-NjgwLDE0NDE1NzA2NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNC
-w4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMDgx
-MzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMz
-k5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywx
-Njc0MTczNDA1XX0=
+eyJoaXN0b3J5IjpbLTE0NDY1NDQwMjksMTg1MjA5MDQ2MiwyMD
+IyNTI2MTU0LDgwMjYyMjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcy
+MTY4MCwxNDQxNTcwNjQxLC0xNTExNjg2MTgwLC05NjAxNTg3Mj
+QsODA0NTEzNjU4LDE3MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4
+MTM4Mjk0NCwxNzY2OTU1MzcyLC0xMjUwMzM2MDUzLC04MDgyMz
+M5OTEsLTQxMTgxNTAzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcs
+MTY3NDE3MzQwNV19
 -->
 <div class="footnotes">
   <ol>
