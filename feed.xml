@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:44:16-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:45:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -183,7 +183,7 @@ fQ==
 
 &lt;h2 id=&quot;installing-python&quot;&gt;Installing python&lt;/h2&gt;
 
-&lt;p&gt;이제 python(이하 파이썬으로 쓰기도 병행하겠다)을 설치할 차례다. 다소 의아할지 모르겠지만, macos, 윈도에 비해서 파이썬을 설치하고 운용하는 것이 쉽지 않다. 리눅스의 경우 하나하나 설정해야 하는 것이 많다. 내용을 자세히 안다면 세밀하고 명확한 통제가 가능한 것이겠지만, 주류 OS의 편안함에 익숙하다면 당황스러운 경우를 접하게 된다.&lt;/p&gt;
+&lt;p&gt;이제 python을 설치할 차례다. 다소 의아할지 모르겠지만, macos, 윈도에 비해서 파이썬을 설치하고 운용하는 것이 쉽지 않다. 리눅스의 경우 하나하나 설정해야 하는 것이 많다. 내용을 자세히 안다면 세밀하고 명확한 통제가 가능한 것이겠지만, 주류 OS의 편안함에 익숙하다면 당황스러운 경우를 접하게 된다.&lt;/p&gt;
 
 &lt;p&gt;우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 써야 할까?&lt;/p&gt;
 
@@ -232,9 +232,9 @@ alias pip=pip3
 &lt;span class=&quot;c&quot;&gt;#pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip (python 3.7)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;venv&quot;&gt;Venv&lt;/h3&gt;
+&lt;h3 id=&quot;venv&quot;&gt;venv&lt;/h3&gt;
 
-&lt;p&gt;만일 가상환경을 쓰고 싶다면, 아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;virtualenv&lt;/code&gt; 같은 걸 써도 무방하겠다.&lt;/p&gt;
+&lt;p&gt;만일 가상 환경을 쓰고 싶다면, 아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;virtualenv&lt;/code&gt; 같은 걸 써도 무방하겠다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
 &lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동)&lt;/span&gt;
@@ -244,12 +244,12 @@ alias pip=pip3
 
 &lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;정신건강을 위해서 python 개발에 필요한 필수 패키지도 설치해두도록 하자.&lt;/p&gt;
+&lt;p&gt;정신 건강을 위해서 python 개발에 필요한 필수 패키지도 같이 설치해두도록 하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS Code&lt;/h2&gt;
@@ -320,13 +320,13 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDc2MDUxLDgwNDUxMzY1OCwxNzIzNz
-M4NjY5LC04MDU0NDAzOTUsLTIwODEzODI5NDQsMTc2Njk1NTM3
-MiwtMTI1MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MTUwMzEsMT
-U2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEz
-MzI2OCwtNTkxOTYzNzAwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMz
-MsMjAwMzg2NzUxMiwtMTcxNTA3NDUwMiwtMTQ4NzUzODQwLC0y
-MDYyMTUxNjUwXX0=
+eyJoaXN0b3J5IjpbLTEyNzkyNjQ0ODEsODA0NTEzNjU4LDE3Mj
+M3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1
+MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAzMS
+wxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwtNDMz
+MTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMjA5MjI1Nz
+IzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3NTM4NDAs
+LTIwNjIxNTE2NTBdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

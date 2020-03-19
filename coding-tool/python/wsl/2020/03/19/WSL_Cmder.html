@@ -212,7 +212,7 @@ window.onload = wrap_img;
 
 <h2 id="installing-python">Installing python</h2>
 
-<p>이제 python(이하 파이썬으로 쓰기도 병행하겠다)을 설치할 차례다. 다소 의아할지 모르겠지만, macos, 윈도에 비해서 파이썬을 설치하고 운용하는 것이 쉽지 않다. 리눅스의 경우 하나하나 설정해야 하는 것이 많다. 내용을 자세히 안다면 세밀하고 명확한 통제가 가능한 것이겠지만, 주류 OS의 편안함에 익숙하다면 당황스러운 경우를 접하게 된다.</p>
+<p>이제 python을 설치할 차례다. 다소 의아할지 모르겠지만, macos, 윈도에 비해서 파이썬을 설치하고 운용하는 것이 쉽지 않다. 리눅스의 경우 하나하나 설정해야 하는 것이 많다. 내용을 자세히 안다면 세밀하고 명확한 통제가 가능한 것이겠지만, 주류 OS의 편안함에 익숙하다면 당황스러운 경우를 접하게 된다.</p>
 
 <p>우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 써야 할까?</p>
 
@@ -261,9 +261,9 @@ alias pip=pip3
 <span class="c">#pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip (python 3.7)</span>
 </code></pre></div></div>
 
-<h3 id="venv">Venv</h3>
+<h3 id="venv">venv</h3>
 
-<p>만일 가상환경을 쓰고 싶다면, 아래와 같이 <code class="highlighter-rouge">venv</code>를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. <code class="highlighter-rouge">conda</code>나 <code class="highlighter-rouge">virtualenv</code> 같은 걸 써도 무방하겠다.</p>
+<p>만일 가상 환경을 쓰고 싶다면, 아래와 같이 <code class="highlighter-rouge">venv</code>를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. <code class="highlighter-rouge">conda</code>나 <code class="highlighter-rouge">virtualenv</code> 같은 걸 써도 무방하겠다.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3.7-venv
 <span class="c">#(가상환경을 모아둘 폴더로 이동)</span>
@@ -273,12 +273,12 @@ alias pip=pip3
 
 <p>웬만하면 가상 환경의 이름은 <code class="highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
 
-<p>정신건강을 위해서 python 개발에 필요한 필수 패키지도 설치해두도록 하자.</p>
+<p>정신 건강을 위해서 python 개발에 필요한 필수 패키지도 같이 설치해두도록 하자.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3.7-dev
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>python3.7-dev
 </code></pre></div></div>
 
 <h2 id="connect-to-vs-code">Connect to VS Code</h2>
@@ -349,13 +349,13 @@ alias pip=pip3
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDc2MDUxLDgwNDUxMzY1OCwxNzIzNz
-M4NjY5LC04MDU0NDAzOTUsLTIwODEzODI5NDQsMTc2Njk1NTM3
-MiwtMTI1MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MTUwMzEsMT
-U2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEz
-MzI2OCwtNTkxOTYzNzAwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMz
-MsMjAwMzg2NzUxMiwtMTcxNTA3NDUwMiwtMTQ4NzUzODQwLC0y
-MDYyMTUxNjUwXX0=
+eyJoaXN0b3J5IjpbLTEyNzkyNjQ0ODEsODA0NTEzNjU4LDE3Mj
+M3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1
+MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAzMS
+wxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwtNDMz
+MTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMjA5MjI1Nz
+IzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3NTM4NDAs
+LTIwNjIxNTE2NTBdfQ==
 -->
 <div class="footnotes">
   <ol>
