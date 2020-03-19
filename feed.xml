@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:45:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:47:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -256,7 +256,7 @@ alias pip=pip3
 
 &lt;p&gt;이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다.&lt;/p&gt;
 
-&lt;p&gt;VS Code의 extension 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - WSL&lt;/code&gt;이란 것이 있다. 이 녀석을 깔면 윈도 시스템에 설치된 WSL에 VS Code가 접근할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;VS Code의 extension 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - WSL&lt;/code&gt;이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
@@ -264,7 +264,7 @@ alias pip=pip3
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;일단 WSL에 접속하면 별도의 창이 뜬다. 이는 별도의 환경으로 운용되므로 알맞은 세팅을 쓰면 된다.&lt;/p&gt;
+&lt;p&gt;이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 ㅅ&lt;/p&gt;
 
 &lt;p&gt;가상 환경을 쓰는 경우 가상 환경에 접근할 수 있어야 한다.&lt;/p&gt;
 
@@ -320,13 +320,13 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkyNjQ0ODEsODA0NTEzNjU4LDE3Mj
-M3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1
-MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAzMS
-wxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwtNDMz
-MTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMjA5MjI1Nz
-IzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3NTM4NDAs
-LTIwNjIxNTE2NTBdfQ==
+eyJoaXN0b3J5IjpbMTkyNTYwMzczNSw4MDQ1MTM2NTgsMTcyMz
+czODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUz
+NzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MDMxLD
+E1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00MzMx
+MzMyNjgsLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC0yMDkyMjU3Mj
+MzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIsLTE0ODc1Mzg0MCwt
+MjA2MjE1MTY1MF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
