@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:49:09-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:52:36-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -388,6 +388,10 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 
 &lt;p&gt;실행하면 윈도에 구동되는  VS Code 위에서 WSL 내의 파일들이 뜬다. 편하게 작업할 수 있다.&lt;/p&gt;
 
+&lt;h3 id=&quot;how-to-access-windows-folder&quot;&gt;How to access Windows folder&lt;/h3&gt;
+
+&lt;p&gt;잠깐. 나의 작업 파일은 윈도에 있는데? WSL이 이런 상황에 대응하지 않았을리가 있는가! &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt/c...&lt;/code&gt;  와 같은 식으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt&lt;/code&gt; 안에 윈도 드라이브들이 마운트되어 있다.&lt;/p&gt;
+
 &lt;h3 id=&quot;github&quot;&gt;github&lt;/h3&gt;
 
 &lt;p&gt;깃헙의 재설정이 필요할 수 있다.&lt;/p&gt;
@@ -415,13 +419,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTgyODU1NzUsLTE2NzA1OTY0ODUsMT
-g1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYyMjU5OCwtMTAyMDA3
-NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNjQxLC0xNTExNjg2MT
-gwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3MjM3Mzg2NjksLTgw
-NTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1MzcyLC0xMjUwMz
-M2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAzMSwxNTY5NTc2NjA3
-LDE1Njk1NzY2MDddfQ==
+eyJoaXN0b3J5IjpbLTIwMTM1OTc5ODcsLTE0MTgyODU1NzUsLT
+E2NzA1OTY0ODUsMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYy
+MjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNj
+QxLC0xNTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3
+MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OT
+U1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAz
+MSwxNTY5NTc2NjA3XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
