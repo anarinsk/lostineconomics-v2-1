@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:30:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:31:44-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -242,10 +242,35 @@ python2
 python2.7
 python3
 python3.6
+python3.7
 .....
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ㅕㄴㄱ/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin&lt;/code&gt; 안에 많은 파이썬 버전이 깔려 있음을 알 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; python
+update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;python
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 &lt;code class=&quot;highlighter-rouge&quot;&gt;update-alternatives&lt;/code&gt;가 관리하는 심볼릭 링크가 없기 때문이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python2.7 1
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python3.6 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이렇게 심볼릭 링크를 설치한 후 아래와 같이 바꿔가며 사용하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; python
+There are 2 choices &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the alternative python &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;providing /usr/bin/python&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+
+  Selection    Path                Priority   Status
+&lt;span class=&quot;nt&quot;&gt;------------------------------------------------------------&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 0            /usr/bin/python3.6   2         auto mode
+  1            /usr/bin/python2.7   1         manual mode
+  2            /usr/bin/python3.6   2         manual mode
+
+Press &amp;lt;enter&amp;gt; to keep the current choice[&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;, or &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;selection number: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;install-pip&quot;&gt;Install pip&lt;/h4&gt;
 
@@ -389,13 +414,13 @@ python3.6
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTIzNDg1MSwyMDIyNTI2MTU0LDgwMj
-YyMjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcw
-NjQxLC0xNTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LD
-E3MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2
-OTU1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNT
-AzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwt
-NDMzMTMzMjY4XX0=
+eyJoaXN0b3J5IjpbNzEwOTU2OTk3LDIwMjI1MjYxNTQsODAyNj
+IyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIxNjgwLDE0NDE1NzA2
+NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgsMT
+cyMzczODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5
+NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MD
+MxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00
+MzMxMzMyNjhdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
