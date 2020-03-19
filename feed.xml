@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:38:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:39:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -205,18 +205,18 @@ fQ==
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.bash_aliases 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;우분투 18.04에는 nano 에디터가 들어 있다. 없다면, vim을 써도 된다. 이제 이 파일에 아래과 같은 내용을 적고 저장한다. &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;를 쓰는 이유는 파일을 생성하게 되기 때문이다.&lt;/p&gt;
+&lt;p&gt;우분투 18.04에는 nano 에디터가 들어 있다. 없다면, vim을 써도 된다. 이제 이 파일에 아래과 같은 내용을 적고 저장한다. &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;를 쓰는 이유는 파일을 생성하게 되기 때문이다. 좌우간 해당 파일에 아래의 내용을 넣고 저장하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alias python=python3.7
 alias pip=pip3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;aliases를 활성화하기 위해서는 시스템을 다시 시작하거나&lt;/p&gt;
+&lt;p&gt;aliases를 활성화하기 위해서는 시스템을 다시 시작하거나  아래 명령을 시작하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_aliases
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;보통 어떤 포스트의 경우 여기에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python3-pip&lt;/code&gt;로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.&lt;/p&gt;
+&lt;p&gt;검색을 해보면 어떤 포스트의 경우 여기에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python3-pip&lt;/code&gt;로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get purge python-pip
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget https://bootstrap.pypa.io/get-pip.py
@@ -225,7 +225,7 @@ alias pip=pip3
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;get-pip.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;아래와 같이 나와주면 준비완료다.&lt;/p&gt;
+&lt;p&gt;아래와 같이 나와주면 일단 준비 완료다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip (python 3.7)&lt;/span&gt;
@@ -317,13 +317,13 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQwNzU5MDEsODA0NTEzNjU4LDE3Mj
-M3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1
-MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAzMS
-wxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQwNSwtNDMz
-MTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMjA5MjI1Nz
-IzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3NTM4NDAs
-LTIwNjIxNTE2NTBdfQ==
+eyJoaXN0b3J5IjpbMTE4MTUwNTY2MCw4MDQ1MTM2NTgsMTcyMz
+czODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUz
+NzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MDMxLD
+E1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00MzMx
+MzMyNjgsLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC0yMDkyMjU3Mj
+MzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIsLTE0ODc1Mzg0MCwt
+MjA2MjE1MTY1MF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
