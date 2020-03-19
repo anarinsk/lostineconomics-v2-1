@@ -242,7 +242,9 @@ alias pip=pip3
 
 <p>aliases를 활성화하기 위해서는 시스템을 재시작해야 한다. 혹은</p>
 
-<p>Cmder의 창을 내렸다가 다시 올리면 된다. 보통 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">source</span> /.bash_aliases
+</code></pre></div></div>
+<p>보통 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get purge python-pip
 wget https://bootstrap.pypa.io/get-pip.py
@@ -323,11 +325,11 @@ python <span class="nt">-m</span> venv |your-venv|
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0NjQwODY4LC04MDgyMzM5OTEsLTQxMT
-gxNTAzMSwxNTY5NTc2NjA3LDE1Njk1NzY2MDcsMTY3NDE3MzQw
-NSwtNDMzMTMzMjY4LC01OTE5NjM3MDAsMTM2NDQxNTkzNywtMj
-A5MjI1NzIzMywyMDAzODY3NTEyLC0xNzE1MDc0NTAyLC0xNDg3
-NTM4NDAsLTIwNjIxNTE2NTBdfQ==
+eyJoaXN0b3J5IjpbLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtND
+ExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTcz
+NDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC
+0yMDkyMjU3MjMzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIsLTE0
+ODc1Mzg0MCwtMjA2MjE1MTY1MF19
 -->
 <div class="footnotes">
   <ol>
