@@ -54,7 +54,7 @@ $$
 
 #### Q1
 
-![]({{ site.baseurl }}/images/GS-LA/fig_7.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/GS-LA/fig_7.png){: style="textalign:center; " width="300"}
 
 $$
 V_1 \cap V_2 = \{0\}
@@ -62,7 +62,7 @@ $$
 
 #### Q2
 
-![]({{ site.baseurl }}/images/GS-LA/fig_9.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/GS-LA/fig_9.png){: style="textalign:center; " width="300"}
 
 - $V_3$는 평면이다. 하지만 $V_1 \cup V_2$는 두 벡터 부분공간의 합집합일 뿐이다. 
 
@@ -77,7 +77,7 @@ $$
 
 #### Q3
 
-![]({{ site.baseurl }}/images/GS-LA/fig_8.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/GS-LA/fig_8.png){: style="textalign:center; " width="300"}
 
 - 단순하게 $x_1 + x_2$가 생성하는 부분공간을 생각해보자. 
 - 그림에서 보듯이 이는 $V_1$ , $V_2$ 어디에도 속하지 않는다. 
@@ -114,6 +114,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTY3Nzk3MywzNTM0MzQ3OTcsNTM5MT
-Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
+eyJoaXN0b3J5IjpbLTY3OTQ3MTQ3MywxMzY1Njc3OTczLDM1Mz
+QzNDc5Nyw1MzkxNjc1NTUsNzc2MjAwNzcyLDE0OTY3NjQ3NTld
+fQ==
 -->
