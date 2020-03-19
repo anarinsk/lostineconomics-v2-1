@@ -216,7 +216,7 @@ window.onload = wrap_img;
 
 <p>이제 python을 설치할 차례다. 다소 의아할지 모르겠지만, macos, 윈도에 비해서 파이썬을 설치하고 운용하는 것이 쉽지 않다. 리눅스의 경우 하나하나 설정해야 하는 것이 많다. 내용을 자세히 안다면 세밀하고 명확한 통제가 가능한 것이겠지만, 주류 OS의 편안함에 익숙하다면 당황스러운 경우를 접하게 된다.</p>
 
-<p>우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 써야 할까?</p>
+<p>우선, 우분투18.04에는 파이썬이 탑재되어 있다. 2.7, 3.6x 두가지 버전이나 이미 깔려 있다. 그럼, 최신 python은 어떻게 설치하고 써야 할까?</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt update
 ~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common
@@ -233,6 +233,10 @@ window.onload = wrap_img;
 
 <p>이렇게 잘 출력되어야 한다. 하지만 매번 <code class="highlighter-rouge">python3.7</code>이라고 칠 수는 없는 노릇이니, 얘가 내가 쓰고 싶은 파이썬이란 점을 bash에게 알려줘야 한다.</p>
 
+<h3 id="not-so-good-way">Not-so-good way</h3>
+
+<p>Home 환경에 <code class="highlighter-rouge">.bash_aliases</code>를 바꿔주는 방법이다.</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~ <span class="c"># 홈으로 이동</span>
 ~<span class="nv">$ </span><span class="nb">sudo </span>nano ~/.bash_aliases 
 </code></pre></div></div>
@@ -247,6 +251,8 @@ alias pip=pip3
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.bash_aliases
 </code></pre></div></div>
+
+<h4 id="bet">Bet</h4>
 
 <p>검색을 해보면 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
@@ -388,13 +394,13 @@ alias pip=pip3
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjUyNjE1NCw4MDI2MjI1OTgsLTEwMj
-AwNzY1MzgsLTEzMzE3MjE2ODAsMTQ0MTU3MDY0MSwtMTUxMTY4
-NjE4MCwtOTYwMTU4NzI0LDgwNDUxMzY1OCwxNzIzNzM4NjY5LC
-04MDU0NDAzOTUsLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMTI1
-MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3Nj
-YwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwt
-NTkxOTYzNzAwXX0=
+eyJoaXN0b3J5IjpbLTExOTM3NjM3NTQsMjAyMjUyNjE1NCw4MD
+I2MjI1OTgsLTEwMjAwNzY1MzgsLTEzMzE3MjE2ODAsMTQ0MTU3
+MDY0MSwtMTUxMTY4NjE4MCwtOTYwMTU4NzI0LDgwNDUxMzY1OC
+wxNzIzNzM4NjY5LC04MDU0NDAzOTUsLTIwODEzODI5NDQsMTc2
+Njk1NTM3MiwtMTI1MDMzNjA1MywtODA4MjMzOTkxLC00MTE4MT
+UwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNzM0MDUs
+LTQzMzEzMzI2OF19
 -->
 <div class="footnotes">
   <ol>
