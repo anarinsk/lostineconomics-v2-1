@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:47:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:49:03-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -264,11 +264,12 @@ alias pip=pip3
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 ㅅ&lt;/p&gt;
+&lt;p&gt;이렇게 WSL에 접속하면 별도의 창이 뜬다. 이는 윈도의 VS Code와 별도의 환경에서 운용된다.  파이썬의 가상 환경을 생각하면 된다. 필요한 익스텐션 역시 다시 깔아줘야 한다.&lt;/p&gt;
 
-&lt;p&gt;가상 환경을 쓰는 경우 가상 환경에 접근할 수 있어야 한다.&lt;/p&gt;
+&lt;p&gt;파이썬 가상 환경을 쓰는 경우 해당 가상 환경에 접근할 수 있어야 한다. 그래야 가상 환경에서 구동되는 파이썬을 쓸 수 있다.&lt;/p&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;파이썬 VS Code 익스텐션을 설치한다.&lt;/li&gt;
   &lt;li&gt;VS Code의 메뉴에서 &lt;kbd&gt;File&lt;/kbd&gt; → &lt;kbd&gt;Preference&lt;/kbd&gt; → &lt;kbd&gt;settings&lt;/kbd&gt;&lt;/li&gt;
   &lt;li&gt;“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 적당한 디렉토리를 넣으면 되겠다.
     &lt;ul&gt;
@@ -320,7 +321,7 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTYwMzczNSw4MDQ1MTM2NTgsMTcyMz
+eyJoaXN0b3J5IjpbLTM0NTk2NjM4Miw4MDQ1MTM2NTgsMTcyMz
 czODY2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUz
 NzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MDMxLD
 E1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00MzMx
