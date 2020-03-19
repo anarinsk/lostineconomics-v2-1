@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T16:16:03-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T16:16:48-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -136,6 +136,7 @@ fQ==
 
 &lt;ul&gt;
   &lt;li&gt;아주 친절한 가이드는 아니다. 이 내용을 모두 까먹을 미래의 나를 위한 포스팅이다.&lt;/li&gt;
+  &lt;li&gt;WSL V2를 설치할 수 있는 Windows 10 Preview 버전을 권장한다.&lt;/li&gt;
   &lt;li&gt;아래에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;|Something-anyting|&lt;/code&gt;으로 표현된 것은 각자의 환경에 따라서 바뀌는 부분이다.&lt;/li&gt;
   &lt;li&gt;python과 파이썬을 병행 사용하겠다.&lt;/li&gt;
   &lt;li&gt;패키지의 경우 처음 나올 때는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt; 처럼 쓰고 이후 다시 나올 때는 그냥 이름만 쓰겠다.&lt;/li&gt;
@@ -360,13 +361,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2MTE2ODA5LC0xNTExNjg2MTgwLC05Nj
-AxNTg3MjQsODA0NTEzNjU4LDE3MjM3Mzg2NjksLTgwNTQ0MDM5
-NSwtMjA4MTM4Mjk0NCwxNzY2OTU1MzcyLC0xMjUwMzM2MDUzLC
-04MDgyMzM5OTEsLTQxMTgxNTAzMSwxNTY5NTc2NjA3LDE1Njk1
-NzY2MDcsMTY3NDE3MzQwNSwtNDMzMTMzMjY4LC01OTE5NjM3MD
-AsMTM2NDQxNTkzNywtMjA5MjI1NzIzMywyMDAzODY3NTEyLC0x
-NzE1MDc0NTAyXX0=
+eyJoaXN0b3J5IjpbMTQ0MTU3MDY0MSwtMTUxMTY4NjE4MCwtOT
+YwMTU4NzI0LDgwNDUxMzY1OCwxNzIzNzM4NjY5LC04MDU0NDAz
+OTUsLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1My
+wtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5
+NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNz
+AwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwt
+MTcxNTA3NDUwMl19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
