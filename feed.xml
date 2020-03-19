@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:58:53-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T14:59:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -138,6 +138,7 @@ fQ==
   &lt;li&gt;아주 친절한 가이드는 아니다. 이 내용을 모두 까먹을 미래의 나를 위한 포스팅이다.&lt;/li&gt;
   &lt;li&gt;아래에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;|Something-anyting|&lt;/code&gt;으로 표현된 것은 각자의 환경에 따라서 바뀌는 부분이다.&lt;/li&gt;
   &lt;li&gt;python과 파이썬을 병행 사용하겠다.&lt;/li&gt;
+  &lt;li&gt;패키지의 경우 처음 나올 때는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt; 처럼 쓰고 이후 다시 나올 때는 그냥 이름만 쓰겠다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;wsl&quot;&gt;WSL&lt;/h2&gt;
@@ -315,7 +316,7 @@ alias pip=pip3
 
 &lt;h2 id=&quot;why&quot;&gt;Why…&lt;/h2&gt;
 
-&lt;p&gt;사실 그냥 윈도에서 파이썬 깔아서 써도 문송한 내 수준에서는 충분하다. 다만 pandas 패키지를 몇 배 빠르게 돌릴 수 있다는 &lt;a href=&quot;https://github.com/modin-project/modin&quot;&gt;modin&lt;/a&gt; 프로젝트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ray&lt;/code&gt;가 리눅스와 macos에서만 돌아간다. 이것 때문에 맥북을 살 수는 없는 노릇 아닌가… 마.&lt;/p&gt;
+&lt;p&gt;사실 그냥 윈도에서 파이썬 깔아서 써도 문송한 내 수준에서는 충분하다. 다만 pandas 패키지를 몇 배 빠르게 돌릴 수 있다는 &lt;a href=&quot;https://github.com/modin-project/modin&quot;&gt;modin&lt;/a&gt; 프로젝트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ray&lt;/code&gt;가 리눅스와 macos에서만 돌아가더라. 이것 때문에 맥북을 살 수는 없는 노릇 아닌가… 마.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -326,7 +327,7 @@ alias pip=pip3
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDk1Mzc3ODYsLTk2MDE1ODcyNCw4MD
+eyJoaXN0b3J5IjpbLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4MD
 Q1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMDgxMzgy
 OTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5MS
 wtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3NjYwNywxNjc0
