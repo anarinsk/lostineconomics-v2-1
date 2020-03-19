@@ -188,7 +188,7 @@ window.onload = wrap_img;
   <li><kbd>settings</kbd> →  <kbd>Startup</kbd> → <kbd>Tasks</kbd></li>
 </ul>
 
-<p>여기 항목 중에서 <code class="highlighter-rouge">{Bash::bash}</code>를 하나 클론한 후 이름을 적당한 것으로 바꾸도록 하자. 내 경우는 <code class="highlighter-rouge">{Bash::WSL}</code>로 설정했다. 커맨드 필드 아래와 같이 붙여 넣는다.</p>
+<p>여기 항목 중에서 <code class="highlighter-rouge">{Bash::bash}</code>를 하나 클론한 후 이름을 적당한 것으로 바꾸도록 하자. 내 경우는 <code class="highlighter-rouge">{Bash::WSL}</code>로 설정했다. 커맨드 필드 아래와 같이 붙여 넣는다. 단축키를 설정하면 편리하게 활용할 수 있다.</p>
 
 <pre><code class="language-cmd">%windir%\system32\bash.exe -new_console ~
 </code></pre>
@@ -283,7 +283,7 @@ alias pip=pip3
 </code></pre></div></div>
 
 <h4 id="pip-review">pip-review</h4>
-<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.{^4]</p>
+<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:3:1"><a href="#fn:3" class="footnote">2</a></sup></p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install </span>pip-review 
 </code></pre></div></div>
@@ -389,7 +389,7 @@ Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span cl
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0MTA5NDQsLTE1MTE2ODYxODAsLTk2MD
+eyJoaXN0b3J5IjpbODEzNDQyMTcsLTE1MTE2ODYxODAsLTk2MD
 E1ODcyNCw4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1
 LC0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLT
 gwODIzMzk5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3
@@ -403,7 +403,7 @@ MTUwNzQ1MDJdfQ==
       <p>V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 <a href="https://www.lesstif.com/pages/viewpage.action?pageId=71401661">여기</a>를 참고하라. 윈도 코맨드 라인에서 WSL의 버전을 확인하고 싶다면 <code class="highlighter-rouge">wsl -l -v</code>을 치면 된다. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p>대체로 파이썬 가상 환경의 경우 가상 환경 안에 필요한 모든 구동 파일을 지니고 있다. 따라서 pip 같은 경우도 다시 업데이트하는 것이 필요하다. 시스템 파이썬의 pip와 다르기 때문이다. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>상세한 내용을 다음을 참고하자. <a href="https://github.com/jgonggrijp/pip-review">https://github.com/jgonggrijp/pip-review</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
     </li>
   </ol>
 </div>
