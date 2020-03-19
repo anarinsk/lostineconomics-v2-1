@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T17:28:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T17:34:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -265,13 +265,13 @@ alias pip=pip3
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review
 &lt;span class=&quot;nv&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.13.4 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.13.2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;2.4.13 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 2.4.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.3.2 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.3.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#rq==0.3.2 is available (you have 0.3.0)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;모든 것을 다 업데이트 하려면,&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--auto&lt;/span&gt;
-... &amp;lt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;output&amp;gt;
+&lt;span class=&quot;c&quot;&gt;#... &amp;lt;pip install output&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;각 패키지 별로 문답식으로 진행하려면,&lt;/p&gt;
@@ -361,13 +361,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjAwNzY1MzgsLTEzMzE3MjE2ODAsMT
-Q0MTU3MDY0MSwtMTUxMTY4NjE4MCwtOTYwMTU4NzI0LDgwNDUx
-MzY1OCwxNzIzNzM4NjY5LC04MDU0NDAzOTUsLTIwODEzODI5ND
-QsMTc2Njk1NTM3MiwtMTI1MDMzNjA1MywtODA4MjMzOTkxLC00
-MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5NTc2NjA3LDE2NzQxNz
-M0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNjQ0MTU5Mzcs
-LTIwOTIyNTcyMzNdfQ==
+eyJoaXN0b3J5IjpbODAyNjIyNTk4LC0xMDIwMDc2NTM4LC0xMz
+MxNzIxNjgwLDE0NDE1NzA2NDEsLTE1MTE2ODYxODAsLTk2MDE1
+ODcyNCw4MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC
+0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgw
+ODIzMzk5MSwtNDExODE1MDMxLDE1Njk1NzY2MDcsMTU2OTU3Nj
+YwNywxNjc0MTczNDA1LC00MzMxMzMyNjgsLTU5MTk2MzcwMCwx
+MzY0NDE1OTM3XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
