@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T16:16:48-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T17:03:37-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -202,7 +202,7 @@ fQ==
 &lt;span class=&quot;c&quot;&gt;# Python 3.7.7 &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이렇게 잘 출력되어야 한다. 하지만 매번 &lt;code class=&quot;highlighter-rouge&quot;&gt;python3.7&lt;/code&gt;이라고 칠 수는 없는 노릇이니, 얘가 내가 쓰고 싶은 파이썬이란 점은 bash에게 알려줘야 한다.&lt;/p&gt;
+&lt;p&gt;이렇게 잘 출력되어야 한다. 하지만 매번 &lt;code class=&quot;highlighter-rouge&quot;&gt;python3.7&lt;/code&gt;이라고 칠 수는 없는 노릇이니, 얘가 내가 쓰고 싶은 파이썬이란 점을 bash에게 알려줘야 한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~ &lt;span class=&quot;c&quot;&gt;# 홈으로 이동&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano ~/.bash_aliases 
@@ -322,7 +322,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;/li&gt;
+  &lt;li&gt;이제 확장자 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.py&lt;/code&gt;VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
@@ -361,13 +361,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTU3MDY0MSwtMTUxMTY4NjE4MCwtOT
-YwMTU4NzI0LDgwNDUxMzY1OCwxNzIzNzM4NjY5LC04MDU0NDAz
-OTUsLTIwODEzODI5NDQsMTc2Njk1NTM3MiwtMTI1MDMzNjA1My
-wtODA4MjMzOTkxLC00MTE4MTUwMzEsMTU2OTU3NjYwNywxNTY5
-NTc2NjA3LDE2NzQxNzM0MDUsLTQzMzEzMzI2OCwtNTkxOTYzNz
-AwLDEzNjQ0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwt
-MTcxNTA3NDUwMl19
+eyJoaXN0b3J5IjpbNjUxMjg2OTE4LDE0NDE1NzA2NDEsLTE1MT
+E2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgsMTcyMzczODY2
+OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIsLT
+EyNTAzMzYwNTMsLTgwODIzMzk5MSwtNDExODE1MDMxLDE1Njk1
+NzY2MDcsMTU2OTU3NjYwNywxNjc0MTczNDA1LC00MzMxMzMyNj
+gsLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC0yMDkyMjU3MjMzLDIw
+MDM4Njc1MTJdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
