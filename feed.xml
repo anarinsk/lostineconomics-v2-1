@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T00:37:20-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T00:40:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -142,7 +142,7 @@ Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
 
 &lt;p&gt;윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;다운 받아서 설치하고 한번 실행해줘야 한다. 그래야 계정 설정이 된다. 화면의 안내대로 아이디와 패스워드를 생성하면 된다. 여기까지 마치면 WSL을 쓸 준비 완료다.&lt;/p&gt;
 
@@ -150,7 +150,7 @@ Y3NTU1LDc3NjIwMDc3MiwxNDk2NzY0NzU5XX0=
 
 &lt;p&gt;이제 좀 더 편리하고 미감도 좋은 윈도용 코맨드라인 툴 &lt;a href=&quot;https://cmder.net/&quot;&gt;Cmder&lt;/a&gt;에서 WSL을 설정해보자. 의외로 간단하다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;kbd&gt;settings&lt;/kbd&gt; →  &lt;kbd&gt;Startup&lt;/kbd&gt; → &lt;kbd&gt;Tasks&lt;/kbd&gt;&lt;/li&gt;
@@ -291,9 +291,9 @@ python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTk2MzcwMCwxMzY0NDE1OTM3LC0yMD
-kyMjU3MjMzLDIwMDM4Njc1MTIsLTE3MTUwNzQ1MDIsLTE0ODc1
-Mzg0MCwtMjA2MjE1MTY1MF19
+eyJoaXN0b3J5IjpbLTQzMzEzMzI2OCwtNTkxOTYzNzAwLDEzNj
+Q0MTU5MzcsLTIwOTIyNTcyMzMsMjAwMzg2NzUxMiwtMTcxNTA3
+NDUwMiwtMTQ4NzUzODQwLC0yMDYyMTUxNjUwXX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
