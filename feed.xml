@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T23:52:24-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-20T00:00:54-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -406,7 +406,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 
 &lt;p&gt;우선, 저장된 아이디와 패스워드를 풀자.&lt;/p&gt;
 
-&lt;p&gt;그리고 &lt;a href=&quot;https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8&quot;&gt;여기&lt;/a&gt;를 참고해서 다시 크리덴셜을 받는다. 그리고 저장한다.&lt;/p&gt;
+&lt;p&gt;그리고 &lt;a href=&quot;https://medium.com/@ginnyfahs/github-error-authentication-failed-from-command-line-3a545bfd0ca8&quot;&gt;여기&lt;/a&gt;를 참고해서 다시 크리덴셜을 받아 다시 로그인한다. 만일 아이디와 패스워드를 저장하고 싶다면, 아래 명령을 먼저 수행한 후 로그인하면 된다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config credential.helper store 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -424,13 +424,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjUzNjg3MCwtNDY2NzU5OTU4LDgwMj
-UyNjEyOCwyMTE1OTEwNjE3LDEwNzYwMTYzNDcsLTIwMTM1OTc5
-ODcsLTE0MTgyODU1NzUsLTE2NzA1OTY0ODUsMTg1MjA5MDQ2Mi
-wyMDIyNTI2MTU0LDgwMjYyMjU5OCwtMTAyMDA3NjUzOCwtMTMz
-MTcyMTY4MCwxNDQxNTcwNjQxLC0xNTExNjg2MTgwLC05NjAxNT
-g3MjQsODA0NTEzNjU4LDE3MjM3Mzg2NjksLTgwNTQ0MDM5NSwt
-MjA4MTM4Mjk0NF19
+eyJoaXN0b3J5IjpbLTIwMjg1NDUyOTksLTU1MjUzNjg3MCwtND
+Y2NzU5OTU4LDgwMjUyNjEyOCwyMTE1OTEwNjE3LDEwNzYwMTYz
+NDcsLTIwMTM1OTc5ODcsLTE0MTgyODU1NzUsLTE2NzA1OTY0OD
+UsMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYyMjU5OCwtMTAy
+MDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNjQxLC0xNTExNj
+g2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3MjM3Mzg2Njks
+LTgwNTQ0MDM5NV19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
