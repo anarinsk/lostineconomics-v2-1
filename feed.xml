@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T18:52:36-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T19:28:29-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -347,7 +347,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 
 &lt;p&gt;VS Code의 extension 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - WSL&lt;/code&gt;이란 것이 있다. 이 녀석을 깔면 WSL에 VS Code가 쉽게 접근할 수 있게 된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;VS Code 창 아래 왼쪽에 녹색 바를 클릭하면 WSL에 연결할 수 있게 된다.&lt;/p&gt;
 
@@ -419,13 +419,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTM1OTc5ODcsLTE0MTgyODU1NzUsLT
-E2NzA1OTY0ODUsMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYy
-MjU5OCwtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNj
-QxLC0xNTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3
-MjM3Mzg2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OT
-U1MzcyLC0xMjUwMzM2MDUzLC04MDgyMzM5OTEsLTQxMTgxNTAz
-MSwxNTY5NTc2NjA3XX0=
+eyJoaXN0b3J5IjpbMTA3NjAxNjM0NywtMjAxMzU5Nzk4NywtMT
+QxODI4NTU3NSwtMTY3MDU5NjQ4NSwxODUyMDkwNDYyLDIwMjI1
+MjYxNTQsODAyNjIyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIxNj
+gwLDE0NDE1NzA2NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4
+MDQ1MTM2NTgsMTcyMzczODY2OSwtODA1NDQwMzk1LC0yMDgxMz
+gyOTQ0LDE3NjY5NTUzNzIsLTEyNTAzMzYwNTMsLTgwODIzMzk5
+MSwtNDExODE1MDMxXX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
