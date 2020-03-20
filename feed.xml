@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T20:27:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-19T20:28:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -373,7 +373,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/vanilla-python/vscode.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. Venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 Venv 상의 버전들도 보일 것이다.&lt;/li&gt;
+  &lt;li&gt;여기까지 마쳤으면 WSL에 접근된 상태에서 WSL에 깔린 파이썬 가상 환경으로도 접근이 가능하다. 해당 python 커널을 인식해주자. 아래 그림에서 왼쪽의 보라색을 선택하자. venv가 제대로 인식되었다면 시스템에 설치된 python 버전 뿐 아니라 venv 상의 버전들도 아래 그림처럼 VS Code에서 잘 보일 것이다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
@@ -422,13 +422,13 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzY0OTgwMCwyMTE1OTEwNjE3LDEwNz
-YwMTYzNDcsLTIwMTM1OTc5ODcsLTE0MTgyODU1NzUsLTE2NzA1
-OTY0ODUsMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYyMjU5OC
-wtMTAyMDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNjQxLC0x
-NTExNjg2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3MjM3Mz
-g2NjksLTgwNTQ0MDM5NSwtMjA4MTM4Mjk0NCwxNzY2OTU1Mzcy
-LC0xMjUwMzM2MDUzXX0=
+eyJoaXN0b3J5IjpbODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3Nj
+AxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3MDU5
+NjQ4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQsODAyNjIyNTk4LC
+0xMDIwMDc2NTM4LC0xMzMxNzIxNjgwLDE0NDE1NzA2NDEsLTE1
+MTE2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgsMTcyMzczOD
+Y2OSwtODA1NDQwMzk1LC0yMDgxMzgyOTQ0LDE3NjY5NTUzNzIs
+LTEyNTAzMzYwNTNdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
