@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-20T00:00:54-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-20T18:51:12-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -424,18 +424,18 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg1NDUyOTksLTU1MjUzNjg3MCwtND
-Y2NzU5OTU4LDgwMjUyNjEyOCwyMTE1OTEwNjE3LDEwNzYwMTYz
-NDcsLTIwMTM1OTc5ODcsLTE0MTgyODU1NzUsLTE2NzA1OTY0OD
-UsMTg1MjA5MDQ2MiwyMDIyNTI2MTU0LDgwMjYyMjU5OCwtMTAy
-MDA3NjUzOCwtMTMzMTcyMTY4MCwxNDQxNTcwNjQxLC0xNTExNj
-g2MTgwLC05NjAxNTg3MjQsODA0NTEzNjU4LDE3MjM3Mzg2Njks
-LTgwNTQ0MDM5NV19
+eyJoaXN0b3J5IjpbLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNT
+UyNTM2ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2
+MTcsMTA3NjAxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NS
+wtMTY3MDU5NjQ4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQsODAy
+NjIyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIxNjgwLDE0NDE1Nz
+A2NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgs
+MTcyMzczODY2OV19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. 윈도 코맨드 라인에서 WSL의 버전을 확인하고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl -l -v&lt;/code&gt;을 치면 된다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. WSL에서 버전을 확인하고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl.exe -l -v&lt;/code&gt;을 치면 된다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:6&quot;&gt;
       &lt;p&gt;WSL 2에 관해서는 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
