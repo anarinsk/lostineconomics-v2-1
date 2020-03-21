@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-21T01:41:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-21T01:43:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -411,6 +411,15 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config credential.helper store 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h3 id=&quot;tensorflow&quot;&gt;tensorflow&lt;/h3&gt;
+
+&lt;p&gt;혹시 tensorflow를 쓰게 된다면 인스톨할 때 한 가지만 주의하면 된다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WSL은 아직 gpu를 지원하지 못한다.&lt;/li&gt;
+  &lt;li&gt;tensorflow 2.1부터는 디폴&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;why&quot;&gt;Why…&lt;/h2&gt;
 
 &lt;p&gt;사실 그냥 윈도에서 파이썬 깔아서 써도 문송한 내 수준에서는 충분하다. 다만 pandas 패키지를 몇 배 빠르게 돌릴 수 있다는 &lt;a href=&quot;https://github.com/modin-project/modin&quot;&gt;modin&lt;/a&gt; 프로젝트의 &lt;code class=&quot;highlighter-rouge&quot;&gt;ray&lt;/code&gt;가 리눅스와 macos에서만 돌아가더라. 이것 때문에 맥북을 살 수는 없는 노릇 아닌가… 마.&lt;/p&gt;
@@ -424,7 +433,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDI4MTI4MywxMDY5Mzk4ODgyLDE1MD
+eyJoaXN0b3J5IjpbLTI2MDI2NDA0NSwxMDY5Mzk4ODgyLDE1MD
 I2ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2
 ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMT
 A3NjAxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3
