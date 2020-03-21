@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title: Vanilla Python with Virtual ENV
+title: Vanilla Python with venv
 description: 파이썬을 순정으로 써볼까? 
 categories: [coding-tool, python]
 
@@ -128,9 +128,9 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMT
-IzMjA2Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0
-Mjg2OCwtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0Nz
-I0LC0xNDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVd
-fQ==
+eyJoaXN0b3J5IjpbLTEzMTY4OTc3MTYsLTIwMDk1NjE1NzksMT
+cyNzMxMzQyMCwtMTIzMjA2Njk1NSwtMTkwNjE3ODU2NiwyMDY0
+OTM1MTQwLDgzNzg0Mjg2OCwtMTYwMDA4ODE0NCwtMTcyNjMyMj
+I5MCwtMzA0ODg0NzI0LC0xNDk4NjA0Nzc4LC0xMDEyMTk4MTQs
+LTEyNDExNzg4OTVdfQ==
 -->
