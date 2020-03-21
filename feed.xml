@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-20T18:51:12-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-21T00:14:16-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -136,7 +136,7 @@ fQ==
 
 &lt;ul&gt;
   &lt;li&gt;아주 친절한 가이드는 아니다. 이 내용을 모두 까먹을 미래의 나를 위한 포스팅이다.&lt;/li&gt;
-  &lt;li&gt;WSL V2를 설치할 수 있는 Windows 10 Preview 버전을 권장한다.&lt;/li&gt;
+  &lt;li&gt;WSL V2를 설치할 수 있는 Windows 10 Preview 버전을 권장한다. 5월에 출시 예정된 Windows 10 2004 업데이트에서는 정식으로 지원될 예정이다.&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
   &lt;li&gt;아래에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;|Something-anyting|&lt;/code&gt;으로 표현된 것은 각자의 환경에 따라서 바뀌는 부분이다.&lt;/li&gt;
   &lt;li&gt;python과 파이썬을 병행 사용하겠다.&lt;/li&gt;
   &lt;li&gt;패키지의 경우 처음 나올 때는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt; 처럼 쓰고 이후 다시 나올 때는 그냥 이름만 쓰겠다.&lt;/li&gt;
@@ -144,7 +144,7 @@ fQ==
 
 &lt;h2 id=&quot;wsl&quot;&gt;WSL&lt;/h2&gt;
 
-&lt;p&gt;윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 일단 프리뷰 프로그램에 가입되어 있다면, 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 일단 프리뷰 프로그램에 가입되어 있다면, 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
@@ -225,7 +225,7 @@ alias pip=pip3
 
 &lt;h3 id=&quot;better-way&quot;&gt;Better way&lt;/h3&gt;
 
-&lt;p&gt;리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.&lt;/p&gt;
+&lt;p&gt;리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-V&lt;/span&gt;
 Python 2.7.14
@@ -302,7 +302,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.pyvenv/pandas/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -314,7 +314,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 
 &lt;h3 id=&quot;pip-review&quot;&gt;pip-review&lt;/h3&gt;
 
-&lt;p&gt;conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -381,7 +381,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;이제 확장자 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.py&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.ipynb&lt;/code&gt; 파일을 불러오면, VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;이제 확장자 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.py&lt;/code&gt; 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;*.ipynb&lt;/code&gt; 파일을 불러오면, VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-cmder/fig_5b.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
@@ -424,16 +424,19 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNT
-UyNTM2ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2
-MTcsMTA3NjAxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NS
-wtMTY3MDU5NjQ4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQsODAy
-NjIyNTk4LC0xMDIwMDc2NTM4LC0xMzMxNzIxNjgwLDE0NDE1Nz
-A2NDEsLTE1MTE2ODYxODAsLTk2MDE1ODcyNCw4MDQ1MTM2NTgs
-MTcyMzczODY2OV19
+eyJoaXN0b3J5IjpbMTg0ODI3MzM5NCwtOTI1Nzg4Mzk3LC0yMD
+I4NTQ1Mjk5LC01NTI1MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYx
+MjgsMjExNTkxMDYxNywxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC
+0xNDE4Mjg1NTc1LC0xNjcwNTk2NDg1LDE4NTIwOTA0NjIsMjAy
+MjUyNjE1NCw4MDI2MjI1OTgsLTEwMjAwNzY1MzgsLTEzMzE3Mj
+E2ODAsMTQ0MTU3MDY0MSwtMTUxMTY4NjE4MCwtOTYwMTU4NzI0
+LDgwNDUxMzY1OF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
+    &lt;li id=&quot;fn:7&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/&quot;&gt;https://devblogs.microsoft.com/commandline/wsl2-will-be-generally-available-in-windows-10-version-2004/&lt;/a&gt; &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;V2의 경우 올해 4월 쯤 정식으로 서비스될 예정이다. Windows 10 Preview 프로그램에 가입하면 미리 써볼 수 있다. 상세한 내용은 &lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=71401661&quot;&gt;여기&lt;/a&gt;를 참고하라. WSL에서 버전을 확인하고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl.exe -l -v&lt;/code&gt;을 치면 된다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
