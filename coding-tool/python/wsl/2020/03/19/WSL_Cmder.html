@@ -446,8 +446,12 @@ Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span cl
 
 <ul>
   <li>WSL은 아직 gpu를 지원하지 못한다.</li>
-  <li>tensorflow 2.1부터는 디폴</li>
+  <li>tensorflow 2.1부터는 디폴트로 gpu 버전이 들어 있다.</li>
+  <li>따라서 cpu 버전을 골라서 인스톨해야 한다.</li>
 </ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>tensorflow-cpu
+</code></pre></div></div>
 
 <h2 id="why">Why…</h2>
 
@@ -462,7 +466,7 @@ Upgrade now? <span class="o">[</span>Y]es, <span class="o">[</span>N]o, <span cl
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MDI2NDA0NSwxMDY5Mzk4ODgyLDE1MD
+eyJoaXN0b3J5IjpbLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MD
 I2ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2
 ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMT
 A3NjAxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3
