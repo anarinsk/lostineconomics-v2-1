@@ -50,8 +50,8 @@ $$
 
 $$
 \begin{bmatrix}
-1 & \ast & \ast & \ast & \ast & \ast & \ast & \ast & \ast \\
-0 & 1 & \ast & \ast & \ast & \ast & \ast & \ast & \ast     \\
+1 & 0 & \ast & 0 & \ast & \ast & 0 & 0 & \ast \\
+0 & 1 & \ast & 0 & \ast & \ast & 0 & ast & \ast     \\
 0 & 0 & 0 & 1 & \ast & \ast & \ast & \ast & \ast   \\
 0 & 0 & 0 & 0 & 0 & 0 & 1 &   \ast & \ast   \\
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ast   \\
@@ -108,6 +108,6 @@ $X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.
 [https://en.wikipedia.org/wiki/Gaussian_elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTA4NTk5NCwxNDYxNjM1MjU0LC0xNT
-UzOTc1OTI5XX0=
+eyJoaXN0b3J5IjpbMTE2NjIxNDc2MiwtODg1MDg1OTk0LDE0Nj
+E2MzUyNTQsLTE1NTM5NzU5MjldfQ==
 -->
