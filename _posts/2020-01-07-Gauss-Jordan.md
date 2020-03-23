@@ -46,12 +46,13 @@ $$
 - RREF가 되기 위한 조건은 다음과 같다.
 	- REF다. 
 	- 각 행의 선행 원소는 해당 열에서 유일한 0이 아닌 원소다. 
+	- 
 - 아래의 예를 확인하자. 
 
 $$
 \begin{bmatrix}
-1 & 0 & \ast & 0 & \ast & \ast & 0 & 0 & \ast \\
-0 & 1 & \ast & 0 & \ast & \ast & 0 & ast & \ast     \\
+1 & 0 & \ast & \ast & \ast & \ast & \ast & \ast & \ast \\
+0 & 1 & \ast & \ast & \ast & \ast & \ast & \ast & \ast     \\
 0 & 0 & 0 & 1 & \ast & \ast & \ast & \ast & \ast   \\
 0 & 0 & 0 & 0 & 0 & 0 & 1 &   \ast & \ast   \\
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & \ast   \\
@@ -108,6 +109,6 @@ $X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.
 [https://en.wikipedia.org/wiki/Gaussian_elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjIxNDc2MiwtODg1MDg1OTk0LDE0Nj
-E2MzUyNTQsLTE1NTM5NzU5MjldfQ==
+eyJoaXN0b3J5IjpbNTA0NDQ1Mzc3LC04ODUwODU5OTQsMTQ2MT
+YzNTI1NCwtMTU1Mzk3NTkyOV19
 -->
