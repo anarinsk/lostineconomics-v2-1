@@ -305,10 +305,9 @@ Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span cla
 
 <p>검색을 해보면 어떤 포스트의 경우 여기에서 <code class="highlighter-rouge">sudo apt install python3-pip</code>로 pip를 업데이트할 수 있다고 가이드하고 있다. 하지만, 18.04버전에서는 9.0 이상으로 <code class="highlighter-rouge">pip</code>가 올라가지 않는다. 아래와 같이 하면 최신 판본(이 글을 쓰는 시점에서는 20.0.2)으로 업그레이드가 가능하다.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt-get purge python-pip
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt-get purge python-pip <span class="c"># pip가 깔려 있을 경우 실행 </span>
 ~<span class="nv">$ </span>wget https://bootstrap.pypa.io/get-pip.py
 ~<span class="nv">$ </span><span class="nb">sudo </span>python get-pip.py
-~<span class="nv">$ </span>pip <span class="nt">--version</span>
 ~<span class="nv">$ </span><span class="nb">rm </span>get-pip.py
 </code></pre></div></div>
 
@@ -477,7 +476,7 @@ code |any-your-file| <span class="c"># 특정 파일을 VS Code에서 실행 </s
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUxNzEwOTYsLTMzNjUxNjU0NywtNj
+eyJoaXN0b3J5IjpbLTE5NjI4MDk4MTksLTMzNjUxNjU0NywtNj
 EzNjY1MjIyLDE4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4
 ODgyLDE1MDI2ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OS
 wtNTUyNTM2ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5
