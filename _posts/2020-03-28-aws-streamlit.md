@@ -111,7 +111,7 @@ sudo -H |Your-venv-dir|/pip3 install -U pip
 
 ## Installing streamlit
 
-### 가상환경에서 streamlit 띄우기 
+###  streamlit + venv 
 
 - `.pyenv`이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다. 
 
@@ -127,7 +127,7 @@ source ~/.pyvenv/|name-of-venv|/bin/activate
 streamlit run |name-of-your-py-code|
 ```
 
-### tmux not to kill service 
+### Go tmux not to kill service! 
 
 - 세션에 접속이 끊어지만 스트림라이트 서비스도 같이 끊어진다. 이를 막기 위해서 `tmux`를 쓰도록 하자. 
 
@@ -147,6 +147,7 @@ tmux attach -t |name-of-stream-session|
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMj
-U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbMjk3Mjc2MDQ5LC0zNTY3ODk0MzIsODcxOT
+Y0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcw
+XX0=
 -->
