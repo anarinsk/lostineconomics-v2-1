@@ -69,6 +69,7 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 `python3.7 --version`으로 버전을 확인해보자. 
 
 - 아래와 같이 깔려 있는 파이썬이 있는지 확인해보자. 
+
 ```
 $ sudo update-alternatives --config python
 update-alternatives: error: no alternatives for python
@@ -137,5 +138,6 @@ tmux attach -t StreamSession
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbMTIyMzUyODM3NCwxOTI2MDA5MTI0LDg4OT
+MxMjQ3MF19
 -->
