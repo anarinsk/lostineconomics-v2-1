@@ -122,6 +122,8 @@ source ~/.pyvenv/|name-of-venv|/bin/activate
 
 ### tmux not to kill service 
 
+- 세션에 접속이 끊어지만 스트림라이트 서비스도 같이 끊어진다. 이를 막기 위해서 `tmux`를 쓰도록 하자. 
+
 ```shell
 tmux new -s |name-of-stream-session|
 ```
@@ -138,6 +140,6 @@ tmux attach -t StreamSession
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMzUyODM3NCwxOTI2MDA5MTI0LDg4OT
-MxMjQ3MF19
+eyJoaXN0b3J5IjpbLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4OD
+kzMTI0NzBdfQ==
 -->
