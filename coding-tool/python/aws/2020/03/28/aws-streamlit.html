@@ -139,7 +139,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -289,13 +289,18 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <h3 id="가상환경에서-streamlit-띄우기">가상환경에서 streamlit 띄우기</h3>
 
 <ul>
-  <li><code class="highlighter-rouge">.pyenv</code>이 가상환경이름 이</li>
+  <li><code class="highlighter-rouge">.pyenv</code>이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.pyvenv/|name-of-venv|/bin/activate
 </code></pre></div></div>
 <ul>
-  <li>이 상태에서 streamlit를 깔고 서비스를 띄우면 된다.</li>
+  <li>
+    <p>해당 디렉토리에 진입해 <code class="highlighter-rouge">source activate</code>를 실행해도 된다. 가상 환경 해제는 ``</p>
+  </li>
+  <li>
+    <p>이 상태에서 streamlit를 깔고 서비스를 띄우면 된다.</p>
+  </li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install </span>streamlit
@@ -325,7 +330,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <ul>
   <li>기본적인 사용법은 <a href="https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38">여기</a>를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MDQ1Nzg4LDg3MTk2NDg3OCwtMTMyNT
+eyJoaXN0b3J5IjpbMTY0MzUwNzExLDg3MTk2NDg3OCwtMTMyNT
 YxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3MF19
 --></li>
 </ul>
