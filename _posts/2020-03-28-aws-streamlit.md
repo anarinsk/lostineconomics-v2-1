@@ -56,7 +56,7 @@ categories: [coding-tool, python, AWS]
 ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 ```
 
-### Standard Procedure for Newly Installed Ubuntu 
+### Standard procedure for newly installed Ubuntu 
 
 ```shell
 ~$ sudo apt update # 업데이트 목록 갱신
@@ -152,7 +152,7 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTY1OTIwOSwxNTgwMTU5ODA4LC0zNT
+eyJoaXN0b3J5IjpbMTY0MDY3OTg5NSwxNTgwMTU5ODA4LC0zNT
 Y3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkx
 MjQsODg5MzEyNDcwXX0=
 -->
