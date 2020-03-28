@@ -106,8 +106,9 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 sudo -H |Your-venv-dir|/pip3 install -U pip 
 ```
 - 로그아웃 후 다시 로그인 한다.
-- 참고로 `pip`를 `sudo`로 까는 것은 그다지 권장하지 않는다.   
+- 참고로 `pip`를 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
 
+[^1]: [여기](https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7)를 참고하라. 
 
 ## Installing streamlit
 
@@ -145,9 +146,9 @@ tmux new -s |name-of-stream-session|
 tmux attach -t |name-of-stream-session|
 ```
 
-- 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
+- tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5MDg0OTU1LC0zNTY3ODk0MzIsODcxOT
-Y0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcw
-XX0=
+eyJoaXN0b3J5IjpbMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3MT
+k2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3
+MF19
 -->
