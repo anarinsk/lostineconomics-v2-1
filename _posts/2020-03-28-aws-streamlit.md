@@ -109,6 +109,7 @@ sudo -H |Your-venv-dir|/pip3 install -U pip
 
 - `.pyenv`: 가상환경이름 
 
+
 ```shell 
 source ~/.pyvenv/|name-of-venv|/bin/activate
 ```
@@ -120,7 +121,7 @@ source ~/.pyvenv/|name-of-venv|/bin/activate
 
 ### tmux not to kill service 
 
-```Shell
+```shell
 tmux new -s |name-of-stream-session|
 ```
 
@@ -136,5 +137,5 @@ tmux attach -t StreamSession
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 -->
