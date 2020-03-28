@@ -10,7 +10,7 @@ categories: [coding-tool, python, AWS]
 
 ## tl;dr 
 
-- 몹시 불친절하다.  개인적인 비망록의 성격이 강하다. 
+- 몹시 불친절하다.  개인적인 활용을 위한 비망록이다. 
 - streamlit의 원래 목적은 공유다. AWS를 이용해 streamlit 앱을 깔아보자. 
 
 ## Assumptions 
@@ -18,6 +18,8 @@ categories: [coding-tool, python, AWS]
 - `| |`  안의 내용은 각자 맞게 설정하시라. 
 
 ## AWS 계정 만들기 
+
+- 스트림라이트의 원래 목적은 자신이 지닌 데이터 혹은 데이터 모델을 남들과 공유하는 것이다. 굳이 웹이 필요한 것은 이러한 사연이다. 앞서 Heroku를 통해 streamlit를 
 
 - 대략의 과정은 [여기](https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3)를 참고하자. 
 
@@ -148,7 +150,7 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3MT
-k2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3
-MF19
+eyJoaXN0b3J5IjpbNjE2OTkzNjM5LDE1ODAxNTk4MDgsLTM1Nj
+c4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEy
+NCw4ODkzMTI0NzBdfQ==
 -->
