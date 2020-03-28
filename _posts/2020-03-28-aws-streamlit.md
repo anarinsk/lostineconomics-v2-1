@@ -100,12 +100,13 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 
 #### Trouble shooting 
 
-- 가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 
+- 가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 원래 python과 함께 깔리는 버전에서 업그레이드하려면 아래와 같이 실행해주자. 
 
 ```shell
 sudo -H |Your-venv-dir|/pip3 install -U pip 
 ```
-- 로그아웃 후 다시 로그인 한다. 
+- 로그아웃 후 다시 로그인 한다.
+- 참고로 `pip`를 `sudo`로 까는 것은 그다지 궍 위험하다.  
 
 
 ## Installing streamlit
@@ -144,6 +145,6 @@ tmux attach -t |name-of-stream-session|
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDMwNzQ0Nyw4NzE5NjQ4NzgsLTEzMj
-U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEzNjMwMDMwODcsODcxOTY0ODc4LC0xMz
+I1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 -->
