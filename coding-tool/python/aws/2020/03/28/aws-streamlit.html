@@ -296,14 +296,15 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 </code></pre></div></div>
 <ul>
   <li>
-    <p>해당 디렉토리에 진입해 <code class="highlighter-rouge">source activate</code>를 실행해도 된다. 가상 환경 해제는 ``</p>
+    <p>해당 디렉토리에 진입해 <code class="highlighter-rouge">source activate</code>를 실행해도 된다. 가상 환경 해제는 그냥 <code class="highlighter-rouge">deactivate</code> 명령을 쓰면 된다.</p>
   </li>
   <li>
-    <p>이 상태에서 streamlit를 깔고 서비스를 띄우면 된다.</p>
+    <p>이 상태에서 streamlit를 깔고 서비스를 띄우도록 하자.</p>
   </li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install </span>streamlit
+streamlit run |name-of-your-py-code|
 </code></pre></div></div>
 
 <h3 id="tmux-not-to-kill-service">tmux not to kill service</h3>
@@ -330,8 +331,8 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <ul>
   <li>기본적인 사용법은 <a href="https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38">여기</a>를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzUwNzExLDg3MTk2NDg3OCwtMTMyNT
-YxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMj
+U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 --></li>
 </ul>
 
