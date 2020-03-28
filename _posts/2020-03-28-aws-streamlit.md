@@ -13,6 +13,9 @@ categories: [coding-tool, python, AWS]
 - 몹시 불친절하다.  개인적인 비망록의 성격이 강하다. 
 - streamlit의 원래 목적은 공유다. AWS를 이용해 streamlit 앱을 깔아보자. 
 
+## Assumptions 
+
+
 ## AWS 계정 만들기 
 
 - 대략의 과정은 [여기](https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3)를 참고하자. 
@@ -135,11 +138,11 @@ tmux new -s |name-of-stream-session|
 - 다시 세션에 들아가고 싶다면,
 
 ```shell
-tmux attach -t StreamSession
+tmux attach -t |name-of-stream-session|
 ```
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5Mj
-YwMDkxMjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbLTEyOTg5MTg3NzcsODcxOTY0ODc4LC0xMz
+I1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 -->
