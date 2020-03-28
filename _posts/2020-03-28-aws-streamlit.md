@@ -134,7 +134,7 @@ streamlit run |name-of-your-py-code|
 
 ### Go tmux not to kill service! 
 
-- 세션에 접속이 끊어지만 스트림라이트 서비스도 같이 끊어진다. 이를 막기 위해서 `tmux`를 쓰도록 하자. 
+- 세션에 접속이 끊어지면 스트림라이트 서비스도 같이 끊어진다. 이를 막고 싶다면 `tmux`를 쓰도록 하자. 
 
 ```shell
 tmux new -s |name-of-stream-session|
@@ -144,7 +144,7 @@ tmux new -s |name-of-stream-session|
 - 여기서 스트림라이트를 띄우도록 하자. 
 - 세선에서 나올 때는 <kbd>CTRL-B</kbd> &rarr; D 를 누르면 된다. 
 
-- 다시 세션에 들아가고 싶다면,
+- 다시 해당 세션에 들아가고 싶다면,
 
 ```shell
 tmux attach -t |name-of-stream-session|
@@ -152,7 +152,8 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNT
-gwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEy
-Mjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNj
+QwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4
+NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ
+==
 -->
