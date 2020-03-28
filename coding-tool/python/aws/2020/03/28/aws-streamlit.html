@@ -242,15 +242,15 @@ window.onload = wrap_img;
   <li>아래와 같이 깔려 있는 파이썬이 있는지 확인해보자.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo update-alternatives --config python
-update-alternatives: error: no alternatives for python
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--config</span> python
+update-alternatives: error: no alternatives <span class="k">for </span>python
 </code></pre></div></div>
 
 <ul>
   <li>기존 버전이 없을 경우는 아래와 같이 한다.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3.7 1
 </code></pre></div></div>
 
 <ul>
@@ -259,10 +259,10 @@ update-alternatives: error: no alternatives for python
 
 <h3 id="installing-venv">Installing <code class="highlighter-rouge">venv</code></h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~$ sudo apt install python3.7-venv
-#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)
-~$ sudo python -m venv |your-venv|
-~$ source |your-venv|/bin/activate 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3.7-venv
+<span class="c">#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)</span>
+~<span class="nv">$ </span><span class="nb">sudo </span>python <span class="nt">-m</span> venv |your-venv|
+~<span class="nv">$ </span><span class="nb">source</span> |your-venv|/bin/activate 
 </code></pre></div></div>
 
 <h4 id="trouble-shooting">Trouble shooting</h4>
@@ -271,7 +271,7 @@ update-alternatives: error: no alternatives for python
   <li>가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -H |Your-venv-dir|/pip3 install -U pip 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |Your-venv-dir|/pip3 <span class="nb">install</span> <span class="nt">-U</span> pip 
 </code></pre></div></div>
 <ul>
   <li>로그아웃 후 다시 로그인 한다.</li>
@@ -318,8 +318,8 @@ update-alternatives: error: no alternatives for python
 <ul>
   <li>기본적인 사용법은 <a href="https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38">여기</a>를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4OD
-kzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5Mj
+YwMDkxMjQsODg5MzEyNDcwXX0=
 --></li>
 </ul>
 
