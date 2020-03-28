@@ -100,7 +100,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 
 #### Trouble shooting 
 
-- 가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 원래 python과 함께 깔리는 버전에서 업그레이드하려면 아래와 같이 실행해주자. 
+- AWS EC2에  가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 원래 python과 함께 깔리는 버전에서 업그레이드하려면 아래와 같이 실행해주자. 
 
 ```shell
 sudo -H |Your-venv-dir|/pip3 install -U pip 
@@ -147,7 +147,7 @@ tmux attach -t |name-of-stream-session|
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3Mjc2MDQ5LC0zNTY3ODk0MzIsODcxOT
-Y0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcw
-XX0=
+eyJoaXN0b3J5IjpbMTg3MzE5MDcwNCwtMzU2Nzg5NDMyLDg3MT
+k2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3
+MF19
 -->
