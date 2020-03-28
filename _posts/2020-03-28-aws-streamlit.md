@@ -15,6 +15,7 @@ categories: [coding-tool, python, AWS]
 
 ## Assumptions 
 
+- `| |`  안의 내용은 각자 맞게 설정하시라. 
 
 ## AWS 계정 만들기 
 
@@ -143,6 +144,6 @@ tmux attach -t |name-of-stream-session|
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTg5MTg3NzcsODcxOTY0ODc4LC0xMz
-I1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTg0NDMwNzQ0Nyw4NzE5NjQ4NzgsLTEzMj
+U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 -->
