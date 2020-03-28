@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T18:31:21-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T18:52:14-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
@@ -153,7 +153,7 @@ streamlit run |name-of-your-py-code|
 &lt;h3 id=&quot;go-tmux-not-to-kill-service&quot;&gt;Go tmux not to kill service!&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;세션에 접속이 끊어지만 스트림라이트 서비스도 같이 끊어진다. 이를 막기 위해서 &lt;code class=&quot;highlighter-rouge&quot;&gt;tmux&lt;/code&gt;를 쓰도록 하자.&lt;/li&gt;
+  &lt;li&gt;세션에 접속이 끊어지면 스트림라이트 서비스도 같이 끊어진다. 이를 막고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;tmux&lt;/code&gt;를 쓰도록 하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; |name-of-stream-session|
@@ -165,7 +165,7 @@ streamlit run |name-of-your-py-code|
   &lt;li&gt;
     &lt;p&gt;세선에서 나올 때는 &lt;kbd&gt;CTRL-B&lt;/kbd&gt; → D 를 누르면 된다.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;다시 세션에 들아가고 싶다면,&lt;/li&gt;
+  &lt;li&gt;다시 해당 세션에 들아가고 싶다면,&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux attach &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; |name-of-stream-session|
@@ -174,9 +174,10 @@ streamlit run |name-of-your-py-code|
 &lt;ul&gt;
   &lt;li&gt;tmux의 기본적인 사용법은 &lt;a href=&quot;https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38&quot;&gt;여기&lt;/a&gt;를 참고하라. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNT
-gwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEy
-Mjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNj
+QwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4
+NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ
+==
 --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
