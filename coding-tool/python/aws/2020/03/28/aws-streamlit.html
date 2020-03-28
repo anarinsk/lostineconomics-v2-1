@@ -274,13 +274,14 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <h4 id="trouble-shooting">Trouble shooting</h4>
 
 <ul>
-  <li>가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다.</li>
+  <li>가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 원래 python과 함께 깔리는 버전에서 업그레이드하려면 아래와 같이 실행해주자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |Your-venv-dir|/pip3 <span class="nb">install</span> <span class="nt">-U</span> pip 
 </code></pre></div></div>
 <ul>
   <li>로그아웃 후 다시 로그인 한다.</li>
+  <li>참고로 <code class="highlighter-rouge">pip</code>를 <code class="highlighter-rouge">sudo</code>로 까는 것은 그다지 궍 위험하다.</li>
 </ul>
 
 <h2 id="installing-streamlit">Installing streamlit</h2>
@@ -324,8 +325,8 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <ul>
   <li>기본적인 사용법은 <a href="https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38">여기</a>를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDMwNzQ0Nyw4NzE5NjQ4NzgsLTEzMj
-U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEzNjMwMDMwODcsODcxOTY0ODc4LC0xMz
+I1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 --></li>
 </ul>
 

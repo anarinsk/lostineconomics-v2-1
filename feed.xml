@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T07:59:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T17:41:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 비망록의 성격이 강하다.&lt;/li&gt;
@@ -111,13 +111,14 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;h4 id=&quot;trouble-shooting&quot;&gt;Trouble shooting&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다.&lt;/li&gt;
+  &lt;li&gt;가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 원래 python과 함께 깔리는 버전에서 업그레이드하려면 아래와 같이 실행해주자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |Your-venv-dir|/pip3 &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; pip 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;로그아웃 후 다시 로그인 한다.&lt;/li&gt;
+  &lt;li&gt;참고로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 까는 것은 그다지 궍 위험하다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installing-streamlit&quot;&gt;Installing streamlit&lt;/h2&gt;
@@ -161,8 +162,8 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;ul&gt;
   &lt;li&gt;기본적인 사용법은 &lt;a href=&quot;https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38&quot;&gt;여기&lt;/a&gt;를 참고하라. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDMwNzQ0Nyw4NzE5NjQ4NzgsLTEzMj
-U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEzNjMwMDMwODcsODcxOTY0ODc4LC0xMz
+I1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 --&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">WSL + Cmder + Python</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html" rel="alternate" type="text/html" title="WSL + Cmder + Python" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
