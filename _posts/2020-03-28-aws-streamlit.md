@@ -70,14 +70,14 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 
 - 아래와 같이 깔려 있는 파이썬이 있는지 확인해보자. 
 
-```
+```shell
 $ sudo update-alternatives --config python
 update-alternatives: error: no alternatives for python
 ```
 
 - 기존 버전이 없을 경우는 아래와 같이 한다. 
 
-```
+```shell
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 ```
 
@@ -87,7 +87,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 
 ### Installing `venv`
 
-```
+```shell
 ~$ sudo apt install python3.7-venv
 #(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)
 ~$ sudo python -m venv |your-venv|
@@ -98,7 +98,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 
 - 가상 환경에서 pip가 권한 문제로 업그레이드가 되지 않을 수 있다. 
 
-```
+```shell
 sudo -H |Your-venv-dir|/pip3 install -U pip 
 ```
 - 로그아웃 후 다시 로그인 한다. 
@@ -140,6 +140,6 @@ tmux attach -t StreamSession
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4OD
-kzMTI0NzBdfQ==
+eyJoaXN0b3J5IjpbODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5Mj
+YwMDkxMjQsODg5MzEyNDcwXX0=
 -->
