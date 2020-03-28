@@ -60,7 +60,7 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 
 ```shell
 ~$ sudo apt update # 업데이트 목록 갱신
-~$ sudo ap upgrade # 현재 패키지 업그레이드
+~$ sudo apt upgrade # 현재 패키지 업그레이드
 ~$ sudo apt dist-upgrade # 신규 업데이트 설치 (필요 없을 수도 있다)
 ```
  
@@ -152,7 +152,7 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDY3OTg5NSwxNTgwMTU5ODA4LC0zNT
-Y3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkx
-MjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNT
+gwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEy
+Mjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 -->
