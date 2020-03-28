@@ -284,7 +284,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <p>이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 <code class="highlighter-rouge">update-alternatives</code>가 관리하는 심볼릭 링크가 없기 때문이다.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python2.7 1
-<span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3.6 2
+<span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3.7 2
 </code></pre></div></div>
 
 <p>이렇게 심볼릭 링크를 설치한 후 아래와 같이 바꿔가며 사용하면 된다. 단 바꾼 후에는 Ubuntu의 콘솔창을 완전히 내렸다가 다시 올려야 한다.</p>
@@ -294,9 +294,9 @@ There are 2 choices <span class="k">for </span>the alternative python <span clas
 
   Selection    Path                Priority   Status
 <span class="nt">------------------------------------------------------------</span>
-<span class="k">*</span> 0            /usr/bin/python3.6   2         auto mode
+<span class="k">*</span> 0            /usr/bin/python3.7   2         auto mode
   1            /usr/bin/python2.7   1         manual mode
-  2            /usr/bin/python3.6   2         manual mode
+  2            /usr/bin/python3.7   2         manual mode
 
 Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span class="o">]</span>, or <span class="nb">type </span>selection number: 2
 </code></pre></div></div>
@@ -477,13 +477,13 @@ code |any-your-file| <span class="c"># 특정 파일을 VS Code에서 실행 </s
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzY2NTIyMiwxODE1NTIzNzU5LC0zMz
-EwNDYwMjAsMTA2OTM5ODg4MiwxNTAyNjg3MzQ0LC05MjU3ODgz
-OTcsLTIwMjg1NDUyOTksLTU1MjUzNjg3MCwtNDY2NzU5OTU4LD
-gwMjUyNjEyOCwyMTE1OTEwNjE3LDEwNzYwMTYzNDcsLTIwMTM1
-OTc5ODcsLTE0MTgyODU1NzUsLTE2NzA1OTY0ODUsMTg1MjA5MD
-Q2MiwyMDIyNTI2MTU0LDgwMjYyMjU5OCwtMTAyMDA3NjUzOCwt
-MTMzMTcyMTY4MF19
+eyJoaXN0b3J5IjpbLTMzNjUxNjU0NywtNjEzNjY1MjIyLDE4MT
+U1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2ODcz
+NDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2ODcwLC
+00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3NjAx
+NjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3MDU5Nj
+Q4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQsODAyNjIyNTk4LC0x
+MDIwMDc2NTM4XX0=
 -->
 <div class="footnotes">
   <ol>
