@@ -118,12 +118,13 @@ sudo -H |Your-venv-dir|/pip3 install -U pip
 ```shell 
 source ~/.pyvenv/|name-of-venv|/bin/activate
 ```
-- 해당 디렉토리에 진입해 `source activate`를 실행해도 된다. 가상 환경 해제는 ``
+- 해당 디렉토리에 진입해 `source activate`를 실행해도 된다. 가상 환경 해제는 그냥 `deactivate` 명령을 쓰면 된다. 
 
-- 이 상태에서 streamlit를 깔고 서비스를 띄우면 된다. 
+- 이 상태에서 streamlit를 깔고 서비스를 띄우도록 하자. 
 
 ```shell 
 (|your-venv|) pip install streamlit
+streamlit run |name-of-your-py-code|
 ```
 
 ### tmux not to kill service 
@@ -146,6 +147,6 @@ tmux attach -t |name-of-stream-session|
 
 - 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzUwNzExLDg3MTk2NDg3OCwtMTMyNT
-YxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMj
+U2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 -->
