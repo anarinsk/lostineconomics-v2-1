@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-27T21:15:10-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T04:40:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -225,7 +225,7 @@ alias pip=pip3
 
 &lt;h3 id=&quot;better-way&quot;&gt;Better way&lt;/h3&gt;
 
-&lt;p&gt;리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자.&lt;/p&gt;
+&lt;p&gt;리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자. 만일 설정된 파이썬 실행 명령이 없다면 아무 것도 뜨지 않을 것이다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-V&lt;/span&gt;
 Python 2.7.14
@@ -448,13 +448,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjUxNjU0NywtNjEzNjY1MjIyLDE4MT
-U1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2ODcz
-NDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2ODcwLC
-00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3NjAx
-NjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3MDU5Nj
-Q4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQsODAyNjIyNTk4LC0x
-MDIwMDc2NTM4XX0=
+eyJoaXN0b3J5IjpbLTY5NTQ2MDM4NSwtMzM2NTE2NTQ3LC02MT
+M2NjUyMjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4
+ODIsMTUwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC
+01NTI1MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkx
+MDYxNywxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0xNDE4Mjg1NT
+c1LC0xNjcwNTk2NDg1LDE4NTIwOTA0NjIsMjAyMjUyNjE1NCw4
+MDI2MjI1OThdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
