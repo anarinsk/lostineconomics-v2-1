@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T17:54:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T17:59:44-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;몹시 불친절하다.  개인적인 비망록의 성격이 강하다.&lt;/li&gt;
+  &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
   &lt;li&gt;streamlit의 원래 목적은 공유다. AWS를 이용해 streamlit 앱을 깔아보자.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -14,6 +14,9 @@
 &lt;h2 id=&quot;aws-계정-만들기&quot;&gt;AWS 계정 만들기&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;스트림라이트의 원래 목적은 자신이 지닌 데이터 혹은 데이터 모델을 남들과 공유하는 것이다. 굳이 웹이 필요한 것은 이러한 사연이다. 앞서 Heroku를 통해 streamlit를&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;대략의 과정은 &lt;a href=&quot;https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
 
@@ -168,9 +171,9 @@ streamlit run |name-of-your-py-code|
 &lt;ul&gt;
   &lt;li&gt;tmux의 기본적인 사용법은 &lt;a href=&quot;https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38&quot;&gt;여기&lt;/a&gt;를 참고하라. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3MT
-k2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4OTMxMjQ3
-MF19
+eyJoaXN0b3J5IjpbNjE2OTkzNjM5LDE1ODAxNTk4MDgsLTM1Nj
+c4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEy
+NCw4ODkzMTI0NzBdfQ==
 --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
