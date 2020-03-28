@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T04:42:59-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T04:43:34-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -293,7 +293,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 &lt;p&gt;만일 가상 환경을 쓰고 싶다면, 아래와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;를 설치해서 쓰면 되겠다. venv는 python 3.3 이후에 파이썬에 내장된 자체 가상 환경이다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;virtualenv&lt;/code&gt; 같은 걸 써도 무방하겠다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
-&lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)&lt;/span&gt;
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate
 
@@ -447,7 +447,7 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjI4MDk4MTksLTMzNjUxNjU0NywtNj
+eyJoaXN0b3J5IjpbLTE4Nzg2NzQ4MDEsLTMzNjUxNjU0NywtNj
 EzNjY1MjIyLDE4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4
 ODgyLDE1MDI2ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OS
 wtNTUyNTM2ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5
