@@ -17,9 +17,11 @@ categories: [coding-tool, python, AWS]
 
 - `| |`  안의 내용은 각자 맞게 설정하시라. 
 
-## AWS 계정 만들기 
+## Preparing AWS 
 
-- 스트림라이트의 원래 목적은 자신이 지닌 데이터 혹은 데이터 모델을 남들과 공유하는 것이다. 굳이 웹이 필요한 것은 이러한 사연이다. 앞서 Heroku를 통해 streamlit를 공유하는 [방법](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html)을 안내했다. 해당 방법이 코드만 공유하는 방법이라면 여기 소개하는 방법은 AWS 위에 우분투 서버를 깔고 이를 streamlit 서버로 활용하는 방법이다. 이것이 보다 안정적으로 본격적인 방법이다. 
+- 스트림라이트의 원래 목적은 자신이 지닌 데이터 혹은 데이터 모델을 남들과 공유하는 것이다. 굳이 웹이 필요한 것은 이러한 사연이다. 앞서 Heroku를 통해 streamlit를 공유하는 [방법](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html)을 안내했다. 해당 방법이 코드만 공유하는 방법이라면 여기 소개하는 방법은 AWS 위에 우분투 서버를 깔고 이를 streamlit 서버로 활용하는 방법이다. 이것이 보다 안정적이고 본격적인 방법이다. 
+
+### Creating AWS server
 
 - 대략의 과정은 [여기](https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3)를 참고하자. 
 
@@ -28,7 +30,7 @@ categories: [coding-tool, python, AWS]
 	- Unbuntu 18.04 이미지 선택 
 
 - Security Group
-	- 기존에 적용되어 있는 룰을 고치자.  
+	- 기존에 적용되어 있는 룰을 고치거나 새로 세팅을 해야 한다. 
 		- 인바운드 
 		- 아웃바운드 
 		- 모든 트래픽을 허용해도 된다. 다만, inbound에서 8501번 포트를 꼭 열도록 하자. 
@@ -150,7 +152,7 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDUxNTMxOTUsMTU4MDE1OTgwOCwtMz
-U2Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5
-MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTc1NTY1OTIwOSwxNTgwMTU5ODA4LC0zNT
+Y3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkx
+MjQsODg5MzEyNDcwXX0=
 -->
