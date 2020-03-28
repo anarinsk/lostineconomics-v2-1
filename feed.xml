@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T04:40:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T04:41:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 4</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html" rel="alternate" type="text/html" title="Following Gilbert Strang 4" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/vector-space.html">&lt;h2 id=&quot;vector-spaces&quot;&gt;Vector Spaces&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Spaces is “bunch of something,” in this case, vector&lt;/li&gt;
@@ -171,9 +171,9 @@ LDE0OTY3NjQ3NTldfQ==
 
 &lt;p&gt;우분투의 경우 설치를 한 후 몇 가지 업데이트 작업을 해줘야 한다.&lt;/p&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;c&quot;&gt;# 업데이트 목록 갱신&lt;/span&gt;
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade &lt;span class=&quot;c&quot;&gt;# 현재 패키지 업그레이드&lt;/span&gt;
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get dist-upgrade &lt;span class=&quot;c&quot;&gt;# 신규 업데이트 설치&lt;/span&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update &lt;span class=&quot;c&quot;&gt;# 업데이트 목록 갱신&lt;/span&gt;
+~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;c&quot;&gt;# 현재 패키지 업그레이드&lt;/span&gt;
+~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt dist-upgrade &lt;span class=&quot;c&quot;&gt;# 신규 업데이트 설치&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;몇 가지 알아두면 좋은 설정 항목이 있다.&lt;/p&gt;
@@ -448,13 +448,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NTQ2MDM4NSwtMzM2NTE2NTQ3LC02MT
-M2NjUyMjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4
-ODIsMTUwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC
-01NTI1MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkx
-MDYxNywxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0xNDE4Mjg1NT
-c1LC0xNjcwNTk2NDg1LDE4NTIwOTA0NjIsMjAyMjUyNjE1NCw4
-MDI2MjI1OThdfQ==
+eyJoaXN0b3J5IjpbLTE3OTUxNzEwOTYsLTMzNjUxNjU0NywtNj
+EzNjY1MjIyLDE4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4
+ODgyLDE1MDI2ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OS
+wtNTUyNTM2ODcwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5
+MTA2MTcsMTA3NjAxNjM0NywtMjAxMzU5Nzk4NywtMTQxODI4NT
+U3NSwtMTY3MDU5NjQ4NSwxODUyMDkwNDYyLDIwMjI1MjYxNTQs
+ODAyNjIyNTk4XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
