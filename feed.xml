@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-29T07:57:49-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-29T08:00:19-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
@@ -209,7 +209,7 @@ YsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
       &lt;p&gt;&lt;a href=&quot;https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">WSL + Cmder + Python</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html" rel="alternate" type="text/html" title="WSL + Cmder + Python" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">WSL + Cmder + python</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html" rel="alternate" type="text/html" title="WSL + Cmder + python" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;아주 친절한 가이드는 아니다. 이 내용을 모두 까먹을 미래의 나를 위한 포스팅이다.&lt;/li&gt;
@@ -528,13 +528,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMTAxMDE4LC0xODc4Njc0ODAxLC0zMz
-Y1MTY1NDcsLTYxMzY2NTIyMiwxODE1NTIzNzU5LC0zMzEwNDYw
-MjAsMTA2OTM5ODg4MiwxNTAyNjg3MzQ0LC05MjU3ODgzOTcsLT
-IwMjg1NDUyOTksLTU1MjUzNjg3MCwtNDY2NzU5OTU4LDgwMjUy
-NjEyOCwyMTE1OTEwNjE3LDEwNzYwMTYzNDcsLTIwMTM1OTc5OD
-csLTE0MTgyODU1NzUsLTE2NzA1OTY0ODUsMTg1MjA5MDQ2Miwy
-MDIyNTI2MTU0XX0=
+eyJoaXN0b3J5IjpbLTc1OTM5OTY4NiwzMjIxMDEwMTgsLTE4Nz
+g2NzQ4MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLDE4MTU1MjM3
+NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2ODczNDQsLT
+kyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2ODcwLC00NjY3
+NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3NjAxNjM0Ny
+wtMjAxMzU5Nzk4NywtMTQxODI4NTU3NSwtMTY3MDU5NjQ4NSwx
+ODUyMDkwNDYyXX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
