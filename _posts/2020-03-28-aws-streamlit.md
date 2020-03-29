@@ -166,11 +166,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 2. github를 통해 코드, 데이터 연동 
 3. aws의 서버가 gihub의 코드를 받아서 스트림라이트 실행 (업그레이드 이슈가 없는 이상 계속 실행해도 상관 없겠다)
 
-이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS많은 디스크 자원을 쓸 필요가 없다. 
+이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDIxOTUwNiwxMzY3OTU1NzM0LC0xNj
+eyJoaXN0b3J5IjpbLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNj
 YwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5
 MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC
 0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2
