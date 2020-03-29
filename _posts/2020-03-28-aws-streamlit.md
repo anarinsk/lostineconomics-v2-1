@@ -151,9 +151,16 @@ tmux attach -t |name-of-stream-session|
 ```
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
+
+## Protips 
+
+- streamlit 서버를 운용할 때 관련한 데이터 혹은 코드를 꼭 서버 내에 둘 필요는 없다. 스트림라이트는 url을 받아서 실행할 수도 있다. 반갑게도 github의 코드 역시 실행이 가능하다. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMz
-M2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3
-OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC
-0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNj
+Q2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3
+MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMi
+w4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkz
+MTI0NzBdfQ==
 -->
