@@ -160,11 +160,17 @@ tmux attach -t |name-of-stream-session|
 streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/app.py
 ```
 
+### Possibly ideal workflow 
+
+- local에서 개발 
+- github를 통해 코드, 데이터 연동 
+- aws의 streamlit 서버가 gihub의 코드를 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODk0Mzk2NywtOTI1NzcxOTg3LC01MT
-Y5ODQ5MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1
-NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOC
-wtMzU2Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2
-MDA5MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTExMjI1ODA3OTksLTkyNTc3MTk4NywtNT
+E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
+NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
+gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
+NjAwOTEyNCw4ODkzMTI0NzBdfQ==
 -->
