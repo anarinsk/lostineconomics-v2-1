@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-29T00:16:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-29T07:52:49-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
@@ -36,7 +36,8 @@
         &lt;ul&gt;
           &lt;li&gt;인바운드&lt;/li&gt;
           &lt;li&gt;아웃바운드&lt;/li&gt;
-          &lt;li&gt;모든 트래픽을 허용해도 된다. 다만, inbound에서 8501번 포트를 꼭 열도록 하자.&lt;/li&gt;
+          &lt;li&gt;모든 트래픽을 허용해도 된다.&lt;/li&gt;
+          &lt;li&gt;스트림라이트의 기본 설정을 고치지 않느다면, inbound에서 8501번 포트를 여는 것은 필수!&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -195,12 +196,12 @@ streamlit run |name-of-your-py-code|
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNj
-YwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5
-MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC
-0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2
-Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MT
-I0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nz
+k1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4
+NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMT
+gyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAx
+NTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyOD
+YsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
