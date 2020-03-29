@@ -107,7 +107,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 - AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자. 
 
 ```shell
-sudo -H |venv-dir|/pip3 install —-user pip 
+sudo -H |venv-dir|/pip3 install --user pip 
 ```
 - 로그아웃 후 다시 로그인 한다.
 - 참고로 `pip`를 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
@@ -152,8 +152,8 @@ tmux attach -t |name-of-stream-session|
 
 - tmux의 기본적인 사용법은 [여기](https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxOD
-IzNjg1NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1
-OTgwOCwtMzU2Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4Ni
-wxOTI2MDA5MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMz
+M2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3
+OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC
+0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 -->
