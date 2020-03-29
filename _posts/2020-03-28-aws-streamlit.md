@@ -154,13 +154,17 @@ tmux attach -t |name-of-stream-session|
 
 ## Protips 
 
-- streamlit 서버를 운용할 때 관련한 데이터 혹은 코드를 꼭 서버 내에 둘 필요는 없다. 스트림라이트는 url을 받아서 실행할 수도 있다. 반갑게도 github의 코드 역시 실행이 가능하다. 
+- streamlit 서버를 운용할 때 관련한 데이터 혹은 코드를 꼭 서버 내에 둘 필요는 없다. 스트림라이트는 url을 받아서 실행할 수도 있다. 반갑게도 github의 코드 역시 실행이 가능하다. [https://github.com/streamlit/demo-uber-nyc-pickups](https://github.com/streamlit/demo-uber-nyc-pickups)의 예를 살펴보자. 
+
+```shell
+streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/app.py
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNj
-Q2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3
-MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMi
-w4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkz
-MTI0NzBdfQ==
+eyJoaXN0b3J5IjpbMTMyODk0Mzk2NywtOTI1NzcxOTg3LC01MT
+Y5ODQ5MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1
+NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOC
+wtMzU2Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2
+MDA5MTI0LDg4OTMxMjQ3MF19
 -->
