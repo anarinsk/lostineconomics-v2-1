@@ -283,7 +283,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   <li>AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |Your-venv-dir|/pip3 <span class="nb">install</span> <span class="nt">-U</span> pip 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |Your-venv-dir|/pip3 <span class="nb">install</span> —user pip 
 </code></pre></div></div>
 <ul>
   <li>로그아웃 후 다시 로그인 한다.</li>
@@ -337,10 +337,10 @@ streamlit run |name-of-your-py-code|
 <ul>
   <li>tmux의 기본적인 사용법은 <a href="https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38">여기</a>를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNj
-QwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4
-NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ
-==
+eyJoaXN0b3J5IjpbLTEzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMT
+A4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4
+OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTkyNjAwOTEyNC
+w4ODkzMTI0NzBdfQ==
 --></li>
 </ul>
 <div class="footnotes">
