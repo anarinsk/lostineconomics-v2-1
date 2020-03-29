@@ -33,7 +33,8 @@ categories: [coding-tool, python, AWS]
 	- 기존에 적용되어 있는 룰을 고치거나 새로 세팅을 해야 한다. 
 		- 인바운드 
 		- 아웃바운드 
-		- 모든 트래픽을 허용해도 된다. 다만, inbound에서 8501번 포트를 꼭 열도록 하자. 
+		- 모든 트래픽을 허용해도 된다. 
+		- 스트림라이트의 기본 설정을 고치지 않느다면, inbound에서 8501번 포트를 여는 것은 필수! 
 
 ## Setup for Ubuntu 18.04
 
@@ -170,10 +171,10 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNj
-YwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5
-MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC
-0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2
-Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MT
-I0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nz
+k1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4
+NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMT
+gyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAx
+NTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyOD
+YsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
 -->
