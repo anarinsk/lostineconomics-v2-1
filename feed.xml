@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T19:17:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-03-28T19:22:48-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
@@ -120,7 +120,7 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
   &lt;li&gt;AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |venv-dir|/pip3 &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; —-user pip 
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |venv-dir|/pip3 &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; pip 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;로그아웃 후 다시 로그인 한다.&lt;/li&gt;
@@ -174,10 +174,10 @@ streamlit run |name-of-your-py-code|
 &lt;ul&gt;
   &lt;li&gt;tmux의 기본적인 사용법은 &lt;a href=&quot;https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38&quot;&gt;여기&lt;/a&gt;를 참고하라. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxOD
-IzNjg1NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1
-OTgwOCwtMzU2Nzg5NDMyLDg3MTk2NDg3OCwtMTMyNTYxMjI4Ni
-wxOTI2MDA5MTI0LDg4OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMz
+M2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3
+OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC
+0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5MzEyNDcwXX0=
 --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
