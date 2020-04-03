@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T17:41:09-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T17:42:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=nHlE7EgJFds&quot;&gt;https://www.youtube.com/watch?v=nHlE7EgJFds&lt;/a&gt;
 &lt;a href=&quot;https://www.youtube.com/watch?v=2IdtqGM6KWU&quot;&gt;https://www.youtube.com/watch?v=2IdtqGM6KWU&lt;/a&gt;&lt;/p&gt;
@@ -362,8 +362,12 @@ streamlit run |name-of-your-py-code|
   &lt;li&gt;home 환경의 security 설정이 어떻게 되어 있는지에 따라서 위와 같은 명령어로 설치가  제대로 진행되지 않을 수도 있다. 그때는&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |location-of-your-venv|/pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |location-of-your-venv|/pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;go-tmux-not-to-kill-service&quot;&gt;Go tmux not to kill service!&lt;/h3&gt;
 
@@ -410,13 +414,13 @@ streamlit run |name-of-your-py-code|
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg0NTg5NTQsNDg3NzgwOTIzLC0xMj
-M0OTc3MTEyLDMyNzM3NjQyOCwtNzQ0MjQyMjAyLDEzNjc5NTU3
-MzQsLTE2NjA1MjI5MzUsNjgyNDkzMTQxLC05MjU3NzE5ODcsLT
-UxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMzM2Mzc2OTI3LDE4MjM2
-ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNTgwMTU5OD
-A4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5
-MjYwMDkxMjRdfQ==
+eyJoaXN0b3J5IjpbMTk0MzU5Mjk0NCw0ODc3ODA5MjMsLTEyMz
+Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
+NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
+E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
+NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
+gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
+NjAwOTEyNF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
