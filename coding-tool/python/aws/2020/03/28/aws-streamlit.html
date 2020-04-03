@@ -284,17 +284,12 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   <li>AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |venv-dir|/bin/pip3 <span class="nb">install</span> <span class="nt">--user</span> pip 
-</code></pre></div></div>
-
-<p>만일 이미 pip가 깔려 있다면,</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |venv-dir|/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |venv-dir|/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip 
 </code></pre></div></div>
 
 <ul>
-  <li>로그아웃 후 다시 로그인 한다.</li>
-  <li>참고로 <code class="highlighter-rouge">pip</code>를 <code class="highlighter-rouge">sudo</code>로 까는 것은 그다지 권장하지 않는다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></li>
+  <li>참고로 <code class="highlighter-rouge">pip</code>를 그냥 <code class="highlighter-rouge">sudo</code>로 까는 것은 그다지 권장하지 않는다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></li>
+  <li>저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 <code class="highlighter-rouge">pip</code>를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다.</li>
 </ul>
 
 <h2 id="installing-streamlit">Installing streamlit</h2>
@@ -365,13 +360,13 @@ streamlit run |name-of-your-py-code|
 <p>이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNz
-M3NjQyOCwtNzQ0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5
-MzUsNjgyNDkzMTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMT
-Y0NjgwMDQwLC0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgw
-NzEzMjEsMTY0MDY3OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0Mz
-IsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5
-MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTAwMzcxMTg3Miw0ODc3ODA5MjMsLTEyMz
+Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
+NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
+E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
+NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
+gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
+NjAwOTEyNF19
 -->
 <div class="footnotes">
   <ol>
