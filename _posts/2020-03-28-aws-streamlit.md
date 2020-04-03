@@ -140,7 +140,7 @@ streamlit run |name-of-your-py-code|
 (|your-venv|) sudo -H |location-of-your-venv|/pip3 install streamlit
 ```
 
-- `pip`를 업
+- `pip`를 업데이트했던 것과 동일한 방식으로 처리한다. 
 
 ### Go tmux not to kill service! 
 
@@ -180,11 +180,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzU5Mjk0NCw0ODc3ODA5MjMsLTEyMz
-Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
-NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
-E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
-NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
-gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
-NjAwOTEyNF19
+eyJoaXN0b3J5IjpbLTE2NDg3OTkxNjAsMTk0MzU5Mjk0NCw0OD
+c3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIy
+MDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLT
+kyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYz
+NzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5OD
+k1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEz
+MjU2MTIyODZdfQ==
 -->
