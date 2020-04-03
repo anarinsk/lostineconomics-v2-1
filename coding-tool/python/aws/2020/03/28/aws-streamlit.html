@@ -284,8 +284,11 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   <li>AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |venv-dir|/pip3 <span class="nb">install</span> <span class="nt">--user</span> pip 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-H</span> |venv-dir|/bin/pip3 <span class="nb">install</span> <span class="nt">--user</span> pip 
 </code></pre></div></div>
+
+<p>만일 이미 깔려 있다면,</p>
+
 <ul>
   <li>로그아웃 후 다시 로그인 한다.</li>
   <li>참고로 <code class="highlighter-rouge">pip</code>를 <code class="highlighter-rouge">sudo</code>로 까는 것은 그다지 권장하지 않는다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></li>
@@ -359,13 +362,13 @@ streamlit run |name-of-your-py-code|
 <p>이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03ND
-QyNDIyMDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMx
-NDEsLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLT
-EzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQw
-Njc5ODk1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4Nz
-gsLTEzMjU2MTIyODYsMTkyNjAwOTEyNCw4ODkzMTI0NzBdfQ==
-
+eyJoaXN0b3J5IjpbLTU5MDY1MTE2NiwtMTIzNDk3NzExMiwzMj
+czNzY0MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNjYwNTIy
+OTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5MTEsLT
+E2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC0xMDg4
+MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2Nzg5ND
+MyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4
+OTMxMjQ3MF19
 -->
 <div class="footnotes">
   <ol>
