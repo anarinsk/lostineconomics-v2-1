@@ -108,17 +108,11 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 - AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자. 
 
 ```shell
-sudo -H |venv-dir|/bin/pip3 install --user pip 
+sudo -H |venv-dir|/bin/pip3 install --upgrade pip 
 ```
 
-만일 이미 pip가 깔려 있다면, 
-
-```shell
-sudo -H |venv-dir|/bin/pip3 install --upgrade pip
-```
-
-- 로그아웃 후 다시 로그인 한다.
-- 참고로 `pip`를 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
+- 참고로 `pip`를 그냥 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
+- 저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 `pip`를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 
 
 [^1]: [여기](https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7)를 참고하라. 
 
@@ -139,6 +133,7 @@ source ~/.pyvenv/|name-of-venv|/bin/activate
 (|your-venv|) pip install streamlit
 streamlit run |name-of-your-py-code|
 ```
+
 
 ### Go tmux not to kill service! 
 
@@ -178,11 +173,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNz
-M3NjQyOCwtNzQ0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5
-MzUsNjgyNDkzMTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMT
-Y0NjgwMDQwLC0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgw
-NzEzMjEsMTY0MDY3OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0Mz
-IsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5
-MzEyNDcwXX0=
+eyJoaXN0b3J5IjpbMTAwMzcxMTg3Miw0ODc3ODA5MjMsLTEyMz
+Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
+NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
+E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
+NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
+gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
+NjAwOTEyNF19
 -->
