@@ -134,6 +134,11 @@ source ~/.pyvenv/|name-of-venv|/bin/activate
 streamlit run |name-of-your-py-code|
 ```
 
+- home 환경의 security 설정이 어떻게 되어 있는지에 따라서 위와 같은 명령어로 설치가  제대로 진행되지 않을 수도 있다. 그때는 
+
+```shell 
+(|your-venv|) sudo -H |location-of-your-venv|/pip install streamlit
+```
 
 ### Go tmux not to kill service! 
 
@@ -173,11 +178,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzcxMTg3Miw0ODc3ODA5MjMsLTEyMz
-Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
-NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
-E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
-NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
-gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
-NjAwOTEyNF19
+eyJoaXN0b3J5IjpbLTE5Mjg0NTg5NTQsNDg3NzgwOTIzLC0xMj
+M0OTc3MTEyLDMyNzM3NjQyOCwtNzQ0MjQyMjAyLDEzNjc5NTU3
+MzQsLTE2NjA1MjI5MzUsNjgyNDkzMTQxLC05MjU3NzE5ODcsLT
+UxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMzM2Mzc2OTI3LDE4MjM2
+ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNTgwMTU5OD
+A4LC0zNTY3ODk0MzIsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5
+MjYwMDkxMjRdfQ==
 -->
