@@ -111,9 +111,11 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 sudo -H |venv-dir|/bin/pip3 install --user pip 
 ```
 
-만일 이미 깔려 있다면, 
+만일 이미 pip가 깔려 있다면, 
 
-
+```shell
+sudo -H |venv-dir|/bin/pip3 install --upgrade pip
+```
 
 - 로그아웃 후 다시 로그인 한다.
 - 참고로 `pip`를 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
@@ -176,11 +178,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDY1MTE2NiwtMTIzNDk3NzExMiwzMj
-czNzY0MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNjYwNTIy
-OTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5MTEsLT
-E2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC0xMDg4
-MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2Nzg5ND
-MyLDg3MTk2NDg3OCwtMTMyNTYxMjI4NiwxOTI2MDA5MTI0LDg4
-OTMxMjQ3MF19
+eyJoaXN0b3J5IjpbNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNz
+M3NjQyOCwtNzQ0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5
+MzUsNjgyNDkzMTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMT
+Y0NjgwMDQwLC0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgw
+NzEzMjEsMTY0MDY3OTg5NSwxNTgwMTU5ODA4LC0zNTY3ODk0Mz
+IsODcxOTY0ODc4LC0xMzI1NjEyMjg2LDE5MjYwMDkxMjQsODg5
+MzEyNDcwXX0=
 -->
