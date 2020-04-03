@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T17:42:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T17:48:19-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=nHlE7EgJFds&quot;&gt;https://www.youtube.com/watch?v=nHlE7EgJFds&lt;/a&gt;
 &lt;a href=&quot;https://www.youtube.com/watch?v=2IdtqGM6KWU&quot;&gt;https://www.youtube.com/watch?v=2IdtqGM6KWU&lt;/a&gt;&lt;/p&gt;
@@ -366,7 +366,7 @@ streamlit run |name-of-your-py-code|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업데이트했던 것과 동일한 방식으로 처리한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;go-tmux-not-to-kill-service&quot;&gt;Go tmux not to kill service!&lt;/h3&gt;
@@ -414,13 +414,13 @@ streamlit run |name-of-your-py-code|
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzU5Mjk0NCw0ODc3ODA5MjMsLTEyMz
-Q5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTcz
-NCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNT
-E2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4
-NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MD
-gsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEzMjU2MTIyODYsMTky
-NjAwOTEyNF19
+eyJoaXN0b3J5IjpbLTE2NDg3OTkxNjAsMTk0MzU5Mjk0NCw0OD
+c3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIy
+MDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLT
+kyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYz
+NzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5OD
+k1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEz
+MjU2MTIyODZdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
