@@ -228,7 +228,9 @@ window.onload = wrap_img;
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">chmod </span>400 |Your-pem-File|
 </code></pre></div></div>
 
-<p>해당 파일이 있는 디렉토리에서 아래 명령어로 AWS로 접속한다.</p>
+<ul>
+  <li>해당 파일이 있는 디렉토리에서 아래 명령어로 AWS로 접속한다.</li>
+</ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-i</span> |Your-pem-File| ubuntu@|Your-AWS-IP|
 </code></pre></div></div>
@@ -249,10 +251,13 @@ window.onload = wrap_img;
 ~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3.7
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">python3.7 --version</code>으로 버전을 확인해보자.</p>
-
 <ul>
-  <li>아래와 같이 깔려 있는 파이썬이 있는지 확인해보자.</li>
+  <li>
+    <p><code class="highlighter-rouge">python3.7 --version</code>으로 버전을 확인해보자.</p>
+  </li>
+  <li>
+    <p>아래와 같이 깔려 있는 파이썬이 있는지 확인해보자.</p>
+  </li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--config</span> python
@@ -375,13 +380,13 @@ streamlit run |name-of-your-py-code|
 <p>이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjIxNTI4LDgxMDQ0ODkyMCwtNDM4Mj
-AyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5NDQsNDg3NzgwOTIz
-LC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNzQ0MjQyMjAyLDEzNj
-c5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkzMTQxLC05MjU3NzE5
-ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMzM2Mzc2OTI3LD
-E4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNTgw
-MTU5ODA4XX0=
+eyJoaXN0b3J5IjpbMTAyMzQyOTM5MCw4MTA0NDg5MjAsLTQzOD
+IwMjg5NCwtMTY0ODc5OTE2MCwxOTQzNTkyOTQ0LDQ4Nzc4MDky
+MywtMTIzNDk3NzExMiwzMjczNzY0MjgsLTc0NDI0MjIwMiwxMz
+Y3OTU1NzM0LC0xNjYwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1Nzcx
+OTg3LC01MTY5ODQ5MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNy
+wxODIzNjg1NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4
+MDE1OTgwOF19
 -->
 <div class="footnotes">
   <ol>
