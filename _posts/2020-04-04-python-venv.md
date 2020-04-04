@@ -13,7 +13,7 @@ categories: [coding-tool, python, venv]
 - `| |`은 각자의 환경을 나타낸다. 
 - `.pyvenv`는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다. 
 
-## 
+## Use venv 
 * venv 디렉토리를 만든다. 
 
 ```shell
@@ -51,6 +51,8 @@ cd ~/.pyvenv
 source ~/.pyvenv/|your-venv|/bin/activate 
 ```
 
+- 핵심은 가상환경 내 `bin` 디렉토리의 activate를 활
+
 * venv가 활성화된 상태에서 pip를 업그레이드하자. 
 
 ```shell
@@ -83,6 +85,6 @@ sudo chown |user|:|user| -R |your-venv|
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Mzk4MzI2Myw1Nzg3ODk4MDksLTg1ND
-E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbLTExMjM2Nzg1OTQsNTc4Nzg5ODA5LC04NT
+QxODQzMDUsLTU4NzQ5Njg3NywyMDY1MTQ2OTA3XX0=
 -->
