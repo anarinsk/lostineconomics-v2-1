@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T00:25:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T01:43:37-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
@@ -440,18 +440,11 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;trouble-shooting&quot;&gt;Trouble shooting&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자.&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;참고로 파이썬이든 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;든 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 깔지 말자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;참고로 가상환경이든 그 안의 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;든 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 깔지 말자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
   &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -534,13 +527,13 @@ streamlit run |name-of-your-py-code|
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwNDQ4OTIwLC00MzgyMDI4OTQsLTE2ND
-g3OTkxNjAsMTk0MzU5Mjk0NCw0ODc3ODA5MjMsLTEyMzQ5Nzcx
-MTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTczNCwtMT
-Y2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNTE2OTg0
-OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4NTQ0NC
-wtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MDgsLTM1
-Njc4OTQzMl19
+eyJoaXN0b3J5IjpbLTgzMjIxNTI4LDgxMDQ0ODkyMCwtNDM4Mj
+AyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5NDQsNDg3NzgwOTIz
+LC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNzQ0MjQyMjAyLDEzNj
+c5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkzMTQxLC05MjU3NzE5
+ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMzM2Mzc2OTI3LD
+E4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNTgw
+MTU5ODA4XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
