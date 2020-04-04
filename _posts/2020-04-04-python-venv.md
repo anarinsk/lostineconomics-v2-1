@@ -13,7 +13,6 @@ categories: [coding-tool, python, venv]
 - `| |`은 각자의 환경을 나타낸다. 
 - `.pyvenv`는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다. 
 
-
 ## Use venv 
 
 * venv 환경으로 쓸 디렉토리를 만든다. 
@@ -67,8 +66,8 @@ categories: [coding-tool, python, venv]
 - venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는 venv 환경 내의 pip다.  
 
 ```shell
-~$ pip install --upgrade pip
-~$ pip --version # 업그레이드 확인 용도 
+~$ (|your-venv|) pip install --upgrade pip
+~$ (|your-venv|) pip --version # 업그레이드 확인 용도 
 ```
 
 * 이후 패키지 설치 등 필요한 작업을 수행한다. 
@@ -97,7 +96,7 @@ categories: [coding-tool, python, venv]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OT
-M1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1
-LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
+eyJoaXN0b3J5IjpbLTE4MzUzNDM2MDQsMTQwMjIzMTQyLDEwMj
+A4ODM3NTAsMTA2OTM1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgw
+OSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
 -->
