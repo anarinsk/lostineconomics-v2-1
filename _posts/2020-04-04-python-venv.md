@@ -84,9 +84,8 @@ sudo chown |user|:|user| -R |your-venv|
 	- 기본적으로 가상환경 내의 pip를 활용해서 업그레이드하는 것이다. 
 	- `pip --version`으로제대로 깔렸는지 확인해보자.   
 
-- 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTIzMTA1MSw1Nzg3ODk4MDksLTg1ND
+eyJoaXN0b3J5IjpbMTE1NzI3MDIzNCw1Nzg3ODk4MDksLTg1ND
 E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 -->
