@@ -10,6 +10,13 @@ categories: [coding-tool, python, venv]
 
 ## Local Ubuntu 
 
+* venv 디렉토리를 만든다. 
+
+```shell
+mkdir /.pyvenv 
+```
+
+* `sudo` 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다. 
 * venv 디렉토리로 이동 
 
 ```shell
@@ -65,5 +72,6 @@ source ~/.pyvenv/|your-venv|/bin/activate
 AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, `sudo`를 기준으로삼아서 명령을 실행해주면 된다. 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NzQ5Njg3NywyMDY1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbLTE0ODY2NTUyOTIsLTU4NzQ5Njg3NywyMD
+Y1MTQ2OTA3XX0=
 -->
