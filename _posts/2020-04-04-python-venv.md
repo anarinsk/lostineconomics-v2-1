@@ -51,9 +51,9 @@ cd ~/.pyvenv
 source ~/.pyvenv/|your-venv|/bin/activate 
 ```
 
-- 핵심은 가상환경 내 `bin` 디렉토리의 activate를 활
+- 핵심은 가상환경 내 `bin` 디렉토리의 activate를 활성화하는 것이다. 
 
-* venv가 활성화된 상태에서 pip를 업그레이드하자. 
+- venv가 활성화된 상태에서 pip를 업그레이드하자. 
 
 ```shell
 pip install --upgrade pip
@@ -64,13 +64,15 @@ pip --version
 
 ### With `sudo`
 
-- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자. 
+- `sudo`로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자. 
 
 ```shell
 sudo chown |user|:|user| -R |your-venv|
 ```
 
 * 이제 `sudo` 없이 깔았을 때처럼 사용하자. 
+
+## `sudo` if you insist
 
 * 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
 
@@ -85,6 +87,6 @@ sudo chown |user|:|user| -R |your-venv|
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM2Nzg1OTQsNTc4Nzg5ODA5LC04NT
-QxODQzMDUsLTU4NzQ5Njg3NywyMDY1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbMTM2OTIzMTA1MSw1Nzg3ODk4MDksLTg1ND
+E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 -->
