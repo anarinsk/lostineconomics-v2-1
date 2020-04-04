@@ -41,6 +41,13 @@ cd ~/.pyvenv
 
 - VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.[^1]
 
+- 혹시 `ls -la`로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자. 
+
+```shell
+sudo chown |user|:|user| -R |your-venv|
+```
+
+위 예라면, 
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
 
@@ -88,7 +95,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTc3MjE1OCwxMTU3MjcwMjM0LDU3OD
+eyJoaXN0b3J5IjpbMTk3MTI0NzQzMywxMTU3MjcwMjM0LDU3OD
 c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
 N119
 -->
