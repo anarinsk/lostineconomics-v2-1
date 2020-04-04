@@ -47,7 +47,12 @@ cd ~/.pyvenv
 sudo chown |user|:|user| -R |your-venv|
 ```
 
-위 예라면, 
+그림의 예라면 아래와 같이 실행하여 소유자를 root에서 user로 바꾸자. 
+
+```shell
+sudo chown anarinsk:anarinsk -R venv-with-sudo 
+``` 
+
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
 
@@ -95,7 +100,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTI0NzQzMywxMTU3MjcwMjM0LDU3OD
-c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
-N119
+eyJoaXN0b3J5IjpbMTE2NzcxNTcsMTE1NzI3MDIzNCw1Nzg3OD
+k4MDksLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDdd
+fQ==
 -->
