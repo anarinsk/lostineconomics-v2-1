@@ -265,7 +265,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 </code></pre></div></div>
 
 <ul>
-  <li>기존 버전이 없을 경우는 아래와 같이 한다.</li>
+  <li>기존 버전이 없을 경우는 아래와 같이 한다. 설치한 파이썬 버전이 3.7이라고 가정하자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3.7 1
@@ -283,7 +283,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   <li>가상 환경을 모아둔 디렉토리로 이동하자. 없다면 하나 만들자.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> ~/.pyvenv
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">mkdir</span> ~/.pyvenv
 </code></pre></div></div>
 
 <ul>
@@ -293,7 +293,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>python <span class="nt">-m</span> venv |your-venv|
 ~<span class="nv">$ </span><span class="nb">source</span> |your-venv|/bin/activate 
 </code></pre></div></div>
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">install</span> <span class="nt">--upgrade</span> pip 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">install</span> <span class="nt">--upgrade</span> pip 
 </code></pre></div></div>
 
 <ul>
@@ -309,7 +309,7 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   <li><code class="highlighter-rouge">.pyenv</code>이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.pyvenv/|name-of-venv|/bin/activate
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.pyvenv/|name-of-venv|/bin/activate
 </code></pre></div></div>
 <ul>
   <li>
@@ -320,12 +320,12 @@ update-alternatives: error: no alternatives <span class="k">for </span>python
   </li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install </span>streamlit
-streamlit run |name-of-your-py-code|
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install </span>streamlit
+~<span class="nv">$ </span>streamlit run |name-of-your-py-code|
 </code></pre></div></div>
 
 <ul>
-  <li>home 환경의 security 설정이 어떻게 되어 있는지에 따라서 위와 같은 명령어로 설치가  제대로 진행되지 않을 수도 있다. 그때는</li>
+  <li>만일 venv 환경 내 폴더의 소유자</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> <span class="nb">sudo</span> <span class="nt">-H</span> |location-of-your-venv|/pip3 <span class="nb">install </span>streamlit
@@ -380,7 +380,7 @@ streamlit run |name-of-your-py-code|
 <p>이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjA0MTEwNiwxMDIzNDI5MzkwLDgxMD
+eyJoaXN0b3J5IjpbLTMwNTA2OTY4NSwxMDIzNDI5MzkwLDgxMD
 Q0ODkyMCwtNDM4MjAyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5
 NDQsNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNz
 Q0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkz
