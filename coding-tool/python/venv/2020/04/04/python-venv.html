@@ -199,7 +199,7 @@ window.onload = wrap_img;
     <p>위 그림을 보자. 만일 <code class="highlighter-rouge">sudo</code> 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 <code class="highlighter-rouge">sudo</code>로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 그러니까 <code class="highlighter-rouge">sudo</code>는 자제하자.  왜?</p>
   </li>
   <li>
-    <p>VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리를 root가 소유하고 있으면  문제가 발생할 수 있다. 소유자가 아닌 VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 디렉토리의 소유권을 root가 아니라 로그인한 이에게 두도록 하자.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+    <p>VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리를 root가 소유하고 있으면  문제가 발생할 수 있다. 소유자가 아닌 VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 디렉토리의 소유권을 root가 아니라 로그인한 이용자에게 두도록 하자.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
   </li>
   <li>
     <p>혹시 <code class="highlighter-rouge">ls -la</code>로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자.</p>
@@ -209,7 +209,7 @@ window.onload = wrap_img;
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
-<p>그림의 예라면 아래와 같이 실행하여 소유자를 root에서 user로 바꾸자.</p>
+<p>그림의 예라면 아래와 같이 실행하여 소유자를 root에서 로그인한 이용자로 바꾸자.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo chown </span>anarinsk:anarinsk <span class="nt">-R</span> venv-with-sudo 
 </code></pre></div></div>
@@ -271,10 +271,10 @@ window.onload = wrap_img;
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQzNzY4NzYsLTE4MzUzNDM2MDQsMT
-QwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OTM1OTY2OSwxMTU3Mjcw
-MjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMj
-A2NTE0NjkwN119
+eyJoaXN0b3J5IjpbNzc2MDQyMTczLC0xODM1MzQzNjA0LDE0MD
+IyMzE0MiwxMDIwODgzNzUwLDEwNjkzNTk2NjksMTE1NzI3MDIz
+NCw1Nzg3ODk4MDksLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
+UxNDY5MDddfQ==
 -->
 <div class="footnotes">
   <ol>
