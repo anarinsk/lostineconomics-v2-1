@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title: Setting python venv 
+title: Setting python venv in Ubuntu 18.04
 description:  파이썬 가상 환경 설정하기
 categories: [coding-tool, python, venv]
 
@@ -100,7 +100,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTM1OTY2OSwxMTU3MjcwMjM0LDU3OD
-c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
-N119
+eyJoaXN0b3J5IjpbMTAyMDg4Mzc1MCwxMDY5MzU5NjY5LDExNT
+cyNzAyMzQsNTc4Nzg5ODA5LC04NTQxODQzMDUsLTU4NzQ5Njg3
+NywyMDY1MTQ2OTA3XX0=
 -->
