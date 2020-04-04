@@ -214,7 +214,7 @@ window.onload = wrap_img;
 
 <ul>
   <li>
-    <p>핵심은 가상환경 내 <code class="highlighter-rouge">bin</code> 디렉토리의 activate를 활</p>
+    <p>핵심은 가상환경 내 <code class="highlighter-rouge">bin</code> 디렉토리의 activate를 활성화하는 것이다.</p>
   </li>
   <li>
     <p>venv가 활성화된 상태에서 pip를 업그레이드하자.</p>
@@ -232,19 +232,20 @@ pip <span class="nt">--version</span>
 <h3 id="with-sudo">With <code class="highlighter-rouge">sudo</code></h3>
 
 <ul>
-  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.</li>
+  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
 <ul>
-  <li>
-    <p>이제 <code class="highlighter-rouge">sudo</code> 없이 깔았을 때처럼 사용하자.</p>
-  </li>
-  <li>
-    <p>만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</p>
-  </li>
+  <li>이제 <code class="highlighter-rouge">sudo</code> 없이 깔았을 때처럼 사용하자.</li>
+</ul>
+
+<h2 id="sudo-if-you-insist"><code class="highlighter-rouge">sudo</code> if you insist</h2>
+
+<ul>
+  <li>만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.pyvenv/yellow/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
@@ -261,8 +262,8 @@ pip <span class="nt">--version</span>
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM2Nzg1OTQsNTc4Nzg5ODA5LC04NT
-QxODQzMDUsLTU4NzQ5Njg3NywyMDY1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbMTM2OTIzMTA1MSw1Nzg3ODk4MDksLTg1ND
+E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 -->
 <div class="footnotes">
   <ol>
