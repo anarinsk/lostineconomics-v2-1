@@ -54,9 +54,11 @@ pip install --upgrade pip
 pip --version
 ```
 
-* 나머지는 프로세스 그대로 수행한다. 
+* 나머지는 작업을 수행한다. 
 
+### With `sudo`
 
+- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 예를 원래대로 돌려놓도록 하자. 
 
 ```shell
 sudo chown |user|:|user| -R |your-venv|
@@ -86,6 +88,6 @@ sudo chown |user|:|user| -R |your-venv|
 AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, `sudo`를 기준으로삼아서 명령을 실행해주면 된다. 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzU5MjM2OSwtNTg3NDk2ODc3LDIwNj
-UxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbLTE0MzE0OTUwOTcsLTU4NzQ5Njg3NywyMD
+Y1MTQ2OTA3XX0=
 -->
