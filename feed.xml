@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T02:14:29-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T02:15:09-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
@@ -51,7 +51,7 @@
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;anarinsk:anarinsk &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; venv-with-sudo 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;without-sudo&quot;&gt;Without &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;without-sudo&quot;&gt;Without sudo&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;모든 절차가 이제 표준적이다.&lt;/li&gt;
@@ -78,7 +78,7 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
   &lt;li&gt;나머지는 작업을 수행한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;with-sudo&quot;&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;with-sudo&quot;&gt;With sudo&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.&lt;/li&gt;
@@ -91,7 +91,7 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
   &lt;li&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 깔았을 때처럼 사용하자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;sudo-if-you-insist&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; if you insist&lt;/h2&gt;
+&lt;h2 id=&quot;sudo-if-you-insist&quot;&gt;sudo if you insist&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.&lt;/li&gt;
@@ -110,9 +110,9 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzcxNTcsMTE1NzI3MDIzNCw1Nzg3OD
-k4MDksLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDdd
-fQ==
+eyJoaXN0b3J5IjpbMTA2OTM1OTY2OSwxMTU3MjcwMjM0LDU3OD
+c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
+N119
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
