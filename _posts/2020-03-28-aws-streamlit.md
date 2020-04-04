@@ -98,7 +98,15 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 
 ```shell
 ~$ sudo apt install python3.7-venv
-#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)
+```
+* 가상 환경을 모아둔 디렉토리로 이동하자. 없다면 하나 만들자. 
+
+```shell
+mkdir ~/.pyvenv
+```
+
+* `ls -la` 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안ㅇ
+
 ~$ sudo python -m venv |your-venv|
 ~$ source |your-venv|/bin/activate 
 ```
@@ -180,11 +188,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODIwMjg5NCwtMTY0ODc5OTE2MCwxOT
-QzNTkyOTQ0LDQ4Nzc4MDkyMywtMTIzNDk3NzExMiwzMjczNzY0
-MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNjYwNTIyOTM1LD
-Y4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5MTEsLTE2NDY4
-MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC0xMDg4MDcxMz
-IxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3
-MTk2NDg3OF19
+eyJoaXN0b3J5IjpbNDM0NzMxNzEsLTQzODIwMjg5NCwtMTY0OD
+c5OTE2MCwxOTQzNTkyOTQ0LDQ4Nzc4MDkyMywtMTIzNDk3NzEx
+MiwzMjczNzY0MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNj
+YwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5
+MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC
+0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2
+Nzg5NDMyXX0=
 -->
