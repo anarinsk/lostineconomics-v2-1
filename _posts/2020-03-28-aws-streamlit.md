@@ -138,7 +138,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 ~$ streamlit run |name-of-your-py-code|
 ```
 
-- 만일 venv 환경 내 폴더의 소유자
+- 만일 venv 환경 내 폴더의 소유자를 root로 꼭 두어야 곘다면, 아래와 같은 방식으로 설치할 수 있다. (권장하지 않는다) 
 
 ```shell 
 (|your-venv|) sudo -H |location-of-your-venv|/pip3 install streamlit
@@ -184,11 +184,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTA2OTY4NSwxMDIzNDI5MzkwLDgxMD
-Q0ODkyMCwtNDM4MjAyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5
-NDQsNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNz
-Q0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkz
-MTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC
-0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0
-MDY3OTg5NV19
+eyJoaXN0b3J5IjpbNzYyOTYzOTYxLDEwMjM0MjkzOTAsODEwND
+Q4OTIwLC00MzgyMDI4OTQsLTE2NDg3OTkxNjAsMTk0MzU5Mjk0
+NCw0ODc3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03ND
+QyNDIyMDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMx
+NDEsLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLT
+EzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQw
+Njc5ODk1XX0=
 -->
