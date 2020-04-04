@@ -38,7 +38,7 @@ cd ~/.pyvenv
 
 ### Without `sudo` 
 
-
+* 모든 절차가 이제 표준적이다. 
 * 해당 venv를 활성화한다. 
 
 ```shell
@@ -56,7 +56,7 @@ pip --version
 
 ### With `sudo`
 
-- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자. 
+- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자. 
 
 ```shell
 sudo chown |user|:|user| -R |your-venv|
@@ -64,7 +64,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 * 이제 `sudo` 없이 깔았을 때처럼 사용하자. 
 
-* 여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
+* 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
 
 ```shell
 ~/.pyvenv/yellow/bin/pip3 install --upgrade pip
@@ -77,6 +77,6 @@ sudo chown |user|:|user| -R |your-venv|
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzA0NDE0LC04NTQxODQzMDUsLTU4Nz
+eyJoaXN0b3J5IjpbNTc4Nzg5ODA5LC04NTQxODQzMDUsLTU4Nz
 Q5Njg3NywyMDY1MTQ2OTA3XX0=
 -->
