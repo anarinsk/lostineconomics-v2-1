@@ -58,20 +58,15 @@ pip --version
 
 ### With `sudo`
 
-- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 예를 원래대로 돌려놓도록 하자. 
+- `sudo`로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자. 
 
 ```shell
 sudo chown |user|:|user| -R |your-venv|
 ```
 
+* 이제 `sudo` 없이 깔았을 때처럼 사용하자. 
 
-* 앞에서 해당 가상 환경 폴더의 소유권을 바꾸었다면 그냥 일반적인 방법으로 `pip`를 업그레이드하면 된다. 
-
-```shell
-(|your-venv|) pip install --upgrade pip 
-```
-
-* 소유권을 변경하지 않았다면 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
+* 여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
 
 ```shell
 ~/.pyvenv/yellow/bin/pip3 install --upgrade pip
@@ -83,11 +78,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
-## Server-side 
-
-AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, `sudo`를 기준으로삼아서 명령을 실행해주면 된다. 
- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE0OTUwOTcsLTU4NzQ5Njg3NywyMD
-Y1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
+UxNDY5MDddfQ==
 -->
