@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T21:17:40-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T21:19:16-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;ul&gt;
   &lt;li&gt;venv 디렉토리를 만든다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -34,6 +34,7 @@
 &lt;h3 id=&quot;without-sudo&quot;&gt;Without &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;모든 절차가 이제 표준적이다.&lt;/li&gt;
   &lt;li&gt;해당 venv를 활성화한다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -55,7 +56,7 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;h3 id=&quot;with-sudo&quot;&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo chown&lt;/span&gt; |user|:|user| &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; |your-venv|
@@ -66,7 +67,7 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
     &lt;p&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 깔았을 때처럼 사용하자.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.&lt;/p&gt;
+    &lt;p&gt;만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -84,7 +85,7 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzA0NDE0LC04NTQxODQzMDUsLTU4Nz
+eyJoaXN0b3J5IjpbNTc4Nzg5ODA5LC04NTQxODQzMDUsLTU4Nz
 Q5Njg3NywyMDY1MTQ2OTA3XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;

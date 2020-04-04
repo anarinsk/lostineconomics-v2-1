@@ -197,6 +197,7 @@ window.onload = wrap_img;
 <h3 id="without-sudo">Without <code class="highlighter-rouge">sudo</code></h3>
 
 <ul>
+  <li>모든 절차가 이제 표준적이다.</li>
   <li>해당 venv를 활성화한다.</li>
 </ul>
 
@@ -218,7 +219,7 @@ pip <span class="nt">--version</span>
 <h3 id="with-sudo">With <code class="highlighter-rouge">sudo</code></h3>
 
 <ul>
-  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자.</li>
+  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
@@ -229,7 +230,7 @@ pip <span class="nt">--version</span>
     <p>이제 <code class="highlighter-rouge">sudo</code> 없이 깔았을 때처럼 사용하자.</p>
   </li>
   <li>
-    <p>여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</p>
+    <p>만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</p>
   </li>
 </ul>
 
@@ -247,7 +248,7 @@ pip <span class="nt">--version</span>
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzA0NDE0LC04NTQxODQzMDUsLTU4Nz
+eyJoaXN0b3J5IjpbNTc4Nzg5ODA5LC04NTQxODQzMDUsLTU4Nz
 Q5Njg3NywyMDY1MTQ2OTA3XX0=
 -->
 <div class="footnotes">
