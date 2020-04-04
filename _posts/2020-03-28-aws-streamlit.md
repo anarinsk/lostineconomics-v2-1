@@ -84,7 +84,7 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 update-alternatives: error: no alternatives for python
 ```
 
-- 기존 버전이 없을 경우는 아래와 같이 한다. 
+- 기존 버전이 없을 경우는 아래와 같이 한다. 설치한 파이썬 버전이 3.7이라고 가정하자. 
 
 ```shell
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
@@ -102,7 +102,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 * 가상 환경을 모아둔 디렉토리로 이동하자. 없다면 하나 만들자. 
 
 ```shell
-mkdir ~/.pyvenv
+~$ mkdir ~/.pyvenv
 ```
 
 * `ls -la` 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안에서 다음 작업을 수행하자. 
@@ -112,7 +112,7 @@ mkdir ~/.pyvenv
 ~$ source |your-venv|/bin/activate 
 ```
 ```shell
-install --upgrade pip 
+~$ install --upgrade pip 
 ```
 
 - 참고로 가상환경이든 그 안의 `pip`든 `sudo`로 깔지 말자.[^1]    
@@ -127,18 +127,18 @@ install --upgrade pip
 - `.pyenv`이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다. 
 
 ```shell 
-source ~/.pyvenv/|name-of-venv|/bin/activate
+~$ source ~/.pyvenv/|name-of-venv|/bin/activate
 ```
 - 해당 디렉토리에 진입해 `source activate`를 실행해도 된다. 가상 환경 해제는 그냥 `deactivate` 명령을 쓰면 된다. 
 
 - 이 상태에서 streamlit를 깔고 서비스를 띄우도록 하자. 
 
 ```shell 
-(|your-venv|) pip install streamlit
-streamlit run |name-of-your-py-code|
+~$ (|your-venv|) pip install streamlit
+~$ streamlit run |name-of-your-py-code|
 ```
 
-- home 환경의 security 설정이 어떻게 되어 있는지에 따라서 위와 같은 명령어로 설치가  제대로 진행되지 않을 수도 있다. 그때는 
+- 만일 venv 환경 내 폴더의 소유자
 
 ```shell 
 (|your-venv|) sudo -H |location-of-your-venv|/pip3 install streamlit
@@ -184,7 +184,7 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjA0MTEwNiwxMDIzNDI5MzkwLDgxMD
+eyJoaXN0b3J5IjpbLTMwNTA2OTY4NSwxMDIzNDI5MzkwLDgxMD
 Q0ODkyMCwtNDM4MjAyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5
 NDQsNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNz
 Q0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkz
