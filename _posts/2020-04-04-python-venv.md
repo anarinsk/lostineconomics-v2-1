@@ -35,19 +35,33 @@ cd ~/.pyvenv
 
 - VS Code같은 외부 앱과 연동해서 사용하려면 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.[^1]
 
-### Without `sudo` 
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
 
-```shell
-sudo chown |user|:|user| -R |your-venv|
-```
+### Without `sudo` 
+
 
 * 해당 venv를 활성화한다. 
 
 ```shell
 source ~/.pyvenv/|your-venv|/bin/activate 
 ```
+
+* venv가 활성화된 상태에서 pip를 업그레이드하자. 
+
+```shell
+pip install --upgrade pip
+pip --version
+```
+
+* 나머지는 프로세스 그대로 수행한다. 
+
+
+
+```shell
+sudo chown |user|:|user| -R |your-venv|
+```
+
 
 * 앞에서 해당 가상 환경 폴더의 소유권을 바꾸었다면 그냥 일반적인 방법으로 `pip`를 업그레이드하면 된다. 
 
@@ -72,6 +86,6 @@ source ~/.pyvenv/|your-venv|/bin/activate
 AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, `sudo`를 기준으로삼아서 명령을 실행해주면 된다. 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MzQ2MDc5NywtNTg3NDk2ODc3LDIwNj
+eyJoaXN0b3J5IjpbMTkzMzU5MjM2OSwtNTg3NDk2ODc3LDIwNj
 UxNDY5MDddfQ==
 -->
