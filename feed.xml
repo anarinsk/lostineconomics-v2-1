@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T19:32:52-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;local-ubuntu&quot;&gt;Local Ubuntu&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T19:37:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;local-ubuntu&quot;&gt;Local Ubuntu&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;venv 디렉토리로 이동&lt;/li&gt;
@@ -398,8 +398,8 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;참고로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 그냥 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 까는 것은 그다지 권장하지 않는다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다.&lt;/li&gt;
+  &lt;li&gt;참고로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 까는 것은 권장하지 않는다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installing-streamlit&quot;&gt;Installing streamlit&lt;/h2&gt;
@@ -481,13 +481,13 @@ streamlit run |name-of-your-py-code|
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg3OTkxNjAsMTk0MzU5Mjk0NCw0OD
-c3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIy
-MDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLT
-kyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYz
-NzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5OD
-k1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEz
-MjU2MTIyODZdfQ==
+eyJoaXN0b3J5IjpbLTQzODIwMjg5NCwtMTY0ODc5OTE2MCwxOT
+QzNTkyOTQ0LDQ4Nzc4MDkyMywtMTIzNDk3NzExMiwzMjczNzY0
+MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNjYwNTIyOTM1LD
+Y4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5MTEsLTE2NDY4
+MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC0xMDg4MDcxMz
+IxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3
+MTk2NDg3OF19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
