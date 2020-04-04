@@ -105,9 +105,10 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 mkdir ~/.pyvenv
 ```
 
-* `ls -la` 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안ㅇ
+* `ls -la` 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안에서 다음 작업을 수행하자. 
 
-~$ sudo python -m venv |your-venv|
+```shell
+~$ python -m venv |your-venv|
 ~$ source |your-venv|/bin/activate 
 ```
 
@@ -116,10 +117,10 @@ mkdir ~/.pyvenv
 - AWS EC2 + Ubuntu 18.04 + venv 환경에서 pip가 권한 문제로 업그레이드가 쉽지 않을 수 있다. 원래 python과 함께 깔리는 버전(3.7.7의 경우는 pip 19.02)에서 업그레이드하려면 아래와 같이 실행해주자. 
 
 ```shell
-sudo -H |venv-dir|/bin/pip3 install --upgrade pip 
+install --upgrade pip 
 ```
 
-- 참고로 `pip`를 `sudo`로 까는 것은 권장하지 않는다.[^1]   
+- 참고로 파이썬이든 `pip`든 `sudo`로 깔지 말자.[^1]    
 - 저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 `pip`를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 [여기](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)를 참고하라.  
 
 [^1]: [여기](https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7)를 참고하라. 
@@ -188,11 +189,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NzMxNzEsLTQzODIwMjg5NCwtMTY0OD
-c5OTE2MCwxOTQzNTkyOTQ0LDQ4Nzc4MDkyMywtMTIzNDk3NzEx
-MiwzMjczNzY0MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNj
-YwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5
-MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC
-0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2
-Nzg5NDMyXX0=
+eyJoaXN0b3J5IjpbODEwNDQ4OTIwLC00MzgyMDI4OTQsLTE2ND
+g3OTkxNjAsMTk0MzU5Mjk0NCw0ODc3ODA5MjMsLTEyMzQ5Nzcx
+MTIsMzI3Mzc2NDI4LC03NDQyNDIyMDIsMTM2Nzk1NTczNCwtMT
+Y2MDUyMjkzNSw2ODI0OTMxNDEsLTkyNTc3MTk4NywtNTE2OTg0
+OTExLC0xNjQ2ODAwNDAsLTEzMzYzNzY5MjcsMTgyMzY4NTQ0NC
+wtMTA4ODA3MTMyMSwxNjQwNjc5ODk1LDE1ODAxNTk4MDgsLTM1
+Njc4OTQzMl19
 -->
