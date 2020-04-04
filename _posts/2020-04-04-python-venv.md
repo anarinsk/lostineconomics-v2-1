@@ -38,7 +38,7 @@ categories: [coding-tool, python, venv]
 
 - 위 그림을 보자. 만일 `sudo` 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 `sudo`로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 그러니까 `sudo`는 자제하자.  왜?
 
-- VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 발생할 수 있다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 두자.[^1]
+- VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리를 root가 소유하고 있으면  문제가 발생할 수 있다. 소유자가 아닌 VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 디렉토리의 소유권을 root가 아니라 로그인한 이에게 두도록 하자.[^1]
 
 - 혹시 `ls -la`로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자. 
 
@@ -96,7 +96,8 @@ categories: [coding-tool, python, venv]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUzNDM2MDQsMTQwMjIzMTQyLDEwMj
-A4ODM3NTAsMTA2OTM1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgw
-OSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
+eyJoaXN0b3J5IjpbLTEwMTQzNzY4NzYsLTE4MzUzNDM2MDQsMT
+QwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OTM1OTY2OSwxMTU3Mjcw
+MjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMj
+A2NTE0NjkwN119
 -->
