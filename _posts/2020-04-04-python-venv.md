@@ -58,16 +58,14 @@ sudo chown anarinsk:anarinsk -R venv-with-sudo
 
 ### Without sudo
 
-* 모든 절차가 이제 표준적이다. 
-* 해당 venv를 활성화한다. 
+- 이제부터는 표준을 따르면 된다.
+
+-  먼저 필요한  venv 환경를 활성화한다. venv 환경 내 `bin` 디렉토리의 activate를 활성화한다. 
 
 ```shell
 source ~/.pyvenv/|your-venv|/bin/activate 
 ```
-
-- 핵심은 가상환경 내 `bin` 디렉토리의 activate를 활성화하는 것이다. 
-
-- venv가 활성화된 상태에서 pip를 업그레이드하자. 
+- venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는  
 
 ```shell
 pip install --upgrade pip
@@ -100,7 +98,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5ODU4MzA5NCwxMDIwODgzNzUwLDEwNj
+eyJoaXN0b3J5IjpbMTAyMDk0OTExMCwxMDIwODgzNzUwLDEwNj
 kzNTk2NjksMTE1NzI3MDIzNCw1Nzg3ODk4MDksLTg1NDE4NDMw
 NSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 -->
