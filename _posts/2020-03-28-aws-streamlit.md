@@ -80,7 +80,7 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 - 아래와 같이 깔려 있는 파이썬이 있는지 확인해보자. 
 
 ```shell
-$ sudo update-alternatives --config python
+~$ sudo update-alternatives --config python
 update-alternatives: error: no alternatives for python
 ```
 
@@ -184,11 +184,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzQyOTM5MCw4MTA0NDg5MjAsLTQzOD
-IwMjg5NCwtMTY0ODc5OTE2MCwxOTQzNTkyOTQ0LDQ4Nzc4MDky
-MywtMTIzNDk3NzExMiwzMjczNzY0MjgsLTc0NDI0MjIwMiwxMz
-Y3OTU1NzM0LC0xNjYwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1Nzcx
-OTg3LC01MTY5ODQ5MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNy
-wxODIzNjg1NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4
-MDE1OTgwOF19
+eyJoaXN0b3J5IjpbMTE2MjA0MTEwNiwxMDIzNDI5MzkwLDgxMD
+Q0ODkyMCwtNDM4MjAyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5
+NDQsNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNz
+Q0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkz
+MTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC
+0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0
+MDY3OTg5NV19
 -->
