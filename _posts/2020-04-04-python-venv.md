@@ -10,8 +10,10 @@ categories: [coding-tool, python, venv]
 
 ## Assumptions 
 
-- `
+- `| |`은 각자의 환경을 나타낸다. 
+- `.pyvenv`는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다. 
 
+## 
 * venv 디렉토리를 만든다. 
 
 ```shell
@@ -81,6 +83,6 @@ sudo chown |user|:|user| -R |your-venv|
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTAwNjM5MSw1Nzg3ODk4MDksLTg1ND
+eyJoaXN0b3J5IjpbLTg2Mzk4MzI2Myw1Nzg3ODk4MDksLTg1ND
 E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 -->
