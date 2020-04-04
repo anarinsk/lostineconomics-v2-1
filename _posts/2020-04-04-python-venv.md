@@ -56,7 +56,7 @@ sudo chown anarinsk:anarinsk -R venv-with-sudo
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
 
-### Without `sudo` 
+### Without sudo
 
 * 모든 절차가 이제 표준적이다. 
 * 해당 venv를 활성화한다. 
@@ -76,7 +76,7 @@ pip --version
 
 * 나머지는 작업을 수행한다. 
 
-### With `sudo`
+### With sudo
 
 - `sudo`로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자. 
 
@@ -86,7 +86,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 * 이제 `sudo` 없이 깔았을 때처럼 사용하자. 
 
-## `sudo` if you insist
+## sudo if you insist
 
 * 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
 
@@ -100,7 +100,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzcxNTcsMTE1NzI3MDIzNCw1Nzg3OD
-k4MDksLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDdd
-fQ==
+eyJoaXN0b3J5IjpbMTA2OTM1OTY2OSwxMTU3MjcwMjM0LDU3OD
+c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
+N119
 -->
