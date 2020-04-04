@@ -111,8 +111,8 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 sudo -H |venv-dir|/bin/pip3 install --upgrade pip 
 ```
 
-- 참고로 `pip`를 그냥 `sudo`로 까는 것은 그다지 권장하지 않는다.[^1]   
-- 저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 `pip`를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 
+- 참고로 `pip`를 `sudo`로 까는 것은 권장하지 않는다.[^1]   
+- 저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 `pip`를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 [여기](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)를 참고하라.  
 
 [^1]: [여기](https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7)를 참고하라. 
 
@@ -180,11 +180,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg3OTkxNjAsMTk0MzU5Mjk0NCw0OD
-c3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03NDQyNDIy
-MDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMxNDEsLT
-kyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLTEzMzYz
-NzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQwNjc5OD
-k1LDE1ODAxNTk4MDgsLTM1Njc4OTQzMiw4NzE5NjQ4NzgsLTEz
-MjU2MTIyODZdfQ==
+eyJoaXN0b3J5IjpbLTQzODIwMjg5NCwtMTY0ODc5OTE2MCwxOT
+QzNTkyOTQ0LDQ4Nzc4MDkyMywtMTIzNDk3NzExMiwzMjczNzY0
+MjgsLTc0NDI0MjIwMiwxMzY3OTU1NzM0LC0xNjYwNTIyOTM1LD
+Y4MjQ5MzE0MSwtOTI1NzcxOTg3LC01MTY5ODQ5MTEsLTE2NDY4
+MDA0MCwtMTMzNjM3NjkyNywxODIzNjg1NDQ0LC0xMDg4MDcxMz
+IxLDE2NDA2Nzk4OTUsMTU4MDE1OTgwOCwtMzU2Nzg5NDMyLDg3
+MTk2NDg3OF19
 -->
