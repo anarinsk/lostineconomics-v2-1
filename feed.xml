@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T07:45:56-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T07:46:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
@@ -488,7 +488,7 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;만일 venv 환경 내 폴더의 소유자&lt;/li&gt;
+  &lt;li&gt;만일 venv 환경 내 폴더의 소유자를 root로 꼭 두어야 곘다면, 아래와 같은 방식으로 설치할 수 있다. (권장하지 않는다)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |location-of-your-venv|/pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit
@@ -543,13 +543,13 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTA2OTY4NSwxMDIzNDI5MzkwLDgxMD
-Q0ODkyMCwtNDM4MjAyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5
-NDQsNDg3NzgwOTIzLC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNz
-Q0MjQyMjAyLDEzNjc5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkz
-MTQxLC05MjU3NzE5ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC
-0xMzM2Mzc2OTI3LDE4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0
-MDY3OTg5NV19
+eyJoaXN0b3J5IjpbNzYyOTYzOTYxLDEwMjM0MjkzOTAsODEwND
+Q4OTIwLC00MzgyMDI4OTQsLTE2NDg3OTkxNjAsMTk0MzU5Mjk0
+NCw0ODc3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03ND
+QyNDIyMDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMx
+NDEsLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLT
+EzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQw
+Njc5ODk1XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
