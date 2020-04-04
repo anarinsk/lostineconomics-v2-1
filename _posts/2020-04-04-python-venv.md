@@ -19,20 +19,20 @@ categories: [coding-tool, python, venv]
 * venv 환경으로 쓸 디렉토리를 만든다. 
 
 ```shell
-mkdir /.pyvenv 
+~$ mkdir /.pyvenv 
 ```
 
 * 디렉토리 만들 때 `sudo` 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다. 
 * 해당 디렉토리로 이동한다. 
 
 ```shell
-cd ~/.pyvenv 
+~$ cd ~/.pyvenv 
 ```
 
 * 여기서 venv 환경을 만든다. 
 
 ```shell
-[sudo] python -m venv |your-venv|
+~$ [sudo] python -m venv |your-venv|
 ```
 
 ![]({{ site.baseurl }}/images/python-venv/fig_1.png){: style="textalign:center; " width="800"}
@@ -44,15 +44,14 @@ cd ~/.pyvenv
 - 혹시 `ls -la`로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자. 
 
 ```shell
-sudo chown |user|:|user| -R |your-venv|
+~$ sudo chown |user|:|user| -R |your-venv|
 ```
 
 그림의 예라면 아래와 같이 실행하여 소유자를 root에서 user로 바꾸자. 
 
 ```shell
-sudo chown anarinsk:anarinsk -R venv-with-sudo 
+~$ sudo chown anarinsk:anarinsk -R venv-with-sudo 
 ``` 
-
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
 
@@ -63,13 +62,13 @@ sudo chown anarinsk:anarinsk -R venv-with-sudo
 -  먼저 필요한  venv 환경를 활성화한다. venv 환경 내 `bin` 디렉토리의 activate를 활성화한다. 
 
 ```shell
-source ~/.pyvenv/|your-venv|/bin/activate 
+~$ source ~/.pyvenv/|your-venv|/bin/activate 
 ```
 - venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는 venv 환경 내의 pip다.  
 
 ```shell
-pip install --upgrade pip
-pip --version # 업그레이드 확인 용도 
+~$ pip install --upgrade pip
+~$ pip --version # 업그레이드 확인 용도 
 ```
 
 * 이후 패키지 설치 등 필요한 작업을 수행한다. 
@@ -79,17 +78,17 @@ pip --version # 업그레이드 확인 용도
 - `sudo`로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자. 
 
 ```shell
-sudo chown |user|:|user| -R |your-venv|
+~$ sudo chown |user|:|user| -R |your-venv|
 ```
 
 * 이제 `sudo` 없이 깔았을 때처럼 사용하자. 
 
 ## sudo if you insist
 
-* 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.
+* 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 특정해서 업그레이드해야 한다.
 
 ```shell
-~/.pyvenv/yellow/bin/pip3 install --upgrade pip
+~$ ~/.pyvenv/yellow/bin/pip3 install --upgrade pip
 ```
 
 - sudo로  절대 pip 업그레이드하지 말 것!
@@ -98,7 +97,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4MDY0MTk0LDEwMjA4ODM3NTAsMTA2OT
+eyJoaXN0b3J5IjpbMTQwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OT
 M1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1
 LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
 -->
