@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T20:46:30-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;local-ubuntu&quot;&gt;Local Ubuntu&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-03T20:48:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;local-ubuntu&quot;&gt;Local Ubuntu&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;venv 디렉토리를 만든다.&lt;/li&gt;
@@ -57,21 +57,19 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;h3 id=&quot;with-sudo&quot;&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 root에 귀결된다. 예를 원래대로 돌려놓도록 하자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo chown&lt;/span&gt; |user|:|user| &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; |your-venv|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;앞에서 해당 가상 환경 폴더의 소유권을 바꾸었다면 그냥 일반적인 방법으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업그레이드하면 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;소유권을 변경하지 않았다면 가상 환경에서 작동하는 pip를 업그레이드해야 한다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 깔았을 때처럼 사용하자.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/.pyvenv/yellow/bin/pip3 &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
@@ -87,13 +85,9 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
   &lt;li&gt;여기까지 잘 되었으면 기본적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 쓰는 데 제한이 없다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;server-side&quot;&gt;Server-side&lt;/h2&gt;
-
-&lt;p&gt;AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;를 기준으로삼아서 명령을 실행해주면 된다.&lt;/p&gt;
-
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE0OTUwOTcsLTU4NzQ5Njg3NywyMD
-Y1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
+UxNDY5MDddfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

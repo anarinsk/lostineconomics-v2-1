@@ -220,21 +220,19 @@ pip <span class="nt">--version</span>
 <h3 id="with-sudo">With <code class="highlighter-rouge">sudo</code></h3>
 
 <ul>
-  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 root에 귀결된다. 예를 원래대로 돌려놓도록 하자.</li>
+  <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 root에 귀결된다. 예를 다시 user 돌려놓도록 하자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
 <ul>
-  <li>앞에서 해당 가상 환경 폴더의 소유권을 바꾸었다면 그냥 일반적인 방법으로 <code class="highlighter-rouge">pip</code>를 업그레이드하면 된다.</li>
-</ul>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip 
-</code></pre></div></div>
-
-<ul>
-  <li>소유권을 변경하지 않았다면 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</li>
+  <li>
+    <p>이제 <code class="highlighter-rouge">sudo</code> 없이 깔았을 때처럼 사용하자.</p>
+  </li>
+  <li>
+    <p>여러가지 이유 때문에 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</p>
+  </li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.pyvenv/yellow/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
@@ -250,13 +248,9 @@ pip <span class="nt">--version</span>
   <li>여기까지 잘 되었으면 기본적으로 <code class="highlighter-rouge">pip</code>를 쓰는 데 제한이 없다.</li>
 </ul>
 
-<h2 id="server-side">Server-side</h2>
-
-<p>AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, <code class="highlighter-rouge">sudo</code>를 기준으로삼아서 명령을 실행해주면 된다.</p>
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE0OTUwOTcsLTU4NzQ5Njg3NywyMD
-Y1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
+UxNDY5MDddfQ==
 -->
 <div class="footnotes">
   <ol>
