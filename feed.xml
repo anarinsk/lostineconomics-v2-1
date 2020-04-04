@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T03:22:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-04T07:37:53-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
@@ -8,7 +8,7 @@
 &lt;h2 id=&quot;use-venv&quot;&gt;Use venv&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;venv 디렉토리를 만든다.&lt;/li&gt;
+  &lt;li&gt;venv 환경으로 쓸 디렉토리를 만든다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /.pyvenv 
@@ -16,14 +16,14 @@
 
 &lt;ul&gt;
   &lt;li&gt;디렉토리 만들 때 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다.&lt;/li&gt;
-  &lt;li&gt;venv 디렉토리로 이동한다.&lt;/li&gt;
+  &lt;li&gt;해당 디렉토리로 이동한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/.pyvenv 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;해당 디렉토리에서 환경을 만든다.&lt;/li&gt;
+  &lt;li&gt;여기서 venv 환경을 만든다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
@@ -33,10 +33,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;위 그림을 보자. 만일 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 자제하자.  왜?&lt;/p&gt;
+    &lt;p&gt;위 그림을 보자. 만일 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 그러니까 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 자제하자.  왜?&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+    &lt;p&gt;VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 발생할 수 있다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 두자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;혹시 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -la&lt;/code&gt;로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자.&lt;/p&gt;
@@ -110,9 +110,9 @@ pip &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDg4Mzc1MCwxMDY5MzU5NjY5LDExNT
-cyNzAyMzQsNTc4Nzg5ODA5LC04NTQxODQzMDUsLTU4NzQ5Njg3
-NywyMDY1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbLTg5ODU4MzA5NCwxMDIwODgzNzUwLDEwNj
+kzNTk2NjksMTE1NzI3MDIzNCw1Nzg3ODk4MDksLTg1NDE4NDMw
+NSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
