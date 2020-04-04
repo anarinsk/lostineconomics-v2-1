@@ -65,14 +65,14 @@ sudo chown anarinsk:anarinsk -R venv-with-sudo
 ```shell
 source ~/.pyvenv/|your-venv|/bin/activate 
 ```
-- venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는  
+- venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는 venv 환경 내의 pip다.  
 
 ```shell
 pip install --upgrade pip
-pip --version
+pip --version # 업그레이드 확인 용도 
 ```
 
-* 나머지는 작업을 수행한다. 
+* 이후 패키지 설치 등 필요한 작업을 수행한다. 
 
 ### With sudo
 
@@ -98,7 +98,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDk0OTExMCwxMDIwODgzNzUwLDEwNj
-kzNTk2NjksMTE1NzI3MDIzNCw1Nzg3ODk4MDksLTg1NDE4NDMw
-NSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbNzg4MDY0MTk0LDEwMjA4ODM3NTAsMTA2OT
+M1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1
+LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
 -->
