@@ -13,7 +13,9 @@ categories: [coding-tool, python, venv]
 - `| |`은 각자의 환경을 나타낸다. 
 - `.pyvenv`는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다. 
 
+
 ## Use venv 
+
 * venv 디렉토리를 만든다. 
 
 ```shell
@@ -86,6 +88,7 @@ sudo chown |user|:|user| -R |your-venv|
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzI3MDIzNCw1Nzg3ODk4MDksLTg1ND
-E4NDMwNSwtNTg3NDk2ODc3LDIwNjUxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbMTgyOTc3MjE1OCwxMTU3MjcwMjM0LDU3OD
+c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
+N119
 -->
