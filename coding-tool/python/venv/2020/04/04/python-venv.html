@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Setting python venv | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Setting python venv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="파이썬 가상 환경 설정하기" />
+<meta property="og:description" content="파이썬 가상 환경 설정하기" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"파이썬 가상 환경 설정하기","headline":"Setting python venv","dateModified":"2020-04-04T00:00:00-05:00","datePublished":"2020-04-04T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Setting python venv | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Setting python venv" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="파이썬 가상 환경 설정하기" />
+<meta property="og:description" content="파이썬 가상 환경 설정하기" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"파이썬 가상 환경 설정하기","headline":"Setting python venv","dateModified":"2020-04-04T00:00:00-05:00","datePublished":"2020-04-04T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+<!--
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
+
+-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159914345-1');
+  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Setting python venv</h1><p class="page-description">파이썬 가상 환경 설정하기</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-04T00:00:00-05:00" itemprop="datePublished">
+        Apr 4, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#coding-tool">coding-tool</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#venv">venv</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="local-ubuntu">Local Ubuntu</h2>
+
+<ul>
+  <li>venv 디렉토리로 이동</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/.pyvenv 
+</code></pre></div></div>
+
+<ul>
+  <li>해당 디렉토리에서 환경을 만든다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> python <span class="nt">-m</span> venv |your-venv|
+</code></pre></div></div>
+
+<p><img src="/lostineconomics-v2-1/images/python-venv/fig_1.png" alt="" style="textalign:center; " width="800" /></p>
+
+<ul>
+  <li>
+    <p>여기서 중요한 점! 만일 <code class="highlighter-rouge">sudo</code> 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 <code class="highlighter-rouge">sudo</code>로 만들었다면 이는 root에 귀결된다. 따라서 생성된 가상 환경의 사용 조건이 달라지게 된다.</p>
+  </li>
+  <li>
+    <p>VS Code같은 외부 앱과 연동해서 사용하려면 root에 귀결되면 문제가 생긴다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 돌려 두자.</p>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
+</code></pre></div></div>
+
+<ul>
+  <li>해당 venv를 활성화한다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.pyvenv/|your-venv|/bin/activate 
+</code></pre></div></div>
+
+<ul>
+  <li>앞에서 해당 가상 환경 폴더의 소유권을 바꾸었다면 그냥 일반적인 방법으로 <code class="highlighter-rouge">pip</code>를 업그레이드하면 된다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip 
+</code></pre></div></div>
+
+<ul>
+  <li>소유권을 변경하지 않았다면 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.pyvenv/yellow/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+</code></pre></div></div>
+
+<ul>
+  <li>sudo로  절대 pip 업그레이드하지 말 것!
+    <ul>
+      <li>기본적으로 가상환경 내의 pip를 활용해서 업그레이드하는 것이다.</li>
+      <li><code class="highlighter-rouge">pip --version</code>으로제대로 깔렸는지 확인해보자.</li>
+    </ul>
+  </li>
+  <li>여기까지 잘 되었으면 기본적으로 <code class="highlighter-rouge">pip</code>를 쓰는 데 제한이 없다.</li>
+</ul>
+
+<h2 id="server-side">Server-side</h2>
+
+<p>AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, <code class="highlighter-rouge">sudo</code>를 기준으로삼아서 명령을 실행해주면 된다.</p>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA2NTE0NjkwN119
+-->
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
