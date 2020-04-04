@@ -51,7 +51,7 @@ categories: [coding-tool, python, AWS]
 ~$ chmod 400 |Your-pem-File|
 ```
 
-해당 파일이 있는 디렉토리에서 아래 명령어로 AWS로 접속한다. 
+- 해당 파일이 있는 디렉토리에서 아래 명령어로 AWS로 접속한다. 
 
 ```shell
 ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
@@ -75,7 +75,7 @@ ssh -i |Your-pem-File| ubuntu@|Your-AWS-IP|
 ~$ sudo apt install python3.7
 ```
 
-`python3.7 --version`으로 버전을 확인해보자. 
+- `python3.7 --version`으로 버전을 확인해보자. 
 
 - 아래와 같이 깔려 있는 파이썬이 있는지 확인해보자. 
 
@@ -184,11 +184,11 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjIxNTI4LDgxMDQ0ODkyMCwtNDM4Mj
-AyODk0LC0xNjQ4Nzk5MTYwLDE5NDM1OTI5NDQsNDg3NzgwOTIz
-LC0xMjM0OTc3MTEyLDMyNzM3NjQyOCwtNzQ0MjQyMjAyLDEzNj
-c5NTU3MzQsLTE2NjA1MjI5MzUsNjgyNDkzMTQxLC05MjU3NzE5
-ODcsLTUxNjk4NDkxMSwtMTY0NjgwMDQwLC0xMzM2Mzc2OTI3LD
-E4MjM2ODU0NDQsLTEwODgwNzEzMjEsMTY0MDY3OTg5NSwxNTgw
-MTU5ODA4XX0=
+eyJoaXN0b3J5IjpbMTAyMzQyOTM5MCw4MTA0NDg5MjAsLTQzOD
+IwMjg5NCwtMTY0ODc5OTE2MCwxOTQzNTkyOTQ0LDQ4Nzc4MDky
+MywtMTIzNDk3NzExMiwzMjczNzY0MjgsLTc0NDI0MjIwMiwxMz
+Y3OTU1NzM0LC0xNjYwNTIyOTM1LDY4MjQ5MzE0MSwtOTI1Nzcx
+OTg3LC01MTY5ODQ5MTEsLTE2NDY4MDA0MCwtMTMzNjM3NjkyNy
+wxODIzNjg1NDQ0LC0xMDg4MDcxMzIxLDE2NDA2Nzk4OTUsMTU4
+MDE1OTgwOF19
 -->
