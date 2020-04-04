@@ -198,14 +198,26 @@ window.onload = wrap_img;
 
 <h3 id="without-sudo">Without <code class="highlighter-rouge">sudo</code></h3>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
-</code></pre></div></div>
-
 <ul>
   <li>해당 venv를 활성화한다.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.pyvenv/|your-venv|/bin/activate 
+</code></pre></div></div>
+
+<ul>
+  <li>venv가 활성화된 상태에서 pip를 업그레이드하자.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+pip <span class="nt">--version</span>
+</code></pre></div></div>
+
+<ul>
+  <li>나머지는 프로세스 그대로 수행한다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
 <ul>
@@ -237,7 +249,7 @@ window.onload = wrap_img;
 <p>AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, <code class="highlighter-rouge">sudo</code>를 기준으로삼아서 명령을 실행해주면 된다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MzQ2MDc5NywtNTg3NDk2ODc3LDIwNj
+eyJoaXN0b3J5IjpbMTkzMzU5MjM2OSwtNTg3NDk2ODc3LDIwNj
 UxNDY5MDddfQ==
 -->
 <div class="footnotes">
