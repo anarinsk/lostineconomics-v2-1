@@ -201,7 +201,15 @@ window.onload = wrap_img;
   <li>
     <p>VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
   </li>
+  <li>
+    <p>혹시 <code class="highlighter-rouge">ls -la</code>로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자.</p>
+  </li>
 </ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
+</code></pre></div></div>
+
+<p>위 예라면,</p>
 
 <h3 id="without-sudo">Without <code class="highlighter-rouge">sudo</code></h3>
 
@@ -262,7 +270,7 @@ pip <span class="nt">--version</span>
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTc3MjE1OCwxMTU3MjcwMjM0LDU3OD
+eyJoaXN0b3J5IjpbMTk3MTI0NzQzMywxMTU3MjcwMjM0LDU3OD
 c4OTgwOSwtODU0MTg0MzA1LC01ODc0OTY4NzcsMjA2NTE0Njkw
 N119
 -->
