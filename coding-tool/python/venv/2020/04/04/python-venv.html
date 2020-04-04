@@ -174,7 +174,7 @@ window.onload = wrap_img;
   <li>venv 환경으로 쓸 디렉토리를 만든다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> /.pyvenv 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">mkdir</span> /.pyvenv 
 </code></pre></div></div>
 
 <ul>
@@ -182,14 +182,14 @@ window.onload = wrap_img;
   <li>해당 디렉토리로 이동한다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/.pyvenv 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">cd</span> ~/.pyvenv 
 </code></pre></div></div>
 
 <ul>
   <li>여기서 venv 환경을 만든다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> python <span class="nt">-m</span> venv |your-venv|
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> python <span class="nt">-m</span> venv |your-venv|
 </code></pre></div></div>
 
 <p><img src="/lostineconomics-v2-1/images/python-venv/fig_1.png" alt="" style="textalign:center; " width="800" /></p>
@@ -206,12 +206,12 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
 <p>그림의 예라면 아래와 같이 실행하여 소유자를 root에서 user로 바꾸자.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown </span>anarinsk:anarinsk <span class="nt">-R</span> venv-with-sudo 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo chown </span>anarinsk:anarinsk <span class="nt">-R</span> venv-with-sudo 
 </code></pre></div></div>
 
 <h3 id="without-sudo">Without sudo</h3>
@@ -225,14 +225,14 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.pyvenv/|your-venv|/bin/activate 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.pyvenv/|your-venv|/bin/activate 
 </code></pre></div></div>
 <ul>
   <li>venv가 활성화된 상태에서 pip를 업그레이드하자. 이때 업그레이드되는 pip는 venv 환경 내의 pip다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
-pip <span class="nt">--version</span> <span class="c"># 업그레이드 확인 용도 </span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+~<span class="nv">$ </span>pip <span class="nt">--version</span> <span class="c"># 업그레이드 확인 용도 </span>
 </code></pre></div></div>
 
 <ul>
@@ -245,7 +245,7 @@ pip <span class="nt">--version</span> <span class="c"># 업그레이드 확인 �
   <li><code class="highlighter-rouge">sudo</code>로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo chown</span> |user|:|user| <span class="nt">-R</span> |your-venv|
 </code></pre></div></div>
 
 <ul>
@@ -255,10 +255,10 @@ pip <span class="nt">--version</span> <span class="c"># 업그레이드 확인 �
 <h2 id="sudo-if-you-insist">sudo if you insist</h2>
 
 <ul>
-  <li>만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 업그레이드해야 한다.</li>
+  <li>만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 특정해서 업그레이드해야 한다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.pyvenv/yellow/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>~/.pyvenv/yellow/bin/pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
 
 <ul>
@@ -271,7 +271,7 @@ pip <span class="nt">--version</span> <span class="c"># 업그레이드 확인 �
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4MDY0MTk0LDEwMjA4ODM3NTAsMTA2OT
+eyJoaXN0b3J5IjpbMTQwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OT
 M1OTY2OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1
 LC01ODc0OTY4NzcsMjA2NTE0NjkwN119
 -->
