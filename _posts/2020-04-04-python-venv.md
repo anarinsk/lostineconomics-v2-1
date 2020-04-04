@@ -8,8 +8,6 @@ categories: [coding-tool, python, venv]
 
 ---
 
-## Local Ubuntu 
-
 * venv 디렉토리를 만든다. 
 
 ```shell
@@ -17,7 +15,7 @@ mkdir /.pyvenv
 ```
 
 * `sudo` 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다. 
-* venv 디렉토리로 이동 
+* venv 디렉토리로 이동한다. 
 
 ```shell
 cd ~/.pyvenv 
@@ -31,9 +29,9 @@ cd ~/.pyvenv
 
 ![]({{ site.baseurl }}/images/python-venv/fig_1.png){: style="textalign:center; " width="800"}
 
-- 여기서 중요한 점! 위 그림을 보자. 만일 `sudo` 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 `sudo`로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. `sudo`는 자제하자. 
+- 여기서 중요한 점! 위 그림을 보자. 만일 `sudo` 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 `sudo`로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. `sudo`는 자제하자.  왜?
 
-- VS Code같은 외부 앱과 연동해서 사용하려면 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.[^1]
+- VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리가 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.[^1]
 
 
 [^1]: 권한 관리에 관해서는 [여기](https://eunguru.tistory.com/93)를 참고하라. 
@@ -79,6 +77,6 @@ sudo chown |user|:|user| -R |your-venv|
 - 여기까지 잘 되었으면 기본적으로 `pip`를 쓰는 데 제한이 없다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
-UxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbMTM3NzA0NDE0LC04NTQxODQzMDUsLTU4Nz
+Q5Njg3NywyMDY1MTQ2OTA3XX0=
 -->
