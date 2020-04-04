@@ -31,9 +31,7 @@ cd ~/.pyvenv
 
 ![]({{ site.baseurl }}/images/python-venv/fig_1.png){: style="textalign:center; " width="800"}
 
-- 여기서 중요한 점! 위 그림을 보자. 만일 `sudo` 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 `sudo`로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 
-
-
+- 여기서 중요한 점! 위 그림을 보자. 만일 `sudo` 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 `sudo`로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. `sudo`는 자제하자. 
 
 - VS Code같은 외부 앱과 연동해서 사용하려면 root에 귀결되면 문제가 생긴다. VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 폴더 권한을 유저에게 돌려 두자.[^1]
 
@@ -72,6 +70,6 @@ source ~/.pyvenv/|your-venv|/bin/activate
 AWS 같은 서버를 이용하는 경우는 조금 이야기가 다르다. user 계정을 쓰지 않다면, `sudo`를 기준으로삼아서 명령을 실행해주면 된다. 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY2NTUyOTIsLTU4NzQ5Njg3NywyMD
-Y1MTQ2OTA3XX0=
+eyJoaXN0b3J5IjpbNDQzNzQwNTYzLC01ODc0OTY4NzcsMjA2NT
+E0NjkwN119
 -->
