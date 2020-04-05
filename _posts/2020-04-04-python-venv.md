@@ -87,7 +87,7 @@ categories: [coding-tool, python, venv]
 * 만일 여러가지 이유 때문에 디렉토리의 소유권을 변경하지 않으려 한다면, 가상 환경에서 작동하는 pip를 특정해서 업그레이드해야 한다.
 
 ```shell
-~$ ~/.pyvenv/yellow/bin/pip3 install --upgrade pip
+~$ ~/.pyvenv/|your-venv|/bin/pip3 install --upgrade pip
 ```
 
 - sudo로  절대 pip 업그레이드하지 말 것!
@@ -96,8 +96,8 @@ categories: [coding-tool, python, venv]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2MDQyMTczLC0xODM1MzQzNjA0LDE0MD
-IyMzE0MiwxMDIwODgzNzUwLDEwNjkzNTk2NjksMTE1NzI3MDIz
-NCw1Nzg3ODk4MDksLTg1NDE4NDMwNSwtNTg3NDk2ODc3LDIwNj
-UxNDY5MDddfQ==
+eyJoaXN0b3J5IjpbMTYwMTUzMzIzMiw3NzYwNDIxNzMsLTE4Mz
+UzNDM2MDQsMTQwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OTM1OTY2
+OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1LC01OD
+c0OTY4NzcsMjA2NTE0NjkwN119
 -->
