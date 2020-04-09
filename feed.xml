@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:39:39-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:41:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2로 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서 정식으로 포함될 예정이다.&lt;/p&gt;
 
@@ -1208,7 +1208,7 @@ python3.7
 update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;python
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 &lt;code class=&quot;highlighter-rouge&quot;&gt;update-alternatives&lt;/code&gt;가 관리하는 심볼릭 링크가 없기 때문이다. 어쨌든 아래와 같이 해당 시스템에 탑재된 파이썬&lt;/p&gt;
+&lt;p&gt;이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 &lt;code class=&quot;highlighter-rouge&quot;&gt;update-alternatives&lt;/code&gt;가 관리하는 심볼릭 링크가 없기 때문이다. 어쨌든 아래와 같이 해당 시스템에 탑재된 파이썬들을 심볼릭 링크로 생성한다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python2.7 1
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python3.7 2
@@ -1263,7 +1263,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.pyvenv/pandas/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;웬만하면 가상 환경의 이름은 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.pyvenv&lt;/code&gt;로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해줘야 한다.  가상환경은 독립된 환경이고 애초에 생성된 pip 버전을 따르게 된다. 가상 환경 내에서 pip 업데이트는 아래와 같이 하면 된다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1403,13 +1403,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODg1MTEwMiwtMjA0MjE5Njk1LC03OD
-czMTEyNDYsLTY3NjUyNjMxMCwtNzU5Mzk5Njg2LDMyMjEwMTAx
-OCwtMTg3ODY3NDgwMSwtMzM2NTE2NTQ3LC02MTM2NjUyMjIsMT
-gxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4ODIsMTUwMjY4
-NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC01NTI1MzY4Nz
-AsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkxMDYxNywxMDc2
-MDE2MzQ3XX0=
+eyJoaXN0b3J5IjpbLTEzODY3ODY1NjksLTIwNDIxOTY5NSwtNz
+g3MzExMjQ2LC02NzY1MjYzMTAsLTc1OTM5OTY4NiwzMjIxMDEw
+MTgsLTE4Nzg2NzQ4MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLD
+E4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2
+ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2OD
+cwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3
+NjAxNjM0N119
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

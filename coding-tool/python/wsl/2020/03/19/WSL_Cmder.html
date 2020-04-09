@@ -281,7 +281,7 @@ python3.7
 update-alternatives: error: no alternatives <span class="k">for </span>python
 </code></pre></div></div>
 
-<p>이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 <code class="highlighter-rouge">update-alternatives</code>가 관리하는 심볼릭 링크가 없기 때문이다. 어쨌든 아래와 같이 해당 시스템에 탑재된 파이썬</p>
+<p>이 녀석을 처음 실행하면 python이 없다고 뜬다. 당연히 <code class="highlighter-rouge">update-alternatives</code>가 관리하는 심볼릭 링크가 없기 때문이다. 어쨌든 아래와 같이 해당 시스템에 탑재된 파이썬들을 심볼릭 링크로 생성한다.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python2.7 1
 <span class="nv">$ </span><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3.7 2
@@ -336,7 +336,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.pyvenv/pandas/bin/activate
 </code></pre></div></div>
 
-<p>웬만하면 가상 환경의 이름은 <code class="highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해주는 것이 좋다.  이제 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3"><a href="#fn:3" class="footnote">4</a></sup></p>
+<p>웬만하면 가상 환경의 이름은 <code class="highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해줘야 한다.  가상환경은 독립된 환경이고 애초에 생성된 pip 버전을 따르게 된다. 가상 환경 내에서 pip 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3"><a href="#fn:3" class="footnote">4</a></sup></p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
@@ -476,13 +476,13 @@ code |any-your-file| <span class="c"># 특정 파일을 VS Code에서 실행 </s
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODg1MTEwMiwtMjA0MjE5Njk1LC03OD
-czMTEyNDYsLTY3NjUyNjMxMCwtNzU5Mzk5Njg2LDMyMjEwMTAx
-OCwtMTg3ODY3NDgwMSwtMzM2NTE2NTQ3LC02MTM2NjUyMjIsMT
-gxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4ODIsMTUwMjY4
-NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC01NTI1MzY4Nz
-AsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkxMDYxNywxMDc2
-MDE2MzQ3XX0=
+eyJoaXN0b3J5IjpbLTEzODY3ODY1NjksLTIwNDIxOTY5NSwtNz
+g3MzExMjQ2LC02NzY1MjYzMTAsLTc1OTM5OTY4NiwzMjIxMDEw
+MTgsLTE4Nzg2NzQ4MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLD
+E4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2
+ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2OD
+cwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3
+NjAxNjM0N119
 -->
 <div class="footnotes">
   <ol>
