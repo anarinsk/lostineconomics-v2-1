@@ -33,7 +33,8 @@ wsl.exe -l -v # in Ununtu terminal
 ```
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_1.png){: style="textalign:center; " width="600"}
-[]({{ site.baseurl }}/images/wsl2-wt/fig_2.png){: style="textalign:center; " width="600"}
+
+![]({{ site.baseurl }}/images/wsl2-wt/fig_2.png){: style="textalign:center; " width="600"}
 
 - 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl 2로 잘 나타나야 한다.  
 - 하나 알 수 있는 사실. Ubuntu 터미널 안에서 윈도우 앱도 실행할 수 있는 점. 
@@ -50,9 +51,9 @@ wsl --set-default <distro name>
 - 만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 깔아주는 일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다. 
 - [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스에서 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
 
-[]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="600"}
 
-[]({{ site.baseurl }}/images/wsl2-wt/fig_4.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsl2-wt/fig_4.png){: style="textalign:center; " width="600"}
 
 - 도커의 경우 여러 버전의 리눅스가 깔려 있을 경우 선택해서 지원이 가능하다. 
 - k8s 역시 마찬가지다. 
@@ -69,7 +70,7 @@ sudo docker run hello-world
 
 - 내가 docker를 Ubuntu에 깐 적이 없어도 아래 같이 잘 출력될 것이다. 리눅스 배포판에 맞춰서 연동되는 개념이라고 여기면 되겠다. 
 
-[]({{ site.baseurl }}/images/wsl2-wt/fig_5.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsl2-wt/fig_5.png){: style="textalign:center; " width="600"}
 
 ## Testing Kubernetes 
 
@@ -116,6 +117,6 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMT
-Y2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbNTg1NTkxOTMwLC0yMDU3ODI5NzgyLDEzNT
+YzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
 -->
