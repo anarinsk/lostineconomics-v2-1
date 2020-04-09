@@ -95,6 +95,9 @@ kubectl describe service hello-minikube
 
 여기서 `NodePort`를 확인해서 웹 브라우저에서 `localhost:XXXXX`라고 쳐주면 아래와 같이 떠야 한다. 
 
+![](https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-09.png){: style="textalign:center; " width="600"}
+
+
 ## Best Practices for python 
 
 1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
@@ -118,8 +121,9 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDg0MzAyNSwtODcwNTg5MTUsNTYxNj
-M2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OTUy
-MiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMT
-M1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTQ5OTMxOTQ1LDE3OTQ4NDMwMjUsLTg3MD
+U4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcs
+LTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMD
+U3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5
+MDE3XX0=
 -->
