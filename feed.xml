@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:41:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:41:48-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2로 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서 정식으로 포함될 예정이다.&lt;/p&gt;
 
@@ -1296,7 +1296,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;만일 가상환경 내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt;가 필요하다면, 각 가상환경 내에 깔아야 한다는 점을 기억하자.&lt;/li&gt;
+  &lt;li&gt;만일 가상환경 내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt;가 필요하다면, 각 가상환경 내에 깔아야 한다는 점 역시 기억하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS code&lt;/h2&gt;
@@ -1403,13 +1403,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODY3ODY1NjksLTIwNDIxOTY5NSwtNz
-g3MzExMjQ2LC02NzY1MjYzMTAsLTc1OTM5OTY4NiwzMjIxMDEw
-MTgsLTE4Nzg2NzQ4MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLD
-E4MTU1MjM3NTksLTMzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2
-ODczNDQsLTkyNTc4ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2OD
-cwLC00NjY3NTk5NTgsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3
-NjAxNjM0N119
+eyJoaXN0b3J5IjpbLTk5NDIyMTM5NiwtMjA0MjE5Njk1LC03OD
+czMTEyNDYsLTY3NjUyNjMxMCwtNzU5Mzk5Njg2LDMyMjEwMTAx
+OCwtMTg3ODY3NDgwMSwtMzM2NTE2NTQ3LC02MTM2NjUyMjIsMT
+gxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4ODIsMTUwMjY4
+NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC01NTI1MzY4Nz
+AsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkxMDYxNywxMDc2
+MDE2MzQ3XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
