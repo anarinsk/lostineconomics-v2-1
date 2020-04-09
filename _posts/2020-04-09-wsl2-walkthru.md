@@ -77,20 +77,20 @@ sudo docker run hello-world
 - 쿠버네티스도 잘 도는지 확인해보자. [여기](https://blog.aliencube.org/ko/2018/06/04/running-kubernetes-on-wsl/)에서 가져왔다. 
 
 ```shell
-kubectl cluster-info
+~$ kubectl cluster-info
 ```
 
 최초로 포드를 세팅하는 것이라면 아래의 코드를 실행해주자. 
 
 ```shell
-kubectl run hello-minikube --image k8s.gcr.io/echoserver:1.10 --port 8080
+~$ kubectl run hello-minikube --image k8s.gcr.io/echoserver:1.10 --port 8080
 kubectl expose deployment hello-minikube --type NodePort
 ```
 
 돌고 있는 서비스의 정보를 확인하자. 
 
 ```shell
-kubectl describe service hello-minikube
+~$ kubectl describe service hello-minikube
 ```
 
 여기서 `NodePort`를 확인해서 웹 브라우저에서 `localhost:XXXXX`라고 쳐주면 아래와 같이 떠야 한다. 
@@ -124,9 +124,10 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2OTQzNDg5LDQ4Mzg3MTMwNiw4NjA1Nz
-QxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUsLTg3MDU4OTE1LDU2
-MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNj
-k1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMDU3ODI5Nzgy
-LDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
+eyJoaXN0b3J5IjpbLTE2MTU2ODA4NTUsNDgzODcxMzA2LDg2MD
+U3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUs
+NTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNz
+E2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3
+ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ
+==
 -->
