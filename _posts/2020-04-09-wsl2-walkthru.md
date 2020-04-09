@@ -49,7 +49,7 @@ wsl --set-default <distro name>
 ## Docker Desktop 
 
 - 만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 깔아주는 일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다. 
-- [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스에서 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
+- [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스 터미널을 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="700"}
 
@@ -124,10 +124,9 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjIzMzIyNDcsNDgzODcxMzA2LDg2MD
-U3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUs
-NTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNz
-E2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3
-ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ
-==
+eyJoaXN0b3J5IjpbODA2OTQzNDg5LDQ4Mzg3MTMwNiw4NjA1Nz
+QxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUsLTg3MDU4OTE1LDU2
+MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNj
+k1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMDU3ODI5Nzgy
+LDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
 -->
