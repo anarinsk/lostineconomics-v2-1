@@ -21,8 +21,8 @@ WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. �
 
 ## Windows Terminal 
 
-- [이전](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. Windows Terminal 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 그리 어렵지 않게 가능하다. 안 쓸 이유가 없다. 
-- 한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 좀 짜증나고 헛갈리겠으나 못 쓸 정도는 아니니, 참고 넘어가자. 
+- [이전](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. Windows Terminal 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 어렵지 않게 가능하다. 안 쓸 이유가 없다. 
+- 한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 터미널 외부에서는 기존 방식이고 안에서는 SHIFT가 더해진 방식이다. 살짝 의아하지만 못 쓸 정도는 아니니까 참고 넘어가자. 
 -  커스터마이즈는 VS Code를 활용해서 쉽게 구현할 수 있다.  [여기](https://dev.to/expertsinside/how-to-customize-the-new-windows-terminal-with-visual-studio-code-56b1)를 참고하자. 
 
 ### Some command 
@@ -45,6 +45,8 @@ wsl.exe -l -v # in Ubuntu terminal
 wsl --set-version (distro name) 2
 wsl --set-default <distro name>
 ```
+
+예컨대, Ubuntu-18.04
 
 ## Docker Desktop 
 
@@ -124,7 +126,7 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTM5ODc3LC0xNjE1NjgwODU1LDQ4Mz
+eyJoaXN0b3J5IjpbNDY0Mjc4NzcxLC0xNjE1NjgwODU1LDQ4Mz
 g3MTMwNiw4NjA1NzQxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUs
 LTg3MDU4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MD
 Q3ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMw
