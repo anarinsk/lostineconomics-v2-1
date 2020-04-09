@@ -49,6 +49,10 @@ wsl --set-default <distro name>
 
 - 만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 깔아주는 일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다. 
 - [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스에서 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
+
+[]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="600"}
+[]({{ site.baseurl }}/images/wsl2-wt/fig_4.png){: style="textalign:center; " width="600"}
+
 - 도커의 경우 여러 버전의 리눅스가 깔려 있을 경우 선택해서 지원이 가능하다. 
 - k8s 역시 마찬가지다. 
 - 보다 상세한 내용은 [여기](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)를 참고하자. 
@@ -62,7 +66,9 @@ wsl --set-default <distro name>
 sudo docker run hello-world
 ```
 
-- 내가 docker를 깐 적이 없어도 아래 같이 잘 출력될 것이다. 리눅스 배포판에 맞춰서 연동되는 개념으로 여기면 되겠다. 
+- 내가 docker를 Ubuntu에 깐 적이 없어도 아래 같이 잘 출력될 것이다. 리눅스 배포판에 맞춰서 연동되는 개념이라고 여기면 되겠다. 
+
+[]({{ site.baseurl }}/images/wsl2-wt/fig_5.png){: style="textalign:center; " width="600"}
 
 ## Testing Kubernetes 
 
@@ -109,6 +115,6 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2ODQ0NDE1LC0xNjY3Njc5NTAsMjA3Mj
-c0OTAxN119
+eyJoaXN0b3J5IjpbMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNz
+I3NDkwMTddfQ==
 -->
