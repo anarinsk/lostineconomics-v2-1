@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title:  wsl 2 a walk-thru
+title:  wsl 2, a walk-thru
 description:  wsl 2의 열기를 느껴보아요~ 
 categories: [wsl]
 
@@ -118,7 +118,7 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2MTgxMzIzLC0xMjI4MDc0MTUsMTU3Nj
+eyJoaXN0b3J5IjpbNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
 gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
 MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
 IwNzI3NDkwMTddfQ==
