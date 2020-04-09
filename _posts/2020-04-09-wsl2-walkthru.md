@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title:  wsl 2, a walk-thru
+title:  wsl 2 a walk-thru
 description:  wsl 2의 열기를 느껴보아요~ 
 categories: [wsl]
 
@@ -17,7 +17,7 @@ WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 더할 �
 ## Ubuntu 18.04 설치 
 
 - [여기](https://docs.microsoft.com/ko-kr/windows/wsl/install-win10)를 참고하면 되겠다. 
-- 다른 리눅스를 써도 좋겠지만, 가장 대중적인 Ubuntu를 기준으로 깔도록 하자. 
+- 다른 리눅스를 써도 좋겠지만, 가장 대중적인 Ubuntu를 쓰면 좋겠다. 
 
 ## Windows Terminal 
 
@@ -118,8 +118,8 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
-gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
-MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
-IwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTg3MDU4OTE1LDU2MTYzNjU2NywtMTIyOD
+A3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1
+NDAsNTg1NTkxOTMwLC0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLT
+E2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
 -->
