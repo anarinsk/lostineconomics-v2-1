@@ -40,8 +40,8 @@ categories: [coding-tool, python]
 ```bash 
 $ |your-directory|/python.exe -m venv |your-environmet|
 ```
-
-- 가상 환경으로 진입한다. 
+- `sudo`  명령은 피하는 게 좋다. `sudo`를 쓰게 되면 환경으로 만들어진 디렉토리의 소유자가 root가 된다. 외부의 다른 앱, 소프트웨어가 해당 디렉토리를 조작할 수 없게 되서 작업이 원활하지 않을 수 있다.  
+- 이제 가상 환경으로 진입한다. 
 
 ```bash
 $ |your-python-directory|/Scripts/activate 
@@ -128,9 +128,9 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyMzA5NjEyLC0xMzE2ODk3NzE2LC0yMD
-A5NTYxNTc5LDE3MjczMTM0MjAsLTEyMzIwNjY5NTUsLTE5MDYx
-Nzg1NjYsMjA2NDkzNTE0MCw4Mzc4NDI4NjgsLTE2MDAwODgxND
-QsLTE3MjYzMjIyOTAsLTMwNDg4NDcyNCwtMTQ5ODYwNDc3OCwt
-MTAxMjE5ODE0LC0xMjQxMTc4ODk1XX0=
+eyJoaXN0b3J5IjpbLTQ3NTAwMjYxMiwzMzIzMDk2MTIsLTEzMT
+Y4OTc3MTYsLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMTIzMjA2
+Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0Mjg2OC
+wtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0NzI0LC0x
+NDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVdfQ==
 -->
