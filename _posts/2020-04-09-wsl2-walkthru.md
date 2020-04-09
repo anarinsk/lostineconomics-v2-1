@@ -35,7 +35,10 @@ wsl.exe -l -v # in Ununtu terminal
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_1.png){: style="textalign:center; " width="600"}
 []({{ site.baseurl }}/images/wsl2-wt/fig_2.png){: style="textalign:center; " width="600"}
 
-- 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 WSL 터미날 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl 2로 잘 나타난다.  아래 두 명령어를 통해서는 버전을 설정하거나 혹은 사용중인 배포판을 디폴트로 설정할 수 있겠다. 
+- 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl 2로 잘 나타나야 한다.  
+- 하나 알 수 있는 사실. Ubuntu 터미널 안에서 윈도우 앱도 실행할 수 있는 점. 
+
+아래 두 명령어를 통해서는 버전을 설정하거나 혹은 사용중인 배포판을 디폴트로 설정할 수 있겠다. 
 
 ```shell
 wsl --set-version (distro name) 2
@@ -106,6 +109,6 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTE3OTEwMiwtMTY2NzY3OTUwLDIwNz
-I3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbOTQ2ODQ0NDE1LC0xNjY3Njc5NTAsMjA3Mj
+c0OTAxN119
 -->
