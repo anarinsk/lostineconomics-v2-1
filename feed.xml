@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:36:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:37:59-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2로 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서 정식으로 포함될 예정이다.&lt;/p&gt;
 
@@ -1283,9 +1283,6 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 &lt;p&gt;패키지 상태만 보려면,&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip-review
-&lt;span class=&quot;nv&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.13.4 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.13.2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;redis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;2.4.13 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 2.4.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;rq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.3.2 is available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;you have 0.3.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;모든 것을 다 업데이트 하려면,&lt;/p&gt;
@@ -1308,7 +1305,7 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
   &lt;li&gt;만일 가상환경 내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt;가 필요하다면, 각 가상환경 내에 깔아야 한다는 점을 기억하자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS Code&lt;/h2&gt;
+&lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS code&lt;/h2&gt;
 
 &lt;p&gt;이제 우분투 18.04를 설치하고 파이썬까지 잘 설치했다. 하지만 코딩은 어떻게 하지? 우분투에 VS Code를 깔아야 할까? 그런데 현재 설치한 우분투는 GUI가 없는 버전이니까 X-Windows 같은 것을 깔아야 할까? 걱정할 필요 없다! 윈도에 깔린 VS Code를 그대로 쓰면 된다.&lt;/p&gt;
 
@@ -1412,13 +1409,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDIxOTY5NSwtNzg3MzExMjQ2LC02Nz
-Y1MjYzMTAsLTc1OTM5OTY4NiwzMjIxMDEwMTgsLTE4Nzg2NzQ4
-MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLDE4MTU1MjM3NTksLT
-MzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2ODczNDQsLTkyNTc4
-ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2ODcwLC00NjY3NTk5NT
-gsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3NjAxNjM0NywtMjAx
-MzU5Nzk4N119
+eyJoaXN0b3J5IjpbLTI1NzY3OTY1LC0yMDQyMTk2OTUsLTc4Nz
+MxMTI0NiwtNjc2NTI2MzEwLC03NTkzOTk2ODYsMzIyMTAxMDE4
+LC0xODc4Njc0ODAxLC0zMzY1MTY1NDcsLTYxMzY2NTIyMiwxOD
+E1NTIzNzU5LC0zMzEwNDYwMjAsMTA2OTM5ODg4MiwxNTAyNjg3
+MzQ0LC05MjU3ODgzOTcsLTIwMjg1NDUyOTksLTU1MjUzNjg3MC
+wtNDY2NzU5OTU4LDgwMjUyNjEyOCwyMTE1OTEwNjE3LDEwNzYw
+MTYzNDddfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -1927,7 +1924,7 @@ UwOTA0XX0=
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;반드시 깔 필요는 없지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;에 준하게 패키지 관리를 하고 싶다면, 아래 패키지를 깔자.&lt;/li&gt;
+  &lt;li&gt;반드시 깔 필요는 없지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;에 준하게 패키지 관리를 하고 싶다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt; 패키지를 깔자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review &lt;span class=&quot;c&quot;&gt;# pip-review 설치 &lt;/span&gt;
@@ -2002,11 +1999,11 @@ Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span cl
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTAwMjYxMiwzMzIzMDk2MTIsLTEzMT
-Y4OTc3MTYsLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMTIzMjA2
-Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0Mjg2OC
-wtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0NzI0LC0x
-NDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVdfQ==
+eyJoaXN0b3J5IjpbOTIzNzAzNTk0LDMzMjMwOTYxMiwtMTMxNj
+g5NzcxNiwtMjAwOTU2MTU3OSwxNzI3MzEzNDIwLC0xMjMyMDY2
+OTU1LC0xOTA2MTc4NTY2LDIwNjQ5MzUxNDAsODM3ODQyODY4LC
+0xNjAwMDg4MTQ0LC0xNzI2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0
+OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMTI0MTE3ODg5NV19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
