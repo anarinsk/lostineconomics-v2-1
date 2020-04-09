@@ -224,7 +224,7 @@ wsl <span class="nt">--set-default</span> &lt;distro name&gt;
   <li>docker가 잘 돌고 있는지 확인하고 싶다면 헬로우월드를 돌려보면 되겠다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker run hello-world
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>docker run hello-world
 </code></pre></div></div>
 
 <ul>
@@ -245,7 +245,7 @@ wsl <span class="nt">--set-default</span> &lt;distro name&gt;
 <p>최초로 포드를 세팅하는 것이라면 아래의 코드를 실행해주자.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>kubectl run hello-minikube <span class="nt">--image</span> k8s.gcr.io/echoserver:1.10 <span class="nt">--port</span> 8080
-kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
+~<span class="nv">$ </span>kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
 </code></pre></div></div>
 
 <p>돌고 있는 서비스의 정보를 확인하자.</p>
@@ -291,12 +291,12 @@ kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDgxNjA0OTksLTE5MTgzNjU4MTEsLT
-E2MTU2ODA4NTUsNDgzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMz
-NTg5LC00OTkzMTk0NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMj
-I4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0
-OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OC
-wtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTM0NzMwMTEyMywtMTg0ODE2MDQ5OSwtMT
+kxODM2NTgxMSwtMTYxNTY4MDg1NSw0ODM4NzEzMDYsODYwNTc0
+MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1LC04NzA1ODkxNSw1Nj
+E2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MTY5
+NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4Mi
+wxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
