@@ -55,7 +55,7 @@ wsl --set-default Ubuntu-18.04
 
 ## Docker Desktop 
 
-- 만일 Ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 설치해야 한다. wsl 2에서는 그럴 필요가 없다. 
+- 만일 Ubuntu를 유일한 OS로 쓰고 있다면 docker, kubernetes(k8s)를 별도로 설치해야 한다. wsl 2에서는 그럴 필요가 없다. 
 - [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스 터미널을 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="700"}
@@ -104,13 +104,11 @@ kubectl expose deployment hello-minikube --type NodePort
 ![](https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-09.png){: style="textalign:center; " width="600"}
 
 
-estacticer thon 
 
-- 거두절미, 다음과 같은 두 가지 원칙으로 파이썬을 운용하자.
-	## Best Practices for py1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
-	2. venv를 활용한다. 
+## Best Practices for python
 
 - 이 두가지 원칙을 예시한 아래의 포스팅을 참고하시라.  
+- 
 	1. [네이티브 파이썬 설치](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)
 	2. [python venv 활용](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)
 
@@ -130,10 +128,10 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTE5MDk0NSwtMTYxNTY4MDg1NSw0OD
-M4NzEzMDYsODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1
-LC04NzA1ODkxNSw1NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2OD
-A0Nzg3LC0xMDE3MTY5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkz
-MCwtMjA1NzgyOTc4MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMj
-A3Mjc0OTAxN119
+eyJoaXN0b3J5IjpbMjY2NTQ1OTYsLTE2MTU2ODA4NTUsNDgzOD
+cxMzA2LDg2MDU3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwt
+ODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwND
+c4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAs
+LTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNz
+I3NDkwMTddfQ==
 -->
