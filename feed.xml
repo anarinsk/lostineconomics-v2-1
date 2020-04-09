@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T06:23:53-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도우가 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T06:34:29-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도우가 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 더할 나위 없다. 좋다. 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰에서 제공하는 기능하다.  상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서는 정식으로 포함되는 것이 확정되었다.&lt;/p&gt;
 
@@ -1249,11 +1249,13 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip &lt;span class=&quot;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
 &lt;span class=&quot;c&quot;&gt;#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)&lt;/span&gt;
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
+~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
 ~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate 
 &lt;span class=&quot;c&quot;&gt;# 해당 디렉토리까지 이동해서 source 명령을 실행해도 된다. &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;ul&gt;
+  &lt;li&gt;가상환경을 만들 때, 즉 &lt;code class=&quot;highlighter-rouge&quot;&gt;python -m venv...&lt;/code&gt;에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;를 안 쓰게 좋다. 이렇게 가상환경을 만들면 해당 디렉토리가 root의 소유가 된다. VS Co&lt;/li&gt;
   &lt;li&gt;만일 home/.pyvenv 아래 pandas라는 환경을 깔았다면,&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1406,13 +1408,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjUyNjMxMCwtNzU5Mzk5Njg2LDMyMj
-EwMTAxOCwtMTg3ODY3NDgwMSwtMzM2NTE2NTQ3LC02MTM2NjUy
-MjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4ODIsMT
-UwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC01NTI1
-MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkxMDYxNy
-wxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0xNDE4Mjg1NTc1LC0x
-NjcwNTk2NDg1XX0=
+eyJoaXN0b3J5IjpbLTEyODM5NjgyOTgsLTY3NjUyNjMxMCwtNz
+U5Mzk5Njg2LDMyMjEwMTAxOCwtMTg3ODY3NDgwMSwtMzM2NTE2
+NTQ3LC02MTM2NjUyMjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLD
+EwNjkzOTg4ODIsMTUwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4
+NTQ1Mjk5LC01NTI1MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMj
+gsMjExNTkxMDYxNywxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0x
+NDE4Mjg1NTc1XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

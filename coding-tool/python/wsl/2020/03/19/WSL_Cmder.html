@@ -323,11 +323,13 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3.7-venv
 <span class="c">#(가상환경을 모아둘 폴더로 이동. 없다면 하나 만들어라.)</span>
-~<span class="nv">$ </span><span class="nb">sudo </span>python <span class="nt">-m</span> venv |your-venv|
+~<span class="nv">$ </span>python <span class="nt">-m</span> venv |your-venv|
 ~<span class="nv">$ </span><span class="nb">source</span> |your-venv|/bin/activate 
 <span class="c"># 해당 디렉토리까지 이동해서 source 명령을 실행해도 된다. </span>
 </code></pre></div></div>
+
 <ul>
+  <li>가상환경을 만들 때, 즉 <code class="highlighter-rouge">python -m venv...</code>에서 <code class="highlighter-rouge">sudo</code>를 안 쓰게 좋다. 이렇게 가상환경을 만들면 해당 디렉토리가 root의 소유가 된다. VS Co</li>
   <li>만일 home/.pyvenv 아래 pandas라는 환경을 깔았다면,</li>
 </ul>
 
@@ -480,13 +482,13 @@ code |any-your-file| <span class="c"># 특정 파일을 VS Code에서 실행 </s
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjUyNjMxMCwtNzU5Mzk5Njg2LDMyMj
-EwMTAxOCwtMTg3ODY3NDgwMSwtMzM2NTE2NTQ3LC02MTM2NjUy
-MjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLDEwNjkzOTg4ODIsMT
-UwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4NTQ1Mjk5LC01NTI1
-MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMjgsMjExNTkxMDYxNy
-wxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0xNDE4Mjg1NTc1LC0x
-NjcwNTk2NDg1XX0=
+eyJoaXN0b3J5IjpbLTEyODM5NjgyOTgsLTY3NjUyNjMxMCwtNz
+U5Mzk5Njg2LDMyMjEwMTAxOCwtMTg3ODY3NDgwMSwtMzM2NTE2
+NTQ3LC02MTM2NjUyMjIsMTgxNTUyMzc1OSwtMzMxMDQ2MDIwLD
+EwNjkzOTg4ODIsMTUwMjY4NzM0NCwtOTI1Nzg4Mzk3LC0yMDI4
+NTQ1Mjk5LC01NTI1MzY4NzAsLTQ2Njc1OTk1OCw4MDI1MjYxMj
+gsMjExNTkxMDYxNywxMDc2MDE2MzQ3LC0yMDEzNTk3OTg3LC0x
+NDE4Mjg1NTc1XX0=
 -->
 <div class="footnotes">
   <ol>
