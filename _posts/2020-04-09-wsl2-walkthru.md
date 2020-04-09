@@ -10,18 +10,18 @@ categories: [wsl]
 
 격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.  
 
-WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에서 정식으로 포함될 예정이다.
+WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에 정식으로 포함될 예정이다.
 
-이 포스트를 통해 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 정리용임을 밝혀둔다. 
+이 포스트는 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리하기 위한 용도다. 역시나 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 것임을 밝혀둔다. 
 
 ## Ubuntu 18.04 설치 
 
 - [여기](https://docs.microsoft.com/ko-kr/windows/wsl/install-win10)를 참고하면 되겠다. 
-- 다른 리눅스를 써도 좋겠지만, 가장 대중적인 Ubuntu를 쓰면 좋겠다. 
+- 다른 리눅스를 써도 좋다. 일단 가장 대중적인 Ubuntu로 가보자. 
 
 ## Windows Terminal 
 
-- [이전](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. 이 앱 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 그리 어렵지 않게 가능하다. 안 쓸 이유가 없다. 
+- [이전](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. Windows Terminal 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 그리 어렵지 않게 가능하다. 안 쓸 이유가 없다. 
 - 한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 좀 짜증나고 헛갈리겠으나 못 쓸 정도는 아니니, 참고 넘어가자. 
 -  커스터마이즈는 VS Code를 활용해서 쉽게 구현할 수 있다.  [여기](https://dev.to/expertsinside/how-to-customize-the-new-windows-terminal-with-visual-studio-code-56b1)를 참고하자. 
 
@@ -124,10 +124,10 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDgwMTQzNCwtMTYxNTY4MDg1NSw0OD
-M4NzEzMDYsODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1
-LC04NzA1ODkxNSw1NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2OD
-A0Nzg3LC0xMDE3MTY5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkz
-MCwtMjA1NzgyOTc4MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMj
-A3Mjc0OTAxN119
+eyJoaXN0b3J5IjpbMTM4OTM5ODc3LC0xNjE1NjgwODU1LDQ4Mz
+g3MTMwNiw4NjA1NzQxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUs
+LTg3MDU4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MD
+Q3ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMw
+LC0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMD
+cyNzQ5MDE3XX0=
 -->
