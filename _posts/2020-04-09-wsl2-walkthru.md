@@ -108,12 +108,10 @@ kubectl expose deployment hello-minikube --type NodePort
 ## Best Practices for python
 
 - wsl 2에 파이썬을 넣고 쓴다면 아래와 같은 두 가지 원칙을 유지하면 좋다. 
-
 	1. conda 같은 배포판 말고 그냥 파이썬을 쓰자. 
 	2. 디폴트 가상 환경 venv를 활용하자. 
 
 - 이 두가지 원칙을 예시한 아래의 포스팅을 참고하시라.  
-
 	1. [네이티브 파이썬 설치](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html)
 	2. [python venv 활용](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)
 
@@ -134,10 +132,10 @@ kubectl expose deployment hello-minikube --type NodePort
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgzNjU4MTEsLTE2MTU2ODA4NTUsND
-gzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0
-NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
-gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
-MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
-IwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTE4NDgxNjA0OTksLTE5MTgzNjU4MTEsLT
+E2MTU2ODA4NTUsNDgzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMz
+NTg5LC00OTkzMTk0NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMj
+I4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0
+OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OC
+wtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
 -->
