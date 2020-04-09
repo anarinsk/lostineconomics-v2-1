@@ -36,7 +36,7 @@ wsl.exe -l -v # in Ubuntu terminal
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_2.png){: style="textalign:center; " width="600"}
 
-- 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 가상 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl 2로 잘 나타나야 한다.  
+- 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 가상 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl version 2로 잘 나타나야 한다.  
 - 하나 알 수 있는 사실. Ubuntu 터미널 안에서 윈도우 앱도 실행할 수 있는 점. 
 
 아래 두 명령어를 통해서는 버전을 설정하거나 혹은 사용중인 배포판을 디폴트로 설정할 수 있겠다. 
@@ -124,9 +124,9 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyNzgzMTk1LDQ4Mzg3MTMwNiw4NjA1Nz
-QxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUsLTg3MDU4OTE1LDU2
-MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNj
-k1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMDU3ODI5Nzgy
-LDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
+eyJoaXN0b3J5IjpbLTgyOTQ4MDE1Nyw0ODM4NzEzMDYsODYwNT
+c0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1LC04NzA1ODkxNSw1
+NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MT
+Y5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4
+MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
 -->
