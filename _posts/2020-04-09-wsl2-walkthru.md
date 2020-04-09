@@ -71,7 +71,7 @@ wsl --set-default Ubuntu-18.04
 - docker가 잘 돌고 있는지 확인하고 싶다면 헬로우월드를 돌려보면 되겠다. 
 
 ```shell
-sudo docker run hello-world
+~$ sudo docker run hello-world
 ```
 
 - 내가 docker를 Ubuntu에 깐 적이 없어도 아래 같이 잘 출력될 것이다. 리눅스 배포판에 맞춰서 연동되는 개념이라고 여기면 되겠다. 
@@ -90,7 +90,7 @@ sudo docker run hello-world
 
 ```shell
 ~$ kubectl run hello-minikube --image k8s.gcr.io/echoserver:1.10 --port 8080
-kubectl expose deployment hello-minikube --type NodePort
+~$ kubectl expose deployment hello-minikube --type NodePort
 ```
 
 돌고 있는 서비스의 정보를 확인하자. 
@@ -132,10 +132,10 @@ kubectl expose deployment hello-minikube --type NodePort
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDgxNjA0OTksLTE5MTgzNjU4MTEsLT
-E2MTU2ODA4NTUsNDgzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMz
-NTg5LC00OTkzMTk0NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMj
-I4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0
-OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OC
-wtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTM0NzMwMTEyMywtMTg0ODE2MDQ5OSwtMT
+kxODM2NTgxMSwtMTYxNTY4MDg1NSw0ODM4NzEzMDYsODYwNTc0
+MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1LC04NzA1ODkxNSw1Nj
+E2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MTY5
+NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4Mi
+wxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
 -->
