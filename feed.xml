@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T06:35:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도우가 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T06:43:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도우가 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 더할 나위 없다. 좋다. 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰에서 제공하는 기능하다.  상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서는 정식으로 포함되는 것이 확정되었다.&lt;/p&gt;
 
@@ -1303,6 +1303,9 @@ Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=
 Upgrade now? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y]es, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;N]o, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;A]ll, &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Q]uit y
 ...
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;만일 가상환경 내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt;가 필요하다면, 각 가상환경 내에 깔아야 한다는 점을 기억하자.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;connect-to-vs-code&quot;&gt;Connect to VS Code&lt;/h2&gt;
 
@@ -1408,13 +1411,13 @@ code |any-your-file| &lt;span class=&quot;c&quot;&gt;# 특정 파일을 VS Code�
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NzMxMTI0NiwtNjc2NTI2MzEwLC03NT
-kzOTk2ODYsMzIyMTAxMDE4LC0xODc4Njc0ODAxLC0zMzY1MTY1
-NDcsLTYxMzY2NTIyMiwxODE1NTIzNzU5LC0zMzEwNDYwMjAsMT
-A2OTM5ODg4MiwxNTAyNjg3MzQ0LC05MjU3ODgzOTcsLTIwMjg1
-NDUyOTksLTU1MjUzNjg3MCwtNDY2NzU5OTU4LDgwMjUyNjEyOC
-wyMTE1OTEwNjE3LDEwNzYwMTYzNDcsLTIwMTM1OTc5ODcsLTE0
-MTgyODU1NzVdfQ==
+eyJoaXN0b3J5IjpbLTIwNDIxOTY5NSwtNzg3MzExMjQ2LC02Nz
+Y1MjYzMTAsLTc1OTM5OTY4NiwzMjIxMDEwMTgsLTE4Nzg2NzQ4
+MDEsLTMzNjUxNjU0NywtNjEzNjY1MjIyLDE4MTU1MjM3NTksLT
+MzMTA0NjAyMCwxMDY5Mzk4ODgyLDE1MDI2ODczNDQsLTkyNTc4
+ODM5NywtMjAyODU0NTI5OSwtNTUyNTM2ODcwLC00NjY3NTk5NT
+gsODAyNTI2MTI4LDIxMTU5MTA2MTcsMTA3NjAxNjM0NywtMjAx
+MzU5Nzk4N119
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
