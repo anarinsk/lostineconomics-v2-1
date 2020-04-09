@@ -102,7 +102,7 @@ kubectl describe service hello-minikube
 
 1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
 2. venv를 활용한다. 
-
+&nbsp;
 
 - 이 두가지 원칙을 구현한 [가이드](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)를 이미 소개한 바 있다. 
 - 아니면 도커로 파이썬 환경을 끌어와 쓰는 것도 가능하다. 
@@ -121,9 +121,9 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODEzMzU4OSwtNDk5MzE5NDUsMTc5ND
-g0MzAyNSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUs
-MTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1OD
-U1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3
-OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTEwNzUwMTI3NDMsMTAxODEzMzU4OSwtND
+k5MzE5NDUsMTc5NDg0MzAyNSwtODcwNTg5MTUsNTYxNjM2NTY3
+LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMT
+g3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1
+ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
 -->
