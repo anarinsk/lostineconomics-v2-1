@@ -100,13 +100,13 @@ kubectl describe service hello-minikube
 
 ## Best Practices for python 
 
-1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
-2. venv를 활용한다. 
-&nbsp;
+- 거두절미, 다음과 같은 두 가지 원칙으로 파이썬을 운용하자.
+	1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
+	2. venv를 활용한다. 
 
 - 이 두가지 원칙을 예시한 아래의 포스팅을 참고하시라.  
-	- [포스팅 1](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)
-	- [포스팅 2](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)
+	1. [네이티브 파이썬 설치](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html)
+	2. [python venv 활용](https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html)
 
 - 아니면 도커로 파이썬 환경을 끌어와 쓰는 것도 가능하다. 
 
@@ -124,9 +124,9 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OT
-MxOTQ1LDE3OTQ4NDMwMjUsLTg3MDU4OTE1LDU2MTYzNjU2Nywt
-MTIyODA3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNjk1MjIsLTE4Nz
-Q2NDk1NDAsNTg1NTkxOTMwLC0yMDU3ODI5NzgyLDEzNTYzNTg1
-ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
+eyJoaXN0b3J5IjpbNDgzODcxMzA2LDg2MDU3NDE2OCwxMDE4MT
+MzNTg5LC00OTkzMTk0NSwxNzk0ODQzMDI1LC04NzA1ODkxNSw1
+NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MT
+Y5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4
+MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
 -->
