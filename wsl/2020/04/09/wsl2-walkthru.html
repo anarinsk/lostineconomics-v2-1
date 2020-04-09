@@ -171,8 +171,8 @@ window.onload = wrap_img;
 <h2 id="windows-terminal">Windows Terminal</h2>
 
 <ul>
-  <li><a href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">이전</a>에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. Windows Terminal 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 그리 어렵지 않게 가능하다. 안 쓸 이유가 없다.</li>
-  <li>한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 좀 짜증나고 헛갈리겠으나 못 쓸 정도는 아니니, 참고 넘어가자.</li>
+  <li><a href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">이전</a>에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. Windows Terminal 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 어렵지 않게 가능하다. 안 쓸 이유가 없다.</li>
+  <li>한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 터미널 외부에서는 기존 방식이고 안에서는 SHIFT가 더해진 방식이다. 살짝 의아하지만 못 쓸 정도는 아니니까 참고 넘어가자.</li>
   <li>커스터마이즈는 VS Code를 활용해서 쉽게 구현할 수 있다.  <a href="https://dev.to/expertsinside/how-to-customize-the-new-windows-terminal-with-visual-studio-code-56b1">여기</a>를 참고하자.</li>
 </ul>
 
@@ -196,6 +196,8 @@ wsl.exe <span class="nt">-l</span> <span class="nt">-v</span> <span class="c"># 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">--set-version</span> <span class="o">(</span>distro name<span class="o">)</span> 2
 wsl <span class="nt">--set-default</span> &lt;distro name&gt;
 </code></pre></div></div>
+
+<p>예컨대, Ubuntu-18.04</p>
 
 <h2 id="docker-desktop">Docker Desktop</h2>
 
@@ -286,7 +288,7 @@ kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTM5ODc3LC0xNjE1NjgwODU1LDQ4Mz
+eyJoaXN0b3J5IjpbNDY0Mjc4NzcxLC0xNjE1NjgwODU1LDQ4Mz
 g3MTMwNiw4NjA1NzQxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUs
 LTg3MDU4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MD
 Q3ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMw
