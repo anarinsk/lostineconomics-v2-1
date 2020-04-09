@@ -29,7 +29,7 @@ WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. �
 
 ```shell
 wsl -l -v # in Powershell or cmd 
-wsl.exe -l -v # in Ununtu terminal 
+wsl.exe -l -v # in Ubuntu terminal 
 ```
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_1.png){: style="textalign:center; " width="600"}
@@ -124,9 +124,9 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzI3MTgsNDgzODcxMzA2LDg2MDU3ND
-E2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUsNTYx
-NjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OT
-UyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIs
-MTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTIyMzIzOTYyLDQ4Mzg3MTMwNiw4NjA1Nz
+QxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUsLTg3MDU4OTE1LDU2
+MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcsLTEwMTcxNj
+k1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMDU3ODI5Nzgy
+LDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
 -->
