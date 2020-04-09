@@ -63,7 +63,7 @@ $ |your-python-directory|/Scripts/activate
 $ python -m pip install --upgrade pip
 ```  
 
-- 반드시 깔 필요는 없지만 `conda`에 준하게 패키지 관리를 하고 싶다면, 아래 패키지를 깔자. 
+- 반드시 깔 필요는 없지만 `conda`에 준하게 패키지 관리를 하고 싶다면, `pip-review` 패키지를 깔자. 
 
 ```bash
 $ pip3 install pip-review # pip-review 설치 
@@ -128,9 +128,9 @@ $ echo "alias python='winpty python.exe'" >> ~/.bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTAwMjYxMiwzMzIzMDk2MTIsLTEzMT
-Y4OTc3MTYsLTIwMDk1NjE1NzksMTcyNzMxMzQyMCwtMTIzMjA2
-Njk1NSwtMTkwNjE3ODU2NiwyMDY0OTM1MTQwLDgzNzg0Mjg2OC
-wtMTYwMDA4ODE0NCwtMTcyNjMyMjI5MCwtMzA0ODg0NzI0LC0x
-NDk4NjA0Nzc4LC0xMDEyMTk4MTQsLTEyNDExNzg4OTVdfQ==
+eyJoaXN0b3J5IjpbOTIzNzAzNTk0LDMzMjMwOTYxMiwtMTMxNj
+g5NzcxNiwtMjAwOTU2MTU3OSwxNzI3MzEzNDIwLC0xMjMyMDY2
+OTU1LC0xOTA2MTc4NTY2LDIwNjQ5MzUxNDAsODM3ODQyODY4LC
+0xNjAwMDg4MTQ0LC0xNzI2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0
+OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMTI0MTE3ODg5NV19
 -->
