@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T09:13:19-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T09:14:30-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2로 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에서 정식으로 포함될 예정이다.&lt;/p&gt;
 
-&lt;p&gt;그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 ‘나놈’을 위한 정리용임을 밝혀둔다.&lt;/p&gt;
+&lt;p&gt;이 포스트를 통해 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 ‘나놈’을 위한 정리용임을 밝혀둔다.&lt;/p&gt;
 
 &lt;h2 id=&quot;ubuntu-1804-설치&quot;&gt;Ubuntu 18.04 설치&lt;/h2&gt;
 
@@ -15,7 +15,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html&quot;&gt;이전&lt;/a&gt;에 CLI 도구로 Cmder를 추천한 바 있다. 그런데, 1004 버전부터 MS가 공식 터미널 앱을 넣어 놓았다. 이 앱 하나면 PowerShell, Windows cmd, Unbuntu를 탭으로 자유롭게 오갈 수 있다. 속도도 빠르고 커스터마이징도 그리 어렵지 않게 가능하다. 안 쓸 이유가 없다.&lt;/li&gt;
-  &lt;li&gt;한가지 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 좀 짜증나고 헛갈리면 못 쓸 정도는 아니니, 참고 넘어가자.&lt;/li&gt;
+  &lt;li&gt;한가지 단점. 복붙이 자유롭지 않다고 바로 느낄텐데, 터미널 안에서는 CRTL-C/V 대신 CRTL+SHIFT-C/V로 다시 키매핑이 되었다. 좀 짜증나고 헛갈리면 못 쓸 정도는 아니니, 참고 넘어가자.&lt;/li&gt;
   &lt;li&gt;커스터마이즈는 VS Code를 활용해서 쉽게 구현할 수 있다.  &lt;a href=&quot;https://dev.to/expertsinside/how-to-customize-the-new-windows-terminal-with-visual-studio-code-56b1&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -129,11 +129,12 @@ kubectl expose deployment hello-minikube &lt;span class=&quot;nt&quot;&gt;--type
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODE0OTksNDgzODcxMzA2LDg2MDU3ND
-E2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUsNTYx
-NjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNzE2OT
-UyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIs
-MTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTEwMjk5NTUzODIsNDgzODcxMzA2LDg2MD
+U3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUs
+NTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNz
+E2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3
+ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ
+==
 --&gt;</content><author><name></name></author><summary type="html">격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다.</summary></entry><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
