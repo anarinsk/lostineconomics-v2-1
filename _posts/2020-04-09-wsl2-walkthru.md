@@ -106,7 +106,7 @@ kubectl describe service hello-minikube
 
 ## git, also natively 
 
-- 이제 git도 윈도우 용을 깔 필요가 없다! wsl 2 ubuntu에 탑재된 녀석을 쓰면 된다. 윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 `/mnt/c`, `/mnt/d`와 같은 식으로 이미 ubuntu root 디렉토리에 마운트가 되어 있다. 여기서 접근하면 원도용 폴더로도 쉽게 접근할 수 있다. 
+- 이제 git도 윈도우 용을 깔 필요가 없다! wsl 2 ubuntu에 탑재된 녀석을 쓰면 된다. 윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 `/mnt/c`, `/mnt/d`와 같은 식으로 이미 ubuntu root 디렉토리에 마운트가 되어 있다. wsl 내에서도 원도용 폴더로도 쉽게 접근할 수 있다. 
 
 ###  github login 
 
@@ -118,7 +118,7 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNT
-g1NTkxOTMwLC0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2
-Nzk1MCwyMDcyNzQ5MDE3XX0=
+eyJoaXN0b3J5IjpbMTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMT
+g3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1
+ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ==
 -->
