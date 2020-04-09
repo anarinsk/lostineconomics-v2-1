@@ -36,7 +36,7 @@ wsl.exe -l -v # in Ubuntu terminal
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_2.png){: style="textalign:center; " width="600"}
 
-- 만일 PowerShell이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 가상 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl version 2로 잘 나타나야 한다.  
+- 만일 PowerShell(PS)이나 cmd 안에서 친다면 위와 같이, 그리고 Ubuntu 터미널 안에서 친다면 아래와 같이 치면 된다. 자신이 쓰고 있는 가상 OS의 이름과 버전을 확인할 수 있다. 보시는것처럼 wsl version 2로 잘 나타나야 한다.  
 - 하나 알 수 있는 사실. Ubuntu 터미널 안에서 윈도우 앱도 실행할 수 있다.
 
 아래 두 명령어를 통해서는 버전을 설정하거나 혹은 사용중인 배포판을 디폴트로 설정할 수 있겠다. 
@@ -46,11 +46,16 @@ wsl --set-version (distro name) 2
 wsl --set-default <distro name>
 ```
 
-예컨대, Ubuntu-18.04
+예컨대, Ubuntu-18.04를 기본 배포판으로 설정하고 싶다면 아래와 같이 PS에서 실행하면 된다. 
+
+```shell
+wsl --set-default Ubuntu-18.04 
+```
+
 
 ## Docker Desktop 
 
-- 만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 깔아주는 일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다. 
+- 만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 설치해야 한다.  일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다. 
 - [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스 터미널을 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
 
 ![]({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="700"}
@@ -126,10 +131,10 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0Mjc4NzcxLC0xNjE1NjgwODU1LDQ4Mz
-g3MTMwNiw4NjA1NzQxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUs
-LTg3MDU4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MD
-Q3ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMw
-LC0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMD
-cyNzQ5MDE3XX0=
+eyJoaXN0b3J5IjpbLTEwOTE1ODAyODIsLTE2MTU2ODA4NTUsND
+gzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0
+NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
+gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
+MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
+IwNzI3NDkwMTddfQ==
 -->
