@@ -8,7 +8,7 @@ categories: [wsl]
 
 ---
 
-격세지감이다. 적으로 삼고 아웅다웅하던 윈도우가 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다. 
+격세지감이다. 적으로 삼고 아웅다웅하던 윈도 와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 위대한 기업이다. 
 
 WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 더할 나위 없다. 좋다. 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰에서 제공하는 기능하다.  상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에서는 정식으로 포함되는 것이 확정되었다. 
 
@@ -98,10 +98,10 @@ kubectl describe service hello-minikube
 ![](https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-09.png){: style="textalign:center; " width="600"}
 
 
-## Best Practices for python 
+estacticer thon 
 
 - 거두절미, 다음과 같은 두 가지 원칙으로 파이썬을 운용하자.
-	1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
+	## Best Practices for py1. conda 같은 거 쓰지말고 그냥 native python을 쓴다. 
 	2. venv를 활용한다. 
 
 - 이 두가지 원칙을 예시한 아래의 포스팅을 참고하시라.  
@@ -124,8 +124,8 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzODcxMzA2LDg2MDU3NDE2OCwxMDE4MT
-MzNTg5LC00OTkzMTk0NSwxNzk0ODQzMDI1LC04NzA1ODkxNSw1
+eyJoaXN0b3J5IjpbMTQ3MDc0NDU4NSw0ODM4NzEzMDYsODYwNT
+c0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1LC04NzA1ODkxNSw1
 NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MT
 Y5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4
 MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
