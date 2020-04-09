@@ -114,16 +114,16 @@ kubectl describe service hello-minikube
 ###  github login 
 
 - 하나 문제가 될 만한 것은 github의 로그인이다. 매번 아이디/패스워드를 쳐 넣기 귀찮을 수 있다. 
-- 좋은 해결책은 rsa 공개키를 생성해서 ssh로 로그인 터널을 만들어두는 것이다. git별로 클론할 때 한번만 해두면 되니 꽤 편리하다. 자세한 것은 [여기](https://proni.tistory.com/entry/%F0%9F%90%A7-Ubuntu-scp-ssh-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8%EC%95%94%ED%98%B8-%EC%97%86%EC%9D%B4-%EC%82%AC%EC%9A%A9%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EA%B8%B0?category=381103)를 참고하자. 
+- 좋은 해결책은 rsa 공개키를 생성해서 ssh로 로그인 터널을 만들어두는 것이다. git별로 클론할 때 한번만 해두면 되니 꽤 편리하다. 자세한 것은 [여기](https://proni.tistory.com/entry/%F0%9F%90%A7-Ubuntu-Git-username-password-%EC%97%86%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)를 참고하자. 
 - 단 사내 네트워크 같은 곳에 물려 있을 경우 ssh 접근이 원활하지 않을 수 있다. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTMxOTQ1LDE3OTQ4NDMwMjUsLTg3MD
-U4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3ODcs
-LTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC0yMD
-U3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcyNzQ5
-MDE3XX0=
+eyJoaXN0b3J5IjpbMTAxODEzMzU4OSwtNDk5MzE5NDUsMTc5ND
+g0MzAyNSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUs
+MTU3NjgwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1OD
+U1OTE5MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3
+OTUwLDIwNzI3NDkwMTddfQ==
 -->
