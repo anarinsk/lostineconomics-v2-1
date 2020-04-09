@@ -51,6 +51,7 @@ wsl --set-default <distro name>
 - [docker desktop for windows](https://docs.docker.com/docker-for-windows/edge-release-notes/)의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스에서 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다! 
 
 []({{ site.baseurl }}/images/wsl2-wt/fig_3.png){: style="textalign:center; " width="600"}
+
 []({{ site.baseurl }}/images/wsl2-wt/fig_4.png){: style="textalign:center; " width="600"}
 
 - 도커의 경우 여러 버전의 리눅스가 깔려 있을 경우 선택해서 지원이 가능하다. 
@@ -115,6 +116,6 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNz
-I3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMT
+Y2NzY3OTUwLDIwNzI3NDkwMTddfQ==
 -->
