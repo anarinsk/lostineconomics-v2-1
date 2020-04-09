@@ -12,7 +12,7 @@ categories: [wsl]
 
 WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 더할 나위 없다. 좋다. 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰에서 제공하는 기능하다.  상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에서는 정식으로 포함되는 것이 확정되었다. 
 
-그간 짬짬이 써오면서 정리해 두었던 것을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 정리용임을 밝혀둔다. 
+그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 정리용임을 밝혀둔다. 
 
 ## Ubuntu 18.04 설치 
 
@@ -103,5 +103,5 @@ kubectl describe service hello-minikube
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Mjc0OTAxN119
+eyJoaXN0b3J5IjpbLTE2Njc2Nzk1MCwyMDcyNzQ5MDE3XX0=
 -->
