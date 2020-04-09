@@ -8,9 +8,9 @@ categories: [wsl]
 
 ---
 
-격세지감이다. 적으로 삼고 아웅다웅하던 윈도와 리눅스가 이제 한 몸이 되었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브처럼 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 오고야 말았다. MS는 역시 대단한 기업이다. 
+격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.  
 
-WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2로 모든 리눅스의 기능을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에서 정식으로 포함될 예정이다.
+WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점 별도로 신청하면 받을 수 있는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에서 정식으로 포함될 예정이다.
 
 이 포스트를 통해 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리해볼까 한다. 역시 언제나처럼 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 정리용임을 밝혀둔다. 
 
@@ -124,10 +124,10 @@ estacticer thon
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTU2ODA4NTUsNDgzODcxMzA2LDg2MD
-U3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0NSwtODcwNTg5MTUs
-NTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3NjgwNDc4NywtMTAxNz
-E2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5MzAsLTIwNTc4Mjk3
-ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLDIwNzI3NDkwMTddfQ
-==
+eyJoaXN0b3J5IjpbMTYyMDgwMTQzNCwtMTYxNTY4MDg1NSw0OD
+M4NzEzMDYsODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1
+LC04NzA1ODkxNSw1NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2OD
+A0Nzg3LC0xMDE3MTY5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkz
+MCwtMjA1NzgyOTc4MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMj
+A3Mjc0OTAxN119
 -->
