@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:48:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-09T15:49:43-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에 정식으로 포함될 예정이다.&lt;/p&gt;
 
@@ -48,7 +48,7 @@ wsl &lt;span class=&quot;nt&quot;&gt;--set-default&lt;/span&gt; &amp;lt;distro n
 &lt;h2 id=&quot;docker-desktop&quot;&gt;Docker Desktop&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;만일 native ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 설치해야 한다.  일을 해야 할 것이다. 윈도에서는 그럴 필요가 없다.&lt;/li&gt;
+  &lt;li&gt;만일 Ubuntu를 쓰고 있다면 docker, kubernetes(k8s)를 별도로 설치해야 한다. wsl 2에서는 그럴 필요가 없다.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/docker-for-windows/edge-release-notes/&quot;&gt;docker desktop for windows&lt;/a&gt;의 엣지버전  v 2.2.3.0(43965) 이상을 깔면 윈도 상에서 리눅스 터미널을 쓸 때 docker와 k8s이 자연스럽게 설정된다. 그냥 터미널을 열고 쓰면 된다!&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -57,8 +57,7 @@ wsl &lt;span class=&quot;nt&quot;&gt;--set-default&lt;/span&gt; &amp;lt;distro n
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl2-wt/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;도커의 경우 여러 버전의 리눅스가 깔려 있을 경우 선택해서 지원이 가능하다.&lt;/li&gt;
-  &lt;li&gt;k8s 역시 마찬가지다.&lt;/li&gt;
+  &lt;li&gt;여러 버전의 리눅스가 깔려 있을 경우 윈도의 도커 앱에서 위 첫번째 화면에서처럼 선택해서 사용할  수 있다.&lt;/li&gt;
   &lt;li&gt;보다 상세한 내용은 &lt;a href=&quot;https://docs.docker.com/docker-for-windows/wsl-tech-preview/&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -134,12 +133,12 @@ kubectl expose deployment hello-minikube &lt;span class=&quot;nt&quot;&gt;--type
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE1ODAyODIsLTE2MTU2ODA4NTUsND
-gzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0
-NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
-gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
-MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
-IwNzI3NDkwMTddfQ==
+eyJoaXN0b3J5IjpbLTIzMTE5MDk0NSwtMTYxNTY4MDg1NSw0OD
+M4NzEzMDYsODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1
+LC04NzA1ODkxNSw1NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2OD
+A0Nzg3LC0xMDE3MTY5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkz
+MCwtMjA1NzgyOTc4MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMj
+A3Mjc0OTAxN119
 --&gt;</content><author><name></name></author><summary type="html">격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.</summary></entry><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
