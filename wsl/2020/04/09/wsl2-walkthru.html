@@ -260,10 +260,12 @@ kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
 <h2 id="best-practices-for-python">Best Practices for python</h2>
 
 <ul>
-  <li>wsl 2에 파이썬을 넣고 쓴다면 아래와 같은 두 가지 원칙을 유지하면 좋다.
+  <li>
+    <p>wsl 2에 파이썬을 넣고 쓴다면 아래와 같은 두 가지 원칙을 유지하면 좋다.</p>
+
     <ol>
       <li>conda 같은 배포판 말고 그냥 파이썬을 쓰자.</li>
-      <li>가상 환경 e</li>
+      <li>디폴트 가상 환경 venv를 활용하자.</li>
     </ol>
   </li>
   <li>
@@ -274,13 +276,16 @@ kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
       <li><a href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">python venv 활용</a></li>
     </ol>
   </li>
-  <li>아니면 도커로 파이썬 환경을 끌어와 쓰는 것도 가능하다.</li>
+  <li>
+    <p>도커로 특정 파이썬 환경을 끌어와 쓰는 것도 가능하다. 예를 들어 tensorflow 설정이 복잡하다면 그냥 docker로 끌어다쓰면 된다.</p>
+  </li>
 </ul>
 
 <h2 id="git-also-natively">git, also natively</h2>
 
 <ul>
-  <li>이제 git도 윈도우 용을 깔 필요가 없다! wsl 2 ubuntu에 탑재된 녀석을 쓰면 된다. 윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 <code class="highlighter-rouge">/mnt/c</code>, <code class="highlighter-rouge">/mnt/d</code>와 같은 식으로 이미 ubuntu root 디렉토리에 마운트가 되어 있다. wsl 내에서도 원도용 폴더로도 쉽게 접근할 수 있다.</li>
+  <li>git도 모양 빠지게 윈도우 용을 별도로 깔 필요가 없다! 만세! wsl 2 ubuntu에 탑재된 녀석을 쓰면 된다.</li>
+  <li>윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 <code class="highlighter-rouge">/mnt/c</code>, <code class="highlighter-rouge">/mnt/d</code>와 같은 식으로 이미 Ubuntu root 디렉토리에 마운트가 되어 있다. wsl 내에서도 원도용 폴더로도 쉽게 접근할 수 있다.</li>
 </ul>
 
 <h3 id="github-login">github login</h3>
@@ -292,12 +297,12 @@ kubectl expose deployment hello-minikube <span class="nt">--type</span> NodePort
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Mzc3MjY4MCwtMTYxNTY4MDg1NSw0OD
-M4NzEzMDYsODYwNTc0MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1
-LC04NzA1ODkxNSw1NjE2MzY1NjcsLTEyMjgwNzQxNSwxNTc2OD
-A0Nzg3LC0xMDE3MTY5NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkz
-MCwtMjA1NzgyOTc4MiwxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMj
-A3Mjc0OTAxN119
+eyJoaXN0b3J5IjpbLTE5MTgzNjU4MTEsLTE2MTU2ODA4NTUsND
+gzODcxMzA2LDg2MDU3NDE2OCwxMDE4MTMzNTg5LC00OTkzMTk0
+NSwtODcwNTg5MTUsNTYxNjM2NTY3LC0xMjI4MDc0MTUsMTU3Nj
+gwNDc4NywtMTAxNzE2OTUyMiwtMTg3NDY0OTU0MCw1ODU1OTE5
+MzAsLTIwNTc4Mjk3ODIsMTM1NjM1ODU4OCwtMTY2NzY3OTUwLD
+IwNzI3NDkwMTddfQ==
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
