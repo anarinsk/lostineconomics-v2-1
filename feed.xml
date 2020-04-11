@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T06:22:40-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T06:26:47-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tensorflow = tf&lt;/li&gt;
+  &lt;li&gt;visual studio code = vsc&lt;/li&gt;
+  &lt;li&gt;windows subsystem for linux version 2 = wsl 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tf를 wsl 2에서 linux로 돌려보자.&lt;/li&gt;
+  &lt;li&gt;tf를 docker로 돌려보자.&lt;/li&gt;
+  &lt;li&gt;tf를 visual studio code(vsc) 위에서 돌려보자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;first-things-first&quot;&gt;First Things First&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;wsl 2를 세팅하자.&lt;/li&gt;
+  &lt;li&gt;docker desktop edge 버전 2.0 이상이 깔려 있어야 한다.&lt;/li&gt;
+  &lt;li&gt;vsc insider를 깔자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pulling-docker-image&quot;&gt;Pulling docker image&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이제 wsl 2를 통해 Ubuntu로 진입한다.&lt;/li&gt;
+  &lt;li&gt;도커가 제대로 설치되어 있다면 이미지들을 Ubuntu로 끌어올 수 있을 것이다. 시험 삼아서 tensorflow의 이미지를 끌어와보자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; tensorflow/tensorflow:latest-py3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;이제 wsl 2 - Ubuntu - docker 체제 아래 tf 컨테이너를 돌리는 데 성공했다!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;최종 목적은 태워진 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까?&lt;/li&gt;
+  &lt;li&gt;vsc 정식 버전에서는 되지 않았다. 혹시나해서 insder 버전, 즉 실험적인 기능을 조금 더 구현해 둔 버전을 깔아 보니 잘 되더라.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Extensions에서 remote를 검색하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote Development&lt;/code&gt;를 찾을 수 있다. 이 녀석은 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote WSL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote SSH&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote Container&lt;/code&gt; 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.
+    &lt;ul&gt;
+      &lt;li&gt;docker extension은 깔아도 좋고 안 깔아도 좋지만 docker를 쓸 거라면 깔아두도록 하자.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Extensions 중에서 remote explorer로 간 후 “container”를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이를 vsc에 어태치하면 끝이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어태치와 함께 별도의 창이 뜨면서 아래 그림처럼 컨테이너로서의 원격 접속이 잘 이루어졌음을 확인할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxNjM3MjgyMF19
+--&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에 정식으로 포함될 예정이다.&lt;/p&gt;
 
@@ -1006,94 +1076,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 eyJoaXN0b3J5IjpbMjA4MzkxNzcwNiwtMjk3MjI1MzIsMjA4Mz
 k4MDc0NF19
 --&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Sources</summary></entry><entry><title type="html">Following Gilbert Strang 3</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html" rel="alternate" type="text/html" title="Following Gilbert Strang 3" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html">&lt;h2 id=&quot;lu-decomposition&quot;&gt;LU Decomposition&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;큰 이슈는 없다.&lt;/li&gt;
-  &lt;li&gt;다만 이 녀석을 G-J 프로세스로 이해하면 흥미로운 구석이 있다.&lt;/li&gt;
-  &lt;li&gt;무선, 열 바꿈은 없다고 가정하자.&lt;/li&gt;
-  &lt;li&gt;이 상태에서 적당한 매트릭스 $\mathbf A$를 G-J 프로세스에 따라서 U 매트릭스(상삼각 행렬), 즉 Upper Triangular Matrix로 바꾼다고 해보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;⋯&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msub&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;E_1 \dotsb E_k {\mathbf A} = {\mathbf U}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83611em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;minner&quot;&gt;⋯&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.33610799999999996em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;p&gt;이제 $\mathbf A$ 앞에 붙은 오퍼레이터들의 역행렬을 왼쪽으로 곱해보자.&lt;/p&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;munder&gt;&lt;munder&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msubsup&gt;&lt;mo&gt;⋯&lt;/mo&gt;&lt;msubsup&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;mo stretchy=&quot;true&quot;&gt;⏟&lt;/mo&gt;&lt;/munder&gt;&lt;mo lspace=&quot;0em&quot; rspace=&quot;0em&quot;&gt;∗&lt;/mo&gt;&lt;/munder&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;{\mathbf A} = \underbrace{E_k^{-1} \dotsb E_1^{-1}}_{\ast} {\mathbf U}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.329243em;vertical-align:-1.4651349999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord munder&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641080000000001em;&quot;&gt;&lt;span style=&quot;top:-1.5348650000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord munder&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.864108em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-2.060561em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stretchy&quot; style=&quot;height:0.548em;min-width:1.6em;&quot;&gt;&lt;span class=&quot;brace-left&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'&gt;&lt;path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
- 35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
- 0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
--331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class=&quot;brace-center&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'&gt;&lt;path d='M199572 214
-c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
- 53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
- 11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
--5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class=&quot;brace-right&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'&gt;&lt;path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
- 28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
--174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.408561em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2914389999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;minner&quot;&gt;⋯&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.4435610000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.256439em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.9394389999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.4651349999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\ast$ 부분이 바로 $\mathbf L$ 매트릭스가 된다! 즉,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;D&lt;/mi&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;mo mathvariant=&quot;normal&quot;&gt;′&lt;/mo&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;{\mathbf A} = {\mathbf L} {\mathbf U} =  {\mathbf L} {\mathbf D}{\mathbf U^\prime}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.801892em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;D&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.801892em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;′&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;LU 분해란 매트릭스 $\mathbf A$를 $\mathbf U$로 만드는 과정에서 자연스럽게 등장한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;permutation&quot;&gt;Permutation&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;정의상 열바꿈을 수행하는 매트릭스를 뜻한다.&lt;/li&gt;
-  &lt;li&gt;왜 Permutation이 필요할까?
-    &lt;ul&gt;
-      &lt;li&gt;만일 pivot (대각선에 위치한 행렬)이 너무 작다면, 계산의 관점에서 효율적이지 않다.&lt;/li&gt;
-      &lt;li&gt;따라서 얘네들은 뒤로 미뤄주는 것이 좋다. 0으로 간주.
-        &lt;ul&gt;
-          &lt;li&gt;여기서는 pivot을 내림차순으로 배치해주는 매트릭스라고 생각해도 좋겠다.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;for Invertible $\mathbf A$,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mathbf{PA = LU}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;P is identity matrix which reordered rows.
-    &lt;ul&gt;
-      &lt;li&gt;어차피 열만 바꾸는 것이므로 0, 1을 한 열에 하나씩만 갖게 된다!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mtable rowspacing=&quot;0.24999999999999992em&quot; columnalign=&quot;right left&quot; columnspacing=&quot;0em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;I&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\begin{aligned}
-\mathbf P^{-1} &amp;amp; = \mathbf P^\mathrm T \\
-\mathbf P^\mathrm T \mathbf P &amp;amp; = \mathbf I
-\end{aligned}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:3.102662em;vertical-align:-1.301331em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mtable&quot;&gt;&lt;span class=&quot;col-align-r&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.801331em;&quot;&gt;&lt;span style=&quot;top:-3.91em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.864108em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.358669em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.301331em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;col-align-l&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.801331em;&quot;&gt;&lt;span style=&quot;top:-3.91em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.358669em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;I&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.301331em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;h2 id=&quot;transpose&quot;&gt;Transpose&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;생략한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;symmetric&quot;&gt;Symmetric&lt;/h2&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mathbf A^\mathrm T = \mathbf A&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8913309999999999em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\mathbf R^\mathrm T \mathbf R$ is always symmetric.
-    &lt;ul&gt;
-      &lt;li&gt;회귀 계수 구하는 식에서 $(\mathbf X^\mathrm T \mathbf X)$이 대목이 symmetric!&lt;/li&gt;
-      &lt;li&gt;$(\mathbf R^\mathrm T \mathbf R)^\mathrm T = \mathbf R^\mathrm T \mathbf R$ by rules of tranpose. 
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE4OTAzMDUsMTgzOTE0NDcyMywtMT
-AwNTk1MjIyOV19
---&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">LU Decomposition</summary></entry><entry><title type="html">WSL + Cmder + python</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html" rel="alternate" type="text/html" title="WSL + Cmder + python" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Sources</summary></entry><entry><title type="html">WSL + Cmder + python</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html" rel="alternate" type="text/html" title="WSL + Cmder + python" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;아주 친절한 가이드는 아니다. 이 내용을 모두 까먹을 미래의 나를 위한 포스팅이다.&lt;/li&gt;
@@ -1571,7 +1554,94 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 eyJoaXN0b3J5IjpbLTE2MjAzODcyNDYsLTY3OTQ3MTQ3MywxMz
 Y1Njc3OTczLDM1MzQzNDc5Nyw1MzkxNjc1NTUsNzc2MjAwNzcy
 LDE0OTY3NjQ3NTldfQ==
---&gt;</content><author><name></name></author><summary type="html">Vector Spaces</summary></entry><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
+--&gt;</content><author><name></name></author><summary type="html">Vector Spaces</summary></entry><entry><title type="html">Following Gilbert Strang 3</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html" rel="alternate" type="text/html" title="Following Gilbert Strang 3" /><published>2020-03-19T00:00:00-05:00</published><updated>2020-03-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/19/LU-permut.html">&lt;h2 id=&quot;lu-decomposition&quot;&gt;LU Decomposition&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;큰 이슈는 없다.&lt;/li&gt;
+  &lt;li&gt;다만 이 녀석을 G-J 프로세스로 이해하면 흥미로운 구석이 있다.&lt;/li&gt;
+  &lt;li&gt;무선, 열 바꿈은 없다고 가정하자.&lt;/li&gt;
+  &lt;li&gt;이 상태에서 적당한 매트릭스 $\mathbf A$를 G-J 프로세스에 따라서 U 매트릭스(상삼각 행렬), 즉 Upper Triangular Matrix로 바꾼다고 해보자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;⋯&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msub&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;E_1 \dotsb E_k {\mathbf A} = {\mathbf U}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.83611em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.30110799999999993em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;minner&quot;&gt;⋯&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.33610799999999996em;&quot;&gt;&lt;span style=&quot;top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.15em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;p&gt;이제 $\mathbf A$ 앞에 붙은 오퍼레이터들의 역행렬을 왼쪽으로 곱해보자.&lt;/p&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;munder&gt;&lt;munder&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msubsup&gt;&lt;mo&gt;⋯&lt;/mo&gt;&lt;msubsup&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msubsup&gt;&lt;/mrow&gt;&lt;mo stretchy=&quot;true&quot;&gt;⏟&lt;/mo&gt;&lt;/munder&gt;&lt;mo lspace=&quot;0em&quot; rspace=&quot;0em&quot;&gt;∗&lt;/mo&gt;&lt;/munder&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;{\mathbf A} = \underbrace{E_k^{-1} \dotsb E_1^{-1}}_{\ast} {\mathbf U}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.329243em;vertical-align:-1.4651349999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord munder&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641080000000001em;&quot;&gt;&lt;span style=&quot;top:-1.5348650000000001em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;∗&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord munder&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.864108em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-2.060561em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;stretchy&quot; style=&quot;height:0.548em;min-width:1.6em;&quot;&gt;&lt;span class=&quot;brace-left&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'&gt;&lt;path d='M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13
+ 35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688
+ 0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7
+-331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class=&quot;brace-center&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'&gt;&lt;path d='M199572 214
+c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
+ 53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3
+ 11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0
+-5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span class=&quot;brace-right&quot; style=&quot;height:0.548em;&quot;&gt;&lt;svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMaxYMin slice'&gt;&lt;path d='M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3
+ 28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237
+-174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.408561em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathdefault mtight&quot; style=&quot;margin-right:0.03148em;&quot;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.2914389999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;minner&quot;&gt;⋯&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8641079999999999em;&quot;&gt;&lt;span style=&quot;top:-2.4435610000000003em;margin-left:-0.05764em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.256439em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.9394389999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.4651349999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\ast$ 부분이 바로 $\mathbf L$ 매트릭스가 된다! 즉,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;D&lt;/mi&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;mo mathvariant=&quot;normal&quot;&gt;′&lt;/mo&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;{\mathbf A} = {\mathbf L} {\mathbf U} =  {\mathbf L} {\mathbf D}{\mathbf U^\prime}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.801892em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;D&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.801892em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;′&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LU 분해란 매트릭스 $\mathbf A$를 $\mathbf U$로 만드는 과정에서 자연스럽게 등장한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;permutation&quot;&gt;Permutation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;정의상 열바꿈을 수행하는 매트릭스를 뜻한다.&lt;/li&gt;
+  &lt;li&gt;왜 Permutation이 필요할까?
+    &lt;ul&gt;
+      &lt;li&gt;만일 pivot (대각선에 위치한 행렬)이 너무 작다면, 계산의 관점에서 효율적이지 않다.&lt;/li&gt;
+      &lt;li&gt;따라서 얘네들은 뒤로 미뤄주는 것이 좋다. 0으로 간주.
+        &lt;ul&gt;
+          &lt;li&gt;여기서는 pivot을 내림차순으로 배치해주는 매트릭스라고 생각해도 좋겠다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;for Invertible $\mathbf A$,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;L&lt;/mi&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;U&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mathbf{PA = LU}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;U&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;P is identity matrix which reordered rows.
+    &lt;ul&gt;
+      &lt;li&gt;어차피 열만 바꾸는 것이므로 0, 1을 한 열에 하나씩만 갖게 된다!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mtable rowspacing=&quot;0.24999999999999992em&quot; columnalign=&quot;right left&quot; columnspacing=&quot;0em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;P&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;I&lt;/mi&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\begin{aligned}
+\mathbf P^{-1} &amp;amp; = \mathbf P^\mathrm T \\
+\mathbf P^\mathrm T \mathbf P &amp;amp; = \mathbf I
+\end{aligned}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:3.102662em;vertical-align:-1.301331em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mtable&quot;&gt;&lt;span class=&quot;col-align-r&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.801331em;&quot;&gt;&lt;span style=&quot;top:-3.91em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.864108em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.358669em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.301331em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;col-align-l&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.801331em;&quot;&gt;&lt;span style=&quot;top:-3.91em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-2.358669em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;I&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.301331em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;h2 id=&quot;transpose&quot;&gt;Transpose&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생략한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;symmetric&quot;&gt;Symmetric&lt;/h2&gt;
+
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;T&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;bold&quot;&gt;A&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\mathbf A^\mathrm T = \mathbf A&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8913309999999999em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8913309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.113em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathrm mtight&quot;&gt;T&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68611em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathbf&quot;&gt;A&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\mathbf R^\mathrm T \mathbf R$ is always symmetric.
+    &lt;ul&gt;
+      &lt;li&gt;회귀 계수 구하는 식에서 $(\mathbf X^\mathrm T \mathbf X)$이 대목이 symmetric!&lt;/li&gt;
+      &lt;li&gt;$(\mathbf R^\mathrm T \mathbf R)^\mathrm T = \mathbf R^\mathrm T \mathbf R$ by rules of tranpose. 
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4ODE4OTAzMDUsMTgzOTE0NDcyMywtMT
+AwNTk1MjIyOV19
+--&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">LU Decomposition</summary></entry><entry><title type="html">Following Gilbert Strang 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html" rel="alternate" type="text/html" title="Following Gilbert Strang 2" /><published>2020-03-18T00:00:00-05:00</published><updated>2020-03-18T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/18/multiplication-inverse.html">&lt;h2 id=&quot;source&quot;&gt;Source&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FX4C-JpTFgY&quot;&gt;3. Multiplication and Inverse Matrices&lt;/a&gt;&lt;/p&gt;
 
@@ -1852,162 +1922,4 @@ E_{3} [{\mathbf A}|{\mathbf I}] &amp;amp; =
 eyJoaXN0b3J5IjpbMTU3NjI3ODkzOCwxODIwODcwMDQsMjE3NT
 UwOTA0XX0=
 --&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Source</summary></entry><entry><title type="html">Vanilla python with venv</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html" rel="alternate" type="text/html" title="Vanilla python with venv" /><published>2020-03-17T00:00:00-05:00</published><updated>2020-03-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html">&lt;h2 id=&quot;why&quot;&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;아나콘다 사가 개발한 conda는 무척 훌륭한 도구다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;assumption&quot;&gt;Assumption&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;당신은 윈도 이용자다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|this-is-desc|&lt;/code&gt;와 같이 표현된 것에서 “this-is-desc”는 각자의 컴퓨팅 환경을 뜻한다. 적당하게 이해하시라.&lt;/li&gt;
-  &lt;li&gt;git bash와 같이 bash 환경을 쓸 경우 슬래시(&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(&lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.python.org/&quot;&gt;https://www.python.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;취향대로 필요대로 깔도록 하자. 통상적인 윈도 환경이라면 64비트 설치하자. 보통 디폴트로 깔면 32비트가 깔린다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;virtual-environment&quot;&gt;Virtual Environment&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;가상 환경을 설정해보자. 보통 conda, virtualenv 같은 패키지를 써왔을 것이다.&lt;/li&gt;
-  &lt;li&gt;python 3.3 이후 버전부터 venv가 python 안에 포함되었다.&lt;/li&gt;
-  &lt;li&gt;python 가상 환경을 만들기 전에 일단 작업 중인 가상 환경을 모아둘 특정 디렉토리(폴더)를 지정하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;how-to-make-venv&quot;&gt;How to make venv&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;내 경우 적당한 디렉토리에 &lt;code class=&quot;highlighter-rouge&quot;&gt;.pyenv&lt;/code&gt; 라는 디렉토리를 만들었다.&lt;/li&gt;
-  &lt;li&gt;해당 디렉토리 안에서  가상 환경을 생성한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;|your-directory|/python.exe &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-environmet|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;  명령은 피하는 게 좋다. &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;를 쓰게 되면 환경으로 만들어진 디렉토리의 소유자가 root가 된다. 외부의 다른 앱, 소프트웨어가 해당 디렉토리를 조작할 수 없게 되서 작업이 원활하지 않을 수 있다.&lt;/li&gt;
-  &lt;li&gt;이제 가상 환경으로 진입한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;|your-python-directory|/Scripts/activate 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Powershell을 쓴다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;Activate.ps1&lt;/code&gt;을 실행하면 된다.&lt;/li&gt;
-  &lt;li&gt;이제 실행창 앞에 (&lt;code class=&quot;highlighter-rouge&quot;&gt;|name-of-your-environmet|&lt;/code&gt;)이 떠 있는 것을 볼 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;update-your-venv&quot;&gt;Update your venv&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;가상 환경을 만드는 이유는 무엇인가? 특정한 환경에서 안정적인 작업환경을 만들기 위해서다. 또한 뭔가 문제가 생겼을 때 가상 환경만 지우면 그만이다.&lt;/li&gt;
-  &lt;li&gt;가상 환경은 이제 막 설치된 상태이므로 반드시 필요한 업데이트들을 해줘야 한다.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;사용할 패키지&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;pip 업데이트다.
-    &lt;ul&gt;
-      &lt;li&gt;python 이용자라면 pip 업데이트를 굳이 설명할 필요가 없겠지!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;반드시 깔 필요는 없지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;conda&lt;/code&gt;에 준하게 패키지 관리를 하고 싶다면, &lt;code class=&quot;highlighter-rouge&quot;&gt;pip-review&lt;/code&gt; 패키지를 깔자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pip-review &lt;span class=&quot;c&quot;&gt;# pip-review 설치 &lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;py &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; pip_review &lt;span class=&quot;nt&quot;&gt;--local&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--interactive&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 설치된 패키지 업데이트 체크 &lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h3 id=&quot;how-to-choose-python-version&quot;&gt;How to choose python version&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;가상 환경에서 python 자체를 선택하고 싶다면 어떻게 해야 할까?&lt;/li&gt;
-  &lt;li&gt;아래 명령처럼 하면 된다. 원하는 버전에 python을 직접 호출해서 가상 환경을 만든다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;|your-directory|&amp;gt; C:&lt;span class=&quot;se&quot;&gt;\P&lt;/span&gt;ython34&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;ython.exe &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;with-vs-code&quot;&gt;With VS Code&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;VS code에서 해당 가상 환경을 어떻게 인식시킬 수 있을까?&lt;/li&gt;
-  &lt;li&gt;VS Code의 메뉴에서
-    &lt;ul&gt;
-      &lt;li&gt;&lt;kbd&gt;File&lt;/kbd&gt; → &lt;kbd&gt;Preference&lt;/kbd&gt; → &lt;kbd&gt;settings&lt;/kbd&gt;&lt;/li&gt;
-      &lt;li&gt;“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 적당한 디렉토리를 넣으면 되겠다.&lt;/li&gt;
-      &lt;li&gt;가상 환경이 이름이 &lt;code class=&quot;highlighter-rouge&quot;&gt;.pyvenv&lt;/code&gt;라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/vanilla-python/vscode.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;trouble-shooting&quot;&gt;Trouble Shooting&lt;/h2&gt;
-
-&lt;h3 id=&quot;for-git-bash&quot;&gt;For git bash&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;원도우 환경에 git bash를 깔아서 쓰고 있다면 몇가지 곤란한 점이 있다.
-    &lt;ul&gt;
-      &lt;li&gt;우선 python 명령어가 먹지 않는다.&lt;/li&gt;
-      &lt;li&gt;가상 환경 활성화를 할 수 없다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이 문제는 쉽게 해결이 가능하다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;winpty python.exe
-Python 3.7.6 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;default, Oct  2 2018, 09:18:58&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-Type &lt;span class=&quot;s2&quot;&gt;&quot;help&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;copyright&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;credits&quot;&lt;/span&gt; or &lt;span class=&quot;s2&quot;&gt;&quot;license&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;more information.
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;원하는 버전의 python을 실행하려면 이를 응용하면 되겠다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;winpty |your-python-directory|/python.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;매번 이렇게 실행할 수 없으니 git bash 환경에 넣어두자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;alias python='winpty python.exe'&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;directory-changed&quot;&gt;Directory changed&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;디렉토리를 만들면 경로나 이름을 바꾸지 않는 게 좋다. 바꾸느냐 차라리 그냥 새로 만드는 게 낫다. 꼭 바꿔야 한다면, 아래를 바꾸면 된다.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;activate.bat&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;activate.ps1&lt;/code&gt; 파일을 열고 path 부분을 바꿔주어야 한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzNzAzNTk0LDMzMjMwOTYxMiwtMTMxNj
-g5NzcxNiwtMjAwOTU2MTU3OSwxNzI3MzEzNDIwLC0xMjMyMDY2
-OTU1LC0xOTA2MTc4NTY2LDIwNjQ5MzUxNDAsODM3ODQyODY4LC
-0xNjAwMDg4MTQ0LC0xNzI2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0
-OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMTI0MTE3ODg5NV19
---&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;conda가 여러모로 편하다. 하지만 conda를 써야겠다면, conda 전체를 깔지 말고 minconda를 써보시기를 권한다. conda는 쓸 데 없는 것을 너무 많이 깔아버리거든… &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Why</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Source</summary></entry></feed>
