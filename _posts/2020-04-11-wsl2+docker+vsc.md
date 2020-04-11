@@ -97,17 +97,21 @@ categories: [wsl, visual-studio-code, docker]
 - 이렇게 별도의 작업을 거친 컨테이너는 애초에 끌고 왔던 이미지와는 달라졌을 것이다. 그런데 도커의 속성상 콘테이너를 내리게 되면 변경했던 내용들은 다 사라진다. 이렇게 변경된 콘테이너를 저장할 수 있어야 한다. 
 
 ```shell
-docker ps 
-[실행 중인 컨테이ㄴ
-docker commit [container-name or id-of-container] [name-of-image]
+~$ docker ps 
+[실행 중인 컨테이너 목록 확인] 
+~$ docker commit [container-name or id-of-container] [name-of-image]
 ```
 
-``
+- 이제 저장된 이미지를 확인해보자. 
+
+```shell
+docker images 
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzA2OTcwNiwtMjk0NTc0Mzk0LDE5NT
+eyJoaXN0b3J5IjpbMTA1NDA3ODM4OSwtMjk0NTc0Mzk0LDE5NT
 Y0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3
 NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
