@@ -61,7 +61,8 @@ categories: [wsl, visual-studio-code, docker]
 
 ## For what? 
 
-- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 
+- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
+- vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE0OTEzNDUsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbMTU5NzU0NTM2MCwtMjE2MzcyODIwXX0=
 -->
