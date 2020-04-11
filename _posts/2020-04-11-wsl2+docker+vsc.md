@@ -120,10 +120,13 @@ docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image|
 docker push |id-of-docker-hub/name-of-docker-hub-image|
 ```
 
-- 이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull
+- 이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull 하면 된다. 이미지를 모두 삭제하려면, 아래와 같이 실행하자. 
+
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDAwOTk0OTUsLTY0NTY2ODM3NCwtMj
-k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
-ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
-==
+eyJoaXN0b3J5IjpbMTk3MTExNzkxNiwtNjQ1NjY4Mzc0LC0yOT
+Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
+NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
