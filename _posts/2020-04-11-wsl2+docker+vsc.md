@@ -43,7 +43,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - 우리의 목적은 wsl 2 아래에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. 
 - vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
-- vsc 정식 버전에서는 되지 않았다. 혹시나해서 insder 버전, 즉 실험적인 기능을 조금 더 구현해 둔 버전을 깔아 보니 잘 되더라. 
+- vsc 정식(stable) 버전에서는 이 원격-원격 접속이 구현되지 않는다. 혹시 해서 insder 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔아 보니 잘 되더라.  
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
 
@@ -67,6 +67,6 @@ categories: [wsl, visual-studio-code, docker]
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ5NzEwNTAsMTU0Nzk4NTU4NSwtNz
-EwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbOTQ5MzQzMjMsMTU0Nzk4NTU4NSwtNzEwNj
+UzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
