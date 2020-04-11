@@ -79,10 +79,18 @@ categories: [wsl, visual-studio-code, docker]
 [여기](https://hub.docker.com/_/ubuntu?tab=tags)를 참고해서 필요한 컨테이너 이미지를 끌어오자. 내 경우는 18.04를 가져왔다. 
 
 ```shell
-
+~$ docker pull ubuntu:18.04
 ```
+
+이렇게 끌어온 이미지를 컨테이너에 태워 실행시켜보도록 하자. 
+
+```shell
+~$ docker run -it [image-id-of-container]
+```
+
+이제 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzczMzc1NywxOTU2NDgzNzIzLDY3MD
-c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
-MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbNjMwMDE4MTAzLDE5NTY0ODM3MjMsNjcwNz
+cyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUy
+LC0yMTYzNzI4MjBdfQ==
 -->
