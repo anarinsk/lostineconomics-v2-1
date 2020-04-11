@@ -114,12 +114,15 @@ docker images
 docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
 ```
 
-docker images 
+- 다시 이미지를 조회해보면 `|id-of-docker-hub/name-of-docker-hub-image|` 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다. 
 
+```shell
+docker push |id-of-docker-hub/name-of-docker-hub-image|
+```
 
+- 이미지의 상
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE1OTgwOTQsLTY0NTY2ODM3NCwtMj
-k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
-ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
-==
+eyJoaXN0b3J5IjpbODAzMjM0NjIsLTY0NTY2ODM3NCwtMjk0NT
+c0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUs
+LTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
