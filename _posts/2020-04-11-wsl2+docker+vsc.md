@@ -108,10 +108,11 @@ categories: [wsl, visual-studio-code, docker]
 docker images 
 ```
 
+- 이렇게 확인된 이미지를 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDA3ODM4OSwtMjk0NTc0Mzk0LDE5NT
+eyJoaXN0b3J5IjpbLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NT
 Y0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3
 NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
