@@ -120,9 +120,10 @@ docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image|
 docker push |id-of-docker-hub/name-of-docker-hub-image|
 ```
 
-- 이미지의 상
+- 이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzMjM0NjIsLTY0NTY2ODM3NCwtMjk0NT
-c0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUs
-LTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTEzMDAwOTk0OTUsLTY0NTY2ODM3NCwtMj
+k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
+ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
+==
 -->
