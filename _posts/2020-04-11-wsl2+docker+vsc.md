@@ -68,12 +68,15 @@ categories: [wsl, visual-studio-code, docker]
 
 ## Making Pandas Docker 
 
-- 이제까지 살펴본 내용을 바탕으로 
+- 이제까지 살펴본 내용을 바탕으로 아래의 요소를 지닌 도커를 만들어 보자. 
 	- ubuntu 18.04 
 	- python 3.7 
-	- panas 
+	- panas
+- 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 필요한 컨테이너는 Docker Hub에서 찾을 수 있다. 그리고 자신의 독자적인 이미지를 관리하고 싶다면 Docker Hub에도 가입해두도록 하자. 
+
+### Pull ubuntu 18.04 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0NDE3OTQ0LDE5NTY0ODM3MjMsNjcwNz
-cyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUy
-LC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTEwMjc4NjgyOTEsMTk1NjQ4MzcyMyw2Nz
+A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
+NTIsLTIxNjM3MjgyMF19
 -->
