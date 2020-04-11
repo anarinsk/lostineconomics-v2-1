@@ -49,7 +49,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - Extensions 중에서 remote explorer로 간 후 "container"를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_2.png){: style="textalign:center; " width="600"}
  
 - 이를 vsc에 어태치하면 끝이다. 
 
@@ -64,5 +64,6 @@ categories: [wsl, visual-studio-code, docker]
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMT
+YzNzI4MjBdfQ==
 -->
