@@ -54,7 +54,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_2.png){: style="textalign:center; " width="400"}
  
-- 이를 vsc에 어태치하면 끝이다. 
+- 이 컨테이너를 vsc에 붙이면(attach) 끝이다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_3.png){: style="textalign:center; " width="400"}
  
@@ -64,9 +64,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ## For what? 
 
-- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
+- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 이렇게 쓴다면 python 가상 환경조차도 필요 없게 된다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만인 셈이다. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5MzQzMjMsMTU0Nzk4NTU4NSwtNzEwNj
-UzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMD
+Y1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
