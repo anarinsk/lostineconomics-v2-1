@@ -27,7 +27,7 @@ categories: [wsl, visual-studio-code, docker]
 - docker desktop edge 버전 2.0 이상이 깔려 있어야 한다.
 - vsc insider를 깔자. 
 
-앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하고, [vsc insider][https://code.visualstudio.com/insiders/](https://code.visualstudio.com/insiders/)
+앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하고, vsc insider는 [여기](https://code.visualstudio.com/insiders/)서 다운받아서 설치하자. 
 
 ## Pulling docker image 
 
@@ -41,7 +41,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ## Extensions
 
-- 최종 목적은 태워진 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
+- 우리의 목적은 wsl 2 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
 - vsc 정식 버전에서는 되지 않았다. 혹시나해서 insder 버전, 즉 실험적인 기능을 조금 더 구현해 둔 버전을 깔아 보니 잘 되더라. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
@@ -66,6 +66,6 @@ categories: [wsl, visual-studio-code, docker]
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODgxMjc3NywxNTQ3OTg1NTg1LC03MT
-A2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbMjU1NTUxMzYxLDE1NDc5ODU1ODUsLTcxMD
+Y1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
