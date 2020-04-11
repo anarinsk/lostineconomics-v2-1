@@ -88,9 +88,13 @@ categories: [wsl, visual-studio-code, docker]
 ~$ docker run -it [image-id-of-container]
 ```
 
-이제 
+이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가! 
+
+- Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 `sudo`는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMwMDE4MTAzLDE5NTY0ODM3MjMsNjcwNz
-cyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUy
-LC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbMTQxNjIzNTgwOCwxOTU2NDgzNzIzLDY3MD
+c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
+MiwtMjE2MzcyODIwXX0=
 -->
