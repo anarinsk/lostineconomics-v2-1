@@ -92,10 +92,14 @@ categories: [wsl, visual-studio-code, docker]
 
 - Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 `sudo`는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다. 
 
+### How to Commit & Push Image 
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MD
-c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
-MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbNTY2MDI2MzcwLC0yOTQ1NzQzOTQsMTk1Nj
+Q4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3
+LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
