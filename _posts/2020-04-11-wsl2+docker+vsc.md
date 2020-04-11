@@ -58,6 +58,10 @@ categories: [wsl, visual-studio-code, docker]
 - 어태치와 함께 별도의 창이 뜨면서 아래 그림처럼 컨테이너로서의 원격 접속이 잘 이루어졌음을 확인할 수 있다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
+
+## For what? 
+
+- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbLTE3MzE0OTEzNDUsLTIxNjM3MjgyMF19
 -->
