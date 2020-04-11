@@ -67,8 +67,13 @@ categories: [wsl, visual-studio-code, docker]
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 
 ## Making Pandas Docker 
+
+- 이제까지 살펴본 내용을 바탕으로 
+	- ubuntu 18.04 
+	- python 3.7 
+	- panas 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTgyMzE3NSwxOTU2NDgzNzIzLDY3MD
-c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
-MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbMjI0NDE3OTQ0LDE5NTY0ODM3MjMsNjcwNz
+cyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUy
+LC0yMTYzNzI4MjBdfQ==
 -->
