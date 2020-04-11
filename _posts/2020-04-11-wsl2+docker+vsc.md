@@ -94,12 +94,12 @@ categories: [wsl, visual-studio-code, docker]
 
 ### How to Commit & Push Image 
 
-
+- 이렇게 낵
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2MDI2MzcwLC0yOTQ1NzQzOTQsMTk1Nj
+eyJoaXN0b3J5IjpbNTI5Nzg3NjU5LC0yOTQ1NzQzOTQsMTk1Nj
 Q4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3
 LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
