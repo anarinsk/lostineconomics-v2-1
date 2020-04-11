@@ -111,12 +111,15 @@ docker images
 - 이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다. 
 
 ```shell
- 
+docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
 ```
+
+docker images 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA0MTc4NiwtNjQ1NjY4Mzc0LC0yOT
-Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
-NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbLTE2NDE1OTgwOTQsLTY0NTY2ODM3NCwtMj
+k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
+ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
+==
 -->
