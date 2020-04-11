@@ -108,11 +108,15 @@ categories: [wsl, visual-studio-code, docker]
 docker images 
 ```
 
-- 이렇게 확인된 이미지를 
+- 이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다. 
+
+```shell
+ 
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NT
-Y0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3
-NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTIwMzA0MTc4NiwtNjQ1NjY4Mzc0LC0yOT
+Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
+NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
