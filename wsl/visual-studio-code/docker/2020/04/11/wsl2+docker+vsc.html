@@ -139,7 +139,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -254,13 +254,20 @@ window.onload = wrap_img;
 
 <p><a href="https://hub.docker.com/_/ubuntu?tab=tags">여기</a>를 참고해서 필요한 컨테이너 이미지를 끌어오자. 내 경우는 18.04를 가져왔다.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker pull ubuntu:18.04
 </code></pre></div></div>
+
+<p>이렇게 끌어온 이미지를 컨테이너에 태워 실행시켜보도록 하자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker run <span class="nt">-it</span> <span class="o">[</span>image-id-of-container]
+</code></pre></div></div>
+
+<p>이제 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzczMzc1NywxOTU2NDgzNzIzLDY3MD
-c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
-MiwtMjE2MzcyODIwXX0=
--->
+eyJoaXN0b3J5IjpbNjMwMDE4MTAzLDE5NTY0ODM3MjMsNjcwNz
+cyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUy
+LC0yMTYzNzI4MjBdfQ==
+--></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
