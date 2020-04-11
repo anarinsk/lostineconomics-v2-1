@@ -42,27 +42,27 @@ categories: [wsl, visual-studio-code, docker]
 - 최종 목적은 태워진 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
 - vsc 정식 버전에서는 되지 않았다. 혹시나해서 insder 버전, 즉 실험적인 기능을 조금 더 구현해 둔 버전을 깔아 보니 잘 되더라. 
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
 
 -  Extensions에서 remote를 검색하면 `Remote Development`를 찾을 수 있다. 이 녀석은 `Remote WSL`, `Remote SSH`, `Remote Container` 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자. 
 	- docker extension은 깔아도 좋고 안 깔아도 좋지만 docker를 쓸 거라면 깔아두도록 하자. 
 
 - Extensions 중에서 remote explorer로 간 후 "container"를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="400"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="600"}
  
 - 이를 vsc에 어태치하면 끝이다. 
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_3.png){: style="textalign:center; " width="400"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_3.png){: style="textalign:center; " width="600"}
  
 - 어태치와 함께 별도의 창이 뜨면서 아래 그림처럼 컨테이너로서의 원격 접속이 잘 이루어졌음을 확인할 수 있다. 
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="600"}
 
 ## For what? 
 
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 사실 이렇게 쓴다면 python 가상 환경조차도 쓸 필요가 없다. 필요한 패키지가 깔린 파이썬을 도커로 끌어와 쓰면 그만이니까. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzU0NTM2MCwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
