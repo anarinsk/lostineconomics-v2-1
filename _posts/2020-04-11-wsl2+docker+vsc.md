@@ -75,8 +75,14 @@ categories: [wsl, visual-studio-code, docker]
 - 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 필요한 컨테이너는 Docker Hub에서 찾을 수 있다. 그리고 자신의 독자적인 이미지를 관리하고 싶다면 Docker Hub에도 가입해두도록 하자. 
 
 ### Pull ubuntu 18.04 
+
+[여기](https://hub.docker.com/_/ubuntu?tab=tags)를 참고해서 필요한 컨테이너 이미지를 끌어오자. 내 경우는 18.04를 가져왔다. 
+
+```shell
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc4NjgyOTEsMTk1NjQ4MzcyMyw2Nz
-A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
-NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbMTE4NzczMzc1NywxOTU2NDgzNzIzLDY3MD
+c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
+MiwtMjE2MzcyODIwXX0=
 -->
