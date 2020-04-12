@@ -81,6 +81,7 @@ categories: [wsl, visual-studio-code, docker]
 	- python 3.7 
 	- pandas 1.0.3
 - 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2]
+- 도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라. 보다 상세한 빌드 과정은 [여기](https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html)를 참고하라.
 
 [^2]: ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? [여기](https://pythonspeed.com/articles/alpine-docker-python/)에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. 
 
@@ -151,11 +152,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMT
-I4MTMsLTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwt
-MTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5OD
-U0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3Niwt
-NTYzMzU5MjQxLDE5MzM2OTM3NTIsLTY0NTY2ODM3NCwtMjk0NT
-c0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODVd
-fQ==
+eyJoaXN0b3J5IjpbNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1Nz
+Y5NTIsMjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3
+ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3Mz
+IyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5Niwz
+OTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2Nj
+gzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMV19
+
 -->
