@@ -123,10 +123,10 @@ docker push |id-of-docker-hub/name-of-docker-hub-image|
 - 이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull 하면 된다. 이미지를 모두 삭제하려면, 아래와 같이 실행하자. 
 
 ```shell
-
+docker rmi -f $(docker images -a -q)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTExNzkxNiwtNjQ1NjY4Mzc0LC0yOT
-Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
-NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbMzM4MTE1NzM0LC02NDU2NjgzNzQsLTI5ND
+U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
+LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
