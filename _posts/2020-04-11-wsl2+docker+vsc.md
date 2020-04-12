@@ -111,29 +111,29 @@ categories: [wsl, visual-studio-code, docker]
 - 이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다. 
 
 ```shell
-docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
+~$ docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
 ```
 
 - 다시 이미지를 조회해보면 `|id-of-docker-hub/name-of-docker-hub-image|` 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다. 
 
 ```shell
-docker push |id-of-docker-hub/name-of-docker-hub-image|
+~$ docker push |id-of-docker-hub/name-of-docker-hub-image|
 ```
 
 - 이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull 하면 된다. 이미지를 모두 삭제하려면, 아래와 같이 실행하자. 
 
 ```shell
-docker rmi -f $(docker images -a -q)
+~$ docker rmi -f $(docker images -a -q)
 
 ```
 
 - 기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 땡겨와보자. 
 
 ```shell
-docker pull anarinsk/py37-pandas 
+~$ docker pull anarinsk/py37-pandas 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODM1MzI0LC02NDU2NjgzNzQsLTI5ND
+eyJoaXN0b3J5IjpbMzIwNjUzMjE4LC02NDU2NjgzNzQsLTI5ND
 U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
 LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
