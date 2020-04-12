@@ -85,7 +85,7 @@ categories: [wsl, visual-studio-code, docker]
 이렇게 끌어온 이미지를 컨테이너에 태워 실행시켜보도록 하자. 
 
 ```shell
-~$ docker run -it [image-id-of-container]
+~$ docker run -it |image-id-of-container|
 ```
 
 이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가! 
@@ -103,7 +103,7 @@ categories: [wsl, visual-studio-code, docker]
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_5.png){: style="textalign:center; " width="700"}
 
 ```shell
-~$ docker commit [container-name or id-of-container] [name-of-image]
+~$ docker commit |container-name or id-of-container| |name-of-image|
 ```
 
 - 이제 저장된 이미지를 확인해보자. 
@@ -115,7 +115,7 @@ categories: [wsl, visual-studio-code, docker]
 - 이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다. 
 
 ```shell
-~$ docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
+~$ docker tag |image-id| |id-of-docker-hub/name-of-docker-hub-image| 
 ```
 
 - 다시 이미지를 조회해보면 `|id-of-docker-hub/name-of-docker-hub-image|` 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다. 
@@ -141,8 +141,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjAxMjc5NiwzOTgyNTQ3NzYsLTU2Mz
-M1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5NDU3NDM5
-NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1LC03MT
-A2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOT
+gyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2Njgz
+NzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNT
+Q3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2Mzcy
+ODIwXX0=
 -->
