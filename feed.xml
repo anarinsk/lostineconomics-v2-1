@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T21:03:46-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T21:04:19-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;tensorflow = tf&lt;/li&gt;
@@ -32,7 +32,7 @@
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; tensorflow/tensorflow:latest-py3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl 2&lt;/code&gt; - Ubuntu - docker” 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tensorflow 설정이 조금 까다로울 수 있기 때문에 이렇게 쓰는 편이 편할 수도 있다.&lt;/li&gt;
+  &lt;li&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl 2&lt;/code&gt; -&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; -&lt;code class=&quot;highlighter-rouge&quot;&gt;docker&lt;/code&gt; 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tensorflow 설정이 조금 까다로울 수 있기 때문에 이렇게 쓰는 편이 편할 수도 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;extensions-for-vsc&quot;&gt;Extensions for vsc&lt;/h2&gt;
@@ -160,12 +160,12 @@
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzkxMjY3ODYsMTc4OTQwNzc0NCwtMT
-gyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0
-OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNT
-YzMzU5MjQxLDE5MzM2OTM3NTIsLTY0NTY2ODM3NCwtMjk0NTc0
-Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLT
-cxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xOD
+IwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4
+LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01Nj
+MzNTkyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQz
+OTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNz
+EwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 --&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
