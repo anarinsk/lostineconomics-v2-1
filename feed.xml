@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T21:31:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T21:32:36-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;h3 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h3&gt;
 
@@ -46,8 +46,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다.&lt;/li&gt;
-  &lt;li&gt;vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 ‘원격’으로 접속하는 개념이다. 그래서 관련된 vsc 익스텐션 이름도 “Remote WSL”이다. 그런데 그 곳에 설치된 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 돼?&lt;/li&gt;
-  &lt;li&gt;이 포스팅을 작성하는 시점에서 vsc 정식(stable) 버전은 이러한 이중 원격 접속을 허용하지 않았다. 혹시 해서 insider 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔았더니 이 이중 원격 접속이 잘 되더라.&lt;/li&gt;
+  &lt;li&gt;vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 거쳐 그 안에 깔린 ubuntu에 접근하는 것은 ‘원격’ 접속의 개념이다. 그래서 해당 vsc 익스텐션 이름도 “Remote WSL”이다. 그런데 그 ubuntu 안에 설치된 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속, 즉 이중 원격 접속이 되는 셈이다. 이게 돼?&lt;/li&gt;
+  &lt;li&gt;이 포스팅을 작성하는 시점에서 vsc 정식(stable) 버전은 이러한 이중 원격 접속을 허용하지 않았다. 혹시 해서 insider 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔았더니 이게 잘 잘 되더라.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
@@ -167,13 +167,13 @@
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OT
-U0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2
-LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNj
-AxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUy
-LC02NDU2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MD
-c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
-Ml19
+eyJoaXN0b3J5IjpbOTA1NTc2OTUyLDI5ODMxMjgxMywtNDEyMz
+A3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMjgyNzQ2
+LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0xMjk0OT
+E1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDEs
+MTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1Nj
+Q4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3
+XX0=
 --&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
