@@ -3,7 +3,7 @@ layout: post
 toc: false
 comments: true
 title:  wsl 2 + docker + vsc 
-description:  코딩은 편안하게 해야겠죠. 
+description:  커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게
 categories: [wsl, visual-studio-code, docker]
 
 ---
@@ -141,8 +141,8 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMz
-Y5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4Mzcy
-Myw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OT
-MyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbMTIwNjAxMjc5NiwzOTgyNTQ3NzYsLTU2Mz
+M1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5NDU3NDM5
+NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1LC03MT
+A2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
