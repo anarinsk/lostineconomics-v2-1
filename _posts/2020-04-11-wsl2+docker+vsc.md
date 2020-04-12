@@ -37,12 +37,12 @@ categories: [wsl, visual-studio-code, docker]
 ```shell
 ~$ docker run -it --rm tensorflow/tensorflow:latest-py3
 ```
-- 이제 wsl 2 - Ubuntu - docker 체제 아래 tf 컨테이너를 돌리는 데 성공했다!
+- 이제 "wsl 2 - Ubuntu - docker" 체제 아래 tf 컨테이너를 돌리는 데 성공했다!
 
-## Extensions
+## Extensions for vsc 
 
-- 우리의 목적은 wsl 2 아래에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. 
-- vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
+- 우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. 
+- vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 '원격'으로 접속하는 개념이다. 그래서 관련된 vsc 익스텐션 이름도 "Remote WSL"이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까? 
 - vsc 정식(stable) 버전에서는 이 원격-원격 접속이 구현되지 않는다. 혹시 해서 insder 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔아 보니 잘 되더라.  
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
@@ -141,9 +141,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjE4NDU5OCwtMTI5NDkxNTQ5NCwxMj
-A2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3
-NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNj
-cwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIw
-NzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbOTQ2OTAxNzkwLC0xMjk0OTE1NDk0LDEyMD
+YwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMzY5Mzc1
+MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4MzcyMyw2Nz
+A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
+NTIsLTIxNjM3MjgyMF19
 -->
