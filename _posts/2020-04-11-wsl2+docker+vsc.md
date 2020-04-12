@@ -79,7 +79,7 @@ categories: [wsl, visual-studio-code, docker]
 - 이제까지 살펴본 내용을 바탕으로 아래의 요소를 지닌 도커를 만들어 보자. 
 	- ubuntu 18.04 
 	- python 3.7 
-	- panas 1.0.3
+	- pandas 1.0.3
 - 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2]
 
 [^2]: ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? [여기](https://pythonspeed.com/articles/alpine-docker-python/)에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. 
@@ -151,7 +151,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxOTYzNDk4LDkwNTU3Njk1MiwyOTgzMT
+eyJoaXN0b3J5IjpbNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMT
 I4MTMsLTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwt
 MTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5OD
 U0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3Niwt
