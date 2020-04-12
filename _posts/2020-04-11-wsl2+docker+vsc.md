@@ -73,7 +73,7 @@ categories: [wsl, visual-studio-code, docker]
 - 이제까지 살펴본 내용을 바탕으로 아래의 요소를 지닌 도커를 만들어 보자. 
 	- ubuntu 18.04 
 	- python 3.7 
-	- panas
+	- panas 1.0.3
 - 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 필요한 컨테이너는 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자. 
 
 ### Pull ubuntu 18.04 
@@ -143,9 +143,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5ND
-kxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQx
-LDE5MzM2OTM3NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NT
-Y0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3
-NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbNzc3NTc5NTk2LDY1MzU3MzIyMCw1OTE1OT
+g1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNTQ3NzYs
+LTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5ND
+U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
+LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
