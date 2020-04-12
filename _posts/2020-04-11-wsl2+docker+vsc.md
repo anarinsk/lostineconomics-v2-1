@@ -98,7 +98,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ```shell
 ~$ docker ps 
-[실행 중인 컨테이너 목록 확인] 
+```
+
+![]({{ site.baseurl }}/images/wsldockervsc/fig_5.png){: style="textalign:center; " width="700"}
+
+```shell
 ~$ docker commit [container-name or id-of-container] [name-of-image]
 ```
 
@@ -135,8 +139,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - 위에서 설명한대로 vsc를 통해 작업하면 된다. 안에 s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTYxODUxOTAsLTY0NTY2ODM3NCwtMj
-k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
-ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
-==
+eyJoaXN0b3J5IjpbLTYwNzgwNDA2NiwtNjQ1NjY4Mzc0LC0yOT
+Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
+NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
