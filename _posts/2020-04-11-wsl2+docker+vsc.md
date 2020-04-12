@@ -105,7 +105,7 @@ categories: [wsl, visual-studio-code, docker]
 - 이제 저장된 이미지를 확인해보자. 
 
 ```shell
-docker images 
+~$ docker images 
 ```
 
 - 이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다. 
@@ -127,9 +127,13 @@ docker rmi -f $(docker images -a -q)
 
 ```
 
-- 기본적인 Ubuntu update와 python3.7 그리고 panda
+- 기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 땡겨와보자. 
+
+```shell
+docker pull anarinsk/py37-pandas 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDYzMDYyNiwtNjQ1NjY4Mzc0LC0yOT
-Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
-NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbLTM1ODM1MzI0LC02NDU2NjgzNzQsLTI5ND
+U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
+LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
 -->
