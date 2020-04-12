@@ -152,8 +152,10 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mjc2NDE4MSw1MzM3MDQxODksNjY4Mj
+eyJoaXN0b3J5IjpbLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4Mj
 QzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEz
 NjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nz
 k1OTYsNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwx
