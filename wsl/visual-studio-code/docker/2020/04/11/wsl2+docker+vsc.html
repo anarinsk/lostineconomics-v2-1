@@ -259,7 +259,7 @@ window.onload = wrap_img;
 
 <p>이렇게 끌어온 이미지를 컨테이너에 태워 실행시켜보도록 하자.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker run <span class="nt">-it</span> <span class="o">[</span>image-id-of-container]
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker run <span class="nt">-it</span> |image-id-of-container|
 </code></pre></div></div>
 
 <p>이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가!</p>
@@ -279,7 +279,7 @@ window.onload = wrap_img;
 
 <p><img src="/lostineconomics-v2-1/images/wsldockervsc/fig_5.png" alt="" style="textalign:center; " width="700" /></p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker commit <span class="o">[</span>container-name or id-of-container] <span class="o">[</span>name-of-image]
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker commit |container-name or id-of-container| |name-of-image|
 </code></pre></div></div>
 
 <ul>
@@ -293,7 +293,7 @@ window.onload = wrap_img;
   <li>이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다.</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker tag | iamge-id| |id-of-docker-hub/name-of-docker-hub-image| 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker tag |image-id| |id-of-docker-hub/name-of-docker-hub-image| 
 </code></pre></div></div>
 
 <ul>
@@ -324,10 +324,11 @@ window.onload = wrap_img;
 
 <p><img src="/lostineconomics-v2-1/images/wsldockervsc/fig_6.png" alt="" style="textalign:center; " width="700" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjAxMjc5NiwzOTgyNTQ3NzYsLTU2Mz
-M1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5NDU3NDM5
-NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1LC03MT
-A2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOT
+gyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2Njgz
+NzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNT
+Q3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2Mzcy
+ODIwXX0=
 --></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
