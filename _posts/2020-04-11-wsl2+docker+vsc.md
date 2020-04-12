@@ -130,10 +130,10 @@ categories: [wsl, visual-studio-code, docker]
 - 기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 땡겨와보자. 
 
 ```shell
-~$ docker pull anarinsk/py37-pandas 
+~$ docker run -it --rm anarinsk/py37-pandas 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNjUzMjE4LC02NDU2NjgzNzQsLTI5ND
-U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
-LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbOTI2NzgxOTcsLTY0NTY2ODM3NCwtMjk0NT
+c0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUs
+LTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
