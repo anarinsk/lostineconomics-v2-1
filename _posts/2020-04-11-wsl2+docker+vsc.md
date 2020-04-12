@@ -124,9 +124,12 @@ docker push |id-of-docker-hub/name-of-docker-hub-image|
 
 ```shell
 docker rmi -f $(docker images -a -q)
+
 ```
+
+- 기본적인 Ubuntu update와 python3.7 그리고 panda
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4MTE1NzM0LC02NDU2NjgzNzQsLTI5ND
-U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
-LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTM3MDYzMDYyNiwtNjQ1NjY4Mzc0LC0yOT
+Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
+NSwtNzEwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
 -->
