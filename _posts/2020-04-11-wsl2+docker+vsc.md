@@ -139,10 +139,10 @@ categories: [wsl, visual-studio-code, docker]
 
 - 위에서 설명한대로 vsc를 통해 작업하면 된다. 안에  testcode.py라는 간략한 실험 코드를 넣어 두었다. 
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02ND
-U2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQy
-MSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMj
-E2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMz
+Y5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4Mzcy
+Myw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OT
+MyMjA3NTIsLTIxNjM3MjgyMF19
 -->
