@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:21:03-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:22:33-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;tensorflow = tf&lt;/li&gt;
@@ -34,14 +34,14 @@
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; tensorflow/tensorflow:latest-py3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;이제 wsl 2 - Ubuntu - docker 체제 아래 tf 컨테이너를 돌리는 데 성공했다!&lt;/li&gt;
+  &lt;li&gt;이제 “wsl 2 - Ubuntu - docker” 체제 아래 tf 컨테이너를 돌리는 데 성공했다!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
+&lt;h2 id=&quot;extensions-for-vsc&quot;&gt;Extensions for vsc&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;우리의 목적은 wsl 2 아래에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다.&lt;/li&gt;
-  &lt;li&gt;vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 원격으로 접속하는 개념이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까?&lt;/li&gt;
+  &lt;li&gt;우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다.&lt;/li&gt;
+  &lt;li&gt;vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 통해 그 안에 깔린 Ubuntu에 ‘원격’으로 접속하는 개념이다. 그래서 관련된 vsc 익스텐션 이름도 “Remote WSL”이다. 그런데 그 위에 깔린 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속이 되는 셈이다. 이게 될까?&lt;/li&gt;
   &lt;li&gt;vsc 정식(stable) 버전에서는 이 원격-원격 접속이 구현되지 않는다. 혹시 해서 insder 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔아 보니 잘 되더라.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -161,11 +161,11 @@
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjE4NDU5OCwtMTI5NDkxNTQ5NCwxMj
-A2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3
-NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNj
-cwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIw
-NzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbOTQ2OTAxNzkwLC0xMjk0OTE1NDk0LDEyMD
+YwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMzY5Mzc1
+MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4MzcyMyw2Nz
+A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
+NTIsLTIxNjM3MjgyMF19
 --&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에 정식으로 포함될 예정이다.&lt;/p&gt;
