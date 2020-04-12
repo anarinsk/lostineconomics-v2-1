@@ -17,9 +17,8 @@ categories: [wsl, visual-studio-code, docker]
 
 ## Mission 
 
-- tf를 wsl 2에서 linux로 돌려보자. 
-- tf를 docker로 돌려보자. 
-- tf를 visual studio code(vsc) 위에서 돌려보자. 
+- 한마디로 이중 접속, 즉 wsl 2 안에 설치한 리눅스 안에서 돌아가는 도커 컨테이너에 vsc로 접근하기
+
 
 ## First Things First 
 
@@ -144,9 +143,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxNTk4NTQ4LC0xMjk0OTE1NDk0LDEyMD
-YwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMzY5Mzc1
-MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4MzcyMyw2Nz
-A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
-NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5ND
+kxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQx
+LDE5MzM2OTM3NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NT
+Y0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3
+NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 -->
