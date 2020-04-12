@@ -42,7 +42,7 @@ categories: [wsl, visual-studio-code, docker]
 ```shell
 ~$ docker run -it --rm tensorflow/tensorflow:latest-py3
 ```
-- 이제 `wsl 2` -`Ubuntu` -`docker` 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tensorflow 설정이 조금 까다로울 수 있기 때문에 이렇게 쓰는 편이 편할 수도 있다. 
+- 이제 `wsl 2` -`Ubuntu` -`docker` 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 자세한 내용은 [여기](https://www.tensorflow.org/install/docker)를 참고하자. 
 
 ## Extensions for vsc 
 
@@ -149,7 +149,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTMwNDQyLC00MTIzMDc4NCwxMzY0OT
+eyJoaXN0b3J5IjpbMjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OT
 U0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2
 LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNj
 AxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUy
