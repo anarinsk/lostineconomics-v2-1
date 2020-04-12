@@ -24,10 +24,10 @@ categories: [wsl, visual-studio-code, docker]
 ## First Things First 
 
 - wsl 2를 세팅하자. 
-- docker desktop edge 버전 2.0 이상이 깔려 있어야 한다.
+- docker desktop edge 버전 2.0 이상을 깔자.
 - vsc insider를 깔자. 
 
-앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하고, vsc insider는 [여기](https://code.visualstudio.com/insiders/)서 다운받아서 설치하자. 
+앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하고, vsc insider는 [여기](https://code.visualstudio.com/insiders/)서 다운받아서 설치하자. 기존에 stable 버전이 깔려 있더라도 상관 없다. 아이콘에서 보듯이 둘은 다른 앱이다. 
 
 ## Pulling docker image 
 
@@ -141,9 +141,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOT
-gyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2Njgz
-NzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNT
-Q3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2Mzcy
-ODIwXX0=
+eyJoaXN0b3J5IjpbLTk4NjE4NDU5OCwtMTI5NDkxNTQ5NCwxMj
+A2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3
+NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNj
+cwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIw
+NzUyLC0yMTYzNzI4MjBdfQ==
 -->
