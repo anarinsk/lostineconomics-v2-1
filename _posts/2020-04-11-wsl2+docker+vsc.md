@@ -11,9 +11,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ## Assumptions 
 
+### Abbreviation 
 - tensorflow = tf 
 - visual studio code = vsc 
 - windows subsystem for linux version 2 = wsl 2 
+
 
 ## Mission 
 
@@ -143,10 +145,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xOD
-IwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4
-LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01Nj
-MzNTkyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQz
-OTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4NSwtNz
-EwNjUzNzc3LDE1OTMyMjA3NTIsLTIxNjM3MjgyMF19
+eyJoaXN0b3J5IjpbLTY3NjQ4MTgzLDEzNjQ5NTQyNTAsMTc4OT
+QwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIw
+LDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5OD
+I1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTIsLTY0NTY2ODM3
+NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1ND
+c5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4
+MjBdfQ==
 -->
