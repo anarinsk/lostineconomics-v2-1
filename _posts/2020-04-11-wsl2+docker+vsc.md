@@ -65,7 +65,9 @@ categories: [wsl, visual-studio-code, docker]
 
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다. 
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!
-- 재현 가능성은 ㅇ 
+- 재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.[^1]
+
+[^1]: 사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분에서 도커의 활용은 학술과 산업 모두에서 필수적이라고 생각한다.  
 
 ## Making Pandas Docker 
 
@@ -142,9 +144,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI5ODgyMTUsLTEyOTQ5MTU0OTQsMT
-IwNjAxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkz
-NzUyLC02NDU2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLD
-Y3MDc3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIy
-MDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbNTkxNTk4NTQ4LC0xMjk0OTE1NDk0LDEyMD
+YwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDEsMTkzMzY5Mzc1
+MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTQsMTk1NjQ4MzcyMyw2Nz
+A3NzI0MjEsMTU0Nzk4NTU4NSwtNzEwNjUzNzc3LDE1OTMyMjA3
+NTIsLTIxNjM3MjgyMF19
 -->
