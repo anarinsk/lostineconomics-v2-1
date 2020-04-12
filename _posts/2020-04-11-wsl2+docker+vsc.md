@@ -72,7 +72,7 @@ categories: [wsl, visual-studio-code, docker]
 - vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!
 - 재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.[^1]
 
-[^1]: 사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분에서 도커의 활용은 학술과 산업 모두에서 필수적이라고 생각한다.  
+[^1]: 사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마...  
 
 ## Making Pandas Docker 
 
@@ -149,11 +149,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzY4MTE5OSwxMzY0OTU0MjUwLDE3OD
-k0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIy
-MCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOT
-gyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2Njgz
-NzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNT
-Q3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2Mzcy
-ODIwXX0=
+eyJoaXN0b3J5IjpbLTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OT
+QwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIw
+LDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5OD
+I1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTIsLTY0NTY2ODM3
+NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1ND
+c5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4
+MjBdfQ==
 -->
