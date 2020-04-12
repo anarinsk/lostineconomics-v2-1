@@ -18,7 +18,7 @@ categories: [wsl, visual-studio-code, docker]
 - windows subsystem for linux version 2 = wsl 2 
 
 ### Rules 
-- `|what|`은 각자 환경에 맞게 설정해야 한다. 
+- `|foo|`은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다. 
 
 
 ## Mission 
@@ -149,11 +149,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OT
-QwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIw
-LDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5OD
-I1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTIsLTY0NTY2ODM3
-NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1ND
-c5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4
-MjBdfQ==
+eyJoaXN0b3J5IjpbMjEyMTMwNDQyLC00MTIzMDc4NCwxMzY0OT
+U0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2
+LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNj
+AxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUy
+LC02NDU2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MD
+c3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1
+Ml19
 -->
