@@ -53,18 +53,19 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_2.png){: style="textalign:center; " width="400"}
  
-- 이 컨테이너를 vsc에 붙이면(attach) 끝이다. 
+- 이 컨테이너를 vsc에 붙이면(attach) 끝이다! 허무하게 간단하다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_3.png){: style="textalign:center; " width="400"}
  
-- 어태치와 함께 별도의 창이 뜨면서 아래 그림처럼 컨테이너로서의 원격 접속이 잘 이루어졌음을 확인할 수 있다. 
+- 부착과 함께 별도의 창이 뜨면서 아래 그림처럼 윈도 앱 창 하단에서  컨테이너로의 이중 원격 접속이 잘 이루어졌음을 확인할 수 있다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
 
 ## For what? 
 
-- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 이렇게 쓴다면 python 가상 환경조차도 필요 없게 된다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만인 셈이다. 
-- vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다! 
+- docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다. 
+- vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!
+- 재현 가능성은 ㅇ 
 
 ## Making Pandas Docker 
 
@@ -141,9 +142,9 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTE2NDY1MSwtMTI5NDkxNTQ5NCwxMj
-A2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3
-NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjMsNj
-cwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNTkzMjIw
-NzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTEyNTI5ODgyMTUsLTEyOTQ5MTU0OTQsMT
+IwNjAxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkz
+NzUyLC02NDU2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLD
+Y3MDc3MjQyMSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIy
+MDc1MiwtMjE2MzcyODIwXX0=
 -->
