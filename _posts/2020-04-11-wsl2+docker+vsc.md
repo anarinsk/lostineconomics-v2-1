@@ -34,7 +34,7 @@ categories: [wsl, visual-studio-code, docker]
 
 앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자. vsc insider의 경우 기존에 stable 버전이 깔려 있더라도 상관 없다. 아이콘에서 알 수 있듯, 둘은 다른 앱이다. 
 
-## Pulling docker image 
+## Pulling docker Image
 
 - 이제 wsl 2를 통해 Ubuntu로 진입한다. 
 - 도커가 제대로 설치되어 있다면 이미지들을 Ubuntu로 끌어올 수 있을 것이다. 시험 삼아서 tensorflow의 이미지를 끌어와보자. 
@@ -103,7 +103,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 `sudo`는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다. 
 
-### How to Commit / Tag / Push Image 
+### How to commit / tag / push Image 
 
 - 이렇게 별도의 작업을 거친 컨테이너는 애초에 끌고 왔던 이미지와는 달라졌을 것이다. 그런데 도커의 속성상 콘테이너를 내리게 되면 변경했던 내용들은 다 사라진다. 이렇게 변경된 콘테이너를 저장할 수 있어야 한다. 
 
@@ -155,11 +155,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4Mj
-QzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEz
-NjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nz
-k1OTYsNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwx
-MjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OT
-M3NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3MjNd
+eyJoaXN0b3J5IjpbMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMz
+cwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywt
+NDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMj
+gyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0x
+Mjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNT
+kyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTRd
 fQ==
 -->
