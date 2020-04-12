@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:51:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:56:35-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;tensorflow = tf&lt;/li&gt;
@@ -9,7 +9,7 @@
 &lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;한마디로 이중 접속, 즉 wsl 2 안에 설치한 리눅스 안에서 돌아가는 도커 컨테이너에 vsc로 접근하기&lt;/li&gt;
+  &lt;li&gt;한마디로 이중 원격 접속이다. 즉 wsl 2 안에 설치한 리눅스(1단계 원격 접속) 안에서 돌아가는 도커 컨테이너(2단계 원격 접속)에 vsc로 접근하기.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;first-things-first&quot;&gt;First Things First&lt;/h2&gt;
@@ -160,11 +160,12 @@
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3NTc5NTk2LDY1MzU3MzIyMCw1OTE1OT
-g1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNTQ3NzYs
-LTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5ND
-U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
-LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1Mz
+U3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5
+NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02ND
+U2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQy
+MSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMj
+E2MzcyODIwXX0=
 --&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
