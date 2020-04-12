@@ -17,7 +17,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ## Mission 
 
-- 한마디로 이중 접속, 즉 wsl 2 안에 설치한 리눅스 안에서 돌아가는 도커 컨테이너에 vsc로 접근하기
+- 한마디로 이중 원격 접속이다. 즉 wsl 2 안에 설치한 리눅스(1단계 원격 접속) 안에서 돌아가는 도커 컨테이너(2단계 원격 접속)에 vsc로 접근하기. 
 
 
 ## First Things First 
@@ -143,9 +143,10 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3NTc5NTk2LDY1MzU3MzIyMCw1OTE1OT
-g1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNTQ3NzYs
-LTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5ND
-U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
-LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMjE2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1Mz
+U3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5
+NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02ND
+U2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQy
+MSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMj
+E2MzcyODIwXX0=
 -->
