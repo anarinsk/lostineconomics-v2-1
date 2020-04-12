@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:56:35-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-11T20:59:44-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;tensorflow = tf&lt;/li&gt;
@@ -16,11 +16,11 @@
 
 &lt;ul&gt;
   &lt;li&gt;wsl 2를 세팅하자.&lt;/li&gt;
-  &lt;li&gt;docker desktop edge 버전 2.0 이상을 깔자.&lt;/li&gt;
-  &lt;li&gt;vsc insider를 깔자.&lt;/li&gt;
+  &lt;li&gt;docker desktop edge 버전 2.0 이상을 깔자. &lt;a href=&quot;https://docs.docker.com/docker-for-windows/wsl-tech-preview/&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/insiders/&quot;&gt;vsc insider&lt;/a&gt;를 깔자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;앞 두 개는 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html&quot;&gt;여기&lt;/a&gt;를 참고하고, vsc insider는 &lt;a href=&quot;https://code.visualstudio.com/insiders/&quot;&gt;여기&lt;/a&gt;서 다운받아서 설치하자. 기존에 stable 버전이 깔려 있더라도 상관 없다. 아이콘에서 보듯이 둘은 다른 앱이다.&lt;/p&gt;
+&lt;p&gt;앞 두 개는 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html&quot;&gt;여기&lt;/a&gt;를 참고하자. vsc insider의 경우 기존에 stable 버전이 깔려 있더라도 상관 없다. 아이콘에서 알 수 있듯, 둘은 다른 앱이다.&lt;/p&gt;
 
 &lt;h2 id=&quot;pulling-docker-image&quot;&gt;Pulling docker image&lt;/h2&gt;
 
@@ -160,12 +160,12 @@
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1Mz
-U3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5
-NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02ND
-U2NjgzNzQsLTI5NDU3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQy
-MSwxNTQ3OTg1NTg1LC03MTA2NTM3NzcsMTU5MzIyMDc1MiwtMj
-E2MzcyODIwXX0=
+eyJoaXN0b3J5IjpbMTU3MTgzMzM4OSwtMTgyMDI4Mjc0Niw3Nz
+c1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5
+NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5Mz
+M2OTM3NTIsLTY0NTY2ODM3NCwtMjk0NTc0Mzk0LDE5NTY0ODM3
+MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUsLTcxMDY1Mzc3NywxNT
+kzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
 --&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
