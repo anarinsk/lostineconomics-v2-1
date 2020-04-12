@@ -80,7 +80,9 @@ categories: [wsl, visual-studio-code, docker]
 	- ubuntu 18.04 
 	- python 3.7 
 	- panas 1.0.3
-- 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 기본필요한 컨테이너는 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자. 
+- 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2]
+
+[^2]: ubu
 
 ### Pull ubuntu 18.04 
 
@@ -149,11 +151,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTc5MzA2NDAsOTA1NTc2OTUyLDI5OD
-MxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0
-LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNT
-k4NTQ4LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2
-LC01NjMzNTkyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOT
-Q1NzQzOTQsMTk1NjQ4MzcyMyw2NzA3NzI0MjEsMTU0Nzk4NTU4
-NV19
+eyJoaXN0b3J5IjpbMTIxMzg1MTA4OSw5MDU1NzY5NTIsMjk4Mz
+EyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MDc3NDQs
+LTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIyMCw1OTE1OT
+g1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNTQ3NzYs
+LTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzQsLTI5ND
+U3NDM5NCwxOTU2NDgzNzIzLDY3MDc3MjQyMSwxNTQ3OTg1NTg1
+XX0=
 -->
