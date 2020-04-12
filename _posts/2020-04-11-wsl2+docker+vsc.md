@@ -127,13 +127,16 @@ categories: [wsl, visual-studio-code, docker]
 
 ```
 
-- 기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 땡겨와보자. 
+- 기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 당겨와 실행해보자. 
 
 ```shell
 ~$ docker run -it --rm anarinsk/py37-pandas 
 ```
+
+- 위에서 설명한대로 vsc를 통해 작업하면 된다. 안에 s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2NzgxOTcsLTY0NTY2ODM3NCwtMjk0NT
-c0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1ODUs
-LTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ==
+eyJoaXN0b3J5IjpbLTIwMTYxODUxOTAsLTY0NTY2ODM3NCwtMj
+k0NTc0Mzk0LDE5NTY0ODM3MjMsNjcwNzcyNDIxLDE1NDc5ODU1
+ODUsLTcxMDY1Mzc3NywxNTkzMjIwNzUyLC0yMTYzNzI4MjBdfQ
+==
 -->
