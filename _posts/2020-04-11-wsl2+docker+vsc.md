@@ -95,6 +95,8 @@ categories: [wsl, visual-studio-code, docker]
 - 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2]
 - 도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라. 
 - 윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다. 
+- 
+![]({{ site.baseurl }}/images/wsldockervsc/fig_8.png){: style="textalign:center; " width="700"}
 
 [^2]: ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? [여기](https://pythonspeed.com/articles/alpine-docker-python/)에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. 
 
@@ -173,7 +175,7 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwMjY0NTM5LC0xMzYxMTgzMjc2LDE3Mz
+eyJoaXN0b3J5IjpbMzUzMjYwNzk0LC0xMzYxMTgzMjc2LDE3Mz
 MzNjcxOTEsMTE4OTk5MTE3OSwyMTM0ODM2NzA1LC02NDkzOTMw
 ODEsNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1NzY5NTIsMjk4Mz
 EyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MDc3NDQs
