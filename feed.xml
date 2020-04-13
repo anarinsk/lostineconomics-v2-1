@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-12T20:41:22-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-12T20:43:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;h3 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h3&gt;
 
@@ -189,17 +189,20 @@
 &lt;h3 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;사실 빌들&lt;/li&gt;
+  &lt;li&gt;사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; 이라는 형태를 통해서 구현할 수 있다.&lt;/li&gt;
+  &lt;li&gt;도커 컨테이너를 생성하는 데 필요한 단계를 넣어두고 빌드에 성공하면 해당 이미지가 생성되는 편리한 방식을 따르고 있다.&lt;/li&gt;
+  &lt;li&gt;도커 허브에서는 github와 연결하여 github에 새로운 내용이 커밋되었을 자동으로 도커 허브의 빌드를 구현해주는 자동화 빌드까지 구현되어 있다.&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxOTA2OTkzOSwxNzMzMzY3MTkxLDExOD
-k5OTExNzksMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMzcwNDE4
-OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywtNDEyMz
-A3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMjgyNzQ2
-LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0xMjk0OT
-E1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDFd
-fQ==
+eyJoaXN0b3J5IjpbLTIwOTY1OTg5MjksMTczMzM2NzE5MSwxMT
+g5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQx
+ODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMj
+MwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0
+Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5ND
+kxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQx
+XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
