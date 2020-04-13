@@ -72,7 +72,7 @@ categories: [wsl, visual-studio-code, docker]
 	- 재설치 
 	- 관리자 권한으로 실행 
 	- Windows의 `c\사용자\|user-id|\.vscode` 여기에 확장이 깔리게 된다. 녀석을 한번 지워주자. 
-		- 다음 확장 실행 때 모든 것이 재설치된다. 
+		- 다음 실행 때 필요한 확장을 전부 재설치한다. 
 - 만일 컨테이너 내에 접속이 잘 이루어졌다면 컨테이터 내에 아래와 같이 vsc 관련 서버가 세팅된 상태가 된다. 이 녀석고 `Remote-Container`가 직접 통신하게 되는 형태이다. 따라서 사실상 이중 원격 접속은 아닌 셈이다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}
@@ -175,11 +175,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzMjYwNzk0LC0xMzYxMTgzMjc2LDE3Mz
-MzNjcxOTEsMTE4OTk5MTE3OSwyMTM0ODM2NzA1LC02NDkzOTMw
-ODEsNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1NzY5NTIsMjk4Mz
-EyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MDc3NDQs
-LTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIyMCw1OTE1OT
-g1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNTQ3NzZd
+eyJoaXN0b3J5IjpbODIzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MT
+E4MzI3NiwxNzMzMzY3MTkxLDExODk5OTExNzksMjEzNDgzNjcw
+NSwtNjQ5MzkzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NT
+c2OTUyLDI5ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwx
+Nzg5NDA3NzQ0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1Nz
+MyMjAsNTkxNTk4NTQ4LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTZd
 fQ==
 -->
