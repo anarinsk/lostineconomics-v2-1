@@ -67,7 +67,11 @@ categories: [wsl, visual-studio-code, docker]
 
 ### Trouble shooting 
 
-- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. `Remote-` 확장의 특징은 
+- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. `Remote-` 확장의 특징은 vsc가 해당 공간으로 들어가서 자신의 서버를 설치하는 개념이다. 이게 막혀 있으면 이런 문제가 생길 수 있다. 
+- 정확한 해결방법은 솔직히 잘 모르겠다. 몇 가지 삽질로 해볼 수 있는 조치를 적어보자. 
+	- 재설치 
+	- 관리자 권한으로 실행 
+	- Win
 
 ## For what? 
 
@@ -158,11 +162,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzQxMzI1NiwxMTg5OTkxMTc5LDIxMz
-Q4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4
-LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NT
-QyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYs
-NjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MD
-EyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTJd
-fQ==
+eyJoaXN0b3J5IjpbLTIwNzQ5OTQ4MjksMTE4OTk5MTE3OSwyMT
+M0ODM2NzA1LC02NDkzOTMwODEsNTMzNzA0MTg5LDY2ODI0MzY3
+OCw5MDU1NzY5NTIsMjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OT
+U0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2
+LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNj
+AxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUy
+XX0=
 -->
