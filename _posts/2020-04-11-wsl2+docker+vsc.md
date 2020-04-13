@@ -30,7 +30,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - wsl 2를 세팅하자. 
 - docker desktop edge 버전 2.0 이상을 깔자. [여기](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)를 참고하자. 
-- [vsc](https://code.visualstudio.com/))를 깔자. 
+- [vsc](https://code.visualstudio.com/) 혹은 [vsc insider](https://code.visualstudio.com/insiders/)를 깔자. 
 
 앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자. 
 
@@ -73,6 +73,7 @@ categories: [wsl, visual-studio-code, docker]
 	- 관리자 권한으로 실행 
 	- Windows의 `c\사용자\|user-id|\.vscode` 여기에 확장이 깔리게 된다. 녀석을 한번 지워주자. 
 		- 다음 실행 때 필요한 확장을 전부 재설치한다. 
+		- 좀 더 테스트를 해본 결과로는 Windows Preview 
 - 만일 컨테이너 내에 접속이 잘 이루어졌다면 컨테이터 내에 아래와 같이 vsc 관련 서버가 세팅된 상태가 된다. 이 녀석고 `Remote-Container`가 직접 통신하게 되는 형태이다. 따라서 사실상 이중 원격 접속은 아닌 셈이다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}
@@ -175,11 +176,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MT
-E4MzI3NiwxNzMzMzY3MTkxLDExODk5OTExNzksMjEzNDgzNjcw
-NSwtNjQ5MzkzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NT
-c2OTUyLDI5ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwx
-Nzg5NDA3NzQ0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1Nz
-MyMjAsNTkxNTk4NTQ4LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTZd
-fQ==
+eyJoaXN0b3J5IjpbLTE0MDEzMjI3MDYsODIzOTg5MDMzLDM1Mz
+I2MDc5NCwtMTM2MTE4MzI3NiwxNzMzMzY3MTkxLDExODk5OTEx
+NzksMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMzcwNDE4OSw2Nj
+gyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywtNDEyMzA3ODQs
+MTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMjgyNzQ2LDc3Nz
+U3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0xMjk0OTE1NDk0
+XX0=
 -->
