@@ -71,7 +71,9 @@ categories: [wsl, visual-studio-code, docker]
 - 정확한 해결방법은 솔직히 잘 모르겠다. 몇 가지 삽질로 해볼 수 있는 조치를 적어보자. 
 	- 재설치 
 	- 관리자 권한으로 실행 
-	- Win
+	- Windows의 `c\사용자\|user-id|\.vscode` 여기에 확장이 깔리게 된다. 녀석을 한번 지워주자. 
+		- 다음 확장 실행 때 모든 것이 재설치된다. 
+
 
 ## For what? 
 
@@ -162,11 +164,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQ5OTQ4MjksMTE4OTk5MTE3OSwyMT
-M0ODM2NzA1LC02NDkzOTMwODEsNTMzNzA0MTg5LDY2ODI0MzY3
-OCw5MDU1NzY5NTIsMjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OT
-U0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2
-LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNj
-AxMjc5NiwzOTgyNTQ3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUy
-XX0=
+eyJoaXN0b3J5IjpbMTczMzM2NzE5MSwxMTg5OTkxMTc5LDIxMz
+Q4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4
+LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NT
+QyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYs
+NjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MD
+EyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTJd
+fQ==
 -->
