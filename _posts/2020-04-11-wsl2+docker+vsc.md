@@ -169,10 +169,10 @@ categories: [wsl, visual-studio-code, docker]
 - 사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 `Dockerfile` 이라는 형태를 통해서 구현할 수 있다. 
 - 도커 컨테이너를 생성하는 데 필요한 단계를 넣어두고 빌드에 성공하면 해당 이미지가 생성되는 편리한 방식을 따르고 있다. 
 - 도커 허브에서는 github와 연결하여 github에 새로운 내용이 커밋되었을 자동으로 도커 허브의 빌드를 구현해주는 자동화 빌드까지 구현되어 있다. 
-- 
+- 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY1OTg5MjksMTczMzM2NzE5MSwxMT
+eyJoaXN0b3J5IjpbLTEzNjExODMyNzYsMTczMzM2NzE5MSwxMT
 g5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQx
 ODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMj
 MwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0
