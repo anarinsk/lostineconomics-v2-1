@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-12T20:44:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-12T21:17:51-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;h3 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h3&gt;
 
@@ -109,7 +109,8 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라. 보다 상세한 빌드 과정은 &lt;a href=&quot;https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
+  &lt;li&gt;도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라.&lt;/li&gt;
+  &lt;li&gt;윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;pull-ubuntu-1804&quot;&gt;Pull ubuntu 18.04&lt;/h3&gt;
@@ -196,13 +197,13 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjExODMyNzYsMTczMzM2NzE5MSwxMT
-g5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQx
-ODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMj
-MwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0
-Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5ND
-kxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQx
-XX0=
+eyJoaXN0b3J5IjpbLTEzMTk0OTk3MDIsLTEzNjExODMyNzYsMT
+czMzM2NzE5MSwxMTg5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5
+MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOT
+gzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0
+NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MT
+U5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MDEyNzk2LDM5ODI1NDc3
+Nl19
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
