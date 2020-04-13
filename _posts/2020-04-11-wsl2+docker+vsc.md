@@ -65,6 +65,10 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
 
+### Trouble shooting 
+
+- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. `Remote-` 확장의 특징은 
+
 ## For what? 
 
 - docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다. 
@@ -154,11 +158,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4OTk5MTE3OSwyMTM0ODM2NzA1LC02ND
-kzOTMwODEsNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1NzY5NTIs
-Mjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MD
-c3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIyMCw1
-OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNT
-Q3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzRd
+eyJoaXN0b3J5IjpbMTk2MzQxMzI1NiwxMTg5OTkxMTc5LDIxMz
+Q4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4
+LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NT
+QyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYs
+NjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MD
+EyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTJd
 fQ==
 -->
