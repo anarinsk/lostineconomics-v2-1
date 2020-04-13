@@ -48,7 +48,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - 우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. 
 - vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 거쳐 그 안에 깔린 ubuntu에 접근하는 것은 '원격' 접속의 개념이다. 그래서 해당 vsc 익스텐션 이름도 "Remote WSL"이다. 그런데 그 ubuntu 안에 설치된 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속, 즉 이중 원격 접속이 되는 셈이다. 이게 돼? 
-- 원래느
+- 원래는 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
 
 -  Extensions에서 remote를 검색하면 `Remote Development`를 찾을 수 있다. 이 녀석은 `Remote WSL`, `Remote SSH`, `Remote Container` 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자. 
@@ -154,11 +154,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwNzYzNzksMjEzNDgzNjcwNSwtNjQ5Mz
-kzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5
-ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3Nz
-Q0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkx
-NTk4NTQ4LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nz
-c2LC01NjMzNTkyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0XX0=
-
+eyJoaXN0b3J5IjpbMTE4OTk5MTE3OSwyMTM0ODM2NzA1LC02ND
+kzOTMwODEsNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1NzY5NTIs
+Mjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MD
+c3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIyMCw1
+OTE1OTg1NDgsLTEyOTQ5MTU0OTQsMTIwNjAxMjc5NiwzOTgyNT
+Q3NzYsLTU2MzM1OTI0MSwxOTMzNjkzNzUyLC02NDU2NjgzNzRd
+fQ==
 -->
