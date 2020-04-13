@@ -160,16 +160,16 @@ categories: [wsl, visual-studio-code, docker]
 ~$ docker run -it --rm anarinsk/py37-pandas 
 ```
 
-
-
 - 위에서 설명한대로 vsc를 통해 작업하면 된다. 안에  testcode.py라는 간략한 실험 코드를 넣어 두었다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
 
+### Dockerfile 
 
+- 사실 빌들
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTg5NDIzMywxNzMzMzY3MTkxLDExOD
+eyJoaXN0b3J5IjpbMTIxOTA2OTkzOSwxNzMzMzY3MTkxLDExOD
 k5OTExNzksMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMzcwNDE4
 OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywtNDEyMz
 A3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMjgyNzQ2
