@@ -30,9 +30,9 @@ categories: [wsl, visual-studio-code, docker]
 
 - wsl 2를 세팅하자. 
 - docker desktop edge 버전 2.0 이상을 깔자. [여기](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)를 참고하자. 
-- [vsc insider](https://code.visualstudio.com/insiders/)를 깔자. 
+- [vsc](https://code.visualstudio.com/))를 깔자. 
 
-앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자. vsc insider의 경우 기존에 stable 버전이 깔려 있더라도 상관 없다. 아이콘에서 알 수 있듯, 둘은 다른 앱이다. 
+앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자. 
 
 ## Pulling docker Image
 
@@ -48,8 +48,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - 우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다. 
 - vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 거쳐 그 안에 깔린 ubuntu에 접근하는 것은 '원격' 접속의 개념이다. 그래서 해당 vsc 익스텐션 이름도 "Remote WSL"이다. 그런데 그 ubuntu 안에 설치된 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속, 즉 이중 원격 접속이 되는 셈이다. 이게 돼? 
-- 이 포스팅을 작성하는 시점에서 vsc 정식(stable) 버전은 이러한 이중 원격 접속을 허용하지 않았다. 혹시 해서 insider 버전, 즉 실험적인 기능을 구현한 둔 버전을 깔았더니 이게 잘 잘 되더라.  
-
+- 원래느
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_1.png){: style="textalign:center; " width="800"}
 
 -  Extensions에서 remote를 검색하면 `Remote Development`를 찾을 수 있다. 이 녀석은 `Remote WSL`, `Remote SSH`, `Remote Container` 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자. 
@@ -155,11 +154,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMz
-cwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywt
-NDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMj
-gyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0x
-Mjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNT
-kyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0LC0yOTQ1NzQzOTRd
-fQ==
+eyJoaXN0b3J5IjpbNDAwNzYzNzksMjEzNDgzNjcwNSwtNjQ5Mz
+kzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5
+ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3Nz
+Q0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkx
+NTk4NTQ4LC0xMjk0OTE1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nz
+c2LC01NjMzNTkyNDEsMTkzMzY5Mzc1MiwtNjQ1NjY4Mzc0XX0=
+
 -->
