@@ -73,6 +73,9 @@ categories: [wsl, visual-studio-code, docker]
 	- 관리자 권한으로 실행 
 	- Windows의 `c\사용자\|user-id|\.vscode` 여기에 확장이 깔리게 된다. 녀석을 한번 지워주자. 
 		- 다음 확장 실행 때 모든 것이 재설치된다. 
+- 만일 컨테이너 내에 접속이 잘 이루어졌다면 컨테이터 내에 아래와 같이 vsc 관련 서버가 세팅된 상태가 된다. 이 녀석고 `Remote-Container`가 직접 통신하게 되는 형태이다. 따라서 사실상 이중 원격 접속은 아닌 셈이다. 
+
+![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}
 
 
 ## For what? 
@@ -157,6 +160,8 @@ categories: [wsl, visual-studio-code, docker]
 ~$ docker run -it --rm anarinsk/py37-pandas 
 ```
 
+
+
 - 위에서 설명한대로 vsc를 통해 작업하면 된다. 안에  testcode.py라는 간략한 실험 코드를 넣어 두었다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_6.png){: style="textalign:center; " width="700"}
@@ -164,11 +169,11 @@ categories: [wsl, visual-studio-code, docker]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzM2NzE5MSwxMTg5OTkxMTc5LDIxMz
-Q4MzY3MDUsLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4
-LDkwNTU3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NT
-QyNTAsMTc4OTQwNzc0NCwtMTgyMDI4Mjc0Niw3Nzc1Nzk1OTYs
-NjUzNTczMjIwLDU5MTU5ODU0OCwtMTI5NDkxNTQ5NCwxMjA2MD
-EyNzk2LDM5ODI1NDc3NiwtNTYzMzU5MjQxLDE5MzM2OTM3NTJd
+eyJoaXN0b3J5IjpbMjA4NTg5NDIzMywxNzMzMzY3MTkxLDExOD
+k5OTExNzksMjEzNDgzNjcwNSwtNjQ5MzkzMDgxLDUzMzcwNDE4
+OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5ODMxMjgxMywtNDEyMz
+A3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0LC0xODIwMjgyNzQ2
+LDc3NzU3OTU5Niw2NTM1NzMyMjAsNTkxNTk4NTQ4LC0xMjk0OT
+E1NDk0LDEyMDYwMTI3OTYsMzk4MjU0Nzc2LC01NjMzNTkyNDFd
 fQ==
 -->
