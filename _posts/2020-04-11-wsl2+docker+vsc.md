@@ -82,7 +82,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - `%appdata%`에 남은 정보가 컨테이너 접속을 방해하는 것으로 추정된다. 여튼 "disconnected from..." 메시지와 함께 컨테이너에 접속이 안되거나 접속에 문제가 생길 때 이 방법을 쓰시라.
 
-[^3]: 출처는 [여기](https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows). 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하느
+[^3]: 출처는 [여기](https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows). 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. 
 
 ## For what? 
 
@@ -181,11 +181,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODYwNzgxOSwtMTQ4MjA2MzcwNiwtNT
-E1ODcwOTY2LC00MjQyNjkwMCwxMDA4MDM3MDE4LDc1NTc2ODQ1
-NiwxOTY2MTc5MDA0LC00OTE1NTY2MzAsMTU4MjM2NjU4MiwxNz
-IxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtODM2OTcw
-NzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMyMDIsLT
-cxMzU3NjU0Myw4MjM5ODkwMzMsMzUzMjYwNzk0LC0xMzYxMTgz
-Mjc2XX0=
+eyJoaXN0b3J5IjpbNTA4MTkwNTIwLC0xNDgyMDYzNzA2LC01MT
+U4NzA5NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2
+LDE5NjYxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3Mj
+EzMzE2NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3
+MTUsNTU1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIwMiwtNz
+EzNTc2NTQzLDgyMzk4OTAzMywzNTMyNjA3OTQsLTEzNjExODMy
+NzZdfQ==
 -->
