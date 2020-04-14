@@ -66,7 +66,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
 
-- 컨테이너 익스텐션은 도커에 접속하기 위한 용도보다 훨씬 더 풍부하고 다양한 기능을 지니고 있다. 여기서는 도커 접속을 위한 도구로만 접근하도록 하자. 자세한 것은 [여기]를 참고하자
+- 컨테이너 익스텐션은 도커에 접속하기 위한 용도보다 훨씬 더 풍부하고 다양한 기능을 지니고 있다. 여기서는 도커 접속을 위한 도구로만 접근하도록 하자. 자세한 것은 [여기](https://code.visualstudio.com/docs/remote/containers)를 참고하자. 
 
 ### Trouble shooting 
 
@@ -182,7 +182,7 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyOTA0MDczLC0xNDgyMDYzNzA2LC01MT
+eyJoaXN0b3J5IjpbODg2Mjk1ODI1LC0xNDgyMDYzNzA2LC01MT
 U4NzA5NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2
 LDE5NjYxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3Mj
 EzMzE2NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3
