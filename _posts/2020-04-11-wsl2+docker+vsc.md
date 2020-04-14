@@ -72,10 +72,12 @@ categories: [wsl, visual-studio-code, docker]
 - 확장이 docker에 접속을 못하면서 생기는 일인데, vsc 혹은 vsc insider를 '완전히' 지워줘야 한다. 기본적인 언인스톨 이외에 아래의 작업을 꼭 해주자.[^3] 
 
 ----
+
 1. `Win + R` 실행  
 2. `%appdata%` 입력 후 엔터 
 3. `Code`, `Code - insider` 폴더를 찾아서 지운다.
 4. vsc, vsc insider를 다시 실행한다. 
+
 ----
 
 - `%appdata%`에 남은 정보가 컨테이너 접속을 방해하는 것으로 추정된다. 여튼 "disconnected from..." 메시지와 함께 컨테이너에 접속이 안되거나 접속에 문제가 생길 때 이 방법을 쓰시라.
@@ -179,11 +181,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTg3MDk2NiwtNDI0MjY5MDAsMTAwOD
-AzNzAxOCw3NTU3Njg0NTYsMTk2NjE3OTAwNCwtNDkxNTU2NjMw
-LDE1ODIzNjY1ODIsMTcyMTMzMTY3OSw2NTk1ODEwNzUsLTE2Mj
-k0NTQwMjAsLTgzNjk3MDcxNSw1NTU3ODkyNzksMTgxMDc2MzM5
-MSwxNjY5MTQzMjAyLC03MTM1NzY1NDMsODIzOTg5MDMzLDM1Mz
-I2MDc5NCwtMTM2MTE4MzI3NiwxNzMzMzY3MTkxLDExODk5OTEx
-NzldfQ==
+eyJoaXN0b3J5IjpbLTE0ODIwNjM3MDYsLTUxNTg3MDk2NiwtND
+I0MjY5MDAsMTAwODAzNzAxOCw3NTU3Njg0NTYsMTk2NjE3OTAw
+NCwtNDkxNTU2NjMwLDE1ODIzNjY1ODIsMTcyMTMzMTY3OSw2NT
+k1ODEwNzUsLTE2Mjk0NTQwMjAsLTgzNjk3MDcxNSw1NTU3ODky
+NzksMTgxMDc2MzM5MSwxNjY5MTQzMjAyLC03MTM1NzY1NDMsOD
+IzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MTE4MzI3NiwxNzMzMzY3
+MTkxXX0=
 -->
