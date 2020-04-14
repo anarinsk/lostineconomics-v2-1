@@ -67,16 +67,8 @@ categories: [wsl, visual-studio-code, docker]
 
 ### Trouble shooting 
 
-- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. `Remote-` 확장의 특징은 vsc가 해당 공간으로 들어가서 자신의 서버를 설치하는 개념이다. 이게 막혀 있으면 이런 문제가 생길 수 있다. 
-- 정확한 해결방법은 솔직히 잘 모르겠다. 몇 가지 삽질로 해볼 수 있는 조치를 적어보자. 
-	- 재설치 
-	- 관리자 권한으로 실행 
-	- Windows의 `c\사용자\|user-id|\.vscode` 여기에 확장이 깔리게 된다. 녀석을 한번 지워주자. 
-		- 다음 실행 때 필요한 확장을 전부 재설치한다. 
-		- 좀 더 테스트를 해본 결과로는 Windows Preview 버전의 차이 때문에 비롯되는 현상 같기도 하다. vsc가 먹는 버전도 있고 vsc insider가 먹는 버전도 있더라... 
-- 만일 컨테이너 내에 접속이 잘 이루어졌다면 컨테이터 내에 아래와 같이 vsc 관련 서버가 세팅된 상태가 된다. 이 녀석고 `Remote-Container`가 직접 통신하게 되는 형태이다. 따라서 사실상 이중 원격 접속은 아닌 셈이다. 
-
-<!--![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}-->
+- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. 
+- 확장이 docker에 접속으
 
 
 ## For what? 
@@ -176,11 +168,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2OTE0MzIwMiwtNzEzNTc2NTQzLDgyMz
-k4OTAzMywzNTMyNjA3OTQsLTEzNjExODMyNzYsMTczMzM2NzE5
-MSwxMTg5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5MzA4MSw1Mz
-M3MDQxODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMs
-LTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMD
-I4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0OF19
-
+eyJoaXN0b3J5IjpbMTIzNzk1MDE5NiwxNjY5MTQzMjAyLC03MT
+M1NzY1NDMsODIzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MTE4MzI3
+NiwxNzMzMzY3MTkxLDExODk5OTExNzksMjEzNDgzNjcwNSwtNj
+Q5MzkzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUy
+LDI5ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5ND
+A3NzQ0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjBd
+fQ==
 -->
