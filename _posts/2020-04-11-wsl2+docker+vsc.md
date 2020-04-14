@@ -76,7 +76,7 @@ categories: [wsl, visual-studio-code, docker]
 		- 좀 더 테스트를 해본 결과로는 Windows Preview 버전의 차이 때문에 비롯되는 현상 같기도 하다. vsc가 먹는 버전도 있고 vsc insider가 먹는 버전도 있더라... 
 - 만일 컨테이너 내에 접속이 잘 이루어졌다면 컨테이터 내에 아래와 같이 vsc 관련 서버가 세팅된 상태가 된다. 이 녀석고 `Remote-Container`가 직접 통신하게 되는 형태이다. 따라서 사실상 이중 원격 접속은 아닌 셈이다. 
 
-![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}
+<!--![]({{ site.baseurl }}/images/wsldockervsc/fig_7.png){: style="textalign:center; " width="400"}-->
 
 
 ## For what? 
@@ -176,11 +176,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzU3NjU0Myw4MjM5ODkwMzMsMzUzMj
-YwNzk0LC0xMzYxMTgzMjc2LDE3MzMzNjcxOTEsMTE4OTk5MTE3
-OSwyMTM0ODM2NzA1LC02NDkzOTMwODEsNTMzNzA0MTg5LDY2OD
-I0MzY3OCw5MDU1NzY5NTIsMjk4MzEyODEzLC00MTIzMDc4NCwx
-MzY0OTU0MjUwLDE3ODk0MDc3NDQsLTE4MjAyODI3NDYsNzc3NT
-c5NTk2LDY1MzU3MzIyMCw1OTE1OTg1NDgsLTEyOTQ5MTU0OTRd
-fQ==
+eyJoaXN0b3J5IjpbMTY2OTE0MzIwMiwtNzEzNTc2NTQzLDgyMz
+k4OTAzMywzNTMyNjA3OTQsLTEzNjExODMyNzYsMTczMzM2NzE5
+MSwxMTg5OTkxMTc5LDIxMzQ4MzY3MDUsLTY0OTM5MzA4MSw1Mz
+M3MDQxODksNjY4MjQzNjc4LDkwNTU3Njk1MiwyOTgzMTI4MTMs
+LTQxMjMwNzg0LDEzNjQ5NTQyNTAsMTc4OTQwNzc0NCwtMTgyMD
+I4Mjc0Niw3Nzc1Nzk1OTYsNjUzNTczMjIwLDU5MTU5ODU0OF19
+
 -->
