@@ -62,6 +62,7 @@ categories: [wsl, visual-studio-code, docker]
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_3.png){: style="textalign:center; " width="400"}
  
 - 부착과 함께 별도의 창이 뜨면서 아래 그림처럼 윈도 앱 창 하단에서  컨테이너로의 이중 원격 접속이 잘 이루어졌음을 확인할 수 있다. 
+	- 사실 이중 원격 접속이 아니다. docker가 wsl을 지원하기 때문에 vsc는 docker를 통해 바로 wsl 내에 돌고 있는 컨테이너에 접속하는 것이다. 
 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_4.png){: style="textalign:center; " width="400"}
 
@@ -176,11 +177,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk0NTQwMjAsLTgzNjk3MDcxNSw1NT
-U3ODkyNzksMTgxMDc2MzM5MSwxNjY5MTQzMjAyLC03MTM1NzY1
-NDMsODIzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MTE4MzI3NiwxNz
-MzMzY3MTkxLDExODk5OTExNzksMjEzNDgzNjcwNSwtNjQ5Mzkz
-MDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUyLDI5OD
-MxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5NDA3NzQ0
-XX0=
+eyJoaXN0b3J5IjpbNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04Mz
+Y5NzA3MTUsNTU1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIw
+MiwtNzEzNTc2NTQzLDgyMzk4OTAzMywzNTMyNjA3OTQsLTEzNj
+ExODMyNzYsMTczMzM2NzE5MSwxMTg5OTkxMTc5LDIxMzQ4MzY3
+MDUsLTY0OTM5MzA4MSw1MzM3MDQxODksNjY4MjQzNjc4LDkwNT
+U3Njk1MiwyOTgzMTI4MTMsLTQxMjMwNzg0LDEzNjQ5NTQyNTBd
+fQ==
 -->
