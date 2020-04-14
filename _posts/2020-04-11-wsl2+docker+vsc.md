@@ -68,8 +68,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ### Trouble shooting 
 
-- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. 
-- 확장이 docker에 접속을 못하면서 생기는 일인데, 내 경우는 아래의 작업으로 문제를 해결했다.[^3] 
+- 가끔 접속 단계에서 에러가 발생하는 경우가 있다. `Remote - Container` 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.[^3] 
 
 ----
 
@@ -80,7 +79,7 @@ categories: [wsl, visual-studio-code, docker]
 
 ----
 
-- `%appdata%`에 남은 정보가 컨테이너 접속을 방해하는 것으로 추정된다. 여튼 "disconnected from..." 메시지와 함께 컨테이너에 접속이 안되거나 접속에 문제가 생길 때 이 방법을 쓰시라.
+- 여튼 "disconnected from..." 메시지와 함께 컨테이너에 접속이 안되거나 접속에 문제가 생길 때 이 방법을 쓰시라.
 
 [^3]: 출처는 [여기](https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows). 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. 
 
@@ -181,7 +180,7 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MTkwNTIwLC0xNDgyMDYzNzA2LC01MT
+eyJoaXN0b3J5IjpbMzE0NzQwMDk0LC0xNDgyMDYzNzA2LC01MT
 U4NzA5NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2
 LDE5NjYxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3Mj
 EzMzE2NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3
