@@ -99,7 +99,7 @@ categories: [wsl, visual-studio-code, docker]
 	- ubuntu 18.04 
 	- python 3.7 
 	- pandas 1.0.3
-- 먼저 기본이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2]
+- 먼저 바탕이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2] 
 - 도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라. 
 - 윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다. 
 - 
@@ -182,11 +182,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2Mjk1ODI1LC0xNDgyMDYzNzA2LC01MT
-U4NzA5NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2
-LDE5NjYxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3Mj
-EzMzE2NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3
-MTUsNTU1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIwMiwtNz
-EzNTc2NTQzLDgyMzk4OTAzMywzNTMyNjA3OTQsLTEzNjExODMy
-NzZdfQ==
+eyJoaXN0b3J5IjpbLTExODc4NzQ0MDIsODg2Mjk1ODI1LC0xND
+gyMDYzNzA2LC01MTU4NzA5NjYsLTQyNDI2OTAwLDEwMDgwMzcw
+MTgsNzU1NzY4NDU2LDE5NjYxNzkwMDQsLTQ5MTU1NjYzMCwxNT
+gyMzY2NTgyLDE3MjEzMzE2NzksNjU5NTgxMDc1LC0xNjI5NDU0
+MDIwLC04MzY5NzA3MTUsNTU1Nzg5Mjc5LDE4MTA3NjMzOTEsMT
+Y2OTE0MzIwMiwtNzEzNTc2NTQzLDgyMzk4OTAzMywzNTMyNjA3
+OTRdfQ==
 -->
