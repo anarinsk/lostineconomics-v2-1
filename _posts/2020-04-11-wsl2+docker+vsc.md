@@ -68,15 +68,15 @@ categories: [wsl, visual-studio-code, docker]
 ### Trouble shooting 
 
 - 가끔 접속 단계에서 에러가 발생하는 경우가 있다. 
-- 확장이 docker에 접속을 못하면서 생기는 일인데, vsc 혹은 vsc insider를 '완전히' 지워줘야 한다. 기본적인 언인스톨 이외에 아래의 작업을 꼭 해주자.[^3] 
+- 확장이 docker에 접속을 못하면서 생기는 일인데, vsc 혹은 vsc insider를 '완전히' 지워줘야 한다. 기본적인 언인스톨 이외에 아래의 작업을 꼭 해주자.[^3] `%appdata%` 안의 정보가 살아 남아 컨테이너 접속을 방해하는 것으로 추정된다. 
 
 [^3]: 출처는 [여기](https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows) 
 
-	1. Open Run (`Win + R`)  
-	2. Enter  `%appdata%` 
-	3. 3.  Press Enter
-    
-4.  Delete the folder  `Code`.
+1. Open Run (`Win + R`)  
+2. Enter  `%appdata%` 
+3. Press Enter  
+4. Delete the folder  `Code`.
+
 
 ## For what? 
 
@@ -175,11 +175,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMDk1NDIzLDE2NjkxNDMyMDIsLTcxMz
-U3NjU0Myw4MjM5ODkwMzMsMzUzMjYwNzk0LC0xMzYxMTgzMjc2
-LDE3MzMzNjcxOTEsMTE4OTk5MTE3OSwyMTM0ODM2NzA1LC02ND
-kzOTMwODEsNTMzNzA0MTg5LDY2ODI0MzY3OCw5MDU1NzY5NTIs
-Mjk4MzEyODEzLC00MTIzMDc4NCwxMzY0OTU0MjUwLDE3ODk0MD
-c3NDQsLTE4MjAyODI3NDYsNzc3NTc5NTk2LDY1MzU3MzIyMF19
-
+eyJoaXN0b3J5IjpbMTgxMDc2MzM5MSwxNjY5MTQzMjAyLC03MT
+M1NzY1NDMsODIzOTg5MDMzLDM1MzI2MDc5NCwtMTM2MTE4MzI3
+NiwxNzMzMzY3MTkxLDExODk5OTExNzksMjEzNDgzNjcwNSwtNj
+Q5MzkzMDgxLDUzMzcwNDE4OSw2NjgyNDM2NzgsOTA1NTc2OTUy
+LDI5ODMxMjgxMywtNDEyMzA3ODQsMTM2NDk1NDI1MCwxNzg5ND
+A3NzQ0LC0xODIwMjgyNzQ2LDc3NzU3OTU5Niw2NTM1NzMyMjBd
+fQ==
 -->
