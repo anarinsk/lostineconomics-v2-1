@@ -12,7 +12,9 @@ categories: [wsl]
 
 WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 [2004 업데이트](https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/)에 정식으로 포함될 예정이다.
 
-이 포스트는 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리하기 위한 용도다. 역시나 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 것임을 밝혀둔다. 
+이 포스트는 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리하기 위한 용도다. 역시나 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 '나놈'을 위한 것임을 밝혀둔다.[^4]
+
+[^4]: 상세한 다른 가이드로는 [여기](https://pbpython.com/wsl-python.html)를 참고하자. 
 
 ## Ubuntu 18.04 설치 
 
@@ -132,10 +134,11 @@ wsl --set-default Ubuntu-18.04
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzMwMTEyMywtMTg0ODE2MDQ5OSwtMT
-kxODM2NTgxMSwtMTYxNTY4MDg1NSw0ODM4NzEzMDYsODYwNTc0
-MTY4LDEwMTgxMzM1ODksLTQ5OTMxOTQ1LC04NzA1ODkxNSw1Nj
-E2MzY1NjcsLTEyMjgwNzQxNSwxNTc2ODA0Nzg3LC0xMDE3MTY5
-NTIyLC0xODc0NjQ5NTQwLDU4NTU5MTkzMCwtMjA1NzgyOTc4Mi
-wxMzU2MzU4NTg4LC0xNjY3Njc5NTAsMjA3Mjc0OTAxN119
+eyJoaXN0b3J5IjpbMTYyODc0NjQ5MCwtMzQ3MzAxMTIzLC0xOD
+Q4MTYwNDk5LC0xOTE4MzY1ODExLC0xNjE1NjgwODU1LDQ4Mzg3
+MTMwNiw4NjA1NzQxNjgsMTAxODEzMzU4OSwtNDk5MzE5NDUsLT
+g3MDU4OTE1LDU2MTYzNjU2NywtMTIyODA3NDE1LDE1NzY4MDQ3
+ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC
+0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcy
+NzQ5MDE3XX0=
 -->
