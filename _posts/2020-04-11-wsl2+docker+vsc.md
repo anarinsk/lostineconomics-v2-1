@@ -32,9 +32,7 @@ categories: [wsl, visual-studio-code, docker]
 - docker desktop edge 버전 2.0 이상을 깔자. [여기](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)를 참고하자. 
 - [vsc](https://code.visualstudio.com/) 혹은 [vsc insider](https://code.visualstudio.com/insiders/)를 깔자. 
 
-앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자.[^4]
-
-[^4]: 상세한 다른 가이드로는 [여기](https://pbpython.com/wsl-python.html)를 참고하자. 
+앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자.
 
 ## Pulling docker Image
 
@@ -184,11 +182,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4MjQyNzE1LC0xMTg3ODc0NDAyLDg4Nj
-I5NTgyNSwtMTQ4MjA2MzcwNiwtNTE1ODcwOTY2LC00MjQyNjkw
-MCwxMDA4MDM3MDE4LDc1NTc2ODQ1NiwxOTY2MTc5MDA0LC00OT
-E1NTY2MzAsMTU4MjM2NjU4MiwxNzIxMzMxNjc5LDY1OTU4MTA3
-NSwtMTYyOTQ1NDAyMCwtODM2OTcwNzE1LDU1NTc4OTI3OSwxOD
-EwNzYzMzkxLDE2NjkxNDMyMDIsLTcxMzU3NjU0Myw4MjM5ODkw
-MzNdfQ==
+eyJoaXN0b3J5IjpbMjAxNDU3MzIyMiw0MDgyNDI3MTUsLTExOD
+c4NzQ0MDIsODg2Mjk1ODI1LC0xNDgyMDYzNzA2LC01MTU4NzA5
+NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2LDE5Nj
+YxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3MjEzMzE2
+NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3MTUsNT
+U1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIwMiwtNzEzNTc2
+NTQzXX0=
 -->
