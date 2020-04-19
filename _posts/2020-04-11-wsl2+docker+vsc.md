@@ -34,15 +34,14 @@ categories: [wsl, visual-studio-code, docker]
 
 앞 두 개는 [여기](https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html)를 참고하자.
 
-## Pulling docker Image
-
+## Pulling docker mage
 - 이제 wsl 2를 통해 Ubuntu로 진입한다. 
 - 도커가 제대로 설치되어 있다면 이미지들을 Ubuntu로 끌어올 수 있을 것이다. 시험 삼아서 tensorflow의 이미지를 끌어와보자. 
 
 ```shell
 ~$ docker run -it --rm tensorflow/tensorflow:latest-py3
 ```
-- 이제 `wsl 2` -`Ubuntu` -`docker` 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 자세한 내용은 [여기](https://www.tensorflow.org/install/docker)를 참고하자. 
+- 이제 `wsl 2` -`Ubuntu` -`docker` 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자. 
 
 ## Extensions for vsc 
 
@@ -99,10 +98,10 @@ categories: [wsl, visual-studio-code, docker]
 	- ubuntu 18.04 
 	- python 3.7 
 	- pandas 1.0.3
-- 먼저 바탕이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2] 
+- 먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.[^2] 
 - 도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라. 
 - 윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다. 
-- 
+- 원 
 ![]({{ site.baseurl }}/images/wsldockervsc/fig_8.png){: style="textalign:center; " width="700"}
 
 [^2]: ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? [여기](https://pythonspeed.com/articles/alpine-docker-python/)에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. 
@@ -125,7 +124,7 @@ categories: [wsl, visual-studio-code, docker]
 
 - Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 `sudo`는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다. 
 
-### How to commit / tag / push Image 
+### How to ommit / ag / ush Image 
 
 - 이렇게 별도의 작업을 거친 컨테이너는 애초에 끌고 왔던 이미지와는 달라졌을 것이다. 그런데 도커의 속성상 콘테이너를 내리게 되면 변경했던 내용들은 다 사라진다. 이렇게 변경된 콘테이너를 저장할 수 있어야 한다. 
 
@@ -182,11 +181,11 @@ categories: [wsl, visual-studio-code, docker]
 - 도커 빌드에 관해서 보다 상세한 사항은 [여기](https://www.44bits.io/ko/post/how-docker-image-work)를 참고하자. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDU3MzIyMiw0MDgyNDI3MTUsLTExOD
-c4NzQ0MDIsODg2Mjk1ODI1LC0xNDgyMDYzNzA2LC01MTU4NzA5
-NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2LDE5Nj
-YxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3MjEzMzE2
-NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3MTUsNT
-U1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIwMiwtNzEzNTc2
-NTQzXX0=
+eyJoaXN0b3J5IjpbMTE2NDg0NTEzLDIwMTQ1NzMyMjIsNDA4Mj
+QyNzE1LC0xMTg3ODc0NDAyLDg4NjI5NTgyNSwtMTQ4MjA2Mzcw
+NiwtNTE1ODcwOTY2LC00MjQyNjkwMCwxMDA4MDM3MDE4LDc1NT
+c2ODQ1NiwxOTY2MTc5MDA0LC00OTE1NTY2MzAsMTU4MjM2NjU4
+MiwxNzIxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtOD
+M2OTcwNzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMy
+MDJdfQ==
 -->
