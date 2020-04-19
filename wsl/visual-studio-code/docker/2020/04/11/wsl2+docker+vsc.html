@@ -192,8 +192,7 @@ window.onload = wrap_img;
 
 <p>앞 두 개는 <a href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">여기</a>를 참고하자.</p>
 
-<h2 id="pulling-docker-image">Pulling docker Image</h2>
-
+<h2 id="pulling-docker-mage">Pulling docker mage</h2>
 <ul>
   <li>이제 wsl 2를 통해 Ubuntu로 진입한다.</li>
   <li>도커가 제대로 설치되어 있다면 이미지들을 Ubuntu로 끌어올 수 있을 것이다. 시험 삼아서 tensorflow의 이미지를 끌어와보자.</li>
@@ -202,7 +201,7 @@ window.onload = wrap_img;
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker run <span class="nt">-it</span> <span class="nt">--rm</span> tensorflow/tensorflow:latest-py3
 </code></pre></div></div>
 <ul>
-  <li>이제 <code class="highlighter-rouge">wsl 2</code> -<code class="highlighter-rouge">Ubuntu</code> -<code class="highlighter-rouge">docker</code> 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 자세한 내용은 <a href="https://www.tensorflow.org/install/docker">여기</a>를 참고하자.</li>
+  <li>이제 <code class="highlighter-rouge">wsl 2</code> -<code class="highlighter-rouge">Ubuntu</code> -<code class="highlighter-rouge">docker</code> 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.</li>
 </ul>
 
 <h2 id="extensions-for-vsc">Extensions for vsc</h2>
@@ -280,10 +279,11 @@ window.onload = wrap_img;
       <li>pandas 1.0.3</li>
     </ul>
   </li>
-  <li>먼저 바탕이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup></li>
+  <li>먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup></li>
   <li>도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라.</li>
   <li>윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다.</li>
-  <li><img src="/lostineconomics-v2-1/images/wsldockervsc/fig_8.png" alt="" style="textalign:center; " width="700" /></li>
+  <li>원 
+<img src="/lostineconomics-v2-1/images/wsldockervsc/fig_8.png" alt="" style="textalign:center; " width="700" /></li>
 </ul>
 
 <h3 id="pull-ubuntu-1804">Pull ubuntu 18.04</h3>
@@ -304,7 +304,7 @@ window.onload = wrap_img;
   <li>Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 <code class="highlighter-rouge">sudo</code>는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.</li>
 </ul>
 
-<h3 id="how-to-commit--tag--push-image">How to commit / tag / push Image</h3>
+<h3 id="how-to-ommit--ag--ush-image">How to ommit / ag / ush Image</h3>
 
 <ul>
   <li>이렇게 별도의 작업을 거친 컨테이너는 애초에 끌고 왔던 이미지와는 달라졌을 것이다. 그런데 도커의 속성상 콘테이너를 내리게 되면 변경했던 내용들은 다 사라진다. 이렇게 변경된 콘테이너를 저장할 수 있어야 한다.</li>
@@ -370,13 +370,13 @@ window.onload = wrap_img;
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDU3MzIyMiw0MDgyNDI3MTUsLTExOD
-c4NzQ0MDIsODg2Mjk1ODI1LC0xNDgyMDYzNzA2LC01MTU4NzA5
-NjYsLTQyNDI2OTAwLDEwMDgwMzcwMTgsNzU1NzY4NDU2LDE5Nj
-YxNzkwMDQsLTQ5MTU1NjYzMCwxNTgyMzY2NTgyLDE3MjEzMzE2
-NzksNjU5NTgxMDc1LC0xNjI5NDU0MDIwLC04MzY5NzA3MTUsNT
-U1Nzg5Mjc5LDE4MTA3NjMzOTEsMTY2OTE0MzIwMiwtNzEzNTc2
-NTQzXX0=
+eyJoaXN0b3J5IjpbMTE2NDg0NTEzLDIwMTQ1NzMyMjIsNDA4Mj
+QyNzE1LC0xMTg3ODc0NDAyLDg4NjI5NTgyNSwtMTQ4MjA2Mzcw
+NiwtNTE1ODcwOTY2LC00MjQyNjkwMCwxMDA4MDM3MDE4LDc1NT
+c2ODQ1NiwxOTY2MTc5MDA0LC00OTE1NTY2MzAsMTU4MjM2NjU4
+MiwxNzIxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtOD
+M2OTcwNzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMy
+MDJdfQ==
 -->
 <div class="footnotes">
   <ol>
