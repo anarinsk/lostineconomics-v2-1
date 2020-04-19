@@ -20,11 +20,11 @@ categories: [machine-learning, basics]
 
 ## Basic Three 
 
-![]({{ site.baseurl }}/images/clf-metrics/fig_1.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/clf-metrics/fig_1.png){: style="textalign:center; " width="400"}
 
-![]({{ site.baseurl }}/images/clf-metrics/fig_2.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/clf-metrics/fig_2.png){: style="textalign:center; " width="400"}
 
-![]({{ site.baseurl }}/images/clf-metrics/fig_3.png){: style="textalign:center; " width="600"}
+![]({{ site.baseurl }}/images/clf-metrics/fig_3.png){: style="textalign:center; " width="400"}
 
 ## Term 
 
@@ -49,6 +49,6 @@ categories: [machine-learning, basics]
 - 경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까? 
 - 이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 ROC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTQ1NTM2OCw2NjQ2MDg2NTIsLTEzNT
-c1MTcxNjhdfQ==
+eyJoaXN0b3J5IjpbLTE5ODYxNzA0OTQsNjY0NjA4NjUyLC0xMz
+U3NTE3MTY4XX0=
 -->
