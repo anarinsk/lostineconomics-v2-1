@@ -17,7 +17,10 @@ categories: [machine-learning, basics]
 
 - 로(행)는 예측치를 컬럼(열)은 실제 속성을 나타낸다. 
 - 이에 따라서 4개의 컨퓨전 매트릭스 행렬이 생긴다. 
-- 한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 
+- 한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)를 따른다. 즉, 
+	- True Positive: Positive란 예측이 맞는 경우다. 즉, 컨퓨전 매트릭스에서 2사분면을 나타낸다. 
+	- True Negative: Negative란 예측이 맞는 경우다. 즉 컨퓨전 매트릭스에서 4사분면을 나타난다. 
+	- False Positive: Positive란 예측
 
 ## Basic Three 
 
@@ -58,7 +61,7 @@ table {
 - 경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까? 
 - 이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 ROC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTcyODg5NiwyMDk3NTkxNjAsMTQxNT
+eyJoaXN0b3J5IjpbMTcxNzQwMTk2OCwyMDk3NTkxNjAsMTQxNT
 U0MTU1NSwtMTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5
 OCwtNjE1NzgzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLT
 E3ODc3OTc2MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1
