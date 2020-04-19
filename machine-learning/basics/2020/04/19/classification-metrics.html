@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Metrics for Binary Classification" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="이상 분류 지표 함 정리하고 가즈아~" />
-<meta property="og:description" content="이상 분류 지표 함 정리하고 가즈아~" />
+<meta name="description" content="이항 분류 지표, 함 정리하고 가즈아~" />
+<meta property="og:description" content="이항 분류 지표, 함 정리하고 가즈아~" />
 <link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" />
 <meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-19T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"이상 분류 지표 함 정리하고 가즈아~","headline":"Metrics for Binary Classification","dateModified":"2020-04-19T00:00:00-05:00","datePublished":"2020-04-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html","@context":"https://schema.org"}</script>
+{"description":"이항 분류 지표, 함 정리하고 가즈아~","headline":"Metrics for Binary Classification","dateModified":"2020-04-19T00:00:00-05:00","datePublished":"2020-04-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,15 +28,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Metrics for Binary Classification" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="이상 분류 지표 함 정리하고 가즈아~" />
-<meta property="og:description" content="이상 분류 지표 함 정리하고 가즈아~" />
+<meta name="description" content="이항 분류 지표, 함 정리하고 가즈아~" />
+<meta property="og:description" content="이항 분류 지표, 함 정리하고 가즈아~" />
 <link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" />
 <meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-19T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"이상 분류 지표 함 정리하고 가즈아~","headline":"Metrics for Binary Classification","dateModified":"2020-04-19T00:00:00-05:00","datePublished":"2020-04-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html","@context":"https://schema.org"}</script>
+{"description":"이항 분류 지표, 함 정리하고 가즈아~","headline":"Metrics for Binary Classification","dateModified":"2020-04-19T00:00:00-05:00","datePublished":"2020-04-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -133,7 +133,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Metrics for Binary Classification</h1><p class="page-description">이상 분류 지표 함 정리하고 가즈아~</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-19T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Metrics for Binary Classification</h1><p class="page-description">이항 분류 지표, 함 정리하고 가즈아~</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-19T00:00:00-05:00" itemprop="datePublished">
         Apr 19, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -231,7 +231,8 @@ window.onload = wrap_img;
   <li>경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까?</li>
   <li>이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 ROC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NjA4NjUyLC0xMzU3NTE3MTY4XX0=
+eyJoaXN0b3J5IjpbLTE3OTcxMzYxMjgsNjY0NjA4NjUyLC0xMz
+U3NTE3MTY4XX0=
 --></li>
 </ul>
 
