@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T07:39:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T07:40:21-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;
@@ -24,7 +24,7 @@
 &lt;p&gt;헛갈리니 용어를 정리하고 가보자.&lt;/p&gt;
 
 &lt;style type=&quot;text/css&quot;&gt;  
-table {font-size: 150%;}  
+table {font-size: 200%;}  
 &lt;/style&gt;
 
 &lt;table&gt;
@@ -71,8 +71,8 @@ table {font-size: 150%;}
   &lt;li&gt;경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까?&lt;/li&gt;
   &lt;li&gt;이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 ROC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY5NjYwNjYsLTk3ODUyNDcxLC0xOT
-g2MTcwNDk0LDY2NDYwODY1MiwtMTM1NzUxNzE2OF19
+eyJoaXN0b3J5IjpbODA5NTc3ODMyLC05Nzg1MjQ3MSwtMTk4Nj
+E3MDQ5NCw2NjQ2MDg2NTIsLTEzNTc1MTcxNjhdfQ==
 --&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Mission</summary></entry><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
