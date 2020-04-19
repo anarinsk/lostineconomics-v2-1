@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T15:55:27-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T15:57:14-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;
@@ -10,7 +10,13 @@
 &lt;ul&gt;
   &lt;li&gt;로(행)는 예측치를 컬럼(열)은 실제 속성을 나타낸다.&lt;/li&gt;
   &lt;li&gt;이에 따라서 4개의 컨퓨전 매트릭스 행렬이 생긴다.&lt;/li&gt;
-  &lt;li&gt;한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는&lt;/li&gt;
+  &lt;li&gt;한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)를 따른다. 즉,
+    &lt;ul&gt;
+      &lt;li&gt;True Positive: Positive란 예측이 맞는 경우다. 즉, 컨퓨전 매트릭스에서 2사분면을 나타낸다.&lt;/li&gt;
+      &lt;li&gt;True Negative: Negative란 예측이 맞는 경우다. 즉 컨퓨전 매트릭스에서 4사분면을 나타난다.&lt;/li&gt;
+      &lt;li&gt;False Positive: Positive란 예측&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;basic-three&quot;&gt;Basic Three&lt;/h2&gt;
@@ -82,7 +88,7 @@ table {
   &lt;li&gt;경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까?&lt;/li&gt;
   &lt;li&gt;이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 ROC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 &amp;lt;!–stackedit_data:
-eyJoaXN0b3J5IjpbMTM4OTcyODg5NiwyMDk3NTkxNjAsMTQxNT
+eyJoaXN0b3J5IjpbMTcxNzQwMTk2OCwyMDk3NTkxNjAsMTQxNT
 U0MTU1NSwtMTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5
 OCwtNjE1NzgzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLT
 E3ODc3OTc2MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1
