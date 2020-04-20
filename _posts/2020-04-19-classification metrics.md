@@ -66,15 +66,16 @@ table {
 
 ## F1 Score 
 
-- F1 스코어는 별게 아니다. 쉽게 
+- F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 있다면 accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다. 
+- 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY2MDc1NDY2LDY5NjYxNzA3NSwxNjgwOT
-E3MTE2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0MTU1NDE1NTUs
-LTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NTk1OTgsLTYxNT
-c4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQwLC0xNzg3Nzk3
-NjEwLC0xNDY3MTIyMjg4LC03MjI2OTE0MjksLTE5NTM2NTY2OD
-UsLTY4MjY5MDA4OCw4MDk1Nzc4MzIsLTk3ODUyNDcxLC0xOTg2
-MTcwNDk0XX0=
+eyJoaXN0b3J5IjpbNjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MT
+cxMTYsLTU3MTI0ODY1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwt
+MTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1Nz
+gzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2
+MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1MzY1NjY4NS
+wtNjgyNjkwMDg4LDgwOTU3NzgzMiwtOTc4NTI0NzEsLTE5ODYx
+NzA0OTRdfQ==
 -->
