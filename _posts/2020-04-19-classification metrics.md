@@ -71,12 +71,12 @@ table {
 - F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉. 
 
 $$
-\dfrac{2}{\frac{1}{}}
+\dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = \dfrac{2~{\rm recall} \times \rm{}}{}
 $$ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjQ5MjEwNiw2MzgyNjE0OCw2OTY2MT
+eyJoaXN0b3J5IjpbMTYzNzAzOTEwNSw2MzgyNjE0OCw2OTY2MT
 cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
 NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
 U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
