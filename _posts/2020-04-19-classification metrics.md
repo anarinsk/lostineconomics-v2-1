@@ -66,18 +66,19 @@ table {
 
 ## F1 Score 
 
-- F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 있다면 accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다. 
-- 그런데, 타겟이 어느 하나로 치우쳐 있다면 accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 "신용우량"을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다. 
+- F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 분포한다면(balanced data) accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다.[^1]
+- 그런데, 타겟이 어느 하나로 치우쳐 있다면(imbalanced data)  accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 "신용우량"을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다. 
 - F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉. 
 
 $$
 \dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = \dfrac{2~{\rm recall} \times {\rm precision}}{{\rm recall} + {\rm precision}}
 $$ 
 
-- 조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 
+- 조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 데이터가 치우쳐 있을 경우 사용하는 게 좋다. 
 
+[^1]: 멀티 클래스의 경우에 관해서는 [여기](http://m.blog.daum.net/jungjin1980/270?tp_nil_a=2)르
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzQ0NTAzMyw2MzgyNjE0OCw2OTY2MT
+eyJoaXN0b3J5IjpbMTA0Nzk2Njg0NSw2MzgyNjE0OCw2OTY2MT
 cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
 NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
 U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
