@@ -76,13 +76,13 @@ $$
 
 - 조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 데이터가 치우쳐 있을 경우 사용하는 게 좋다. 
 
-[^1]: 멀티 클래스의 경우에 관해서는 [여기](http://m.blog.daum.net/jungjin1980/270?tp_nil_a=2)를 참고하라. 
+[^1]: 멀티 클래스의 경우에 관해서는 [여기](https://nittaku.tistory.com/295)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk4NzE3NzUsNjM4MjYxNDgsNjk2Nj
-E3MDc1LDE2ODA5MTcxMTYsLTU3MTI0ODY1NCwyMDk3NTkxNjAs
-MTQxNTU0MTU1NSwtMTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OT
-c1OTU5OCwtNjE1NzgzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjEx
-NDAsLTE3ODc3OTc2MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOS
-wtMTk1MzY1NjY4NSwtNjgyNjkwMDg4LDgwOTU3NzgzMiwtOTc4
-NTI0NzFdfQ==
+eyJoaXN0b3J5IjpbNjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNz
+A3NSwxNjgwOTE3MTE2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0
+MTU1NDE1NTUsLTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NT
+k1OTgsLTYxNTc4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQw
+LC0xNzg3Nzk3NjEwLC0xNDY3MTIyMjg4LC03MjI2OTE0MjksLT
+E5NTM2NTY2ODUsLTY4MjY5MDA4OCw4MDk1Nzc4MzIsLTk3ODUy
+NDcxXX0=
 -->
