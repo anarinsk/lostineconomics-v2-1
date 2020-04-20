@@ -71,18 +71,19 @@ table {
 - F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉. 
 
 $$
-\dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = \dfrac{2~{\rm recall} \times {\rm precision}}{{\rm recall} + {\rm precision}}
+\dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = 2 \dfrac{{\rm recall} \times {\rm precision}}{ {\rm recall} + {\rm precision} }
 $$ 
+
 
 - 조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 데이터가 치우쳐 있을 경우 사용하는 게 좋다. 
 
 [^1]: 멀티 클래스의 경우에 관해서는 [여기](https://nittaku.tistory.com/295)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNz
-A3NSwxNjgwOTE3MTE2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0
-MTU1NDE1NTUsLTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NT
-k1OTgsLTYxNTc4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQw
-LC0xNzg3Nzk3NjEwLC0xNDY3MTIyMjg4LC03MjI2OTE0MjksLT
-E5NTM2NTY2ODUsLTY4MjY5MDA4OCw4MDk1Nzc4MzIsLTk3ODUy
-NDcxXX0=
+eyJoaXN0b3J5IjpbLTExMDgwMTAxLDYxMzc2ODU5OSw2MzgyNj
+E0OCw2OTY2MTcwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIw
+OTc1OTE2MCwxNDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OT
+A5NDAsMzU5NzU5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEs
+MTI3OTE2MTE0MCwtMTc4Nzc5NzYxMCwtMTQ2NzEyMjI4OCwtNz
+IyNjkxNDI5LC0xOTUzNjU2Njg1LC02ODI2OTAwODgsODA5NTc3
+ODMyXX0=
 -->
