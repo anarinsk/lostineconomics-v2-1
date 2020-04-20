@@ -70,11 +70,13 @@ table {
 - 그런데, 타겟이 어느 하나로 치우쳐 있다면 accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 "신용우량"을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다. 
 - F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉. 
 
-- 
+$$
+\dfrac{2}{\frac{1}{}}
+$$ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDY1MzQ1OCw2MzgyNjE0OCw2OTY2MT
+eyJoaXN0b3J5IjpbMTkxMjQ5MjEwNiw2MzgyNjE0OCw2OTY2MT
 cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
 NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
 U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
