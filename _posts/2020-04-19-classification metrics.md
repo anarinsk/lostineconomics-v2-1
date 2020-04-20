@@ -71,12 +71,13 @@ table {
 - F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉. 
 
 $$
-\dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = \dfrac{2~{\rm recall} \times \rm{}}{}
+\dfrac{2}{\frac{1}{\rm recall} + \frac{1}{\rm precision}} = \dfrac{2~{\rm recall} \times {\rm precision}}{{\rm recall} + {\rm precision}}
 $$ 
 
+- 조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNzAzOTEwNSw2MzgyNjE0OCw2OTY2MT
+eyJoaXN0b3J5IjpbLTQ5MzQ0NTAzMyw2MzgyNjE0OCw2OTY2MT
 cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
 NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
 U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
