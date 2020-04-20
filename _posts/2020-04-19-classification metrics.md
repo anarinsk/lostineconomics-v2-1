@@ -67,15 +67,15 @@ table {
 ## F1 Score 
 
 - F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 있다면 accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다. 
-- 
+- 그런데, 타겟이 어느 하나로 치우쳐 있다면 accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 몯
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MT
-cxMTYsLTU3MTI0ODY1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwt
-MTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1Nz
-gzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2
-MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1MzY1NjY4NS
-wtNjgyNjkwMDg4LDgwOTU3NzgzMiwtOTc4NTI0NzEsLTE5ODYx
-NzA0OTRdfQ==
+eyJoaXN0b3J5IjpbMTQ5NDQyOTQyNyw2MzgyNjE0OCw2OTY2MT
+cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
+NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
+U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
+MCwtMTc4Nzc5NzYxMCwtMTQ2NzEyMjI4OCwtNzIyNjkxNDI5LC
+0xOTUzNjU2Njg1LC02ODI2OTAwODgsODA5NTc3ODMyLC05Nzg1
+MjQ3MV19
 -->
