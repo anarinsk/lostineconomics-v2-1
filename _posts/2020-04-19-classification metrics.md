@@ -55,7 +55,9 @@ table {
 ## ROC curve 
 
 - ROC 커브에 이름에 신경쓰지 말자. 어차피 이상한 이름이니까. 
-- ROC 커브는 무엇에 쓰는 것일까? binary classification에서는 추정된 확률에 대해서 임계 수준을 어디에 둘지에 따라서 해당 결과에 관한 판정을 다르게 내릴 수 있다. 이를 TPR와 FPR를 $x-y$ 평면 위에서 표시한 것이다. 이때 TPR는 1이 가장 좋고 여기 가까울수록 좋다. 반대로 FPR는 0에 가까울수록 좋다. 따라서, $x$ 축에 FPR를, $y$ 축에 TPR를 둔다면, $(0,1)$로 갈수록 좋고, $(1,0)$으로 갈수록 나쁜 점이 된다. 
+- ROC 커브는 무엇에 쓰는 것일까? binary classification에서는 추정된 확률에 대해서 임계 수준을 어디에 둘지에 따라서 해당 결과에 관한 판정을 다르게 내릴 수 있다. 이렇게 다른 임계치를 설정하면서 TPR와 FPR가 변하게 된다. 이 결과를 $x-y$ 평면 위에서 표시한 것이 ROC 곡선이다. 
+	- 컨퓨전 매트릭스에서 컬럼으로 오른쪽의 비율이 TPR, 왼쪽 컬럼의 비율이 FPR을 나타내는 셈이다. 이렇게 
+- 이때 TPR는 1이 가장 좋고 여기 가까울수록 좋다. 반대로 FPR는 0에 가까울수록 좋다. 따라서, $x$ 축에 FPR를, $y$ 축에 TPR를 둔다면, $(0,1)$로 갈수록 좋고, $(1,0)$으로 갈수록 나쁜 점이 된다. 
 
 ![]({{ site.baseurl }}/images/clf-metrics/fig_4.png){: style="textalign:center; " width="600"}
 
@@ -65,11 +67,11 @@ table {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NjE3MDc1LDE2ODA5MTcxMTYsLTU3MT
-I0ODY1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwtMTI4Mjg5NjIx
-MCwxODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1NzgzMzM5LC0xNz
-M0Njc3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2MTAsLTE0Njcx
-MjIyODgsLTcyMjY5MTQyOSwtMTk1MzY1NjY4NSwtNjgyNjkwMD
-g4LDgwOTU3NzgzMiwtOTc4NTI0NzEsLTE5ODYxNzA0OTQsNjY0
-NjA4NjUyXX0=
+eyJoaXN0b3J5IjpbLTE3MDUyOTQxODIsNjk2NjE3MDc1LDE2OD
+A5MTcxMTYsLTU3MTI0ODY1NCwyMDk3NTkxNjAsMTQxNTU0MTU1
+NSwtMTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5OCwtNj
+E1NzgzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLTE3ODc3
+OTc2MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1MzY1Nj
+Y4NSwtNjgyNjkwMDg4LDgwOTU3NzgzMiwtOTc4NTI0NzEsLTE5
+ODYxNzA0OTRdfQ==
 -->
