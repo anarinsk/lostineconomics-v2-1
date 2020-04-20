@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T19:30:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-19T19:32:32-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;
@@ -100,12 +100,14 @@ table {
 &lt;ul&gt;
   &lt;li&gt;F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 있다면 accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다.&lt;/li&gt;
   &lt;li&gt;그런데, 타겟이 어느 하나로 치우쳐 있다면 accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 “신용우량”을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다.&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉.&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTQ1MTQzOCw2MzgyNjE0OCw2OTY2MT
+eyJoaXN0b3J5IjpbLTgzMDY1MzQ1OCw2MzgyNjE0OCw2OTY2MT
 cwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwx
 NDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5Nz
 U5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0
