@@ -17,7 +17,7 @@ categories: [machine-learning, basics]
 
 - 로(행)는 예측치를 컬럼(열)은 실제 속성을 나타낸다. 
 - 이에 따라서 4개의 컨퓨전 매트릭스 행렬이 생긴다. 
-- 한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)를 따른다. 즉, 
+- 한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)을 따른다. 즉, 
 	- True Positive: Positive라는 예측이 맞는 경우다. 즉, 컨퓨전 매트릭스에서 2사분면을 나타낸다. 
 	- True Negative: Negative라는 예측이 맞는 경우다. 즉 4사분면을 나타난다. 
 	- False Positive: Positive라는 예측이 틀리는 경우다. 즉 1사분면을 나타낸다. 
@@ -56,7 +56,7 @@ table {
 
 - ROC 커브에 이름에 신경쓰지 말자. 어차피 이상한 이름이니까. 
 - ROC 커브는 무엇에 쓰는 것일까? binary classification에서는 추정된 확률에 대해서 임계 수준을 어디에 둘지에 따라서 해당 결과에 관한 판정을 다르게 내릴 수 있다. 이렇게 다른 임계치를 설정하면서 TPR와 FPR가 변하게 된다. 이 결과를 $x-y$ 평면 위에서 표시한 것이 ROC 곡선이다. 
-	- 컨퓨전 매트릭스에서 컬럼으로 오른쪽의 비율이 TPR, 왼쪽 컬럼의 비율이 FPR을 나타내는 셈이다. 이렇게 
+	- 컨퓨전 매트릭스에서 컬럼으로 오른쪽의 비율이 TPR, 왼쪽 컬럼의 비율이 FPR을 나타내는 셈이다. 이렇게 보면, ROC 곡선이란 컬럼을 각각 $x-y$ 축으로 쪼개는 개념이다. 컨퓨전 매트릭스에서 컬럼이란 결국 해당 샘플의 실제 속성에 따른 구분이다. 이 점을 잘 기억해두자. 
 - 이때 TPR는 1이 가장 좋고 여기 가까울수록 좋다. 반대로 FPR는 0에 가까울수록 좋다. 따라서, $x$ 축에 FPR를, $y$ 축에 TPR를 둔다면, $(0,1)$로 갈수록 좋고, $(1,0)$으로 갈수록 나쁜 점이 된다. 
 
 ![]({{ site.baseurl }}/images/clf-metrics/fig_4.png){: style="textalign:center; " width="600"}
@@ -64,14 +64,17 @@ table {
 - 경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까? 
 - 이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 AUC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다. 
 
+## F1 Score 
+
+- F1 스코어는 별게 아니다. 쉽게 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDUyOTQxODIsNjk2NjE3MDc1LDE2OD
-A5MTcxMTYsLTU3MTI0ODY1NCwyMDk3NTkxNjAsMTQxNTU0MTU1
-NSwtMTI4Mjg5NjIxMCwxODMxNDkwOTQwLDM1OTc1OTU5OCwtNj
-E1NzgzMzM5LC0xNzM0Njc3NjMxLDEyNzkxNjExNDAsLTE3ODc3
-OTc2MTAsLTE0NjcxMjIyODgsLTcyMjY5MTQyOSwtMTk1MzY1Nj
-Y4NSwtNjgyNjkwMDg4LDgwOTU3NzgzMiwtOTc4NTI0NzEsLTE5
-ODYxNzA0OTRdfQ==
+eyJoaXN0b3J5IjpbOTY2MDc1NDY2LDY5NjYxNzA3NSwxNjgwOT
+E3MTE2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0MTU1NDE1NTUs
+LTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NTk1OTgsLTYxNT
+c4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQwLC0xNzg3Nzk3
+NjEwLC0xNDY3MTIyMjg4LC03MjI2OTE0MjksLTE5NTM2NTY2OD
+UsLTY4MjY5MDA4OCw4MDk1Nzc4MzIsLTk3ODUyNDcxLC0xOTg2
+MTcwNDk0XX0=
 -->
