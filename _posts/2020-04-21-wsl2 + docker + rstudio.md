@@ -51,7 +51,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 - 위 페이지에 보면, 도커의 여러가지 실행 옵션이 있다. 필요대로 참고하시면 되겠다. 
 - 위 스크립트는 로그인을 생략한 버전이다. 공용 PC가 아니라면, 로컬에서 돌리는 데 로그인이 필요하지는 않을 듯 싶다. 
-- 위 스크립트는 `tidyverse`를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 폴더가 콘테이너 내에 `/home/rstudio`로 매핑한다. 
+- 위 스크립트는 `tidyverse`를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 `/home/rstudio`로 매핑된다. 
 - 브라우저에서 `localhost:8787`을 치면 Rstudio가 돌아간다. 
 
 ## Good Enough? 
@@ -64,5 +64,6 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbLTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMT
+I2MDg4MDc2Nl19
 -->
