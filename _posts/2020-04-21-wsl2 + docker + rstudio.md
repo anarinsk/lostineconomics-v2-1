@@ -55,6 +55,13 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
     - 위 스크립트는 `tidyverse`를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 `/home/rstudio`로 매핑된다. 
 - 브라우저에서 `localhost:8787` 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다. 
 
+### Customizing 
+
+- RStudio에서 가능한 커스터마이징이 모두 가능하다. 다만, 저장은 되지 않으니 실행 후 한번 설정해주도록 하자. 이게 귀찮다면 별도의 container를 제작해도 되겠다. 
+
+![]({{ site.baseurl }}/images/clf-met/fig_1.png){: style="textalign:center; " width="400"}
+https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/wsl2-rocker/fig_1.png?raw=true
+
 ## Good Enough? 
 
 윈도에서 쓰는 R + RStudio 조합보다 좋더라. 
@@ -67,7 +74,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1OTM2MzQ5LC0yNjkwNDkxODQsMTYyMD
-Y4MzE3MCw3OTQ5MTY0NzgsLTE2ODU5MjA2NTQsLTE1NDc0MTA3
-NjAsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbLTE1MDU3OTAzMTYsOTY1OTM2MzQ5LC0yNj
+kwNDkxODQsMTYyMDY4MzE3MCw3OTQ5MTY0NzgsLTE2ODU5MjA2
+NTQsLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
 -->
