@@ -57,10 +57,12 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 ### Customizing 
 
-- RStudio에서 가능한 커스터마이징이 모두 가능하다. 다만, 저장은 되지 않으니 실행 후 한번 설정해주도록 하자. 이게 귀찮다면 별도의 container를 제작해도 되겠다. 
 
-![]({{ site.baseurl }}/images/clf-met/fig_1.png){: style="textalign:center; " width="400"}
-https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/wsl2-rocker/fig_1.png?raw=true
+![]({{ site.baseurl }}/images/wsl2-rocker/fig_2.png){: style="textalign:center; " width="800"}
+
+- RStudio에서 가능한 커스터마이징이 모두 가능하다. 다만, 저장은 되지 않으니 실행 후 한번 설정해주도록 하자. 이게 귀찮다면 별도의 container를 제작해도 되겠다. 아래는 내가 쓰는 레이아웃 포맷이다. 
+
+![]({{ site.baseurl }}/images/wsl2-rocker/fig_1.png){: style="textalign:center; " width="500"}
 
 ## Good Enough? 
 
@@ -74,7 +76,7 @@ https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/wsl2-rocker/
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDU3OTAzMTYsOTY1OTM2MzQ5LC0yNj
-kwNDkxODQsMTYyMDY4MzE3MCw3OTQ5MTY0NzgsLTE2ODU5MjA2
-NTQsLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbLTI0MzkwMjI4NCw5NjU5MzYzNDksLTI2OT
+A0OTE4NCwxNjIwNjgzMTcwLDc5NDkxNjQ3OCwtMTY4NTkyMDY1
+NCwtMTU0NzQxMDc2MCwxMjYwODgwNzY2XX0=
 -->
