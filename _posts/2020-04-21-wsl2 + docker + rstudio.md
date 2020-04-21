@@ -31,7 +31,7 @@ R이 그리울 때가 있다. 직관적인 문법 그리고 무엇보다도 `ggp
 ## Script 
 
 - wsl 2를 가동한다. 
-- docker edge edition 2.3 이상이 설치되었다고 가정한다. 
+- docker edge edition 2.2 이상이 설치되었다고 가정한다. 
 - `rocker`의 버전은 다음과 같다. 
 
 [https://github.com/rocker-org/rocker-versioned](https://github.com/rocker-org/rocker-versioned)
@@ -66,7 +66,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0ODEzOTg1LDE2MjA2ODMxNzAsNzk0OT
-E2NDc4LC0xNjg1OTIwNjU0LC0xNTQ3NDEwNzYwLDEyNjA4ODA3
-NjZdfQ==
+eyJoaXN0b3J5IjpbMTIxNDQzODYyNCwxNjIwNjgzMTcwLDc5ND
+kxNjQ3OCwtMTY4NTkyMDY1NCwtMTU0NzQxMDc2MCwxMjYwODgw
+NzY2XX0=
 -->
