@@ -62,8 +62,8 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 - 실행 속도는 오히려 빠르다. 
 - 윈도의 로컬 폴더와 연결되어 있으니, 코드는 따로 그쪽으로 저장하고 관리하면 된다. 
 
-wsl 2는 찐이다. 
+wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMT
-I2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbNzk0OTE2NDc4LC0xNjg1OTIwNjU0LC0xNT
+Q3NDEwNzYwLDEyNjA4ODA3NjZdfQ==
 -->
