@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title:  wsl2 + docker + rstudio 
+title:  wsl 2 + docker + rstudio 
 description:  도커로 가볍게 rstudio를 돌려볼까? 
 categories: [coding, rstat, docker]
 
@@ -66,6 +66,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDY4MzE3MCw3OTQ5MTY0NzgsLTE2OD
-U5MjA2NTQsLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbLTEzNTc0NDg0OTAsMTYyMDY4MzE3MCw3OT
+Q5MTY0NzgsLTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMTI2MDg4
+MDc2Nl19
 -->
