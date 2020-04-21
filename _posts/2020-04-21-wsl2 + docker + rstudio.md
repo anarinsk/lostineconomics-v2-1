@@ -8,7 +8,7 @@ categories: [coding, rstat, docker]
 
 ---
 
-![](https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg){: style="textalign:center; " width="400"}
+![](https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg){: style="textalign:center; " width="800"}
 
 
 ## rstat! 
@@ -64,5 +64,5 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTQ5MDI0MSwxMjYwODgwNzY2XX0=
+eyJoaXN0b3J5IjpbLTE1Nzc4NjI5NzEsMTI2MDg4MDc2Nl19
 -->
