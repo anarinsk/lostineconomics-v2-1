@@ -13,9 +13,9 @@ categories: [coding, rstat, docker]
 
 ## rstat! 
 
-R이 그리울 때가 있다. 직관적인 문법 그리고 무엇보다도 `ggplot`의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다. 
+R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 `ggplot`의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다. 
 
-장인은 도구를 안가리지만, 나같은 범인은 도구가 중요해! wsl 2에 어떻게 하면 R을 편하게 얹어서 쓰지? 고민이 시작되었다. 
+장인은 도구를 안가리지만, 나같은 범인에게는 도구가 중요하다. wsl 2에 어떻게 하면 R을 편하게 얹어서 쓰지? 잠시 고민해보았ㄷ
 물론 wsl 2에 linux용 R을 깔아쓰면 될 일이다. 하지만 뭔가 깔끔하지 않다. 도커를 써볼까? 
 
 ## Here Comes the rocker! 
@@ -57,7 +57,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 ## Good Enough? 
 
-솔직히 윈도에서 쓰는 R + RStudio 조합보다 좋더라. 
+윈도에서 쓰는 R + RStudio 조합보다 좋더라. 
 
 - 인코딩 문제 없다! 
 - 패키지 깔 때 권한 이슈 없다. 
@@ -67,7 +67,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQ3ODk2ODEsMTYyMDY4MzE3MCw3OT
-Q5MTY0NzgsLTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMTI2MDg4
-MDc2Nl19
+eyJoaXN0b3J5IjpbOTYwNjYwMzQzLDE2MjA2ODMxNzAsNzk0OT
+E2NDc4LC0xNjg1OTIwNjU0LC0xNTQ3NDEwNzYwLDEyNjA4ODA3
+NjZdfQ==
 -->
