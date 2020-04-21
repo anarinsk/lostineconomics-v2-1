@@ -41,7 +41,7 @@ R이 그리울 때가 있다. 직관적인 문법 그리고 무엇보다도 `ggp
 - `tidyverse`: `rstudio` + tidyverse 
 - `verse`: `tidyverse` + 퍼브리싱 툴 
 
-- 적당한 이미지를 끌어다가 올리면 되겠다. 
+적당한 이미지를 끌어다가 올리면 되겠다. 
 
 ### Best practice 
 
@@ -64,5 +64,5 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzc4NjI5NzEsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
 -->
