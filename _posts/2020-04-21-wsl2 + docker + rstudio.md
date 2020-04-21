@@ -56,14 +56,16 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 ## Good Enough? 
 
-- 솔직히 윈도에서 쓰는 R + RStudio 조합보다 좋더라. 
+솔직히 윈도에서 쓰는 R + RStudio 조합보다 좋더라. 
+
 - 인코딩 문제 없다! 
 - 패키지 깔 때 권한 이슈 없다. 
-- 실행 속도는 오히려 빠르다. 
-- 윈도의 로컬 폴더와 연결되어 있으니, 코드는 따로 그쪽으로 저장하고 관리하면 된다. 
+- 퍼포먼스가 원도보다 낫더라. 
+- 윈도의 로컬 폴더와 연결되어 있으니, 코드는 따로 저장하고 관리하면 된다.
+- 패키지 깔다가 문제가 생기면 그냥 도커 내리면 그만이다.  
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0OTE2NDc4LC0xNjg1OTIwNjU0LC0xNT
-Q3NDEwNzYwLDEyNjA4ODA3NjZdfQ==
+eyJoaXN0b3J5IjpbMTYyMDY4MzE3MCw3OTQ5MTY0NzgsLTE2OD
+U5MjA2NTQsLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
 -->
