@@ -60,8 +60,9 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 - 인코딩 문제 없다! 
 - 패키지 깔 때 권한 이슈 없다. 
 - 실행 속도는 오히려 빠르다. 
+- 윈도의 로컬 폴더와 연결되어 있으니, 코드는 따로 그쪽으로 저장하고 관리하면 된다. 
 
 wsl 2는 찐이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbMTM1OTQ5MDI0MSwxMjYwODgwNzY2XX0=
 -->
