@@ -57,7 +57,7 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 ### Customizing 
 
-브라우저에서 돌아가지만 
+브라우저에서 돌아가지만 깔아쓰는 RStudio와 다를 바가 전혀 없다! 
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_2.png){: style="textalign:center; " width="800"}
 
@@ -77,7 +77,8 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyNjI4MDQ2LC0yNDM5MDIyODQsOTY1OT
-M2MzQ5LC0yNjkwNDkxODQsMTYyMDY4MzE3MCw3OTQ5MTY0Nzgs
-LTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMTI2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbMTg4ODcxNzk2MSwtMjQzOTAyMjg0LDk2NT
+kzNjM0OSwtMjY5MDQ5MTg0LDE2MjA2ODMxNzAsNzk0OTE2NDc4
+LC0xNjg1OTIwNjU0LC0xNTQ3NDEwNzYwLDEyNjA4ODA3NjZdfQ
+==
 -->
