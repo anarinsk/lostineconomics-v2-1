@@ -61,7 +61,7 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_2.png){: style="textalign:center; " width="800"}
 
-- RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃 포맷이다. 
+- RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃  형태다. 
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_1.png){: style="textalign:center; " width="500"}
 
@@ -77,8 +77,8 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTgyNDM4MDksOTQ0NzM3NDc4LDExMz
-c0OTMxOTcsMTg4ODcxNzk2MSwtMjQzOTAyMjg0LDk2NTkzNjM0
-OSwtMjY5MDQ5MTg0LDE2MjA2ODMxNzAsNzk0OTE2NDc4LC0xNj
-g1OTIwNjU0LC0xNTQ3NDEwNzYwLDEyNjA4ODA3NjZdfQ==
+eyJoaXN0b3J5IjpbLTY4MjczMzc1LDk0NDczNzQ3OCwxMTM3ND
+kzMTk3LDE4ODg3MTc5NjEsLTI0MzkwMjI4NCw5NjU5MzYzNDks
+LTI2OTA0OTE4NCwxNjIwNjgzMTcwLDc5NDkxNjQ3OCwtMTY4NT
+kyMDY1NCwtMTU0NzQxMDc2MCwxMjYwODgwNzY2XX0=
 -->
