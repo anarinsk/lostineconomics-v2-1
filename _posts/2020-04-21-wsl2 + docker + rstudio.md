@@ -46,7 +46,7 @@ R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 `ggplot`
 ### Best practice 
 
 ```shell
-sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AUTH=true rocker/tidyverse
+sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AUTH=true rocker/tidyverse
 ```
 
 - 위 페이지에 보면, 도커의 여러가지 실행 옵션이 있다. 필요대로 참고하시면 되겠다. 
@@ -77,8 +77,8 @@ sudo docker run -d --rm -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISAB
 
 wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzQ5MzE5NywxODg4NzE3OTYxLC0yND
-M5MDIyODQsOTY1OTM2MzQ5LC0yNjkwNDkxODQsMTYyMDY4MzE3
-MCw3OTQ5MTY0NzgsLTE2ODU5MjA2NTQsLTE1NDc0MTA3NjAsMT
-I2MDg4MDc2Nl19
+eyJoaXN0b3J5IjpbOTQ0NzM3NDc4LDExMzc0OTMxOTcsMTg4OD
+cxNzk2MSwtMjQzOTAyMjg0LDk2NTkzNjM0OSwtMjY5MDQ5MTg0
+LDE2MjA2ODMxNzAsNzk0OTE2NDc4LC0xNjg1OTIwNjU0LC0xNT
+Q3NDEwNzYwLDEyNjA4ODA3NjZdfQ==
 -->
