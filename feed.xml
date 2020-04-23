@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-22T17:00:09-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + rstudio</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" rel="alternate" type="text/html" title="wsl 2 + docker + rstudio" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2%20+%20docker%20+%20rstudio</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html">&lt;p&gt;&lt;img src=&quot;https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-04-22T19:20:49-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">wsl 2 + docker + rstudio</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" rel="alternate" type="text/html" title="wsl 2 + docker + rstudio" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2%20+%20docker%20+%20rstudio</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html">&lt;p&gt;&lt;img src=&quot;https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;rstat&quot;&gt;rstat!&lt;/h2&gt;
 
@@ -49,7 +49,11 @@
       &lt;li&gt;위 스크립트는 &lt;code class=&quot;highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt;를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/rstudio&lt;/code&gt;로 매핑된다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt; 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.&lt;/li&gt;
+  &lt;li&gt;브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt; 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
+    &lt;ul&gt;
+      &lt;li&gt;크롬의 설정 → 도구 더 보기 → 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없지.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;customizing&quot;&gt;Customizing&lt;/h3&gt;
@@ -59,7 +63,7 @@
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl2-rocker/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃  형태다.&lt;/li&gt;
+  &lt;li&gt;RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃 다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl2-rocker/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
@@ -76,13 +80,14 @@
   &lt;li&gt;패키지 깔다가 문제가 생기면 그냥 도커 내리면 그만이다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;wsl 2는 찐이다. 마소 짱! 
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl2-rocker/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;그림처럼 3개의 컨테이너가 돌고 있다. 필요한 곳에 들어가서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MjczMzc1LDk0NDczNzQ3OCwxMTM3ND
-kzMTk3LDE4ODg3MTc5NjEsLTI0MzkwMjI4NCw5NjU5MzYzNDks
-LTI2OTA0OTE4NCwxNjIwNjgzMTcwLDc5NDkxNjQ3OCwtMTY4NT
-kyMDY1NCwtMTU0NzQxMDc2MCwxMjYwODgwNzY2XX0=
---&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+eyJoaXN0b3J5IjpbLTE2NTMwMzMwMjhdfQ==
+--&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;

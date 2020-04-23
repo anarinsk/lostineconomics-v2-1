@@ -212,7 +212,11 @@ window.onload = wrap_img;
       <li>위 스크립트는 <code class="highlighter-rouge">tidyverse</code>를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 <code class="highlighter-rouge">/home/rstudio</code>로 매핑된다.</li>
     </ul>
   </li>
-  <li>브라우저에서 <code class="highlighter-rouge">localhost:8787</code> 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.</li>
+  <li>브라우저에서 <code class="highlighter-rouge">localhost:8787</code> 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
+    <ul>
+      <li>크롬의 설정 → 도구 더 보기 → 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없지.</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="customizing">Customizing</h3>
@@ -222,7 +226,7 @@ window.onload = wrap_img;
 <p><img src="/lostineconomics-v2-1/images/wsl2-rocker/fig_2.png" alt="" style="textalign:center; " width="800" /></p>
 
 <ul>
-  <li>RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃  형태다.</li>
+  <li>RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃 다.</li>
 </ul>
 
 <p><img src="/lostineconomics-v2-1/images/wsl2-rocker/fig_1.png" alt="" style="textalign:center; " width="500" /></p>
@@ -239,13 +243,14 @@ window.onload = wrap_img;
   <li>패키지 깔다가 문제가 생기면 그냥 도커 내리면 그만이다.</li>
 </ul>
 
-<p>wsl 2는 찐이다. 마소 짱! 
+<p><img src="/lostineconomics-v2-1/images/wsl2-rocker/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
+
+<ul>
+  <li>그림처럼 3개의 컨테이너가 돌고 있다. 필요한 곳에 들어가서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MjczMzc1LDk0NDczNzQ3OCwxMTM3ND
-kzMTk3LDE4ODg3MTc5NjEsLTI0MzkwMjI4NCw5NjU5MzYzNDks
-LTI2OTA0OTE4NCwxNjIwNjgzMTcwLDc5NDkxNjQ3OCwtMTY4NT
-kyMDY1NCwtMTU0NzQxMDc2MCwxMjYwODgwNzY2XX0=
---></p>
+eyJoaXN0b3J5IjpbLTE2NTMwMzMwMjhdfQ==
+--></li>
+</ul>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
