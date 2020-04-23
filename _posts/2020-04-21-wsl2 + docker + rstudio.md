@@ -80,9 +80,5 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 - 그림처럼 3개의 컨테이너가 돌고 있다. 필요한 곳에 들어가서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMwMzMwMjgsLTY4MjczMzc1LDk0ND
-czNzQ3OCwxMTM3NDkzMTk3LDE4ODg3MTc5NjEsLTI0MzkwMjI4
-NCw5NjU5MzYzNDksLTI2OTA0OTE4NCwxNjIwNjgzMTcwLDc5ND
-kxNjQ3OCwtMTY4NTkyMDY1NCwtMTU0NzQxMDc2MCwxMjYwODgw
-NzY2XX0=
+eyJoaXN0b3J5IjpbLTE2NTMwMzMwMjhdfQ==
 -->
