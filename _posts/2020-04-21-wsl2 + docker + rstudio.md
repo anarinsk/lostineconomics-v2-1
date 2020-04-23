@@ -78,8 +78,8 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_3.png){: style="textalign:center; " width="500"}
 
-- 그림처럼 3개의 컨테이너가 돌고 있다. 필요한 곳에 들어가서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
+- 그림처럼 3개의 컨테이너가 돌고 있다. 필요한 컨테이너에 연결해서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc1NTE0MjQsLTE2NTMwMzMwMjhdfQ
-==
+eyJoaXN0b3J5IjpbODQwNzg4MTMzLC0xMzc3NTUxNDI0LC0xNj
+UzMDMzMDI4XX0=
 -->
