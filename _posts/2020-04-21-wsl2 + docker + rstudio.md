@@ -54,7 +54,7 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
     - 위 스크립트는 로그인을 생략한 버전이다. 공용 PC가 아니라면, 로컬에서 돌리는 데 로그인이 필요하지는 않을 듯 싶다. 
     - 위 스크립트는 `tidyverse`를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 `/home/rstudio`로 매핑된다. 
 - 브라우저에서 `localhost:8787` 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다. 
-	- 크롬의 설정 &rarr; 도구 더 보기 &rarr; 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없지. 
+	- 크롬의 설정 &rarr; 도구 더 보기 &rarr; 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없다. 
 
 ### Customizing 
 
@@ -62,7 +62,7 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_2.png){: style="textalign:center; " width="800"}
 
-- RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃 다. 
+- RStudio에서 가능한 커스터마이징이 모두 가능하다. - 컨테이너를 내렸다 올리면 어떨까? 패키지 설치 등 앱에 관련된 사항은 초기화된다. 하지만 RStudio 관련 사항은 웹 브라우저에 남는다. 아래는 내가 쓰는 레이아웃이다. 
 
 ![]({{ site.baseurl }}/images/wsl2-rocker/fig_1.png){: style="textalign:center; " width="500"}
 
@@ -80,6 +80,6 @@ sudo docker run -d -p 8787:8787 -v /mnt/|your-local|:/home/rstudio -e DISABLE_AU
 
 - 그림처럼 3개의 컨테이너가 돌고 있다. 필요한 컨테이너에 연결해서 작업하고 문제가 생기면 컨테이너를 내리거나 지우면 그만이다. wsl 2는 찐이다. 마소 짱! 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzQxNTY2LDg0MDc4ODEzMywtMTM3Nz
-U1MTQyNCwtMTY1MzAzMzAyOF19
+eyJoaXN0b3J5IjpbLTE1MjQ1NjI4MDYsLTg3MzQxNTY2LDg0MD
+c4ODEzMywtMTM3NzU1MTQyNCwtMTY1MzAzMzAyOF19
 -->
