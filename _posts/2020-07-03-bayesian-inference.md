@@ -269,13 +269,13 @@ print (f"Efficiency = {naccept/niters}")
 
 ![]({{ site.baseurl }}/images/mcmc/fig_2.png){: style="textalign:center; " width="500"}
 
-그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 감만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 원래 분포에 수렴하는 것을 확인할 수 있다. 
+그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 원래 분포에 수렴하는 것을 확인할 수 있다. 
 
 ![]({{ site.baseurl }}/images/mcmc/fig_3.png){: style="textalign:center; " width="500"}
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NDA2Njg5LDE1MzgzMjU4LDQ2MjUxMT
-ExMl19
+eyJoaXN0b3J5IjpbLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNT
+ExMTEyXX0=
 -->
