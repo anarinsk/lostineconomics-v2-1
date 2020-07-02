@@ -100,7 +100,7 @@ $$
 
 $$
 \begin{aligned}
-p(\theta\lvert data) = \dfrac{\mathcal L(data \lvert  \theta) P(\theta)}{P(data)} \propto {\mathcal L}(\theta\lvert data) P(\theta)
+p(\theta\lvert data) = \dfrac{\mathcal L(data \lvert  \theta) p(\theta)}{P(data)} \propto {\mathcal L}(\theta\lvert data) p(\theta)
 \end{aligned}
 $$
 
@@ -115,18 +115,18 @@ $$
 
 ### Why? 
 
-MCMC는 Markov Chain Monte Carlo Simulation의 약어다. 둘을 각자 하나씩 뜯어보기 전에, 왜 MCMC라는 걸 고민하게 되었을까? 이유는 간단하다. 앞서 베이즈 추론에서 보았지만, $\mathcal L (\theta\lvert data) P(\theta)$는 쉽게 구할 수 있다. 
+MCMC는 Markov Chain Monte Carlo Simulation의 약어다. 둘을 각자 하나씩 뜯어보기 전에, 왜 MCMC라는 걸 고민하게 되었을까? 이유는 간단하다. 앞서 베이즈 추론에서 보았지만, $\mathcal L (\theta\lvert data) p(\theta)$는 쉽게 구할 수 있다. 
 
-- $P(\theta)$는 그냥 내 마음대로 정하면 되는 것이다. 
+- 사전 분포 $p(\theta)$는 내 마음대로 정하면 되는 것이다. 
 - 여기에 $data$를 플러그인하면 우도 역시 쉽게 구할 수 있다. 
 
 MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 형태로 계산있다는 데 있한다는 것이다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다! 이게 있다면 다.계산할 수 있고,  분도  
 	
 $$
-P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) P(\theta) d \theta
+P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
 $$
 
- $P(\theta)$의 적분이 쉽지 않을 수 있다는 것이다. Prior가 복잡하지 않다고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 다 계산해서 분석 tic solutions)를 얻는 것은 종종 가능하지 않다를 얻는 것은. 
+ $p(\theta)$의 적분이 쉽지 않을 수 있다는 것이다. Prior가 복잡하지 않다고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 다 계산해서 분석 tic solutions)를 얻는 것은 종종 가능하지 않다를 얻는 것은. 
 
 ### MC1: Monte Carlo 
 
@@ -276,6 +276,6 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDM5NjQ3OCwxNTM4MzI1OCw0NjI1MT
+eyJoaXN0b3J5IjpbLTYzMjc3MTc3MSwxNTM4MzI1OCw0NjI1MT
 ExMTJdfQ==
 -->
