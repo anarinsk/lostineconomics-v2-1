@@ -170,7 +170,7 @@ $$
 이를 앞서 적은 식의 맥락에서 다시 풀어보자. 
 
 $$
-p(\theta^i\lvert data) T(\theta^j\lvert \theta^i) = p(\theta^j\lvert data) T(\theta^i\lvert \theta^j).
+p(\theta^i\lvert data) p(\theta^j\lvert \theta^i) = p(\theta^j\lvert data) p(\theta^i\lvert \theta^j).
 $$
 
 여기서 $\theta^k$는 마르코프 연쇄 위에서 얻은 $\theta$ 수열을 뜻한다. 정리하면 파라미터의 사후 분포를 수렴 분포로 지니는 마르코프 연쇄의 어떤 밀도 함수(이행 행렬)를 구성하고, 이 밀도 함수가 detailed balance를 만족시키면 되겠다. 
@@ -188,7 +188,7 @@ $$
 $$
 \begin{aligned}
 P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  & = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(x_{a})}, 1 \right)}^{(\ast\ast)} \\
-& = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) Q(x_b\lvert x_a) \cdot 1
+& = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) Q(\theta^b\lvert \theta^a) \cdot 1
 \end{aligned}
 $$
 
@@ -276,6 +276,6 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjQ1MzgyMywxNTM4MzI1OCw0NjI1MT
-ExMTJdfQ==
+eyJoaXN0b3J5IjpbNjU0NDA2Njg5LDE1MzgzMjU4LDQ2MjUxMT
+ExMl19
 -->
