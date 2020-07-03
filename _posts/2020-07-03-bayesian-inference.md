@@ -265,7 +265,7 @@ print (f"Efficiency = {naccept/niters}")
 - 20,000 번의 실행을 반복한다. 
 	- 최초의 theta는 0.1로 둔다. 
 	- 임의의 theta 값을 정규 분포값에서 생성해낸다. 	 
-	- metropolis 알고리듬에 따라서 이 값과 최초의 theta 혹은 바로 전에 생성된 theta, 두 값을 평가한다. 
+	- metropolis 알고리듬에 따라서 이 값과 최초의 theta 혹은 바로 전에 생성된 theta, 두 값을 평가한다. 평가는 극도로 단순한 방식으로 진행된다. 각기 다음 상태로 넘어갈 확률은 전기의 파라미터에만 의존한다. 
 
 ![]({{ site.baseurl }}/images/mcmc/fig_2.png){: style="textalign:center; " width="500"}
 
@@ -276,7 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2Mz
-Q2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJd
-fQ==
+eyJoaXN0b3J5IjpbLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMz
+UxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1
+OCw0NjI1MTExMTJdfQ==
 -->
