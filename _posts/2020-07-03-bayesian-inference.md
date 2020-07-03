@@ -65,7 +65,7 @@ $$
  
 이산 분포에서는 특정한 파라미터에서 1개의 데이터를 관찰할 때 확률과 우도가 같다. 이는 probability mass function(pmf)이 그 해당 관찰 값에 관한을 확률과 같기 때문이다.  하지만 우도를 구할 때 $data$가 꼭 하나 여야 할까? 이는 어떤 데이터를 보고 업데이트하는지에 달려 있다. 
 
- 예를 들어보자. 동전을 던져서 HH를 관찰했다고 하자. 동전의 앞면이 나올 확률이 $p$라고 하고 독립 시행이라면, 이는 $pp$가 이 관찰 결과의 '우도'이다. 물론 이는 HH라는 결과를 얻을 확률이기도 하다. 하지만 조심해야 하는 대목이 있다. 
+ 예를 들어보자. 동전을 던져서 HH를 관찰했다고 하자. 동전의 앞면이 나올 확률이 $p$라고 하고 독립 시행이라면, 이는 $p^2$가 이 관찰 결과의 '우도'이다. 물론 이는 HH라는 결과를 얻을 확률이기도 하다. 
 
 $$
 P(HH\lvert p=0.5) = 0.5^2
@@ -74,10 +74,10 @@ $$
 이렇게 표현해보자. 이는 HH가 관찰되었을 때 $p=0.5$라는 파라미터의 가능도가 $0.5^2$라는 뜻이다. 즉, 
 
 $$
-\mathcal{L} (p=0.5 \lvert  HH) = 0.5^25
+\mathcal{L} (p=0.5 \lvert  HH) = 0.5^2
 $$
 
-당연한 는 HH가 관찰되었을 때 $p=0.5$일 확률이 $0.25$이라는 말은 아니다. 즉, 
+사족이지만,  HH가 관찰되었을 때 $p=0.5$일 확률이 $0.25$이라는 말은 아니다. 즉, 
 
 $$
 \mathcal{L} (p=0.5 \lvert  HH) \neq P (p=0.5 \lvert  HH)
@@ -279,8 +279,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE0NDcxMTYsMjA1ODg1Mzc3MywtMT
-Q0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3
-NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NC
-wtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbMjA3NTQ2NjA2NCwyMDU4ODUzNzczLC0xND
+QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
+MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
+0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 -->
