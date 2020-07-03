@@ -152,7 +152,7 @@ $$
 마르코프 연쇄가 왜 이런 전략을 제공할까? 
 
 - 마르코프 연쇄는 간단하다. 바로 전기의 상태만 기억하는 최소 기억의 구조다. 그래서 전략을 만들기 쉽다. 
-- 마르코프 연쇄의 가장 좋은 특징은 몇 가지 조건이 충족되면, 각 상태(여기서는 파리미터 공간에 속하는 특정 파라미터 원소들)의 수렴 분포가 존재하고 이 분포는 고유단일하다. 게다가 이 수렴 분포는 초기 값에도 의하지 않는다.t 마르코프 연쇄를 통해 충분히 많은 수의 샘플링을 거치면 그때까지 획득된 결과를 파라미터 공간에 관한 분포로 취급할 수 있다는 것이다. 
+- 마르코프 연쇄의 가장 좋은 특징은 몇 가지 조건이 충족되면, 각 상태(여기서는 파리미터 공간에 속하는 특정 파라미터 원소들)의 수렴 분포가 존재하고 이 분포는 고유(unique)하다. 게다가 이 수렴 분포는 초기 값에도 의하지 않는다.t 마르코프 연쇄를 통해 충분히 많은 수의 샘플링을 거치면 그때까지 획득된 결과를 파라미터 공간에 관한 분포로 취급할 수 있다는 것이다. 
 
 이렇게 얻은 수렴 분포가 $p(\theta \lvert  data)$의 분포와 일치한다면 게임 오버!해당 샘플링의 결과가 우리가 알고 싶은 분포의 근사치가 된다. 
 
@@ -276,6 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3ND
-IxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbLTEyNzc5NzkwODIsMzUxNjE5NTcwLDg2Mz
+Q2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJd
+fQ==
 -->
