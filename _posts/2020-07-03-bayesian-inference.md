@@ -60,7 +60,7 @@ $$
  
 #### 이산 분포에서 확률 = 우도?
  
-이산 분포에서는 특정한 파라미터 아래에 1개의 데이터를 관찰 확률과 우도는동일하다. 이는 probability mass function이 그 해당 관찰 값에 관한을 확률이과 일치하기 때문이다.  하지만 우도를 구할 때 $data$가 꼭 하나 여야 할까?
+이산 분포에서는 특정한 파라미터 아래에 1개의 데이터를 관찰 확률과 우도는동일하다. 이는 probability mass function(pmf)이 그 해당 관찰 값에 관한을 확률이과 일치하기 때문이다.  하지만 우도를 구할 때 $data$가 꼭 하나 여야 할까?
 
  예를 들어보자. 동전을 던져서 HH를 관찰했다고 하자. 동전의 앞면이 나올 확률이 $p$라고 하고 독립 시행이라면, 이는 $pp$가 이 관찰 결과의 '우도'이다. 물론 이는 HH라는 결과를 얻을 확률이기도 하다. 하지만 조심해야 하는 대목이 있다. 
 
@@ -82,7 +82,7 @@ $$
 
 #### 연속 분포에서 확률 $\neq$ 우도? 
 
-연속 분포에서 우도는 probability density function과 같다고 설명되어 있는 경우가 있다. 이 말은 맞기도 하고 아니기도 하다. 만일 앞서 등장한 $data$의 관찰 수가 1개라면 이 말은 맞 적분하면 1이 되다. 이산 분포와 유사하게 2개 이상일 때는 pdf와 우도는 같다고 할 수 없다. 
+연속 분포에서 우도는 probability density function(pdf)과 같다고 설명되어 있는 경우가 있다. 이 말은 맞기도 하고 아니기도 하다. 만일 앞서 등장한 $data$의 관찰 수가 1개라면 이 말은 맞 적분하면 1이 되다. 이산 분포와 유사하게 2개 이상일 때는 pdf와 우도는 같다고 할 수 없다. 
 
 #### 우도는 pmf 혹은 pdf일까?
 
@@ -276,7 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTIxMjEyNCwtMzI5NTAyNDA2LC0xMj
+eyJoaXN0b3J5IjpbLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMj
 IwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3
 NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
