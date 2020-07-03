@@ -31,7 +31,7 @@ $P(A)$는 prior, 즉 사전 확률이다. 즉, $A$의 발생 확률에 관한 �
 
 ## Bayesian inference 
 
-- 추정이란 모집단에서 얻는 통해서 모집단 분포의 특성(파라미터)를 추측해내는 과정이다. 추정을 위해서 필요한 것은 '분포'다. 베이즈 정리에 기반해 사후 분포를 구하는 방법은 아래와 같다. 
+- 추정이란 모집단에서 얻은 샘플을 통해서 모집단 분포의 특성(파라미터)를 추측하는 과정이다. 추정을 위해서 필요한 것은 '분포'다. 베이즈 정리에 기반해 사후 분포를 구하는 방법은 아래와 같다. 
 
 
 $$
@@ -277,8 +277,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOT
-I2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1
-MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3My
-wxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbNDU4MzAyNDIzLDIwNTg4NTM3NzMsLTE0ND
+IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
+NTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLT
+E1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
