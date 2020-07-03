@@ -240,12 +240,14 @@ prior = st.beta(a, b)
 post = prior.pdf(thetas) * st.binom(n, thetas).pmf(h)
 post /= (post.sum() / len(thetas))
 
+# Func for metropolis algorithm 
 def target(lik, prior, n, h, theta):
     if theta < 0 or theta > 1:
         return 0
     else:
         return lik(n, theta).pmf(h)*prior.pdf(theta)
 
+# Parameters 
 n = 100
 h = 61
 a = 10
@@ -253,12 +255,12 @@ b = 10
 lik = st.binom
 prior = st.beta(a, b)
 sigma = 0.3
-
 naccept = 0
 theta = 0.1
 niters = 10000
 samples = np.zeros(niters+1)
 samples[0] = theta
+
 for i in range(niters):
     theta_p = theta + st.norm(0, sigma).rvs()
     rho = min(1, target(lik, prior, n, h, theta_p)/target(lik, prior, n, h, theta ))
@@ -289,9 +291,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MDA5MjgzLDIwNTUzODIyNzgsMjA1OD
-g1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0
-MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLD
-g2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTEx
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTk0NDQ5MDg4MSwyMDU1MzgyMjc4LDIwNT
+g4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAy
+NDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MC
+w4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTEx
+MTEyXX0=
 -->
