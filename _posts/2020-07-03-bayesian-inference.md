@@ -40,7 +40,7 @@ p(\theta\lvert data) = \dfrac{p(data \lvert \theta) p(\theta)}{P(data)} = \dfrac
 \end{aligned}
 $$
 
-각 부분의 이름을 한번 붙여보자. 
+각각 나누어 살펴보자. 
 
 - $P(data)$: evidence, 데이터가 발생할 확률을 뜻한다. 
 - $p(data\lvert \theta) = {\mathcal L}(\theta\lvert data)$: Likelihood, 관찰된 데이터의 '우도' 혹은 가능도를 나타낸다. 
@@ -277,8 +277,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4MzAyNDIzLDIwNTg4NTM3NzMsLTE0ND
-IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
-NTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLT
-E1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbMTI3MzE4NzY3OSwyMDU4ODUzNzczLC0xND
+QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
+MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
+0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 -->
