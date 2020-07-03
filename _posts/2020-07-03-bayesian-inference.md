@@ -211,7 +211,7 @@ $$
 - M-H 알고리듬은 임의의 밀도 함수, 즉 $Q(\cdot)$이 대칭이라는 제약도 풀어버린 것이다. 수용 확률 $r$ 이 다음과 같이 정의된다. 
 
 $$
-r = \min \left( \dfrac{\frac{\pi(\theta^i \lvert  data)}{Q(\theta^i\lvert \theta^{i-1})} }{\frac{\pi(\theta^{i-1} \lvert  data)}{Q(\theta^{i-1}\lvert \theta^i)} }, 1 \right)
+r = \min \left( \dfrac{\dfrac{\pi(\theta^i \lvert  data)}{Q(\theta^i\lvert \theta^{i-1})} }{\dfrac{\pi(\theta^{i-1} \lvert  data)}{Q(\theta^{i-1}\lvert \theta^i)} }, 1 \right)
 $$
 
 - Metropolis 알고리듬의 사례에 제시된 바를 따라가보면 대칭이라는 조건 없이 detailed balance를 만족한다는 사실을 쉽게 계산해볼 수 있다. 
@@ -276,7 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTUwMjQwNiwtMTIyMDc3MzU2NCwtMj
-A3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC0xNTc0MjE1
-MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbLTIwNzI0OTE3MiwtMzI5NTAyNDA2LC0xMj
+IwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3
+NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
