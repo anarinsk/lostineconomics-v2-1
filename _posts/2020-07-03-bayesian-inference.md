@@ -109,7 +109,9 @@ $$
 
 왜 온전한 $p(\theta\lvert data)$를 구하지 않고 분모를 제외하려고 할까? 
 
-이유는 두 가지다. 첫째, 베이즈 추론에서 우리의 목적함수는 $p(\theta\lvert data)$다. 즉, 이 값을 극대화해주는 $\theta$를 찾는 것이 목적이다. 이 점에서 보면, MLE와 사실상 같은 방법이라고 할 수 있다. 그런데,  분모의 $P(data)$에는 $\theta$가 없다. 즉, 목적함수를 극대화하는 파리미터를 찾는 데 분모는 영향을 주지 않는다. 둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. ㅇ$\theta$가 다차원이라면 $\theta$ 분포의 모양이 계산을 불허할 만큼 고약할 수 있다. 어쨌든 해당 목적 함수의 최적화를 통해 찾은이렇게 구한 파라미터를 MAP(Maximum A Posteriori)라고 부른다. MAP은 posterior의 mode(최빈값)이기도 하다. 왜 그럴까? $p(\theta\lvert data)$는 분포의 형태에서 가장 큰 값이라는 것은 가장 많이 나오는 값이라는 뜻과 같다. 
+이유는 두 가지다. 첫째, 베이즈 추론에서 우리의 목적함수는 $p(\theta\lvert data)$다. 즉, 이 값을 극대화해주는 $\theta$를 찾는 것이 목적이다. 이 점에서 보면, MLE와 사실상 같은 방법이라고 할 수 있다. 그런데,  분모의 $P(data)$에는 $\theta$가 없다. 즉, 목적함수를 극대화하는 파리미터를 찾는 데 분모는 영향을 주지 않는다. 둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. 예를 들어 $\theta$가 다차원이라면 적분이 아예 불가능할 수 있다. 
+
+어쨌든 해당 목적 함수의 최적화를 통해 찾은이렇게 구한 파라미터를 MAP(Maximum A Posteriori)라고 부른다. MAP은 posterior의 mode(최빈값)이기도 하다. 왜 그럴까? MAP은 $p(\theta\lvert data)$는 분포의 형태에서 가장 큰 값이라는 것은 가장 많이 나오는 값이라는 뜻과 같다. 
 
 ### MAP vs MLE 
 
@@ -281,8 +283,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc4NjU0MDksMjA1ODg1Mzc3MywtMT
-Q0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3
-NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NC
-wtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbLTQwNDkxNjYzNiwyMDU4ODUzNzczLC0xND
+QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
+MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
+0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 -->
