@@ -491,7 +491,14 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 
 <p>위 시각화의 코드는 다음과 같다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">post</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">beta</span><span class="p">(</span><span class="n">h</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="n">h</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">samples</span><span class="p">[</span><span class="n">nmcmc</span><span class="p">:],</span> <span class="mi">40</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s">'step'</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Distribution of posterior samples'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">prior</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">nmcmc</span><span class="p">),</span> <span class="mi">40</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s">'step'</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Distribution of prior samples'</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">thetas</span><span class="p">,</span> <span class="n">post</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">thetas</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="s">'red'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'True posterior'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">'best'</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 사후 분포에 수렴하는 것을 확인할 수 있다. 즉, $x$ 축에 표시된 반복 횟수가 일정 수준을 넘어서면 모든 마르코프 연쇄가 사후 분포 범위 안에서 움직이고 있다.</p>
@@ -499,11 +506,11 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 <p><img src="/lostineconomics-v2-1/images/mcmc/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI2NTU5NDgsLTIxOTc4MjE2LDIwNT
-UzODIyNzgsMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIw
-MDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMT
-IsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4
-MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbMjYyNTM3NDc0LC0yMTk3ODIxNiwyMDU1Mz
+gyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAw
+MSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLD
+M1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMy
+NTgsNDYyNTExMTEyXX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
