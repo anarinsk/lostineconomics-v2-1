@@ -433,6 +433,12 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span> 
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span> 
 
+<span class="c1"># Definition 
+</span><span class="n">thetas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">prior</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">beta</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">=</span> <span class="n">prior</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">thetas</span><span class="p">)</span> <span class="o">*</span> <span class="n">st</span><span class="o">.</span><span class="n">binom</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">thetas</span><span class="p">)</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">/=</span> <span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">thetas</span><span class="p">))</span>
+
 <span class="k">def</span> <span class="nf">target</span><span class="p">(</span><span class="n">lik</span><span class="p">,</span> <span class="n">prior</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">theta</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">theta</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">theta</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -464,7 +470,7 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 <span class="k">print</span> <span class="p">(</span><span class="n">f</span><span class="s">"Efficiency = {naccept/niters}"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 <a href="https://people.duke.edu/~ccc14/sta-663/MCMC.html">여기</a>를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(h+a, n-h+b)$를 사후 확률로 지닌다. 이 분포를 어떻게 추정해낼까?</p>
+<p>코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 <a href="https://people.duke.edu/~ccc14/sta-663/MCMC.html">여기</a>를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(+a, n-h+b)$를 사후 확률로 지닌다. 이 분포를 어떻게 추정해낼까?</p>
 
 <ul>
   <li>사전 분포로 $\beta(a, b)$를 잡는다.</li>
@@ -485,10 +491,11 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 <p><img src="/lostineconomics-v2-1/images/mcmc/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTM4MjI3OCwyMDU4ODUzNzczLC0xND
-QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
-MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
-0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbLTEwODA2NTY3MSwyMDU1MzgyMjc4LDIwNT
+g4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAy
+NDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MC
+w4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTEx
+MTEyXX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
