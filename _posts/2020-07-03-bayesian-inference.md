@@ -188,7 +188,7 @@ $$
 $$
 \begin{aligned}
 P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  & = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(\theta^{a})}, 1 \right)}^{(\ast\ast)} \\
-& = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) Q(\theta^b\lvert \theta^a) \cdot 1
+& = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) \cdot 1
 \end{aligned}
 $$
 
@@ -276,7 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMz
-UxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1
-OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbLTMyOTUwMjQwNiwtMTIyMDc3MzU2NCwtMj
+A3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC0xNTc0MjE1
+MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 -->
