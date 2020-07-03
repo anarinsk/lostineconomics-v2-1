@@ -274,7 +274,7 @@ nmcmc = len(samples)//2
 print (f"Efficiency = {naccept/niters}")
 ```
 
-코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(n, p)$의 pmf의 곱을 사후 확률의 분자로 지닌다. 식에서 $p = h / n$으로 두면 된다.  이때 사후 분포의 근사치를  어떻게 만들어낼 것인가? 
+코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(n, p)$의 pmf를 곱이 사후 확률의 분자가 된다. 식에서 $p = h / n$으로 두면 된다.  이때 사후 분포의 근사치를  어떻게 만들어낼 것인가? 
 
 - 사전 분포 $\beta(a, b)$를 잡는다. 
 - 우도는 이항분포의 pmf를 활용한다. 이때 $n$, $h$의 값이 필요하다. 
@@ -305,9 +305,9 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyNTM3NDc0LC0yMTk3ODIxNiwyMDU1Mz
-gyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAw
-MSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLD
-M1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMy
-NTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbLTE4MzY0MjcyOTQsMjYyNTM3NDc0LC0yMT
+k3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMy
+OTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC
+0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQy
+MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
