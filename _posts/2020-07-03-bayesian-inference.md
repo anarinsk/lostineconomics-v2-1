@@ -47,7 +47,9 @@ $$
 - $p(\theta)$: prior, 데이터를 포함하지 않은 파라미터의 사전 분포를 뜻한다. 
 - 파라미터 공간은 n 차원 벡터다. $\theta \in \mathbb R^n$, $\theta = (\theta_1, \theta_2, \dotsc, \theta_n)$.
 
-식의 분자는 모두 파리미터 $\theta$의 함수다. 분모는 상수다. 뒤에 다시 설명하겠지만, $p(\theta \lvert  data)$를 최적화한다면, 분자만 관련된다. 대소문자를 구별해서 쓴 것에 유의하자.  소문자 $p$는 확률 분포, 즉 확률 밀도 함수 혹은 확률 질량 함수를 뜻한다. 대문자 $P$는 그대로 확률이다.  
+식의 분자는 모두 파리미터 $\theta$의 함수다. 분모는 상수다. 뒤에 다시 설명하겠지만, $p(\theta \lvert  data)$를 $\theta$에 대해서 최적화한다면, 분자만 관련된다. 
+
+대소문자를 구별해서 쓴 것에 유의하자.  소문자 $p$는 확률 분포, 즉 확률 밀도 함수(pmf) 혹은 확률 질량 함수(pdf)를 뜻한다. 대문자 $P$는 확률이다.  
 
 ![]({{ site.baseurl }}/images/mcmc/fig_1.png){: style="textalign:center; " width="500"}
 
@@ -277,8 +279,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzE4NzY3OSwyMDU4ODUzNzczLC0xND
-QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
-MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
-0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbMTg1NDQ5NjMyLDIwNTg4NTM3NzMsLTE0ND
+IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
+NTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLT
+E1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
