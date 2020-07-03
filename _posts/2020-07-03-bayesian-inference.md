@@ -133,7 +133,7 @@ $$
 P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
 $$
 
- $p(\theta)$ 분포의 적분이 쉽지 않을 수 있다는 것이다. Prior가 복잡하지 않다고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 분석(analytic solutions)를 얻는 것은 많은 경우에 가능하지 않다. 
+ $p(\theta)$ 분포의 적분이 쉽지 않을 수 있다는 것이다. Prior가 복잡하지 않다고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 많은 경우에 가능하지 않다. 
 
 ### MC1: Monte Carlo 
 
@@ -283,8 +283,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODEwNzkxMSwyMDU4ODUzNzczLC0xND
-QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
-MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
-0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbLTE3MjAyMTAyNjksMjA1ODg1Mzc3MywtMT
+Q0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3
+NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NC
+wtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
 -->
