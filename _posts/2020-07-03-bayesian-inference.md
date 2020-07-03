@@ -95,7 +95,7 @@ $$
 \int_0^1 p^{1/2} dp \neq 1
 $$
 
-그렇다면 사후 분포 $P(\theta\lvert data)$는 혹은 pmf인가 pdf인가? 그렇다. $\int_\theta P(\theta\lvert data) d \theta$를 구하면 1이 된다는 점에서 그렇다. 
+그렇다면 사후 분포 $P(\theta\lvert data)$는 혹은 pmf인가 pdf인가? 그렇다. $\int_\theta P(\theta\lvert data) d \theta$를 구하면 1이다. 
 
 ### How to infer 
 
@@ -279,7 +279,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjA1MjE2OCwyMDU4ODUzNzczLC0xND
+eyJoaXN0b3J5IjpbMTg4Nzg1NjY3NSwyMDU4ODUzNzczLC0xND
 QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
 MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
 0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
