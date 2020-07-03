@@ -154,7 +154,7 @@ $$
 
 ### MC2: Markov Chain 
 
-이야기가 여기서 끝났다면 그래도 행복했을 것이다. 샘플링을 할 수 있다면, 하면 된다. 하지만 샘플링을 충분히 '쉽게' 할 수 있어야 한다! 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사험해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 잘하는 것 자체가 어렵다. 샘플링을 위한 그럴 듯한 전략이 필요하다. 많이 나올 것 같은 파라미터 공간 주변에서는 많이 뽑고, 별로 없을 것 같은 공간 주변에서는 적당히 뽑은 후 빨리 빠져나올 수 있어야 한다. 이런 샘플링 전략의 그럴듯한 근거를 제시하는 것이 또다른 MC,은 마르코프 연쇄이다. 
+이야기가 여기서 끝났다면 그래도 행복했을 것이다. 샘플링을 할 수 있다면, 하면 된다. 하지만 샘플링을 충분히 '쉽게' 할 수 있어야 한다! 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사험해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 잘하는 것 자체가 어렵다. 샘플링을 위한 그럴 듯한 전략이 필요하다. 많이 나올 것 같은 파라미터 공간 주변에서는 많이 뽑고, 별로 없을 것 같은 공간 주변에서는 적당히 뽑은 후 빨리 빠져나올 수 있어야 한다. 이런 샘플링 전략의 그럴듯한 근거를 제시하는 것이 또다른 MC, 마르코프 연쇄이다. 
 
 마르코프 연쇄가 왜 이런 전략을 제공할까? 
 
@@ -283,8 +283,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjAyNjM0NiwyMDU4ODUzNzczLC0xND
-QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
-MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
-0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbNzYwNTYwNjYsMjA1ODg1Mzc3MywtMTQ0Mj
+AzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1
+NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMT
+U3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
 -->
