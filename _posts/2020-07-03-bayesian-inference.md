@@ -288,7 +288,14 @@ print (f"Efficiency = {naccept/niters}")
 위 시각화의 코드는 다음과 같다. 
 
 ```python
+post = st.beta(h+a, n-h+b)
 
+plt.figure(figsize=(12, 9))
+plt.hist(samples[nmcmc:], 40, histtype='step', density=True, linewidth=1, label='Distribution of posterior samples');
+plt.hist(prior.rvs(nmcmc), 40, histtype='step', density=True, linewidth=1, label='Distribution of prior samples');
+plt.plot(thetas, post.pdf(thetas), c='red', linestyle='--', alpha=0.5, label='True posterior')
+plt.xlim([0,1]);
+plt.legend(loc='best');
 ```
 
 그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 사후 분포에 수렴하는 것을 확인할 수 있다. 즉, $x$ 축에 표시된 반복 횟수가 일정 수준을 넘어서면 모든 마르코프 연쇄가 사후 분포 범위 안에서 움직이고 있다. 
@@ -298,9 +305,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI2NTU5NDgsLTIxOTc4MjE2LDIwNT
-UzODIyNzgsMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIw
-MDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMT
-IsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4
-MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbMjYyNTM3NDc0LC0yMTk3ODIxNiwyMDU1Mz
+gyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAw
+MSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLD
+M1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMy
+NTgsNDYyNTExMTEyXX0=
 -->
