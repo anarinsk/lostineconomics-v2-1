@@ -187,12 +187,12 @@ $$
 
 $$
 \begin{aligned}
-P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  & = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(x_{a})}, 1 \right)}^{(\ast\ast)} \\
+P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  & = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(\theta^{a})}, 1 \right)}^{(\ast\ast)} \\
 & = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) Q(\theta^b\lvert \theta^a) \cdot 1
 \end{aligned}
 $$
 
-- $\pi(a)$, 즉 $(\ast)$ 그냥 prior를 통해 쉽게 구할 수 있다. $(\ast\ast)$ 역시 어렵지 않게 구할 수 있다. 
+- $\pi(\theta^a)$, 즉 $(\ast)$ 그냥 prior를 통해 쉽게 구할 수 있다. $(\ast\ast)$ 역시 어렵지 않게 구할 수 있다. 
 
 이번에는 detailed balance를 살펴보기 위해서 반대로 $\theta^b \to \theta^a$를 구해보자. 
 
@@ -269,13 +269,13 @@ print (f"Efficiency = {naccept/niters}")
 
 ![]({{ site.baseurl }}/images/mcmc/fig_2.png){: style="textalign:center; " width="500"}
 
-그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 원래 분포에 수렴하는 것을 확인할 수 있다. 
+그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 사후 분포에 수렴하는 것을 확인할 수 있다. $x$ 축에 표시된 일정 회
 
 ![]({{ site.baseurl }}/images/mcmc/fig_3.png){: style="textalign:center; " width="500"}
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDUxMjI0OTcsLTE1NzQyMTUwNzMsMT
-UzODMyNTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbMTI2NDU2Mjc4MiwtMTU3NDIxNTA3MywxNT
+M4MzI1OCw0NjI1MTExMTJdfQ==
 -->
