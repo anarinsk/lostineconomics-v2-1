@@ -274,7 +274,7 @@ nmcmc = len(samples)//2
 print (f"Efficiency = {naccept/niters}")
 ```
 
-코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(h; n, p)$의 pmf의 곱을 사후 확률의 분자로 지닌다. 이때 사후 분포의 근사치를  어떻게 만들어낼 것인가? 
+코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(n, p)$의 pmf의 곱을 사후 확률의 분자로 지닌다. 식에서 $p = h / n$으로 두면 된다.  이때 사후 분포의 근사치를  어떻게 만들어낼 것인가? 
 
 - 사전 분포 $\beta(a, b)$를 잡는다. 
 - 우도는 이항분포의 pmf를 활용한다. 이때 $n$, $h$의 값이 필요하다. 
@@ -285,6 +285,12 @@ print (f"Efficiency = {naccept/niters}")
 
 ![]({{ site.baseurl }}/images/mcmc/fig_2.png){: style="textalign:center; " width="500"}
 
+위 시각화의 코드는 다음과 같다. 
+
+```python
+
+```
+
 그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 사후 분포에 수렴하는 것을 확인할 수 있다. 즉, $x$ 축에 표시된 반복 횟수가 일정 수준을 넘어서면 모든 마르코프 연쇄가 사후 분포 범위 안에서 움직이고 있다. 
 
 ![]({{ site.baseurl }}/images/mcmc/fig_3.png){: style="textalign:center; " width="500"}
@@ -292,9 +298,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1OD
-g1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0
-MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLD
-g2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTEx
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTEwMzI2NTU5NDgsLTIxOTc4MjE2LDIwNT
+UzODIyNzgsMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIw
+MDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMT
+IsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4
+MzI1OCw0NjI1MTExMTJdfQ==
 -->
