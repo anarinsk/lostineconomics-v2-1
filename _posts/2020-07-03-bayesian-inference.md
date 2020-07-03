@@ -274,7 +274,7 @@ print (f"Efficiency = {naccept/niters}")
 코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(h; n, p)$의 pmf의 곱을 사후 확률의 분자로 지닌다. 이때 사후 분포의 근사치를  어떻게 만들어낼 것인가? 
 
 - 사전 분포 $\beta(a, b)$를 잡는다. 
-- 우도는 이항분포의 pmf를 활용한다. 
+- 우도는 이항분포의 pmf를 활용한다. 이때 $n$, $h$의 값이 필요하다. 
 - 20,000 번의 실행을 반복한다. 
 	- 최초의 theta는 0.1로 둔다. 
 	- 임의의 theta 값을 정규 분포값에서 생성해낸다. 	 
@@ -289,9 +289,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYyODkyMzIyLDIwNTUzODIyNzgsMjA1OD
-g1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0
-MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLD
-g2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTEx
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTQyNTczMTc2NCwyMDU1MzgyMjc4LDIwNT
+g4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAy
+NDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MC
+w4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTEx
+MTEyXX0=
 -->
