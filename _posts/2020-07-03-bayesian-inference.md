@@ -275,7 +275,7 @@ print (f"Efficiency = {naccept/niters}")
 
 - 사전 분포 $\beta(a, b)$를 잡는다. 
 - 우도는 이항분포의 pmf를 활용한다. 이때 $n$, $h$의 값이 필요하다. 
-- 20,000 번의 실행을 반복한다. 
+- 아래와 같은 실행을 10,000 번의 실행을 반복한다. 
 	- 최초의 theta는 0.1로 둔다. 
 	- 임의의 theta 값을 정규 분포값에서 생성해낸다. 	 
 	- metropolis 알고리듬에 따라서 이 값과 최초의 theta 혹은 바로 전에 생성된 theta, 두 값을 평가한다. 평가는 극도로 단순한 방식으로 진행된다. 각기 다음 상태로 넘어갈 확률은 전기의 파라미터에만 의존한다. 
@@ -289,9 +289,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTczMTc2NCwyMDU1MzgyMjc4LDIwNT
-g4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAy
-NDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MC
-w4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTEx
-MTEyXX0=
+eyJoaXN0b3J5IjpbNTA0MDA5MjgzLDIwNTUzODIyNzgsMjA1OD
+g1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0
+MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLD
+g2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTEx
+MTJdfQ==
 -->
