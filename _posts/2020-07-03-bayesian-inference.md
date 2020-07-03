@@ -258,7 +258,7 @@ nmcmc = len(samples)//2
 print (f"Efficiency = {naccept/niters}")
 ```
 
-코드에 관한 설명은 간략하게 하곘다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(h+a, n-h+b)$를 사후 확률로 지닌다. 이 분포를 어떻게 추정해낼까? 
+코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 [여기](https://people.duke.edu/~ccc14/sta-663/MCMC.html)를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(h+a, n-h+b)$를 사후 확률로 지닌다. 이 분포를 어떻게 추정해낼까? 
 
 - 사전 분포로 $\beta(a, b)$를 잡는다. 
 - 우도는 이항분포의 pmf를 활용한다. 
@@ -276,7 +276,7 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI0OTE3MiwtMzI5NTAyNDA2LC0xMj
+eyJoaXN0b3J5IjpbLTQwNTIxMjEyNCwtMzI5NTAyNDA2LC0xMj
 IwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3
 NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
