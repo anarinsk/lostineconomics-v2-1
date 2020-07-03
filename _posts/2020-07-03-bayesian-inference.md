@@ -261,6 +261,7 @@ niters = 10000
 samples = np.zeros(niters+1)
 samples[0] = theta
 
+# Iteraton 
 for i in range(niters):
     theta_p = theta + st.norm(0, sigma).rvs()
     rho = min(1, target(lik, prior, n, h, theta_p)/target(lik, prior, n, h, theta ))
@@ -291,9 +292,9 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDQ5MDg4MSwyMDU1MzgyMjc4LDIwNT
-g4NTM3NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAy
-NDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MC
-w4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTEx
-MTEyXX0=
+eyJoaXN0b3J5IjpbLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1OD
+g1Mzc3MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0
+MDYsLTEyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLD
+g2MzQ2MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTEx
+MTJdfQ==
 -->
