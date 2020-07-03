@@ -208,7 +208,7 @@ $$
 
 ### Metropolis-Hastings algorithm 
 
-- M-H 알고리듬은 임의의 밀도 함수, 즉 $Q(\cdot)$이 대칭이라는 제약도 풀어버린 것이다. 수용 확률 $r$ 이 다음과 같이 정의된다. 
+- M-H 알고리듬은 임의의 밀도 함수, 즉 $Q(\cdot)$가 대칭이라는 제약도 풀어버린 것이다. 수용 확률 $r$ 이 다음과 같이 정의된다. 
 
 $$
 r = \min \left( \dfrac{\dfrac{\pi(\theta^i \lvert  data)}{Q(\theta^i\lvert \theta^{i-1})} }{\dfrac{\pi(\theta^{i-1} \lvert  data)}{Q(\theta^{i-1}\lvert \theta^i)} }, 1 \right)
@@ -276,7 +276,8 @@ print (f"Efficiency = {naccept/niters}")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMj
-IwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3
-NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMz
+I5NTAyNDA2LC0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYx
+OTU3MCw4NjM0NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsND
+YyNTExMTEyXX0=
 -->
