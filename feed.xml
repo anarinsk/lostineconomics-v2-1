@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-07-12T22:31:31-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-07-12T22:48:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;베이지언 추론에 관해서 수박 겉핥기로 살펴본다.&lt;/li&gt;
@@ -487,10 +487,10 @@ table {
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;True Positive Rate&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;False Positive Rate&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;True Negative Rate&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;False Negative Rate&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;True Positive Rate (TPR)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;False Positive Rate  (FPR)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;True Negative Rate (TNR)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;False Negative Rate(FNR)&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -528,7 +528,8 @@ table {
 &lt;/table&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Specificity는 True Negative Rate를 나타내는 용어다. 보다 상세한 지표 지도는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Precision_and_recall&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
+  &lt;li&gt;상세한 지표 지도는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Precision_and_recall&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
+  &lt;li&gt;따져볼 대목. 위 내 개의 용어는&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;roc-curve&quot;&gt;ROC curve&lt;/h2&gt;
@@ -565,13 +566,13 @@ table {
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNDUwMjI2LDEwNTI4OTAxOTcsLTEyNz
-I1MDc1NSwxNDA4MTEzNDQ1LC0xMTA4MDEwMSw2MTM3Njg1OTks
-NjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MTcxMTYsLTU3MTI0OD
-Y1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwtMTI4Mjg5NjIxMCwx
-ODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1NzgzMzM5LC0xNzM0Nj
-c3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2MTAsLTE0NjcxMjIy
-ODhdfQ==
+eyJoaXN0b3J5IjpbODE3Nzg0NDczLDU1MjQ1MDIyNiwxMDUyOD
+kwMTk3LC0xMjcyNTA3NTUsMTQwODExMzQ0NSwtMTEwODAxMDEs
+NjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNzA3NSwxNjgwOTE3MT
+E2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0MTU1NDE1NTUsLTEy
+ODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NTk1OTgsLTYxNTc4Mz
+MzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQwLC0xNzg3Nzk3NjEw
+XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
