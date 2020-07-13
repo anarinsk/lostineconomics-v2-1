@@ -42,7 +42,7 @@ table {
 	}  
 </STYLE>  
  
-|True Positive Rate | False Positive Rate | True Negative Rate | False Negative Rate
+|True Positive Rate (TPR)| False Positive Rate  (FPR)| True Negative Rate (TNR)| False Negative Rate(FNR)
 |:--:|:--:|:--:|:--:
 |Recall | |
 |Sensitivity | 1 - Specificity | Specificity | 1-Sensitivity
@@ -50,7 +50,8 @@ table {
 |$1-\beta$ | $\alpha$ | $1-\alpha$ | $\beta$
 | (1 - type II error) | type I error | (1 - type I error) | type II error
 
-* Specificity는 True Negative Rate를 나타내는 용어다. 보다 상세한 지표 지도는 [여기](https://en.wikipedia.org/wiki/Precision_and_recall)를 참고하라. 
+* 상세한 지표 지도는 [여기](https://en.wikipedia.org/wiki/Precision_and_recall)를 참고하라. 
+- 따져볼 대목. 위 내 개의 용어는 
 
 ## ROC curve 
 
@@ -78,11 +79,11 @@ $$
 
 [^1]: 멀티 클래스의 경우에 관해서는 [여기](https://nittaku.tistory.com/295)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNDUwMjI2LDEwNTI4OTAxOTcsLTEyNz
-I1MDc1NSwxNDA4MTEzNDQ1LC0xMTA4MDEwMSw2MTM3Njg1OTks
-NjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MTcxMTYsLTU3MTI0OD
-Y1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwtMTI4Mjg5NjIxMCwx
-ODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1NzgzMzM5LC0xNzM0Nj
-c3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2MTAsLTE0NjcxMjIy
-ODhdfQ==
+eyJoaXN0b3J5IjpbODE3Nzg0NDczLDU1MjQ1MDIyNiwxMDUyOD
+kwMTk3LC0xMjcyNTA3NTUsMTQwODExMzQ0NSwtMTEwODAxMDEs
+NjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNzA3NSwxNjgwOTE3MT
+E2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0MTU1NDE1NTUsLTEy
+ODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NTk1OTgsLTYxNTc4Mz
+MzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQwLC0xNzg3Nzk3NjEw
+XX0=
 -->
