@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-07-03T03:37:23-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-07-12T22:31:31-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;베이지언 추론에 관해서 수박 겉핥기로 살펴본다.&lt;/li&gt;
@@ -487,28 +487,40 @@ table {
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;True Positive Rate (TPR)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;False Positive Rate (FPR)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;True Positive Rate&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;False Positive Rate&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;True Negative Rate&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;False Negative Rate&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Recall&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Sensitivity&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;(1 - Specificity)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1 - Specificity&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Specificity&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1-Sensitivity&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{TP}}{\rm\bold{TP + FN}}$&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{FP}}{\rm\bold{FP + TN}}$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{TN}}{\rm\bold{FP + TN}}$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{FN}}{\rm\bold{TP + FN}}$&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$1-\beta$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\alpha$&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;$1-\alpha$&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;$\beta$&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;(1 - type II error)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;type I error&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;(1 - type I error)&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;type II error&lt;/td&gt;
     &lt;/tr&gt;
@@ -553,13 +565,13 @@ table {
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1Mjg5MDE5NywtMTI3MjUwNzU1LDE0MD
-gxMTM0NDUsLTExMDgwMTAxLDYxMzc2ODU5OSw2MzgyNjE0OCw2
-OTY2MTcwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OT
-E2MCwxNDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAs
-MzU5NzU5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OT
-E2MTE0MCwtMTc4Nzc5NzYxMCwtMTQ2NzEyMjI4OCwtNzIyNjkx
-NDI5XX0=
+eyJoaXN0b3J5IjpbNTUyNDUwMjI2LDEwNTI4OTAxOTcsLTEyNz
+I1MDc1NSwxNDA4MTEzNDQ1LC0xMTA4MDEwMSw2MTM3Njg1OTks
+NjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MTcxMTYsLTU3MTI0OD
+Y1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwtMTI4Mjg5NjIxMCwx
+ODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1NzgzMzM5LC0xNzM0Nj
+c3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2MTAsLTE0NjcxMjIy
+ODhdfQ==
 --&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

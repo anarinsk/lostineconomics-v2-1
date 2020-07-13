@@ -204,28 +204,40 @@ table {
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">True Positive Rate (TPR)</th>
-      <th style="text-align: center">False Positive Rate (FPR)</th>
+      <th style="text-align: center">True Positive Rate</th>
+      <th style="text-align: center">False Positive Rate</th>
+      <th style="text-align: center">True Negative Rate</th>
+      <th style="text-align: center">False Negative Rate</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center">Recall</td>
       <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
     </tr>
     <tr>
       <td style="text-align: center">Sensitivity</td>
-      <td style="text-align: center">(1 - Specificity)</td>
+      <td style="text-align: center">1 - Specificity</td>
+      <td style="text-align: center">Specificity</td>
+      <td style="text-align: center">1-Sensitivity</td>
     </tr>
     <tr>
       <td style="text-align: center">$\frac{\rm\bold{TP}}{\rm\bold{TP + FN}}$</td>
       <td style="text-align: center">$\frac{\rm\bold{FP}}{\rm\bold{FP + TN}}$</td>
+      <td style="text-align: center">$\frac{\rm\bold{TN}}{\rm\bold{FP + TN}}$</td>
+      <td style="text-align: center">$\frac{\rm\bold{FN}}{\rm\bold{TP + FN}}$</td>
     </tr>
     <tr>
+      <td style="text-align: center">$1-\beta$</td>
+      <td style="text-align: center">$\alpha$</td>
       <td style="text-align: center">$1-\alpha$</td>
       <td style="text-align: center">$\beta$</td>
     </tr>
     <tr>
+      <td style="text-align: center">(1 - type II error)</td>
+      <td style="text-align: center">type I error</td>
       <td style="text-align: center">(1 - type I error)</td>
       <td style="text-align: center">type II error</td>
     </tr>
@@ -270,13 +282,13 @@ table {
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1Mjg5MDE5NywtMTI3MjUwNzU1LDE0MD
-gxMTM0NDUsLTExMDgwMTAxLDYxMzc2ODU5OSw2MzgyNjE0OCw2
-OTY2MTcwNzUsMTY4MDkxNzExNiwtNTcxMjQ4NjU0LDIwOTc1OT
-E2MCwxNDE1NTQxNTU1LC0xMjgyODk2MjEwLDE4MzE0OTA5NDAs
-MzU5NzU5NTk4LC02MTU3ODMzMzksLTE3MzQ2Nzc2MzEsMTI3OT
-E2MTE0MCwtMTc4Nzc5NzYxMCwtMTQ2NzEyMjI4OCwtNzIyNjkx
-NDI5XX0=
+eyJoaXN0b3J5IjpbNTUyNDUwMjI2LDEwNTI4OTAxOTcsLTEyNz
+I1MDc1NSwxNDA4MTEzNDQ1LC0xMTA4MDEwMSw2MTM3Njg1OTks
+NjM4MjYxNDgsNjk2NjE3MDc1LDE2ODA5MTcxMTYsLTU3MTI0OD
+Y1NCwyMDk3NTkxNjAsMTQxNTU0MTU1NSwtMTI4Mjg5NjIxMCwx
+ODMxNDkwOTQwLDM1OTc1OTU5OCwtNjE1NzgzMzM5LC0xNzM0Nj
+c3NjMxLDEyNzkxNjExNDAsLTE3ODc3OTc2MTAsLTE0NjcxMjIy
+ODhdfQ==
 -->
 <div class="footnotes">
   <ol>
