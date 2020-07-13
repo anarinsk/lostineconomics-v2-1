@@ -51,7 +51,7 @@ table {
 | (1 - type II error) | type I error | (1 - type I error) | type II error
 
 * 상세한 지표 지도는 [여기](https://en.wikipedia.org/wiki/Precision_and_recall)를 참고하라. 
-- 따져볼 대목. 위 내 개의 용어는 
+- 따져볼 대목. 위 네 용어는 실제 속성(ground truth)에 기반한 것이다. 즉, 분모에 실제 속성이 깔린다. 반면, 정밀도(precision)와 같은 지표는 예측 값에 기반한다. 
 
 ## ROC curve 
 
@@ -79,11 +79,11 @@ $$
 
 [^1]: 멀티 클래스의 경우에 관해서는 [여기](https://nittaku.tistory.com/295)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3Nzg0NDczLDU1MjQ1MDIyNiwxMDUyOD
-kwMTk3LC0xMjcyNTA3NTUsMTQwODExMzQ0NSwtMTEwODAxMDEs
-NjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNzA3NSwxNjgwOTE3MT
-E2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0MTU1NDE1NTUsLTEy
-ODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NTk1OTgsLTYxNTc4Mz
-MzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQwLC0xNzg3Nzk3NjEw
-XX0=
+eyJoaXN0b3J5IjpbMTI1ODM4MjEyNCw1NTI0NTAyMjYsMTA1Mj
+g5MDE5NywtMTI3MjUwNzU1LDE0MDgxMTM0NDUsLTExMDgwMTAx
+LDYxMzc2ODU5OSw2MzgyNjE0OCw2OTY2MTcwNzUsMTY4MDkxNz
+ExNiwtNTcxMjQ4NjU0LDIwOTc1OTE2MCwxNDE1NTQxNTU1LC0x
+MjgyODk2MjEwLDE4MzE0OTA5NDAsMzU5NzU5NTk4LC02MTU3OD
+MzMzksLTE3MzQ2Nzc2MzEsMTI3OTE2MTE0MCwtMTc4Nzc5NzYx
+MF19
 -->
