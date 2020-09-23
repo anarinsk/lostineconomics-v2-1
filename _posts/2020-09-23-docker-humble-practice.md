@@ -37,7 +37,8 @@ categories: [docker, data-science]
 ### 원도10 2004 Build 이후 WSL 2 환경 
 
 WSL 2가 깔리는 윈도10 버전으로 업데이트하고 이를 설치하도록 하자. 시중에 가이드가 많으니 구글 검색 후 참고하면 되겠다. 
-[MS 공식 가이드](https://docs.microsoft.com/ko-kr/windows/wsl/)
+
+- [MS 공식 가이드](https://docs.microsoft.com/ko-kr/windows/wsl/)
 
 ### Docker Desktop (윈도10)
 
@@ -140,6 +141,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0Nzg5ODcxLC0zMjM4MDMwMzUsLTY3OD
-AzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbLTE4MTgwNjUxMTAsLTMyMzgwMzAzNSwtNj
+c4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 -->
