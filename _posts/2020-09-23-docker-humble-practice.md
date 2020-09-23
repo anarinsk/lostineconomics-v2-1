@@ -8,7 +8,7 @@ categories: [docker, data-science]
 
 ---
 
-## 사전 전제 
+## 전제 
 
 - 도커에 관해서 대충 알고 있다. 
 - 도커를 써보기는 했다. 하지만... (막상 쓰려면...)
@@ -151,8 +151,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTk3MjM3NywxMDA0OTgyODk1LC04NT
-Y2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAz
-NjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC
-02NzgwMzQyODUsLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbLTE1NzA4NzUzMDcsMTk4MTk3MjM3NywxMD
+A0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5MTM3
+Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OC
+wtMzIzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkxNjAyOF19
 -->
