@@ -127,11 +127,11 @@ services:
 
 대시보드 상에서 컨테이너를 실행하고 멈출 수 있고 이미지도 관리할 수 있다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/docker_1.png){: style="textalign:center; " width="350"}
+![]({{ site.baseurl }}/images/docker-in-use/docker_1.png){: style="textalign:center; " width="500"}
 
 아예 데이터 전체를 리셋하는 방법도 있다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="350"}
+![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="0"}
 
 
 
@@ -141,6 +141,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC00Nz
-A5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbMTU1MDI5NzYwMCwtMzIzODAzMDM1LC02Nz
+gwMzQyODUsLTQ3MDkxNjAyOF19
 -->
