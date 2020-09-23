@@ -32,6 +32,10 @@ categories: [docker, data-science]
 
 파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰면 된다. 도커로 R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어 쓰는 편이 탈이 덜 나더라. 
 
+- https://hub.docker.com/r/jupyter/datascience-notebook
+- https://hub.docker.com/r/rocker/rstudio
+
+도커 허브에 Tags 탭을 보면 각 버전 및 이미지 특성을 파악할 수 있다. docker를 쓸 때 `:` 뒤에 태그를 쓰는 형태로 이미지를 끌어올 수 있다. 
 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 파이썬+주피터, RStudio을 어떻게 구축하는지 설명하겠다. 
 
 ## 미리 해야 할 것들 
@@ -153,7 +157,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjkxNDM2MDEsNjA3NzA0NzYxLDE5OD
+eyJoaXN0b3J5IjpbLTIxMjIzMTMxNTgsNjA3NzA0NzYxLDE5OD
 E5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4
 MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLT
 ExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5
