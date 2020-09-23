@@ -109,6 +109,9 @@ services:
 - `ports`: WSL 2에서 인식하는 포트와 이미지 내에서 인식하는 포트를 매핑한다. 
 - environment: 각각 이미지에 맞는 환경을 지정할 수 있다. 이 사례에서 주피터 노트북에는 `sudo` 권한을 주고, 주피터랩 버전을 쓰며, 최초 진입시 비번은 [내 비번]을 쓰겠다고 지정한 것이다. RStudio의 경우 root 권한을 주고, 패스워드는 내 비번을 쓰겠다는 의미다. 
 
+1. 통상적으로 쓰려면 `docker-composer.yml`로 이름을 지은 후 적당한 폴더에 둔다. 
+2. 윈도 터이널  Ubuntu 등을 
+
 ## 실사용 
 
 ### 어떻게 실행할까? 
@@ -143,6 +146,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzM5MDUzOTUsLTExMDk4MzQ1OTgsLT
-MyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbMTQ4NjY0OTkyMCwtMTEwOTgzNDU5OCwtMz
+IzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkxNjAyOF19
 -->
