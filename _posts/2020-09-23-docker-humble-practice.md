@@ -117,7 +117,7 @@ services:
 
 - [도커 컴포즈 공식 가이드](https://docs.docker.com/compose/)
 
-## 실사용 
+## 실제 사용 
 
 ### 어떻게 실행할까? 
 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 `localhost:8888`을  치면 주피터에 `localhost:8787`을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 
@@ -151,7 +151,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtND
-U1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0
-Mjg1LC00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbMTY0MjY0ODA3LDE3NDkxMzczNzksLTE2OD
+k5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMw
+MzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
 -->
