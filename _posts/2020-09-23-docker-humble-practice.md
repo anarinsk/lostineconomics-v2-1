@@ -22,7 +22,7 @@ categories: [docker, data-science]
 
 ##  원칙 
 
-본격적으로 사용을 소개하기 전에 도커(docker)를 쓰는 원칙 몇 가지를 전제하도록 하자. 
+본격적으로 사용을 소개하기 전에 도커(docker) 이미지를 쓰는 원칙 하나를 전제하도록 하자. 
 
 **본인에게 특화된 이미지를 빌드하지 말고 그냥 official build를 당겨와서 쓰자!**
 
@@ -42,7 +42,7 @@ WSL 2가 깔리는 윈도10 버전으로 업데이트하고 이를 설치하도�
 
 ### Docker Desktop (윈도10)
 
-순수 우분투 환경이라면 `apt-get`으로 도커를 깔면 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 까는 편이 좋겠다. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다. 
+순수 우분투 환경이라면 `apt-get`으로 도커를 서 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 까는 편이 좋겠다. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다. 
 
 - [Docker Desktop for WIndows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 
@@ -151,8 +151,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNj
-A5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2
-NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC
-00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbLTE0NTkwNTgzNTYsMTAwNDk4Mjg5NSwtOD
+U2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkw
+MzYwOSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNS
+wtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 -->
