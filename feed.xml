@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T02:03:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;사전-전제&quot;&gt;사전 전제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T06:35:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;사전-전제&quot;&gt;사전 전제&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커에 관해서 대충 알고 있다.&lt;/li&gt;
@@ -16,7 +16,7 @@
 
 &lt;h2 id=&quot;원칙&quot;&gt;원칙&lt;/h2&gt;
 
-&lt;p&gt;본격적으로 사용을 소개하기 전에 도커(docker)를 쓰는 원칙 몇 가지를 전제하도록 하자.&lt;/p&gt;
+&lt;p&gt;본격적으로 사용을 소개하기 전에 도커(docker) 이미지를 쓰는 원칙 하나를 전제하도록 하자.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;본인에게 특화된 이미지를 빌드하지 말고 그냥 official build를 당겨와서 쓰자!&lt;/strong&gt;&lt;/p&gt;
 
@@ -38,7 +38,7 @@
 
 &lt;h3 id=&quot;docker-desktop-윈도10&quot;&gt;Docker Desktop (윈도10)&lt;/h3&gt;
 
-&lt;p&gt;순수 우분투 환경이라면 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;으로 도커를 깔면 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 까는 편이 좋겠다. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다.&lt;/p&gt;
+&lt;p&gt;순수 우분투 환경이라면 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;으로 도커를 서 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 까는 편이 좋겠다. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/editions/community/docker-ce-desktop-windows&quot;&gt;Docker Desktop for WIndows&lt;/a&gt;&lt;/li&gt;
@@ -153,10 +153,10 @@
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNj
-A5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2
-NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC
-00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbLTE0NTkwNTgzNTYsMTAwNDk4Mjg5NSwtOD
+U2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkw
+MzYwOSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNS
+wtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 --&gt;</content><author><name></name></author><summary type="html">사전 전제</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
