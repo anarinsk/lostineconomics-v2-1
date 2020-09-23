@@ -231,9 +231,9 @@ window.onload = wrap_img;
 
 <h2 id="docker-compose">Docker Compose</h2>
 
-<p>도커를 써본 사람이라면 개별 컨테이너를 띄울 때 옵션들–예를 들어 root 권한을 줄 건지, 포트는 어떤 것을 열 것인지 등등–을 써봤을 것이다. 일상적으로 쓸 때에도 이것들을 매번 지정을 해줘야 할까? 그렇게 해도 되겠지만 불편하다. 한번 정해두고 재사용할 수 있으면 편할 것이다. 이러한 용도에 적합한 것이 도커 콤포즈다.</p>
+<p>도커를 써본 사람이라면 개별 컨테이너를 띄울 때 옵션들–예를 들어 root 권한을 줄 건지, 포트는 어떤 것을 열 것인지 등등–을 써봤을 것이다. 일상적으로 쓸 때에도 이것들을 매번 지정해서 실행해야 할까? 그렇게 해도 되겠지만 조금 불편하다. 한번 정해두고 재사용할 수 있으면 좋겠다. 이러한 용도에 적합한 것이 ‘도커 콤포즈’다.</p>
 
-<p><code class="highlighter-rouge">.yml</code> 확장자의 설정 파일을 만들어 두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 <code class="highlighter-rouge">.yml</code> 환경으로 간략하게 소개해보겠다.</p>
+<p><code class="highlighter-rouge">.yml</code> 확장자의 설정 파일을 만들어 두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 <code class="highlighter-rouge">.yml</code> 환경으로 간략하게 살펴보자.</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>
 <span class="na">services</span><span class="pi">:</span>
@@ -265,7 +265,7 @@ window.onload = wrap_img;
 <span class="c1"># End of yml</span>
 </code></pre></div></div>
 
-<p>위 yml에서 <code class="highlighter-rouge">service</code>  아래 두 개의 항목이 있다. 각각 jupyter-datasicence-notebook과 RStudio의 컨테이터 이미지를 의미한다.</p>
+<p>위 yml에서 <code class="highlighter-rouge">service</code> 아래 두 개의 항목이 있다. 각각 <code class="highlighter-rouge">jupyter/datasicence-notebook</code>과 <code class="highlighter-rouge">Rudio</code>의 컨테이터 이미지를 의미한다.</p>
 
 <ul>
   <li><code class="highlighter-rouge">image</code>: docker-hub 상의 이미지 이름을 뜻한다.</li>
@@ -313,7 +313,7 @@ window.onload = wrap_img;
 <p><img src="/lostineconomics-v2-1/images/docker-in-use/docker_2.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTQxOTQzMjUsLTg1NjY2ODc3MCwxMD
+eyJoaXN0b3J5IjpbLTE3MjU4Mjk0NjksLTg1NjY2ODc3MCwxMD
 YwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4
 NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NS
 wtNDcwOTE2MDI4XX0=
