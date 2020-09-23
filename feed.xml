@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T00:11:42-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;사전-전제&quot;&gt;사전 전제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T00:13:25-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;사전-전제&quot;&gt;사전 전제&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커에 관해서 대충 알고 있다.&lt;/li&gt;
@@ -69,11 +69,11 @@
   &lt;li&gt;도커 버전은 최신 버전을 유지하는 편을 권한다. Edge가 불안하다면 Stable을 쓰면 된다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;docker-composer&quot;&gt;Docker Composer&lt;/h2&gt;
+&lt;h2 id=&quot;docker-compose&quot;&gt;Docker Compose&lt;/h2&gt;
 
-&lt;p&gt;도커를 써본 사람이라면 개별 컨테이너를 띄울 때 옵션들, 예를 들어 root 권한을 줄 건지, 포트는 어떤 것을 열 것인지 등등, 을 써봤을 것이다. 일상적으로 쓸 때에도 이것들을 매번 지정을 해줘야 할까? 그렇게 해도 되겠지만 불편하다. 한번 정해두고 재사용할 수 있으면 편할 것이다. 이러한 용도에 적합한 것이 도커 콤포저다.&lt;/p&gt;
+&lt;p&gt;도커를 써본 사람이라면 개별 컨테이너를 띄울 때 옵션들, 예를 들어 root 권한을 줄 건지, 포트는 어떤 것을 열 것인지 등등, 을 써봤을 것이다. 일상적으로 쓸 때에도 이것들을 매번 지정을 해줘야 할까? 그렇게 해도 되겠지만 불편하다. 한번 정해두고 재사용할 수 있으면 편할 것이다. 이러한 용도에 적합한 것이 도커 콤포즈다.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 확장자의 설정 파일을 만들어두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 환경으로 간략하게 소개해보겠다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 확장자의 설정 파일을 만들어 두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 환경으로 간략하게 소개해보겠다.&lt;/p&gt;
 
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -120,7 +120,11 @@
   &lt;li&gt;1의 파일이 있는 디렉토리로 이동한 후, &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose -d up&lt;/code&gt;을 실행한다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;그러면 도커 컴포저가 알아서 이미지를 끌어온&lt;/p&gt;
+&lt;p&gt;그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;도커 컴포즈 공식 가이드&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;실사용&quot;&gt;실사용&lt;/h2&gt;
 
@@ -149,8 +153,8 @@
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODk0NzY2MDEsLTExMDk4MzQ1OTgsLT
-MyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbMTMyMDY1OTUzOCwtMTEwOTgzNDU5OCwtMz
+IzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkxNjAyOF19
 --&gt;</content><author><name></name></author><summary type="html">사전 전제</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
