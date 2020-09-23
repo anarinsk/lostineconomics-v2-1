@@ -8,7 +8,7 @@ categories: [docker, data-science]
 
 ---
 
-## 전제 
+## 아마도 이런 분들  
 
 - 도커에 관해서 대충 알고 있다. 
 - 도커를 써보기는 했다. 하지만... (막상 쓰려면...)
@@ -151,8 +151,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA4NzUzMDcsMTk4MTk3MjM3NywxMD
-A0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5MTM3
-Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OC
-wtMzIzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwND
+k4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3
+OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLT
+MyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 -->
