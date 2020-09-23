@@ -78,7 +78,7 @@ services:
         image: jupyter/datascience-notebook
         user: root
         volumes:
-            - /mnt/e/github:/home/jovyan/anari-github
+            - [WSL2 디렉토리]:[컨테이너 디렉토리]
         ports:
             - "8888:8888"
             - "8501-8510:8501-8510"   
@@ -92,7 +92,7 @@ services:
         image: rocker/verse:latest
         #image: rocker/verse:4.0.2
         volumes:
-            - /mnt/e/github:/home/rstudio/anari-github
+            - [WSL2 디렉토리]:[컨테이너 디렉토리]
         ports:
             - "8787:8787"
         environment:
@@ -151,6 +151,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMj
-M4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMT
+A5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2
+MDI4XX0=
 -->
