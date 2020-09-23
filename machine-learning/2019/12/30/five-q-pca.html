@@ -2,9 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Five (Deadly!) Questions on Regression and PCA | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Five (Deadly!) Questions on Regression and PCA" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="PCA에 관해 알고 싶은 다섯 가지" />
@@ -15,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-12-30T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"PCA에 관해 알고 싶은 다섯 가지","headline":"Five (Deadly!) Questions on Regression and PCA","dateModified":"2019-12-30T00:00:00-06:00","datePublished":"2019-12-30T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html","@context":"https://schema.org"}</script>
+{"headline":"Five (Deadly!) Questions on Regression and PCA","dateModified":"2019-12-30T00:00:00-06:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html","datePublished":"2019-12-30T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html"},"description":"PCA에 관해 알고 싶은 다섯 가지","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -23,34 +24,12 @@
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Five (Deadly!) Questions on Regression and PCA | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Five (Deadly!) Questions on Regression and PCA" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="PCA에 관해 알고 싶은 다섯 가지" />
-<meta property="og:description" content="PCA에 관해 알고 싶은 다섯 가지" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html" />
-<meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-12-30T00:00:00-06:00" />
-<script type="application/ld+json">
-{"description":"PCA에 관해 알고 싶은 다섯 가지","headline":"Five (Deadly!) Questions on Regression and PCA","dateModified":"2019-12-30T00:00:00-06:00","datePublished":"2019-12-30T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/2019/12/30/five-q-pca.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -69,7 +48,7 @@ function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -93,27 +72,8 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-<!--
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
-
--->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159914345-1');
-  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
-</script>
-</head><body><header class="site-header">
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -125,7 +85,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -220,7 +180,7 @@ x^1 ~ \dotsc ~ x^k
 \end{bmatrix} = 
 \beta_1 x^1 + \dotsb + \beta_k x^k,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:4.260000000000001em;vertical-align:-1.8800000000000006em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.854554em;"><span style="top:-3.005446em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.354554em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">]</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.352005em;"><span style="top:-1.9499950000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-3.0999950000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-3.1109850000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎢</span></span></span><span style="top:-4.352005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.850025em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.3800000000000003em;"><span style="top:-5.2275em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.3674999999999997em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span></span></span><span style="top:-2.1674999999999995em;"><span class="pstrut" style="height:3.6875em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.8800000000000006em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.352005em;"><span style="top:-1.9499950000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-3.0999950000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-3.1109850000000003em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎥</span></span></span><span style="top:-4.352005em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.850025em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0585479999999998em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.093548em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mpunct">,</span></span></span></span></span>
 
-<p>where $x^j = [x_1^j, \dotsc, x_n^j]^T$ for $j = 1, \dotsc, k$. 즉 $x^j \in {\mathbb R}^n$ 벡터 $k$ 개로 이루어진 벡터 공간, 즉 $X$의 열 공간(column space)으로 $y$를 투영(project)한다는 의미이다. 이 열 공간은 $n$ 차원 안에 속한 $k$ 차원의 초평면이라는 점을 기억해두자. 아래 그림을 참고하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup></p>
+<p>where $x^j = [x_1^j, \dotsc, x_n^j]^T$ for $j = 1, \dotsc, k$. 즉 $x^j \in {\mathbb R}^n$ 벡터 $k$ 개로 이루어진 벡터 공간, 즉 $X$의 열 공간(column space)으로 $y$를 투영(project)한다는 의미이다. 이 열 공간은 $n$ 차원 안에 속한 $k$ 차원의 초평면이라는 점을 기억해두자. 아래 그림을 참고하자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">1</a></sup></p>
 
 <p align="center"><kbd>  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="350"></kbd></p>
 <p>한편 위의 식을 연립방정식의 관점에서 바라보자.</p>
@@ -341,7 +301,7 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
   <p>그림으로 보다 쉽게 볼 수는 없을까요?</p>
 </blockquote>
 
-<p>그림으로 간단하게 살펴보자.<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup></p>
+<p>그림으로 간단하게 살펴보자.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">2</a></sup></p>
 
 <p align="center"><kbd>
   <img src="https://github.com/anarinsk/lie-qa_reg_pca/blob/master/assets/imgs/regression.png?raw=true" width="700">
@@ -390,13 +350,13 @@ X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3NTI1OTIzMDZdfQ==
 -->
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:2">
-      <p>보다 상세한 내용은 <a href="https://anarinsk.github.io/lie-regression/">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>보다 상세한 내용은 <a href="https://anarinsk.github.io/lie-regression/">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:1">
-      <p><a href="https://shankarmsy.github.io/posts/pca-vs-lr.html">여기</a>에서 가져왔다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://shankarmsy.github.io/posts/pca-vs-lr.html">여기</a>에서 가져왔다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
   </ol>
 </div>

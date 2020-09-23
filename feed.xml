@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T06:57:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들&quot;&gt;아마도 이런 분들&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T18:38:52-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들&quot;&gt;아마도 이런 분들&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커에 관해서 대충 알고 있다.&lt;/li&gt;
@@ -38,7 +38,7 @@
 
 &lt;h3 id=&quot;docker-desktop-윈도10&quot;&gt;Docker Desktop (윈도10)&lt;/h3&gt;
 
-&lt;p&gt;순수 우분투 환경이라면 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;으로 도커를 설치해서 쓰면 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 깔도록 하자. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다.&lt;/p&gt;
+&lt;p&gt;순수 우분투 환경이라면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;으로 도커를 설치해서 쓰면 된다. 우리는 윈도10과 리눅스를 오가야 하므로 이를 잘 지원해주는 맞춤형 도커 버전을 깔도록 하자. 도커 개발사가 WSL 2에 특화된 도커 클라이언트를 제공하고 있다. 보다 안정적인 버전인 Stable과 보다 최신 기능을 담은 버전인 Edge 모두 WSL 2 지원한다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/editions/community/docker-ce-desktop-windows&quot;&gt;Docker Desktop for WIndows&lt;/a&gt;&lt;/li&gt;
@@ -73,7 +73,7 @@
 
 &lt;p&gt;도커를 써본 사람이라면 개별 컨테이너를 띄울 때 옵션들–예를 들어 root 권한을 줄 건지, 포트는 어떤 것을 열 것인지 등등–을 써봤을 것이다. 일상적으로 쓸 때에도 이것들을 매번 지정해서 실행해야 할까? 그렇게 해도 되겠지만 조금 불편하다. 한번 정해두고 재사용할 수 있으면 좋겠다. 이러한 용도에 적합한 것이 ‘도커 콤포즈’다.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 확장자의 설정 파일을 만들어 두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 환경으로 간략하게 살펴보자.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 확장자의 설정 파일을 만들어 두고 녀석을 실행해서 매번 동일한 환경을 손쉽게 구축할 수 있다. 내가 쓰는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.yml&lt;/code&gt; 환경으로 간략하게 살펴보자.&lt;/p&gt;
 
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -105,19 +105,19 @@
 &lt;span class=&quot;c1&quot;&gt;# End of yml&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;위 yml에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;service&lt;/code&gt; 아래 두 개의 항목이 있다. 각각 &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyter/datasicence-notebook&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;rocker/verse&lt;/code&gt;의 컨테이터 이미지를 의미한다. 첫번째는 데이터를 다룰 때 필요한 파이썬 라이브러리를 주피터와 묶은 이미지이고, 두번째는 R과 RStudio 그리고 tidyverse 및 문서 도구를 묶은 이미지다.&lt;/p&gt;
+&lt;p&gt;위 yml에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;service&lt;/code&gt; 아래 두 개의 항목이 있다. 각각 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jupyter/datasicence-notebook&lt;/code&gt;과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rocker/verse&lt;/code&gt;의 컨테이터 이미지를 의미한다. 첫번째는 데이터를 다룰 때 필요한 파이썬 라이브러리를 주피터와 묶은 이미지이고, 두번째는 R과 RStudio 그리고 tidyverse 및 문서 도구를 묶은 이미지다.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;image&lt;/code&gt;: docker-hub 상의 이미지 이름을 뜻한다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;volume&lt;/code&gt;: WSL 2 환경의 디렉토리와 이미지 내 디렉토리를 매핑한다. 즉, X : Y라고 할 때 X는 윈도우 10의 폴더, Y는 도커 이미지 내의 폴더 이름을 뜻한다. WSL 2는 &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt&lt;/code&gt; 내에 윈도 드라이브를 마운트한다. 따라서 윈도10 환경과 연동된다고 보면 얼추 맞다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ports&lt;/code&gt;: WSL 2에서 인식하는 포트와 이미지 내에서 인식하는 포트를 매핑한다.&lt;/li&gt;
-  &lt;li&gt;environment: 각각 이미지에 맞는 환경을 지정할 수 있다. 이 사례에서 주피터 노트북에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 권한을 주고, 주피터랩 버전을 쓰며, 최초 진입시 비번은 [내 비번]을 쓰겠다고 지정한 것이다. RStudio의 경우 root 권한을 주고, 패스워드는 내 비번을 쓰겠다는 의미다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt;: docker-hub 상의 이미지 이름을 뜻한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume&lt;/code&gt;: WSL 2 환경의 디렉토리와 이미지 내 디렉토리를 매핑한다. 즉, X : Y라고 할 때 X는 윈도우 10의 폴더, Y는 도커 이미지 내의 폴더 이름을 뜻한다. WSL 2는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt&lt;/code&gt; 내에 윈도 드라이브를 마운트한다. 따라서 윈도10 환경과 연동된다고 보면 얼추 맞다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ports&lt;/code&gt;: WSL 2에서 인식하는 포트와 이미지 내에서 인식하는 포트를 매핑한다.&lt;/li&gt;
+  &lt;li&gt;environment: 각각 이미지에 맞는 환경을 지정할 수 있다. 이 사례에서 주피터 노트북에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 권한을 주고, 주피터랩 버전을 쓰며, 최초 진입시 비번은 [내 비번]을 쓰겠다고 지정한 것이다. RStudio의 경우 root 권한을 주고, 패스워드는 내 비번을 쓰겠다는 의미다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;통상적으로 쓰려면 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt;로 이름을 지은 후 적당한 폴더에 둔다.&lt;/li&gt;
+  &lt;li&gt;통상적으로 쓰려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt;로 이름을 지은 후 적당한 폴더에 둔다.&lt;/li&gt;
   &lt;li&gt;윈도 터미널 등을 통해  Ubuntu와 같은 리눅스 배포판에 접근한다.&lt;/li&gt;
-  &lt;li&gt;1의 파일이 있는 디렉토리로 이동한 후, &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose -d up&lt;/code&gt;을 실행한다.&lt;/li&gt;
+  &lt;li&gt;1의 파일이 있는 디렉토리로 이동한 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose -d up&lt;/code&gt;을 실행한다.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다.&lt;/p&gt;
@@ -129,7 +129,7 @@
 &lt;h2 id=&quot;실제-사용해보자&quot;&gt;실제 사용해보자&lt;/h2&gt;
 
 &lt;h3 id=&quot;어떻게-실행할까&quot;&gt;어떻게 실행할까?&lt;/h3&gt;
-&lt;p&gt;주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8888&lt;/code&gt;을  치면 주피터에 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt;을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다.&lt;/p&gt;
+&lt;p&gt;주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8888&lt;/code&gt;을  치면 주피터에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt;을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/jupyter.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
@@ -157,7 +157,7 @@ eyJoaXN0b3J5IjpbNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwND
 k4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3
 OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLT
 MyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
---&gt;</content><author><name></name></author><summary type="html">아마도 이런 분들</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
+--&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;베이지언 추론에 관해서 수박 겉핥기로 살펴본다.&lt;/li&gt;
@@ -433,43 +433,43 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp;amp; = \pi(\theta^b
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seaborn&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sns&lt;/span&gt; 
 
 &lt;span class=&quot;c1&quot;&gt;# Definition 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Func for metropolis algorithm 
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pmf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Parameters 
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;61&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binom&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;naccept&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;niters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;niters&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;niters&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# Iteraton 
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;niters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;theta_p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;theta_p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;rho&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta_p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lik&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rho&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;naccept&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta_p&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;nmcmc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Efficiency = {naccept/niters}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;Efficiency = &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;naccept&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;niters&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;코드에 관한 설명은 간략하게 하겠다. 코드의 출처는 &lt;a href=&quot;https://people.duke.edu/~ccc14/sta-663/MCMC.html&quot;&gt;여기&lt;/a&gt;를 참고하라. 진행은 다음과 같다. 이 코드는 다음과 같은 베타 분포, $\beta(a, b)$를 사전 확률로 지닌다. 사후 확률은 사전 확률의 pdf와 이항 분포 $B(n, p)$의 pmf를 곱이 사후 확률의 분자가 된다. 식에서 $p = h / n$으로 두면 된다.  이때 사후 분포의 근사치를  어떻게 만들어낼 것인가?&lt;/p&gt;
@@ -490,14 +490,14 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp;amp; = \pi(\theta^b
 
 &lt;p&gt;위 시각화의 코드는 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nmcmc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;histtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'step'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;density&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linewidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Distribution of posterior samples'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nmcmc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;histtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'step'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;density&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linewidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Distribution of prior samples'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linestyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'True posterior'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'best'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nmcmc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;histtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'step'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;density&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linewidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Distribution of posterior samples'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nmcmc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;histtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'step'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;density&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linewidth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Distribution of prior samples'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thetas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'red'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linestyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'--'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'True posterior'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'best'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;그림에서 보듯이 MCMC가 사후 확률을 잘 따라가고 있다. MCMC는 정말로 잘 수렴할까? 즉, 이론대로 어떤 파라미터에서 출발하더라도 비슷한 분포로 수렴할까? 분포의 수렴은 수치적으로는 따지기 쉽지 않은 개념이다. 느낌만 보도록 하자. 아래에서 보면, 초기값이 관계 없이 모든 값에서 사후 분포에 수렴하는 것을 확인할 수 있다. 즉, $x$ 축에 표시된 반복 횟수가 일정 수준을 넘어서면 모든 마르코프 연쇄가 사후 분포 범위 안에서 움직이고 있다.&lt;/p&gt;
@@ -510,11 +510,11 @@ k3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMy
 OTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC
 0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQy
 MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
---&gt;</content><author><name></name></author><summary type="html">For what</summary></entry><entry><title type="html">wsl 2 + docker + rstudio</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" rel="alternate" type="text/html" title="wsl 2 + docker + rstudio" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2%20+%20docker%20+%20rstudio</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html">&lt;p&gt;&lt;img src=&quot;https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
+--&gt;</content><author><name></name></author><category term="statistics" /><category term="bayesian" /><summary type="html">For what</summary></entry><entry><title type="html">wsl 2 + docker + rstudio</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" rel="alternate" type="text/html" title="wsl 2 + docker + rstudio" /><published>2020-04-21T00:00:00-05:00</published><updated>2020-04-21T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2%20+%20docker%20+%20rstudio</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html">&lt;p&gt;&lt;img src=&quot;https://www.codemotion.com/magazine/wp-content/uploads/2020/01/31518965950_460ff828ba_b_2f62655c94d0d2f5d51a75899b6f9280_2000-896x504.jpg&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;rstat&quot;&gt;rstat!&lt;/h2&gt;
 
-&lt;p&gt;R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 &lt;code class=&quot;highlighter-rouge&quot;&gt;ggplot&lt;/code&gt;의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl 2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다.&lt;/p&gt;
+&lt;p&gt;R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot&lt;/code&gt;의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl 2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다.&lt;/p&gt;
 
 &lt;p&gt;장인은 도구를 안가리지만, 나같은 범인에게는 도구가 중요하다. wsl 2에 어떻게 하면 R을 편하게 얹어서 쓰지? 잠시 고민해보았다. 
 물론 wsl 2에 linux용 R을 깔아쓰면 될 일이다. 하지만 뭔가 깔끔하지 않다. 도커를 써볼까?&lt;/p&gt;
@@ -523,7 +523,7 @@ MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 
 &lt;p&gt;문득 예전에 클라우드에 linux + Rstudio server를 쓰던 생각이 났다. 클라우드에 RStudio를 세팅하면 웹브라우저를 통해 RStudio의 기능을 100% 쓸 수 있다.&lt;/p&gt;
 
-&lt;p&gt;같은 방식을 그냥 wsl 2에 적용하면 되지 않을까? 이러한 용처를 예상했는지 R 버전, RStudio, tidyverse, 그리고 퍼브리싱 도구까지 필요에 따라 단계별로 묶어둔 docker image가 있더라. 이름하여 &lt;code class=&quot;highlighter-rouge&quot;&gt;rocker&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;같은 방식을 그냥 wsl 2에 적용하면 되지 않을까? 이러한 용처를 예상했는지 R 버전, RStudio, tidyverse, 그리고 퍼브리싱 도구까지 필요에 따라 단계별로 묶어둔 docker image가 있더라. 이름하여 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rocker&lt;/code&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.rocker-project.org/&quot;&gt;https://www.rocker-project.org/&lt;/a&gt;&lt;/p&gt;
 
@@ -534,16 +534,16 @@ MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 &lt;ul&gt;
   &lt;li&gt;wsl 2를 가동한다.&lt;/li&gt;
   &lt;li&gt;docker edge edition 2.2 이상이 설치되었다고 가정한다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rocker&lt;/code&gt;의 버전은 다음과 같다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rocker&lt;/code&gt;의 버전은 다음과 같다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/rocker-org/rocker-versioned&quot;&gt;https://github.com/rocker-org/rocker-versioned&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r-ver&lt;/code&gt;: R 프로그램과 핵심 유틸&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rstudio&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;r-ver&lt;/code&gt; + RStudio&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;rstudio&lt;/code&gt; + tidyverse&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;verse&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt; + 퍼브리싱 툴&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r-ver&lt;/code&gt;: R 프로그램과 핵심 유틸&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rstudio&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r-ver&lt;/code&gt; + RStudio&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rstudio&lt;/code&gt; + tidyverse&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;verse&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt; + 퍼브리싱 툴&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;적당한 이미지를 끌어다가 올리면 되겠다.&lt;/p&gt;
@@ -558,10 +558,10 @@ MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
   &lt;li&gt;위 스크립트만 간단하게 설명해보자.
     &lt;ul&gt;
       &lt;li&gt;위 스크립트는 로그인을 생략한 버전이다. 공용 PC가 아니라면, 로컬에서 돌리는 데 로그인이 필요하지는 않을 듯 싶다.&lt;/li&gt;
-      &lt;li&gt;위 스크립트는 &lt;code class=&quot;highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt;를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/rstudio&lt;/code&gt;로 매핑된다.&lt;/li&gt;
+      &lt;li&gt;위 스크립트는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tidyverse&lt;/code&gt;를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/rstudio&lt;/code&gt;로 매핑된다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt; 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
+  &lt;li&gt;브라우저에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt; 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
     &lt;ul&gt;
       &lt;li&gt;크롬의 설정 → 도구 더 보기 → 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없다.&lt;/li&gt;
     &lt;/ul&gt;
@@ -600,7 +600,7 @@ MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 eyJoaXN0b3J5IjpbLTE1MjQ1NjI4MDYsLTg3MzQxNTY2LDg0MD
 c4ODEzMywtMTM3NzU1MTQyNCwtMTY1MzAzMzAyOF19
 --&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="coding" /><category term="rstat" /><category term="docker" /><summary type="html"></summary></entry><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;
@@ -713,7 +713,7 @@ table {
 &lt;h2 id=&quot;f1-score&quot;&gt;F1 Score&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 분포한다면(balanced data) accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 분포한다면(balanced data) accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
   &lt;li&gt;그런데, 타겟이 어느 하나로 치우쳐 있다면(imbalanced data)  accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 “신용우량”을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다.&lt;/li&gt;
   &lt;li&gt;F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉.&lt;/li&gt;
 &lt;/ul&gt;
@@ -733,13 +733,13 @@ MTU1NDE1NTUsLTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NT
 k1OTgsLTYxNTc4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQw
 XX0=
 --&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;멀티 클래스의 경우에 관해서는 &lt;a href=&quot;https://nittaku.tistory.com/295&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;멀티 클래스의 경우에 관해서는 &lt;a href=&quot;https://nittaku.tistory.com/295&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Mission</summary></entry><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="machine-learning" /><category term="basics" /><summary type="html">Mission</summary></entry><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;h3 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h3&gt;
 
@@ -751,7 +751,7 @@ XX0=
 
 &lt;h3 id=&quot;rules&quot;&gt;Rules&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;|foo|&lt;/code&gt;은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|foo|&lt;/code&gt;은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
@@ -779,7 +779,7 @@ XX0=
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; tensorflow/tensorflow:latest-py3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;wsl 2&lt;/code&gt; -&lt;code class=&quot;highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; -&lt;code class=&quot;highlighter-rouge&quot;&gt;docker&lt;/code&gt; 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.&lt;/li&gt;
+  &lt;li&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl 2&lt;/code&gt; -&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; -&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt; 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;extensions-for-vsc&quot;&gt;Extensions for vsc&lt;/h2&gt;
@@ -791,7 +791,7 @@ XX0=
     &lt;p&gt;원래는 
 &lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Extensions에서 remote를 검색하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote Development&lt;/code&gt;를 찾을 수 있다. 이 녀석은 &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote WSL&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote SSH&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote Container&lt;/code&gt; 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.&lt;/li&gt;
+  &lt;li&gt;Extensions에서 remote를 검색하면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote Development&lt;/code&gt;를 찾을 수 있다. 이 녀석은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote WSL&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote SSH&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote Container&lt;/code&gt; 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.&lt;/li&gt;
   &lt;li&gt;docker extension은 깔아도 좋고 안 깔아도 좋지만 docker를 쓸 거라면 깔아두도록 하자.&lt;/li&gt;
   &lt;li&gt;Extensions 중에서 remote explorer로 간 후 “container”를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
@@ -821,15 +821,15 @@ XX0=
 &lt;h3 id=&quot;trouble-shooting&quot;&gt;Trouble shooting&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;가끔 접속 단계에서 에러가 발생하는 경우가 있다. &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - Container&lt;/code&gt; 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;가끔 접속 단계에서 에러가 발생하는 경우가 있다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote - Container&lt;/code&gt; 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Win + R&lt;/code&gt; 실행&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt; 입력 후 엔터&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Code&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Code - insider&lt;/code&gt; 폴더를 찾아서 지운다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Win + R&lt;/code&gt; 실행&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt; 입력 후 엔터&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code - insider&lt;/code&gt; 폴더를 찾아서 지운다.&lt;/li&gt;
   &lt;li&gt;vsc, vsc insider를 다시 실행한다.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -844,7 +844,7 @@ XX0=
 &lt;ul&gt;
   &lt;li&gt;docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다.&lt;/li&gt;
   &lt;li&gt;vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!&lt;/li&gt;
-  &lt;li&gt;재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;making-pandas-docker&quot;&gt;Making Pandas Docker&lt;/h2&gt;
@@ -857,7 +857,7 @@ XX0=
       &lt;li&gt;pandas 1.0.3&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
   &lt;li&gt;도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라.&lt;/li&gt;
   &lt;li&gt;윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다.&lt;/li&gt;
   &lt;li&gt;원 
@@ -879,7 +879,7 @@ XX0=
 &lt;p&gt;이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가!&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.&lt;/li&gt;
+  &lt;li&gt;Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;how-to-ommit--ag--ush-image&quot;&gt;How to ommit / ag / ush Image&lt;/h3&gt;
@@ -911,7 +911,7 @@ XX0=
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;다시 이미지를 조회해보면 &lt;code class=&quot;highlighter-rouge&quot;&gt;|id-of-docker-hub/name-of-docker-hub-image|&lt;/code&gt; 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다.&lt;/li&gt;
+  &lt;li&gt;다시 이미지를 조회해보면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|id-of-docker-hub/name-of-docker-hub-image|&lt;/code&gt; 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker push |id-of-docker-hub/name-of-docker-hub-image|
@@ -941,7 +941,7 @@ XX0=
 &lt;h3 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; 이라는 형태를 통해서 구현할 수 있다.&lt;/li&gt;
+  &lt;li&gt;사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; 이라는 형태를 통해서 구현할 수 있다.&lt;/li&gt;
   &lt;li&gt;도커 컨테이너를 생성하는 데 필요한 단계를 넣어두고 빌드에 성공하면 해당 이미지가 생성되는 편리한 방식을 따르고 있다.&lt;/li&gt;
   &lt;li&gt;도커 허브에서는 github와 연결하여 github에 새로운 내용이 커밋되었을 자동으로 도커 허브의 빌드를 구현해주는 자동화 빌드까지 구현되어 있다.&lt;/li&gt;
   &lt;li&gt;도커 빌드에 관해서 보다 상세한 사항은 &lt;a href=&quot;https://www.44bits.io/ko/post/how-docker-image-work&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
@@ -956,23 +956,23 @@ MiwxNzIxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtOD
 M2OTcwNzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMy
 MDJdfQ==
 --&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;출처는 &lt;a href=&quot;https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows&quot;&gt;여기&lt;/a&gt;. 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;출처는 &lt;a href=&quot;https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows&quot;&gt;여기&lt;/a&gt;. 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마… &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마… &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? &lt;a href=&quot;https://pythonspeed.com/articles/alpine-docker-python/&quot;&gt;여기&lt;/a&gt;에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? &lt;a href=&quot;https://pythonspeed.com/articles/alpine-docker-python/&quot;&gt;여기&lt;/a&gt;에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="wsl" /><category term="visual-studio-code" /><category term="docker" /><summary type="html">Assumptions</summary></entry><entry><title type="html">wsl 2, a walk-thru</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html" rel="alternate" type="text/html" title="wsl 2, a walk-thru" /><published>2020-04-09T00:00:00-05:00</published><updated>2020-04-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html">&lt;p&gt;격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.&lt;/p&gt;
 
 &lt;p&gt;WSL(Windows Subsystem for Linux)의 두 번째 버전(이하 wsl 2)은 좋다. 그냥 좋다. wsl 2을 통해 모든 리눅스의 장점을 네이티브로 누릴 수 있다. wsl 2는 이 글을 작성하는 현재 시점까지 별도로 신청해야 하는 윈도 프리뷰를 통해서 사용할 수 있다. 상반기에 예정된 &lt;a href=&quot;https://www.neowin.net/news/windows-10-version-2004-is-coming---heres-what-you-need-to-know-about-it/&quot;&gt;2004 업데이트&lt;/a&gt;에 정식으로 포함될 예정이다.&lt;/p&gt;
 
-&lt;p&gt;이 포스트는 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리하기 위한 용도다. 역시나 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 ‘나놈’을 위한 것임을 밝혀둔다.&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;이 포스트는 그간 짬짬이 써오면서 알아왔던 내용을 한방에 정리하기 위한 용도다. 역시나 친절한 가이드, 이런 것과는 거리가 멀고 몇 달 후의 ‘나놈’을 위한 것임을 밝혀둔다.&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;ubuntu-1804-설치&quot;&gt;Ubuntu 18.04 설치&lt;/h2&gt;
 
@@ -1066,7 +1066,7 @@ wsl &lt;span class=&quot;nt&quot;&gt;--set-default&lt;/span&gt; &amp;lt;distro n
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;kubectl describe service hello-minikube
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;여기서 &lt;code class=&quot;highlighter-rouge&quot;&gt;NodePort&lt;/code&gt;를 확인해서 웹 브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:XXXXX&lt;/code&gt;라고 쳐주면 아래와 같이 떠야 한다.&lt;/p&gt;
+&lt;p&gt;여기서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NodePort&lt;/code&gt;를 확인해서 웹 브라우저에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:XXXXX&lt;/code&gt;라고 쳐주면 아래와 같이 떠야 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://sa0blogs.blob.core.windows.net/aliencube/2018/06/running-kubernetes-on-wsl-09.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
@@ -1092,7 +1092,7 @@ wsl &lt;span class=&quot;nt&quot;&gt;--set-default&lt;/span&gt; &amp;lt;distro n
 
 &lt;ul&gt;
   &lt;li&gt;git도 모양 빠지게 윈도우 용을 별도로 깔 필요가 없다! 만세! wsl 2 ubuntu에 탑재된 녀석을 쓰면 된다.&lt;/li&gt;
-  &lt;li&gt;윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt/c&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/mnt/d&lt;/code&gt;와 같은 식으로 이미 Ubuntu root 디렉토리에 마운트가 되어 있다. wsl 내에서도 원도용 폴더로도 쉽게 접근할 수 있다.&lt;/li&gt;
+  &lt;li&gt;윈도 폴더에는 어떻게 접근하면 될까? 친절하게도 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt/c&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt/d&lt;/code&gt;와 같은 식으로 이미 Ubuntu root 디렉토리에 마운트가 되어 있다. wsl 내에서도 원도용 폴더로도 쉽게 접근할 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;github-login&quot;&gt;github login&lt;/h3&gt;
@@ -1112,17 +1112,17 @@ ODcsLTEwMTcxNjk1MjIsLTE4NzQ2NDk1NDAsNTg1NTkxOTMwLC
 0yMDU3ODI5NzgyLDEzNTYzNTg1ODgsLTE2Njc2Nzk1MCwyMDcy
 NzQ5MDE3XX0=
 --&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:4&quot;&gt;
-      &lt;p&gt;상세한 다른 가이드로는 &lt;a href=&quot;https://pbpython.com/wsl-python.html&quot;&gt;여기&lt;/a&gt;를 참고하자. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:4&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;상세한 다른 가이드로는 &lt;a href=&quot;https://pbpython.com/wsl-python.html&quot;&gt;여기&lt;/a&gt;를 참고하자. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.</summary></entry><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="wsl" /><summary type="html">격세지감이다. 적으로 삼고 아웅다웅하던 윈도가 리눅스를 두 팔로 품었다. (마치 macos에서 처럼) 윈도에서 터미널을 켜고 리눅스를 네이티브로 쓸 수 있을 것이라고 누가 생각했을까. 그런데 그런 날이 왔네. MS, 대단하다.</summary></entry><entry><title type="html">Setting python venv in Ubuntu 18.04</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html" rel="alternate" type="text/html" title="Setting python venv in Ubuntu 18.04" /><published>2020-04-04T00:00:00-05:00</published><updated>2020-04-04T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pyvenv&lt;/code&gt;는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;| |&lt;/code&gt;은 각자의 환경을 나타낸다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pyvenv&lt;/code&gt;는 파이썬 가상 환경을 모아둔 임의의 디렉토리를 의미한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;use-venv&quot;&gt;Use venv&lt;/h2&gt;
@@ -1135,7 +1135,7 @@ NzQ5MDE3XX0=
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;디렉토리 만들 때 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다.&lt;/li&gt;
+  &lt;li&gt;디렉토리 만들 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 명령어를 쓰지 말라. 그러면 디렉토리의 권한이 root에 귀속된다.&lt;/li&gt;
   &lt;li&gt;해당 디렉토리로 이동한다.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1153,13 +1153,13 @@ NzQ5MDE3XX0=
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;위 그림을 보자. 만일 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 그러니까 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 자제하자.  왜?&lt;/p&gt;
+    &lt;p&gt;위 그림을 보자. 만일 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 가상 환경을 만들었다면 해당 폴더는 현재 로그인한 사용자에게 귀속된다. 그런데 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 만들었다면 이는 root에 귀속된다. 이에 따라서 생성된 가상 환경의 사용 조건 및 운용이 달라지게 된다. 그러니까 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 자제하자.  왜?&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리를 root가 소유하고 있으면  문제가 발생할 수 있다. 소유자가 아닌 VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 디렉토리의 소유권을 root가 아니라 로그인한 이용자에게 두도록 하자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+    &lt;p&gt;VS Code같은 외부 앱과 연동해서 사용할 때 해당 디렉토리를 root가 소유하고 있으면  문제가 발생할 수 있다. 소유자가 아닌 VS Code가 자신이 필요한 python 패키지들을 설치할 수 없게 된다. 특별한 이유가 없다면, 아래와 같이 디렉토리의 소유권을 root가 아니라 로그인한 이용자에게 두도록 하자.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;혹시 &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -la&lt;/code&gt;로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자.&lt;/p&gt;
+    &lt;p&gt;혹시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt;로 조회했을 때 위 그림처럼 root가 소유자라면 다음과 같이 이를 돌리도록 하자.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1178,7 +1178,7 @@ NzQ5MDE3XX0=
     &lt;p&gt;이제부터는 표준을 따르면 된다.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;먼저 필요한  venv 환경를 활성화한다. venv 환경 내 &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt; 디렉토리의 activate를 활성화한다.&lt;/p&gt;
+    &lt;p&gt;먼저 필요한  venv 환경를 활성화한다. venv 환경 내 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bin&lt;/code&gt; 디렉토리의 activate를 활성화한다.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1199,14 +1199,14 @@ NzQ5MDE3XX0=
 &lt;h3 id=&quot;with-sudo&quot;&gt;With sudo&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 가상 환경을 깔았다면 환경의 권한이 root에 귀결된다. 이 녀석을 다시 user 돌려놓도록 하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo chown&lt;/span&gt; |user|:|user| &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; |your-venv|
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;이제 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 깔았을 때처럼 사용하자.&lt;/li&gt;
+  &lt;li&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; 없이 깔았을 때처럼 사용하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;sudo-if-you-insist&quot;&gt;sudo if you insist&lt;/h2&gt;
@@ -1222,7 +1222,7 @@ NzQ5MDE3XX0=
   &lt;li&gt;sudo로  절대 pip 업그레이드하지 말 것!
     &lt;ul&gt;
       &lt;li&gt;기본적으로 가상환경 내의 pip를 활용해서 업그레이드하는 것이다.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip --version&lt;/code&gt;으로제대로 깔렸는지 확인해보자.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip --version&lt;/code&gt;으로제대로 깔렸는지 확인해보자.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -1233,13 +1233,13 @@ UzNDM2MDQsMTQwMjIzMTQyLDEwMjA4ODM3NTAsMTA2OTM1OTY2
 OSwxMTU3MjcwMjM0LDU3ODc4OTgwOSwtODU0MTg0MzA1LC01OD
 c0OTY4NzcsMjA2NTE0NjkwN119
 --&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;권한 관리에 관해서는 &lt;a href=&quot;https://eunguru.tistory.com/93&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;권한 관리에 관해서는 &lt;a href=&quot;https://eunguru.tistory.com/93&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Assumptions</summary></entry><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="coding-tool" /><category term="python" /><category term="venv" /><summary type="html">Assumptions</summary></entry><entry><title type="html">Following Gilbert Strang 6</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html" rel="alternate" type="text/html" title="Following Gilbert Strang 6" /><published>2020-03-31T00:00:00-05:00</published><updated>2020-03-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/31/four_spaces.html">&lt;h2 id=&quot;oringinally&quot;&gt;Oringinally&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=nHlE7EgJFds&quot;&gt;https://www.youtube.com/watch?v=nHlE7EgJFds&lt;/a&gt;
 &lt;a href=&quot;https://www.youtube.com/watch?v=2IdtqGM6KWU&quot;&gt;https://www.youtube.com/watch?v=2IdtqGM6KWU&lt;/a&gt;&lt;/p&gt;
@@ -1445,7 +1445,7 @@ x \\
 
 &lt;!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQ4Njc4ODMwM119
---&gt;</content><author><name></name></author><summary type="html">Oringinally</summary></entry><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
+--&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><category term="gilbert-strang" /><summary type="html">Oringinally</summary></entry><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
@@ -1455,7 +1455,7 @@ eyJoaXN0b3J5IjpbLTQ4Njc4ODMwM119
 &lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;| |&lt;/code&gt;  안의 내용은 각자 맞게 설정하시라.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;| |&lt;/code&gt;  안의 내용은 각자 맞게 설정하시라.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;preparing-aws&quot;&gt;Preparing AWS&lt;/h2&gt;
@@ -1537,7 +1537,7 @@ eyJoaXN0b3J5IjpbLTQ4Njc4ODMwM119
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python3.7 --version&lt;/code&gt;으로 버전을 확인해보자.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python3.7 --version&lt;/code&gt;으로 버전을 확인해보자.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;아래와 같이 깔려 있는 파이썬이 있는지 확인해보자.&lt;/p&gt;
@@ -1559,7 +1559,7 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
   &lt;li&gt;만일 깔려 있는 버전이 있다면 아래의 예처럼 각각 버전에 번호를 부여하고 이를 전환해서 쓰면 된다. 자세한 것은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;installing-venv&quot;&gt;Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;venv&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;installing-venv&quot;&gt;Installing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;venv&lt;/code&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1571,7 +1571,7 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안에서 다음 작업을 수행하자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안에서 다음 작업을 수행하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
@@ -1581,8 +1581,8 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;참고로 가상환경이든 그 안의 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;든 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 깔지 말자.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
+  &lt;li&gt;참고로 가상환경이든 그 안의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;든 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 깔지 말자.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installing-streamlit&quot;&gt;Installing streamlit&lt;/h2&gt;
@@ -1590,14 +1590,14 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;h3 id=&quot;streamlit--venv&quot;&gt;streamlit + venv&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pyenv&lt;/code&gt;이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pyenv&lt;/code&gt;이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.pyvenv/|name-of-venv|/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;해당 디렉토리에 진입해 &lt;code class=&quot;highlighter-rouge&quot;&gt;source activate&lt;/code&gt;를 실행해도 된다. 가상 환경 해제는 그냥 &lt;code class=&quot;highlighter-rouge&quot;&gt;deactivate&lt;/code&gt; 명령을 쓰면 된다.&lt;/p&gt;
+    &lt;p&gt;해당 디렉토리에 진입해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source activate&lt;/code&gt;를 실행해도 된다. 가상 환경 해제는 그냥 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deactivate&lt;/code&gt; 명령을 쓰면 된다.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;이 상태에서 streamlit를 깔고 서비스를 띄우도록 하자.&lt;/p&gt;
@@ -1616,13 +1616,13 @@ update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업데이트했던 것과 동일한 방식으로 처리한다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업데이트했던 것과 동일한 방식으로 처리한다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;go-tmux-not-to-kill-service&quot;&gt;Go tmux not to kill service!&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;세션에 접속이 끊어지면 스트림라이트 서비스도 같이 끊어진다. 이를 막고 싶다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;tmux&lt;/code&gt;를 쓰도록 하자.&lt;/li&gt;
+  &lt;li&gt;세션에 접속이 끊어지면 스트림라이트 서비스도 같이 끊어진다. 이를 막고 싶다면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;를 쓰도록 하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; |name-of-stream-session|
@@ -1672,13 +1672,13 @@ NDEsLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLT
 EzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQw
 Njc5ODk1XX0=
 --&gt;
-&lt;div class=&quot;footnotes&quot;&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">tl;dr</summary></entry><entry><title type="html">Following Gilbert Strang 5</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax.html" rel="alternate" type="text/html" title="Following Gilbert Strang 5" /><published>2020-03-23T00:00:00-05:00</published><updated>2020-03-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax.html">&lt;h2 id=&quot;sources&quot;&gt;Sources&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="coding-tool" /><category term="python" /><category term="AWS" /><summary type="html">tl;dr</summary></entry><entry><title type="html">Following Gilbert Strang 5</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax.html" rel="alternate" type="text/html" title="Following Gilbert Strang 5" /><published>2020-03-23T00:00:00-05:00</published><updated>2020-03-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/gilbert-strang/2020/03/23/GS_Ax.html">&lt;h2 id=&quot;sources&quot;&gt;Sources&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/VqP2tREMvt0&quot;&gt;Solving Ax = 0: Pivot Variables, Special Solutions&lt;/a&gt;&lt;/p&gt;
 
@@ -1984,4 +1984,4 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 eyJoaXN0b3J5IjpbMjA4MzkxNzcwNiwtMjk3MjI1MzIsMjA4Mz
 k4MDc0NF19
 --&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Sources</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><category term="gilbert-strang" /><summary type="html">Sources</summary></entry></feed>

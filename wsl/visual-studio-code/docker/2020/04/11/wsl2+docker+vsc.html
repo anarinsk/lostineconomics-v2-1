@@ -2,9 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>wsl 2 + docker + vsc | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="wsl 2 + docker + vsc" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게" />
@@ -15,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-11T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게","headline":"wsl 2 + docker + vsc","dateModified":"2020-04-11T00:00:00-05:00","datePublished":"2020-04-11T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html","@context":"https://schema.org"}</script>
+{"headline":"wsl 2 + docker + vsc","dateModified":"2020-04-11T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html","datePublished":"2020-04-11T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html"},"description":"커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -23,34 +24,12 @@
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>wsl 2 + docker + vsc | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="wsl 2 + docker + vsc" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게" />
-<meta property="og:description" content="커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" />
-<meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-11T00:00:00-05:00" />
-<script type="application/ld+json">
-{"description":"커널은 리눅스에 맡기시고, 코딩은 윈도에서 편안하게","headline":"wsl 2 + docker + vsc","dateModified":"2020-04-11T00:00:00-05:00","datePublished":"2020-04-11T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -69,7 +48,7 @@ function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -93,27 +72,8 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-<!--
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
-
--->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159914345-1');
-  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
-</script>
-</head><body><header class="site-header">
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -125,7 +85,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -173,7 +133,7 @@ window.onload = wrap_img;
 
 <h3 id="rules">Rules</h3>
 <ul>
-  <li><code class="highlighter-rouge">|foo|</code>은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다.</li>
+  <li><code class="language-plaintext highlighter-rouge">|foo|</code>은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다.</li>
 </ul>
 
 <h2 id="mission">Mission</h2>
@@ -201,7 +161,7 @@ window.onload = wrap_img;
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker run <span class="nt">-it</span> <span class="nt">--rm</span> tensorflow/tensorflow:latest-py3
 </code></pre></div></div>
 <ul>
-  <li>이제 <code class="highlighter-rouge">wsl 2</code> -<code class="highlighter-rouge">Ubuntu</code> -<code class="highlighter-rouge">docker</code> 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.</li>
+  <li>이제 <code class="language-plaintext highlighter-rouge">wsl 2</code> -<code class="language-plaintext highlighter-rouge">Ubuntu</code> -<code class="language-plaintext highlighter-rouge">docker</code> 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.</li>
 </ul>
 
 <h2 id="extensions-for-vsc">Extensions for vsc</h2>
@@ -213,7 +173,7 @@ window.onload = wrap_img;
     <p>원래는 
 <img src="/lostineconomics-v2-1/images/wsldockervsc/fig_1.png" alt="" style="textalign:center; " width="800" /></p>
   </li>
-  <li>Extensions에서 remote를 검색하면 <code class="highlighter-rouge">Remote Development</code>를 찾을 수 있다. 이 녀석은 <code class="highlighter-rouge">Remote WSL</code>, <code class="highlighter-rouge">Remote SSH</code>, <code class="highlighter-rouge">Remote Container</code> 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.</li>
+  <li>Extensions에서 remote를 검색하면 <code class="language-plaintext highlighter-rouge">Remote Development</code>를 찾을 수 있다. 이 녀석은 <code class="language-plaintext highlighter-rouge">Remote WSL</code>, <code class="language-plaintext highlighter-rouge">Remote SSH</code>, <code class="language-plaintext highlighter-rouge">Remote Container</code> 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.</li>
   <li>docker extension은 깔아도 좋고 안 깔아도 좋지만 docker를 쓸 거라면 깔아두도록 하자.</li>
   <li>Extensions 중에서 remote explorer로 간 후 “container”를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.</li>
 </ul>
@@ -243,15 +203,15 @@ window.onload = wrap_img;
 <h3 id="trouble-shooting">Trouble shooting</h3>
 
 <ul>
-  <li>가끔 접속 단계에서 에러가 발생하는 경우가 있다. <code class="highlighter-rouge">Remote - Container</code> 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.<sup id="fnref:3"><a href="#fn:3" class="footnote">1</a></sup></li>
+  <li>가끔 접속 단계에서 에러가 발생하는 경우가 있다. <code class="language-plaintext highlighter-rouge">Remote - Container</code> 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">1</a></sup></li>
 </ul>
 
 <hr />
 
 <ol>
-  <li><code class="highlighter-rouge">Win + R</code> 실행</li>
-  <li><code class="highlighter-rouge">%appdata%</code> 입력 후 엔터</li>
-  <li><code class="highlighter-rouge">Code</code>, <code class="highlighter-rouge">Code - insider</code> 폴더를 찾아서 지운다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Win + R</code> 실행</li>
+  <li><code class="language-plaintext highlighter-rouge">%appdata%</code> 입력 후 엔터</li>
+  <li><code class="language-plaintext highlighter-rouge">Code</code>, <code class="language-plaintext highlighter-rouge">Code - insider</code> 폴더를 찾아서 지운다.</li>
   <li>vsc, vsc insider를 다시 실행한다.</li>
 </ol>
 
@@ -266,7 +226,7 @@ window.onload = wrap_img;
 <ul>
   <li>docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다.</li>
   <li>vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!</li>
-  <li>재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup></li>
+  <li>재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">2</a></sup></li>
 </ul>
 
 <h2 id="making-pandas-docker">Making Pandas Docker</h2>
@@ -279,7 +239,7 @@ window.onload = wrap_img;
       <li>pandas 1.0.3</li>
     </ul>
   </li>
-  <li>먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.<sup id="fnref:2"><a href="#fn:2" class="footnote">3</a></sup></li>
+  <li>먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">3</a></sup></li>
   <li>도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라.</li>
   <li>윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다.</li>
   <li>원 
@@ -301,7 +261,7 @@ window.onload = wrap_img;
 <p>이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가!</p>
 
 <ul>
-  <li>Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 <code class="highlighter-rouge">sudo</code>는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.</li>
+  <li>Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 <code class="language-plaintext highlighter-rouge">sudo</code>는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.</li>
 </ul>
 
 <h3 id="how-to-ommit--ag--ush-image">How to ommit / ag / ush Image</h3>
@@ -333,7 +293,7 @@ window.onload = wrap_img;
 </code></pre></div></div>
 
 <ul>
-  <li>다시 이미지를 조회해보면 <code class="highlighter-rouge">|id-of-docker-hub/name-of-docker-hub-image|</code> 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다.</li>
+  <li>다시 이미지를 조회해보면 <code class="language-plaintext highlighter-rouge">|id-of-docker-hub/name-of-docker-hub-image|</code> 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>docker push |id-of-docker-hub/name-of-docker-hub-image|
@@ -363,7 +323,7 @@ window.onload = wrap_img;
 <h3 id="dockerfile">Dockerfile</h3>
 
 <ul>
-  <li>사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 <code class="highlighter-rouge">Dockerfile</code> 이라는 형태를 통해서 구현할 수 있다.</li>
+  <li>사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 <code class="language-plaintext highlighter-rouge">Dockerfile</code> 이라는 형태를 통해서 구현할 수 있다.</li>
   <li>도커 컨테이너를 생성하는 데 필요한 단계를 넣어두고 빌드에 성공하면 해당 이미지가 생성되는 편리한 방식을 따르고 있다.</li>
   <li>도커 허브에서는 github와 연결하여 github에 새로운 내용이 커밋되었을 자동으로 도커 허브의 빌드를 구현해주는 자동화 빌드까지 구현되어 있다.</li>
   <li>도커 빌드에 관해서 보다 상세한 사항은 <a href="https://www.44bits.io/ko/post/how-docker-image-work">여기</a>를 참고하자.</li>
@@ -378,16 +338,16 @@ MiwxNzIxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtOD
 M2OTcwNzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMy
 MDJdfQ==
 -->
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:3">
-      <p>출처는 <a href="https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows">여기</a>. 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:3" role="doc-endnote">
+      <p>출처는 <a href="https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows">여기</a>. 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:1">
-      <p>사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마… <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마… <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? <a href="https://pythonspeed.com/articles/alpine-docker-python/">여기</a>에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? <a href="https://pythonspeed.com/articles/alpine-docker-python/">여기</a>에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

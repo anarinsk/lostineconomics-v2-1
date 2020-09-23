@@ -2,9 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Understanding Regression | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Understanding Regression" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
@@ -15,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-25T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"회귀분석, 기하학적으로 한 방에 깨우치기","headline":"Understanding Regression","dateModified":"2019-10-25T00:00:00-05:00","datePublished":"2019-10-25T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html","@context":"https://schema.org"}</script>
+{"headline":"Understanding Regression","dateModified":"2019-10-25T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html","datePublished":"2019-10-25T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html"},"description":"회귀분석, 기하학적으로 한 방에 깨우치기","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -23,34 +24,12 @@
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Understanding Regression | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Understanding Regression" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
-<meta property="og:description" content="회귀분석, 기하학적으로 한 방에 깨우치기" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html" />
-<meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-25T00:00:00-05:00" />
-<script type="application/ld+json">
-{"description":"회귀분석, 기하학적으로 한 방에 깨우치기","headline":"Understanding Regression","dateModified":"2019-10-25T00:00:00-05:00","datePublished":"2019-10-25T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/2019/10/25/understanding-regression.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -69,7 +48,7 @@ function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -93,27 +72,8 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-<!--
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
-
--->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159914345-1');
-  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
-</script>
-</head><body><header class="site-header">
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -125,7 +85,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -207,7 +167,7 @@ window.onload = wrap_img;
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi><munder><mo><mphantom><mi mathvariant="bold-italic">γ</mi></mphantom><mi mathvariant="bold">Y</mi><mphantom><mi mathvariant="bold-italic">γ</mi></mphantom></mo><mrow><mi>n</mi><mo>×</mo><mn>1</mn></mrow></munder></mi><mo>=</mo><mi><munder><mo><mphantom><mi mathvariant="bold-italic">γ</mi></mphantom><mi mathvariant="bold">X</mi><mphantom><mi mathvariant="bold-italic">γ</mi></mphantom></mo><mrow><mi>n</mi><mo>×</mo><mi>k</mi></mrow></munder></mi><mi><munder><mo><mi mathvariant="bold-italic">β</mi></mo><mrow><mi>k</mi><mo>×</mo><mn>1</mn></mrow></munder></mi><mo>+</mo><mi><munder><mo><mphantom><mi mathvariant="bold-italic">β</mi></mphantom><mi mathvariant="bold-italic">ε</mi><mphantom><mi mathvariant="bold-italic">γ</mi></mphantom></mo><mrow><mi>n</mi><mo>×</mo><mn>1</mn></mrow></munder></mi></mrow><annotation encoding="application/x-tex">\underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\boldsymbol \gamma}} = \underset{n \times k}{\phantom{\boldsymbol \gamma} \mathbf{X} \phantom{\boldsymbol \gamma} }\underset{k \times 1}{\boldsymbol \beta} + \underset{n \times 1}{\phantom{\boldsymbol \beta} \boldsymbol \varepsilon \phantom{\boldsymbol \gamma} }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.655989em;vertical-align:-0.9698789999999999em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68611em;"><span style="top:-2.188452em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">×</span><span class="mord mtight">1</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.06389em;color:transparent;">γ</span></span><span class="mord"><span class="mord mathbf" style="margin-right:0.02875em;">Y</span></span><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.06389em;color:transparent;">γ</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9698789999999999em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.6993189999999998em;vertical-align:-1.0048789999999999em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68611em;"><span style="top:-2.153452em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">×</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.06389em;color:transparent;">γ</span></span><span class="mord"><span class="mord mathbf">X</span></span><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.06389em;color:transparent;">γ</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.0048789999999999em;"><span></span></span></span></span></span></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-2.153452em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">×</span><span class="mord mtight">1</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03403em;">β</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.0048789999999999em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.6643189999999999em;vertical-align:-0.9698789999999999em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-2.188452em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">×</span><span class="mord mtight">1</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.03403em;color:transparent;">β</span></span><span class="mord"><span class="mord boldsymbol">ε</span></span><span class="mord" style="color:transparent;"><span class="mord boldsymbol" style="margin-right:0.06389em;color:transparent;">γ</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9698789999999999em;"><span></span></span></span></span></span></span></span></span></span></span>
 
-<p>식에 관한 자세한 설명 역시 생략한다. 대충 $n$ 개의 관찰 수과 $k$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+<p>식에 관한 자세한 설명 역시 생략한다. 대충 $n$ 개의 관찰 수과 $k$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <p align="center"><kbd>
   <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/simpe_reg.png?raw=true" width="500">
@@ -225,7 +185,7 @@ window.onload = wrap_img;
 
 <p>col $\mathbf X$의 최대 차원, 즉 $\mathbf X$의 랭크(위수)는 무엇일까? 회귀분석에서는 대체로 $n &gt; k$가 일반적이고 이런 상황에서 $\mathbf X$의 랭크는 $k$를 넘을 수 없다. 다시 말하면, $\mathbf X$가 생성하는(span)하는 컬럼 스페이스의 차원의 크기가 $k$를 넘을 수 없다. 그리고 잘 된 회귀분석이라면 ${\rm rank}(\mathbf X) = k$를 만족한다.</p>
 
-<p>맨 앞에 제시했던 그림을 다시 보자. 아래 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 몹시 특별한 경우가 아니라면 $\mathbf Y \in {\mathbb R}^{n}$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 그렇다면 회귀분석의 필요도 애초에 없었을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다.<sup id="fnref:se"><a href="#fn:se" class="footnote">2</a></sup></p>
+<p>맨 앞에 제시했던 그림을 다시 보자. 아래 색칠된 평면이 $\mathbf X$가 생성하는 컬럼 스페이스, 즉 col $\mathbf X$를 표현하고 있다. 몹시 특별한 경우가 아니라면 $\mathbf Y \in {\mathbb R}^{n}$ 벡터가 col $\mathbf X$에 속할 가능성은 없다. 그렇다면 회귀분석의 필요도 애초에 없었을 것이다. col $\mathbf X$를 통해서 $\mathbf Y$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $n$ 차원 벡터를 $k$ 차원 공간에 끼워 넣기 힘든 상황이다.<sup id="fnref:se" role="doc-noteref"><a href="#fn:se" class="footnote">2</a></sup></p>
 
 <p>회귀분석의 목표는 regressor를 통해서, 더 정확하게는 regressor의 집합이 생성하는 공간을 통해서 regressand를 ‘가장’ 잘 설명하는 것이다. 회귀분석이란 regressand와 ‘닮은’ 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 이런 지점을 찾는 연산자(operator)가 회귀분석 계수 $\hat{\boldsymbol \beta}$이다. 즉,</p>
 
@@ -258,7 +218,7 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다.</p>
 
-<p>$\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(&lt;n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.<sup id="fnref:yhat"><a href="#fn:yhat" class="footnote">3</a></sup></p>
+<p>$\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(&lt;n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.<sup id="fnref:yhat" role="doc-noteref"><a href="#fn:yhat" class="footnote">3</a></sup></p>
 
 <p>어쨌든 이 코사인 값의 의미는 무엇일까?</p>
 
@@ -280,12 +240,12 @@ x_1 \beta_1 + \dotsc + x_k \beta_k
 
 <p>${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 분석의 목표가 회귀분석을 통한 예측이라면, 즉 원래 관찰값과 예측된 값이 얼마나 떨어져 있는지 여부가 중요하다면 $\textrm R^2$는 의미를 지닐 수 있다. 반면, 분석의 목표가 회귀분석을 통한 이러한 종류의 예측이 아니라 특정한 regressor의 인과관계에 관한 추정이라면, $\textrm R^2$는 거의 무시해도 좋다.</p>
 
-<p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2"><a href="#fn:2" class="footnote">4</a></sup></p>
+<p>아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $\textrm R^2$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $\mathbf X$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $\textrm R^2$는 정의되지 않는다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">4</a></sup></p>
 
 <h2 id="bonus-regression-vs-pca덤-회귀-분석과-pca는-서로-얼마나-다를까">
 <a class="anchor" href="#bonus-regression-vs-pca%EB%8D%A4-%ED%9A%8C%EA%B7%80-%EB%B6%84%EC%84%9D%EA%B3%BC-pca%EB%8A%94-%EC%84%9C%EB%A1%9C-%EC%96%BC%EB%A7%88%EB%82%98-%EB%8B%A4%EB%A5%BC%EA%B9%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bonus: Regression vs PCA덤: 회귀 분석과 PCA는 서로 얼마나 다를까?</h2>
 
-<p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3"><a href="#fn:3" class="footnote">5</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
+<p>회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">5</a></sup> 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 <a href="https://anarinsk.github.io/lie-math_pca/">포스팅</a>을 읽고 오시면 이해에 도움이 될 것이다.</p>
 
 <h3 id="공통점">
 <a class="anchor" href="#%EA%B3%B5%ED%86%B5%EC%A0%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>공통점</h3>
@@ -317,22 +277,22 @@ eyJoaXN0b3J5IjpbLTE5Mjc0MzMwODMsLTE1OTU2NjY0NDcsMz
 g0NDE2NTE1LDE4OTI5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2
 MzE2XX0=
 --></p>
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>흔히 $\mathbf Y$를 종속변수, $\mathbf X$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:se">
-      <p>이를 선형 대수에서 배운 연립방정식을 푸는 문제로 이해해도 좋겠다. $A x = b(b \neq \boldsymbol{0})$라고 하자. $n$ 개의 미지수가 유일한 해를 지니고 위해서는 ${\rm rank}(A) = n$이어야 한다. 즉 서로 독립인 식이 $n$ 개 주어져야 고유의 해 $x$를 찾을 수 있다. 그런데 회귀분석은 식이 $k(&lt;n)$ 개만 주어진 상황이다. <a href="#fnref:se" class="reversefootnote">↩</a></p>
+    <li id="fn:se" role="doc-endnote">
+      <p>이를 선형 대수에서 배운 연립방정식을 푸는 문제로 이해해도 좋겠다. $A x = b(b \neq \boldsymbol{0})$라고 하자. $n$ 개의 미지수가 유일한 해를 지니고 위해서는 ${\rm rank}(A) = n$이어야 한다. 즉 서로 독립인 식이 $n$ 개 주어져야 고유의 해 $x$를 찾을 수 있다. 그런데 회귀분석은 식이 $k(&lt;n)$ 개만 주어진 상황이다. <a href="#fnref:se" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:yhat">
-      <p>왜 그런지 잠시 따져보자. 앞서 보았듯이 regressor의 평면은 $\alpha_1 x_1 + \dotsb + \alpha_k x_k$ 와 같은 형태의 선형 결합을 통해 달성된다. 즉, $\alpha_i$를 어떻게 잡는지에 따라서 $k$ 차원까지 이 식을 통해서 생성할 수 있다. 그런데 $\overline{\mathbf Y}$는 1차원 즉, 모든 원소가 $\overline{y}$, 즉 $y$의 평균이다. 따라서 이를 만족하는 $\alpha_i$(for $i = 1, \dotsc, k$)를 ${\rm col}~{\mathbf X}$에서 반드시 찾을 수 있다. <a href="#fnref:yhat" class="reversefootnote">↩</a></p>
+    <li id="fn:yhat" role="doc-endnote">
+      <p>왜 그런지 잠시 따져보자. 앞서 보았듯이 regressor의 평면은 $\alpha_1 x_1 + \dotsb + \alpha_k x_k$ 와 같은 형태의 선형 결합을 통해 달성된다. 즉, $\alpha_i$를 어떻게 잡는지에 따라서 $k$ 차원까지 이 식을 통해서 생성할 수 있다. 그런데 $\overline{\mathbf Y}$는 1차원 즉, 모든 원소가 $\overline{y}$, 즉 $y$의 평균이다. 따라서 이를 만족하는 $\alpha_i$(for $i = 1, \dotsc, k$)를 ${\rm col}~{\mathbf X}$에서 반드시 찾을 수 있다. <a href="#fnref:yhat" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:2">
-      <p>궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. <a href="https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. <a href="https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression">여기</a>를 참고하라. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:3">
-      <p>더 자세한 내용은 <a href="https://anarinsk.github.io/lie-qa_reg_pca/">여기</a>를 참고하자. <a href="#fnref:3" class="reversefootnote">↩</a></p>
+    <li id="fn:3" role="doc-endnote">
+      <p>더 자세한 내용은 <a href="https://anarinsk.github.io/lie-qa_reg_pca/">여기</a>를 참고하자. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
   </ol>
 </div>

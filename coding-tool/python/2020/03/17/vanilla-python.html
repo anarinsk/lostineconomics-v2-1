@@ -2,9 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Vanilla python with venv | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Vanilla python with venv" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="파이썬을 순정으로 써볼까?" />
@@ -15,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-17T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"파이썬을 순정으로 써볼까?","headline":"Vanilla python with venv","dateModified":"2020-03-17T00:00:00-05:00","datePublished":"2020-03-17T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html","@context":"https://schema.org"}</script>
+{"headline":"Vanilla python with venv","dateModified":"2020-03-17T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html","datePublished":"2020-03-17T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html"},"description":"파이썬을 순정으로 써볼까?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -23,34 +24,12 @@
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Vanilla python with venv | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Vanilla python with venv" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="파이썬을 순정으로 써볼까?" />
-<meta property="og:description" content="파이썬을 순정으로 써볼까?" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html" />
-<meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-17T00:00:00-05:00" />
-<script type="application/ld+json">
-{"description":"파이썬을 순정으로 써볼까?","headline":"Vanilla python with venv","dateModified":"2020-03-17T00:00:00-05:00","datePublished":"2020-03-17T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/2020/03/17/vanilla-python.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -69,7 +48,7 @@ function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -93,27 +72,8 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-<!--
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
-
--->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159914345-1');
-  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
-</script>
-</head><body><header class="site-header">
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -125,7 +85,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -160,14 +120,14 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <h2 id="why">Why</h2>
 
-<p>아나콘다 사가 개발한 conda는 무척 훌륭한 도구다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+<p>아나콘다 사가 개발한 conda는 무척 훌륭한 도구다. 하지만 바닐라, 이른바 순정에 로망이 있지 않을까? 단지 로망만은 아니다. 때로는 여러가지 미묘한 의존성 때문에 순정을 이용해야 할 때가 있다. 이번 포스트에서는 python을 수정으로 설치한 후 가상 환경을 이용하는 방법을 간단하게 소개하겠다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <h3 id="assumption">Assumption</h3>
 
 <ul>
   <li>당신은 윈도 이용자다.</li>
-  <li><code class="highlighter-rouge">|this-is-desc|</code>와 같이 표현된 것에서 “this-is-desc”는 각자의 컴퓨팅 환경을 뜻한다. 적당하게 이해하시라.</li>
-  <li>git bash와 같이 bash 환경을 쓸 경우 슬래시(<code class="highlighter-rouge">/</code>)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(<code class="highlighter-rouge">\</code>)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다.</li>
+  <li><code class="language-plaintext highlighter-rouge">|this-is-desc|</code>와 같이 표현된 것에서 “this-is-desc”는 각자의 컴퓨팅 환경을 뜻한다. 적당하게 이해하시라.</li>
+  <li>git bash와 같이 bash 환경을 쓸 경우 슬래시(<code class="language-plaintext highlighter-rouge">/</code>)를, 그냥 윈도 커맨드를 쓸 경우 역슬래시(<code class="language-plaintext highlighter-rouge">\</code>)를 써야 한다. 아래에서는 git bash 환경을 기본으로 두겠다.</li>
 </ul>
 
 <h2 id="install">Install</h2>
@@ -189,14 +149,14 @@ window.onload = wrap_img;
 <h3 id="how-to-make-venv">How to make venv</h3>
 
 <ul>
-  <li>내 경우 적당한 디렉토리에 <code class="highlighter-rouge">.pyenv</code> 라는 디렉토리를 만들었다.</li>
+  <li>내 경우 적당한 디렉토리에 <code class="language-plaintext highlighter-rouge">.pyenv</code> 라는 디렉토리를 만들었다.</li>
   <li>해당 디렉토리 안에서  가상 환경을 생성한다.</li>
 </ul>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>|your-directory|/python.exe <span class="nt">-m</span> venv |your-environmet|
 </code></pre></div></div>
 <ul>
-  <li><code class="highlighter-rouge">sudo</code>  명령은 피하는 게 좋다. <code class="highlighter-rouge">sudo</code>를 쓰게 되면 환경으로 만들어진 디렉토리의 소유자가 root가 된다. 외부의 다른 앱, 소프트웨어가 해당 디렉토리를 조작할 수 없게 되서 작업이 원활하지 않을 수 있다.</li>
+  <li><code class="language-plaintext highlighter-rouge">sudo</code>  명령은 피하는 게 좋다. <code class="language-plaintext highlighter-rouge">sudo</code>를 쓰게 되면 환경으로 만들어진 디렉토리의 소유자가 root가 된다. 외부의 다른 앱, 소프트웨어가 해당 디렉토리를 조작할 수 없게 되서 작업이 원활하지 않을 수 있다.</li>
   <li>이제 가상 환경으로 진입한다.</li>
 </ul>
 
@@ -204,8 +164,8 @@ window.onload = wrap_img;
 </code></pre></div></div>
 
 <ul>
-  <li>Powershell을 쓴다면, <code class="highlighter-rouge">Activate.ps1</code>을 실행하면 된다.</li>
-  <li>이제 실행창 앞에 (<code class="highlighter-rouge">|name-of-your-environmet|</code>)이 떠 있는 것을 볼 수 있다.</li>
+  <li>Powershell을 쓴다면, <code class="language-plaintext highlighter-rouge">Activate.ps1</code>을 실행하면 된다.</li>
+  <li>이제 실행창 앞에 (<code class="language-plaintext highlighter-rouge">|name-of-your-environmet|</code>)이 떠 있는 것을 볼 수 있다.</li>
 </ul>
 
 <h3 id="update-your-venv">Update your venv</h3>
@@ -214,7 +174,7 @@ window.onload = wrap_img;
   <li>가상 환경을 만드는 이유는 무엇인가? 특정한 환경에서 안정적인 작업환경을 만들기 위해서다. 또한 뭔가 문제가 생겼을 때 가상 환경만 지우면 그만이다.</li>
   <li>가상 환경은 이제 막 설치된 상태이므로 반드시 필요한 업데이트들을 해줘야 한다.
     <ul>
-      <li><code class="highlighter-rouge">pip</code></li>
+      <li><code class="language-plaintext highlighter-rouge">pip</code></li>
       <li>사용할 패키지</li>
     </ul>
   </li>
@@ -229,7 +189,7 @@ window.onload = wrap_img;
 </code></pre></div></div>
 
 <ul>
-  <li>반드시 깔 필요는 없지만 <code class="highlighter-rouge">conda</code>에 준하게 패키지 관리를 하고 싶다면, <code class="highlighter-rouge">pip-review</code> 패키지를 깔자.</li>
+  <li>반드시 깔 필요는 없지만 <code class="language-plaintext highlighter-rouge">conda</code>에 준하게 패키지 관리를 하고 싶다면, <code class="language-plaintext highlighter-rouge">pip-review</code> 패키지를 깔자.</li>
 </ul>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip3 <span class="nb">install </span>pip-review <span class="c"># pip-review 설치 </span>
@@ -253,7 +213,7 @@ window.onload = wrap_img;
     <ul>
       <li><kbd>File</kbd> → <kbd>Preference</kbd> → <kbd>settings</kbd></li>
       <li>“python:Pythonpath”로 검색한 후 아래를 브라우징하다보면, “Venv path”라는 항목이 나온다. 만일 conda와 같은 다른 가상 환경을 쓴다면 해당 항목에 적당한 디렉토리를 넣으면 되겠다.</li>
-      <li>가상 환경이 이름이 <code class="highlighter-rouge">.pyvenv</code>라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다.</li>
+      <li>가상 환경이 이름이 <code class="language-plaintext highlighter-rouge">.pyvenv</code>라면 적당한 디렉토리와 함께 아래와 같이 심어주면 되겠다.</li>
     </ul>
   </li>
 </ul>
@@ -298,7 +258,7 @@ Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span 
 <ul>
   <li>디렉토리를 만들면 경로나 이름을 바꾸지 않는 게 좋다. 바꾸느냐 차라리 그냥 새로 만드는 게 낫다. 꼭 바꿔야 한다면, 아래를 바꾸면 된다.
     <ul>
-      <li><code class="highlighter-rouge">activate.bat</code>, <code class="highlighter-rouge">activate.ps1</code> 파일을 열고 path 부분을 바꿔주어야 한다.</li>
+      <li><code class="language-plaintext highlighter-rouge">activate.bat</code>, <code class="language-plaintext highlighter-rouge">activate.ps1</code> 파일을 열고 path 부분을 바꿔주어야 한다.</li>
     </ul>
   </li>
 </ul>
@@ -310,10 +270,10 @@ OTU1LC0xOTA2MTc4NTY2LDIwNjQ5MzUxNDAsODM3ODQyODY4LC
 0xNjAwMDg4MTQ0LC0xNzI2MzIyMjkwLC0zMDQ4ODQ3MjQsLTE0
 OTg2MDQ3NzgsLTEwMTIxOTgxNCwtMTI0MTE3ODg5NV19
 -->
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>conda가 여러모로 편하다. 하지만 conda를 써야겠다면, conda 전체를 깔지 말고 minconda를 써보시기를 권한다. conda는 쓸 데 없는 것을 너무 많이 깔아버리거든… <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>conda가 여러모로 편하다. 하지만 conda를 써야겠다면, conda 전체를 깔지 말고 minconda를 써보시기를 권한다. conda는 쓸 데 없는 것을 너무 많이 깔아버리거든… <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

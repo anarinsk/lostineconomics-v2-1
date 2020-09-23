@@ -2,9 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>wsl 2 + docker + rstudio | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="wsl 2 + docker + rstudio" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="도커로 가볍게 rstudio를 돌려볼까?" />
@@ -15,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-21T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"도커로 가볍게 rstudio를 돌려볼까?","headline":"wsl 2 + docker + rstudio","dateModified":"2020-04-21T00:00:00-05:00","datePublished":"2020-04-21T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html","@context":"https://schema.org"}</script>
+{"headline":"wsl 2 + docker + rstudio","dateModified":"2020-04-21T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html","datePublished":"2020-04-21T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html"},"description":"도커로 가볍게 rstudio를 돌려볼까?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -23,34 +24,12 @@
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>wsl 2 + docker + rstudio | lostineconomics.com</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="wsl 2 + docker + rstudio" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="도커로 가볍게 rstudio를 돌려볼까?" />
-<meta property="og:description" content="도커로 가볍게 rstudio를 돌려볼까?" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html" />
-<meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-21T00:00:00-05:00" />
-<script type="application/ld+json">
-{"description":"도커로 가볍게 rstudio를 돌려볼까?","headline":"wsl 2 + docker + rstudio","dateModified":"2020-04-21T00:00:00-05:00","datePublished":"2020-04-21T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html"},"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding/rstat/docker/2020/04/21/wsl2-+-docker-+-rstudio.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
-
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -69,7 +48,7 @@ function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -93,27 +72,8 @@ window.onload = wrap_img;
     elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
     });
 </script>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-<!--
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script> 
-
--->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159914345-1');
-  gtag('set', {'user_id': 'USER_ID'}); // 로그인한 User-ID를 사용하여 User-ID를 설정합니다.
-</script>
-</head><body><header class="site-header">
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -125,7 +85,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About Me</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -165,7 +125,7 @@ window.onload = wrap_img;
 
 <h2 id="rstat">rstat!</h2>
 
-<p>R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 <code class="highlighter-rouge">ggplot</code>의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl 2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다.</p>
+<p>R은 좋은 랭귀지다. 직관적인 문법 그리고 무엇보다도 <code class="language-plaintext highlighter-rouge">ggplot</code>의 환상적인 구조는 한번 체험하면 잊기 힘들다. 그런데 요즘 wsl 2를 쓰면서 RStudio를 켜는 일이 부쩍 줄어들었다.</p>
 
 <p>장인은 도구를 안가리지만, 나같은 범인에게는 도구가 중요하다. wsl 2에 어떻게 하면 R을 편하게 얹어서 쓰지? 잠시 고민해보았다. 
 물론 wsl 2에 linux용 R을 깔아쓰면 될 일이다. 하지만 뭔가 깔끔하지 않다. 도커를 써볼까?</p>
@@ -174,7 +134,7 @@ window.onload = wrap_img;
 
 <p>문득 예전에 클라우드에 linux + Rstudio server를 쓰던 생각이 났다. 클라우드에 RStudio를 세팅하면 웹브라우저를 통해 RStudio의 기능을 100% 쓸 수 있다.</p>
 
-<p>같은 방식을 그냥 wsl 2에 적용하면 되지 않을까? 이러한 용처를 예상했는지 R 버전, RStudio, tidyverse, 그리고 퍼브리싱 도구까지 필요에 따라 단계별로 묶어둔 docker image가 있더라. 이름하여 <code class="highlighter-rouge">rocker</code>!</p>
+<p>같은 방식을 그냥 wsl 2에 적용하면 되지 않을까? 이러한 용처를 예상했는지 R 버전, RStudio, tidyverse, 그리고 퍼브리싱 도구까지 필요에 따라 단계별로 묶어둔 docker image가 있더라. 이름하여 <code class="language-plaintext highlighter-rouge">rocker</code>!</p>
 
 <p><a href="https://www.rocker-project.org/">https://www.rocker-project.org/</a></p>
 
@@ -185,16 +145,16 @@ window.onload = wrap_img;
 <ul>
   <li>wsl 2를 가동한다.</li>
   <li>docker edge edition 2.2 이상이 설치되었다고 가정한다.</li>
-  <li><code class="highlighter-rouge">rocker</code>의 버전은 다음과 같다.</li>
+  <li><code class="language-plaintext highlighter-rouge">rocker</code>의 버전은 다음과 같다.</li>
 </ul>
 
 <p><a href="https://github.com/rocker-org/rocker-versioned">https://github.com/rocker-org/rocker-versioned</a></p>
 
 <ul>
-  <li><code class="highlighter-rouge">r-ver</code>: R 프로그램과 핵심 유틸</li>
-  <li><code class="highlighter-rouge">rstudio</code>: <code class="highlighter-rouge">r-ver</code> + RStudio</li>
-  <li><code class="highlighter-rouge">tidyverse</code>: <code class="highlighter-rouge">rstudio</code> + tidyverse</li>
-  <li><code class="highlighter-rouge">verse</code>: <code class="highlighter-rouge">tidyverse</code> + 퍼브리싱 툴</li>
+  <li><code class="language-plaintext highlighter-rouge">r-ver</code>: R 프로그램과 핵심 유틸</li>
+  <li><code class="language-plaintext highlighter-rouge">rstudio</code>: <code class="language-plaintext highlighter-rouge">r-ver</code> + RStudio</li>
+  <li><code class="language-plaintext highlighter-rouge">tidyverse</code>: <code class="language-plaintext highlighter-rouge">rstudio</code> + tidyverse</li>
+  <li><code class="language-plaintext highlighter-rouge">verse</code>: <code class="language-plaintext highlighter-rouge">tidyverse</code> + 퍼브리싱 툴</li>
 </ul>
 
 <p>적당한 이미지를 끌어다가 올리면 되겠다.</p>
@@ -209,10 +169,10 @@ window.onload = wrap_img;
   <li>위 스크립트만 간단하게 설명해보자.
     <ul>
       <li>위 스크립트는 로그인을 생략한 버전이다. 공용 PC가 아니라면, 로컬에서 돌리는 데 로그인이 필요하지는 않을 듯 싶다.</li>
-      <li>위 스크립트는 <code class="highlighter-rouge">tidyverse</code>를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 <code class="highlighter-rouge">/home/rstudio</code>로 매핑된다.</li>
+      <li>위 스크립트는 <code class="language-plaintext highlighter-rouge">tidyverse</code>를 태우는데 wsl 2가 마운트한 로컬 폴더 중 rocker와 연결시킬 폴더를 지정한다. 이 윈도 폴더가 콘테이너 내에 <code class="language-plaintext highlighter-rouge">/home/rstudio</code>로 매핑된다.</li>
     </ul>
   </li>
-  <li>브라우저에서 <code class="highlighter-rouge">localhost:8787</code> 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
+  <li>브라우저에서 <code class="language-plaintext highlighter-rouge">localhost:8787</code> 또는 http://127.0.0.1:8787을 치면 Rstudio가 돌아간다.
     <ul>
       <li>크롬의 설정 → 도구 더 보기 → 바로가기 만들기를 클릭하면 바탕화면에 아이콘이 생성된다. RStudio 로컬 버전과 다를 바가 없다.</li>
     </ul>
