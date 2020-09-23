@@ -26,9 +26,9 @@ categories: [docker, data-science]
 
 **본인에게 특화된 이미지를 빌드하지 말고 그냥 official build를 당겨와서 쓰자!**
 
-도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 게 좋다. 도커 허브에서는 공식적으로 관리되고 업데이트되는 도커 이미지들이 꽤 많다. 되도록 초반에는 이런 이미지들을 잘 선택해 활용하는 편을 권한다. 
+도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 편을 권한다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많고, 문과생이 쓰는 환경은 99% 해당 이미지에 속할 것이다.  
 
-내가 쓰는 세팅을 고정해서 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것은 장점이다. 하지만 이렇게 고정해 둔 이미지를 쓸 경우  환경 내 패키지 업데이트를 별도로 해줘야 한다. 공식 이미지의 경우 필요한 업데이트를 정기적으로 수행하기 때문에 이들을 끌어다 쓸 경우 업데이트된 패키지를 받을 수 있다. 다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 나을 것이다. 
+내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것은 이 방식의 장점이다. 하지만 이렇게 고정 이미지를 쓸 경우  환경 내 패키지 업데이트를 별도로 해줘야 한다. 공식 이미지의 경우 필요한 업데이트를 정기적으로 수행하기 때문에 이들을 끌어다 쓸 경우 업데이트된 패키지를 받을 수 있다. 다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 나을 것이다. 
 
 예를 들어보자. 파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰면 된다. 도커로 R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어 쓰는 편이 탈이 덜 나더라. 
 
@@ -153,9 +153,9 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5NzczMTE4LDYwNzcwNDc2MSwxOTgxOT
-cyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMDYwOTMxODIx
-LDE3NDkxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMT
-A5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2
-MDI4XX0=
+eyJoaXN0b3J5IjpbLTEzNzM3Nzk3MzksNjA3NzA0NzYxLDE5OD
+E5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4
+MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLT
+ExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5
+MTYwMjhdfQ==
 -->
