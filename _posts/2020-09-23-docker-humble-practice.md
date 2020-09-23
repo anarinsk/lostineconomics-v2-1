@@ -102,7 +102,7 @@ services:
 # End of yml
 ```
 
-위 yml에서 `service`  아래 두 개의 항목이 있다. 각각 jupyter-datasicence-notebook과 RStudio 컨테이터 이미지 의미한다. 
+위 yml에서 `service`  아래 두 개의 항목이 있다. 각각 jupyter-datasicence-notebook과 RStudio의 컨테이터 이미지를 의미한다. 
 
 - `image`: docker-hub 상의 이미지 이름을 뜻한다. 
 - `volume`: WSL 2 환경의 디렉토리와 이미지 내 디렉토리를 매핑한다. 즉, X : Y라고 할 때 X는 윈도우 10의 폴더, Y는 도커 이미지 내의 폴더 이름을 뜻한다. WSL 2는 `/mnt` 내에 윈도 드라이브를 마운트한다. 따라서 윈도10 환경과 연동된다고 보면 얼추 맞다. 
@@ -151,7 +151,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMT
-A5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2
-MDI4XX0=
+eyJoaXN0b3J5IjpbMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtND
+U1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0
+Mjg1LC00NzA5MTYwMjhdfQ==
 -->
