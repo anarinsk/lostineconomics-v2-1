@@ -12,7 +12,7 @@ categories: [docker, data-science]
 ## 사전 전제 
 
 - 도커에 관해서 대충 알고 있다. 
-- 도커를 써보기는 했다. 하지만... 
+- 도커를 써보기는 했다. 하지만... (막상 쓰려면...)
 
 ## 내가 도커를 쓰는 이유 
 
@@ -142,5 +142,5 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
 -->
