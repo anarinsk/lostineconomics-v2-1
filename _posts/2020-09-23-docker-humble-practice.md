@@ -35,8 +35,7 @@ categories: [docker, data-science]
 - https://hub.docker.com/r/jupyter/datascience-notebook
 - https://hub.docker.com/r/rocker/rstudio
 
-도커 허브에 Tags 탭을 보면 각 버전 및 이미지 특성을 파악할 수 있다. docker를 쓸 때 `:` 뒤에 태그를 쓰는 형태로 이미지를 끌어올 수 있다. 
-이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 파이썬+주피터, RStudio을 어떻게 구축하는지 설명하겠다. 
+도커 허브에 Tags 탭을 보면 각 버전 및 이미지 특성을 파악할 수 있다. docker를 쓸 때 `:` 뒤에 태그를 쓰는 형태로 이미지를 끌어올 수 있다. 각설하고 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 파이썬+주피터, RStudio을 어떻게 구축하는지 설명하겠다. 
 
 ## 미리 해야 할 것들 
 
@@ -157,9 +156,9 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIzMTMxNTgsNjA3NzA0NzYxLDE5OD
-E5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4
-MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLT
-ExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC00NzA5
-MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MT
+k3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgy
+MSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMT
+EwOTgzNDU5OCwtMzIzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkx
+NjAyOF19
 -->
