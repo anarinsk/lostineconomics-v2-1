@@ -241,7 +241,7 @@ window.onload = wrap_img;
         <span class="na">image</span><span class="pi">:</span> <span class="s">jupyter/datascience-notebook</span>
         <span class="na">user</span><span class="pi">:</span> <span class="s">root</span>
         <span class="na">volumes</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">/mnt/e/github:/home/jovyan/anari-github</span>
+            <span class="pi">-</span> <span class="pi">[</span><span class="nv">WSL2 디렉토리</span><span class="pi">]</span><span class="s">:[컨테이너 디렉토리]</span>
         <span class="na">ports</span><span class="pi">:</span>
             <span class="pi">-</span> <span class="s2">"</span><span class="s">8888:8888"</span>
             <span class="pi">-</span> <span class="s2">"</span><span class="s">8501-8510:8501-8510"</span>   
@@ -255,7 +255,7 @@ window.onload = wrap_img;
         <span class="na">image</span><span class="pi">:</span> <span class="s">rocker/verse:latest</span>
         <span class="c1">#image: rocker/verse:4.0.2</span>
         <span class="na">volumes</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">/mnt/e/github:/home/rstudio/anari-github</span>
+            <span class="pi">-</span> <span class="pi">[</span><span class="nv">WSL2 디렉토리</span><span class="pi">]</span><span class="s">:[컨테이너 디렉토리]</span>
         <span class="na">ports</span><span class="pi">:</span>
             <span class="pi">-</span> <span class="s2">"</span><span class="s">8787:8787"</span>
         <span class="na">environment</span><span class="pi">:</span>
@@ -313,8 +313,9 @@ window.onload = wrap_img;
 <p><img src="/lostineconomics-v2-1/images/docker-in-use/docker_2.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMj
-M4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMT
+A5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2
+MDI4XX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
