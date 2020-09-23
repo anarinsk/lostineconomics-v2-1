@@ -113,8 +113,7 @@ services:
 ### 어떻게 실행할까? 
 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 `localhost:8888`을  치면 주피터에 `localhost:8787`을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="200"}
-![]({{ site.baseurl }}/images/docker-in-use/rstudio.png){: style="textalign:center; " width="200"}
+![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="400"}  ![]({{ site.baseurl }}/images/docker-in-use/rstudio.png){: style="textalign:center; " width="400"}
 
 해당 페이지 아이콘을 바탕화면 혹은 바로가기에 두고 쓰면 조금 편리하겠다. 
 
@@ -131,7 +130,7 @@ services:
 
 아예 데이터 전체를 리셋하는 방법도 있다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="0"}
+![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="500"}
 
 
 
@@ -141,6 +140,6 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDI5NzYwMCwtMzIzODAzMDM1LC02Nz
-gwMzQyODUsLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbODA0Nzg5ODcxLC0zMjM4MDMwMzUsLTY3OD
+AzNDI4NSwtNDcwOTE2MDI4XX0=
 -->
