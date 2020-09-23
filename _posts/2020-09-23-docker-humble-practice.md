@@ -2,7 +2,7 @@
 layout: post
 toc: false
 comments: true
-title:  Docker 소박한 사용법 
+title:  Docker; 소박한 사용법 
 description:  문과생이 도커를 쓰는 법 
 categories: [docker, data-science]
 
@@ -151,7 +151,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDkzMTgyMSwxNzQ5MTM3Mzc5LC0xNj
-g5OTAzNjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OCwtMzIzODAz
-MDM1LC02NzgwMzQyODUsLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3ND
+kxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0
+NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX
+0=
 -->
