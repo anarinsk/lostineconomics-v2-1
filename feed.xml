@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T18:58:34-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들&quot;&gt;아마도 이런 분들&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T19:06:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들&quot;&gt;아마도 이런 분들&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커에 관해서 대충 알고 있다.&lt;/li&gt;
@@ -149,7 +149,7 @@
 &lt;p&gt;그때그때 깔면 된다. 원 도커 이미지에서 웬만해서는 더 깔 것이 없을 것이다. 필요한 경우가 있다면 bash script를 만들어 깔아주도록 하자. 해당 이미지를 멈추지 않는 이상 설치한 상태는 유효하다.&lt;/p&gt;
 
 &lt;h3 id=&quot;도커-이미지-관리&quot;&gt;도커 이미지 관리&lt;/h3&gt;
-&lt;p&gt;이미지를 업데이트하고 싶다면 어떻게 해야 할까? 정석대로 하자면, WSL 2 콘솔창에서 실행중인 콘테이너를 멈추고, 이 콘테이너의 이미지를 지워야 할 것이다. 그렇게 해도 되지만, 윈도용 도커 프로그램에서는 보다 간편한 방법을 제공한다.&lt;/p&gt;
+&lt;p&gt;이미지를 업데이트하고 싶다면 어떻게 해야 할까? 정석대로 하자면, WSL 2 콘솔창에서 실행중인 컨테이너를 멈추고, 이 컨테이너의 이미지를 지워야 할 것이다. 그렇게 해도 되지만, 윈도용 도커 프로그램에서는 보다 간편한 방법을 제공한다.&lt;/p&gt;
 
 &lt;p&gt;대시보드 상에서 컨테이너를 실행하고 멈출 수 있고 이미지도 관리할 수 있다.&lt;/p&gt;
 
@@ -160,11 +160,11 @@
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MT
-k3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgy
-MSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMT
-EwOTgzNDU5OCwtMzIzODAzMDM1LC02NzgwMzQyODUsLTQ3MDkx
-NjAyOF19
+eyJoaXN0b3J5IjpbLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LDYwNz
+cwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3
+MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MDksLT
+Q1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAz
+NDI4NSwtNDcwOTE2MDI4XX0=
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
