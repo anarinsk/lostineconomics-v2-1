@@ -44,7 +44,7 @@ mpl.rcParams['font.family'] = 'NanumGothic'
 font_manager._rebuild()
 ```
 
-혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 
+혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4OTQyNDM2Nl19
+eyJoaXN0b3J5IjpbMjE0ODEyMzExLC00ODk0MjQzNjZdfQ==
 -->
