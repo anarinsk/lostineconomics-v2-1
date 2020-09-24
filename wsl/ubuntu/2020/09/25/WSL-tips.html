@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Tips for WSL 2 | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Tips for WSL 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="WSL 2를 쓸 때 알면 좋은 두세 가지 것들" />
+<meta property="og:description" content="WSL 2를 쓸 때 알면 좋은 두세 가지 것들" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-25T00:00:00-05:00" />
+<script type="application/ld+json">
+{"headline":"Tips for WSL 2","dateModified":"2020-09-25T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html","datePublished":"2020-09-25T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html"},"description":"WSL 2를 쓸 때 알면 좋은 두세 가지 것들","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Tips for WSL 2</h1><p class="page-description">WSL 2를 쓸 때 알면 좋은 두세 가지 것들</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-09-25T00:00:00-05:00" itemprop="datePublished">
+        Sep 25, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#wsl">wsl</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#ubuntu">ubuntu</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 시행착오를 줄이기를 바라본다.</p>
+
+<h2 id="어떤-윈도-버전을-쓸까">어떤 윈도 버전을 쓸까?</h2>
+
+<p>나는 성질이 좀 급하다. 그래서 새로운 기능이 나오면 바로 확인하려고 한다. 윈도 프리뷰 버전을 쓰면 새로운 기능을 바로 체험해볼 수 있어서 좋지만 단점도 있다. 안정성이 떨어지고 생각하지도 않았던 버그를 만나는 경우도 있다. 이럴 땐 OS를 롤백하면 된다. 윈도도 그 정도는 한다!</p>
+
+<p><img src="/lostineconomics-v2-1/images/wsl-tips/windows-rockback.png" alt="" style="textalign:center; " width="500" /></p>
+
+<h2 id="ubuntu를-언인스톨하고-싶다">Ubuntu를 언인스톨하고 싶다!</h2>
+
+<p>두 가지를 구분해야 한다. WSL 2를 설치한 이후, 마이크로소프트 스토어에서 리눅스 배포판을 받아서 설치하는 게 보통이다. 우분투를 쓰는 것을 전제하고 이야기 해보자.</p>
+
+<p>만일 어떤 이유로는 WSL 2 내에서 사용중인 우분투 배포판에 문제가 생겼다고 가정하자. 기존 배포판을 날려버리고 새로 인스톨하고 싶다면? 스토어에서 내려받은 우분투 배포판을 지우면 될 것 같다. 틀렸다. 스토어에서 내려받은 프로그램은 새로운 배포판을 설정하는 용도로 활용되는 것이라서, 이 녀석은 윈도에서 지운다고 WSL 2 안에 있는 배포판이 사라지지 않는다.</p>
+
+<p>이럴 때에는 WSL이 제공하는 명령어를 통해 배포판을 지울 수 있다. Powershell이나 Window Command에서 다음과 같이 실행하자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl <span class="nt">--shutdown</span> &lt;DISTRO&gt;
+wsl <span class="nt">--unregister</span> &lt;DISTRO&gt;  
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;Distro&gt;</code>를 일단 내리고, 그리고 등록을 취소하면 된다. 그리고 윈도에 설치한 Ubuntu를 실행하면 설정을 다시 잡아준다. 처음 했던 것처럼 ID와 password를 등록하면 된다.</p>
+
+<h3 id="어떤-ubuntu-version을-쓸까">어떤 Ubuntu version을 쓸까?</h3>
+
+<p>18.04 버전이 아직도 많이 쓰이는 버전이다. 하지만 Python 작업을 많이 한다면, 파이썬 3.7이 기본으로 탑재된 20.04 버전을 권한다. 두 버전 모두 스토어에 올라와 있다. 물론 무료다.</p>
+
+<h2 id="ftp-주소-바꾸기">ftp 주소 바꾸기</h2>
+
+<p>Ubuntu 역시 윈도 만큼이나 많고 다양한 업데이트를 제공한다. 이때 업데이트 파일을 끌어올 ftp가 한국 밖에 있으면 시간이 오래 걸린다. 국내에서 많이 쓰이는 카카오의 ftp로 주소를 바꾸도록 하자. 아래와 같이 실행하면 된다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/archive.ubuntu.com/ftp.daumkakao.com/g'</span> /etc/apt/sources.list <span class="c"># otherwise </span>
+</code></pre></div></div>
+<h3 id="update-packages">Update packages</h3>
+
+<p>패키지 목록을 업데이트하고 필요한 패키지는 업그레이드하는 명령어는 아래와 같다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>
+</code></pre></div></div>
+
+<h2 id="bash-대신-zsh">bash 대신 zsh</h2>
+
+<p>bash도 충분히 좋은 사용성을 제공하지만 조금 더 편리하고 모양새도 좋은 셸이 zsh이다. 먼저 아래와 같은 명령어를 통해서 zsh을 설치하고 이 녀석을 기본 셸로 지정하자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">sudo </span>apt-get <span class="nb">install </span>zsh ⏎
+<span class="o">&gt;</span> chsh <span class="nt">-s</span> <span class="sb">`</span>which zsh<span class="sb">`</span>⏎
+<span class="o">&gt;</span> curl <span class="nt">-L</span> https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh ⏎
+</code></pre></div></div>
+
+<p>일단 로그아웃하고 다시 진입하면 zsh이 기본 셸이 되어 있을 것이다.</p>
+
+<h3 id="zsh-plugins">zsh plugins</h3>
+
+<p>zsh이 좋은 이유는 헤아릴 수 없이 많은 플러그인 때문이다. 문과생으로서 아래 세 가지 정도면 충분했다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">cd</span> <span class="k">${</span><span class="nv">ZSH_CUSTOM1</span><span class="k">:-</span><span class="nv">$ZSH</span><span class="p">/custom</span><span class="k">}</span>/plugins ⏎
+<span class="o">&gt;</span> git clone https://github.com/djui/alias-tips.git ⏎
+<span class="o">&gt;</span> git clone https://github.com/zsh-users/zsh-autosuggestions <span class="nv">$ZSH_CUSTOM</span>/plugins/zsh-autosuggestions ⏎
+<span class="o">&gt;</span> git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="k">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="k">}</span>/plugins/zsh-syntax-highlighting ⏎
+</code></pre></div></div>
+<p>하일라이트, 자동완성, 단축 명령어를 알려주는 플러그인들이다.</p>
+
+<h3 id="플러그인-활성화">플러그인 활성화</h3>
+
+<p>이제 zsh의 설정에서 방금 설치해준 플러그인들을 활성화해야 한다. 나노 에디터로 zsh의 설정 파일을 열어보자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> nano ~/.zshrc ⏎
+</code></pre></div></div>
+
+<p>설정 파일에 보면, 테마를 교체할 수도 있다. 나는 <code class="language-plaintext highlighter-rouge">agnoster</code>를 쓰고 있다. 중간에 <code class="language-plaintext highlighter-rouge">plugin</code> 부분을 찾아서 아래와 같이 고친 후 저장하고 나오면 된다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">plugins</span><span class="o">=(</span>git alias-tips zsh-autosuggestions zsh-syntax-highlighting<span class="o">)</span>
+</code></pre></div></div>
+
+<p><img src="/lostineconomics-v2-1/images/wsl-tips/zsh.png" alt="" style="textalign:center; " width="500" /></p>
+
+<h3 id="python-symlink">python symlink</h3>
+
+<p>사용하는 도중 파이썬이 없다는 메시지가 뜰 수 있다. 파이썬의 실행 파일의 이름이 <code class="language-plaintext highlighter-rouge">python3</code>로 되어 있기 때문이다. <code class="language-plaintext highlighter-rouge">python</code>이 <code class="language-plaintext highlighter-rouge">python3</code>를 의미한다는 뜻의 심볼링크를 만들어주도록 하자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/python python /usr/bin/python3 1 ⏎
+</code></pre></div></div>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM1MjEzOTY4OV19
+-->
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

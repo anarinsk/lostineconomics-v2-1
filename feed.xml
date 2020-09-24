@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T23:04:55-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker 컨테이너 + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" rel="alternate" type="text/html" title="Docker 컨테이너 + 한글 폰트" /><published>2020-09-24T00:00:00-05:00</published><updated>2020-09-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html">&lt;h2 id=&quot;왜-필요한가&quot;&gt;왜 필요한가?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-23T23:06:46-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 시행착오를 줄이기를 바라본다.&lt;/p&gt;
+
+&lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
+
+&lt;p&gt;나는 성질이 좀 급하다. 그래서 새로운 기능이 나오면 바로 확인하려고 한다. 윈도 프리뷰 버전을 쓰면 새로운 기능을 바로 체험해볼 수 있어서 좋지만 단점도 있다. 안정성이 떨어지고 생각하지도 않았던 버그를 만나는 경우도 있다. 이럴 땐 OS를 롤백하면 된다. 윈도도 그 정도는 한다!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-tips/windows-rockback.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ubuntu를-언인스톨하고-싶다&quot;&gt;Ubuntu를 언인스톨하고 싶다!&lt;/h2&gt;
+
+&lt;p&gt;두 가지를 구분해야 한다. WSL 2를 설치한 이후, 마이크로소프트 스토어에서 리눅스 배포판을 받아서 설치하는 게 보통이다. 우분투를 쓰는 것을 전제하고 이야기 해보자.&lt;/p&gt;
+
+&lt;p&gt;만일 어떤 이유로는 WSL 2 내에서 사용중인 우분투 배포판에 문제가 생겼다고 가정하자. 기존 배포판을 날려버리고 새로 인스톨하고 싶다면? 스토어에서 내려받은 우분투 배포판을 지우면 될 것 같다. 틀렸다. 스토어에서 내려받은 프로그램은 새로운 배포판을 설정하는 용도로 활용되는 것이라서, 이 녀석은 윈도에서 지운다고 WSL 2 안에 있는 배포판이 사라지지 않는다.&lt;/p&gt;
+
+&lt;p&gt;이럴 때에는 WSL이 제공하는 명령어를 통해 배포판을 지울 수 있다. Powershell이나 Window Command에서 다음과 같이 실행하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt; &amp;lt;DISTRO&amp;gt;
+wsl &lt;span class=&quot;nt&quot;&gt;--unregister&lt;/span&gt; &amp;lt;DISTRO&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;Distro&amp;gt;&lt;/code&gt;를 일단 내리고, 그리고 등록을 취소하면 된다. 그리고 윈도에 설치한 Ubuntu를 실행하면 설정을 다시 잡아준다. 처음 했던 것처럼 ID와 password를 등록하면 된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;어떤-ubuntu-version을-쓸까&quot;&gt;어떤 Ubuntu version을 쓸까?&lt;/h3&gt;
+
+&lt;p&gt;18.04 버전이 아직도 많이 쓰이는 버전이다. 하지만 Python 작업을 많이 한다면, 파이썬 3.7이 기본으로 탑재된 20.04 버전을 권한다. 두 버전 모두 스토어에 올라와 있다. 물론 무료다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ftp-주소-바꾸기&quot;&gt;ftp 주소 바꾸기&lt;/h2&gt;
+
+&lt;p&gt;Ubuntu 역시 윈도 만큼이나 많고 다양한 업데이트를 제공한다. 이때 업데이트 파일을 끌어올 ftp가 한국 밖에 있으면 시간이 오래 걸린다. 국내에서 많이 쓰이는 카카오의 ftp로 주소를 바꾸도록 하자. 아래와 같이 실행하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/archive.ubuntu.com/ftp.daumkakao.com/g'&lt;/span&gt; /etc/apt/sources.list &lt;span class=&quot;c&quot;&gt;# otherwise &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;update-packages&quot;&gt;Update packages&lt;/h3&gt;
+
+&lt;p&gt;패키지 목록을 업데이트하고 필요한 패키지는 업그레이드하는 명령어는 아래와 같다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;bash-대신-zsh&quot;&gt;bash 대신 zsh&lt;/h2&gt;
+
+&lt;p&gt;bash도 충분히 좋은 사용성을 제공하지만 조금 더 편리하고 모양새도 좋은 셸이 zsh이다. 먼저 아래와 같은 명령어를 통해서 zsh을 설치하고 이 녀석을 기본 셸로 지정하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;zsh ⏎
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;which zsh&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;⏎
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; curl &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh ⏎
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;일단 로그아웃하고 다시 진입하면 zsh이 기본 셸이 되어 있을 것이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;zsh-plugins&quot;&gt;zsh plugins&lt;/h3&gt;
+
+&lt;p&gt;zsh이 좋은 이유는 헤아릴 수 없이 많은 플러그인 때문이다. 문과생으로서 아래 세 가지 정도면 충분했다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ZSH_CUSTOM1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ZSH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/custom&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;/plugins ⏎
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; git clone https://github.com/djui/alias-tips.git ⏎
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; git clone https://github.com/zsh-users/zsh-autosuggestions &lt;span class=&quot;nv&quot;&gt;$ZSH_CUSTOM&lt;/span&gt;/plugins/zsh-autosuggestions ⏎
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; git clone https://github.com/zsh-users/zsh-syntax-highlighting.git &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ZSH_CUSTOM&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;~/.oh-my-zsh/custom&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;/plugins/zsh-syntax-highlighting ⏎
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;하일라이트, 자동완성, 단축 명령어를 알려주는 플러그인들이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;플러그인-활성화&quot;&gt;플러그인 활성화&lt;/h3&gt;
+
+&lt;p&gt;이제 zsh의 설정에서 방금 설치해준 플러그인들을 활성화해야 한다. 나노 에디터로 zsh의 설정 파일을 열어보자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; nano ~/.zshrc ⏎
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;설정 파일에 보면, 테마를 교체할 수도 있다. 나는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;agnoster&lt;/code&gt;를 쓰고 있다. 중간에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plugin&lt;/code&gt; 부분을 찾아서 아래와 같이 고친 후 저장하고 나오면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=(&lt;/span&gt;git alias-tips zsh-autosuggestions zsh-syntax-highlighting&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-tips/zsh.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;python-symlink&quot;&gt;python symlink&lt;/h3&gt;
+
+&lt;p&gt;사용하는 도중 파이썬이 없다는 메시지가 뜰 수 있다. 파이썬의 실행 파일의 이름이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python3&lt;/code&gt;로 되어 있기 때문이다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt;이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python3&lt;/code&gt;를 의미한다는 뜻의 심볼링크를 만들어주도록 하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python3 1 ⏎
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM1MjEzOTY4OV19
+--&gt;</content><author><name></name></author><category term="wsl" /><category term="ubuntu" /><summary type="html">WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 시행착오를 줄이기를 바라본다.</summary></entry><entry><title type="html">Docker 컨테이너 + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" rel="alternate" type="text/html" title="Docker 컨테이너 + 한글 폰트" /><published>2020-09-24T00:00:00-05:00</published><updated>2020-09-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html">&lt;h2 id=&quot;왜-필요한가&quot;&gt;왜 필요한가?&lt;/h2&gt;
 
 &lt;p&gt;Jupyter 등에서 matplotlib을 쓰고, 라벨이 한글일 경우 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 &lt;a href=&quot;https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html&quot;&gt;가이드&lt;/a&gt;를 통해 해결할 수 있다.&lt;/p&gt;
 
@@ -1492,237 +1576,4 @@ x \\
 
 &lt;!--stackedit_data:
 eyJoaXN0b3J5IjpbLTQ4Njc4ODMwM119
---&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><category term="gilbert-strang" /><summary type="html">Oringinally</summary></entry><entry><title type="html">AWS + streamlit</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html" rel="alternate" type="text/html" title="AWS + streamlit" /><published>2020-03-28T00:00:00-05:00</published><updated>2020-03-28T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/aws/2020/03/28/aws-streamlit.html">&lt;h2 id=&quot;tldr&quot;&gt;tl;dr&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;몹시 불친절하다.  개인적인 활용을 위한 비망록이다.&lt;/li&gt;
-  &lt;li&gt;streamlit의 원래 목적은 공유다. AWS를 이용해 streamlit 앱을 깔아보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;| |&lt;/code&gt;  안의 내용은 각자 맞게 설정하시라.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;preparing-aws&quot;&gt;Preparing AWS&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;스트림라이트의 원래 목적은 자신이 지닌 데이터 혹은 데이터 모델을 남들과 공유하는 것이다. 굳이 웹이 필요한 것은 이러한 사연이다. 앞서 Heroku를 통해 streamlit를 공유하는 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/web-tool/2020/03/09/Streamlit-Heroku.html&quot;&gt;방법&lt;/a&gt;을 안내했다. 해당 방법이 코드만 공유하는 방법이라면 여기 소개하는 방법은 AWS 위에 우분투 서버를 깔고 이를 streamlit 서버로 활용하는 방법이다. 이것이 보다 안정적이고 본격적인 방법이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;creating-aws-server&quot;&gt;Creating AWS server&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;대략의 과정은 &lt;a href=&quot;https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Seoul Region에 만든다.&lt;/li&gt;
-      &lt;li&gt;EC2 instane를 만든다.&lt;/li&gt;
-      &lt;li&gt;Unbuntu 18.04 이미지 선택&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Security Group&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;기존에 적용되어 있는 룰을 고치거나 새로 세팅을 해야 한다.
-        &lt;ul&gt;
-          &lt;li&gt;인바운드&lt;/li&gt;
-          &lt;li&gt;아웃바운드&lt;/li&gt;
-          &lt;li&gt;모든 트래픽을 허용해도 된다.&lt;/li&gt;
-          &lt;li&gt;스트림라이트의 기본 설정을 고치지 않는다면, inbound에서 8501번 포트를 여는 것은 필수!&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;setup-for-ubuntu-1804&quot;&gt;Setup for Ubuntu 18.04&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;준비물
-    &lt;ul&gt;
-      &lt;li&gt;pem 파일&lt;/li&gt;
-      &lt;li&gt;서버 IP 주소&lt;/li&gt;
-      &lt;li&gt;터미널 앱&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;log-in-to-aws&quot;&gt;Log in to AWS&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;다운로드 받은 pem 파일의 권한을 바꿔야 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;400 |Your-pem-File|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;해당 파일이 있는 디렉토리에서 아래 명령어로 AWS로 접속한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; |Your-pem-File| ubuntu@|Your-AWS-IP|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;standard-procedure-for-newly-installed-ubuntu&quot;&gt;Standard procedure for newly installed Ubuntu&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update &lt;span class=&quot;c&quot;&gt;# 업데이트 목록 갱신&lt;/span&gt;
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade &lt;span class=&quot;c&quot;&gt;# 현재 패키지 업그레이드&lt;/span&gt;
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt dist-upgrade &lt;span class=&quot;c&quot;&gt;# 신규 업데이트 설치 (필요 없을 수도 있다)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;installing-python&quot;&gt;Installing python&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;software-properties-common
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:deadsnakes/ppa
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python3.7 --version&lt;/code&gt;으로 버전을 확인해보자.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;아래와 같이 깔려 있는 파이썬이 있는지 확인해보자.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--config&lt;/span&gt; python
-update-alternatives: error: no alternatives &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;기존 버전이 없을 경우는 아래와 같이 한다. 설치한 파이썬 버전이 3.7이라고 가정하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;update-alternatives &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt; /usr/bin/python python /usr/bin/python3.7 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;만일 깔려 있는 버전이 있다면 아래의 예처럼 각각 버전에 번호를 부여하고 이를 전환해서 쓰면 된다. 자세한 것은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;installing-venv&quot;&gt;Installing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;venv&lt;/code&gt;&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.7-venv
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;가상 환경을 모아둔 디렉토리로 이동하자. 없다면 하나 만들자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; ~/.pyvenv
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la&lt;/code&gt; 명령어로 소유자가 유저인지를 확인하자. 이제 이 가상환경 디렉토리 안에서 다음 작업을 수행하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;python &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; venv |your-venv|
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; |your-venv|/bin/activate 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; pip 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;참고로 가상환경이든 그 안의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;든 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;로 깔지 말자.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;저 명령어는 특정한 디렉토리, 즉 생성된 환경 내에 있는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 활용해서 pip를 업그레이드하라는 의미로 이해하면 된다. 상세한 내용은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/venv/2020/04/04/python-venv.html&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;installing-streamlit&quot;&gt;Installing streamlit&lt;/h2&gt;
-
-&lt;h3 id=&quot;streamlit--venv&quot;&gt;streamlit + venv&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.pyenv&lt;/code&gt;이 가상 환경의 이름이라고 하자. 아래와 같이 가상 환경을 활성화할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.pyvenv/|name-of-venv|/bin/activate
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;해당 디렉토리에 진입해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source activate&lt;/code&gt;를 실행해도 된다. 가상 환경 해제는 그냥 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deactivate&lt;/code&gt; 명령을 쓰면 된다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;이 상태에서 streamlit를 깔고 서비스를 띄우도록 하자.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit
-~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;streamlit run |name-of-your-py-code|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;만일 venv 환경 내 폴더의 소유자를 root로 꼭 두어야 곘다면, 아래와 같은 방식으로 설치할 수 있다. (권장하지 않는다)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;|your-venv|&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; |location-of-your-venv|/pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;streamlit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;를 업데이트했던 것과 동일한 방식으로 처리한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;go-tmux-not-to-kill-service&quot;&gt;Go tmux not to kill service!&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;세션에 접속이 끊어지면 스트림라이트 서비스도 같이 끊어진다. 이를 막고 싶다면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmux&lt;/code&gt;를 쓰도록 하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; |name-of-stream-session|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이렇게 하면 별도의 세션 윈도가 생성된다.&lt;/li&gt;
-  &lt;li&gt;여기서 스트림라이트를 띄우도록 하자.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;세선에서 나올 때는 &lt;kbd&gt;CTRL-B&lt;/kbd&gt; → D 를 누르면 된다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;다시 해당 세션에 들아가고 싶다면,&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tmux attach &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; |name-of-stream-session|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tmux의 기본적인 사용법은 &lt;a href=&quot;https://gist.github.com/LeoHeo/70d191eb629b7e3e3084278e19a73e38&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;protips&quot;&gt;Protips&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;streamlit 서버를 운용할 때 관련한 데이터 혹은 코드를 꼭 서버 내에 둘 필요는 없다. 스트림라이트는 url을 받아서 실행할 수도 있다. 반갑게도 github의 코드 역시 실행이 가능하다. &lt;a href=&quot;https://github.com/streamlit/demo-uber-nyc-pickups&quot;&gt;여기&lt;/a&gt;의 예를 살펴보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/app.py
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;possibly-ideal-workflow&quot;&gt;Possibly ideal workflow&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;local에서 개발&lt;/li&gt;
-  &lt;li&gt;github를 통해 코드, 데이터 연동&lt;/li&gt;
-  &lt;li&gt;aws의 서버가 gihub의 코드를 받아서 스트림라이트 실행 (업그레이드 이슈가 없는 이상 계속 실행해도 상관 없겠다)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;이렇게 해두면, 1과 같이 로컬에서 파이썬 코드로 작업하고, 깃헙으로 push하면 자동으로 AWS 서비스에 반영된다. 굳이 AWS에서 많은 디스크 자원을 쓸 필요가 없다.&lt;/p&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyOTYzOTYxLDEwMjM0MjkzOTAsODEwND
-Q4OTIwLC00MzgyMDI4OTQsLTE2NDg3OTkxNjAsMTk0MzU5Mjk0
-NCw0ODc3ODA5MjMsLTEyMzQ5NzcxMTIsMzI3Mzc2NDI4LC03ND
-QyNDIyMDIsMTM2Nzk1NTczNCwtMTY2MDUyMjkzNSw2ODI0OTMx
-NDEsLTkyNTc3MTk4NywtNTE2OTg0OTExLC0xNjQ2ODAwNDAsLT
-EzMzYzNzY5MjcsMTgyMzY4NTQ0NCwtMTA4ODA3MTMyMSwxNjQw
-Njc5ODk1XX0=
---&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://medium.com/@chullino/sudo-%EC%A0%88%EB%8C%80-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-8544aa3fb0e7&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="coding-tool" /><category term="python" /><category term="AWS" /><summary type="html">tl;dr</summary></entry></feed>
+--&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><category term="gilbert-strang" /><summary type="html">Oringinally</summary></entry></feed>
