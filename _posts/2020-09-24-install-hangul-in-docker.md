@@ -30,7 +30,11 @@ sudo apt-get install -y fonts-nanum*
 sudo fc-cache -fv
 ```
 
-나머지는 대체로 자명한 명령어다. 첫행의 sed는 ftp 주소를 국내로 바꿔주는 것이다. 업데이트 시 걸리는 시간을 단축하기 위해 사용했다. 
+나머지는 대체로 자명한 명령어다. 첫행의 sed는 ftp 주소를 국내로 바꿔주는 것이다. 업데이트 시 걸리는 시간을 단축하기 위해 사용했다. 터미널에서 스크립트 파일이 있는 디렉토리로 이동한 후 이를 실행하면 된다. 
+
+```shell
+> ./install_nanum.sh
+```
 
 이제 도커 컨테이너 안의 Jupyter 에서 다음과 같이 실행하면, 나눔고딕 폰트를 쓸 수 있다. 
 
@@ -46,5 +50,5 @@ font_manager._rebuild()
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0ODEyMzExLC00ODk0MjQzNjZdfQ==
+eyJoaXN0b3J5IjpbMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
 -->
