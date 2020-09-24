@@ -148,13 +148,13 @@ wsl <span class="nt">--unregister</span> &lt;DISTRO&gt;
 
 <p>Ubuntu 역시 윈도 만큼이나 많고 다양한 업데이트를 제공한다. 이때 업데이트 파일을 끌어올 ftp가 한국 밖에 있으면 시간이 오래 걸린다. 국내에서 많이 쓰이는 카카오의 ftp로 주소를 바꾸도록 하자. 아래와 같이 실행하면 된다.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/archive.ubuntu.com/ftp.daumkakao.com/g'</span> /etc/apt/sources.list <span class="c"># otherwise </span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/archive.ubuntu.com/ftp.daumkakao.com/g'</span> /etc/apt/sources.list ⏎
 </code></pre></div></div>
 <h3 id="update-packages">Update packages</h3>
 
 <p>패키지 목록을 업데이트하고 필요한 패키지는 업그레이드하는 명령어는 아래와 같다.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span> ⏎
 </code></pre></div></div>
 
 <h2 id="bash-대신-zsh">bash 대신 zsh</h2>
@@ -201,7 +201,8 @@ wsl <span class="nt">--unregister</span> &lt;DISTRO&gt;
 </code></pre></div></div>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwNzkwMTk3LDEzNTIxMzk2ODldfQ==
+eyJoaXN0b3J5IjpbNjIwNDgzMjI4LDk2MDc5MDE5NywxMzUyMT
+M5Njg5XX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
