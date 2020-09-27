@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-24T04:23:15-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-27T03:10:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -8,11 +8,11 @@
 
 &lt;h2 id=&quot;ubuntu를-언인스톨하고-싶다&quot;&gt;Ubuntu를 언인스톨하고 싶다!&lt;/h2&gt;
 
-&lt;p&gt;두 가지를 구분해야 한다. WSL 2를 설치한 이후, 마이크로소프트 스토어에서 리눅스 배포판을 받아서 설치하는 게 보통이다. 우분투를 쓰는 것을 전제하고 이야기 해보자.&lt;/p&gt;
+&lt;p&gt;무엇을 언인스톨하고 싶은지를 구분하는 게 먼저다. 우분투를 쓴다고 전제하자. WSL 2를 설치한 이후, 마이크로소프트 스토어에서 리눅스 배포판, 즉 우분투를 받아서 설치하는 게 보통이다.&lt;/p&gt;
 
-&lt;p&gt;만일 어떤 이유로는 WSL 2 내에서 사용중인 우분투 배포판에 문제가 생겼다고 가정하자. 기존 배포판을 날려버리고 새로 인스톨하고 싶다면? 스토어에서 내려받은 우분투 배포판을 지우면 될 것 같다. 틀렸다. 스토어에서 내려받은 프로그램은 새로운 배포판을 설정하는 용도로 활용되는 것이라서, 이 녀석은 윈도에서 지운다고 WSL 2 안에 있는 배포판이 사라지지 않는다.&lt;/p&gt;
+&lt;p&gt;만일 어떤 이유로는 WSL 2 내에서 사용중인 우분투 배포판에 문제가 생겼다고 가정하자. 기존 배포판을 날려버리고 새로 인스톨하고 싶다면? 스토어에서 내려받은 우분투 배포판을 지우면 될 것 같다. 틀렸다. 스토어에서 내려받은 프로그램은 새로운 배포판을 설정하는 용도로 활용되는 것이라서, 이 녀석을 윈도에서 지운다고 WSL 2 안에 설치된 배포판이 사라지지 않는다.&lt;/p&gt;
 
-&lt;p&gt;이럴 때에는 WSL이 제공하는 명령어를 통해 배포판을 지울 수 있다. Powershell이나 Window Command에서 다음과 같이 실행하자.&lt;/p&gt;
+&lt;p&gt;원하는 것이 WSL 내에 서 WSL이 제공하는 명령어를 통해 배포판을 지울 수 있다. Powershell이나 Window Command에서 다음과 같이 실행하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wsl &lt;span class=&quot;nt&quot;&gt;--shutdown&lt;/span&gt; &amp;lt;DISTRO&amp;gt;
 wsl &lt;span class=&quot;nt&quot;&gt;--unregister&lt;/span&gt; &amp;lt;DISTRO&amp;gt;  
@@ -81,8 +81,8 @@ wsl &lt;span class=&quot;nt&quot;&gt;--unregister&lt;/span&gt; &amp;lt;DISTRO&am
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzQ2MTgyNCw2MjA0ODMyMjgsOTYwNz
-kwMTk3LDEzNTIxMzk2ODldfQ==
+eyJoaXN0b3J5IjpbMjg2MDI4NDAyLDIwOTM0NjE4MjQsNjIwND
+gzMjI4LDk2MDc5MDE5NywxMzUyMTM5Njg5XX0=
 --&gt;</content><author><name></name></author><category term="wsl" /><category term="ubuntu" /><summary type="html">WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.</summary></entry><entry><title type="html">Docker 컨테이너 + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" rel="alternate" type="text/html" title="Docker 컨테이너 + 한글 폰트" /><published>2020-09-24T00:00:00-05:00</published><updated>2020-09-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html">&lt;h2 id=&quot;왜-필요한가&quot;&gt;왜 필요한가?&lt;/h2&gt;
 
 &lt;p&gt;Jupyter 등에서 matplotlib을 쓰고, 라벨이 한글일 경우 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 &lt;a href=&quot;https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html&quot;&gt;가이드&lt;/a&gt;를 통해 해결할 수 있다.&lt;/p&gt;
