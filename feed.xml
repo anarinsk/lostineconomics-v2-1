@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-27T03:11:21-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-27T20:39:40-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -124,17 +124,20 @@ Q4MzIyOCw5NjA3OTAxOTcsMTM1MjEzOTY4OV19
 eyJoaXN0b3J5IjpbMTgyMjczNzQzNiwxMjkyNTAxMTY0LC00OD
 k0MjQzNjZdfQ==
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">왜 필요한가?</summary></entry><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들&quot;&gt;아마도 이런 분들&lt;/h2&gt;
+&lt;h1 id=&quot;허름한-도커-사용&quot;&gt;허름한 도커 사용&lt;/h1&gt;
+
+&lt;h2 id=&quot;사전-전제&quot;&gt;사전 전제&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커에 관해서 대충 알고 있다.&lt;/li&gt;
-  &lt;li&gt;도커를 써보기는 했다. 하지만… (막상 쓰려면…)&lt;/li&gt;
+  &lt;li&gt;도커를 써보기는 했헀다. 하지만… (막상 쓰려면…)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;내가-도커를-쓰는-이유&quot;&gt;내가 도커를 쓰는 이유&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(사실 있어 보이고 싶으니까)&lt;/li&gt;
-  &lt;li&gt;개발 환경의 격리 및 일관된 환경 공유를 위해서&lt;/li&gt;
+  &lt;li&gt;(사실 있어 보이고 싶으니까어서)&lt;/li&gt;
+  &lt;li&gt;개발 환경의 격리고립 및 일관된 환경 공유를 위해서공유를 위한 사전 작업&lt;/li&gt;
   &lt;li&gt;가끔 리눅스 환경에서만 구현할 수 있는 파이썬 패키지들이 있다.&lt;/li&gt;
   &lt;li&gt;윈도에서 한번은 마주하게 되는 (지긋지긋한) 한글 인코딩 이슈에서 해방&lt;/li&gt;
 &lt;/ul&gt;
@@ -147,7 +150,9 @@ k0MjQzNjZdfQ==
 
 &lt;p&gt;도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 편을 권한다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많고, 문과생이 쓰는 환경은 99% 해당 이미지에 속할 것이다.&lt;/p&gt;
 
-&lt;p&gt;내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것은 이 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  환경 내 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 반면 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에 업데이트된 패키지를 사용할 수 있다. 다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 좋을 것이다.&lt;/p&gt;
+&lt;p&gt;내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것은 이 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  환경 내 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 반면 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에 업데이트Finding Giants in Docker&lt;/p&gt;
+
+&lt;p&gt;도커를 써봤다면 빌드를 해봤을 것이다. 여러가지 바탕이 되는 OS나 패키지들을 끌어와서 자신에게 특화된 패키지를 사용할만들 수 있다. 다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 좋을 것이다.&lt;/p&gt;
 
 &lt;p&gt;파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰면 된다. 도커로 R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어 쓰는 편이 탈이 덜 나더라.&lt;/p&gt;
 
@@ -156,7 +161,7 @@ k0MjQzNjZdfQ==
   &lt;li&gt;https://hub.docker.com/r/rocker/rstudio&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;도커 허브에 Tags 탭을 보면 각 버전 및 이미지 특성을 파악할 수 있다. docker를 쓸 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; 뒤에 태그를 쓰는 형태로 이미지를 끌어올 수 있다. 각설하고 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 파이썬+주피터, RStudio을 어떻게 구축하는지 설명하겠다.&lt;/p&gt;
+&lt;p&gt;! 처음에는 이 개념이 환상적일 수 있다. 게다가 개인용 저장소만 만들지 않으면 도커 허브에 Tags 탭을 보면 각 버전 및 이미지 특성을 파악할 수 있다. docker를 쓸 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; 뒤에 태그를 쓰는 형태로 이미지를 끌어올 수 있다. 각설하고 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 파이썬+주피터, RStudio을 어떻게 구축하는지 설명하겠다.&lt;/p&gt;
 
 &lt;h2 id=&quot;미리-해야-할-것들&quot;&gt;미리 해야 할 것들&lt;/h2&gt;
 
@@ -260,8 +265,10 @@ k0MjQzNjZdfQ==
 
 &lt;h2 id=&quot;실제-사용해보자&quot;&gt;실제 사용해보자&lt;/h2&gt;
 
-&lt;h3 id=&quot;어떻게-실행할까&quot;&gt;어떻게 실행할까?&lt;/h3&gt;
-&lt;p&gt;주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8888&lt;/code&gt;을  치면 주피터에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt;을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다.&lt;/p&gt;
+&lt;h3 id=&quot;어떻게-실행할그냥-올릴-수-있다-하지만-이런-접근은-본인이-특화된-용도로-사용을-하거나-아니면-패키지-제조에-능숙하지-않다면-크게-권하고-싶지-않다-당분간-별-문제가-없더라도-언젠가는-이상하게-탈이-난다&quot;&gt;어떻게 실행할그냥 올릴 수 있다. 하지만 이런 접근은 본인이 특화된 용도로 사용을 하거나 아니면 패키지 제조에 능숙하지 않다면 크게 권하고 싶지 않다. 당분간 별 문제가 없더라도 언젠가는 이상하게 탈이 난다.&lt;/h3&gt;
+
+&lt;p&gt;다행스럽게 도커 허브에서는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 되도록 초반에는 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 예를 들어보자. 파이썬으로 코딩을 한다면 그리고 주피터 환경을 써야 한다면 어떻게 하는 것이 좋을까? 
+주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8888&lt;/code&gt;을  치면 주피터에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost:8787&lt;/code&gt;을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/jupyter.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
@@ -284,13 +291,17 @@ k0MjQzNjZdfQ==
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;에서 공식적으로 운영하는 도커 이미지가 있다. 도커로 R을 쓰고 싶다면? 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어다쓰는 편이 좋다.&lt;/p&gt;
+
+&lt;p&gt;이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다.&lt;/p&gt;
+
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LDYwNz
-cwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3
-MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MDksLT
-Q1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAz
-NDI4NSwtNDcwOTE2MDI4XX0=
---&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
+eyJoaXN0b3J5IjpbOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMT
+YxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUs
+LTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2OD
+k5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMw
+MzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+--&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들 허름한 도커 사용</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;베이지언 추론에 관해서 수박 겉핥기로 살펴본다.&lt;/li&gt;
