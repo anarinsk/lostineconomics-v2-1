@@ -11,9 +11,9 @@ categories: [docker, data-science]
 
 ## 왜 필요한가?
 
-Jupyter 등에서 matplotlib을 쓰고, 라벨이 한글일 경우 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 [가이드](https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html)를 통해 해결할 수 있다.  
+Jupyter 등에서 matplotlib을 쓸 때 라벨이 한글일 경우, 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 한글 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 [가이드](https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html)를 통해 해결할 수 있다.  
 
-그런데 내가 도커 환경을 쓴다면 이런 가이드가 별 소용이 없다. 도커는 아래 그림과 같이 'host os - 도커 - 컨테이너'의 구조로 돌아간다. 컨테이너(App x)가 각기 독자적인 os를 지니고 있기 때문에 해당 os에서 한글을 인식시켜줘야 도커 환경에서 한글을 쓸 수 있게 된다.  
+그런데 도커 환경을 쓴다면 이런 가이드가 별 소용이 없다. 도커는 아래 그림과 같이 'host os - 도커 - 컨테이너'의 구조로 돌아간다. 컨테이너(App x)가 각기 독자적인 os를 지니고 있기 때문에 해당 os에서 한글을 인식시켜줘야 도커 환경에서 한글을 쓸 수 있게 된다.  
 
 ![](https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj)
 
@@ -50,6 +50,6 @@ font_manager._rebuild()
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDAwNDcwNywtMTg3MDY3OTk0MiwxOD
+eyJoaXN0b3J5IjpbMTgyNzQ4NzYzMSwtMTg3MDY3OTk0MiwxOD
 IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 -->
