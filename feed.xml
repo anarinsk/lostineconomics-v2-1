@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T04:17:19-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T04:18:41-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -133,7 +133,7 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 &lt;h2 id=&quot;내가-도커를-쓰는-이유&quot;&gt;내가 도커를 쓰는 이유&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(사실 있어 보이고 싶으니까어서)&lt;/li&gt;
+  &lt;li&gt;(사실 있어 보이고 싶어서…)&lt;/li&gt;
   &lt;li&gt;개발 환경의 격리고립 및 일관된 환경 공유를 위해서공유를 위한 사전 작업&lt;/li&gt;
   &lt;li&gt;가끔 리눅스 환경에서만 구현할 수 있는 파이썬 패키지들이 있다.&lt;/li&gt;
   &lt;li&gt;윈도에서 한번은 마주하게 되는 (지긋지긋한) 한글 인코딩 이슈에서 해방&lt;/li&gt;
@@ -297,7 +297,7 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 &lt;p&gt;이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNzI0MzUyMSwzODA4OTcxOTcsLTE4Mj
+eyJoaXN0b3J5IjpbLTQzODY1MTU1MywzODA4OTcxOTcsLTE4Mj
 c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
 LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
 Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
