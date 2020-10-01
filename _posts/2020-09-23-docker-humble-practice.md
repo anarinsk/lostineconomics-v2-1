@@ -35,7 +35,7 @@ categories: [docker, data-science]
 - https://hub.docker.com/r/jupyter/datascience-notebook
 - https://hub.docker.com/r/rocker/rstudio
 
-각설하고 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 주피터 + 파이썬, RStudio + R을 어떻게 구축하는지 설명하겠다. 
+이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 주피터 + 파이썬, RStudio + R을 어떻게 구축하는지 설명하겠다. 
 
 ## 미리 해야 할 것들 
 
@@ -162,10 +162,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjU2NDcwOSwzODA4OTcxOTcsLTE4Mj
-c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
-LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
-Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
-MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
-Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbLTEzMDE4NjY3OTQsMzgwODk3MTk3LC0xOD
+I3ODc2ODEwLDkxNTExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1
+Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3NywxMDA0OTgyODk1LC04NT
+Y2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAz
+NjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC
+02NzgwMzQyODUsLTQ3MDkxNjAyOF19
 -->
