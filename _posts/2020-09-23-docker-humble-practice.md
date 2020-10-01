@@ -15,7 +15,7 @@ categories: [docker, data-science]
 
 ## 내가 도커를 쓰는 이유 
 
-- (사실 있어 보이고 싶으니까어서) 
+- (사실 있어 보이고 싶어서...) 
 - 개발 환경의 격리고립 및 일관된 환경 공유를 위해서공유를 위한 사전 작업 
 - 가끔 리눅스 환경에서만 구현할 수 있는 파이썬 패키지들이 있다. 
 - 윈도에서 한번은 마주하게 되는 (지긋지긋한) 한글 인코딩 이슈에서 해방 
@@ -164,7 +164,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNzI0MzUyMSwzODA4OTcxOTcsLTE4Mj
+eyJoaXN0b3J5IjpbLTQzODY1MTU1MywzODA4OTcxOTcsLTE4Mj
 c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
 LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
 Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
