@@ -61,7 +61,7 @@ WSL 2가 깔리는 윈도10 버전으로 업데이트하고 이를 설치하도�
 
 내가 도커를 쓰는 조건은 다음과 같다. 
 
-1. Windows 10 Insider Preview 20190.rs  202XXX 버전을 쓸 것이라면 202
+1. Windows 10 Insider Preview 20190.rs  202XXX 버전을 쓸 것이라면 20226 이후를 써야 한다. 
 2. Docker Desktop Edge 2.3.7.0 
 3. Windows Terminal Preview 1.3
 
@@ -162,10 +162,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzA0NzY4NywzODA4OTcxOTcsLTE4Mj
-c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
-LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
-Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
-MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
-Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbNzg2MjI5NDQzLDM4MDg5NzE5NywtMTgyNz
+g3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcs
+NjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2Nj
+Y4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYw
+OSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNj
+c4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 -->
