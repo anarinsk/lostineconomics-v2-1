@@ -36,7 +36,7 @@ sudo fc-cache -fv
 > ./install_nanum.sh ⏎
 ```
 
-이제 도커 컨테이너 안의 Jupyter 에서 다음과 같이 실행하면, 나눔고딕 폰트를 쓸 수 있게 된다. 
+이제 도커 컨테이너 안의 이용한 주피터 노트북에서 다음과 같이 실행하면 나눔고딕 폰트를 쓸 수 있게 된다. 
 
 ```python
 import matplotlib.pyplot as plt
@@ -50,6 +50,6 @@ font_manager._rebuild()
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4NDI2NDIxLC0xODcwNjc5OTQyLDE4Mj
+eyJoaXN0b3J5IjpbMTQ1ODUxODUwLC0xODcwNjc5OTQyLDE4Mj
 I3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
 -->
