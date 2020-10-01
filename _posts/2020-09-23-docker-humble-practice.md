@@ -68,7 +68,7 @@ WSL 2가 깔리는 윈도10 버전으로 업데이트하고 이를 설치하도�
 
 1. Windows 10 Insider Preview 20190.rs 
 2. Docker Desktop Edge 2.3.7.0 
-3. Windows Terminal Preview 
+3. Windows Terminal Preview 1.3
 
 ### Comments 
 
@@ -165,9 +165,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMT
-YxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUs
-LTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2OD
-k5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMw
-MzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbLTE0OTU2NTU5NjIsOTE1MTExNDAsLTU5Nz
+U4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3
+LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3ND
+kxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0
+NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX
+0=
 -->
