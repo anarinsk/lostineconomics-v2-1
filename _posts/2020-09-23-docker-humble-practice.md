@@ -139,9 +139,10 @@ services:
 
 ### 특화된 패키지 혹은 설정이 필요하다면? 
 
-그때그때 깔면 된다. 원 도커 이미지에서 웬만해서는 더 깔 것이 없을 것이다. 필요한 경우가 있다면 bash script를 만들어 깔아주도록 하자. 해당 이미지를 멈추지 않는 이상 설치한 상태는 유효하다. 
+그때그때 깔면 된다. 원 도커 이미지에서 웬만해서는 더 깔 것이 없을 것이다. 필요한 경우가 있다면 bash script를 만들어 깔아주도록 하자. 해당 이미지를 내리지 않는 이상 한번 설치한 상태는 유효하다. 
 
-### 도커 이미지 관리 
+### 도커 이미지 관리
+ 
 이미지를 업데이트하고 싶다면 어떻게 해야 할까? 정석대로 하자면, WSL 2 콘솔창에서 실행중인 컨테이너를 멈추고, 이 컨테이너의 이미지를 지워야 할 것이다. 그렇게 해도 되지만, 윈도용 도커 프로그램에서는 보다 간편한 방법을 제공한다. 
 
 대시보드 상에서 컨테이너를 실행하고 멈출 수 있고 이미지도 관리할 수 있다. 
@@ -154,18 +155,12 @@ services:
 
 
 
-에서 공식적으로 운영하는 도커 이미지가 있다. 도커로 R을 쓰고 싶다면? 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어다쓰는 편이 좋다. 
-
-이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다. 
-
-
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2MjI5NDQzLDM4MDg5NzE5NywtMTgyNz
-g3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcs
-NjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2Nj
-Y4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYw
-OSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNj
-c4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
+eyJoaXN0b3J5IjpbLTM3NzAzNDE4NCwzODA4OTcxOTcsLTE4Mj
+c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
+LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
+Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
+MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
+Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
 -->
