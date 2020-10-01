@@ -129,10 +129,12 @@ services:
 
 ## 실제 사용해보자 
 
-### 어떻게 실행할그냥 올릴 수 있다. 하지만 이런 접근은 본인이 특화된 용도로 사용을 하거나 아니면 패키지 제조에 능숙하지 않다면 크게 권하고 싶지 않다. 당분간 별 문제가 없더라도 언젠가는 이상하게 탈이 난다. 
+다행스럽게 도커 허브에서는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 되도록 초반에는 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 예를 들어보자. 파이썬으로 코딩을 한다면 그리고 주피터 환경을 써야 한다면 어떻게 하는 것이 좋을까? 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 
 
-다행스럽게 도커 허브에서는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 되도록 초반에는 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 예를 들어보자. 파이썬으로 코딩을 한다면 그리고 주피터 환경을 써야 한다면 어떻게 하는 것이 좋을까? 
-주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 `localhost:8888`을  치면 주피터에 `localhost:8787`을 치면 RStduio에 들어갈 수 있다. 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 
+- Juypterlab + Python: `localhost:8888`
+- RStudio + R: `localhost:8787`
+
+주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 
 
 ![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="500"}  
 
@@ -165,7 +167,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU2NTU5NjIsOTE1MTExNDAsLTU5Nz
+eyJoaXN0b3J5IjpbLTE4Mjc4NzY4MTAsOTE1MTExNDAsLTU5Nz
 U4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3
 LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3ND
 kxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0
