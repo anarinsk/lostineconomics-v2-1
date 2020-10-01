@@ -19,7 +19,7 @@ Jupyter 등에서 matplotlib을 쓸 때 라벨이 한글일 경우, 대부분 �
 
 ## Simple Solution 
 
-사실 방법은 간단하다. 컨테이너 내의 os에 한글을 설치해주면 된다. 해당 os 내의 bash 혹은 상응하는 CLI에 들어가서 필요한 명령(스크립트)들을 실행하면 된다. 아예 해당 명령들을 별도의 bash 스크립트로 만들고 필요한 경우 녀석을 한방에 돌리면 살짝 더 편리할 것이다. 아래는 나눔 계열 폰트를 설치하는 스크립트다. 파일 이름을  `install_nanum.sh`로 하자. 
+방법은 간단하다. 컨테이너 내의 os에 한글을 설치해주면 된다. 해당 os 내의 bash 혹은 상응하는 CLI에 들어가서 필요한 명령(스크립트)들을 실행하면 된다. 해당 명령들을 별도의 bash 스크립트로 만들고 필요한 경우 녀석들을 한방에 돌리면 살짝 더 편리할 것이다. 아래는 나눔 계열 폰트를 설치하는 스크립트다. 파일 이름을  `install_nanum.sh`로 하자. 
 
 ```shell
 #!/bin/sh
@@ -50,6 +50,6 @@ font_manager._rebuild()
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNzQ4NzYzMSwtMTg3MDY3OTk0MiwxOD
-IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
+eyJoaXN0b3J5IjpbNzU4NDI2NDIxLC0xODcwNjc5OTQyLDE4Mj
+I3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
 -->
