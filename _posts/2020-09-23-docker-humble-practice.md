@@ -26,9 +26,9 @@ categories: [docker, data-science]
 
 **본인에게 특화된 이미지를 빌드하지 말고 그냥 official build를 당겨와서 쓰자!**
 
-도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 편을 권한다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많고, 문과생이 쓰는 환경은 99% 해당 이미지에 속할 것이다.  
+도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 편을 권한다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많고, 문과생이 쓰는 환경에서는 99%의 확률로 부족함이 없을 것이다.  
 
-내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것이 이러한 활용 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  도커 이미지 안에 속한 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 한편 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에, 대체로 이런 종류의 업데이트를 개별적으로 할 필요가 없다. 
+내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 특정 시점에 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있다는 것이 이러한 활용 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  도커 이미지 안에 속한 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 한편 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에, 대체로 이런 종류의 업데이트를 개별적으로 할 필요가 없다. 
 
 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어두고 쓰는 편이 좋을 것이다. 
 
@@ -164,10 +164,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODY1MTU1MywzODA4OTcxOTcsLTE4Mj
-c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
-LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
-Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
-MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
-Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbMTM1MzE0ODQ1LDM4MDg5NzE5NywtMTgyNz
+g3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcs
+NjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2Nj
+Y4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYw
+OSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNj
+c4MDM0Mjg1LC00NzA5MTYwMjhdfQ==
 -->
