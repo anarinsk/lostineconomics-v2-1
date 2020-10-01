@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-09-30T20:45:21-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T04:11:20-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -150,9 +150,9 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 
 &lt;p&gt;도커의 장점이라면 무엇보다도 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 이야기하면, 그러지 않는 편을 권한다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많고, 문과생이 쓰는 환경은 99% 해당 이미지에 속할 것이다.&lt;/p&gt;
 
-&lt;p&gt;내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것은 이 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  환경 내 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 반면 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에 업데이트Finding Giants in Docker&lt;/p&gt;
+&lt;p&gt;내가 쓰는 세팅을 잘 설정해서 특화된 이미지로 말아두었다고 하자. 당장 편리하게 끌어다 쓸 수 있는 것이 이러한 활용 방식의 장점이다. 하지만 이렇게 고정된 이미지를 쓸 경우  도커 이미지 안에 속한 패키지 업데이트를 별도로 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 양이 늘어나게 될 것이다. 한편 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행하기 때문에, 대체로 업데이트를 개별적으로 할 필요가 없다.&lt;/p&gt;
 
-&lt;p&gt;도커를 써봤다면 빌드를 해봤을 것이다. 여러가지 바탕이 되는 OS나 패키지들을 끌어와서 자신에게 특화된 패키지를 사용할만들 수 있다. 다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 좋을 것이다.&lt;/p&gt;
+&lt;p&gt;다만 팀별로 통일된 환경이 필요하고 이 환경을 관리할 의향이 있는 경우라면 특화된 이미지를 만들어두고 쓰는 편이 좋을 것이다.&lt;/p&gt;
 
 &lt;p&gt;파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰면 된다. 도커로 R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어 쓰는 편이 탈이 덜 나더라.&lt;/p&gt;
 
@@ -300,12 +300,12 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 &lt;p&gt;이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc4NzY4MTAsOTE1MTExNDAsLTU5Nz
-U4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3
-LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3ND
-kxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMTA5ODM0
-NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NSwtNDcwOTE2MDI4XX
-0=
+eyJoaXN0b3J5IjpbLTkyMzI3OTc0OCwtMTgyNzg3NjgxMCw5MT
+UxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYx
+LDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNj
+A5MzE4MjEsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2
+NTQsLTExMDk4MzQ1OTgsLTMyMzgwMzAzNSwtNjc4MDM0Mjg1LC
+00NzA5MTYwMjhdfQ==
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들 허름한 도커 사용</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
