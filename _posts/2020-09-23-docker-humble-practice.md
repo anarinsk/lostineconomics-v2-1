@@ -126,7 +126,7 @@ services:
 
 ## 실제 사용해보자 
 
-다행스럽게 도커 허브에서는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 되도록 초반에는 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 예를 들어보자. 파이썬으로 코딩을 한다면 그리고 주피터 환경을 써야 한다면 어떻게 하는 것이 좋을까? 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 범용 웹브라우저에서 
+앞서 말했듯이 도커 허브에는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 문과생이라면 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 이미지가 도커 컨테이터로 구동된 이후 범용 웹브라우저에서 다음과 같이 실행하자. 
 
 - Juypterlab + Python: `localhost:8888`
 - RStudio + R: `localhost:8787`
@@ -159,7 +159,7 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzY4Mzg4NywtMzc3MDM0MTg0LDM4MD
+eyJoaXN0b3J5IjpbLTk3ODU4Njk3OSwtMzc3MDM0MTg0LDM4MD
 g5NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5
 LDE2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwND
 k4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3
