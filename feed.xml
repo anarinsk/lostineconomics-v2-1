@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T04:23:24-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T04:25:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 두 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -189,7 +189,7 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 &lt;p&gt;내가 도커를 쓰는 조건은 다음과 같다.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Windows 10 Insider Preview 20190.rs&lt;/li&gt;
+  &lt;li&gt;Windows 10 Insider Preview 20190.rs  202XXX 버전을 쓸 것이라면 202&lt;/li&gt;
   &lt;li&gt;Docker Desktop Edge 2.3.7.0&lt;/li&gt;
   &lt;li&gt;Windows Terminal Preview 1.3&lt;/li&gt;
 &lt;/ol&gt;
@@ -295,12 +295,12 @@ IyNzM3NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 &lt;p&gt;이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDE4NjY3OTQsMzgwODk3MTk3LC0xOD
-I3ODc2ODEwLDkxNTExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1
-Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3NywxMDA0OTgyODk1LC04NT
-Y2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAz
-NjA5LC00NTU1ODY1NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC
-02NzgwMzQyODUsLTQ3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbLTUyMzA0NzY4NywzODA4OTcxOTcsLTE4Mj
+c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
+LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
+Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
+MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
+Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들에게 유용할 것</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
