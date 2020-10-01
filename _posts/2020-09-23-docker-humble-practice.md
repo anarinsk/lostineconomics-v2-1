@@ -8,10 +8,7 @@ categories: [docker, data-science]
 
 ---
 
-## 아마도 이런 분들 
-# 허름한 도커 사용 
-
-## 사전 전제 
+## 아마도 이런 분들에게 유용할 것  
 
 - 도커에 관해서 대충 알고 있다. 
 - 도커를 써보기는 했헀다. 하지만... (막상 쓰려면...)
@@ -167,10 +164,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNT
-ExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEs
-MTk4MTk3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MD
-kzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1
-NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC02NzgwMzQyODUsLT
-Q3MDkxNjAyOF19
+eyJoaXN0b3J5IjpbMTUzNzI0MzUyMSwzODA4OTcxOTcsLTE4Mj
+c4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3
+LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1Nj
+Y2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2
+MDksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLT
+Y3ODAzNDI4NSwtNDcwOTE2MDI4XX0=
 -->
