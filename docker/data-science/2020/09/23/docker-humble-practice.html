@@ -186,7 +186,7 @@ window.onload = wrap_img;
 
 <h2 id="내-환경">내 환경</h2>
 
-<p>내가 세팅한 조건은 다음과 같다.</p>
+<p>내가 도커를 쓰는 조건은 다음과 같다.</p>
 
 <ol>
   <li>Windows 10 Insider Preview 20190.rs</li>
@@ -240,7 +240,7 @@ window.onload = wrap_img;
 <p>위 yml에서 <code class="language-plaintext highlighter-rouge">service</code> 아래 두 개의 항목이 있다. 각각 <code class="language-plaintext highlighter-rouge">jupyter/datasicence-notebook</code>과 <code class="language-plaintext highlighter-rouge">rocker/verse</code>의 컨테이터 이미지를 의미한다. 첫번째는 데이터를 다룰 때 필요한 파이썬 라이브러리를 주피터와 묶은 이미지이고, 두번째는 R과 RStudio 그리고 tidyverse 및 문서 도구를 묶은 이미지다.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">image</code>: docker-hub 상의 이미지 이름을 뜻한다.</li>
+  <li><code class="language-plaintext highlighter-rouge">image</code>: docker-hub 상의 이미지 이름을 뜻한다. <code class="language-plaintext highlighter-rouge">:</code> 뒤의 내용은 버전 혹은 여러가지 다른 형태로 묶인 이미지를 나타낸다. <code class="language-plaintext highlighter-rouge">latest</code> 최신 버전을 의미한다.</li>
   <li><code class="language-plaintext highlighter-rouge">volume</code>: WSL 2 환경의 디렉토리와 이미지 내 디렉토리를 매핑한다. 즉, X : Y라고 할 때 X는 윈도우 10의 폴더, Y는 도커 이미지 내의 폴더 이름을 뜻한다. WSL 2는 <code class="language-plaintext highlighter-rouge">/mnt</code> 내에 윈도 드라이브를 마운트한다. 따라서 윈도10 환경과 연동된다고 보면 얼추 맞다.</li>
   <li><code class="language-plaintext highlighter-rouge">ports</code>: WSL 2에서 인식하는 포트와 이미지 내에서 인식하는 포트를 매핑한다.</li>
   <li>environment: 각각 이미지에 맞는 환경을 지정할 수 있다. 이 사례에서 주피터 노트북에는 <code class="language-plaintext highlighter-rouge">sudo</code> 권한을 주고, 주피터랩 버전을 쓰며, 최초 진입시 비번은 [내 비번]을 쓰겠다고 지정한 것이다. RStudio의 경우 root 권한을 주고, 패스워드는 내 비번을 쓰겠다는 의미다.</li>
@@ -295,12 +295,12 @@ window.onload = wrap_img;
 <p>이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTY5Njg1NzIsLTE4Mjc4NzY4MTAsOT
-E1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2
-MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMD
-YwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4
-NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NS
-wtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNT
+ExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEs
+MTk4MTk3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MD
+kzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1
+NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC02NzgwMzQyODUsLT
+Q3MDkxNjAyOF19
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
