@@ -64,7 +64,7 @@ WSL 2가 깔리는 윈도10 버전으로 업데이트하고 이를 설치하도�
 
 ## 내 환경 
 
-내가 세팅한 조건은 다음과 같다. 
+내가 도커를 쓰는 조건은 다음과 같다. 
 
 1. Windows 10 Insider Preview 20190.rs 
 2. Docker Desktop Edge 2.3.7.0 
@@ -114,7 +114,7 @@ services:
 
 위 yml에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/datasicence-notebook`과 `rocker/verse`의 컨테이터 이미지를 의미한다. 첫번째는 데이터를 다룰 때 필요한 파이썬 라이브러리를 주피터와 묶은 이미지이고, 두번째는 R과 RStudio 그리고 tidyverse 및 문서 도구를 묶은 이미지다. 
 
-- `image`: docker-hub 상의 이미지 이름을 뜻한다. 
+- `image`: docker-hub 상의 이미지 이름을 뜻한다. `:` 뒤의 내용은 버전 혹은 여러가지 다른 형태로 묶인 이미지를 나타낸다. `latest` 최신 버전을 의미한다. 
 - `volume`: WSL 2 환경의 디렉토리와 이미지 내 디렉토리를 매핑한다. 즉, X : Y라고 할 때 X는 윈도우 10의 폴더, Y는 도커 이미지 내의 폴더 이름을 뜻한다. WSL 2는 `/mnt` 내에 윈도 드라이브를 마운트한다. 따라서 윈도10 환경과 연동된다고 보면 얼추 맞다. 
 - `ports`: WSL 2에서 인식하는 포트와 이미지 내에서 인식하는 포트를 매핑한다. 
 - environment: 각각 이미지에 맞는 환경을 지정할 수 있다. 이 사례에서 주피터 노트북에는 `sudo` 권한을 주고, 주피터랩 버전을 쓰며, 최초 진입시 비번은 [내 비번]을 쓰겠다고 지정한 것이다. RStudio의 경우 root 권한을 주고, 패스워드는 내 비번을 쓰겠다는 의미다. 
@@ -167,10 +167,10 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTY5Njg1NzIsLTE4Mjc4NzY4MTAsOT
-E1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2
-MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMD
-YwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4
-NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3ODAzNDI4NS
-wtNDcwOTE2MDI4XX0=
+eyJoaXN0b3J5IjpbMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNT
+ExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEs
+MTk4MTk3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MD
+kzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1
+NCwtMTEwOTgzNDU5OCwtMzIzODAzMDM1LC02NzgwMzQyODUsLT
+Q3MDkxNjAyOF19
 -->
