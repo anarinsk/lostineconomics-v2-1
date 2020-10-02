@@ -131,11 +131,15 @@ yml 파일에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/d
 - Juypterlab + Python: `localhost:8888`
 - RStudio + R: `localhost:8787`
 
-주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 
+주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. 
 
 ![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="500"}  
 
-![]({{ site.baseurl }}/images/docker-in-use/rstudio.png){: style="textalign:center; " width="500"}
+RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 아래 화면에서 로그인을 하면 친숙한 RStudio의 화면이 뜬다. 
+
+![]({{ site.baseurl }}/images/docker-in-use/rstudio_1.png){: style="textalign:center; " width="300"}
+
+![]({{ site.baseurl }}/images/docker-in-use/rstudio_2.png){: style="textalign:center; " width="500"}
 
 해당 페이지 아이콘을 바탕화면 혹은 바로가기에 두고 쓰면 조금 편리 하겠다. 
 
@@ -159,11 +163,11 @@ yml 파일에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjI4NDYzMzUsMTE5NDk5MjU3MSwxOT
-AxODkyOTc5LC0xMjMxNzQ3Mjk5LC0xNTk1OTg4NjY1LC0xODYw
-NjY3NzQxLC0zNzcwMzQxODQsMzgwODk3MTk3LC0xODI3ODc2OD
-EwLDkxNTExMTQwLC01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3
-MDQ3NjEsMTk4MTk3MjM3NywxMDA0OTgyODk1LC04NTY2Njg3Nz
-AsMTA2MDkzMTgyMSwxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00
-NTU1ODY1NF19
+eyJoaXN0b3J5IjpbMTgyMjc4MDI1OCwtMTAyMjg0NjMzNSwxMT
+k0OTkyNTcxLDE5MDE4OTI5NzksLTEyMzE3NDcyOTksLTE1OTU5
+ODg2NjUsLTE4NjA2Njc3NDEsLTM3NzAzNDE4NCwzODA4OTcxOT
+csLTE4Mjc4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQz
+MTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OT
+UsLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2
+ODk5MDM2MDldfQ==
 -->
