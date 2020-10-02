@@ -28,9 +28,9 @@ categories: [docker, data-science]
 
 도커의 장점이 개발환경의 격리다. 그렇다면 자신에게 적합한 환경을 세팅해두고 이 녀석을 끌어와 쓰면 좋지 않을까? 약간의 취향과 사용성의 차이를 감안하고 말하자면, 커스텀 이미지는 되도록 피하는게 좋다. 도커 허브에서 공식적으로 관리되고 업데이트되는 도커 이미지들이 많다. 문과생이 쓰는 환경에서 99%의 확률로 여기서 부족함이 없을 것 같다.  
 
-내가 쓰는 특정한 환경을 잘 설정해서 이미지로 특정 시점에 잘 말아두었다고 하자. 당분간은 편리하게 필요할 때 끌어다 쓸 수 있을 것이다. 하지만 고정된 이미지를 쓸 경우  도커 이미지 안에 속한 패키지나 구성요소들을 개별적으로 업데이트 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 갯수가 늘어나게 된다. 
+내가 쓰는 특정 환경을 특정 시점에 이미지로 말아두었다고 치자. 당분간은 편리하게 필요할 때 끌어다 쓸 수 있을 것이다. 하지만 이렇게 '고정된' 이미지를 쓸 경우  도커 이미지 안에 속한 패키지나 구성요소들을 개별적으로 업데이트 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 갯수가 늘어나게 된다. 
 
-한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 한번 끌어오면 된다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어두고 쓰는 편이 나을 것이다. 
+한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 주기적으로 새로 끌어다쓰면 업데이트의 번거로움을 피할 수 있다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어. 
 
 파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰자. R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 도커 프로젝트가 있다. 개인이 제조한 사설 이미지 보다는 이런 공식 이미지가 대체로 편안하다. 
 
@@ -159,11 +159,11 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU4MTk5OTUsMTkwMTg5Mjk3OSwtMT
-IzMTc0NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MSwtMzc3
-MDM0MTg0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MC
-wtNTk3NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5
-NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4Mj
-EsMTc0OTEzNzM3OSwtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLTEx
-MDk4MzQ1OThdfQ==
+eyJoaXN0b3J5IjpbMTAyNDM3MjQ3OCwxOTAxODkyOTc5LC0xMj
+MxNzQ3Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcw
+MzQxODQsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC
+01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3
+MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMS
+wxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMTEw
+OTgzNDU5OF19
 -->
