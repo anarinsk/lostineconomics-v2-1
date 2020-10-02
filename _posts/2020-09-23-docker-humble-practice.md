@@ -22,7 +22,7 @@ categories: [docker, data-science]
 
 ##  원칙 
 
-본격적으로 사용을 소개하기 전에 도커(docker) 이미지를 쓰는 원칙 하나를 전제하도록 하자. 
+우선 도커(docker) 이미지를 쓰는 원칙 하나를 짚고 가자. 
 
 **본인에게 특화된 이미지를 빌드하지 말고 그냥 official build를 당겨와서 쓰자!**
 
@@ -159,11 +159,11 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE3NDcyOTksLTE1OTU5ODg2NjUsLT
-E4NjA2Njc3NDEsLTM3NzAzNDE4NCwzODA4OTcxOTcsLTE4Mjc4
-NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LD
-YwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2
-ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MD
-ksLTQ1NTU4NjU0LC0xMTA5ODM0NTk4LC0zMjM4MDMwMzUsLTY3
-ODAzNDI4NV19
+eyJoaXN0b3J5IjpbMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMT
+U5NTk4ODY2NSwtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5
+NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LD
+E2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4
+Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0OTEzNzM3OS
+wtMTY4OTkwMzYwOSwtNDU1NTg2NTQsLTExMDk4MzQ1OTgsLTMy
+MzgwMzAzNV19
 -->
