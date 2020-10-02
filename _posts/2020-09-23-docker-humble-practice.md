@@ -133,13 +133,13 @@ yml 파일에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/d
 
 주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="500"}  
+![]({{ site.baseurl }}/images/docker-in-use/jupyter.png){: style="textalign:center; " width="600"}  
 
 RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 아래 화면에서 로그인을 하면 친숙한 RStudio의 화면이 뜬다. 
 
 ![]({{ site.baseurl }}/images/docker-in-use/rstudio_1.png){: style="textalign:center; " width="200"}
 
-![]({{ site.baseurl }}/images/docker-in-use/rstudio_2.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/docker-in-use/rstudio_2.png){: style="textalign:center; " width="600"}
 
 해당 페이지 아이콘을 바탕화면 혹은 바로가기에 두고 쓰면 조금 편리 하겠다. 
 
@@ -163,11 +163,11 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODEwNTczMSwxODIyNzgwMjU4LC0xMD
-IyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3OSwtMTIzMTc0
-NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MSwtMzc3MDM0MT
-g0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MCwtNTk3
-NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5NzIzNz
-csMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0
-OTEzNzM3OV19
+eyJoaXN0b3J5IjpbMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMj
+I4NDYzMzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3
+Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxOD
+QsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1
+ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3Ny
+wxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5
+MTM3Mzc5XX0=
 -->
