@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T23:22:49-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 몇 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-01T23:42:32-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 몇 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
 
@@ -88,13 +88,13 @@ LDEzNTIxMzk2ODldfQ==
 
 &lt;p&gt;Jupyter 등에서 matplotlib을 쓸 때 라벨이 한글일 경우, 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 한글 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 &lt;a href=&quot;https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html&quot;&gt;가이드&lt;/a&gt;를 통해 해결할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;그런데 도커 환경을 쓴다면 이런 가이드가 별 소용이 없다. 도커는 아래 그림과 같이 ‘host os - 도커 - 컨테이너’의 구조로 돌아간다. 컨테이너(App x)가 각기 독자적인 os를 지니고 있기 때문에 해당 os에서 한글을 인식시켜줘야 도커 환경에서 한글을 쓸 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;그런데 도커 환경을 쓴다면 이런 가이드가 별 소용이 없다. 도커는 아래 그림과 같이 ‘host os - 도커 - 컨테이너’의 구조로 돌아간다. 컨테이너(App x)가 각기 독자적인 os를 지니고 있기 때문에 해당 os에서 한글을 인식시켜줘야 특정 컨테이너 환경 안에서 한글을 쓸 수 있게 된다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;simple-solution&quot;&gt;Simple Solution&lt;/h2&gt;
 
-&lt;p&gt;방법은 간단하다. 컨테이너 내의 os에 한글을 설치해주면 된다. 해당 os 내의 bash 혹은 상응하는 CLI에 들어가서 필요한 명령(스크립트)들을 실행하면 된다. 해당 명령들을 별도의 bash 스크립트로 만들고 필요한 경우 녀석들을 한방에 돌리면 살짝 더 편리할 것이다. 아래는 나눔 계열 폰트를 설치하는 스크립트다. 파일 이름을  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install_nanum.sh&lt;/code&gt;로 하자.&lt;/p&gt;
+&lt;p&gt;방법은 간단하다. 컨테이너 환경 os에 직접 한글을 설치해주면 된다. 해당 os 내의 bash 혹은 상응하는 CLI에 들어가서 필요한 명령(스크립트)들을 실행하면 된다. 해당 명령들을 별도의 bash 스크립트로 만들고 필요한 경우 녀석들을 한방에 돌리면 살짝 더 편리할 것이다. 아래는 나눔 계열 폰트를 설치하는 스크립트다. 파일 이름을  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install_nanum.sh&lt;/code&gt;로 하자.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
 
@@ -122,8 +122,9 @@ LDEzNTIxMzk2ODldfQ==
 
 &lt;p&gt;혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1ODUxODUwLC0xODcwNjc5OTQyLDE4Mj
-I3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
+eyJoaXN0b3J5IjpbMTIyODAxOTk1MywxNDU4NTE4NTAsLTE4Nz
+A2Nzk5NDIsMTgyMjczNzQzNiwxMjkyNTAxMTY0LC00ODk0MjQz
+NjZdfQ==
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">왜 필요한가?</summary></entry><entry><title type="html">Docker; 소박한 사용법</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html" rel="alternate" type="text/html" title="Docker; 소박한 사용법" /><published>2020-09-23T00:00:00-05:00</published><updated>2020-09-23T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">&lt;h2 id=&quot;아마도-이런-분들에게-유용할-것&quot;&gt;아마도 이런 분들에게 유용할 것&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -272,13 +273,13 @@ I3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
 
 &lt;p&gt;주피터야 원래부터 웹 브라우저 기반이었으니 보통 깔아 쓰는 것과 차이를 느낄 수 없다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/jupyter.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/jupyter.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 아래 화면에서 로그인을 하면 친숙한 RStudio의 화면이 뜬다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/rstudio_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/rstudio_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/rstudio_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;해당 페이지 아이콘을 바탕화면 혹은 바로가기에 두고 쓰면 조금 편리 하겠다.&lt;/p&gt;
 
@@ -299,13 +300,13 @@ I3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX0=
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODEwNTczMSwxODIyNzgwMjU4LC0xMD
-IyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3OSwtMTIzMTc0
-NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MSwtMzc3MDM0MT
-g0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MCwtNTk3
-NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5NzIzNz
-csMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0
-OTEzNzM3OV19
+eyJoaXN0b3J5IjpbMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMj
+I4NDYzMzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3
+Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxOD
+QsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1
+ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3Ny
+wxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5
+MTM3Mzc5XX0=
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들에게 유용할 것</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
