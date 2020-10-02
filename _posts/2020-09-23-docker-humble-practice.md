@@ -11,7 +11,7 @@ categories: [docker, data-science]
 ## 아마도 이런 분들에게 유용할 것  
 
 - 도커에 관해서 대충 알고 있다. 
-- 도커를 써보기는 했헀다. 하지만... (막상 쓰려면...)
+- 도커를 써보기는 했다. 하지만... (막상 쓰려면...)
 
 ## 내가 도커를 쓰는 이유 
 
@@ -159,8 +159,8 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTU5ODg2NjUsLTE4NjA2Njc3NDEsLT
-E1OTU5ODg2NjUsLTM3NzAzNDE4NCwzODA4OTcxOTcsLTE4Mjc4
+eyJoaXN0b3J5IjpbLTEyMzE3NDcyOTksLTE1OTU5ODg2NjUsLT
+E4NjA2Njc3NDEsLTM3NzAzNDE4NCwzODA4OTcxOTcsLTE4Mjc4
 NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQzMTYxMDU3LD
 YwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OTUsLTg1NjY2
 ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2ODk5MDM2MD
