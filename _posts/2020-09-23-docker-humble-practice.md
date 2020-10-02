@@ -30,12 +30,12 @@ categories: [docker, data-science]
 
 내가 쓰는 특정 환경을 특정 시점에 이미지로 말아두었다고 치자. 당분간은 편리하게 필요할 때 끌어다 쓸 수 있을 것이다. 하지만 이렇게 '고정된' 이미지를 쓸 경우  도커 이미지 안에 속한 패키지나 구성요소들을 개별적으로 업데이트 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 갯수가 늘어나게 된다. 
 
-한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 주기적으로 새로 끌어다쓰면 업데이트의 번거로움을 피할 수 있다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어. 
+한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 주기적으로 새로 끌어다쓰면 업데이트의 번거로움을 피할 수 있다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어 써도 좋을 것이다. 
 
-파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면 주피터에서 공식적으로 운영하는 도커 이미지를 쓰자. R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 도커 프로젝트가 있다. 개인이 제조한 사설 이미지 보다는 이런 공식 이미지가 대체로 편안하다. 
+파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면, 주피터에서 공식적으로 운영하는 도커 이미지를 쓰자. R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 도커 프로젝트가 있다. 개인이 제조한 사설 이미지 보다는 이런 공식 이미지가 대체로 편안하다. 
 
-- https://hub.docker.com/r/jupyter/datascience-notebook
-- https://hub.docker.com/r/rocker/rstudio
+- [https://hub.docker.com/r/jupyter/datascience-notebook](https://hub.docker.com/r/jupyter/datascience-notebook)
+- [https://hub.docker.com/r/rocker/rstudio](https://hub.docker.com/r/rocker/rstudio)
 
 이하에서는 내가 기본으로 사용하는 두 개의 도커 환경, 주피터 + 파이썬, RStudio + R을 어떻게 구축하는지 설명하겠다. 
 
@@ -159,11 +159,11 @@ services:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDM3MjQ3OCwxOTAxODkyOTc5LC0xMj
-MxNzQ3Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcw
-MzQxODQsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC
-01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3
-MjM3NywxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMS
-wxNzQ5MTM3Mzc5LC0xNjg5OTAzNjA5LC00NTU1ODY1NCwtMTEw
-OTgzNDU5OF19
+eyJoaXN0b3J5IjpbNDY4ODQyMTAxLDE5MDE4OTI5NzksLTEyMz
+E3NDcyOTksLTE1OTU5ODg2NjUsLTE4NjA2Njc3NDEsLTM3NzAz
+NDE4NCwzODA4OTcxOTcsLTE4Mjc4NzY4MTAsOTE1MTExNDAsLT
+U5NzU4Mjg3OSwxNjQzMTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcy
+Mzc3LDEwMDQ5ODI4OTUsLTg1NjY2ODc3MCwxMDYwOTMxODIxLD
+E3NDkxMzczNzksLTE2ODk5MDM2MDksLTQ1NTU4NjU0LC0xMTA5
+ODM0NTk4XX0=
 -->
