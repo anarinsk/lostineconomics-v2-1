@@ -137,7 +137,7 @@ yml 파일에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/d
 
 RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 만들어졌기 때문에 이 역시 차이를 느낄 수 없다. 아래 화면에서 로그인을 하면 친숙한 RStudio의 화면이 뜬다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/rstudio_1.png){: style="textalign:center; " width="300"}
+![]({{ site.baseurl }}/images/docker-in-use/rstudio_1.png){: style="textalign:center; " width="200"}
 
 ![]({{ site.baseurl }}/images/docker-in-use/rstudio_2.png){: style="textalign:center; " width="500"}
 
@@ -163,11 +163,11 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjc4MDI1OCwtMTAyMjg0NjMzNSwxMT
-k0OTkyNTcxLDE5MDE4OTI5NzksLTEyMzE3NDcyOTksLTE1OTU5
-ODg2NjUsLTE4NjA2Njc3NDEsLTM3NzAzNDE4NCwzODA4OTcxOT
-csLTE4Mjc4NzY4MTAsOTE1MTExNDAsLTU5NzU4Mjg3OSwxNjQz
-MTYxMDU3LDYwNzcwNDc2MSwxOTgxOTcyMzc3LDEwMDQ5ODI4OT
-UsLTg1NjY2ODc3MCwxMDYwOTMxODIxLDE3NDkxMzczNzksLTE2
-ODk5MDM2MDldfQ==
+eyJoaXN0b3J5IjpbMTg5ODEwNTczMSwxODIyNzgwMjU4LC0xMD
+IyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3OSwtMTIzMTc0
+NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MSwtMzc3MDM0MT
+g0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUxMTE0MCwtNTk3
+NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLDE5ODE5NzIzNz
+csMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5MzE4MjEsMTc0
+OTEzNzM3OV19
 -->
