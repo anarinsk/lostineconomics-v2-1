@@ -5,8 +5,8 @@ comments: true
 title:  Docker; 소박한 사용법 
 description:  문과생이 도커를 쓰는 법 
 categories: [docker, data-science]
-
 ---
+
 
 ## 아마도 이런 분들에게 유용할 것  
 
@@ -163,11 +163,11 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMj
-I4NDYzMzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3
-Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxOD
-QsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1
-ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3Ny
-wxMDA0OTgyODk1LC04NTY2Njg3NzAsMTA2MDkzMTgyMSwxNzQ5
-MTM3Mzc5XX0=
+eyJoaXN0b3J5IjpbODA1NDkwMjQ3LDM0MDU0MTk4NywxODIyNz
+gwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3
+OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MS
+wtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUx
+MTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLD
+E5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5
+MzE4MjFdfQ==
 -->
