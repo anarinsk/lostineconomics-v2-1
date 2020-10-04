@@ -31,7 +31,11 @@ VS Code도 그렇고 윈도 터미널도 그렇고 설정이 `settings.json` 파
 
 [https://windowsterminalthemes.dev/](https://windowsterminalthemes.dev/)
 
-원하는 테마를 바꿔가며 확인할 수 있다. 마음에 드는 녀석을 "Get theme" 버튼을 눌러 클립보드에 복사하도록 하자. `settings.json` 파일을 자세히 보면, 아래 `"schemes":`라는 항목이 있다. 여기에 클립보드에서 복사한 내용을 `{}` 안에 붙여 넣도록 하자. 그리고 설정 파일의 위로 이동하면 `"profiles"` - `"defaults"`라는 항목이 보일 것이다. 여기에는 터미널 앱을 띄웠을 때 어떤 세팅으로 시작할 것인지를 넣을 수 있다. 여러가지 항목을 넣을 수 있는데, 이중 `colorScheme` 항목에 방금 붙여 넣은 테마의 이름을 넣어주면 된다. 저장을 하면 테마가 바로 적용되며, 뭔가 문제가 있을 경우에는 에러가 뜬다. 이 경우 설정 파일을 다시 고치면 된다. 내가 사용중인 default는 아래와 같다. 
+원하는 테마를 바꿔가며 확인할 수 있다. 마음에 드는 녀석을 "Get theme" 버튼을 눌러 클립보드에 복사하도록 하자. 녀석을 어디에 붙여 넣어야 할까? 
+
+`settings.json` 파일을 자세히 보면, 아래 `"schemes":`라는 항목이 있다. 여기에 클립보드에서 복사한 내용을 `{}` 안에 붙여 넣도록 하자. 그리고 설정 파일의 위로 이동하면 `"profiles"` - `"defaults"`라는 항목이 보일 것이다. 여기에는 터미널 앱을 띄웠을 때 어떤 세팅으로 시작할 것인지를 넣을 수 있다. 여러가지 항목을 넣을 수 있는데, 이중 `colorScheme` 항목에 방금 붙여 넣은 테마의 이름을 넣어주면 된다. 저장을 하면 테마가 바로 적용되며, 뭔가 문제가 있을 경우에는 에러가 뜬다. 이 경우 설정 파일을 다시 고치면 된다. 내가 사용중인 default는 아래와 같다. 
+
+
 
 ```json 
 "defaults":
@@ -63,6 +67,6 @@ VS Code도 그렇고 윈도 터미널도 그렇고 설정이 `settings.json` 파
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzc1NDY0NCwtMTc1MjI5MDg2NSwxNT
-AyNTAzMTY2LDE4MDA4NTk1MDJdfQ==
+eyJoaXN0b3J5IjpbLTEzNTUwNTU2NzQsMTQyMzc1NDY0NCwtMT
+c1MjI5MDg2NSwxNTAyNTAzMTY2LDE4MDA4NTk1MDJdfQ==
 -->
