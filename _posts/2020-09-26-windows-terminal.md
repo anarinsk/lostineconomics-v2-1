@@ -17,7 +17,7 @@ Windows 10 기준으로, Microsoft Store에 들어가서 "terminal"을 검색해
 
 공식 가이드 [https://docs.microsoft.com/ko-kr/windows/terminal/](https://docs.microsoft.com/ko-kr/windows/terminal/)
 
-왠만한 내용은 공식 가이드에 있으므로, 몇 가지 팁만 적도록 하겠다. 
+왠만한 내용은 공식 가이드에 잘 정리되어 있으므로 몇 가지 팁만 적도록 하자. 
 
 ## 설정 
 
@@ -63,6 +63,6 @@ VS Code도 그렇고 윈도 터미널도 그렇고 설정이 `settings.json` 파
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIyOTA4NjUsMTUwMjUwMzE2NiwxOD
-AwODU5NTAyXX0=
+eyJoaXN0b3J5IjpbMTQyMzc1NDY0NCwtMTc1MjI5MDg2NSwxNT
+AyNTAzMTY2LDE4MDA4NTk1MDJdfQ==
 -->
