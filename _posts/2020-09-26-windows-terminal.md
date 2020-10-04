@@ -9,7 +9,7 @@ categories: [docker, data-science]
 
 ---
 
-마소가 리눅스 생태계를 품으려고 진심으로 노력하고 있다. 보통 윈도에서 터미널을 쓰려면 cmd를 쳐서 들어간다. 일단 모양이 별로일 뿐만 아니라 쓰기에도 별로다. 그래서 보통 서드파티에서 제작한 터미널 앱을 별도로 쓰는 게 보통이다. 이 앱들로도 부족한 것이 없다. 예전에 한번 소개했던 [cmder](https://cmder.net/)도 높은 수준의 커스터마이즈와 뛰어난 사용성을 보장한다. 
+마소가 리눅스 생태계를 품으려고 진심으로 노력하고 있다. 보통 윈도에서 터미널을 쓰려면 cmd를 쳐서 들어간다. 일단 모양이 별로일 뿐만 아니라 불편하다. 그래서 보통 서드파티에서 제작한 터미널 앱을 별도로 쓰곤 한다. 이 앱들로도 부족한 것이 없다. 예전에 한번 소개했던 [cmder](https://cmder.net/)도 높은 수준의 커스터마이즈와 뛰어난 사용성을 보장한다. 
 
 WSL을 통해 윈도에 설치하는 리눅스의 경우 기본으로 CLI(Command Line Interface)를 활용하게 된다. 따라서 좋은 터미널 앱은 필수적이다. 간편하면서도 심미적으로도 유려한 그런 앱이 하나 있었으면 싶은데, MS는 이미 그런 앱을 제공하고 있다. 
 
@@ -63,5 +63,6 @@ VS Code도 그렇고 윈도 터미널도 그렇고 설정이 `settings.json` 파
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjUwMzE2NiwxODAwODU5NTAyXX0=
+eyJoaXN0b3J5IjpbLTE3NTIyOTA4NjUsMTUwMjUwMzE2NiwxOD
+AwODU5NTAyXX0=
 -->
