@@ -4,7 +4,7 @@ layout: post
 toc: false
 comments: true
 title:  The Best Terminal App for Windows  
-description:  윈도 터미날 잘 쓰기 
+description:  윈도 터미널 잘 쓰기 
 categories: [docker, data-science]
 
 ---
@@ -63,5 +63,5 @@ VS Code도 그렇고 윈도 터미널도 그렇고 설정이 `settings.json` 파
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDg1OTUwMl19
+eyJoaXN0b3J5IjpbMTUwMjUwMzE2NiwxODAwODU5NTAyXX0=
 -->
