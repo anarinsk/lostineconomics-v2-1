@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-03T21:19:18-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">The Best Terminal App for Windows</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal.html" rel="alternate" type="text/html" title="The Best Terminal App for Windows" /><published>2020-09-26T00:00:00-05:00</published><updated>2020-09-26T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal.html">&lt;p&gt;마소가 리눅스 생태계를 품으려고 진심으로 노력하고 있다. 보통 윈도에서 터미널을 쓰려면 cmd를 쳐서 들어간다. 일단 모양이 별로일 뿐만 아니라 불편하다. 그래서 보통 서드파티에서 제작한 터미널 앱을 별도로 쓰곤 한다. 이 앱들로도 부족한 것이 없다. 예전에 한번 소개했던 &lt;a href=&quot;https://cmder.net/&quot;&gt;cmder&lt;/a&gt;도 높은 수준의 커스터마이즈와 뛰어난 사용성을 보장한다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-03T21:21:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">The Best Terminal App for Windows</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal.html" rel="alternate" type="text/html" title="The Best Terminal App for Windows" /><published>2020-09-26T00:00:00-05:00</published><updated>2020-09-26T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/26/windows-terminal.html">&lt;p&gt;마소가 리눅스 생태계를 품으려고 진심으로 노력하고 있다. 보통 윈도에서 터미널을 쓰려면 cmd를 쳐서 들어간다. 일단 모양이 별로일 뿐만 아니라 불편하다. 그래서 보통 서드파티에서 제작한 터미널 앱을 별도로 쓰곤 한다. 이 앱들로도 부족한 것이 없다. 예전에 한번 소개했던 &lt;a href=&quot;https://cmder.net/&quot;&gt;cmder&lt;/a&gt;도 높은 수준의 커스터마이즈와 뛰어난 사용성을 보장한다.&lt;/p&gt;
 
 &lt;p&gt;WSL을 통해 윈도에 설치하는 리눅스의 경우 기본으로 CLI(Command Line Interface)를 활용하게 된다. 따라서 좋은 터미널 앱은 필수적이다. 간편하면서도 심미적으로도 유려한 그런 앱이 하나 있었으면 싶은데, MS는 이미 그런 앱을 제공하고 있다.&lt;/p&gt;
 
@@ -6,7 +6,7 @@
 
 &lt;p&gt;공식 가이드 &lt;a href=&quot;https://docs.microsoft.com/ko-kr/windows/terminal/&quot;&gt;https://docs.microsoft.com/ko-kr/windows/terminal/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;왠만한 내용은 공식 가이드에 있으므로, 몇 가지 팁만 적도록 하겠다.&lt;/p&gt;
+&lt;p&gt;왠만한 내용은 공식 가이드에 잘 정리되어 있으므로 몇 가지 팁만 적도록 하자.&lt;/p&gt;
 
 &lt;h2 id=&quot;설정&quot;&gt;설정&lt;/h2&gt;
 
@@ -44,8 +44,8 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTIyOTA4NjUsMTUwMjUwMzE2NiwxOD
-AwODU5NTAyXX0=
+eyJoaXN0b3J5IjpbMTQyMzc1NDY0NCwtMTc1MjI5MDg2NSwxNT
+AyNTAzMTY2LDE4MDA4NTk1MDJdfQ==
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">마소가 리눅스 생태계를 품으려고 진심으로 노력하고 있다. 보통 윈도에서 터미널을 쓰려면 cmd를 쳐서 들어간다. 일단 모양이 별로일 뿐만 아니라 불편하다. 그래서 보통 서드파티에서 제작한 터미널 앱을 별도로 쓰곤 한다. 이 앱들로도 부족한 것이 없다. 예전에 한번 소개했던 cmder도 높은 수준의 커스터마이즈와 뛰어난 사용성을 보장한다.</summary></entry><entry><title type="html">Tips for WSL 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html" rel="alternate" type="text/html" title="Tips for WSL 2" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/ubuntu/2020/09/25/WSL-tips.html">&lt;p&gt;WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 몇 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.&lt;/p&gt;
 
 &lt;h2 id=&quot;어떤-윈도-버전을-쓸까&quot;&gt;어떤 윈도 버전을 쓸까?&lt;/h2&gt;
