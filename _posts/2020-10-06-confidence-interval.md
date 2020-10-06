@@ -44,7 +44,7 @@ $$
 중심 극한 정리 덕분에 $\overline{X}$는 정규 분포를 따르게 되고, 따라서 $\overline{X}$가 속하는 확률이 95%되는 구간을 구할 수 있다. 즉, 
 
 $$
-P(|\overline{X}-\mu}{\sigma/\sqrt{n}} | \leq 1.96) = 0.95   
+P(\dfrac{|\overline{X}-\mu}{\sigma \sqrt{n}} | \leq 1.96) = 0.95   
 $$
 
 따라서 신뢰구간은 
@@ -99,5 +99,5 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjYxODc3OV19
+eyJoaXN0b3J5IjpbLTM3NzU0NTk5NywxODY2NjE4Nzc5XX0=
 -->
