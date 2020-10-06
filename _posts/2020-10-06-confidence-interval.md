@@ -67,7 +67,7 @@ $$
 
 말로 풀어보자. $\overline{X}$가 확률변수이므로 표본으로 추출되는 것은 이 녀석이다. 쉽게 말해 우리가 지금 갖고 있는 결과아 그 샘플링의 실현 사례다. 그리고 95% 신뢰구간의 의미는 $\overline{X}$를 100번 뽑았을 때 95번에 정도는 맞는 범위가 나온다는 뜻이다. 
 
-이제 $\mu$ 구간의 의미를 새겨보자. 미지의 그리고 이미 결정된 모수 $\mu$는 대략 저 사이에 있을 것으로 표본을 통해 파악했다. 이 진술을  95% 정도의 강도로 믿을 수 있다는 이야기다. 다시 강조하지만, $\mu$가 저 안에 있을 확률이 95%라는 말은 아니다. 이 측면에서 보자면 우연적 불확실성과 인식론적 불확실성의 차이를 드러내는 듯도 싶다. $\mu$가 실현되기 전에(동전 던지를 생각하자), 이를 반복해서 추출할 때 저 구간에 들어올 확률이 95%라는 말과 이미 정해진 $\mu$를 알아내기 위해서 샘플을 추출했고 그 결과를 
+이제 $\mu$ 구간의 의미를 새겨보자. 미지의 그리고 이미 결정된 모수 $\mu$는 대략 저 사이에 있을 것으로 표본을 통해 파악했다. 이 진술을  95% 정도의 강도로 믿을 수 있다는 이야기다. 다시 강조하지만, $\mu$가 저 안에 있을 확률이 95%라는 말은 아니다. 이 측면에서 보자면 우연적 불확실성과 인식론적 불확실성의 차이를 드러내는 듯도 싶다. $\mu$가 실현되기 전에(동전 던지를 생각하자), 이를 반복해서 추출할 때 저 구간에 들어올 확률이 95%라는 말과 이미 정해진 $\mu$를 알아내기 위해서 샘플을 추출했고 그 결과를 95%의 확실으로 받아들일 수 있다는 말 사이의 차이다. 
 
 ### 비율의 신뢰 구간
 
@@ -104,7 +104,8 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDE2ODQ2LC02MDcyODI1NTksLTIyNj
-Y0NzcxNywtMTgyMzg1MDA4Nyw0MDc1ODMyNjksMTEyNzMwNDUy
-MywtNTI4MTYwMTI4LC0zNzc1NDU5OTcsMTg2NjYxODc3OV19
+eyJoaXN0b3J5IjpbLTQ0OTk0NDY1MywtNjA3MjgyNTU5LC0yMj
+Y2NDc3MTcsLTE4MjM4NTAwODcsNDA3NTgzMjY5LDExMjczMDQ1
+MjMsLTUyODE2MDEyOCwtMzc3NTQ1OTk3LDE4NjY2MTg3NzldfQ
+==
 -->
