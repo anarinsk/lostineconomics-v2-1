@@ -58,7 +58,7 @@ $$
 $$
 
 
-식상으로는 $\overline{X}$와 $\mu$를 바꾸면 되지만, 그렇다고 해서 $\mu$를 확률변수 처럼 해석해서는 안된다. 앞서 말했지만 $\mu$는 우연적 불확실성에 해당하는 것으로 여기에는 확률을 적용할 수 없다. 정해진 숫자이지만 알 수 없는 것
+식상으로는 $\overline{X}$와 $\mu$를 바꾸면 되지만, 그렇다고 해서 $\mu$를 확률변수 처럼 해석해서는 안된다. 
 
 ### In words
 
@@ -99,6 +99,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTUxNjY2MiwtNTI4MTYwMTI4LC0zNz
+eyJoaXN0b3J5IjpbMTc5NjI0MDU5NSwtNTI4MTYwMTI4LC0zNz
 c1NDU5OTcsMTg2NjYxODc3OV19
 -->
