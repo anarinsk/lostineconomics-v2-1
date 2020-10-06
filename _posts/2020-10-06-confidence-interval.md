@@ -75,7 +75,7 @@ $$
 이제 ±3.1%의 의미도 이해가 될 것이다. "표본 오차"다. 표본 오차란 표본 평균의 표준 편차를 의미한다. 즉, 모집단의 표준 편차가 $\sigma$이고 각 표본이 독립적이고 동일한 방식으로 잘 표집 되었다면, 
 
 $$
-V(\overline{X}) =  \dfrac{1}{n^2} \sum_{k=1}^n V(X_k) = \dfrac{1}{n^2} n \sigma) = \dfrac{\sigma}{n}.
+V(\overline{X}) =  \dfrac{1}{n^2} \sum_{k=1}^n V(X_k) = \dfrac{1}{n^2} n \sigma = \dfrac{\sigma}{n}.
 $$
 
 앞서 신뢰구간에서 본 1.96 옆에 곱해진 것이 표준 오차, 즉 표본 평균의 분산의 제곱근이다. 
@@ -101,7 +101,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODA5OTY0MiwtMjI2NjQ3NzE3LC0xOD
+eyJoaXN0b3J5IjpbLTYwNzI4MjU1OSwtMjI2NjQ3NzE3LC0xOD
 IzODUwMDg3LDQwNzU4MzI2OSwxMTI3MzA0NTIzLC01MjgxNjAx
 MjgsLTM3NzU0NTk5NywxODY2NjE4Nzc5XX0=
 -->
