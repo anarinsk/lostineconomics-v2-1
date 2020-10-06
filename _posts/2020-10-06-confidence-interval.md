@@ -93,7 +93,7 @@ $$
 
 참 값 $p$가 속하는 범위를 95% 신뢰 수준에서 위와 같이 설정할 수 있다. 걸리는 부분은 분산이다. 베르누이 분포에서 분산은 $p(1-p)$로 계산된다. 물론 $p$를 모르기 때문에 이 녀석을 $\overline{p}$로 바꿔주고 분포를 $t$ 분포를 쓰면 되겠다. 이게 번거로운가? 분산을 몰라도 그럴듯한 표준 오차를 만들어는 방법이 있다. 
 
-최대 표준 오차라는 걸 생각해보자. 즉 분산 값이 가능한 범위에서 가장 큰 표준 오차를 생각해보자. 앞서 말했듯이 분산은 $p(1-p)$인데, 이는 $p$에 대해 이차식이다. 분산의 최대값은 $p=\frac{1}{2}$에서일 때 만들어지고, 이에 따른 표준 편차의 최대값이 $\frac{1}{2}$이다. 이를 대입하면 
+최대 표준 오차, 즉 표준 오차의 상한(upper bound)을 따져보자. 분산 값이 가능한 범위에서 가장 큰 표준 오차를 생각해보자. 앞서 말했듯이 분산은 $p(1-p)$인데, 이는 $p$에 대해 이차식이다. 분산의 최대값은 $p=\frac{1}{2}$에서일 때 만들어지고, 이에 따른 표준 편차의 최대값이 $\frac{1}{2}$이다. 이를 대입하면 
 
 $$
 1.96 \dfrac{1/2}{\sqrt{n}} < 2 \dfrac{1/2}{\sqrt{n}} = \dfrac{1}{\sqrt{n}}
@@ -104,7 +104,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0OTk0NDY1MywtNjA3MjgyNTU5LC0yMj
+eyJoaXN0b3J5IjpbLTUzNDk1NzE5MSwtNjA3MjgyNTU5LC0yMj
 Y2NDc3MTcsLTE4MjM4NTAwODcsNDA3NTgzMjY5LDExMjczMDQ1
 MjMsLTUyODE2MDEyOCwtMzc3NTQ1OTk3LDE4NjY2MTg3NzldfQ
 ==
