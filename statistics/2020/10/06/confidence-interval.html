@@ -143,7 +143,7 @@ window.onload = wrap_img;
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mover accent="true"><mi>X</mi><mo stretchy="true">‾</mo></mover><mo>−</mo><mi>μ</mi></mrow><mrow><mi>σ</mi><mi mathvariant="normal">/</mi><mi>n</mi></mrow></mfrac><mo>∼</mo><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\overline{X} - \mu}{\sigma/n} \sim N(0, 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.49633em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.56033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mord">/</span><span class="mord mathdefault">n</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833300000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span><span style="top:-3.80333em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">μ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span>
 
-<p>표본 평균 $\overline{X}$는 확률 변수다. 그런데 이 녀석이 정규 분포를 따를까? 중심 극한 정리에 따르면 $X$가 원래 어떤 분포를 따르는지와 무관하게 $n$이 충분히 크다면 $\overline {X} = \sum_{k=1}^n X_k$은 정규 분포를 따르게 된다. 잠깐! $\sigma$도 모르는데? 문제가 복잡해지니까 일단 안다고 치자. 이 대목은 별도로 다시 한번 적어보겠다.</p>
+<p>표본 평균 $\overline{X}$는 확률 변수다. 그런데 이 녀석이 정규 분포를 따를까? 중심 극한 정리에 따르면 $X$가 원래 어떤 분포를 따르는지와 무관하게 $n$이 충분히 크다면 $\overline {X} = \sum_{k=1}^n X_k$은 정규 분포를 따르게 된다. 잠깐! $\sigma$도 모르는데? 문제가 복잡해지니까 일단 안다고 치자. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <p>중심 극한 정리 덕분에 $\overline{X}$는 정규 분포를 따르게 되고, 따라서 $\overline{X}$가 속하는 확률이 95%되는 구간을 구할 수 있다. 즉,</p>
 
@@ -298,9 +298,16 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <p>즉 95% 신뢰 수준의 최대 표준 오차는 $\dfrac{1}{\sqrt{n}}$로 쉽게 결정할 수 있다. 1,000 명 정도라면, $\sqrt{n}$은 32 정도 될 것이다. 1/32는 대략 3.1% 정도 된다. 천 명 조사에 3.1%를 많이 보게 되는 것은 우연이 아닌 것이다!</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzMwNDUyMywtNTI4MTYwMTI4LC0zNz
-c1NDU5OTcsMTg2NjYxODc3OV19
+eyJoaXN0b3J5IjpbMzE4MjM2NDk5LDExMjczMDQ1MjMsLTUyOD
+E2MDEyOCwtMzc3NTQ1OTk3LDE4NjY2MTg3NzldfQ==
 -->
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>$n$이 어느 정도 크다면 (대략 $n \geq 30$)이라고 하면, $\sigma / n$을 $S / n$으로 대체해도 괜찮다. 여기서 $S$는 $sigma$의 추정치 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
