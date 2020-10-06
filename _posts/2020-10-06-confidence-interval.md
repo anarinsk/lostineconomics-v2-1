@@ -39,8 +39,9 @@ $$
 \frac{\overline{X} - \mu}{\sigma/n} \sim N(0, 1) 
 $$
 
-표본 평균 $\overline{X}$는 확률 변수다. 그런데 이 녀석이 정규 분포를 따를까? 중심 극한 정리에 따르면 $X$가 원래 어떤 분포를 따르는지와 무관하게 $n$이 충분히 크다면 $\overline {X} = \sum_{k=1}^n X_k$은 정규 분포를 따르게 된다. 잠깐! $\sigma$도 모르는데? 문제가 복잡해지니까 일단 안다고 치자. 
+표본 평균 $\overline{X}$는 확률 변수다. 그런데 이 녀석이 정규 분포를 따를까? 중심 극한 정리에 따르면 $X$가 원래 어떤 분포를 따르는지와 무관하게 $n$이 충분히 크다면 $\overline {X} = \sum_{i=1}^n X_i$은 정규 분포를 따르게 된다. 잠깐! $\sigma$도 모르는데? 문제가 복잡해지니까 일단 안다고 치자.[^1]
 
+[^1]: 
 
 
 중심 극한 정리 덕분에 $\overline{X}$는 정규 분포를 따르게 되고, 따라서 $\overline{X}$가 속하는 확률이 95%되는 구간을 구할 수 있다. 즉, 
@@ -101,7 +102,8 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzI4MjU1OSwtMjI2NjQ3NzE3LC0xOD
-IzODUwMDg3LDQwNzU4MzI2OSwxMTI3MzA0NTIzLC01MjgxNjAx
-MjgsLTM3NzU0NTk5NywxODY2NjE4Nzc5XX0=
+eyJoaXN0b3J5IjpbLTE0MzQxODY1NjUsLTYwNzI4MjU1OSwtMj
+I2NjQ3NzE3LC0xODIzODUwMDg3LDQwNzU4MzI2OSwxMTI3MzA0
+NTIzLC01MjgxNjAxMjgsLTM3NzU0NTk5NywxODY2NjE4Nzc5XX
+0=
 -->
