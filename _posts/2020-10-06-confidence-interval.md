@@ -63,7 +63,7 @@ $$
 
 식상으로는 $\overline{X}$와 $\mu$를 바꾸면 되지만, 그렇다고 해서 $\mu$를 확률변수 처럼 해석해서는 안된다. 
 
-### In words
+### In 
 
 말로 풀어보자. $\overline{X}$가 확률변수이므로 표본으로 추출되는 것은 이 녀석이다. 그렇다면, 95% 신뢰구간의 의미는 $\overline{X}$를 100번 뽑았을 때 95번에 대해서 저 구간의 참이라는 말이다. 즉, 우리가 지닌 표본 추출이 95번 정도는 대략 맞는다는 이야기다. 이제야 $\mu$ 구간의 의미를 알 수 있다. 미지의 모수 $\mu$는 대략 저 사이에 있을 것으로 95% 정도의 확실성으로 믿을 수 있다는 이야기다. 다시 강조하지만, $\mu$가 저 안에 있을 확률이 95%라는 말은 아니다. 
 
@@ -76,7 +76,7 @@ $$
 이제 ±3.1%의 의미도 이해가 될 것이다. "표본 오차"다. 표본 오차란 표본 평균의 표준 편차를 의미한다. 즉, 모집단의 표준 편차가 $\sigma$이고 각 표본이 독립적이고 동일한 방식으로 잘 표집 되었다면, 
 
 $$
-V(\overline{X}) =  \dfrac{1}{n^2} \sum_{k=1}^n V(X_k) = \dfrac{1}{n^2} n \sigma = \dfrac{\sigma}{n}.
+V(\overline{X}) =  \dfrac{1}{n^2} \sum_{i=1}^n V(x_i) = \dfrac{1}{n^2} n \sigma = \dfrac{\sigma}{n}.
 $$
 
 앞서 신뢰구간에서 본 1.96 옆에 곱해진 것이 표준 오차, 즉 표본 평균의 분산의 제곱근이다. 
@@ -102,8 +102,7 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTA4Mjc2NiwtNjA3MjgyNTU5LC0yMj
-Y2NDc3MTcsLTE4MjM4NTAwODcsNDA3NTgzMjY5LDExMjczMDQ1
-MjMsLTUyODE2MDEyOCwtMzc3NTQ1OTk3LDE4NjY2MTg3NzldfQ
-==
+eyJoaXN0b3J5IjpbODczNDExMTEsLTYwNzI4MjU1OSwtMjI2Nj
+Q3NzE3LC0xODIzODUwMDg3LDQwNzU4MzI2OSwxMTI3MzA0NTIz
+LC01MjgxNjAxMjgsLTM3NzU0NTk5NywxODY2NjE4Nzc5XX0=
 -->
