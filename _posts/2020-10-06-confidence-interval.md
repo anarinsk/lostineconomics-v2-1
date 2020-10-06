@@ -90,18 +90,18 @@ $$
 
 참 값 $p$가 속하는 범위를 95% 신뢰 수준에서 위와 같이 설정할 수 있다. 걸리는 부분은 분산이다. 베르누이 분포에서 분산은 $p(1-p)$로 계산된다. 물론 $p$를 모르기 때문에 이 녀석을 $\overline{p}$로 바꿔주고 분포를 $t$ 분포를 쓰면 되겠다. 이게 번거로운가? 분산을 몰라도 그럴듯한 표준 오차를 만들어는 방법이 있다. 
 
-최대 표준 오차라는 걸 생각해보자. 즉 분산 값이 가능한 범위에서 가장 큰 표준 오차를 생각해보자. 앞서 말했듯이 분산은 $p(1-p)$인데, 이는 $p$에 대해 이차식이다. 분산의 최대값은 $p=1/2$에서일 때 만들어지고, 이에 따른 표준 편차의 최대값이 $\dfrac{1}{2}$이다. 이를 대입하면 
+최대 표준 오차라는 걸 생각해보자. 즉 분산 값이 가능한 범위에서 가장 큰 표준 오차를 생각해보자. 앞서 말했듯이 분산은 $p(1-p)$인데, 이는 $p$에 대해 이차식이다. 분산의 최대값은 $p=\frac{1}{2}$에서일 때 만들어지고, 이에 따른 표준 편차의 최대값이 $\frac{1}{2}$이다. 이를 대입하면 
 
 $$
 1.96 \dfrac{1/2}{\sqrt{n}} < 2 \dfrac{1/2}{\sqrt{n}} = \dfrac{1}{\sqrt{n}}
 $$
 
-즉 95% 신뢰 수준의 최대 표준 오차는 $\dfrac{1}{\sqrt{n}}$로 쉽게 결정할 수 있다. 1,000 명 정도라면, $\sqrt{n}$은 32 정도 될 것이다. 1/32는 대략 3.1% 정도 된다. 천 명 조사에 3.1%를 많이 보게 되는 것은 우연이 아닌 것이다! 
+즉 95% 신뢰 수준의 최대 표준 오차는 $\frac{1}{\sqrt{n}}$로 쉽게 결정할 수 있다. 1,000 명 정도라면, $\sqrt{n}$은 32 정도 될 것이다. 1/32는 대략 3.1% 정도 된다. 천 명 조사에 3.1%를 많이 보게 되는 것은 우연이 아닌 것이다! 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjY0NzcxNywtMTgyMzg1MDA4Nyw0MD
-c1ODMyNjksMTEyNzMwNDUyMywtNTI4MTYwMTI4LC0zNzc1NDU5
-OTcsMTg2NjYxODc3OV19
+eyJoaXN0b3J5IjpbMTcwODA5OTY0MiwtMjI2NjQ3NzE3LC0xOD
+IzODUwMDg3LDQwNzU4MzI2OSwxMTI3MzA0NTIzLC01MjgxNjAx
+MjgsLTM3NzU0NTk5NywxODY2NjE4Nzc5XX0=
 -->
