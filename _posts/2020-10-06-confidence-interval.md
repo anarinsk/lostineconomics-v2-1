@@ -41,7 +41,7 @@ $$
 
 표본 평균 $\overline{X}$는 확률 변수다. 그런데 이 녀석이 정규 분포를 따를까? 중심 극한 정리에 따르면 $X$가 원래 어떤 분포를 따르는지와 무관하게 $n$이 충분히 크다면 $\overline {X} = \sum_{i=1}^n x_i$은 정규 분포를 따르게 된다. 잠깐! $\sigma$도 모르는데? 문제가 복잡해지니까 일단 안다고 치자.[^1]
 
-[^1]: 점근적으로 말하면, 즉 $n \to \infty$가 됨에 따라서, 표본 분산, $\lim_{n \to \infty} S_n = \sum_{i=1}^n \frac{{(x_i - \overline{x})^2}}{n-1} \to \sigma^2$이 된다. 
+[^1]: 점근적으로 살펴보자. $n \to \infty$가 되면서 표본 분산은 모 분산에 접근한다. 왜? 흔한 대수의 법ㅊ$\lim_{n \to \infty} S_n = \sum_{i=1}^n \frac{{(x_i - \overline{x})^2}}{n-1} \to \sigma^2$이 된다. 
 
 
 중심 극한 정리 덕분에 $\overline{X}$는 정규 분포를 따르게 되고, 따라서 $\overline{X}$가 속하는 확률이 95%되는 구간을 구할 수 있다. 즉, 
@@ -104,8 +104,8 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDk1NzE5MSwtNjA3MjgyNTU5LC0yMj
-Y2NDc3MTcsLTE4MjM4NTAwODcsNDA3NTgzMjY5LDExMjczMDQ1
-MjMsLTUyODE2MDEyOCwtMzc3NTQ1OTk3LDE4NjY2MTg3NzldfQ
-==
+eyJoaXN0b3J5IjpbNTQ1NzIzODk3LC01MzQ5NTcxOTEsLTYwNz
+I4MjU1OSwtMjI2NjQ3NzE3LC0xODIzODUwMDg3LDQwNzU4MzI2
+OSwxMTI3MzA0NTIzLC01MjgxNjAxMjgsLTM3NzU0NTk5NywxOD
+Y2NjE4Nzc5XX0=
 -->
