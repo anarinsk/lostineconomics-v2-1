@@ -75,7 +75,7 @@ $$
 
 이 말을 좀 나눠보자. 일단 1001 명은 표본 크기에 해당한다. 95% 신뢰 수준이란 것이 바로 위에서 살펴본 저 내용이다. 간혹 이 말을 듣고 해당 조사가 95% 신뢰할 수 있다고 생각하는 경우가 있는데, 그렇지 않다. 만일 같은 조사를 100번 반복한다면 그 중 95번 정도는 해당 오차가 참 값을 지니고 있게 된다는 뜻이다. 조사 결과의 신뢰성과는 관계가 없다. 만일 여론 조사에 알 수 없는 편향이 강하게 개입했다면 신뢰성은 95%는커녕 10%도 안될 수 있다. 반면 동일한 편향을 지닌 채 같은 조사를 100번 반복하면 95번 정도는 오차 범위를 고려한 수준에서 비슷하게 나올 것이라는 뜻이다. 
 
-이제 ±3.1%의 의미도 이해가 될 것이다. "표본 오차"다. 표본 오차란 표본 평균의 표준 편차를 의미한다. 즉, 모집단의 표준 편차가 $\sigma$이고 각 표본이 독립적이고 동일한 방식으로 잘 표집 되었다면, 
+이제 ±3.1%의 의미도 이해가 될 것이다. "표준 오차"다. 표준 오차란 표본 평균의 표준 편차를 의미한다. 즉, 모집단의 표준 편차가 $\sigma$이고 각 표본이 독립적이고 동일한 방식으로 잘 표집 되었다면, 
 
 $$
 V(\overline{X}) =  \dfrac{1}{n^2} \sum_{i=1}^n V(x_i) = \dfrac{1}{n^2} n \sigma = \dfrac{\sigma}{n}.
@@ -104,8 +104,9 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzgzNTM0NSwxMjE3Njc3NzIxLDU0Mz
-g5MjQwOCwtNTM0OTU3MTkxLC02MDcyODI1NTksLTIyNjY0Nzcx
-NywtMTgyMzg1MDA4Nyw0MDc1ODMyNjksMTEyNzMwNDUyMywtNT
-I4MTYwMTI4LC0zNzc1NDU5OTcsMTg2NjYxODc3OV19
+eyJoaXN0b3J5IjpbLTgwNTc0ODE1OSwxODEzODM1MzQ1LDEyMT
+c2Nzc3MjEsNTQzODkyNDA4LC01MzQ5NTcxOTEsLTYwNzI4MjU1
+OSwtMjI2NjQ3NzE3LC0xODIzODUwMDg3LDQwNzU4MzI2OSwxMT
+I3MzA0NTIzLC01MjgxNjAxMjgsLTM3NzU0NTk5NywxODY2NjE4
+Nzc5XX0=
 -->
