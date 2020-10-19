@@ -35,7 +35,7 @@ sudo fc-cache -fv
 ```shell
 > ./install_nanum.sh ⏎
 ```
-윈도에서 파일을 편집할 경우 `^M`이 달라 붙어 문제가 생기는 경우가 있다. 귀찮겟지만, docker 내부 터미널에서 `nano` 등으로 파일을 
+윈도에서 파일을 편집할 경우 `^M`이 달라 붙어 문제가 생기는 경우가 있다. 귀찮겟지만, docker 내부 터미널에서 `nano` 등으로 파일을 열어 해당 부분을 지우고 다시 저장하면 된다. 
 
 이제 도커 컨테이너 안의 이용한 주피터 노트북에서 다음과 같이 실행하면 나눔고딕 폰트를 쓸 수 있게 된다. 
 
@@ -51,7 +51,7 @@ font_manager._rebuild()
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTEyNTU2MSwxMjI4MDE5OTUzLDE0NT
-g1MTg1MCwtMTg3MDY3OTk0MiwxODIyNzM3NDM2LDEyOTI1MDEx
-NjQsLTQ4OTQyNDM2Nl19
+eyJoaXN0b3J5IjpbLTEyMTU5Nzc1OTcsMTIyODAxOTk1MywxND
+U4NTE4NTAsLTE4NzA2Nzk5NDIsMTgyMjczNzQzNiwxMjkyNTAx
+MTY0LC00ODk0MjQzNjZdfQ==
 -->
