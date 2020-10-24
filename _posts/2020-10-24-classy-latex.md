@@ -136,7 +136,7 @@ tlmgr update --all
  ![]({{ site.baseurl }}/images/latex/vscode_3.png){: style="textalign:center; " width="500"}  
 
 - 부착하면 새 창이 뜨면서 아래 녹색 창이 콘테이너 부착되었음을 알려준다. 
-- 콘테이너 내부에 Latex Workshop 확장을 설치해야 한다. 
+- 콘테이너 내부에 Latex Workshop 확장(extension)을 설치해야 한다. 
 
  ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="textalign:center; " width="500"}  
 
@@ -147,7 +147,7 @@ tlmgr update --all
 
 - 위 항목을 찾아서 적당한 포워딩 포트를 넣어준다. 
 - 포트가 잘 포워딩 된다면, 아래와 같이 VS Code에서 PDF 뷰어를 활성화할 수 있다. 
-- 포트 포워딩은 확장이 미비해서 설정해야 하는 내용이다 이후 확장의 업데이트를 통해 해결될 수 있다. 
+- 포트 포워딩은 Latex Workshop 확장의  미비함 때문에 설정해야 하는 내용이다 이후 해당 확장의 업데이트를 통해 해결될 수 있다. 
 
 ### Activating PDF Viewer
 
@@ -195,6 +195,7 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1Mj
-cxNzUyMywtMjA3ODM4NjAwMyw0MjE3NTIyMzddfQ==
+eyJoaXN0b3J5IjpbLTEyNTE5ODM5NDcsLTE0NjQyMjMwMjMsMT
+Q3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4NjAwMyw0MjE3NTIy
+MzddfQ==
 -->
