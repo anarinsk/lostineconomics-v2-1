@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T01:40:48-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T01:46:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;좀 쉽게 쓸 수 있는 방법이 없을까?&lt;/li&gt;
@@ -138,7 +138,7 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 
 &lt;ul&gt;
   &lt;li&gt;설치 후 해당 Extension의 설정을 고쳐주자.&lt;/li&gt;
-  &lt;li&gt;설정 위에 찾기에서 “pdf” 치면 pdf에 관련된 설정만 필터링된다.&lt;/li&gt;
+  &lt;li&gt;위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 “pdf” 치면 pdf에 관련된 설정만 필터링된다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
@@ -180,9 +180,9 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTE5ODM5NDcsLTE0NjQyMjMwMjMsMT
-Q3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4NjAwMyw0MjE3NTIy
-MzddfQ==
+eyJoaXN0b3J5IjpbLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMT
+Q2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2
+MDAzLDQyMTc1MjIzN119
 --&gt;</content><author><name></name></author><category term="statistics" /><summary type="html">박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.</summary></entry><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
 
 &lt;p&gt;통계학을 들은 사람들이라면 표준 오차는 대체로 잘 아는 내용이다. 순전히 개인적인 정리를 위한 용도다. 나이를 드니까 명민함이 떨어지고 당연하게 알고 있었던 것도 모르게 되는 경우가 많으니까.&lt;/p&gt;
