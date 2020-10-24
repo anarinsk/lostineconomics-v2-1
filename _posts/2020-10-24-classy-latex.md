@@ -99,7 +99,7 @@ VS Code에서의 활용은 아래 섹션을 참고하자.
 
 https://hub.docker.com/r/thomasweise/docker-pandoc/
 
-녀석을 도커에 마운트하자. 
+녀석을 도커에 마운트하자. WSL에서 도커를 쓰는 법은 [이 글](https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html)을 참고하라. 
 
 ```shell
 ​docker run -v /mnt/[YOUR-LOCAL]:/doc/ -t -i thomasweise/docker-pandoc
@@ -200,9 +200,9 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDgzNjk1NTEsMTkzMTI2NDk1Myw4MT
-IxNDI3NjMsLTE2OTg1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUx
-NDUsLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMy
-wxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1
-MjIzN119
+eyJoaXN0b3J5IjpbLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOT
+MxMjY0OTUzLDgxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4
+MzUsLTQ2OTE5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC
+0xNDY0MjIzMDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgz
+ODYwMDMsNDIxNzUyMjM3XX0=
 -->
