@@ -165,6 +165,13 @@ tlmgr update --all
 
  ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="500"}  
 
+## References 
+
+- https://yihui.org/tinytex/
+- https://github.com/thomasWeise/docker-texlive
+- http://wiki.ktug.org/wiki/wiki.php/LinuxInstall2014
+- 
+
 
 
 
@@ -186,5 +193,6 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbMTE1OTI2Njc4NywtMjA3ODM4NjAwMyw0Mj
+E3NTIyMzddfQ==
 -->
