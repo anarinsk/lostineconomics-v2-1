@@ -141,7 +141,7 @@ tlmgr update --all
  ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="textalign:center; " width="500"}  
 
 - 설치 후 해당 Extension의 설정을 고쳐주자. 
-- 설정 위에 찾기에서 "pdf" 치면 pdf에 관련된 설정만 필터링된다. 
+- 위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 "pdf" 치면 pdf에 관련된 설정만 필터링된다. 
 
  ![]({{ site.baseurl }}/images/latex/vscode_5.png){: style="textalign:center; " width="500"}  
 
@@ -195,7 +195,7 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTE5ODM5NDcsLTE0NjQyMjMwMjMsMT
-Q3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4NjAwMyw0MjE3NTIy
-MzddfQ==
+eyJoaXN0b3J5IjpbLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMT
+Q2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2
+MDAzLDQyMTc1MjIzN119
 -->
