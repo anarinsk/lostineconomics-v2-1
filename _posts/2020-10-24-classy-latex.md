@@ -167,8 +167,8 @@ tlmgr update --all
 
 ## References 
 
-- https://yihui.org/tinytex/
-- https://github.com/thomasWeise/docker-texlive
+- [tinytex](https://yihui.org/tinytex/)
+- [](https://hub.docker.com/r/thomasweise/docker-pandoc/)
 - http://wiki.ktug.org/wiki/wiki.php/LinuxInstall2014
 - https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port
 - 컴파일에 활용된 파일은 여기를 참고하라. 
@@ -195,6 +195,6 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMjA3OD
-M4NjAwMyw0MjE3NTIyMzddfQ==
+eyJoaXN0b3J5IjpbLTIyMTMxMzkwLDE0NzQzOTU2NjcsNTI3MT
+c1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
 -->
