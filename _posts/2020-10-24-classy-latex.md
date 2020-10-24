@@ -166,7 +166,7 @@ tlmgr update --all
 - 위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다. 
 - 옆에 원으로 표시해 둔 곳은 `Remote-Container` 확장으로 바로 가는 단축 아이콘이다. 
 
-이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. L
+이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. Latex Workshop이 설치되어 있다면, `.tex` 파일에 알아서 반응하니 걱정 마시라. 
 
  ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="1200"}  
 
@@ -200,7 +200,7 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTUzMTAwMCwxOTY2NjQyNDMyLDkxMj
+eyJoaXN0b3J5IjpbMTQzODg2MDk1NywxOTY2NjQyNDMyLDkxMj
 EzMDI4NiwtNzc5NzYzNTI4LC0xOTA4MzY5NTUxLDE5MzEyNjQ5
 NTMsODEyMTQyNzYzLC0xNjk4NTU4NTQ2LDMwOTcwNjgzNSwtND
 Y5MTk1MTQ1LC0xMDM2MzE2OTIsLTEyNTE5ODM5NDcsLTE0NjQy
