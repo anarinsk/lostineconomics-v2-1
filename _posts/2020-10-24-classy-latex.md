@@ -159,7 +159,14 @@ tlmgr update --all
 
 #### Container Setting 
 
-콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자. 이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. 
+콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자. 
+
+ ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="textalign:center; " width="800"}  
+
+- 위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다. 
+- 옆에 원ㅇ
+
+이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. 
 
  ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="800"}  
 
@@ -193,7 +200,8 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMz
-YzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1
-NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1MjIzN119
+eyJoaXN0b3J5IjpbLTY1OTA0ODM0OCwzMDk3MDY4MzUsLTQ2OT
+E5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIz
+MDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsND
+IxNzUyMjM3XX0=
 -->
