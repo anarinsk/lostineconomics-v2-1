@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T00:07:17-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T00:13:43-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Classy Latex</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="Classy Latex" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2020/10/24/classy-latex.html">&lt;hr /&gt;
+
+&lt;p&gt;layout: post
+toc: false
+comments: true
+title:  LaTeX in Modern Ways
+description: $\LaTeX$을 다시 써볼까?
+categories: [statistics]&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;좀 쉽게 쓸 수 있는 방법이 없을까?&lt;/li&gt;
+  &lt;li&gt;가볍게 쓸 수 있는 방법은 없을까?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이 두 가지를 놓고 해결책을 찾아봤다. 세 가지 정도 해법이 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;tinytex-with-r&quot;&gt;tinytex with R&lt;/h2&gt;
+
+&lt;p&gt;R의 문서 관련 패키지를 거의 혼자 만들고 있는 谢益辉(사익휘, 시에-이-휘)가 R에서 텍을 컴파일할 수 있도록 아주 가벼운 패키지 &lt;a href=&quot;https://yihui.org/tinytex/&quot;&gt;tinytex&lt;/a&gt;을 만들었다. R을 쓴다면, RStudio를 쓸 것이고 편집기로서 역할 역시 훌륭하다. 그냥 RStuido 자체를 텍 문서를 만들고 컴파일하는 용도로 써도 크게 부족함은 없을 것이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;install.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'devtools'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;devtools&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install_github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'yihui/tinytex'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tinytex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install_tinytex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;devtools 패키지를 설치한다.&lt;/li&gt;
+  &lt;li&gt;깃헙에서 tinytex이라는 R패키지를 설치한다.&lt;/li&gt;
+  &lt;li&gt;tinytex 패키지를 통해서 tinytex을 설치한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;간략하게 잘 컴파일 되는지 확인해보자.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;writeLines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\\documentclass{article}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\\begin{document}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello world!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\\end{document}'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'test.tex'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tinytex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdflatex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'test.tex'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test.tex&lt;/code&gt;이라는 파일을 쓰고&lt;/li&gt;
+  &lt;li&gt;예를 pdflatex으로 컴파일 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;compling-tex-directly&quot;&gt;Compling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tex&lt;/code&gt; directly&lt;/h3&gt;
+
+&lt;p&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tex&lt;/code&gt; 파일을 직접 컴파일 해보자. 테스트할 용도의 파일은 다음과 같다. 적당한 이름으로 아래의 tex 파일을 적당한 디렉토리에 생성하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\documentclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;article&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;kotex&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;\begin{document}&lt;/span&gt;
+Hello world! 한글은 어떠함?
+&lt;span class=&quot;nt&quot;&gt;\end{document}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tex&lt;/code&gt; 파일을 RStudio에서 열면 위에 pdf를 생성하는 버튼을 볼 수 있다. 이걸 실행해보도록 하자. 아마도 컴파일하면 에러를 만나게 될 것이다. 한글 패키지가 제대로 설치되어 있지 않기 때문이다. 텍도 마찬가지로 패키지들을 설치해야 할 때가 많다. 몇가지 방법이 있지만, 편리한 방법을 소개하겠다.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tinytex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse_install&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;! LaTeX Error: File `kotex.sty' not found.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;R로 돌아와서 발생한 에러 메시지를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text&lt;/code&gt;의 인자로 넣으면 어떤 패키지가 필요한지 인식해서 texlive에서 끌어와 설치한다. 설치 후 tex 패키지를 업데이트하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tinytex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tlmgr_update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tinytex::pdflatex('test.tex')&lt;/code&gt;을 실행하면 pdf가 잘 생성될 것이다. 다시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tex&lt;/code&gt; 파일로 와서 pdf 버튼을 눌러보자. 아마도 에러가 뜰 것이다. 방법 패키지를 설치했는데 왜 에러가 뜰까? 해법은 간단하다. 메뉴에서 다음과 같은 순서로 찾아들어가자.&lt;/p&gt;
+
+&lt;p&gt;&lt;kbd&gt;Tools&lt;/kbd&gt; -&amp;gt; &lt;kbd&gt;Global Options&lt;/kbd&gt; -&amp;gt; &lt;kbd&gt;Sweave&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;“Use tinytex when compling .tex files”을 체크해주자.&lt;/p&gt;
+
+&lt;h2 id=&quot;wsl--tinytex--vs-code&quot;&gt;WSL + Tinytex + VS Code&lt;/h2&gt;
+
+&lt;p&gt;사이휘는 tinytex을 R에서만 쓰도록 만들지 않았다. 리눅스 인스톨러를 제공한다. 이 블로그를 보신 분은 잘 알겠지만, 나는 WSL의 광팬이다. WSL에 tinytex을 깔고 녀석을 VS Code에 얹어서 쓰면 된다. 물론 맥OS, 윈도 인스톨러도 제공하니 관심이 있으시면 직접 확인을 하시면 되겠다. &lt;a href=&quot;https://yihui.org/tinytex/&quot;&gt;홈페이지&lt;/a&gt; 인스톨 섹션에서 확인하면 되겠다.&lt;/p&gt;
+
+&lt;p&gt;WSL 터미널에서 다음과 같이 실행하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;-qO-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://yihui.org/tinytex/install-bin-unix.sh&quot;&lt;/span&gt; | sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;기타 패키지 설치 등은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tlmgr&lt;/code&gt; 명령을 활용하면 된다. 위 홈페이지를 참고하면 되겠다.&lt;/p&gt;
+
+&lt;p&gt;VS Code에서는 어떤 확장을 쓰면 될까? &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop&quot;&gt;Latex Workshop&lt;/a&gt;이 PC에 깔리는 에디터 못지 않은 확장 기능을 제공한다.  extension의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings.json&lt;/code&gt;을 통해 다양한 컴파일 옵션도 제공하니 자세한 것은 위 페이지의 안내를 참고하면 되겠다. 일단 pdflatex을 쓴다고 가정하자.&lt;/p&gt;
+
+&lt;p&gt;VS Code에서의 활용은 아래 섹션을 참고하자.&lt;/p&gt;
+
+&lt;h2 id=&quot;texlive-with-docker&quot;&gt;TexLive with Docker!&lt;/h2&gt;
+
+&lt;p&gt;본격적으로 텍을 쓰는 사람이라면 어찌해야 하나? Tinytex은 임시 방편이고 많이 부족해 보일 것이다. Texlive를 온전하게 쓰고 싶다면? 역시 OS 별로 텍라이브를 까는 방법 밖에 없나? 이럴 때 손쉽게 동원할 수 있는 게 docker이다. 사실 unix 기본으로 설계되서 텍을 맥OS에 까는 것도 부담스럽고, 윈도는 더하다. 그냥 필요할 때 불러서 쓰고 치워버리는 게 최고다. 도커는 이런 용도로 쓰기에도 아주 적합하다.&lt;/p&gt;
+
+&lt;p&gt;내가 검색해본 바로는 공인 이미지는 없는 것 같다. 다양한 사용자 이미지 중에서 꽤 관리가 잘되는 것을 골라서 쓰면 되겠다. 내가 활용하는 이미지는 다음과 같다.&lt;/p&gt;
+
+&lt;p&gt;https://hub.docker.com/r/thomasweise/docker-pandoc/&lt;/p&gt;
+
+&lt;p&gt;녀석을 도커에 마운트하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;​docker run &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /mnt/[YOUR-LOCAL]:/doc/ &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; thomasweise/docker-pandoc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WSL이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt&lt;/code&gt; 디렉토리 아래 윈도의 디스크를 마운트한다. 따라서 저 아래 로컬 폴더의 주소를 넣으면 된다. 예를 들어, C의 doc라는 이름이라면, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c/doc&lt;/code&gt;를 넣으면 된다. 이렇게 두면 해당 폴더가 도커의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/doc&lt;/code&gt; 아래 연결된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;초기에 이것저것 깔아주고 초기화해야 하는 것들이 있다. 이 녀석들을 셸스크립트(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sh&lt;/code&gt;)로 만들어두자. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install_kotex.sh&lt;/code&gt; 라는 스크립트는 아래와 같이 만들어보자. 해당 스크립트는 위에 마운트하는 폴더에 넣어두면 좋다. 그러면 도커 이미지가 올라갔을 때 해당 스크립에 쉽게 접근할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+tlmgr init-usertree
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+tlmgr repository add https://cran.asia/KTUG/texlive/tlnet/ ktug
+&lt;span class=&quot;c&quot;&gt;#tlmgr pinning add ktug &quot;*&quot;&lt;/span&gt;
+tlmgr &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;collection-langkorean
+updmap &lt;span class=&quot;nt&quot;&gt;-sys&lt;/span&gt;
+updmap &lt;span class=&quot;nt&quot;&gt;-sys&lt;/span&gt;
+tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;상태를 초기화하고 한글을 까는 명령어들을 모아둔 것이다. 실행 중인 도커 내에서 해당 디렉토리로 이동해서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./install_kotex.sh&lt;/code&gt;로 명령을 실행하자.&lt;/p&gt;
+
+&lt;p&gt;이제 VS Code로 가자. 필요한 Extension은 앞서 살펴본 Latex workshop과 더불어 &lt;a href=&quot;https://code.visualstudio.com/docs/remote/remote-overview&quot;&gt;Remote-Container&lt;/a&gt;를 설치하자. 이 녀석을 설치하면 WSL 내에서 돌아가는 컨테이너 안에도 VS Code를 통해 바로 접속할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아래 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;lt;&lt;/code&gt;으로 된 부분을 클릭하면 상단에 메뉴가 뜬다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“attach to running container”를 실행해서 실행중인 도커 콘테이너를 부착한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;부착하면 새 창이 뜨면서 아래 녹색 창이 콘테이너 부착되었음을 알려준다.&lt;/li&gt;
+  &lt;li&gt;콘테이너 내부에 Latex Workshop 확장을 설치해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;설치 후 해당 Extension의 설정을 고쳐주자.&lt;/li&gt;
+  &lt;li&gt;설정 위에 찾기에서 “pdf” 치면 pdf에 관련된 설정만 필터링된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위 항목을 찾아서 적당한 포워딩 포트를 넣어준다.&lt;/li&gt;
+  &lt;li&gt;포트가 잘 포워딩 된다면, 아래와 같이 VS Code에서 PDF 뷰어를 활성화할 수 있다.&lt;/li&gt;
+  &lt;li&gt;포트 포워딩은 확장이 미비해서 설정해야 하는 내용이다 이후 확장의 업데이트를 통해 해결될 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;activating-pdf-viewer&quot;&gt;Activating PDF Viewer&lt;/h3&gt;
+
+&lt;p&gt;확장의 PDF 뷰어의 작동 방식 때문에 포트포워딩 선택을 해줘야 한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;port-forward&quot;&gt;Port Forward&lt;/h4&gt;
+
+&lt;p&gt;일단 확장 설정에서 적당히 포워딩될 포트를 설정해야 한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;container-setting&quot;&gt;Container Setting&lt;/h4&gt;
+
+&lt;p&gt;콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자.&lt;/p&gt;
+
+&lt;p&gt;이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbNDIxNzUyMjM3XX0=
+--&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
 
 &lt;p&gt;통계학을 들은 사람들이라면 표준 오차는 대체로 잘 아는 내용이다. 순전히 개인적인 정리를 위한 용도다. 나이를 드니까 명민함이 떨어지고 당연하게 알고 있었던 것도 모르게 되는 경우가 많으니까.&lt;/p&gt;
 
@@ -1308,233 +1488,4 @@ XX0=
       &lt;p&gt;멀티 클래스의 경우에 관해서는 &lt;a href=&quot;https://nittaku.tistory.com/295&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="machine-learning" /><category term="basics" /><summary type="html">Mission</summary></entry><entry><title type="html">wsl 2 + docker + vsc</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html" rel="alternate" type="text/html" title="wsl 2 + docker + vsc" /><published>2020-04-11T00:00:00-05:00</published><updated>2020-04-11T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html">&lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
-
-&lt;h3 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tensorflow = tf&lt;/li&gt;
-  &lt;li&gt;visual studio code = vsc&lt;/li&gt;
-  &lt;li&gt;windows subsystem for linux version 2 = wsl 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;rules&quot;&gt;Rules&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|foo|&lt;/code&gt;은 각자 환경에 맞게 설정해야 한다. 안에 쓴 단어는 되도록 해당 속성을 반영하고자 노력했다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;한마디로 이중 원격 접속이다. 즉 wsl 2 안에 설치한 리눅스(1단계 원격 접속) 안에서 돌아가는 도커 컨테이너(2단계 원격 접속)에 vsc로 접근하기.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;first-things-first&quot;&gt;First Things First&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;wsl 2를 세팅하자.&lt;/li&gt;
-  &lt;li&gt;docker desktop edge 버전 2.0 이상을 깔자. &lt;a href=&quot;https://docs.docker.com/docker-for-windows/wsl-tech-preview/&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;vsc&lt;/a&gt; 혹은 &lt;a href=&quot;https://code.visualstudio.com/insiders/&quot;&gt;vsc insider&lt;/a&gt;를 깔자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;앞 두 개는 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/wsl/2020/04/09/wsl2-walkthru.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;
-
-&lt;h2 id=&quot;pulling-docker-mage&quot;&gt;Pulling docker mage&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;이제 wsl 2를 통해 Ubuntu로 진입한다.&lt;/li&gt;
-  &lt;li&gt;도커가 제대로 설치되어 있다면 이미지들을 Ubuntu로 끌어올 수 있을 것이다. 시험 삼아서 tensorflow의 이미지를 끌어와보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; tensorflow/tensorflow:latest-py3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;이제 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl 2&lt;/code&gt; -&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; -&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt; 체제 아래 tf 컨테이너를 돌리는 데 성공했다! 사실 tf 설정이 조금 까다로울 수 있기 때문에(처음에 비해서는 많이 편리해졌다!) 이렇게 쓰는 편이 편할 수도 있다. 세 용은ttps://www.tensorflow.org/install/docker)를 참고하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;extensions-for-vsc&quot;&gt;Extensions for vsc&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;우리의 목적은 wsl 2 아래 설치된 Linux 안에서 도는 docker container에 vsc로 접근해 편안한 환경에서 코딩하는 것이다. 그런데 생각해보면 곤란한 점이 있다.&lt;/li&gt;
-  &lt;li&gt;vsc는 윈도에서 돌고 있다. 따라서 wsl 2를 거쳐 그 안에 깔린 ubuntu에 접근하는 것은 ‘원격’ 접속의 개념이다. 그래서 해당 vsc 익스텐션 이름도 “Remote WSL”이다. 그런데 그 ubuntu 안에 설치된 도커 안에 있는 컨테이너에 접속하려면 원격-원격 접속, 즉 이중 원격 접속이 되는 셈이다. 이게 돼?&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;원래는 
-&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Extensions에서 remote를 검색하면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote Development&lt;/code&gt;를 찾을 수 있다. 이 녀석은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote WSL&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote SSH&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote Container&lt;/code&gt; 세 개가 깔린다. 셋 다 유용한 extension이니 설치하도록 하자.&lt;/li&gt;
-  &lt;li&gt;docker extension은 깔아도 좋고 안 깔아도 좋지만 docker를 쓸 거라면 깔아두도록 하자.&lt;/li&gt;
-  &lt;li&gt;Extensions 중에서 remote explorer로 간 후 “container”를 선택하면 현재 돌아가고 있는 docker container를 확인할 수 있다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이 컨테이너를 vsc에 붙이면(attach) 끝이다! 허무하게 간단하다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;부착과 함께 별도의 창이 뜨면서 아래 그림처럼 윈도 앱 창 하단에서  컨테이너로의 이중 원격 접속이 잘 이루어졌음을 확인할 수 있다.
-    &lt;ul&gt;
-      &lt;li&gt;사실 이중 원격 접속이 아니다. docker가 wsl을 지원하기 때문에 vsc는 docker를 통해 바로 wsl 내에 돌고 있는 컨테이너에 접속하는 것이다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;컨테이너 익스텐션은 도커에 접속하기 위한 용도보다 훨씬 더 풍부하고 다양한 기능을 지니고 있다. 여기서는 도커 접속을 위한 도구로만 접근하도록 하자. 자세한 것은 &lt;a href=&quot;https://code.visualstudio.com/docs/remote/containers&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;trouble-shooting&quot;&gt;Trouble shooting&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;가끔 접속 단계에서 에러가 발생하는 경우가 있다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote - Container&lt;/code&gt; 익스텐션이 docker에 접속하지 못하면서 생기는 일로 추정된다. 내 경우는 아래의 작업으로 문제를 해결했다.&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Win + R&lt;/code&gt; 실행&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%appdata%&lt;/code&gt; 입력 후 엔터&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code - insider&lt;/code&gt; 폴더를 찾아서 지운다.&lt;/li&gt;
-  &lt;li&gt;vsc, vsc insider를 다시 실행한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;여튼 “disconnected from…” 메시지와 함께 컨테이너에 접속이 안되거나 접속에 문제가 생길 때 이 방법을 쓰시라.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;for-what&quot;&gt;For what?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;docker의 용도가 그렇지만 필요한 컨테이너를 끌어다가 마음껏 활용하고 문제가 생기면 버리면 된다. 도커를 쓴다면 사실 python 가상 환경조차 필요 없다. 필요한 패키지가 깔린 파이썬 환경을 만들어두고 도커로 끌어와 쓰면 그만이다.&lt;/li&gt;
-  &lt;li&gt;vsc가 윈도에서 돌기 때문에 작업중인 파일 등은 docker container 내에 두지 않아도 된다. 유연하다!&lt;/li&gt;
-  &lt;li&gt;재현 가능성은 연구에서만 문제가 되는 것이 아니다. 소프트웨어 개발에서 상호 의존성 때문에 구현된 환경을 관리하는 것이 못지 않게 중요하다. 도커는 이런 점에서 거의 완벽한 솔루션이다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;making-pandas-docker&quot;&gt;Making Pandas Docker&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이제까지 살펴본 내용을 바탕으로 아래의 요소를 지닌 도커를 만들어 보자.
-    &lt;ul&gt;
-      &lt;li&gt;ubuntu 18.04&lt;/li&gt;
-      &lt;li&gt;python 3.7&lt;/li&gt;
-      &lt;li&gt;pandas 1.0.3&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;먼저 이 될만한 컨테이너를 끌어와야 한다. 바탕이 될 만한 필요한 컨테이너는 왠만하면 Docker Hub에서 찾을 수 있다. 그리고 자신의 이미지를 관리하고 활용하고 싶다면, Docker Hub에도 가입해두도록 하자.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;도커 컨테이너를 제대로 빌드하려면 이것 보다는 살짝 복잡하다. 하지만 나는 언제나 야매지만 빠른 방법이 좋더라.&lt;/li&gt;
-  &lt;li&gt;윈도에서 wsl 기반의 도커를 쓰는 또 하나의 장점이 있다. 윈도 도커 앱이 wsl 내에서 돌고 있는 도커 컨테이너를 별도로 관리한다. 따라서 터미널로 wsl을 호출하고 있지 않은 상태에서도 wsl 내의 도커는 실행상태다. 따라서 터미널 앱 없이도 vsc에서 컨테이너에 접속해 작업이 가능하다.&lt;/li&gt;
-  &lt;li&gt;원 
-&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_8.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;pull-ubuntu-1804&quot;&gt;Pull ubuntu 18.04&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/_/ubuntu?tab=tags&quot;&gt;여기&lt;/a&gt;를 참고해서 필요한 컨테이너 이미지를 끌어오자. 내 경우는 18.04를 가져왔다.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker pull ubuntu:18.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이렇게 끌어온 이미지를 컨테이너에 태워 실행시켜보도록 하자.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; |image-id-of-container|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;이제 ubuntu 18.04 위에 ubuntu 18.04가 올라갔다! 재미있는 일이 아닌가!&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ubuntu를 깔았을 때 필요한 기본적인 작업을 하고, 파이썬을 깔고 필요한 패키지를 깐다. 기본적으로 local ubuntu에서 했던 일을 동일하게 해주면 된다. 단 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;는 붙일 필요가 없다. ubuntu 이미지 자체가 root로 태워져 있으므로 모든 명령어는 기본적으로 sudo가 붙어 있다고 보면 되겠다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;how-to-ommit--ag--ush-image&quot;&gt;How to ommit / ag / ush Image&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이렇게 별도의 작업을 거친 컨테이너는 애초에 끌고 왔던 이미지와는 달라졌을 것이다. 그런데 도커의 속성상 콘테이너를 내리게 되면 변경했던 내용들은 다 사라진다. 이렇게 변경된 콘테이너를 저장할 수 있어야 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker ps 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker commit |container-name or id-of-container| |name-of-image|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이제 저장된 이미지를 확인해보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker images 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이렇게 확인된 이미지 중에서 docker hub로 보내고 싶은 이미지에 태그를 걸어준다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker tag |image-id| |id-of-docker-hub/name-of-docker-hub-image| 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;다시 이미지를 조회해보면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|id-of-docker-hub/name-of-docker-hub-image|&lt;/code&gt; 이미지가 생성되었을 것이다. 이제 이 이미지를 도커 허브로 푸시하면 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker push |id-of-docker-hub/name-of-docker-hub-image|
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이미지의 상태가 지저분하다고 느끼면 다 지우고 다시 pull 하면 된다. 이미지를 모두 삭제하려면, 아래와 같이 실행하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker rmi &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;docker images &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;기본적인 Ubuntu update와 python3.7 그리고 pandas, matplotlib가 설치된 이미지를 당겨와 실행해보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; anarinsk/py37-pandas 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;위에서 설명한대로 vsc를 통해 작업하면 된다. 안에  testcode.py라는 간략한 실험 코드를 넣어 두었다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsldockervsc/fig_6.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;사실 빌드를 이렇게 수작업으로는 할 수 없는 일이 아닌가? 도커 자체에서 만든 빌드를 위한 마크업 랭귀지가 따로 있고 이 녀석을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; 이라는 형태를 통해서 구현할 수 있다.&lt;/li&gt;
-  &lt;li&gt;도커 컨테이너를 생성하는 데 필요한 단계를 넣어두고 빌드에 성공하면 해당 이미지가 생성되는 편리한 방식을 따르고 있다.&lt;/li&gt;
-  &lt;li&gt;도커 허브에서는 github와 연결하여 github에 새로운 내용이 커밋되었을 자동으로 도커 허브의 빌드를 구현해주는 자동화 빌드까지 구현되어 있다.&lt;/li&gt;
-  &lt;li&gt;도커 빌드에 관해서 보다 상세한 사항은 &lt;a href=&quot;https://www.44bits.io/ko/post/how-docker-image-work&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDg0NTEzLDIwMTQ1NzMyMjIsNDA4Mj
-QyNzE1LC0xMTg3ODc0NDAyLDg4NjI5NTgyNSwtMTQ4MjA2Mzcw
-NiwtNTE1ODcwOTY2LC00MjQyNjkwMCwxMDA4MDM3MDE4LDc1NT
-c2ODQ1NiwxOTY2MTc5MDA0LC00OTE1NTY2MzAsMTU4MjM2NjU4
-MiwxNzIxMzMxNjc5LDY1OTU4MTA3NSwtMTYyOTQ1NDAyMCwtOD
-M2OTcwNzE1LDU1NTc4OTI3OSwxODEwNzYzMzkxLDE2NjkxNDMy
-MDJdfQ==
---&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;출처는 &lt;a href=&quot;https://stackoverflow.com/questions/47689536/uninstall-visual-studio-code-in-windows&quot;&gt;여기&lt;/a&gt;. 경우에 따라서는 소프트웨어 전체를 언인스톨해야 하는 경우가 있을지도 모르겠다. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;사족을 달자면 데이터 사이언스 그리고 컴퓨터 작업이 중요해지는 분야라면 학술이든 산업이든 실용이든 도커의 활용이 필수적이라고 생각한다. 그렇게 갈 것이다, 마… &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;ubuntu 보다 가벼운 alpine 같은 리눅스 버전을 써보면 어떨까? &lt;a href=&quot;https://pythonspeed.com/articles/alpine-docker-python/&quot;&gt;여기&lt;/a&gt;에 따르면 별로 좋지는 않다고 한다. 용량이나 성능의 큰 이슈가 없다면 그냥 ubuntu를 쓰는 편이 좋을 듯 하다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="wsl" /><category term="visual-studio-code" /><category term="docker" /><summary type="html">Assumptions</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="machine-learning" /><category term="basics" /><summary type="html">Mission</summary></entry></feed>
