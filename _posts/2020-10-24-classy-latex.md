@@ -168,11 +168,11 @@ tlmgr update --all
 ## References 
 
 - [tinytex](https://yihui.org/tinytex/)
-- [](https://hub.docker.com/r/thomasweise/docker-pandoc/)
-- http://wiki.ktug.org/wiki/wiki.php/LinuxInstall2014
-- https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port
+- [texlive 도커 이미지](https://hub.docker.com/r/thomasweise/docker-pandoc/)
+- [kotex 리눅스 설치](http://wiki.ktug.org/wiki/wiki.php/LinuxInstall2014)
+- [VS Code Remote-Cotainer 포트 포워딩](https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port)
 - 컴파일에 활용된 파일은 여기를 참고하라. 
-	- https://github.com/anarinsk/test-vscode-latex
+	- [https://github.com/anarinsk/test-vscode-latex]( https://github.com/anarinsk/test-vscode-latex)
 
 
 
@@ -195,6 +195,6 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTMxMzkwLDE0NzQzOTU2NjcsNTI3MT
-c1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbLTE0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1Mj
+cxNzUyMywtMjA3ODM4NjAwMyw0MjE3NTIyMzddfQ==
 -->
