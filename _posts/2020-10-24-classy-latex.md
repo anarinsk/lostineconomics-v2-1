@@ -87,7 +87,7 @@ wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh
 
 기타 패키지 설치 등은 `tlmgr` 명령을 활용하면 된다. 위 홈페이지를 참고하면 되겠다. 
 
-VS Code에서는 어떤 확장을 쓰면 될까? [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)이 PC에 깔리는 에디터 못지 않은 확장 기능을 제공한다.  extension의 `settings.json`을 통해 다양한 컴파일 옵션도 제공하니 자세한 것은 위 페이지의 안내를 참고하면 되겠다. 일단 pdflatex을 쓴다고 가정하자. 
+VS Code에서는 어떤 확장을 쓰면 될까? [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)이 어떤 전용 에디터 못지 않은 풍부하고 다양한 확장 기능을 제공한다.  extension의 `settings.json`을 통해 다양한 컴파일 옵션도 제공하니 자세한 것은 위 페이지의 안내를 참고하면 되겠다. 일단 pdflatex을 쓴다고 가정하자. 
 
 VS Code에서의 활용은 아래 섹션을 참고하자. 
 
@@ -200,9 +200,10 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyMTMwMjg2LC03Nzk3NjM1MjgsLTE5MD
-gzNjk1NTEsMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OTg1NTg1
-NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5MiwtMT
-I1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3
-NTIzLC0yMDc4Mzg2MDAzLDQyMTc1MjIzN119
+eyJoaXN0b3J5IjpbMTk2NjY0MjQzMiw5MTIxMzAyODYsLTc3OT
+c2MzUyOCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLDgxMjE0Mjc2
+MywtMTY5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5NTE0NSwtMT
+AzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMDIzLDE0NzQz
+OTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX
+0=
 -->
