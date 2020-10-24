@@ -163,7 +163,7 @@ tlmgr update --all
 
 이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="500"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="800"}  
 
 ## References 
 
@@ -195,7 +195,7 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMT
-Q2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2
-MDAzLDQyMTc1MjIzN119
+eyJoaXN0b3J5IjpbLTQ2OTE5NTE0NSwtMTAzNjMxNjkyLC0xMj
+UxOTgzOTQ3LC0xNDY0MjIzMDIzLDE0NzQzOTU2NjcsNTI3MTc1
+MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
 -->
