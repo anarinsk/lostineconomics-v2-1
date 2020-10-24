@@ -71,7 +71,7 @@ tinytex::tlmgr_update()
 
 이제 `tinytex::pdflatex('test.tex')`을 실행하면 pdf가 잘 생성될 것이다. 다시 `.tex` 파일로 와서 pdf 버튼을 눌러보자. 아마도 에러가 뜰 것이다. 방법 패키지를 설치했는데 왜 에러가 뜰까? 해법은 간단하다. 메뉴에서 다음과 같은 순서로 찾아들어가자. 
 
-<kbd>Tools</kbd> -> <kbd>Global Options</kbd> -> <kbd>Sweave</kbd>
+<kbd>Tools</kbd> > <kbd>Global Options</kbd> > <kbd>Sweave</kbd>
 
 "Use tinytex when compling .tex files"을 체크해주자.
 
@@ -195,6 +195,6 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNz
-UyMjM3XX0=
+eyJoaXN0b3J5IjpbMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMjA3OD
+M4NjAwMyw0MjE3NTIyMzddfQ==
 -->
