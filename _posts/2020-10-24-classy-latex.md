@@ -147,7 +147,7 @@ tlmgr update --all
 
 - 위 항목을 찾아서 적당한 포워딩 포트를 넣어준다. 
 - 포트가 잘 포워딩 된다면, 아래와 같이 VS Code에서 PDF 뷰어를 활성화할 수 있다. 
-- 포트 포워딩은 Latex Workshop 확장의  미비함 때문에 설정해야 하는 내용이다 이후 해당 확장의 업데이트를 통해 해결될 수 있다. 
+- 포트 포워딩 설정은 Latex Workshop 확장의  미비함 때문에 필요하다. 이후 해당 확장의 업데이트를 통해 해결될 것으로 기대한다. 
 
 ### Activating PDF Viewer
 
@@ -200,9 +200,9 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOT
-MxMjY0OTUzLDgxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4
-MzUsLTQ2OTE5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC
-0xNDY0MjIzMDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgz
-ODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbOTEyMTMwMjg2LC03Nzk3NjM1MjgsLTE5MD
+gzNjk1NTEsMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OTg1NTg1
+NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5MiwtMT
+I1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3
+NTIzLC0yMDc4Mzg2MDAzLDQyMTc1MjIzN119
 -->
