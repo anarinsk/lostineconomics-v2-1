@@ -170,7 +170,9 @@ tlmgr update --all
 - https://yihui.org/tinytex/
 - https://github.com/thomasWeise/docker-texlive
 - http://wiki.ktug.org/wiki/wiki.php/LinuxInstall2014
-- 
+- https://code.visualstudio.com/docs/remote/ssh#_temporarily-forwarding-a-port
+- 컴파일에 활용된 파일은 여기를 참고하라. 
+	- https://github.com/anarinsk/test-vscode-latex
 
 
 
@@ -193,6 +195,6 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTI2Njc4NywtMjA3ODM4NjAwMyw0Mj
-E3NTIyMzddfQ==
+eyJoaXN0b3J5IjpbNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNz
+UyMjM3XX0=
 -->
