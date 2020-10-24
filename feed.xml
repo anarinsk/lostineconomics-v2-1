@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T01:59:07-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T01:59:42-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니니까.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;좀 쉽게 쓸 수 있는 방법이 없을까?&lt;/li&gt;
@@ -165,7 +165,7 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 
 &lt;ul&gt;
   &lt;li&gt;위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다.&lt;/li&gt;
-  &lt;li&gt;옆에 원ㅇ&lt;/li&gt;
+  &lt;li&gt;옆에 원으로 표시해 둔 곳은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote-Container&lt;/code&gt; 확장으로 바로 가는 단축 아이콘이다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다.&lt;/p&gt;
@@ -187,7 +187,7 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTA0ODM0OCwzMDk3MDY4MzUsLTQ2OT
+eyJoaXN0b3J5IjpbMTI3NDg1NTEyNywzMDk3MDY4MzUsLTQ2OT
 E5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIz
 MDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsND
 IxNzUyMjM3XX0=
