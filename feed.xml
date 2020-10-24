@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T02:26:11-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-24T03:47:32-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;좀 쉽게 쓸 수 있는 방법이 없을까?&lt;/li&gt;
@@ -89,7 +89,7 @@ Hello world! 한글은 어떠함?
 
 &lt;p&gt;https://hub.docker.com/r/thomasweise/docker-pandoc/&lt;/p&gt;
 
-&lt;p&gt;녀석을 도커에 마운트하자.&lt;/p&gt;
+&lt;p&gt;녀석을 도커에 마운트하자. WSL에서 도커를 쓰는 법은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/wsl/visual-studio-code/docker/2020/04/11/wsl2+docker+vsc.html&quot;&gt;이 글&lt;/a&gt;을 참고하라.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;​docker run &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; /mnt/[YOUR-LOCAL]:/doc/ &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; thomasweise/docker-pandoc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -187,11 +187,11 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDgzNjk1NTEsMTkzMTI2NDk1Myw4MT
-IxNDI3NjMsLTE2OTg1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUx
-NDUsLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMy
-wxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1
-MjIzN119
+eyJoaXN0b3J5IjpbLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOT
+MxMjY0OTUzLDgxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4
+MzUsLTQ2OTE5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC
+0xNDY0MjIzMDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgz
+ODYwMDMsNDIxNzUyMjM3XX0=
 --&gt;</content><author><name></name></author><category term="latex" /><category term="rstat" /><category term="doc-tech" /><summary type="html">박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.</summary></entry><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
 
 &lt;p&gt;통계학을 들은 사람들이라면 표준 오차는 대체로 잘 아는 내용이다. 순전히 개인적인 정리를 위한 용도다. 나이를 드니까 명민함이 떨어지고 당연하게 알고 있었던 것도 모르게 되는 경우가 많으니까.&lt;/p&gt;
