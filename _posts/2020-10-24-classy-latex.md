@@ -129,7 +129,7 @@ tlmgr update --all
 
 - 아래 `><`으로 된 부분을 클릭하면 상단에 메뉴가 뜬다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_2.png){: style="textalign:center; " width="500"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_2.png){: style="textalign:center; " width="550"}  
 
 - "attach to running container"를 실행해서 실행중인 도커 콘테이너를 부착한다. 
 
@@ -143,7 +143,7 @@ tlmgr update --all
 - 설치 후 해당 Extension의 설정을 고쳐주자. 
 - 위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 "pdf" 치면 pdf에 관련된 설정만 필터링된다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_5.png){: style="textalign:center; " width="500"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_5.png){: style="textalign:center; " width="550"}  
 
 - 위 항목을 찾아서 적당한 포워딩 포트를 넣어준다. 
 - 포트가 잘 포워딩 된다면, 아래와 같이 VS Code에서 PDF 뷰어를 활성화할 수 있다. 
@@ -168,7 +168,7 @@ tlmgr update --all
 
 이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="1000"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="1200"}  
 
 ## References 
 
@@ -200,8 +200,9 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OT
-g1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5
-MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LD
-UyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1MjIzN119
+eyJoaXN0b3J5IjpbLTE5MDgzNjk1NTEsMTkzMTI2NDk1Myw4MT
+IxNDI3NjMsLTE2OTg1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUx
+NDUsLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMy
+wxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1
+MjIzN119
 -->
