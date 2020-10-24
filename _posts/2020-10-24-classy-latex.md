@@ -1,4 +1,3 @@
-
 ---
 layout: post
 toc: false
@@ -187,5 +186,5 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4Njc5ODczLDQyMTc1MjIzN119
+eyJoaXN0b3J5IjpbLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
 -->
