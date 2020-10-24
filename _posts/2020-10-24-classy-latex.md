@@ -4,7 +4,7 @@ toc: false
 comments: true
 title:  LaTeX in Modern Ways
 description: $\LaTeX$을 다시 써볼까?
-categories: [statistics]
+categories: [latex, rstat, doc-tech]
 
 ---
 
@@ -200,8 +200,8 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEyMTQyNzYzLC0xNjk4NTU4NTQ2LDMwOT
-cwNjgzNSwtNDY5MTk1MTQ1LC0xMDM2MzE2OTIsLTEyNTE5ODM5
-NDcsLTE0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMj
-A3ODM4NjAwMyw0MjE3NTIyMzddfQ==
+eyJoaXN0b3J5IjpbLTk0NTM5OTgwMSw4MTIxNDI3NjMsLTE2OT
+g1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5
+MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LD
+UyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1MjIzN119
 -->
