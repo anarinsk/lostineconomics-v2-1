@@ -71,7 +71,7 @@ $$
 즉, 임의의아이겐밸류, 아이겐벡터 정의에서 $\boldsymbol 0$ 벡터가 아닌 매트릭스 $x$를 $\boldsymbol 0$ 벡터로 만들기 위해서는 위의 행렬식 값이 0이어야 한다. 행렬식이 $\lambda$의 $n$ 차 방정식이고, $n$차 방정식의 근이 각각 아이겐밸류가 된다. 즉, 
 
 $$
-|(\boldsymbol{A} - \lambda {\boldsymbol I})|  = (\lambda_1 - \lambda) \dotsb  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda) 
+|(\boldsymbol{A} - \lambda {\boldsymbol I})|  = (\lambda_1 - \lambda) \cdot  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda) 
 $$
 
 위의 식에서 두가지 사실을 알 수 있다. 
