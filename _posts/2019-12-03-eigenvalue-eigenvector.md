@@ -213,14 +213,14 @@ $$
 \boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1} =  \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{T} 
 $$
 
-### Graphic interpretation 
+### Graphic interpretation with vector space 
 
-그림으로 이해하면 어떨까? 대각화라는 것은 행렬 $A$의 성분을 아이겐벡터로 재정렬해주기 위해서 축을 회전하는 것과 같은 개념이다. 이때 축의 스케일링을 담당하는 것이 가운데 대각 행렬이다. 
+앞서의 식을 다시 음미해보자. 
 
-<p align="center"><kbd>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
-</kbd></p>
+$$
+AQ = A[x_1
+$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIxMDk5OTAsNzU2MDY2NzUwLC0zMz
-MzODU5NCw1NTM5NjE2MDIsLTIxMTE5OTI5OTZdfQ==
+eyJoaXN0b3J5IjpbLTM0MzUyNTExMSw3NTYwNjY3NTAsLTMzMz
+M4NTk0LDU1Mzk2MTYwMiwtMjExMTk5Mjk5Nl19
 -->
