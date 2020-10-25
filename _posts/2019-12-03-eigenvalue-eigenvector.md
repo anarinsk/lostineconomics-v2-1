@@ -145,7 +145,7 @@ $$
 \begin{aligned}
 \boldsymbol{Q}z & = \boldsymbol{A} \boldsymbol{Q} w \\
 z & = \boldsymbol{Q}^{-1} \boldsymbol{A} \boldsymbol{Q} w \\
-z & = \boldsymbol{Q}' \boldsymbol{A} \boldsymbol{Q} w 
+z & = \boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} w 
 \end{aligned}
 $$
 
