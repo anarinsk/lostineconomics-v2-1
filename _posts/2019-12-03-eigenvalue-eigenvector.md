@@ -235,9 +235,9 @@ $$
 
  ![](https://i.stack.imgur.com/JZF5m.gif){: style="textalign:center; " width="550"}  
 
-PCA의 예를 들어보자. $x-y$ 축 위에 찍힌 점들에 대해서 변동성(분산-공분산 행렬)이 큰 방향으로 축을 바꾸면 어떻게 될까? 위에서 보는 PCA의 새로운 축은 아이겐벡터를 중심으로 재 정렬하
+PCA의 예를 들어보자. $x-y$ 축 위에 찍힌 점들에 대해서 변동성(분산-공분산 행렬)이 큰 방향으로 축을 바꾸면 어떻게 될까? 위에서 보는 PCA의 새로운 축은 아이겐벡터를 중심으로 재정렬한 상태를 나타낸다. 이 축에 할당된 변동성의 크기는 각각 축의 아이겐밸류가 된다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk3Nzc4NDQsNTIxNTE4MzE4LDc1Nj
-A2Njc1MCwtMzMzMzg1OTQsNTUzOTYxNjAyLC0yMTExOTkyOTk2
-XX0=
+eyJoaXN0b3J5IjpbLTQ3NzQ0NDc5Niw1MjE1MTgzMTgsNzU2MD
+Y2NzUwLC0zMzMzODU5NCw1NTM5NjE2MDIsLTIxMTE5OTI5OTZd
+fQ==
 -->
