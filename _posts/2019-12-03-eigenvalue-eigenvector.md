@@ -156,8 +156,8 @@ $$
 $$
 \boldsymbol{A} \boldsymbol{Q} = [A v_1, A v_2] = [\lambda_1 v_1, \lambda_2 v_2] = [v_1, v_2] 
  \begin{bmatrix}  
-  \lambda_1, 0 \\  
-  0, \lambda_2 
+  \lambda_1 & 0 \\  
+  0 & \lambda_2 
 \end{bmatrix} = \boldsymbol{Q} \boldsymbol{\lambda}.
 $$
 
