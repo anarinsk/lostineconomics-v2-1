@@ -221,6 +221,6 @@ $$
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
 </kbd></p>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2MDY2NzUwLC0zMzMzODU5NCw1NTM5Nj
-E2MDIsLTIxMTE5OTI5OTZdfQ==
+eyJoaXN0b3J5IjpbLTEzODIxMDk5OTAsNzU2MDY2NzUwLC0zMz
+MzODU5NCw1NTM5NjE2MDIsLTIxMTE5OTI5OTZdfQ==
 -->
