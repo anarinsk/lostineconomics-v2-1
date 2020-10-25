@@ -233,10 +233,11 @@ $$
 
 이것 역시 벡터 (서브) 스페이스를 형성한다. 여기서 서브 스페이스의 축은 아이겐벡터가 되고, 그 크기를 좌우하는 것은 아이겐벡터가 된다. 이렇게 살펴보면, 왜 아이겐벡터-아이겐밸류가 선형 변환 함수 $A$의 축과 크기를 바꾸는 것인지 이해할 수 있다. 
 
- ![](){: style="textalign:center; " width="550"}  
+ ![](https://i.stack.imgur.com/JZF5m.gif){: style="textalign:center; " width="550"}  
 
+PCA의 예를 들어보자. $x-y$ 축 위에 찍힌 점들에 대해서 변동성(분산-공분산 행렬)이 큰 방향으로 축을 바꾸면 어떻게 될까? 위에서 보는 PCA의 새로운 축은 아이겐벡터를 중심으로 재 정렬하
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI0MjcwMzEsNTIxNTE4MzE4LDc1Nj
+eyJoaXN0b3J5IjpbLTEyMzk3Nzc4NDQsNTIxNTE4MzE4LDc1Nj
 A2Njc1MCwtMzMzMzg1OTQsNTUzOTYxNjAyLC0yMTExOTkyOTk2
 XX0=
 -->
