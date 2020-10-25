@@ -224,9 +224,15 @@ $$
 $A x_i$는 $A$라는 일종의 함수에 의해 선형 변형된 벡터를 나타낸다. 이러한 벡터를 모아 놓은 것이 $AQ$이다. 이는 벡터 (서브) 스페이스를 형성한다. 
 
 $$
-Q \lambda 
+Q \lambda = [x_1, \dotsc, x_n] \begin{bmatrix}
+\lambda_1& \dotsc & 0  \\
+\vdots& \ddots& \vdots \\
+0& \dotsc& \lambda_n
+\end{bmatrix} 
 $$
+
+이것 역시 벡터 (서브) 스페이스를 형성한다. 여기서 서브 스페이스의 축은 아이겐벡터가 되고, 그 크를 ㅈ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDgxMTEwNyw3NTYwNjY3NTAsLTMzMz
-M4NTk0LDU1Mzk2MTYwMiwtMjExMTk5Mjk5Nl19
+eyJoaXN0b3J5IjpbLTE4ODkwNDI4MDEsNzU2MDY2NzUwLC0zMz
+MzODU5NCw1NTM5NjE2MDIsLTIxMTE5OTI5OTZdfQ==
 -->
