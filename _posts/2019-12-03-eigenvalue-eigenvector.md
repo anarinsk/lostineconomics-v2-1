@@ -218,9 +218,15 @@ $$
 앞서의 식을 다시 음미해보자. 
 
 $$
-AQ = A[x_1
+AQ = A[x_1, \dotsc, x_n] 
+$$
+
+$A x_i$는 $A$라는 일종의 함수에 의해 선형 변형된 벡터를 나타낸다. 이러한 벡터를 모아 놓은 것이 $AQ$이다. 이는 벡터 (서브) 스페이스를 형성한다. 
+
+$$
+Q \lambda 
 $$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzUyNTExMSw3NTYwNjY3NTAsLTMzMz
+eyJoaXN0b3J5IjpbMTMzMDgxMTEwNyw3NTYwNjY3NTAsLTMzMz
 M4NTk0LDU1Mzk2MTYwMiwtMjExMTk5Mjk5Nl19
 -->
