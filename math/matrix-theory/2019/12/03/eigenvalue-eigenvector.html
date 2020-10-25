@@ -138,7 +138,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#diagonalizable">Diagonalizable</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#symmetric-matrix">Symmetric matrix</a></li>
-<li class="toc-entry toc-h3"><a href="#graphic-interpretation">Graphic interpretation</a></li>
+<li class="toc-entry toc-h3"><a href="#graphic-interpretation-with-vector-space">Graphic interpretation with vector space</a></li>
 </ul>
 </li>
 </ul><h2 id="tldr">
@@ -324,18 +324,16 @@ z &amp; = \boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} w
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold-italic">A</mi><mo>=</mo><mi mathvariant="bold-italic">Q</mi><mi mathvariant="bold-italic">λ</mi><msup><mi mathvariant="bold-italic">Q</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi mathvariant="bold-italic">Q</mi><mi mathvariant="bold-italic">λ</mi><msup><mi mathvariant="bold-italic">Q</mi><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">\boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1} =  \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">A</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.084558em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">Q</span></span></span><span class="mord"><span class="mord"><span class="mord boldsymbol">λ</span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">Q</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.890118em;"><span style="top:-3.13901em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.111781em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">Q</span></span></span><span class="mord"><span class="mord"><span class="mord boldsymbol">λ</span></span></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol">Q</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.917341em;"><span style="top:-3.1390100000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span></span></span></span></span>
 
-<h3 id="graphic-interpretation">
-<a class="anchor" href="#graphic-interpretation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphic interpretation</h3>
+<h3 id="graphic-interpretation-with-vector-space">
+<a class="anchor" href="#graphic-interpretation-with-vector-space" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphic interpretation with vector space</h3>
 
-<p>그림으로 이해하면 어떨까? 대각화라는 것은 행렬 $A$의 성분을 아이겐벡터로 재정렬해주기 위해서 축을 회전하는 것과 같은 개념이다. 이때 축의 스케일링을 담당하는 것이 가운데 대각 행렬이다.</p>
+<p>앞서의 식을 다시 음미해보자.</p>
 
-<p align="center"><kbd>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Diagonalization_as_rotation.gif" width="500">
-</kbd></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>Q</mi><mo>=</mo><mi>A</mi><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">AQ = A[x_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">Q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mopen">[</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIxMDk5OTAsNzU2MDY2NzUwLC0zMz
-MzODU5NCw1NTM5NjE2MDIsLTIxMTE5OTI5OTZdfQ==
--->
+eyJoaXN0b3J5IjpbLTM0MzUyNTExMSw3NTYwNjY3NTAsLTMzMz
+M4NTk0LDU1Mzk2MTYwMiwtMjExMTk5Mjk5Nl19
+--></p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
