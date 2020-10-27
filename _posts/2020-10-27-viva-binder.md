@@ -36,7 +36,7 @@ categories: [coding, coding-tool]
  
  ![]({{ site.baseurl }}/images/binder/gwcho_5.png){: style="textalign:center; " width="500"}  
  
-장점은 충분히 많다. 코드가 제대로 구현되는지 확인하는 수준이거나 코드를 가끔 짧은 시간 동안 실행해야 하는 정도라면 더 이상 뭘 할 것이 없다. 단점이라면 도커 이미지를 빌드하고 녀석을 푸시해 실행할 때까지 시간이 좀 걸린다는 것인데, 뭐 이 정도 시간 비용 쯤은 참아야 하지 않을까? 
+장점은 충분히 많다. 코드가 제대로 구현되는지 확인하는 수준이거나 코드를 가끔 짧은 시간 동안 실행해야 하는 정도라면 더 이상 바랄 게 없다. 단점이라면 도커 이미지를 빌드하고 녀석을 푸시해 실행할 때까지 시간이 좀 걸린다는 것인데, 뭐 이 정도 시간 비용 쯤이야! 
 
 
 
@@ -45,5 +45,5 @@ categories: [coding, coding-tool]
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTk1MzE2MTNdfQ==
+eyJoaXN0b3J5IjpbLTUwNjYzNDk0MCwtMTIxOTUzMTYxM119
 -->
