@@ -1,6 +1,6 @@
 ---
 layout: post
-toc: true
+toc: false
 comments: true
 title: Understanding Regression
 description: 회귀분석, 기하학적으로 한 방에 깨우치기 
@@ -149,7 +149,7 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTUyNjYyNzMsLTE5Mjc0MzMwODMsLT
-E1OTU2NjY0NDcsMzg0NDE2NTE1LDE4OTI5NTA3NjksNTIyMjA4
-NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbMTg3ODY3NzA1NCwtMTkyNzQzMzA4MywtMT
+U5NTY2NjQ0NywzODQ0MTY1MTUsMTg5Mjk1MDc2OSw1MjIyMDg0
+NTAsLTIwNzY4OTYzMTZdfQ==
 -->
