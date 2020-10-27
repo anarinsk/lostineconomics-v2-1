@@ -14,7 +14,7 @@ categories: [math, econometrics]
 
 - 회귀분석을 선형 대수를 통해서 이해하면 새로운 깨달음을 얻을 수 있다. 
 - 회귀분석이라는 것은 PCA와 마찬가지로 차원을 '축소'하는 방법이다. $n$ 개의 관찰을 지닌 어떤 한 대상을 이보다 낮은 $k(<n)$ 개의 변수로 요약하는 것이 핵심이다. 
-- 선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과하다. 
+- 선형대수로 보면 $\mathrm R^2$ 공식은 피타고라스 정리의 흔한 응용 사례에 불과하다. 
 
 ## Regression in vector space
 
@@ -62,7 +62,7 @@ $$
 
 그리고 이 연산자를 reggressor의  모음인 col $\mathbf X$에 적용하면,  $\mathbf{X} \hat{\boldsymbol \beta}  =\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 col $\mathbf X$의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $\hat{\mathbf Y} \in {\mathbb R}^n$ 벡터지만, col $\mathbf X(\in {\mathbb R}^k)$내에 위치하고 있다. $n$ 차원이 $k$ 차원으로 축소된 셈이다. 이것이 회귀분석의 핵심이다. 
 
-선형 대수의 관점에서 내용을 다시 음미해보자. $x_i \in {\mathbb R}^n$ (for $i = 1, \dotsc, k$) 벡터의 리그레서 $k$ 개를 선형 결합해서 초평면의 한점, 즉 원래의 관찰 $y$와 최소 거리를 지니는 벡터를 찾아야 한다. 이 거리를 최소화하는 $\beta_i$를 알고 있다면 이 벡터는 다음과 같이 표현된다. ${\mathbf X} = [x_1, \dotsc, x_k]$일 때, 
+선형 대수의 관점에서 내용을 다시 음미해보자. $x_i \in {\mathbb R}^n$ (for $i = 1, \dotsc, k$) 벡터의 리그레서 $k$ 개를 선형 결합해서 초평면의 한점, 즉 원래의 관찰 $\mathbf Y$와 최소 거리를 지니는 벡터를 찾아야 한다. 이 거리를 최소화하는 $\beta_i$를 알고 있다면 이 벡터는 다음과 같이 표현된다. ${\mathbf X} = [x_1, \dotsc, x_k]$일 때, 
 
 $$
 \begin{aligned}
@@ -87,7 +87,7 @@ https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-ve
 
 ## R squared as Pythagorean Theorem 
 
-이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 
+이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 잠깐! 왜 직접 거리를 재지 않고 코사인 값을 재는 것인라?
 
 $\overline{\mathbf Y}$는 무엇일까? 포스팅의 맨 처음 보았던 그림과 같이 $\overline{Y} \mathbf{1}_n$로 표기할 수 있다. $\mathbf Y$의 평균값 $\overline{Y}$만으로 구성된 $(n \times 1)$ 벡터다. 이 벡터는 col $\mathbf X$ 안에 있을까? 당연히 그렇다. $\mathbf X$는 최대한 $k(<n)$ 차원의 벡터이고, $\overline{\mathbf Y}$는 1차원 벡터다.[^yhat]
 
@@ -149,7 +149,7 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODY3NzA1NCwtMTkyNzQzMzA4MywtMT
-U5NTY2NjQ0NywzODQ0MTY1MTUsMTg5Mjk1MDc2OSw1MjIyMDg0
-NTAsLTIwNzY4OTYzMTZdfQ==
+eyJoaXN0b3J5IjpbMTY1NjM0NTIyOSwxODc4Njc3MDU0LC0xOT
+I3NDMzMDgzLC0xNTk1NjY2NDQ3LDM4NDQxNjUxNSwxODkyOTUw
+NzY5LDUyMjIwODQ1MCwtMjA3Njg5NjMxNl19
 -->
