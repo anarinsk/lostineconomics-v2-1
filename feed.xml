@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-27T01:39:54-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-27T01:44:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
+
+&lt;p&gt;예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?&lt;/p&gt;
+
+&lt;p&gt;당장 떠오르는 솔루션이 클라우드다. 클라우드에 소프트웨어 환경을 세팅하고 내가 테스트해본다. 원하는 상대에게 url을 주고 같은 테스트를 반복 체험하게 한다. 물론 좋다. 사실 AWS 같은 곳에 Linux 서버를 깔고 주피터 관련 패키지나 RStudio 등을 설치하기는 쉽다. AWS를 비롯해 많은 클라우드 업체에서 원스톱 서비스까지 제공한다. 그런데, 문제가 있다. 비용이 든다. 사용량이 많아서 뽕을 뽑을 수 있다면 덜 아깝겠지만 코드 공유하고 결과를 확인하는 정도가 족하다면 많이 아깝다.&lt;/p&gt;
+
+&lt;p&gt;이런 용도로 활용할 수 있는 ‘무료’ 서비스가 Binder이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mybinder.org/&quot;&gt;https://mybinder.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;turn-a-git-repo-into&quot;&gt;Turn a Git repo into!&lt;/h2&gt;
+
+&lt;p&gt;서비스 참 시원시원하다. 로그인도 필요 없다. 깃헙 레포에 있는 코드를 받아서 가상 머신 위에 해당 결과를 구현해준다. R, Python, Julia를 지원한다. 세 언어 모두 기본 베이스로 Jupyter허브를 활용한다. 간편한 연동을 위해서는 깃헙 리포를 public으로 설정해야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/binder_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;: 깃헙 주소를 넣는다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Git branch, tag or commit&lt;/code&gt;: 관련된 깃 브렌치, 태그, 커밋 등을 넣는다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path to a notebook file&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 파일이 깃 내에 서브 디렉토리에 있다면 여기서 노트북 파일의 위치등을 지정해주면 된다.
+    &lt;ul&gt;
+      &lt;li&gt;RStudio나 Shiny를 쓰고 싶다면, “File” 대신 “URL”로 바꾸고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rstudio&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shiny&lt;/code&gt; 등을 지정해주면 된다.
+        &lt;ul&gt;
+          &lt;li&gt;R의 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r-2020-10-26&lt;/code&gt; 식으로 날짜가 적힌 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;runtime.txt&lt;/code&gt; 파일 그리고 패키지를 미리 인스톨하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.R&lt;/code&gt; 파일 두 개를 준비하면 된다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;아래 공유를 위한 주소도 떠 있으니 공유를 할 때는 해당 주소만 던져주면 된다. 이제 &lt;kbd&gt;launch&lt;/kbd&gt; 버튼을 누르자. 상당히 오랜 시간 동안 뭔가가 설치된다. 설치되는 내용을 보면 소프트웨어 구동에 필요한 개별 이미지를 빌드한 후 이를 클라우드에 띄워 구동한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/gwcho_7.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/gwcho_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;장점은 충분히 많다. 코드가 제대로 구현되는지 확인하는 수준이거나 코드를 가끔 짧은 시간 동안 실행해야 하는 정도라면 더 이상 뭘 할 것이 없다. 단점이라면 도커 이미지를 빌드하고 녀석을 푸시해 실행할 때까지 시간이 좀 걸린다는 것인데, 뭐 이 정도 시간 비용 쯤은 참아야 하지 않을까?&lt;/p&gt;
+
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMTk1MzE2MTNdfQ==
+--&gt;</content><author><name></name></author><category term="coding" /><category term="coding-tool" /><summary type="html">내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?</summary></entry><entry><title type="html">LaTeX in Modern Ways</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html" rel="alternate" type="text/html" title="LaTeX in Modern Ways" /><published>2020-10-24T00:00:00-05:00</published><updated>2020-10-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/latex/rstat/doc-tech/2020/10/24/classy-latex.html">&lt;p&gt;박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;좀 쉽게 쓸 수 있는 방법이 없을까?&lt;/li&gt;
@@ -1368,143 +1408,4 @@ MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 eyJoaXN0b3J5IjpbLTE1MjQ1NjI4MDYsLTg3MzQxNTY2LDg0MD
 c4ODEzMywtMTM3NzU1MTQyNCwtMTY1MzAzMzAyOF19
 --&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="coding" /><category term="rstat" /><category term="docker" /><summary type="html"></summary></entry><entry><title type="html">Metrics for Binary Classification</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html" rel="alternate" type="text/html" title="Metrics for Binary Classification" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification%20metrics</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/machine-learning/basics/2020/04/19/classification-metrics.html">&lt;h2 id=&quot;mission&quot;&gt;Mission&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;자꾸 까먹어서 기회가 될 때 한번 정리해두고자 한다.&lt;/li&gt;
-  &lt;li&gt;전공이 아니어서 그런가, 자꾸 까먹는다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;basic-to-remember&quot;&gt;Basic to Remember&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;로(행)는 예측치를 컬럼(열)은 실제 속성을 나타낸다.&lt;/li&gt;
-  &lt;li&gt;이에 따라서 4개의 컨퓨전 매트릭스 행렬이 생긴다.&lt;/li&gt;
-  &lt;li&gt;한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)을 따른다. 즉,
-    &lt;ul&gt;
-      &lt;li&gt;True Positive: Positive라는 예측이 맞는 경우다. 즉, 컨퓨전 매트릭스에서 2사분면을 나타낸다.&lt;/li&gt;
-      &lt;li&gt;True Negative: Negative라는 예측이 맞는 경우다. 즉 4사분면을 나타난다.&lt;/li&gt;
-      &lt;li&gt;False Positive: Positive라는 예측이 틀리는 경우다. 즉 1사분면을 나타낸다.&lt;/li&gt;
-      &lt;li&gt;False Negative: Negative라는 예측이 틀리는 경우다. 즉 3사분면을 나타낸다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;basic-three&quot;&gt;Basic Three&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/clf-metrics/fig_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/clf-metrics/fig_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/clf-metrics/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;term&quot;&gt;Term&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;용어, 정리하고 가보자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;style type=&quot;text/css&quot;&gt;  
-table {
-	font-size: 120%;
-	width: 100%;
-	}  
-&lt;/style&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;True Positive Rate (TPR)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;False Positive Rate  (FPR)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;True Negative Rate (TNR)&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;False Negative Rate(FNR)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Recall&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Sensitivity&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1 - Specificity&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Specificity&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1-Sensitivity&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{TP}}{\rm\bold{TP + FN}}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{FP}}{\rm\bold{FP + TN}}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{TN}}{\rm\bold{FP + TN}}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\frac{\rm\bold{FN}}{\rm\bold{TP + FN}}$&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$1-\beta$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\alpha$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$1-\alpha$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$\beta$&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;(1 - type II error)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;type I error&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;(1 - type I error)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;type II error&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;상세한 지표 지도는 &lt;a href=&quot;https://en.wikipedia.org/wiki/Precision_and_recall&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/li&gt;
-  &lt;li&gt;따져볼 대목. 위 네 용어는 실제 속성(ground truth)에 기반한 것이다. 즉, 분모에 실제 속성이 깔린다. 반면, 정밀도(precision)와 같은 지표는 예측 값에 기반을 둔다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;roc-curve&quot;&gt;ROC curve&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ROC 커브에 이름에 신경쓰지 말자. 어차피 이상한 이름이니까.&lt;/li&gt;
-  &lt;li&gt;ROC 커브는 무엇에 쓰는 것일까? binary classification에서는 추정된 확률에 대해서 임계 수준을 어디에 둘지에 따라서 해당 결과에 관한 판정을 다르게 내릴 수 있다. 이렇게 다른 임계치를 설정하면서 TPR와 FPR가 변하게 된다. 이 결과를 $x-y$ 평면 위에서 표시한 것이 ROC 곡선이다.
-    &lt;ul&gt;
-      &lt;li&gt;컨퓨전 매트릭스에서 컬럼으로 오른쪽의 비율이 TPR, 왼쪽 컬럼의 비율이 FPR을 나타내는 셈이다. 이렇게 보면, ROC 곡선이란 컬럼을 각각 $x-y$ 축으로 쪼개는 개념이다. 컨퓨전 매트릭스에서 컬럼이란 결국 해당 샘플의 실제 속성에 따른 구분이다. 이 점을 잘 기억해두자.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이때 TPR는 1이 가장 좋고 여기 가까울수록 좋다. 반대로 FPR는 0에 가까울수록 좋다. 따라서, $x$ 축에 FPR를, $y$ 축에 TPR를 둔다면, $(0,1)$로 갈수록 좋고, $(1,0)$으로 갈수록 나쁜 점이 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/clf-metrics/fig_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;경제학에서 쓰는 dominance 개념과 비슷하다. 만일 모든 TPR-FPR 조합에서 어떰 모델의 커브가 다른 모델의 커브보다 $(0,1)$에 근접해 있다면 해당 모델이 우월하다. 만일 둘이 겹치는 영역이 있다면 어떨까?&lt;/li&gt;
-  &lt;li&gt;이때 비교를 위해 개발된 지표가 AUC(Area Under Curve)이다. 즉, ROC의 아래 면적의 크기를 구하는 것이다. 설명력이 없는 경우 즉, $(0,0)-(1,1)$ 선의 경우 AUC는 1/2이다. 설명력이 높을수록 1에 가까운 값을 갖게 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;f1-score&quot;&gt;F1 Score&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;F1 스코어는 별게 아니다. F1 스코어는 accuracy를 보완하는 개념이라고 보면 쉬울 듯 싶다. 분류에서 우리가 타겟으로 삼는 속성이 비교적 고르게 분포한다면(balanced data) accuracy만 보면 된다. accuracy란 전체 샘플에서 예측 모형이 제대로 맞춘 비율을 나타내므로 직관적으로도 분명한 지표다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-  &lt;li&gt;그런데, 타겟이 어느 하나로 치우쳐 있다면(imbalanced data)  accuracy는 지표로서 힘을 잃는다. 예를 들어 신용우량으로 남는 비율이 전체 샘플의 97%라고 하자. 만일 모든 샘플에 대해서 게으르게 “신용우량”을 판정하더라도 애큐러시는 97%가 된다. 이런 상태에서 애큐러시는 모형을 품질을 나타내는 지표로 기능하기 어렵다. 이런 어려움을 완화하고자 등장한 것이 F1 Score이다.&lt;/li&gt;
-  &lt;li&gt;F1 Score는 recall와 precision의 조화평균을 나타낸다. 즉.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mfrac&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mrow&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mtext&gt;recall&lt;/mtext&gt;&lt;/mfrac&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mtext&gt;precision&lt;/mtext&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;r&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;e&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;c&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;a&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;l&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;p&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;r&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;e&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;c&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;i&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;s&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;i&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;r&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;e&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;c&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;a&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;l&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mrow&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;p&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;r&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;e&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;c&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;i&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;s&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;i&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;o&lt;/mi&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\dfrac{2}{ \frac{1}{ \text{recall} } + \frac{1}{ \text{precision} } } = 2~ \dfrac{ {\rm recall} \times {\rm precision} }{ {\rm recall} + {\rm precision} }&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.537656em;vertical-align:-1.216216em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.32144em;&quot;&gt;&lt;span style=&quot;top:-2.264892em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.845108em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord text mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;recall&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.345em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.845108em;&quot;&gt;&lt;span style=&quot;top:-2.6550000000000002em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord text mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;precision&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.394em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.481108em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.677em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.216216em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.25188em;vertical-align:-0.8804400000000001em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mspace nobreak&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mopen nulldelimiter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mfrac&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.3714399999999998em;&quot;&gt;&lt;span style=&quot;top:-2.314em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.23em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;frac-line&quot; style=&quot;border-bottom-width:0.04em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.677em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;×&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8804400000000001em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mclose nulldelimiter&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;조화 평균이라는 것이 큰 값이 페널티를 주는 방향으로 작용한다. 따라서 F1 Score는 데이터가 치우쳐 있을 경우 사용하는 게 좋다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDA4MzcwNCwxMjU4MzgyMTI0LDU1Mj
-Q1MDIyNiwxMDUyODkwMTk3LC0xMjcyNTA3NTUsMTQwODExMzQ0
-NSwtMTEwODAxMDEsNjEzNzY4NTk5LDYzODI2MTQ4LDY5NjYxNz
-A3NSwxNjgwOTE3MTE2LC01NzEyNDg2NTQsMjA5NzU5MTYwLDE0
-MTU1NDE1NTUsLTEyODI4OTYyMTAsMTgzMTQ5MDk0MCwzNTk3NT
-k1OTgsLTYxNTc4MzMzOSwtMTczNDY3NzYzMSwxMjc5MTYxMTQw
-XX0=
---&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;멀티 클래스의 경우에 관해서는 &lt;a href=&quot;https://nittaku.tistory.com/295&quot;&gt;여기&lt;/a&gt;를 참고하라. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="machine-learning" /><category term="basics" /><summary type="html">Mission</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="coding" /><category term="rstat" /><category term="docker" /><summary type="html"></summary></entry></feed>
