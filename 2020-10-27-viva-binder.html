@@ -4,19 +4,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Docker 컨테이너 + 한글 폰트 | lostineconomics.com</title>
+<title>Viva, Binder! | lostineconomics.com</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Docker 컨테이너 + 한글 폰트" />
+<meta property="og:title" content="Viva, Binder!" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="컨테이너 안에서도 한글을 써보자" />
-<meta property="og:description" content="컨테이너 안에서도 한글을 써보자" />
-<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" />
-<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" />
+<meta name="description" content="코드 셰어링, 이제 걱정 끝" />
+<meta property="og:description" content="코드 셰어링, 이제 걱정 끝" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/2020-10-27-viva-binder.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/2020-10-27-viva-binder.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-24T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"Docker 컨테이너 + 한글 폰트","dateModified":"2020-09-24T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html","datePublished":"2020-09-24T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html"},"description":"컨테이너 안에서도 한글을 써보자","@context":"https://schema.org"}</script>
+{"headline":"Viva, Binder!","url":"https://anarinsk.github.io/lostineconomics-v2-1/2020-10-27-viva-binder.html","@type":"WebPage","description":"코드 셰어링, 이제 걱정 끝","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -93,8 +91,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Docker 컨테이너 + 한글 폰트</h1><p class="page-description">컨테이너 안에서도 한글을 써보자</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-09-24T00:00:00-05:00" itemprop="datePublished">
-        Sep 24, 2020
+    <h1 class="post-title p-name" itemprop="name headline">Viva, Binder!</h1><p class="page-description">코드 셰어링, 이제 걱정 끝</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="" itemprop="datePublished">
+        
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -106,10 +104,10 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#docker">docker</a>
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#coding">coding</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#data-science">data-science</a>
+        <a class="category-tags-link" href="/lostineconomics-v2-1/categories/#coding-tool">coding-tool</a>
         
       
       </p>
@@ -118,49 +116,47 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h2 id="왜-필요한가">왜 필요한가?</h2>
+    <p>내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?</p>
 
-<p>Jupyter 등에서 matplotlib을 쓸 때 라벨이 한글일 경우, 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 한글 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 <a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html">가이드</a>를 통해 해결할 수 있다.</p>
+<p>예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?</p>
 
-<p>그런데 도커 환경을 쓴다면 이런 가이드가 별 소용이 없다. 도커는 아래 그림과 같이 ‘host os - 도커 - 컨테이너’의 구조로 돌아간다. 컨테이너(App x)가 각기 독자적인 os를 지니고 있기 때문에 해당 os에서 한글을 인식시켜줘야 특정 컨테이너 환경 안에서 한글을 쓸 수 있게 된다.</p>
+<p>당장 떠오르는 솔루션이 클라우드다. 클라우드에 소프트웨어 환경을 세팅하고 내가 테스트해본다. 원하는 상대에게 url을 주고 같은 테스트를 반복 체험하게 한다. 물론 좋다. 사실 AWS 같은 곳에 Linux 서버를 깔고 주피터 관련 패키지나 RStudio 등을 설치하기는 쉽다. AWS를 비롯해 많은 클라우드 업체에서 원스톱 서비스까지 제공한다. 그런데, 문제가 있다. 비용이 든다. 사용량이 많아서 뽕을 뽑을 수 있다면 덜 아깝겠지만 코드 공유하고 결과를 확인하는 정도가 족하다면 많이 아깝다.</p>
 
-<p><img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj" alt="" /></p>
+<p>이런 용도로 활용할 수 있는 ‘무료’ 서비스가 Binder이다.</p>
 
-<h2 id="simple-solution">Simple Solution</h2>
+<p><a href="https://mybinder.org/">https://mybinder.org</a></p>
 
-<p>방법은 간단하다. 컨테이너 환경 os에 직접 한글을 설치해주면 된다. 해당 os 내의 bash 혹은 상응하는 CLI에 들어가서 필요한 명령(스크립트)들을 실행하면 된다. 해당 명령들을 별도의 bash 스크립트로 만들고 필요한 경우 녀석들을 한방에 돌리면 살짝 더 편리할 것이다. 아래는 나눔 계열 폰트를 설치하는 스크립트다. 파일 이름을  <code class="language-plaintext highlighter-rouge">install_nanum.sh</code>로 하자.</p>
+<h2 id="turn-a-git-repo-into">Turn a Git repo into!</h2>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+<p>서비스 참 시원시원하다. 로그인도 필요 없다. 깃헙 레포에 있는 코드를 받아서 가상 머신 위에 해당 결과를 구현해준다. R, Python, Julia를 지원한다. 세 언어 모두 기본 베이스로 Jupyter허브를 활용한다. 간편한 연동을 위해서는 깃헙 리포를 public으로 설정해야 한다.</p>
 
-<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/archive.ubuntu.com/ftp.daumkakao.com/g'</span> /etc/apt/sources.list
-<span class="nb">sudo </span>apt-get update 
-<span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> fonts-nanum<span class="k">*</span>
-<span class="nb">sudo </span>fc-cache <span class="nt">-fv</span>
-</code></pre></div></div>
+<p><img src="/lostineconomics-v2-1/images/binder/binder_1.png" alt="" style="textalign:center; " width="700" /></p>
 
-<p>나머지는 대체로 자명한 명령어다. 첫행의 sed는 ftp 주소를 국내로 바꿔주는 것이다. 업데이트 시 걸리는 시간을 단축하기 위해 사용했다. 터미널에서 스크립트 파일이 있는 디렉토리로 이동한 후 bash 스크립트를 실행하면 된다. bash 스크립트는 도커를 쓸 때 유용하다. 초기에 갖춰져야 하는 세팅이 있을 경우 스크립트로 만들어두고 도커 이미지를 새로 올렸을 때 실행해주면 되겠다. 약간 귀찮지만 못 견딜 정도는 아니다.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">GitHub</code>: 깃헙 주소를 넣는다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Git branch, tag or commit</code>: 관련된 깃 브렌치, 태그, 커밋 등을 넣는다.</li>
+  <li><code class="language-plaintext highlighter-rouge">Path to a notebook file</code>: <code class="language-plaintext highlighter-rouge">ipynb</code> 파일이 깃 내에 서브 디렉토리에 있다면 여기서 노트북 파일의 위치등을 지정해주면 된다.
+    <ul>
+      <li>RStudio나 Shiny를 쓰고 싶다면, “File” 대신 “URL”로 바꾸고 <code class="language-plaintext highlighter-rouge">rstudio</code>, <code class="language-plaintext highlighter-rouge">shiny</code> 등을 지정해주면 된다.
+        <ul>
+          <li>R의 경우 <code class="language-plaintext highlighter-rouge">r-2020-10-26</code> 식으로 날짜가 적힌 <code class="language-plaintext highlighter-rouge">runtime.txt</code> 파일 그리고 패키지를 미리 인스톨하는 <code class="language-plaintext highlighter-rouge">install.R</code> 파일 두 개를 준비하면 된다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> ./install_nanum.sh ⏎
-</code></pre></div></div>
-<p>윈도에서 파일을 편집할 경우 <code class="language-plaintext highlighter-rouge">^M</code>이 달라 붙어 문제가 생기는 경우가 있다. 귀찮겟지만, docker 내부 터미널에서 <code class="language-plaintext highlighter-rouge">nano</code> 등으로 파일을 열어 해당 부분을 지우고 다시 저장하면 된다.</p>
+<p>아래 공유를 위한 주소도 떠 있으니 공유를 할 때는 해당 주소만 던져주면 된다. 이제 <kbd>launch</kbd> 버튼을 누르자. 상당히 오랜 시간 동안 뭔가가 설치된다. 설치되는 내용을 보면 소프트웨어 구동에 필요한 개별 이미지를 빌드한 후 이를 클라우드에 띄워 구동한다.</p>
 
-<p>이제 도커 컨테이너 안의 이용한 주피터 노트북에서 다음과 같이 실행하면 나눔고딕 폰트를 쓸 수 있게 된다.</p>
+<p><img src="/lostineconomics-v2-1/images/binder/gwcho_7.png" alt="" style="textalign:center; " width="500" /></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="n">mpl</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rc</span><span class="p">,</span> <span class="n">font_manager</span>
-<span class="n">font_fname</span> <span class="o">=</span> <span class="s">'/usr/share/fonts/truetype/nanum/NanumGothic.ttf'</span>
-<span class="n">prop</span> <span class="o">=</span> <span class="n">font_manager</span><span class="p">.</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="n">font_fname</span><span class="p">)</span>
-<span class="n">mpl</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'font.family'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'NanumGothic'</span>
-<span class="n">font_manager</span><span class="p">.</span><span class="n">_rebuild</span><span class="p">()</span>
-</code></pre></div></div>
+<p><img src="/lostineconomics-v2-1/images/binder/gwcho_5.png" alt="" style="textalign:center; " width="500" /></p>
 
-<p>혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
+<p>장점은 충분히 많다. 코드가 제대로 구현되는지 확인하는 수준이거나 코드를 가끔 짧은 시간 동안 실행해야 하는 정도라면 더 이상 뭘 할 것이 없다. 단점이라면 도커 이미지를 빌드하고 녀석을 푸시해 실행할 때까지 시간이 좀 걸린다는 것인데, 뭐 이 정도 시간 비용 쯤은 참아야 하지 않을까?</p>
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU5Nzc1OTcsMTIyODAxOTk1MywxND
-U4NTE4NTAsLTE4NzA2Nzk5NDIsMTgyMjczNzQzNiwxMjkyNTAx
-MTY0LC00ODk0MjQzNjZdfQ==
---></p>
+eyJoaXN0b3J5IjpbLTEyMTk1MzE2MTNdfQ==
+-->
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -170,7 +166,7 @@ MTY0LC00ODk0MjQzNjZdfQ==
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" hidden></a>
+</script><a class="u-url" href="/lostineconomics-v2-1/2020-10-27-viva-binder.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
