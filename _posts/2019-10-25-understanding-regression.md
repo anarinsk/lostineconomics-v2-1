@@ -16,7 +16,7 @@ categories: [math, econometrics]
 - 회귀분석이라는 것은 PCA와 마찬가지로 차원을 '축소'하는 방법이다. $n$ 개의 관찰을 지닌 어떤 한 대상을 이보다 낮은 $k(<n)$ 개의 변수로 요약하는 것이 핵심이다. 
 - 선형대수로 보면 $\mathrm R^2$은 피타고라스 정리의 흔한 응용 사례에 불과하다. 
 
-## Regression in vector space공간에서 바라본 회귀분석 
+## Regression in vector space
 
 여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치기 쉬운 회귀분석의 '핵심'을 살피는 것이다. [crossvalidated](https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient)에서 아래 그림을 보는 순간 일종의 '돈오돈수'가 강림했다. (이렇게 이해하면 쉬웠을 것을...) 
 
@@ -123,7 +123,7 @@ ${\mathrm R}^2$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 
-## Bonus: Regression vs PCA덤: 회귀 분석과 PCA는 서로 얼마나 다를까?
+## Bonus: Regression vs PCA
 
 회귀 분석과 PCA는 어떻게 다른가? 여러가지 답이 있을 수 있다. 그걸 다 소개하겠다는 게 아니다. 둘이 데이터 모델링의 시야에서 어떻게 다른지를 살펴보는 게 이 글의 목적이다.[^3] 이 글은 둘을 어떻게 실행하는지를 다루지 않는다. 앞선 PCA 관련 [포스팅](https://anarinsk.github.io/lie-math_pca/)을 읽고 오시면 이해에 도움이 될 것이다. 
 
@@ -149,7 +149,7 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjc0MzMwODMsLTE1OTU2NjY0NDcsMz
-g0NDE2NTE1LDE4OTI5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2
-MzE2XX0=
+eyJoaXN0b3J5IjpbLTEzOTUyNjYyNzMsLTE5Mjc0MzMwODMsLT
+E1OTU2NjY0NDcsMzg0NDE2NTE1LDE4OTI5NTA3NjksNTIyMjA4
+NDUwLC0yMDc2ODk2MzE2XX0=
 -->
