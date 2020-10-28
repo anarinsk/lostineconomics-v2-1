@@ -170,7 +170,7 @@ tlmgr update --all
 
 이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. Latex Workshop이 설치되어 있다면, `.tex` 파일에 알아서 반응하니 걱정 마시라. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="1200"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="700"}  
 
 ## References 
 
@@ -202,10 +202,10 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2NDQzNjU0LDE0Mzg4NjA5NTcsMTk2Nj
-Y0MjQzMiw5MTIxMzAyODYsLTc3OTc2MzUyOCwtMTkwODM2OTU1
-MSwxOTMxMjY0OTUzLDgxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMD
-k3MDY4MzUsLTQ2OTE5NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgz
-OTQ3LC0xNDY0MjIzMDIzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLT
-IwNzgzODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbLTE5OTM0NjY4ODAsMzM2NDQzNjU0LDE0Mz
+g4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAyODYsLTc3OTc2MzUy
+OCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLDgxMjE0Mjc2MywtMT
+Y5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5NTE0NSwtMTAzNjMx
+NjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMDIzLDE0NzQzOTU2Nj
+csNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
 -->
