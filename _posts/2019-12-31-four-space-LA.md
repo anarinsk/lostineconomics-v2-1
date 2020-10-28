@@ -262,7 +262,7 @@ $$
 
 $$
 \begin{aligned}
-Ax = A c_2 + A c_3 + c(2 c_2 + c_3) = 
+Ax = c_2 + c_3 + c(2 c_2 + c_3) = 
 \begin{bmatrix}
 1 \\
 4 \\
@@ -311,8 +311,9 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5NzkwMTk0LC0xNDEwMDMzOTI2LDMyMj
-I0MDMyMCwtNTg0MDQ0NDAzLDEwMjM1NzAyNzMsNzQ1MjU3OTcz
-LDEyMTQyMTk1MTQsMTY2OTc1NjY1NiwxMTYyMzAxNjkwLC03MT
-I1MDk1MzgsNDk5NzE0MTIzLC0xODA0MTE3NTAyXX0=
+eyJoaXN0b3J5IjpbMTY5NDU5NzM2MCw2MDk3OTAxOTQsLTE0MT
+AwMzM5MjYsMzIyMjQwMzIwLC01ODQwNDQ0MDMsMTAyMzU3MDI3
+Myw3NDUyNTc5NzMsMTIxNDIxOTUxNCwxNjY5NzU2NjU2LDExNj
+IzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1
+MDJdfQ==
 -->
