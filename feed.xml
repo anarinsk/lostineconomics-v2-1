@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-27T21:20:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-28T02:26:11-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
 
 &lt;p&gt;예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?&lt;/p&gt;
 
@@ -729,7 +729,7 @@ wsl &lt;span class=&quot;nt&quot;&gt;--unregister&lt;/span&gt; &amp;lt;DISTRO&am
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;agnoster&lt;/code&gt; 테마의 모습은 이렇다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-tips/zsh.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/wsl-tips/zsh.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;python-symlink&quot;&gt;python symlink&lt;/h3&gt;
 
@@ -739,9 +739,9 @@ wsl &lt;span class=&quot;nt&quot;&gt;--unregister&lt;/span&gt; &amp;lt;DISTRO&am
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1NzYzMywtODE1MDc4MzgxLC00NjM0Nz
-kzOTYsLTMzNzYzNTQ5OCwyMDkzNDYxODI0LDYyMDQ4MzIyOCw5
-NjA3OTAxOTcsMTM1MjEzOTY4OV19
+eyJoaXN0b3J5IjpbMTQ2NjA3Njg2Nyw5NzU3NjMzLC04MTUwNz
+gzODEsLTQ2MzQ3OTM5NiwtMzM3NjM1NDk4LDIwOTM0NjE4MjQs
+NjIwNDgzMjI4LDk2MDc5MDE5NywxMzUyMTM5Njg5XX0=
 --&gt;</content><author><name></name></author><category term="wsl" /><category term="ubuntu" /><summary type="html">WSL 2를 쓴지도 꽤 오랜 시간이 지났다. 이제 실용적인 팁 몇 가지 정도는 공유해도 좋은 경험이 쌓인 듯 싶다. WSL 2를 처음 쓰는 분들이 이 글을 본다면, 다소 나마 시행착오를 줄이기를 바란다.</summary></entry><entry><title type="html">Docker 컨테이너 + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html" rel="alternate" type="text/html" title="Docker 컨테이너 + 한글 폰트" /><published>2020-09-24T00:00:00-05:00</published><updated>2020-09-24T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html">&lt;h2 id=&quot;왜-필요한가&quot;&gt;왜 필요한가?&lt;/h2&gt;
 
 &lt;p&gt;Jupyter 등에서 matplotlib을 쓸 때 라벨이 한글일 경우, 대부분 한글 출력에 문제를 겪게 된다. ㅁㅁㅁ형태로 출력되는데, 파이썬 환경에서 한글 폰트가 인식되지 않게 때문이다. 일반적인 환경이라면 웹 검색으로 찾을 수 있는 &lt;a href=&quot;https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html&quot;&gt;가이드&lt;/a&gt;를 통해 해결할 수 있다.&lt;/p&gt;
