@@ -281,7 +281,19 @@ c_1, c_2, -2c_2
 \end{bmatrix}.
 $$
 
-이제 행렬 $A$의 영 공간을 생각해보자. 영 공간이란 $A x = 0$을 만족하는 $x$로 이루어진 벡터 공간이다. $c$에 관계없이 $Ax_s = 0$을 만족해야 한다. 따라서 이를 만족하는 해는 $x_s$ 하나 밖에 없다. 
+이제 행렬 $A$의 영 공간을 생각해보자. 영 공간이란 $A x = 0$을 만족하는 $x$로 이루어진 벡터 공간이다. $c$에 관계없이 $Ax_s = 0$을 만족해야 한다. 즉, 
+
+$$
+A x_s = [c_1, c_2, -2c_2] 
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+\end{bmatrix} = 
+
+$$
+
+따라서 이를 만족하는 해는 $x_s$ 하나 밖에 없다. 
 
 이제 앞서 본 4개의 근본 공간의 원리에 따라서 $A^T \in {\mathbb R}^{3 \times 4}$이고, $A^T$는 열 벡터 $a_i(\in {\mathbb R}^3)$로 구성된다. 따라서 $A^T$의 위수는 $3-1 = 2$가 된다. 그리고 $A^T$의 위수와 $A$의 위수는 같기 때문에 $A$의 위수 역시 2이다. 
 
@@ -311,7 +323,7 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDU5NzM2MCw2MDk3OTAxOTQsLTE0MT
+eyJoaXN0b3J5IjpbLTI2Mzk0MzczOSw2MDk3OTAxOTQsLTE0MT
 AwMzM5MjYsMzIyMjQwMzIwLC01ODQwNDQ0MDMsMTAyMzU3MDI3
 Myw3NDUyNTc5NzMsMTIxNDIxOTUxNCwxNjY5NzU2NjU2LDExNj
 IzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1
