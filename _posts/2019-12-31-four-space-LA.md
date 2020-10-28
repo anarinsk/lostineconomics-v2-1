@@ -296,12 +296,12 @@ $$
 이 해는 $x_1 = 0$, $x_2 = 2 x_3$가 영 공간에 존재하는 벡터이고 이것이 유일하다. 이를 만족하는 해는 $x$ 하나 밖에 없다. 즉, 
 
 $$
-x_{null} = 
+x_{\rm null} = x_3
 \begin{bmatrix}
 0 \\
-x_2 \\
-x_3 \\
-\end{bmatrix}
+2 \\
+1 \\
+\end{bmatrix}.
 $$
 
 
@@ -333,9 +333,9 @@ $$
 2. 특성값 행렬($\Sigma$)로 차원을 바꾸면서 좌표축의 크기를 조정한다.  
 3. 마지막으로 $U$를 통해서 벡터의 방향을 돌린다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDI0MDU4MCw2MDk3OTAxOTQsLTE0MT
-AwMzM5MjYsMzIyMjQwMzIwLC01ODQwNDQ0MDMsMTAyMzU3MDI3
-Myw3NDUyNTc5NzMsMTIxNDIxOTUxNCwxNjY5NzU2NjU2LDExNj
-IzMDE2OTAsLTcxMjUwOTUzOCw0OTk3MTQxMjMsLTE4MDQxMTc1
-MDJdfQ==
+eyJoaXN0b3J5IjpbLTI5MTMwNTEzLDYwOTc5MDE5NCwtMTQxMD
+AzMzkyNiwzMjIyNDAzMjAsLTU4NDA0NDQwMywxMDIzNTcwMjcz
+LDc0NTI1Nzk3MywxMjE0MjE5NTE0LDE2Njk3NTY2NTYsMTE2Mj
+MwMTY5MCwtNzEyNTA5NTM4LDQ5OTcxNDEyMywtMTgwNDExNzUw
+Ml19
 -->
