@@ -245,7 +245,7 @@ window.onload = wrap_img;
 
 <p><img src="https://t1.daumcdn.net/cfile/tistory/99F325485C7B76BC2B" alt=""></p>
 
-<p>regressor가 하나인 상황을 가정하고 위의 그림을 보자. regressand가 0, 1인 상태로 그대로 회귀분석을 하면 그림의 왼쪽 같이 나온다. 이 상태에서는 뭐가 문제일까? 회귀식의 기울기를 구할 수 있으니 된 것 아니냐고 생각할 수 있겠지만 큰 문제가 있다. 
+<p>regressor가 하나인 상황을 가정하고 위의 그림을 보자. regressand가 0, 1인 상태로 그대로 회귀분석을 하면 그림의 왼쪽 같이 나온다. 이 상태에서는 뭐가 문제일까? 회귀식의 기울기를 구할 수 있으니 된 것 아니냐? 문제가 있다. 
 앞서 0과 1은 값 그 자체로 의미를 지니지 않는다고 말했다. 그런데 이를 그대로 값으로 바꿔서 회귀분석을 해도 좋은 것일까? 그러기에는 뭔가 찜찜하다. 게다가 $x$ 값에 따라서 회귀식의 예측치가 $[0,1]$을 벗어날 수 있다. 임의로 계단 함수를 다시 얹어서 OLS(통상적인 최소자승법이라는 의미에서 Ordinary Least Squares라고 흔히 부른다)를 구제할 수도 있겠다. 즉,</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo stretchy="false">(</mo><mi>β</mi><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mstyle scriptlevel="0" displaystyle="false"><mi>β</mi><mi>x</mi><mo>&gt;</mo><mn>1</mn></mstyle></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mstyle scriptlevel="0" displaystyle="false"><mi>β</mi><mi>x</mi><mo>&lt;</mo><mn>0</mn></mstyle></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">s(\beta x) = 
@@ -379,7 +379,7 @@ p(\boldsymbol{x_i}) &amp; = \dfrac{1}{e^{-\boldsymbol{x_i}\boldsymbol{\beta}} + 
 
 <p>이처럼 한계 효과는 미분을 통해 간단히 도출할 수 있다. 앞서 말했던 측정의 어려운 점이 무엇인지 이제 잘 볼 수 있다. $\boldsymbol{\beta}$의 추정치로 MLE를 통해 구한 $\hat \boldsymbol{\beta}$를 활용한다고 해도, 어떤 $\boldsymbol{x_i}$에서 측정하는지에 따라서 값이 달라진다. 평균(marginal effect at mean)에서 한 번만 측정할 것인지 아니면 $n$개의 모든 데이터 포인트에 대해서 계산한 뒤 이를 평균(average marginal effect)할 것인지 등의 선택이 필요하다. 보통 후자를 많이 활용하고 통계 패키지마다 해당 옵션을 제공하고 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTg3NjIyOSwxNDk5ODE5MTMzLC0xMz
+eyJoaXN0b3J5IjpbLTk2NjU1MDQxNiwxNDk5ODE5MTMzLC0xMz
 k3NzAwNzU2XX0=
 --></p>
 <div class="footnotes" role="doc-endnotes">
