@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-30T08:31:01-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-30T08:35:46-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
 
 &lt;p&gt;예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?&lt;/p&gt;
 
@@ -156,33 +156,32 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 
 &lt;p&gt;이제 VS Code로 가자. 필요한 Extension은 앞서 살펴본 Latex workshop과 더불어 &lt;a href=&quot;https://code.visualstudio.com/docs/remote/remote-overview&quot;&gt;Remote-Container&lt;/a&gt;를 설치하자. 이 녀석을 설치하면 WSL 내에서 돌아가는 컨테이너 안에도 VS Code를 통해 바로 접속할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_1.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;350&quot; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_1.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;아래 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;lt;&lt;/code&gt;으로 된 부분을 클릭하면 상단에 메뉴가 뜬다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;550&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_2.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;“attach to running container”를 실행해서 실행중인 도커 콘테이너를 부착한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;350&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_3.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;부착하면 새 창이 뜨면서 아래 녹색 창이 콘테이너 부착되었음을 알려준다.&lt;/li&gt;
   &lt;li&gt;콘테이너 내부에 Latex Workshop 확장(extension)을 설치해야 한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_4.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;350&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_4.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;설치 후 해당 Extension의 설정을 고쳐주자.&lt;/li&gt;
   &lt;li&gt;위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 “pdf” 치면 pdf에 관련된 설정만 필터링된다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_5.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;550&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_5.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;위 항목을 찾아서 적당한 포워딩 포트를 넣어준다.&lt;/li&gt;
@@ -202,7 +201,7 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 
 &lt;p&gt;콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_7.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;350&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_7.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;옆에 원으로 표시해 둔 곳은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote-Container&lt;/code&gt; 확장으로 바로 가는 단축 아이콘이다.&lt;/li&gt;
@@ -232,12 +231,13 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM0NjY4ODAsMzM2NDQzNjU0LDE0Mz
-g4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAyODYsLTc3OTc2MzUy
-OCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLDgxMjE0Mjc2MywtMT
-Y5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5NTE0NSwtMTAzNjMx
-NjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMDIzLDE0NzQzOTU2Nj
-csNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbLTE0NjI1OTQ4MzQsLTE5OTM0NjY4ODAsMz
+M2NDQzNjU0LDE0Mzg4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAy
+ODYsLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLD
+gxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5
+NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMD
+IzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIx
+NzUyMjM3XX0=
 --&gt;</content><author><name></name></author><category term="latex" /><category term="rstat" /><category term="doc-tech" /><summary type="html">박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.</summary></entry><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
 
 &lt;p&gt;통계학을 들은 사람들이라면 표준 오차는 대체로 잘 아는 내용이다. 순전히 개인적인 정리를 위한 용도다. 나이를 드니까 명민함이 떨어지고 당연하게 알고 있었던 것도 모르게 되는 경우가 많으니까.&lt;/p&gt;
