@@ -137,7 +137,7 @@ tlmgr update --all
 - 부착하면 새 창이 뜨면서 아래 녹색 창이 콘테이너 부착되었음을 알려준다. 
 - 콘테이너 내부에 Latex Workshop 확장(extension)을 설치해야 한다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="600"}
+ ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 
 - 설치 후 해당 Extension의 설정을 고쳐주자. 
 - 위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 "pdf" 치면 pdf에 관련된 설정만 필터링된다. 
@@ -201,11 +201,11 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNzYzMzY4LDE0ODk0NTU2OSwtMTk5Mz
-Q2Njg4MCwzMzY0NDM2NTQsMTQzODg2MDk1NywxOTY2NjQyNDMy
-LDkxMjEzMDI4NiwtNzc5NzYzNTI4LC0xOTA4MzY5NTUxLDE5Mz
-EyNjQ5NTMsODEyMTQyNzYzLC0xNjk4NTU4NTQ2LDMwOTcwNjgz
-NSwtNDY5MTk1MTQ1LC0xMDM2MzE2OTIsLTEyNTE5ODM5NDcsLT
-E0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4
-NjAwM119
+eyJoaXN0b3J5IjpbLTk1Mjg3OTcwNiwxNzE3NjMzNjgsMTQ4OT
+Q1NTY5LC0xOTkzNDY2ODgwLDMzNjQ0MzY1NCwxNDM4ODYwOTU3
+LDE5NjY2NDI0MzIsOTEyMTMwMjg2LC03Nzk3NjM1MjgsLTE5MD
+gzNjk1NTEsMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OTg1NTg1
+NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5MiwtMT
+I1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3
+NTIzXX0=
 -->
