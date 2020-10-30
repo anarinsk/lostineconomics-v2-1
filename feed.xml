@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-30T08:39:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-10-30T08:47:16-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
 
 &lt;p&gt;예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?&lt;/p&gt;
 
@@ -174,7 +174,7 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
   &lt;li&gt;콘테이너 내부에 Latex Workshop 확장(extension)을 설치해야 한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_4.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/latex/vscode_4.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;설치 후 해당 Extension의 설정을 고쳐주자.&lt;/li&gt;
@@ -231,13 +231,13 @@ tlmgr update &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNzYzMzY4LDE0ODk0NTU2OSwtMTk5Mz
-Q2Njg4MCwzMzY0NDM2NTQsMTQzODg2MDk1NywxOTY2NjQyNDMy
-LDkxMjEzMDI4NiwtNzc5NzYzNTI4LC0xOTA4MzY5NTUxLDE5Mz
-EyNjQ5NTMsODEyMTQyNzYzLC0xNjk4NTU4NTQ2LDMwOTcwNjgz
-NSwtNDY5MTk1MTQ1LC0xMDM2MzE2OTIsLTEyNTE5ODM5NDcsLT
-E0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4
-NjAwM119
+eyJoaXN0b3J5IjpbLTk1Mjg3OTcwNiwxNzE3NjMzNjgsMTQ4OT
+Q1NTY5LC0xOTkzNDY2ODgwLDMzNjQ0MzY1NCwxNDM4ODYwOTU3
+LDE5NjY2NDI0MzIsOTEyMTMwMjg2LC03Nzk3NjM1MjgsLTE5MD
+gzNjk1NTEsMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OTg1NTg1
+NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5MiwtMT
+I1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3
+NTIzXX0=
 --&gt;</content><author><name></name></author><category term="latex" /><category term="rstat" /><category term="doc-tech" /><summary type="html">박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만… 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다.</summary></entry><entry><title type="html">Standard Error, Limiting Behavior</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" rel="alternate" type="text/html" title="Standard Error, Limiting Behavior" /><published>2020-10-17T00:00:00-05:00</published><updated>2020-10-17T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html">&lt;h2 id=&quot;왜&quot;&gt;왜?&lt;/h2&gt;
 
 &lt;p&gt;통계학을 들은 사람들이라면 표준 오차는 대체로 잘 아는 내용이다. 순전히 개인적인 정리를 위한 용도다. 나이를 드니까 명민함이 떨어지고 당연하게 알고 있었던 것도 모르게 되는 경우가 많으니까.&lt;/p&gt;
