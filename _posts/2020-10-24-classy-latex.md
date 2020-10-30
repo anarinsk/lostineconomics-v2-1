@@ -160,7 +160,7 @@ tlmgr update --all
 
 콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="800"}
+ ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 
 - 옆에 원으로 표시해 둔 곳은 `Remote-Container` 확장으로 바로 가는 단축 아이콘이다. 
 - 위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다. 
@@ -169,7 +169,7 @@ tlmgr update --all
 
 이제 VS Code에서 텍 파일을 열고 문서를 작성하고 컴파일하면 된다. Latex Workshop이 설치되어 있다면, `.tex` 파일에 알아서 반응하니 걱정 마시라. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="textalign:center; " width="700"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_6.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="1000"}
 
 ## References 
 
@@ -201,11 +201,11 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjI1OTQ4MzQsLTE5OTM0NjY4ODAsMz
-M2NDQzNjU0LDE0Mzg4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAy
-ODYsLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLD
-gxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5
-NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMD
-IzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIx
-NzUyMjM3XX0=
+eyJoaXN0b3J5IjpbMTQ4OTQ1NTY5LC0xOTkzNDY2ODgwLDMzNj
+Q0MzY1NCwxNDM4ODYwOTU3LDE5NjY2NDI0MzIsOTEyMTMwMjg2
+LC03Nzk3NjM1MjgsLTE5MDgzNjk1NTEsMTkzMTI2NDk1Myw4MT
+IxNDI3NjMsLTE2OTg1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUx
+NDUsLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMy
+wxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1
+MjIzN119
 -->
