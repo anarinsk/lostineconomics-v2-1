@@ -160,7 +160,7 @@ tlmgr update --all
 
 콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
+ ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="250"}
 
 - 옆에 원으로 표시해 둔 곳은 `Remote-Container` 확장으로 바로 가는 단축 아이콘이다. 
 - 위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다. 
@@ -201,11 +201,11 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTQ1NTY5LC0xOTkzNDY2ODgwLDMzNj
-Q0MzY1NCwxNDM4ODYwOTU3LDE5NjY2NDI0MzIsOTEyMTMwMjg2
-LC03Nzk3NjM1MjgsLTE5MDgzNjk1NTEsMTkzMTI2NDk1Myw4MT
-IxNDI3NjMsLTE2OTg1NTg1NDYsMzA5NzA2ODM1LC00NjkxOTUx
-NDUsLTEwMzYzMTY5MiwtMTI1MTk4Mzk0NywtMTQ2NDIyMzAyMy
-wxNDc0Mzk1NjY3LDUyNzE3NTIzLC0yMDc4Mzg2MDAzLDQyMTc1
-MjIzN119
+eyJoaXN0b3J5IjpbMTcxNzYzMzY4LDE0ODk0NTU2OSwtMTk5Mz
+Q2Njg4MCwzMzY0NDM2NTQsMTQzODg2MDk1NywxOTY2NjQyNDMy
+LDkxMjEzMDI4NiwtNzc5NzYzNTI4LC0xOTA4MzY5NTUxLDE5Mz
+EyNjQ5NTMsODEyMTQyNzYzLC0xNjk4NTU4NTQ2LDMwOTcwNjgz
+NSwtNDY5MTk1MTQ1LC0xMDM2MzE2OTIsLTEyNTE5ODM5NDcsLT
+E0NjQyMjMwMjMsMTQ3NDM5NTY2Nyw1MjcxNzUyMywtMjA3ODM4
+NjAwM119
 -->
