@@ -125,25 +125,24 @@ tlmgr update --all
 
 이제 VS Code로 가자. 필요한 Extension은 앞서 살펴본 Latex workshop과 더불어 [Remote-Container](https://code.visualstudio.com/docs/remote/remote-overview)를 설치하자. 이 녀석을 설치하면 WSL 내에서 돌아가는 컨테이너 안에도 VS Code를 통해 바로 접속할 수 있다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_1.png){: style="textalign:center; " width="350"}  
-
+ ![]({{ site.baseurl }}/images/latex/vscode_1.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 - 아래 `><`으로 된 부분을 클릭하면 상단에 메뉴가 뜬다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_2.png){: style="textalign:center; " width="550"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_2.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="600"}
 
 - "attach to running container"를 실행해서 실행중인 도커 콘테이너를 부착한다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_3.png){: style="textalign:center; " width="350"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_3.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 
 - 부착하면 새 창이 뜨면서 아래 녹색 창이 콘테이너 부착되었음을 알려준다. 
 - 콘테이너 내부에 Latex Workshop 확장(extension)을 설치해야 한다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="textalign:center; " width="350"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_4.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="600"}
 
 - 설치 후 해당 Extension의 설정을 고쳐주자. 
 - 위에 찾기창에서 디폴트로 떠 있는 내용 뒤에 "pdf" 치면 pdf에 관련된 설정만 필터링된다. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_5.png){: style="textalign:center; " width="550"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_5.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="600"}
 
 - 위 항목을 찾아서 적당한 포워딩 포트를 넣어준다. 
 - 포트가 잘 포워딩 된다면, 아래와 같이 VS Code에서 PDF 뷰어를 활성화할 수 있다. 
@@ -161,7 +160,7 @@ tlmgr update --all
 
 콘테이너에서 해당 포트가 잘 포워딩되고 있는지 확인하자. 
 
- ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="textalign:center; " width="350"}  
+ ![]({{ site.baseurl }}/images/latex/vscode_7.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="800"}
 
 - 옆에 원으로 표시해 둔 곳은 `Remote-Container` 확장으로 바로 가는 단축 아이콘이다. 
 - 위 그림처럼 35556 포트를 통해 잘 포워딩되고 있음을 알 수 있다. 
@@ -202,10 +201,11 @@ tlmgr update --all
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM0NjY4ODAsMzM2NDQzNjU0LDE0Mz
-g4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAyODYsLTc3OTc2MzUy
-OCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLDgxMjE0Mjc2MywtMT
-Y5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5NTE0NSwtMTAzNjMx
-NjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMDIzLDE0NzQzOTU2Nj
-csNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIxNzUyMjM3XX0=
+eyJoaXN0b3J5IjpbLTE0NjI1OTQ4MzQsLTE5OTM0NjY4ODAsMz
+M2NDQzNjU0LDE0Mzg4NjA5NTcsMTk2NjY0MjQzMiw5MTIxMzAy
+ODYsLTc3OTc2MzUyOCwtMTkwODM2OTU1MSwxOTMxMjY0OTUzLD
+gxMjE0Mjc2MywtMTY5ODU1ODU0NiwzMDk3MDY4MzUsLTQ2OTE5
+NTE0NSwtMTAzNjMxNjkyLC0xMjUxOTgzOTQ3LC0xNDY0MjIzMD
+IzLDE0NzQzOTU2NjcsNTI3MTc1MjMsLTIwNzgzODYwMDMsNDIx
+NzUyMjM3XX0=
 -->
