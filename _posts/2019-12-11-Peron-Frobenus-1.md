@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 comments: true
 title: Perron-Frobenius Theorem, part 1
@@ -373,5 +373,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDI4OTkxNSwyMTIxNTk5NjddfQ==
+eyJoaXN0b3J5IjpbMjY3Nzk3NTY4LDIxMjE1OTk2N119
 -->
