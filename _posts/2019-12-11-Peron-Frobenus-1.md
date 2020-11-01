@@ -19,7 +19,7 @@ categories: [math,  matrix-theory]
 ### positive, nonnegative 
 
 * 양(positive): 행렬의 모든 원소가 양의 값을 지닐 때 
-* 비음(nonnegative): 행렬의 모든 원소가 비음일 때 
+* 비음(nonnegative): 행렬의 모든 원소가 비음일 때, 가 원래 정의다. 하지만 여기서는 non-negative and non-zero의 의미로 사용한다. 즉, 모든 원소가 비음이면서 행렬 혹은 벡터 자체가 $\mathbf 0$이 아니다. 
 
 벡터 $x$, $y$가 있을 때 $x > y$는 $(x-y)$가 양이라는 뜻이다. 앞으로 벡터와 행렬에 대해서 $>$ 그리고 $\geq$는 모두 원소-단위(element-wise)를 뜻한다. 
 
@@ -370,5 +370,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM3MDcxMDQsMjEyMTU5OTY3XX0=
+eyJoaXN0b3J5IjpbNjk5MDE2NzgwLDIxMjE1OTk2N119
 -->
