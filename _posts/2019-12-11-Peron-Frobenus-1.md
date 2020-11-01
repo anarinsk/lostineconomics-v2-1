@@ -27,7 +27,8 @@ categories: [math,  matrix-theory]
 
 - If $A \geq 0$ and $z \geq 0$, then $A z \geq 0$
 - If $A>0$ and $z \geq 0$, then $A z > 0$. 
-	- 역도 성립한다. 즉, whenever $z \geq 0$ with $z \neq 0$ and  $A z > 0$, then $A >0$
+	- 역도 성립한다. 즉, 
+	- whenever $z \geq 0$ with $z \neq 0$ and  $A z > 0$, then $A >0$
 - If $x \geq 0$ and $x \neq 0$, $\pi = (\frac{1}{\boldsymbol{1}^T x}) x$와 같은 표준화된 형태를 확률 분포로 활용할 수 있다. 
 	- $\pi$ 벡터에 속하는 원소 $i$는  $\pi_i = \dfrac{x_i}{\sum_j x_j}$.
 
@@ -47,13 +48,15 @@ $A$는 다음의 조건을 만족할 때 정칙 행렬(regular matrix)이라고 
 #### Not regular 
 
 $$\begin{bmatrix} 1& 1 \\0& 1 \end{bmatrix}$$
+
 $$\begin{bmatrix} 0& 1 \\1& 0 \end{bmatrix}$$
 
 #### Regular 
 
 $$\begin{bmatrix} 1& 1& 0 \\0& 0& 1\\ 1&0&0 \end{bmatrix}$$
 
-차이를 알겠는가? $A$가 레귤러 행렬이라면 $A \geq 0$이더라도 $A^k > 0$가 된다. 
+차이를 알겠는가? 정칙 행렬이 아닌 경우에는 $A^k(k \geq 1)$을 하더라도 같은 자리에 0이 남게 
+$A$가 레귤러 행렬이라면 $A \geq 0$이더라도 $A^k > 0$가 된다. 
 
 ## Perron-Frobenius theorem 
 
@@ -370,5 +373,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5MDE2NzgwLDIxMjE1OTk2N119
+eyJoaXN0b3J5IjpbMTU1Mzg3ODI4OCwyMTIxNTk5NjddfQ==
 -->
