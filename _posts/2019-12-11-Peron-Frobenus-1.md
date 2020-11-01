@@ -34,7 +34,7 @@ categories: [math,  matrix-theory]
 ## Regular nonnegative matrices 
 
 $A \in \mathbb{R}^{n \times n}$ 그리고 $A \geq 0$를 가정하자. 
-$A$는 다음의 조건을 만족할 때 정치 행렬(regular matrix)이라고 한다. 1보다 큰 정수 $k$에 대해서 $A^k > 0$를 만족한다. 
+$A$는 다음의 조건을 만족할 때 정칙 행렬(regular matrix)이라고 한다. 1보다 큰 정수 $k$에 대해서 $A^k > 0$를 만족한다. 
 
 ### For graph matrices 
 
@@ -370,5 +370,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTU5OTY3XX0=
+eyJoaXN0b3J5IjpbLTIwMjM3MDcxMDQsMjEyMTU5OTY3XX0=
 -->
