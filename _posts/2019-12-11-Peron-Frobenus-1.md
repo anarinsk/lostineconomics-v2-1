@@ -55,8 +55,8 @@ $$\begin{bmatrix} 0& 1 \\1& 0 \end{bmatrix}$$
 
 $$\begin{bmatrix} 1& 1& 0 \\0& 0& 1\\ 1&0&0 \end{bmatrix}$$
 
-차이를 알겠는가? 정칙 행렬이 아닌 경우에는 $A^k(k \geq 1)$을 하더라도 같은 자리에 0이 남게 
-$A$가 레귤러 행렬이라면 $A \geq 0$이더라도 $A^k > 0$가 된다. 
+- 정칙 행렬이 아닌 경우에는 $A^k(k \geq 1)$을 하더라도 같은 자리에 0이 남게 된다. 
+- $A$가 레귤러 행렬이라면 $A \geq 0$이더라도 $A^k > 0$가 된다. 
 
 ## Perron-Frobenius theorem 
 
@@ -373,5 +373,5 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1Mzg3ODI4OCwyMTIxNTk5NjddfQ==
+eyJoaXN0b3J5IjpbMTM5MDI4OTkxNSwyMTIxNTk5NjddfQ==
 -->
