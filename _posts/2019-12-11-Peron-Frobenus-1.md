@@ -91,7 +91,7 @@ $$
 {\rm Prob}(X_{t+1} = j \vert X_t =i) = p_{ij}
 $$
 
-즉, 이는 $i \to j$의 확률, 즉 $i$ 상태에서 $j$ 상태로 옮겨갈 확률을 의미한다. 마르코프 체인의 특징은 $(t+1)$ 기의 상태를 결정하는 것은 오직 $t$ 기의 상태다. 즉, $t-k$ for $k=2, \dots, t$ 는 $(t+1)$의 상태를 결정하는 데 영향을 주지 않는다. $P$는 이행 행렬(transition matrix) 혹은 확률 행렬(stochastic matrix)라고 부른다. 
+즉, 이는 $i \to j$의 확률, 즉 $i$ 상태에서 $j$ 상태로 옮겨갈 확률을 의미한다. 마르코프 체인의 특징은 $(t+1)$ 기의 상태를 결정하는 것은 오직 $t$ 기의 상태다. 즉, $t-k$ for $k=1, \dots, t$ 는 $(t+1)$의 상태를 결정하는 데 영향을 주지 않는다. $P$는 이행 행렬(transition matrix) 혹은 확률 행렬(stochastic matrix)라고 부른다. 
 
 $$
 P = 
@@ -373,5 +373,6 @@ $$
 따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3Nzk3NTY4LDIxMjE1OTk2N119
+eyJoaXN0b3J5IjpbLTE2NzAwNDk1OSwyNjc3OTc1NjgsMjEyMT
+U5OTY3XX0=
 -->
