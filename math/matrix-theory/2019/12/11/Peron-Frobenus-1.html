@@ -276,19 +276,21 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>그런데 $P x = \hat \lambda x$가 성립하고 $\hat \lambda &gt;1$이기 때문에, $x_{\max} \hat \lambda &gt; x_{\max}$가 성립해야 한다. 즉 모순이다. 따라서 $\lambda \leq 1$이고, $\lambda_{\rm pf} = 1$이다.</p>
 
-<p>확률 행렬 $P$, 아이겐밸류 1에 상응하는 좌 아이겐밸류 $\pi^*$라고 하자. 페론-프로베니우스의 정리 활용하면 아래와 같다.</p>
+<p>확률 행렬 $P$, 아이겐밸류 1에 상응하는 좌 아이겐벡터 $\pi^*$라고 하자. 페론-프로베니우스의 정리 활용하면 아래와 같다.</p>
 
 <ul>
-  <li>좌 아이겐벨류 $\pi^*$는 유일하고, 모든 원소는 실수이며 양이다.</li>
+  <li>좌 아이겐벡터 $\pi^*$는 유일하고, 모든 원소는 실수이며 양이다.</li>
   <li>이를 적절하게 스케일링하면 분포가 된다.</li>
   <li>마르코프 체인의 초기 상태와 무관하게 확률 과정은 이 분포로 수렴한다.</li>
 </ul>
 
-<p>보통 마르코프 체인을 설명할 때 좌 아이겐밸류와 우 아이겐밸류를 구별하지 않는 경우가 있다. 이는 여러모로 손해다. $P$의 정의를 확인하고, 위와 같이 정의한 경우라면 1에 대응하는 좌 아이겐벡터가 극한수렴 분포가 된다. 반대로, 확률 행렬을 $P^T$로 정의했다면 우 아이겐벡터가 극한 분포다.</p>
+<p>보통 마르코프 체인을 설명할 때 좌 아이겐밸류와 우 아이겐밸류를 구별하지 않는 경우가 있다. 이는 여러모로 손해다. 위에서 보듯이, 수렴 분포를 증명하는 과정에서 유용하게 활용된다.</p>
+
+<p>$P$의 정의를 확인하고, 위와 같이 정의한 경우라면 1에 대응하는 좌 아이겐벡터가 극한수렴 분포가 된다. 반대로, 확률 행렬을 $P^T$로 정의했다면 우 아이겐벡터가 극한 분포다.</p>
 
 <h3 id="definition-of-limiting-distribution">Definition of limiting distribution</h3>
 
-<p>확률 분포 $\pi = [\pi_0, \pi_1, \pi_2, \dotsc]$는 아래 조건을 만족할 때 마르코프 체인 $P_n$의 극한 분포라고 부른다. 만일</p>
+<p>확률 분포 $\pi = [\pi_0, \pi_1, \pi_2, \dotsc, \pi_k]$는 아래 조건을 만족할 때 마르코프 체인 $P_n$의 극한 분포라고 부른다. 만일</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>j</mi></msub><mo>=</mo><munder><mo><mi>lim</mi><mo>⁡</mo></mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mi>P</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>=</mo><mi>j</mi><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mi>i</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">∀</mi><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>∈</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\pi_j = \lim_{n \to \infty} P(X_n = j | X_0 = i) ,~\forall i, j \in S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.45em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">→</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">lim</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace nobreak"> </span><span class="mord">∀</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span></span>
 
@@ -470,8 +472,8 @@ P^n &amp; =
 <p>따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTY2ODc0NjksMjY3Nzk3NTY4LDIxMj
-E1OTk2N119
+eyJoaXN0b3J5IjpbLTEwMzk1MjcwNTIsLTExOTY2ODc0NjksMj
+Y3Nzk3NTY4LDIxMjE1OTk2N119
 -->
 <div class="footnotes" role="doc-endnotes">
   <ol>
