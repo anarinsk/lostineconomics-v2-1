@@ -3,7 +3,7 @@ layout: post
 toc: false
 comments: true
 title:  Revising Log-Linear Regression Model 
-description: 로그-
+description: 베타를 어떻게 해석할까? 
 categories: [math, regression]
 
 ---
@@ -36,7 +36,7 @@ $$
 
 회귀분석에서 구하는 $\beta$와 의 위 식에서 얻는 $\beta$는 동일할 수가 없다. 왜나하면, $y_i$는 지수 함수라는 비선형 함수이기 때문이다. 일단 이 점을 기억해두도록 하자. 
 
- ![](https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="800"}
+ ![](https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 ## The Coefficient 
 
@@ -97,6 +97,5 @@ $$
 
 [^1]: 테일러 급수를 1차까지 생각해보면 쉽다. $x=0$ 인근에서 성립하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgxMDU5MTEsLTE5MzIyNzUzNDhdfQ
-==
+eyJoaXN0b3J5IjpbNzgyMjM2NDA0LC0xOTMyMjc1MzQ4XX0=
 -->
