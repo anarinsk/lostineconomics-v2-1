@@ -51,13 +51,13 @@ $$
 \end{aligned}
 $$
 
-$\ln(1+\frac{\Delta y}{y_0})$를 보자. $x=0$ 근처에서 $\ln (1+x) \approx x$가 성립한다.[^1] 이때, 
+$\ln(1+\frac{\Delta y}{y_0})$를 보자. $x=0$ 근처에서 $\ln (1+x) \approx x$가 성립한다.[^1] 따라서
 
 $$
 \Delta \ln y_i \approx \dfrac{\Delta y}{y_0} = \% \Delta y = \beta \Delta x
 $$
 
-이 경우 수학적인 해석을 거의 그대로 가져올 수 있다. 다만, $\frac{\Delta y}{y_0}$가 0 근처에 있어야 한다. 
+이 경우 수학적인 해석을 거의 그대로 가져올 수 있다. 다만, $\frac{\Delta y}{y_0}$가 0 근처에 있어야 한다. 이는 $y$의 변화율이 크지 않은 경우에 해당한다. 
 
 위와 같은 회귀식을 추정해 $\beta$를 보고할 때 "$x$가 1단위 변화할 때"라는 표현을 쓴다. 즉, $\Delta x = 1$로 둔다는 뜻이다. 이때, 
 
@@ -97,7 +97,7 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTEyNDg4Myw2NzQ3NDI1MTMsNTY5Nj
-IyNzU2LDEzMTMzMDI0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1
-LC0xOTMyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbLTY4MDUyMzA0LDE4MDExMjQ4ODMsNjc0Nz
+QyNTEzLDU2OTYyMjc1NiwxMzEzMzAyNDg0LC0xNzM4NDQzNTg1
+LDQzMzg5NjQxNSwtMTkzMjI3NTM0OF19
 -->
