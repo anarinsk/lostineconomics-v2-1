@@ -118,11 +118,11 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 수학적으로 한번 따져보자.</p>
+    <p>당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.</p>
 
 <h2 id="the-math">The Math</h2>
 
-<p>편의를 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자. 오차항 $\varepsilon_i$도 일단 생략하자.</p>
+<p>편이상 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자. 오차항 $\varepsilon_i$도 일단 생략하자.</p>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ln</mi><mo>⁡</mo><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mi>β</mi><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\ln y_i = \beta x_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span>
 
@@ -188,8 +188,9 @@ window.onload = wrap_img;
 <p>약 5% 정도 과소 평가 되었음을 알 수 있다. 이 값이 큰지 작은지는 분석자가 선택할 문제다.</p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5NjIyNzU2LDEzMTMzMDI0ODQsLTE3Mz
-g0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbNTcwNzEyNTksNTY5NjIyNzU2LDEzMTMzMD
+I0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1MzQ4
+XX0=
 -->
 <div class="footnotes" role="doc-endnotes">
   <ol>
