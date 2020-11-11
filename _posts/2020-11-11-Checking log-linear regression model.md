@@ -75,12 +75,12 @@ $$
 \% \Delta y_i & \equiv \dfrac{y_1 - y_0}{y_0} \\
 & = \dfrac{y_1}{y_0} - 1 \\
 & = \exp(\ln (\dfrac{y_1}{y_0})) - 1 \\
-& = \exp(x_1 \beta - x_0 \beta + \) - 1 \\
-& = \exp(\Delta x \beta) - 1
+& = \exp(x_1 \beta - x_0 \beta + \varepsilon_1 - \varepsilon_0) - 1 \\
+& = \exp(\Delta x \beta + \Delta \varepsilon) - 1
 \end{aligned}
 $$
 
-$\Delta x =1$로 두면, 위 식으로 $y_i$의 % 변화율을 계산할 수 있다. 
+$\Delta \varepsilon =0$를 가정하고 $\Delta x =1$로 두면, 위 식으로 $y_i$의 % 변화율을 계산할 수 있다. 
 
 ## Interpretation 
 
@@ -92,11 +92,11 @@ $$
 \%\Delta y = \exp(\beta) - 1 = 0.35
 $$
 
-약 5% 정도 과소 평가 되었음을 알 수 있다. 이 값이 큰지 작은지는 분석자가 선택할 문제다. 
+약 5% 정도 과소 평가 되었음을 알 수 있다. 이 크기의 의미는 분석자가 선택할 문제다. 
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 고차 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTU1MzI0MSw1Njk2MjI3NTYsMTMxMz
-MwMjQ4NCwtMTczODQ0MzU4NSw0MzM4OTY0MTUsLTE5MzIyNzUz
-NDhdfQ==
+eyJoaXN0b3J5IjpbMjExNDI3ODk5LDU2OTYyMjc1NiwxMzEzMz
+AyNDg0LC0xNzM4NDQzNTg1LDQzMzg5NjQxNSwtMTkzMjI3NTM0
+OF19
 -->
