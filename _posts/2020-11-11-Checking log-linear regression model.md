@@ -92,11 +92,11 @@ $$
 \%\Delta y = \exp(\beta) - 1 = 0.35
 $$
 
-약 5% 정도 과소 평가 되었음을 알 수 있다. 이 크기의 의미는 분석자가 선택할 문제다. 
+약 5% 정도 과소 평가 되었음을 알 수 있다. 이 크기의 의미나 중요성은 분석자가 선택할 문제다. 
 
-[^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 고차 항들이 점점 줄어들기 때문이다. 
+[^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDI3ODk5LDU2OTYyMjc1NiwxMzEzMz
+eyJoaXN0b3J5IjpbNjc0NzQyNTEzLDU2OTYyMjc1NiwxMzEzMz
 AyNDg0LC0xNzM4NDQzNTg1LDQzMzg5NjQxNSwtMTkzMjI3NTM0
 OF19
 -->
