@@ -95,8 +95,8 @@ $$
 
 약 5% 정도 과소 평가 되었음을 알 수 있다. 이 값이 큰지 작은지는 분석자가 선택할 문제다. 
 
-[^1]: 테일러 급수를 1차까지 생각해보면 쉽다. $x=0$ 인근에서 성립하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 점점 줄어들기 때문이다. 
+[^1]: 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 고차 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOT
-MyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbMTMxMzMwMjQ4NCwtMTczODQ0MzU4NSw0Mz
+M4OTY0MTUsLTE5MzIyNzUzNDhdfQ==
 -->
