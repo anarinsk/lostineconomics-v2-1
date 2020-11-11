@@ -12,13 +12,12 @@ categories: [math, regression]
 
 ## The Math 
 
-편이상 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자. 오차항 $\varepsilon_i$도 일단 생략하자. 
-
+편의상 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자.
 $$
-\ln y_i = \beta x_i
+\ln y_i = \beta x_i + \varepsilon_i
 $$
 
-양변을 미분해보자. 
+양변을 미분해보자. 오차항은 정의상 $x_i$와 무관해야 하므로, 
 
 $$
 \dfrac{d y_i}{y_i} = \beta d x_i
@@ -76,7 +75,7 @@ $$
 \% \Delta y_i & \equiv \dfrac{y_1 - y_0}{y_0} \\
 & = \dfrac{y_1}{y_0} - 1 \\
 & = \exp(\ln (\dfrac{y_1}{y_0})) - 1 \\
-& = \exp(x_1 \beta - x_0 \beta) - 1 \\
+& = \exp(x_1 \beta - x_0 \beta + \) - 1 \\
 & = \exp(\Delta x \beta) - 1
 \end{aligned}
 $$
@@ -97,7 +96,7 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 고차 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNzEyNTksNTY5NjIyNzU2LDEzMTMzMD
-I0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1MzQ4
-XX0=
+eyJoaXN0b3J5IjpbLTYwOTU1MzI0MSw1Njk2MjI3NTYsMTMxMz
+MwMjQ4NCwtMTczODQ0MzU4NSw0MzM4OTY0MTUsLTE5MzIyNzUz
+NDhdfQ==
 -->
