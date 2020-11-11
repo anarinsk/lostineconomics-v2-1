@@ -59,13 +59,13 @@ $$
 
 이 경우 수학적인 해석을 거의 그대로 가져올 수 있다. 다만, $\frac{\Delta y}{y_0}$가 0 근처에 있어야 한다. 이는 $y$의 변화율이 크지 않은 경우에 해당한다. 
 
-위와 같은 회귀식을 추정해 $\beta$를 보고할 때 "$x$가 1단위 변화할 때"라는 표현을 쓴다. 즉, $\Delta x = 1$로 둔다는 뜻이다. 이때, 
+위와 같은 회귀식을 추정해 $\beta$를 보고할 때 "$x$가 1단위 변화할 때"라는 표현을 쓴다. 즉, $\Delta x = 1$로 둔다는 뜻이다. 
 
 $$
 \Delta \ln y_i \approx \dfrac{\Delta y}{y_0} = \% \Delta y = \beta 
 $$
 
-가 된다. 따라서 사후적으로 $\beta$의 값이 0 주변에 있다면 이 값은 $x_i$가 1단위 변화할 때 $y_i$의 변화율에 미치는 영향"으로 해석할 수 있다. 
+결국 $\beta$의 값이 0 주변에 있다면 이 값은 $x_i$가 1단위 변화할 때 $y_i$의 변화율에 미치는 영향"으로 해석할 수 있다. 
 
 ## Exact Math for the percent change
 
@@ -97,7 +97,7 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDUyMzA0LDE4MDExMjQ4ODMsNjc0Nz
-QyNTEzLDU2OTYyMjc1NiwxMzEzMzAyNDg0LC0xNzM4NDQzNTg1
-LDQzMzg5NjQxNSwtMTkzMjI3NTM0OF19
+eyJoaXN0b3J5IjpbMTU3NTk4MDU5OCwxODAxMTI0ODgzLDY3ND
+c0MjUxMyw1Njk2MjI3NTYsMTMxMzMwMjQ4NCwtMTczODQ0MzU4
+NSw0MzM4OTY0MTUsLTE5MzIyNzUzNDhdfQ==
 -->
