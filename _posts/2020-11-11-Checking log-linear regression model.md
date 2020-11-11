@@ -76,7 +76,7 @@ $$
 \% \Delta y_i & \equiv \dfrac{y_1 - y_0}{y_0} \\
 & = \dfrac{y_1}{y_0} - 1 \\
 & = \exp(\ln (\dfrac{y_1}{y_0})) - 1 \\
-& = \exp(x^1_i \beta - x_i^0 \beta) - 1 \\
+& = \exp(x_1 \beta - x_i^ \beta) - 1 \\
 & = \exp(\Delta x \beta) - 1
 \end{aligned}
 $$
@@ -97,5 +97,6 @@ $$
 
 [^1]: 테일러 급수를 1차까지 생각해보면 쉽다. $x=0$ 인근에서 성립하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzODk2NDE1LC0xOTMyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbMjAzMTY3Njc4NCw0MzM4OTY0MTUsLTE5Mz
+IyNzUzNDhdfQ==
 -->
