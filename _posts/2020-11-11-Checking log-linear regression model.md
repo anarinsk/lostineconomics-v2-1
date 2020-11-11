@@ -8,11 +8,11 @@ categories: [math, regression]
 
 ---
 
-당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 수학적으로 한번 따져보자. 
+당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자. 
 
 ## The Math 
 
-편의를 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자. 오차항 $\varepsilon_i$도 일단 생략하자. 
+편이상 위해서 독립 변수와 종속 변수 모두 스칼라 값이라고 하자. 오차항 $\varepsilon_i$도 일단 생략하자. 
 
 $$
 \ln y_i = \beta x_i
@@ -97,6 +97,7 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $(x-0)^k$ for $k=2,3,\dotsc$ 항들이 고차 항들이 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5NjIyNzU2LDEzMTMzMDI0ODQsLTE3Mz
-g0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbNTcwNzEyNTksNTY5NjIyNzU2LDEzMTMzMD
+I0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1MzQ4
+XX0=
 -->
