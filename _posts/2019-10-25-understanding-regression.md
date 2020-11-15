@@ -85,7 +85,7 @@ https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-ve
 
 ## R squared as Pythagorean Theorem 
 
-이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 잠깐! 왜 직접 거리를 재지 않고 코사인 값을 재는 것일까? 우리는 얼마나 가까운지를 판단하기 쉽지 않다. 그래서 가까운 정도를 상대적인 비율로 나타내면 좋을 것이다. 즉, regressor의 컬럼 스페이스에 위치한 $\overline{\mathbf Y}$를 기준으로 거리를 재는 셈이다. 이렇게 측정된 상대적인 거리가 $\cos \theta$이다.[^6] 이는 원점을 중심으로 두 벡터 사이의 코사인 값을 재는 코사인 유사도와 거의 같은 개념이다! 코사인 유사도란 길이가 서로 다른 두 벡터가 얼마나 비슷한지를 측정한다. 이를 응용하면  $\mathrm R^2$란 관찰된
+이제 $\mathrm R^2$의 의미를 살펴보자. 결론부터 이야기하면  $\mathrm R^2$는 그림에서 $(\mathbf Y - \overline{\mathbf Y})$ 벡터와 $(\hat{\mathbf Y}-\overline{\mathbf Y})$ 벡터가 이루는 각의 코사인 값, 즉 $\cos \theta$다. 잠깐! 왜 직접 거리를 재지 않고 코사인 값을 재는 것일까? 우리는 얼마나 가까운지를 판단하기 쉽지 않다. 그래서 가까운 정도를 상대적인 비율로 나타내면 좋을 것이다. 즉, regressor의 컬럼 스페이스에 위치한 $\overline{\mathbf Y}$를 기준으로 거리를 재는 셈이다. 이렇게 측정된 상대적인 거리가 $\cos \theta$이다.[^6] 이는 원점을 중심으로 두 벡터 사이의 코사인 값을 재는 코사인 유사도와 거의 같은 개념이다! 코사인 유사도란 길이가 서로 다른 두 벡터가 얼마나 비슷한지를 측정한다. 이를 응용하면  $\mathrm R^2$란 관찰된 값($\mathbf Y$)과 피팅된 값($\mathbf {\hat Y}$)이 얼마나 비슷한지를 측정한다. 
 
 [^6]: 이런 면에서 보면, $\mathrm R^2$에 코사인 유사도가 숨어 있는 셈이다. 두 벡터의 코사인 유사도란 개별 벡터가 지니고 있는 (유클리드) 길이와 관계 없이 벡터의 지향성을 중심으로 비슷한 정도를 파악하는 것이다. $\mathrm R^2$ 역시 마찬가지다. 
 
@@ -149,8 +149,8 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODY3NjYzNCwtNjA5MTIzMjY0LDU0OD
-g4MDg1MywxOTk4Mzg0NTk5LC0xMjIzMTI2MjA3LDE4Nzg2Nzcw
-NTQsLTE5Mjc0MzMwODMsLTE1OTU2NjY0NDcsMzg0NDE2NTE1LD
-E4OTI5NTA3NjksNTIyMjA4NDUwLC0yMDc2ODk2MzE2XX0=
+eyJoaXN0b3J5IjpbLTE2MjY5OTA0MTcsLTYwOTEyMzI2NCw1ND
+g4ODA4NTMsMTk5ODM4NDU5OSwtMTIyMzEyNjIwNywxODc4Njc3
+MDU0LC0xOTI3NDMzMDgzLC0xNTk1NjY2NDQ3LDM4NDQxNjUxNS
+wxODkyOTUwNzY5LDUyMjIwODQ1MCwtMjA3Njg5NjMxNl19
 -->
