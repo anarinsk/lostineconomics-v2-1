@@ -12,7 +12,7 @@ categories: [math, econometrics, regression]
 
 - 회귀분석을 선형 대수를 통해서 이해하면 새로운 깨달음을 얻을 수 있다. 
 - 회귀분석이라는 것은 PCA와 마찬가지로 차원을 '축소'하는 방법이다. $n$ 개의 관찰을 지닌 어떤 한 대상을 이보다 낮은 $k(<n)$ 개의 변수로 요약하는 것이 핵심이다. 
-- 선형대수로 보면 $\mathrm R^2$ 공식은 피타고라스 정리의 흔한 응용 사례에 불과하다. 
+- 선형대수로 보면 $\mathrm R^2$ 공식은 피타고라스 정리의 흔한 응용 사례이며, 코사인 유사도와 같은 개념이다. 
 
 ## Regression in vector space
 
@@ -149,8 +149,8 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTEyMzI2NCw1NDg4ODA4NTMsMTk5OD
-M4NDU5OSwtMTIyMzEyNjIwNywxODc4Njc3MDU0LC0xOTI3NDMz
-MDgzLC0xNTk1NjY2NDQ3LDM4NDQxNjUxNSwxODkyOTUwNzY5LD
-UyMjIwODQ1MCwtMjA3Njg5NjMxNl19
+eyJoaXN0b3J5IjpbNzk2MTgyNDM3LC02MDkxMjMyNjQsNTQ4OD
+gwODUzLDE5OTgzODQ1OTksLTEyMjMxMjYyMDcsMTg3ODY3NzA1
+NCwtMTkyNzQzMzA4MywtMTU5NTY2NjQ0NywzODQ0MTY1MTUsMT
+g5Mjk1MDc2OSw1MjIyMDg0NTAsLTIwNzY4OTYzMTZdfQ==
 -->
