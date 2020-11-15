@@ -4,7 +4,7 @@ toc: false
 comments: true
 title:  Revisiting Log-Linear Regression Model 
 description: 베타를 어떻게 해석할까? 
-categories: [math, regression]
+categories: [math, regression, e]
 
 ---
 
@@ -51,7 +51,7 @@ $$
 \end{aligned}
 $$
 
-$\ln(1+\frac{\Delta y}{y_0})$를 보자. $z=0$ 근처에서 $\ln (1+z) \approx z$가 성립한다.[^1] 따라서
+$\ln(1+\frac{\Delta y}{y_0})$를 보자. $=0$ 근처에서 $\ln (1+) \approx $가 성립한다.[^1] 
 
 $$
 \Delta \ln y_i =  \ln(1+\frac{\Delta y}{y_0}) \approx \dfrac{\Delta y}{y_0} = \% \Delta y = \beta \Delta x
@@ -97,7 +97,8 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1OTA5Njg3MywxNTc1OTgwNTk4LDE4MD
-ExMjQ4ODMsNjc0NzQyNTEzLDU2OTYyMjc1NiwxMzEzMzAyNDg0
-LC0xNzM4NDQzNTg1LDQzMzg5NjQxNSwtMTkzMjI3NTM0OF19
+eyJoaXN0b3J5IjpbLTE1MzgyNTA0MzQsMjA1OTA5Njg3MywxNT
+c1OTgwNTk4LDE4MDExMjQ4ODMsNjc0NzQyNTEzLDU2OTYyMjc1
+NiwxMzEzMzAyNDg0LC0xNzM4NDQzNTg1LDQzMzg5NjQxNSwtMT
+kzMjI3NTM0OF19
 -->
