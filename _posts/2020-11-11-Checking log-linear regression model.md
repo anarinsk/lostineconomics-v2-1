@@ -4,7 +4,7 @@ toc: false
 comments: true
 title:  Revisiting Log-Linear Regression Model 
 description: 베타를 어떻게 해석할까? 
-categories: [math, regression, e]
+categories: [math, regression, econometrics]
 
 ---
 
@@ -97,8 +97,8 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzgyNTA0MzQsMjA1OTA5Njg3MywxNT
-c1OTgwNTk4LDE4MDExMjQ4ODMsNjc0NzQyNTEzLDU2OTYyMjc1
-NiwxMzEzMzAyNDg0LC0xNzM4NDQzNTg1LDQzMzg5NjQxNSwtMT
-kzMjI3NTM0OF19
+eyJoaXN0b3J5IjpbLTk2MTc1NzEyOCwyMDU5MDk2ODczLDE1Nz
+U5ODA1OTgsMTgwMTEyNDg4Myw2NzQ3NDI1MTMsNTY5NjIyNzU2
+LDEzMTMzMDI0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOT
+MyMjc1MzQ4XX0=
 -->
