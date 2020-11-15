@@ -117,6 +117,8 @@ $$
 
 앞서 본 그림의 오른쪽과 같은 형태의 로지스틱 함수가 도출된다. 요컨대, 로지스틱 함수는 regressor를 해당 사건이 발생할 확률과 연결시키는 장치다. 때문에 종종 로지스틱 함수는 연결 함수(link function)로 불리기도 한다. 
 
+이렇게 보면 로지스틱 회귀는 이른바 일반 선형 모형(Generalized Linear Model)의 한 사례다. 일반 선형 모형이란 종속 변수, 즉 식의 왼쪽이 어려가지 이유에서 실수 값이 아닌 제한된 값 혹은 범주 값을 지닐 때 이를 여러가지 방법을 통해 실수로 바꾸는 방식으로 추정을 하는 방법이다. 지금까지 살펴본 방법이 그 사롕
+
 ## 계수는 어떻게 구하나? 
 
 $\hat\boldsymbol{\beta}$은 어떻게 구할 수 있을까? 현재까지 우리에게 주어진 조건을 보자. 
@@ -217,8 +219,8 @@ $$
 
 이처럼 한계 효과는 미분을 통해 간단히 도출할 수 있다. 앞서 말했던 측정의 어려운 점이 무엇인지 이제 잘 볼 수 있다. $\boldsymbol{\beta}$의 추정치로 MLE를 통해 구한 $\hat \boldsymbol{\beta}$를 활용한다고 해도, 어떤 $\boldsymbol{x_i}$에서 측정하는지에 따라서 값이 달라진다. 평균(marginal effect at mean)에서 한 번만 측정할 것인지 아니면 $n$개의 모든 데이터 포인트에 대해서 계산한 뒤 이를 평균(average marginal effect)할 것인지 등의 선택이 필요하다. 보통 후자를 많이 활용하고 통계 패키지마다 해당 옵션을 제공하고 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMTE1NzEzMywtMTMwODI0ODczMywyMD
-IwODU3MDYwLDk3Mjc1Nzg3MSwtMTczNzM2MDMzLDIwMzY0MTE5
-NDUsMTcyMDI2MTA1NywtOTY2NTUwNDE2LDE0OTk4MTkxMzMsLT
-EzOTc3MDA3NTZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTAzNTI5NDMsMTcyMTE1NzEzMywtMT
+MwODI0ODczMywyMDIwODU3MDYwLDk3Mjc1Nzg3MSwtMTczNzM2
+MDMzLDIwMzY0MTE5NDUsMTcyMDI2MTA1NywtOTY2NTUwNDE2LD
+E0OTk4MTkxMzMsLTEzOTc3MDA3NTZdfQ==
 -->
