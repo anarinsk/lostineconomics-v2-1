@@ -119,7 +119,11 @@ $$
 
 ### Link function? 
 
-말이 나온 김에 링크 함수에 대해서 살펴보고 가자. 위에서 보듯이, 사실 회귀분석이란 실수의 범위를 지니는 좌변과 
+말이 나온 김에 링크 함수에 대해서 살펴보고 가자. 위에서 보듯이, 사실 회귀분석이란 실수의 범위를 지니는 좌변을 역시 변수의 선형결합을 통해 이루어진 우변으로 설명하려는 것이다. 그런데 만일 좌변의 변수가 실수가 아니라면? 실수가 아닌 경우는 어떤 것이 있을까? 
+
+- 변수가 잘린 경우(truncated): 지속 시간의 경우 0보다 큰 실수가 된다. 
+- 범주형 자료: 이 경우는 수료 표현이 힘들다. 
+- 정수: 방문자 
 
 ## 계수는 어떻게 구하나? 
 
@@ -221,8 +225,8 @@ $$
 
 이처럼 한계 효과는 미분을 통해 간단히 도출할 수 있다. 앞서 말했던 측정의 어려운 점이 무엇인지 이제 잘 볼 수 있다. $\boldsymbol{\beta}$의 추정치로 MLE를 통해 구한 $\hat \boldsymbol{\beta}$를 활용한다고 해도, 어떤 $\boldsymbol{x_i}$에서 측정하는지에 따라서 값이 달라진다. 평균(marginal effect at mean)에서 한 번만 측정할 것인지 아니면 $n$개의 모든 데이터 포인트에 대해서 계산한 뒤 이를 평균(average marginal effect)할 것인지 등의 선택이 필요하다. 보통 후자를 많이 활용하고 통계 패키지마다 해당 옵션을 제공하고 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzA1NTcxLDE3MjExNTcxMzMsLTEzMD
-gyNDg3MzMsMjAyMDg1NzA2MCw5NzI3NTc4NzEsLTE3MzczNjAz
-MywyMDM2NDExOTQ1LDE3MjAyNjEwNTcsLTk2NjU1MDQxNiwxND
-k5ODE5MTMzLC0xMzk3NzAwNzU2XX0=
+eyJoaXN0b3J5IjpbLTE4MTA5NDkzOTIsMTcyMTE1NzEzMywtMT
+MwODI0ODczMywyMDIwODU3MDYwLDk3Mjc1Nzg3MSwtMTczNzM2
+MDMzLDIwMzY0MTE5NDUsMTcyMDI2MTA1NywtOTY2NTUwNDE2LD
+E0OTk4MTkxMzMsLTEzOTc3MDA3NTZdfQ==
 -->
