@@ -51,7 +51,7 @@ $$
 \end{aligned}
 $$
 
-$\ln(1+\frac{\Delta y}{y_0})$를 보자. $=0$ 근처에서 $\ln (1+) \approx $가 성립한다.[^1] 
+$\ln(1+\frac{\Delta y}{y_0})$를 보자. $z=0$ 근처에서 $\ln (1+z) \approx z$가 성립한다.[^1] 
 
 $$
 \Delta \ln y_i =  \ln(1+\frac{\Delta y}{y_0}) \approx \dfrac{\Delta y}{y_0} = \% \Delta y = \beta \Delta x
@@ -97,8 +97,8 @@ $$
 
 [^1]: $x=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $x=0$ 인근에서 근사하는 이유는 0근처에서 $\frac{(x-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTc1NzEyOCwyMDU5MDk2ODczLDE1Nz
-U5ODA1OTgsMTgwMTEyNDg4Myw2NzQ3NDI1MTMsNTY5NjIyNzU2
-LDEzMTMzMDI0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOT
-MyMjc1MzQ4XX0=
+eyJoaXN0b3J5IjpbLTE4NjIzMTY3MTIsLTk2MTc1NzEyOCwyMD
+U5MDk2ODczLDE1NzU5ODA1OTgsMTgwMTEyNDg4Myw2NzQ3NDI1
+MTMsNTY5NjIyNzU2LDEzMTMzMDI0ODQsLTE3Mzg0NDM1ODUsND
+MzODk2NDE1LC0xOTMyMjc1MzQ4XX0=
 -->
