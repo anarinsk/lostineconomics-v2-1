@@ -90,7 +90,7 @@ $$
 
 #### 우도는 pmf 혹은 pdf일까?
 
-관찰이 1개라면 앞서 보았듯이 우도는 pmf 그리고 pdf가 된다. pdf가 된다는 것은 무슨 의미일까? 파라미터 공간 전체에 대해서 합하면 혹은 적분하면 1이 되어야 한다. 구래 따라서 일반적으로 우도를 적분을 한다고 해서 1이 되지 않는다. 앞서 보았던 예로 가보자. 
+관찰이 1개라면 앞서 보았듯이 우도는 pmf 그리고 pdf가 된다. pdf가 된다는 것은 무슨 의미일까? 파라미터 공간 전체에 대해서 합하면 혹은 적분하면 1이 되어야 한다. 그래서 pdf다. 그런데 일반적으로 우도를 적분을 한다고 해서 1이 되지 않는다. 앞서 보았던 예로 가보자. 
 
 $$
 \int_0^1 p^{1/2} dp \neq 1
@@ -110,7 +110,9 @@ $$
 
 왜 온전한 $p(\theta\lvert data)$를 구하지 않고 분모를 제외하려고 할까? 
 
-이유는 두 가지다. 첫째, 베이즈 추론에서 우리의 목적함수는 $p(\theta\lvert data)$다. 즉, 이 값을 극대화해주는 $\theta$를 찾는 것이 목적이다. 이 점에서 보면, MLE와 사실상 같은 방법이라고 할 수 있다. 그런데,  분모의 $P(data)$에는 $\theta$가 없다. 즉, 목적함수를 극대화하는 파리미터를 찾는 데 분모는 영향을 주지 않는다. 둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. 예를 들어 $\theta$가 다차원이라면 적분이 아예 불가능할 수 있다. 
+이유는 두 가지다. 첫째, 베이즈 추론에서 우리의 목적함수는 $p(\theta\lvert data)$다. 즉, 이 값을 극대화해주는 $\theta$를 찾는 것이 목적이다. 이렇게 보면, MLE와 사실상 같은 방법이라고 할 수 있다. 분모의 $P(data)$에는 $\theta$가 없다. 즉, 목적함수를 극대화하는 파리미터를 찾는 데 분모는 영향을 주지 않는다. 
+
+둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. 예를 들어 $\theta$가 다차원이라면 적분이 아예 불가능할 수 있다. MCMC에서 이 문제를 
 
 어쨌든 해당 목적 함수의 최적화를 통해 찾은이렇게 구한 파라미터를 MAP(Maximum A Posteriori)라고 부른다. MAP은 posterior의 mode(최빈값)이기도 하다. MAP은 $p(\theta\lvert data)$는 분포에서 가장 높은 봉우리를 지니는 파라미터를 찾는 것인데, 이는 해당 값이 가장 많이 나오는 값이라는 뜻이기도 하다.  
 
@@ -306,7 +308,7 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDkwMjE0OSwtMTgzNjQyNzI5NCwyNj
+eyJoaXN0b3J5IjpbLTg5NTI2MTUzNiwtMTgzNjQyNzI5NCwyNj
 I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
 MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
 EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
