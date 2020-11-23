@@ -128,9 +128,9 @@ $$
 MCMC는 Markov Chain Monte Carlo Simulation의 약어다. 둘을 각자 하나씩 뜯어보기 전에, 왜 MCMC라는 걸 고민하게 되었을까? 이유는 간단하다. 앞서 베이즈 추론에서 보았지만, $\mathcal L (\theta\lvert data) p(\theta)$는 쉽게 구할 수 있다. 
 
 - 사전 분포 $p(\theta)$는 내 마음대로 정하면 되는 것이다. 
-- $data$우도 역시 쉽게 구할 수 있다. 
+- 이를 $data$와 연결하면 우도를 구할 수 있다. 
 
-MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 형태로 계산있다는 데 있한다는 것이다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다! 이게 있다면 다.계산할 수 있고,  분도  
+MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 계산할 수 있다는 데 있다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다! 이게 있다면 다.계산할 수 있고,  분도  
 	
 $$
 P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
@@ -308,10 +308,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzgyNjE5MzAsLTE4MzY0MjcyOTQsMj
-YyNTM3NDc0LC0yMTk3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3
-NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC
-0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0
-NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX
-0=
+eyJoaXN0b3J5IjpbMTgzOTU5ODU2OCwtMTgzNjQyNzI5NCwyNj
+I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
+MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
+EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
+MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ
+==
 -->
