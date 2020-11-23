@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T15:59:18-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T15:59:55-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-math&quot;&gt;The Math&lt;/h2&gt;
 
@@ -1089,7 +1089,7 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;베이지언 “착각”은 흔하게 발생한다. 우리가 흔히 접하는 확률은 정탐 확률이다. 즉 99% 정확도라고 하면 질병이 있을 때 이를 탐지할 확률 ($P(B&lt;/td&gt;
-      &lt;td&gt;A$)이다. 위에서 듯이, 이는 양성 결과를 받을 때 병에 걸렸을 확&lt;/td&gt;
+      &lt;td&gt;A$)이다. 위에서 듯이, 이는 양성 결과를 받을 때 병에 걸렸을 확률과는 다르다.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1404,9 +1404,10 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp;amp; = \pi(\theta^b
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/mcmc/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MDQyMDgyLC0xODM2NDI3Mjk0LDI2Mj
-UzNzQ3NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzcz
-LC0xNDQyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMT
-IyMDc3MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYw
-Nzc0LC0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbMTk2MTg2NjgzMiwtMTgzNjQyNzI5NCwyNj
+I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
+MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
+EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
+MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ
+==
 --&gt;</content><author><name></name></author><category term="statistics" /><category term="bayesian" /><summary type="html">For what</summary></entry></feed>
