@@ -28,7 +28,7 @@ $P(A)$는 prior, 즉 사전 확률이다. 즉, $A$의 발생 확률에 관한 �
 
 해당 질병에 걸릴 확률 자체가 낮다면, 즉 기저 확률이 낮다면, 질병에서 양성 반응이 나왔다는 사실만으로는 해당 질병에 정탐 확률 만큼 높게 감염되었다고 보기 어렵다. 정탐 확률은 베이즈 정리에서 업데이팅 파트를 의미하고, 해당 질병에 걸릴 확률은 기저 확률에 해당한다.  기저가 매우 낮다면, updating 부분이 높아도 사후 확률은 그렇게까지 높지 않을 수 있다. 
 
-베이지언 “착각”은 흔하게 발생한다. 우리가 흔히 접하는 확률은 정탐 확률이다. 즉 99% 정확도라고 하면 질병이 있을 때 이를 탐지할 확률 ($P(B|A$)이다. 위에서 듯이, 이는 양성 결과를 받을 때 병에 걸렸을 확
+베이지언 “착각”은 흔하게 발생한다. 우리가 흔히 접하는 확률은 정탐 확률이다. 즉 99% 정확도라고 하면 질병이 있을 때 이를 탐지할 확률 ($P(B|A$)이다. 위에서 듯이, 이는 양성 결과를 받을 때 병에 걸렸을 확률과는 다르다. 
 
 ## Bayesian inference 
 
@@ -306,9 +306,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2MDQyMDgyLC0xODM2NDI3Mjk0LDI2Mj
-UzNzQ3NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzcz
-LC0xNDQyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMT
-IyMDc3MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYw
-Nzc0LC0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbMTk2MTg2NjgzMiwtMTgzNjQyNzI5NCwyNj
+I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
+MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
+EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
+MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ
+==
 -->
