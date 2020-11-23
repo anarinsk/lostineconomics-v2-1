@@ -43,12 +43,12 @@ $$
 
 각각 나누어 살펴보자. 
 
-- $P(data)$: evidence, 데이터가 발생할 확률을 뜻한다. 
+- $P(data)$: evidence, 데이터를 관찰할 확률을 뜻한다. 
 - $p(data\lvert \theta) = {\mathcal L}(\theta\lvert data)$: Likelihood, 관찰된 데이터의 '우도' 혹은 가능도를 나타낸다. 
 - $p(\theta)$: prior, 데이터를 포함하지 않은 파라미터의 사전 분포를 뜻한다. 
 - 파라미터 공간은 n 차원 벡터다. $\theta \in \mathbb R^n$, $\theta = (\theta_1, \theta_2, \dotsc, \theta_n)$.
 
-식의 분자는 모두 파리미터 $\theta$의 함수다. 분모는 상수다. 뒤에 다시 설명하겠지만, $p(\theta \lvert  data)$를 $\theta$에 대해서 최적화한다면, 분자만 관련된다. 
+식의 분자는 모두 파리미터 $\theta$의 함수다. 분모는 상수다. 뒤에 다시 설명하겠지만, $p(\theta \lvert  data)$를 $\theta$에 대해서 최적화한다면, 분자만 고려하면 된다. 
 
 대소문자를 구별해서 쓴 것에 유의하자.  소문자 $p$는 확률 분포, 즉 확률 밀도 함수(pmf) 혹은 확률 질량 함수(pdf)를 뜻한다. 대문자 $P$는 확률이다.  
 
@@ -58,7 +58,7 @@ $$
 
 ## Something about likelihood
 
-관찰된 $data$ 아래에서 이 결과가 가능한 '정도'를 파리미터의 함수로 나타낸 것이라고 이해하면 좋다. 우도를 나타낼 때 '확률'이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?  
+관찰된 $data$ 아래에서 이 결과가 가능한 '정도'를 파리미터의 함수로 나타낸 것이라고 이해하면 좋다. 우도를 의미할 때 '확률'이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?  
 
 ### Probability vs Likelihood
  
@@ -306,7 +306,7 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTg2NjgzMiwtMTgzNjQyNzI5NCwyNj
+eyJoaXN0b3J5IjpbLTgwNTQyOTk5MywtMTgzNjQyNzI5NCwyNj
 I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
 MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
 EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
