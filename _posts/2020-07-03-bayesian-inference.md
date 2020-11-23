@@ -112,13 +112,13 @@ $$
 
 이유는 두 가지다. 첫째, 베이즈 추론에서 우리의 목적함수는 $p(\theta\lvert data)$다. 즉, 이 값을 극대화해주는 $\theta$를 찾는 것이 목적이다. 이렇게 보면, MLE와 사실상 같은 방법이라고 할 수 있다. 분모의 $P(data)$에는 $\theta$가 없다. 즉, 목적함수를 극대화하는 파리미터를 찾는 데 분모는 영향을 주지 않는다. 
 
-둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. 예를 들어 $\theta$가 다차원이라면 적분이 아예 불가능할 수 있다. MCMC에서 이 문제를 
+둘째 $P(data)$는 계산하기가 만만치 않다. 많은 경우는 아예 불가능하다. 예를 들어 $\theta$가 다차원이라면 적분이 아예 불가능할 수 있다. MCMC에서 이 문제를 다시 볼 것이다. 
 
-어쨌든 해당 목적 함수의 최적화를 통해 찾은이렇게 구한 파라미터를 MAP(Maximum A Posteriori)라고 부른다. MAP은 posterior의 mode(최빈값)이기도 하다. MAP은 $p(\theta\lvert data)$는 분포에서 가장 높은 봉우리를 지니는 파라미터를 찾는 것인데, 이는 해당 값이 가장 많이 나오는 값이라는 뜻이기도 하다.  
+어쨌든 해당 목적 함수의 최적화를 통해 찾은 파라미터를 MAP(Maximum A Posteriori)라고 부른다. MAP은 posterior의 mode(최빈값)이기도 하다. MAP은 $p(\theta\lvert data)$는 분포에서 가장 높은 봉우리를 지니는 파라미터를 찾는 것인데, 이는 해당 값이 가장 많이 나오는 값이라는 뜻이기도 하다.  
 
 ### MAP vs MLE 
 
-만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태라고 이해하면 되겠다. 
+만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태가 MLE라고 이해하면 되겠다. 
 
 
 ## MCMC! 
@@ -128,7 +128,7 @@ $$
 MCMC는 Markov Chain Monte Carlo Simulation의 약어다. 둘을 각자 하나씩 뜯어보기 전에, 왜 MCMC라는 걸 고민하게 되었을까? 이유는 간단하다. 앞서 베이즈 추론에서 보았지만, $\mathcal L (\theta\lvert data) p(\theta)$는 쉽게 구할 수 있다. 
 
 - 사전 분포 $p(\theta)$는 내 마음대로 정하면 되는 것이다. 
-- 여기에 $data$를 플러그인하면 우도 역시 쉽게 구할 수 있다. 
+- $data$우도 역시 쉽게 구할 수 있다. 
 
 MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 형태로 계산있다는 데 있한다는 것이다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다! 이게 있다면 다.계산할 수 있고,  분도  
 	
@@ -308,10 +308,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTI2MTUzNiwtMTgzNjQyNzI5NCwyNj
-I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
-MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
-EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
-MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MzgyNjE5MzAsLTE4MzY0MjcyOTQsMj
+YyNTM3NDc0LC0yMTk3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3
+NzMsLTE0NDIwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC
+0xMjIwNzczNTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0
+NjA3NzQsLTE1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX
+0=
 -->
