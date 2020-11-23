@@ -22,12 +22,13 @@ P(A\lvert B) & = \dfrac{P(B\lvert A) P(A)}{P(B)} \\
 \end{aligned}
 $$
 
-$P(A)$는 prior, 즉 사전 확률이다. 즉, $A$의 발생 확률에 관한 사전적인 기대 혹은 지식이다. 기저 확률이라고도 부른다. 이 지식을 $B$라는 증거(evidence)를 통해서 업데이트하는 것이 베이즈 정리다. 이때 업데이트하는  $( )$ 부분이다. 
+$P(A)$는 prior, 즉 사전 확률이다. 즉, $A$의 발생 확률에 관한 사전적인 기대 혹은 지식이다. 때로는 기저 확률이라고도 부른다. 이 지식을 $B$라는 증거(evidence)를 통해서 업데이트하는 것이 베이즈 정리다. 이때 업데이트하는  $( )$ 부분이다. 
 
  베이즈 정리의 흔한 하지만 언제나 재미있는 사례를 위 식을 통해 다시 들여다보자. 어떤 질병의 정탐(true positive) 확률, 즉 검사의 양성 판정이 곧 발병을 의미할 확률이 매우 높다고 하자. 이때 어떤 사람이 양성 판정을 받았다면, 이 사람은 매우 높은 확률로 해당 질병에 감염된 것일까?  말장난 이것 같지만, 직관적으로는 그럴 것 같다. 
 
 해당 질병에 걸릴 확률 자체가 낮다면, 즉 기저 확률이 낮다면, 질병에서 양성 반응이 나왔다는 사실만으로는 해당 질병에 정탐 확률 만큼 높게 감염되었다고 보기 어렵다. 정탐 확률은 베이즈 정리에서 업데이팅 파트를 의미하고, 해당 질병에 걸릴 확률은 기저 확률에 해당한다.  기저가 매우 낮다면, updating 부분이 높아도 사후 확률은 그렇게까지 높지 않을 수 있다. 
 
+베이지언 “착각”은 흔하게 발생한다. 우리가 흔히 얻는 확률은 
 
 ## Bayesian inference 
 
@@ -305,9 +306,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY0MjcyOTQsMjYyNTM3NDc0LC0yMT
-k3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0NDIwMzMy
-OTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzczNTY0LC
-0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLTE1NzQy
-MTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbMTg1MDk0NTE2MiwtMTgzNjQyNzI5NCwyNj
+I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
+MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
+EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
+MDc3NCwtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ
+==
 -->
