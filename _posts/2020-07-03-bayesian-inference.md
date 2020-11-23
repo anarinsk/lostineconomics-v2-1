@@ -86,11 +86,11 @@ $$
 
 #### 연속 분포에서 확률 $\neq$ 우도? 
 
-연속 분포에서 우도는 probability density function(pdf)과 같다고 설명되어 있는 경우가 있다. 이 말은 맞기도 하고 아니기도 하다. $data$의 관찰 수가 1개라면 이 말은 맞다. 하지만, 이산 분포의 경우와 같이 2개 이상일 때는 pdf와 우도가 같다고 말할 수 없다. 
+연속 분포에서 우도는 probability density function(pdf)과 같다고 설명되어 있는 경우가 있다. 이 말은 맞기도 하고 아니기도 하다. $data$의 관찰 수가 1개라면 이 말은 맞다. 하지만, 이산 분포의 경우와 같이 2개 이상일 때는 pdf와 우도가 같다고 말할 수 없다. 최우추정법에서 pmf 혹은 pdf가 곱해진 형태를 떠올리면 이해가 조금 쉬울 수 있겠다. 
 
 #### 우도는 pmf 혹은 pdf일까?
 
-관찰이 1개라면 앞서 보았듯이 우도는 pmf 그리고 pdf가 된다. pdf가 된다는 것은 무슨 의미일까? 파라미터 공간 전체에 대해서 합하면 혹은 적분하면 1이 된어야 한다. 따라서 일반적으로 우도를 적분을 한다고 해서 1이 되지 않는다. 앞서 보았던 예로 가보자. 
+관찰이 1개라면 앞서 보았듯이 우도는 pmf 그리고 pdf가 된다. pdf가 된다는 것은 무슨 의미일까? 파라미터 공간 전체에 대해서 합하면 혹은 적분하면 1이 되어야 한다. 구래 따라서 일반적으로 우도를 적분을 한다고 해서 1이 되지 않는다. 앞서 보았던 예로 가보자. 
 
 $$
 \int_0^1 p^{1/2} dp \neq 1
@@ -306,7 +306,7 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNTQyOTk5MywtMTgzNjQyNzI5NCwyNj
+eyJoaXN0b3J5IjpbLTk2NDkwMjE0OSwtMTgzNjQyNzI5NCwyNj
 I1Mzc0NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3
 MywtMTQ0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLT
 EyMjA3NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2
