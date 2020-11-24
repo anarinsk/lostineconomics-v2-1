@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T22:41:34-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T22:44:46-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-math&quot;&gt;The Math&lt;/h2&gt;
 
@@ -1148,7 +1148,7 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
 
 &lt;h2 id=&quot;something-about-likelihood&quot;&gt;Something about likelihood&lt;/h2&gt;
 
-&lt;p&gt;관찰된 $data$ 아래에서 이 결과가 가능한 ‘정도’를 파리미터의 함수로 나타낸 것이라고 이해하면 좋다. 우도를 의미할 때 ‘확률’이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?&lt;/p&gt;
+&lt;p&gt;관찰된 $data$ 아래에서 이 결과가 가능한 ‘정도’를 파리미터의 함수로 나타낸 것, 정도로 이해하면 좋다. 우도를 의미할 때 ‘확률’이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?&lt;/p&gt;
 
 &lt;h3 id=&quot;probability-vs-likelihood&quot;&gt;Probability vs Likelihood&lt;/h3&gt;
 
@@ -1406,10 +1406,10 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp;amp; = \pi(\theta^b
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/mcmc/fig_3.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIxMzAyMiwtNDIxODg5NDM4LDM4ND
-g5MzkwMCwtMTgzNjQyNzI5NCwyNjI1Mzc0NzQsLTIxOTc4MjE2
-LDIwNTUzODIyNzgsMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOT
-I2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1
-MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3My
-wxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbLTEyMjc1NjczMywtMTM1MjEzMDIyLC00Mj
+E4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3
+NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzczLC0xND
+QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
+MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
+0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 --&gt;</content><author><name></name></author><category term="statistics" /><category term="bayesian" /><summary type="html">For what</summary></entry></feed>
