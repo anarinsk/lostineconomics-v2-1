@@ -120,7 +120,11 @@ yml 파일에서 `service` 아래 두 개의 항목이 있다. 각각 `jupyter/d
 
 1. 통상적으로 쓰려면 `docker-compose.yml`로 이름을 지은 후 적당한 폴더에 둔다. 
 2. 윈도 터미널 등을 통해  Ubuntu와 같은 리눅스 배포판에 접근한다. 
-3. 1의 파일이 있는 디렉토리로 이동한 후, `sudo docker-compose -d up`을 실행한다. 
+3. 1의 파일이 있는 디렉토리로 이동한 후, 
+
+```shell
+sudo docker-compose -f "\mnt\[YOUR-YML-DIRECTORY]" -p "[NAME-OF-PROJECT]" up -d
+```
 
 그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다. 
 
@@ -165,11 +169,11 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2Njg3OTA3LDM0MDU0MTk4NywxODIyNz
-gwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3
-OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MS
-wtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUx
-MTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLD
-E5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5
-MzE4MjFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTkwMzI5NjQsODU2Njg3OTA3LDM0MD
+U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
+NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
+wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
+Nzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNT
+csNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2
+NjY4NzcwXX0=
 -->
