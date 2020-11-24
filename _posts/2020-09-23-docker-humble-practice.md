@@ -128,6 +128,11 @@ sudo docker-compose -f "\mnt\[YOUR-YML-DIRECTORY]" -p "[NAME-OF-PROJECT]" up -d
 
 그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다. 
 
+몇 가지 주의사항 
+
+- docker-compose를 `-f` 옵션 없이 실행하면 녀석은 HOME 디렉토리에서 해당 파일을 찾는다. WSL 기준에서 볼 때 홈 디렉토리는 윈도의 사용자-계정 디렉토리다. 해당 디렉토리에 `docker-compose.yml` 파일이 있으면 녀석으로 실행할 것이다. 이렇게 써도 문제는
+
+
 - [도커 컴포즈 공식 가이드](https://docs.docker.com/compose/)
 
 ## 실제 사용해보자 
@@ -169,7 +174,7 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTkwMzI5NjQsODU2Njg3OTA3LDM0MD
+eyJoaXN0b3J5IjpbLTIwMDExNjcyNTksODU2Njg3OTA3LDM0MD
 U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
 NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
 wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
