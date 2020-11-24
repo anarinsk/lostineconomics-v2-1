@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T22:59:05-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T23:00:46-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-math&quot;&gt;The Math&lt;/h2&gt;
 
@@ -962,7 +962,7 @@ MTY0LC00ODk0MjQzNjZdfQ==
             &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;8888:8888&quot;&lt;/span&gt;
             &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;8501-8510:8501-8510&quot;&lt;/span&gt;   
         &lt;span class=&quot;na&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GRANT_SUDO=yes&lt;/span&gt;
+           &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GRANT_SUDO=yes&lt;/span&gt;
            &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;JUPYTER_ENABLE_LAB=yes&lt;/span&gt;
            &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;JUPYTER_TOKEN=[내 비번]&lt;/span&gt;
         &lt;span class=&quot;na&quot;&gt;container_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jupyter&lt;/span&gt;
@@ -1045,13 +1045,13 @@ MTY0LC00ODk0MjQzNjZdfQ==
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE3MDc2MTQsODU2Njg3OTA3LDM0MD
-U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
-NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
-wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
-Nzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNT
-csNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2
-NjY4NzcwXX0=
+eyJoaXN0b3J5IjpbLTk4MTQ4NDM2MCwtMTc5MTcwNzYxNCw4NT
+Y2ODc5MDcsMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMjI4NDYz
+MzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3Mjk5LC
+0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxODQsMzgw
+ODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1ODI4Nz
+ksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3NywxMDA0
+OTgyODk1XX0=
 --&gt;</content><author><name></name></author><category term="docker" /><category term="data-science" /><summary type="html">아마도 이런 분들에게 유용할 것</summary></entry><entry><title type="html">Bayesian Inference with MCMC</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html" rel="alternate" type="text/html" title="Bayesian Inference with MCMC" /><published>2020-07-03T00:00:00-05:00</published><updated>2020-07-03T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/statistics/bayesian/2020/07/03/bayesian-inference.html">&lt;h2 id=&quot;for-what&quot;&gt;For what&lt;/h2&gt;
 
 &lt;ul&gt;
