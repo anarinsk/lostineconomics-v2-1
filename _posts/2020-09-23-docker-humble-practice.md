@@ -92,7 +92,7 @@ services:
             - "8888:8888"
             - "8501-8510:8501-8510"   
         environment:
-            - GRANT_SUDO=yes
+           - GRANT_SUDO=yes
            - JUPYTER_ENABLE_LAB=yes
            - JUPYTER_TOKEN=[내 비번]
         container_name: jupyter
@@ -172,11 +172,11 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE3MDc2MTQsODU2Njg3OTA3LDM0MD
-U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
-NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
-wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
-Nzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNT
-csNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2
-NjY4NzcwXX0=
+eyJoaXN0b3J5IjpbLTk4MTQ4NDM2MCwtMTc5MTcwNzYxNCw4NT
+Y2ODc5MDcsMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMjI4NDYz
+MzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3Mjk5LC
+0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxODQsMzgw
+ODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1ODI4Nz
+ksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3NywxMDA0
+OTgyODk1XX0=
 -->
