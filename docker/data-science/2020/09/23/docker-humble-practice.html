@@ -246,8 +246,11 @@ window.onload = wrap_img;
 <ol>
   <li>통상적으로 쓰려면 <code class="language-plaintext highlighter-rouge">docker-compose.yml</code>로 이름을 지은 후 적당한 폴더에 둔다.</li>
   <li>윈도 터미널 등을 통해  Ubuntu와 같은 리눅스 배포판에 접근한다.</li>
-  <li>1의 파일이 있는 디렉토리로 이동한 후, <code class="language-plaintext highlighter-rouge">sudo docker-compose -d up</code>을 실행한다.</li>
+  <li>1의 파일이 있는 디렉토리로 이동한 후,</li>
 </ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker-compose <span class="nt">-f</span> <span class="s2">"</span><span class="se">\m</span><span class="s2">nt</span><span class="se">\[</span><span class="s2">YOUR-YML-DIRECTORY]"</span> <span class="nt">-p</span> <span class="s2">"[NAME-OF-PROJECT]"</span> up <span class="nt">-d</span>
+</code></pre></div></div>
 
 <p>그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다.</p>
 
@@ -293,13 +296,13 @@ window.onload = wrap_img;
 <p><img src="/lostineconomics-v2-1/images/docker-in-use/docker_2.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2Njg3OTA3LDM0MDU0MTk4NywxODIyNz
-gwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1NzEsMTkwMTg5Mjk3
-OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NSwtMTg2MDY2Nzc0MS
-wtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgyNzg3NjgxMCw5MTUx
-MTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNTcsNjA3NzA0NzYxLD
-E5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2NjY4NzcwLDEwNjA5
-MzE4MjFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTkwMzI5NjQsODU2Njg3OTA3LDM0MD
+U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
+NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
+wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
+Nzg3NjgxMCw5MTUxMTE0MCwtNTk3NTgyODc5LDE2NDMxNjEwNT
+csNjA3NzA0NzYxLDE5ODE5NzIzNzcsMTAwNDk4Mjg5NSwtODU2
+NjY4NzcwXX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
