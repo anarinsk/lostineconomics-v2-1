@@ -136,9 +136,9 @@ $$
 P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
 $$
 
-문제는 위 식의 적분, 특히 $p(\theta)$ 분포를 포함한 적분이 쉽지 않다는 데 있다. Prior가  해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 많은 경우에 가능하지 않다. 
+문제는 위 식의 적분, 특히 $p(\theta)$ 분포를 포함한 적분이 쉽지 않다는 데 있다. Prior가 계산 가능한 수준이라고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 대체로 가능하지 않다. 
 
-### MC1: Monte Carlo 
+### First MC: Monte Carlo 
 
 사실 이럴 때 동원할 수 있는 방법이 몬테카를로 시뮬레이션이다. 해석 해를 구할 수 없지만 어떤 파라미터 포인트 $\theta_i$ 를 넣으면 $\mathcal L(\theta_i\lvert data)(=p(data\lvert \theta_i))$는 알 수 있다. $\theta_i \in \theta$를 충분히 많이 뽑아서 평균을 내면 $P(data)$가 되지 않을까? 
 
@@ -155,9 +155,9 @@ $$
 \int f(x) p(x) dx \approx \sum_{i=1}^{N} \dfrac{f(X_i)}{N}
 $$
 
-### MC2: Markov Chain 
+### Second MC: Markov Chain 
 
-이야기가 여기서 끝났다면 그래도 행복했을 것이다. 샘플링을 할 수 있다면, 하라! 샘플링이 충분히 쉬울까? 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 쉽게 하는 것 자체가 어렵다. 
+몬테카를로에서 끝났다면 그래도 편했을 것이다. 샘플링을 할 수 있다면, 하자! 샘플링이 '충분히 쉬울까? 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 쉽게 하는 것 자체가 어렵다. 
 
 샘플링을 위한 그럴 듯한 전략이 필요하다. 많이 나올 것 같은 파라미터 공간 주변에서는 많이 뽑고, 별로 없을 것 같은 공간 주변에서는 적당히 뽑은 후 빨리 빠져나올 수 있어야 한다. 이런 샘플링 전략의 그럴듯한 근거를 제시하는 것이 또다른 MC, 마르코프 연쇄이다. 
 
@@ -310,7 +310,7 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEzNjI1MTY0LC0xMzUyMTMwMjIsLTQyMT
+eyJoaXN0b3J5IjpbMzQxOTMzMzUyLC0xMzUyMTMwMjIsLTQyMT
 g4OTQzOCwzODQ4OTM5MDAsLTE4MzY0MjcyOTQsMjYyNTM3NDc0
 LC0yMTk3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0ND
 IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
