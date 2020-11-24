@@ -118,7 +118,7 @@ $$
 
 ### MAP vs MLE 
 
-만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태가 MLE라고 이해하면 되겠다. MLE $\$ MAP
+만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태가 MLE라고 이해하면 되겠다. MLE $\subset$ MAP
 
 
 ## MCMC! 
@@ -128,15 +128,15 @@ $$
 MCMC는 Markov Chain Monte Carlo Simulation의 약어다. 둘을 각자 하나씩 뜯어보기 전에, 왜 MCMC라는 걸 고민하게 되었을까? 이유는 간단하다. 앞서 베이즈 추론에서 보았지만, $\mathcal L (\theta\lvert data) p(\theta)$는 쉽게 구할 수 있다. 
 
 - 사전 분포 $p(\theta)$는 내 마음대로 정하면 되는 것이다. 
-- 이를 $data$와 연결하면 우도를 구할 수 있다. 
+- 여기에 $data$, 즉 관찰을 부어 넣으면 우도가 된다. 
 
-MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 계산할 수 있다는 데 있다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다! 
+MAP 혹은 MLE 형태의 '추정치'만을 얻고 싶었다면 여기서 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 계산할 수 있다는 데 있다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다... 
 
 $$
 P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
 $$
 
-문제는 $p(\theta)$ 분포의 적분이 쉽지 않을 수 있다는 것이다. Prior가 복잡하지 않다고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 많은 경우에 가능하지 않다. 
+문제는 위 식의 적분, 특히 $p(\theta)$ 분포를 포함한 적분이 쉽지 않다는 데 있다. Prior가  해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 많은 경우에 가능하지 않다. 
 
 ### MC1: Monte Carlo 
 
@@ -310,10 +310,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjkwMDIxNywtMTM1MjEzMDIyLC00Mj
-E4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3
-NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzczLC0xND
-QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
-MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
-0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
+eyJoaXN0b3J5IjpbODEzNjI1MTY0LC0xMzUyMTMwMjIsLTQyMT
+g4OTQzOCwzODQ4OTM5MDAsLTE4MzY0MjcyOTQsMjYyNTM3NDc0
+LC0yMTk3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0ND
+IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
+NTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLT
+E1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
 -->
