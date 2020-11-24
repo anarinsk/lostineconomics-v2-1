@@ -299,14 +299,14 @@ p(\theta\lvert data) = \dfrac{\mathcal L(data \lvert  \theta) p(\theta)}{P(data)
 
 <h3 id="second-mc-markov-chain">Second MC: Markov Chain</h3>
 
-<p>몬테카를로에서 끝났다면 그래도 편했을 것이다. 샘플링을 할 수 있다면, 하자! 샘플링이 ‘충분히 쉬울까? 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 쉽게 하는 것 자체가 어렵다.</p>
+<p>몬테카를로에서 끝났다면 그래도 편했을 것이다. 샘플링을 할 수 있다면, 하자! 샘플링이 ‘충분히’ 쉬울까? 파라미터의 차원이 3개만되도, 샘플링을 위해이 탐사해야 하는 파리미터의 공간이 많이 커진다. 이런 상황에서 샘플링을 하는 것 자체가 어렵게 된다.</p>
 
-<p>샘플링을 위한 그럴 듯한 전략이 필요하다. 많이 나올 것 같은 파라미터 공간 주변에서는 많이 뽑고, 별로 없을 것 같은 공간 주변에서는 적당히 뽑은 후 빨리 빠져나올 수 있어야 한다. 이런 샘플링 전략의 그럴듯한 근거를 제시하는 것이 또다른 MC, 마르코프 연쇄이다.</p>
+<p>샘플링을 잘 하기 위해서는 이를 위한 전략이 필요하다. 관찰이 많이 될 것 같은 파라미터 공간 주변에서는 많이 뽑고, 별로 없을 것 같은 공간 주변에서는 적당히 뽑은 후 빨리 빠져나올 수 있어야 한다. 이런 좋은 샘플링 전략의 그럴듯한 근거를 제시하는 것이 또다른 MC, 마르코프 연쇄이다.</p>
 
 <p>마르코프 연쇄가 왜 이런 전략을 제공할까?</p>
 
 <ul>
-  <li>마르코프 연쇄는 간단하다. 바로 전기의 상태만 기억하는 최소 기억의 구조다. 그래서 전략을 만들기 쉽다.</li>
+  <li>마르코프 연쇄는 간단하다. 바로 전기의 상태가 다음 기의 상태를 결정하는 최소 기억의 구조를 지니고 있다. 그래서 전략을 만들기 쉽다.</li>
   <li>마르코프 연쇄의 가장 좋은 특징은 몇 가지 조건이 충족되면, 각 상태(여기서는 파리미터 공간에 속하는 특정 파라미터 원소들)의 수렴 분포가 존재하며 이 분포가 고유(unique)하다. 게다가 이 수렴 분포는 초기 값에도 의하지 않는다. 마르코프 연쇄를 통해 충분히 많은 수의 샘플링을 거치면 그때까지 획득된 결과를 파라미터 공간에 관한 분포의 근사치로 간주할 수 있게 된다.</li>
 </ul>
 
@@ -472,12 +472,12 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 <p><img src="/lostineconomics-v2-1/images/mcmc/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxOTMzMzUyLC0xMzUyMTMwMjIsLTQyMT
-g4OTQzOCwzODQ4OTM5MDAsLTE4MzY0MjcyOTQsMjYyNTM3NDc0
-LC0yMTk3ODIxNiwyMDU1MzgyMjc4LDIwNTg4NTM3NzMsLTE0ND
-IwMzMyOTMsLTkyNjMyMDAwMSwtMzI5NTAyNDA2LC0xMjIwNzcz
-NTY0LC0yMDc1NTI3MDEyLDM1MTYxOTU3MCw4NjM0NjA3NzQsLT
-E1NzQyMTUwNzMsMTUzODMyNTgsNDYyNTExMTEyXX0=
+eyJoaXN0b3J5IjpbLTE2MDE2MjUxNDMsLTEzNTIxMzAyMiwtND
+IxODg5NDM4LDM4NDg5MzkwMCwtMTgzNjQyNzI5NCwyNjI1Mzc0
+NzQsLTIxOTc4MjE2LDIwNTUzODIyNzgsMjA1ODg1Mzc3MywtMT
+Q0MjAzMzI5MywtOTI2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3
+NzM1NjQsLTIwNzU1MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NC
+wtMTU3NDIxNTA3MywxNTM4MzI1OCw0NjI1MTExMTJdfQ==
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
