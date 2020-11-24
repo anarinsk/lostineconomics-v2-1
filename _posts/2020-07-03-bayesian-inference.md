@@ -118,7 +118,7 @@ $$
 
 ### MAP vs MLE 
 
-만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태가 MLE라고 이해하면 되겠다. 
+만일 prior에 해당하는 모든 파라미터 공간에서 적절한 $k$에 대해서 $p(\theta) = k$로 둔다면, 즉 prior에 관해 특별한 가정을 하지 않는다면, 이는 MLE와 동일한 값이 될 것이다. 모든 파라미터 공간에 대해서 동일한 사전 분포를 부여한 형태가 MLE라고 이해하면 되겠다. MLE $\$ MAP
 
 
 ## MCMC! 
@@ -310,7 +310,7 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjc1NjczMywtMTM1MjEzMDIyLC00Mj
+eyJoaXN0b3J5IjpbMTExNjkwMDIxNywtMTM1MjEzMDIyLC00Mj
 E4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3
 NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzczLC0xND
 QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
