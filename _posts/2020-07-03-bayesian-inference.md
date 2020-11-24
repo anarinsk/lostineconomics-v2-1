@@ -58,7 +58,7 @@ $$
 
 ## Something about likelihood
 
-관찰된 $data$ 아래에서 이 결과가 가능한 '정도'를 파리미터의 함수로 나타낸 것이라고 이해하면 좋다. 우도를 의미할 때 '확률'이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?  
+관찰된 $data$ 아래에서 이 결과가 가능한 '정도'를 파리미터의 함수로 나타낸 것, 정도로 이해하면 좋다. 우도를 의미할 때 '확률'이라는 표현을 쓰지 않은 것이 좋다. 왜 그럴까?  
 
 ### Probability vs Likelihood
  
@@ -310,10 +310,10 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIxMzAyMiwtNDIxODg5NDM4LDM4ND
-g5MzkwMCwtMTgzNjQyNzI5NCwyNjI1Mzc0NzQsLTIxOTc4MjE2
-LDIwNTUzODIyNzgsMjA1ODg1Mzc3MywtMTQ0MjAzMzI5MywtOT
-I2MzIwMDAxLC0zMjk1MDI0MDYsLTEyMjA3NzM1NjQsLTIwNzU1
-MjcwMTIsMzUxNjE5NTcwLDg2MzQ2MDc3NCwtMTU3NDIxNTA3My
-wxNTM4MzI1OCw0NjI1MTExMTJdfQ==
+eyJoaXN0b3J5IjpbLTEyMjc1NjczMywtMTM1MjEzMDIyLC00Mj
+E4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3
+NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMDU4ODUzNzczLC0xND
+QyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3
+MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC
+0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUxMTExMl19
 -->
