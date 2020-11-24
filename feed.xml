@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T18:29:34-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-11-23T18:30:56-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-math&quot;&gt;The Math&lt;/h2&gt;
 
@@ -1001,8 +1001,15 @@ MTY0LC00ODk0MjQzNjZdfQ==
 
 &lt;p&gt;그러면 도커 컴포즈가 알아서 이미지를 끌어온 후 실행까지 할 것이다.&lt;/p&gt;
 
+&lt;p&gt;몇 가지 주의사항&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;도커 컴포즈 공식 가이드&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;docker-compose를 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt; 옵션 없이 실행하면 녀석은 HOME 디렉토리에서 해당 파일을 찾는다. WSL 기준에서 볼 때 홈 디렉토리는 윈도의 사용자-계정 디렉토리다. 해당 디렉토리에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; 파일이 있으면 녀석으로 실행할 것이다. 이렇게 써도 문제는&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;도커 컴포즈 공식 가이드&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;실제-사용해보자&quot;&gt;실제 사용해보자&lt;/h2&gt;
@@ -1043,7 +1050,7 @@ MTY0LC00ODk0MjQzNjZdfQ==
 &lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/docker-in-use/docker_2.png&quot; alt=&quot;&quot; style=&quot;textalign:center; &quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTkwMzI5NjQsODU2Njg3OTA3LDM0MD
+eyJoaXN0b3J5IjpbLTIwMDExNjcyNTksODU2Njg3OTA3LDM0MD
 U0MTk4NywxODIyNzgwMjU4LC0xMDIyODQ2MzM1LDExOTQ5OTI1
 NzEsMTkwMTg5Mjk3OSwtMTIzMTc0NzI5OSwtMTU5NTk4ODY2NS
 wtMTg2MDY2Nzc0MSwtMzc3MDM0MTg0LDM4MDg5NzE5NywtMTgy
