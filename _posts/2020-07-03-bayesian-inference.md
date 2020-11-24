@@ -190,7 +190,7 @@ $$
 
 ### Metropolis algorithm 
 
-- 이행 행렬로 임의의 밀도 함수 $Q(\theta^i \lvert  \theta^{i-1})$를 정하자. 이를 밀도함수로 받아들일지 여부를 아래와 같은 확률로 결정한다. 
+- 이행 행렬로 임의의 밀도 함수 $Q(\theta^i \lvert  \theta^{i-1})$를 정하자. 이를 밀도함수로 받아들일지 여부를 아래와 같은 확률로 결정한다. 이를 수용확률이라고 부른다. 
 
 $$
 r = \min \left( \dfrac{\pi(\theta^i)}{\pi(\theta^{i-1})}, 1 \right)
@@ -311,11 +311,11 @@ plt.legend(loc='best');
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODgzMjU3NDEsMTU5NDgyMzQyOCwtMT
-M1MjEzMDIyLC00MjE4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3
-Mjk0LDI2MjUzNzQ3NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMD
-U4ODUzNzczLC0xNDQyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUw
-MjQwNiwtMTIyMDc3MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1Nz
-AsODYzNDYwNzc0LC0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUx
-MTExMl19
+eyJoaXN0b3J5IjpbLTEyODgwODYyNTUsLTExODgzMjU3NDEsMT
+U5NDgyMzQyOCwtMTM1MjEzMDIyLC00MjE4ODk0MzgsMzg0ODkz
+OTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3NCwtMjE5NzgyMTYsMj
+A1NTM4MjI3OCwyMDU4ODUzNzczLC0xNDQyMDMzMjkzLC05MjYz
+MjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3MzU2NCwtMjA3NTUyNz
+AxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC0xNTc0MjE1MDczLDE1
+MzgzMjU4XX0=
 -->
