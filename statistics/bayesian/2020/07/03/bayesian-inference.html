@@ -330,7 +330,7 @@ p(\theta\lvert data) = \dfrac{\mathcal L(data \lvert  \theta) p(\theta)}{P(data)
 <h3 id="metropolis-algorithm">Metropolis algorithm</h3>
 
 <ul>
-  <li>이행 행렬로 임의의 밀도 함수 $Q(\theta^i \lvert  \theta^{i-1})$를 정하자. 이를 밀도함수로 받아들일지 여부를 아래와 같은 확률로 결정한다.</li>
+  <li>이행 행렬로 임의의 밀도 함수 $Q(\theta^i \lvert  \theta^{i-1})$를 정하자. 이를 밀도함수로 받아들일지 여부를 아래와 같은 확률로 결정한다. 이를 수용확률이라고 부른다.</li>
 </ul>
 
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>min</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mrow><mi>π</mi><mo stretchy="false">(</mo><msup><mi>θ</mi><mi>i</mi></msup><mo stretchy="false">)</mo></mrow><mrow><mi>π</mi><mo stretchy="false">(</mo><msup><mi>θ</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mfrac><mo separator="true">,</mo><mn>1</mn><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">r = \min \left( \dfrac{\pi(\theta^i)}{\pi(\theta^{i-1})}, 1 \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.451694em;vertical-align:-0.95003em;"></span><span class="mop">min</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.750664em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span>
@@ -473,13 +473,13 @@ P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lve
 <p><img src="/lostineconomics-v2-1/images/mcmc/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODgzMjU3NDEsMTU5NDgyMzQyOCwtMT
-M1MjEzMDIyLC00MjE4ODk0MzgsMzg0ODkzOTAwLC0xODM2NDI3
-Mjk0LDI2MjUzNzQ3NCwtMjE5NzgyMTYsMjA1NTM4MjI3OCwyMD
-U4ODUzNzczLC0xNDQyMDMzMjkzLC05MjYzMjAwMDEsLTMyOTUw
-MjQwNiwtMTIyMDc3MzU2NCwtMjA3NTUyNzAxMiwzNTE2MTk1Nz
-AsODYzNDYwNzc0LC0xNTc0MjE1MDczLDE1MzgzMjU4LDQ2MjUx
-MTExMl19
+eyJoaXN0b3J5IjpbLTEyODgwODYyNTUsLTExODgzMjU3NDEsMT
+U5NDgyMzQyOCwtMTM1MjEzMDIyLC00MjE4ODk0MzgsMzg0ODkz
+OTAwLC0xODM2NDI3Mjk0LDI2MjUzNzQ3NCwtMjE5NzgyMTYsMj
+A1NTM4MjI3OCwyMDU4ODUzNzczLC0xNDQyMDMzMjkzLC05MjYz
+MjAwMDEsLTMyOTUwMjQwNiwtMTIyMDc3MzU2NCwtMjA3NTUyNz
+AxMiwzNTE2MTk1NzAsODYzNDYwNzc0LC0xNTc0MjE1MDczLDE1
+MzgzMjU4XX0=
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
