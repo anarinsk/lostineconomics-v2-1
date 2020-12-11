@@ -242,7 +242,7 @@ $$
 
 양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2}$. 
 
-## Complex growth 
+### Complex growth 
 
 ![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp)
 
@@ -259,5 +259,5 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MTg1LC0xNDI0ODk2MjQ5XX0=
+eyJoaXN0b3J5IjpbMzMzNzI5OTQsLTE0MjQ4OTYyNDldfQ==
 -->
