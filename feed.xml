@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-11T00:26:30-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-11T00:26:51-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
 
 &lt;p&gt;360도 도법은 익숙하지만 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶지만 일단 생략하자.&lt;/p&gt;
 
@@ -203,7 +203,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 &lt;p&gt;양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2}$.&lt;/p&gt;
 
-&lt;h2 id=&quot;complex-growth&quot;&gt;Complex growth&lt;/h2&gt;
+&lt;h3 id=&quot;complex-growth&quot;&gt;Complex growth&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/p&gt;
 
@@ -221,7 +221,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;ol&gt;
   &lt;li&gt;$\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MTg1LC0xNDI0ODk2MjQ5XX0=
+eyJoaXN0b3J5IjpbMzMzNzI5OTQsLTE0MjQ4OTYyNDldfQ==
 --&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><category term="math" /><category term="triagonometry" /><summary type="html">Why Radian</summary></entry><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
