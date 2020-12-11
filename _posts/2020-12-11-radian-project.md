@@ -9,7 +9,7 @@ categories: [math, triagonometry]
 ---
 
 
-# Why Radian 
+## Why Radian 
 
 360도 도법은 익숙하지만 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶지만 일단 생략하자. 
 
@@ -27,7 +27,7 @@ $$
 - $s$: 원주에서 이동한 거리 
 - $r$: 반지름 
  
-# Circumvent of Circle 
+## Circumvent of Circle 
 
 $d\degree$의 각도를 지니는 호의 길이를 구해보자. 
 
@@ -62,9 +62,9 @@ $$
 
 원 전체일 때 $\theta_f=2 \pi$가 된다. 
 
-# Limit of sin, cos
+## Limit of sin, cos
 
-## Limit of sin 
+### Limit of sin 
 ![](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg)
 
 삼각형의 면적을 보자. 
@@ -93,7 +93,7 @@ $$
 
 따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.
 
-## Limit of cos 
+### Limit of cos 
 
 $$
 \lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta} 
@@ -111,7 +111,7 @@ $$
 \lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta} = (-1) \cdot 0 = 0
 $$
 
-# Derivative of Sin 
+## Derivative of Sin 
 
 정의를 그대로 활용하면 된다. 
 
@@ -134,7 +134,7 @@ $$
 \end{aligned}
 $$
 
-# Taylor Series for sin, cos 
+## Taylor Series for sin, cos 
 
 이제 $\sin \theta$, $\cos \theta$를 $\theta$로 전개해보자. 
 
@@ -154,7 +154,7 @@ $$
 \end{aligned}
 $$
 
-# Taylor Series $e^{i \theta}$
+## Taylor Series $e^{i \theta}$
 
 $$
 \begin{aligned}
@@ -172,7 +172,7 @@ e^{i \theta} & = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dotsb) + (\
 \end{aligned}
 $$
 
-# Polar Representation 
+## Polar Representation 
 
 허수를 나타내는 가장 신박한 방법일지 모르겠다. 
 
@@ -186,7 +186,7 @@ $$
 
 $(a, b)$가 데카르트 좌표 위에서 표현하는 위치까지의 거리를 스케일링하는데, 이는 원의 반지름과 같은 의미가 된다. 원 위에서의 위치는 $\theta$로 나타낼 수 있다. 
 
-# Euler Formula and Identity 
+## Euler Formula and Identity 
 
 앞서 본 결과는 다음과 같다. 
 
@@ -202,7 +202,7 @@ $$
 
 이 항등식은 수학에 역사에서 가장 유명한 5개의 숫자의 관계를 나타낸다. $e$, $\pi$, $i$, $0$, $1$.
 
-## De Moivre's law 
+### De Moivre's law 
 
 드므브아르의 법칙 또한 그냥 자명하다. 
 
@@ -212,7 +212,7 @@ $$
 
 $e^{i}$의 $n$ 승이 일정한 단위원을 중심으로 계속 회전하는 값을 지니게 된다는 사실 또한 알 수 있다. 
 
-# Some Exercises 
+## Some Exercises 
 
 위의 사실들을 활용하면 몇 가지 재미있는 계산을 할 수 있다. 
 
@@ -259,5 +259,5 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQ4OTYyNDldfQ==
+eyJoaXN0b3J5IjpbNTA4MTg1LC0xNDI0ODk2MjQ5XX0=
 -->
