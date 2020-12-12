@@ -207,10 +207,15 @@ $$
 드므브아르의 법칙 또한 그냥 자명하다. 
 
 $$
-e^{n \theta i} = (e^i)^n = (\sin\theta + \cos \theta{\;}i)^n = \sin n \theta + \cos n\theta {\;} i
+e^{\theta i} = \sin\theta + \cos\theta i
 $$
 
-$e^{i}$의 $n$ 승이 일정한 단위원을 중심으로 계속 회전하는 값을 지니게 된다는 사실 또한 알 수 있다. 
+$$
+(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + \cos n \theta i
+$$
+
+
+$e^{\theta i}$의 $n$ 승이 일정한 단위원을 중심으로 계속 회전하는 값을 지니게 된다는 사실 또한 알 수 있다. 
 
 ## Some Exercises 
 
@@ -259,5 +264,6 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzNzI5OTQsLTE0MjQ4OTYyNDldfQ==
+eyJoaXN0b3J5IjpbLTEzMjY3NTA5NywzMzM3Mjk5NCwtMTQyND
+g5NjI0OV19
 -->
