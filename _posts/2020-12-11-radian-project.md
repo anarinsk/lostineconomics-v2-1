@@ -11,7 +11,7 @@ categories: [math, triagonometry]
 
 ## Why Radian 
 
-360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 
+360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.  
 
 각도법은 중심에 위치한 관찰자의 위치를 반영한다.  
 
@@ -264,6 +264,6 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3OTk2OTk4LDEyNzUzNDc2NSwtMTMyNj
-c1MDk3LDMzMzcyOTk0LC0xNDI0ODk2MjQ5XX0=
+eyJoaXN0b3J5IjpbMTczNzcyNzEyNywxMjc1MzQ3NjUsLTEzMj
+Y3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0OV19
 -->
