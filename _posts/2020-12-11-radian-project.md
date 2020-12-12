@@ -15,7 +15,7 @@ categories: [math, triagonometry]
 
 각도법은 중심에 위치한 관찰자의 위치를 반영한다.  
 
-![degrees_vs_radians.png.webp (500×420) (betterexplained.com)](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp)
+![degrees_vs_radians.png.webp (500×420) (betterexplained.com)](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 각도법은 중심에서 측정한 것이다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
 
@@ -65,7 +65,7 @@ $$
 ## Limit of sin, cos
 
 ### Limit of sin 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg)
+![](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 삼각형의 면적을 보자. 
 
@@ -176,7 +176,7 @@ $$
 
 허수를 나타내는 가장 신박한 방법일지 모르겠다. 
 
-![enter image description here](https://cdn.kastatic.org/ka-perseus-images/1559d8785a298fdd0bac0443388b3812c4327ec3.png)
+![enter image description here](https://cdn.kastatic.org/ka-perseus-images/1559d8785a298fdd0bac0443388b3812c4327ec3.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 허수를 $x-y$로 구성된 데카르트 평면에 표시한다고 하자. 이때, 일반적으로 $x + i y$는 위의 그림과 같이 표시된다. 이를 극좌표로 나타내는 방법은 해당 벡터까지의 거리와 각도로 다시 표기하는 것이다. 즉, 
 
@@ -249,7 +249,7 @@ $$
 
 ### Complex growth 
 
-![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp)
+![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 $e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 증가와 회전으로 나누어 볼 수 있다. 위의 그림과 같다. 이 말을 좀 더 풀어보자. 
 
@@ -264,7 +264,7 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzUwODM3OTksMTU5NjA1MjM5MSwxMj
-c1MzQ3NjUsLTEzMjY3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0
-OV19
+eyJoaXN0b3J5IjpbNTEyNTE3NjczLC0yMDc1MDgzNzk5LDE1OT
+YwNTIzOTEsMTI3NTM0NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQs
+LTE0MjQ4OTYyNDldfQ==
 -->
