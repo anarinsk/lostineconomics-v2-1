@@ -255,16 +255,16 @@ $e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 
 
 임의의 허수 $6 + 8i$가 있다고 하자. 이 허수를 나타내는 $e^{a+bi}$를 찾을 수 있다는 의미이기도 하다. 
 
-1. 먼저 길이를 찾는다. $\sqrt{6^2 + 8^2} = 10$. $e^a = 10$을 만족하는 a를 찾는다. 양변에 $\ln$을 취해주면 된다. 
-2. 좌표는 $\sin$, $\cos$으로 나타낼 수 있으므로, 
+- 먼저 길이를 찾는다. $\sqrt{6^2 + 8^2} = 10$. $e^a = 10$을 만족하는 a를 찾는다. 양변에 $\ln$을 취해주면 된다. 
+- 좌표는 $\sin$, $\cos$으로 나타낼 수 있으므로, 
 
 $$
 \arctan \theta = \dfrac{\cos\theta}{\sin\theta} = \dfrac{8}{6}
 $$
 
-3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
+- $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyNTE3NjczLC0yMDc1MDgzNzk5LDE1OT
-YwNTIzOTEsMTI3NTM0NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQs
-LTE0MjQ4OTYyNDldfQ==
+eyJoaXN0b3J5IjpbLTIwMTc5MTc4NDIsNTEyNTE3NjczLC0yMD
+c1MDgzNzk5LDE1OTYwNTIzOTEsMTI3NTM0NzY1LC0xMzI2NzUw
+OTcsMzMzNzI5OTQsLTE0MjQ4OTYyNDldfQ==
 -->
