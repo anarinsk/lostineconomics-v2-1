@@ -76,19 +76,19 @@ $$
 이 사이에 아래와 같은 관계가 성립한다. 
 
 $$
-\triangle \rm OAB < \rm OAB < \triangle \rm OAC
+\triangle \rm OAB \leq \rm OAB \leq \triangle \rm OAC
 $$
 
 $$
-\sin \theta < \theta < \tan \theta 
+\sin \theta \leq \theta \leq \tan \theta 
 $$
 
 $$
-1 < \dfrac{\sin \theta}{\theta} < \dfrac{1}{\cos \theta}
+1 \leq \dfrac{\sin \theta}{\theta} \leq \dfrac{1}{\cos \theta}
 $$
 
 $$
-1 < \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} < \lim_{\theta \to 0} \dfrac{1}{\cos \theta} (= 1)
+1 \leq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \leq \lim_{\theta \to 0} \dfrac{1}{\cos \theta} (= 1)
 $$
 
 따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.
@@ -264,6 +264,6 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzcyNzEyNywxMjc1MzQ3NjUsLTEzMj
+eyJoaXN0b3J5IjpbMTU5NjA1MjM5MSwxMjc1MzQ3NjUsLTEzMj
 Y3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0OV19
 -->
