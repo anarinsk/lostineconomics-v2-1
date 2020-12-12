@@ -204,7 +204,7 @@ $$
 
 ### De Moivre's law 
 
-드므브아르의 법칙 또한 그냥 자명하다. 
+드무아브르의 법칙 또한 그냥 자명하다. 
 
 $$
 e^{\theta i} = \sin\theta + \cos\theta i
@@ -264,7 +264,7 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTIwMTkyOSwxNTk2MDUyMzkxLDEyNz
-UzNDc2NSwtMTMyNjc1MDk3LDMzMzcyOTk0LC0xNDI0ODk2MjQ5
-XX0=
+eyJoaXN0b3J5IjpbMjUzNjYyODQzLDE1OTYwNTIzOTEsMTI3NT
+M0NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQsLTE0MjQ4OTYyNDld
+fQ==
 -->
