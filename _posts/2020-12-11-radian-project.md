@@ -194,7 +194,7 @@ $$
 e^{\theta i} = \sin\theta + \cos \theta {\;} i
 $$
 
-$\theta$는 각이기 때문에 이 녀석을 $\pi$만큼 돌려보도록 하자. 그러면 극좌표에서 $(-1,0)$에 떨어진다. 즉 실수는 $-1$, 허수는 $0$이 된다. 즉, 
+$\theta$는 각이기 때문에 이 녀석을 $\pi$만큼 돌려보도록 하자. 그러면 데카르트 좌표에서 $(-1,0)$에 떨어진다. 이는 실수-허수 평면에서 실수 $-1$, 허수 $0$이다. 즉, 
 
 $$
 e^{\pi i} + 1 = 0
@@ -264,6 +264,7 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjA1MjM5MSwxMjc1MzQ3NjUsLTEzMj
-Y3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0OV19
+eyJoaXN0b3J5IjpbLTgyMTMxMDAzMywxNTk2MDUyMzkxLDEyNz
+UzNDc2NSwtMTMyNjc1MDk3LDMzMzcyOTk0LC0xNDI0ODk2MjQ5
+XX0=
 -->
