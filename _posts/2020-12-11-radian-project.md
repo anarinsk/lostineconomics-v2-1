@@ -215,7 +215,7 @@ $$
 $$
 
 
-$e^{\theta i}$의 $n$ 승이 일정한 단위원을 중심으로 계속 회전하는 값을 지니게 된다는 사실 또한 알 수 있다. 
+$e^{\theta i}$의 $n$ 승이 단위원을 중심으로 계속 회전하며 값을 지니게 된다는 사실을 쉽게 알 수 있다. 
 
 ## Some Exercises 
 
@@ -264,7 +264,7 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzNjYyODQzLDE1OTYwNTIzOTEsMTI3NT
-M0NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQsLTE0MjQ4OTYyNDld
-fQ==
+eyJoaXN0b3J5IjpbLTIwNzUwODM3OTksMTU5NjA1MjM5MSwxMj
+c1MzQ3NjUsLTEzMjY3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0
+OV19
 -->
