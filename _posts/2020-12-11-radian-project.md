@@ -11,13 +11,13 @@ categories: [math, triagonometry]
 
 ## Why Radian 
 
-360도 도법은 익숙하지만 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶지만 일단 생략하자. 
+360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 
 
 각도법은 중심에 위치한 관찰자의 위치를 반영한다.  
 
 ![degrees_vs_radians.png.webp (500×420) (betterexplained.com)](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp)
 
-각도법은 중심에 고정된 것이므로 절대적인 잣대다. 반면 호도법은 원주 대비 이동한 거리를 나타내므로 상대적이다. 따라서, 호도법으로 각도를 나타내는 법은 다음과 같다. 
+각도법은 중심에서 측정한 것이다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
 
 $$
 \theta = \dfrac{s}{r}
@@ -264,6 +264,6 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTM0NzY1LC0xMzI2NzUwOTcsMzMzNz
-I5OTQsLTE0MjQ4OTYyNDldfQ==
+eyJoaXN0b3J5IjpbNjc3OTk2OTk4LDEyNzUzNDc2NSwtMTMyNj
+c1MDk3LDMzMzcyOTk0LC0xNDI0ODk2MjQ5XX0=
 -->
