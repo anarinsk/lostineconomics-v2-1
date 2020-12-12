@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-12T04:25:49-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-12T04:27:50-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
 
 &lt;p&gt;360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.&lt;/p&gt;
 
 &lt;p&gt;각도법은 중심에 위치한 관찰자의 위치를 반영한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp&quot; alt=&quot;degrees_vs_radians.png.webp (500×420) (betterexplained.com)&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp&quot; alt=&quot;degrees_vs_radians.png.webp (500×420) (betterexplained.com)&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;각도법은 중심에서 측정한 것이다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다.&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 &lt;h2 id=&quot;limit-of-sin-cos&quot;&gt;Limit of sin, cos&lt;/h2&gt;
 
 &lt;h3 id=&quot;limit-of-sin&quot;&gt;Limit of sin&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;삼각형의 면적을 보자.&lt;/p&gt;
 
@@ -135,7 +135,7 @@ e^{i \theta} &amp;amp; = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dot
 
 &lt;p&gt;허수를 나타내는 가장 신박한 방법일지 모르겠다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.kastatic.org/ka-perseus-images/1559d8785a298fdd0bac0443388b3812c4327ec3.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.kastatic.org/ka-perseus-images/1559d8785a298fdd0bac0443388b3812c4327ec3.png&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;허수를 $x-y$로 구성된 데카르트 평면에 표시한다고 하자. 이때, 일반적으로 $x + i y$는 위의 그림과 같이 표시된다. 이를 극좌표로 나타내는 방법은 해당 벡터까지의 거리와 각도로 다시 표기하는 것이다. 즉,&lt;/p&gt;
 
@@ -207,7 +207,7 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 
 &lt;h3 id=&quot;complex-growth&quot;&gt;Complex growth&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;$e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 증가와 회전으로 나누어 볼 수 있다. 위의 그림과 같다. 이 말을 좀 더 풀어보자.&lt;/p&gt;
 
@@ -223,9 +223,9 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 &lt;ol&gt;
   &lt;li&gt;$\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzUwODM3OTksMTU5NjA1MjM5MSwxMj
-c1MzQ3NjUsLTEzMjY3NTA5NywzMzM3Mjk5NCwtMTQyNDg5NjI0
-OV19
+eyJoaXN0b3J5IjpbNTEyNTE3NjczLC0yMDc1MDgzNzk5LDE1OT
+YwNTIzOTEsMTI3NTM0NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQs
+LTE0MjQ4OTYyNDldfQ==
 --&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name></name></author><category term="math" /><category term="triagonometry" /><summary type="html">Why Radian</summary></entry><entry><title type="html">Revisiting Log-Linear Regression Model</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html" rel="alternate" type="text/html" title="Revisiting Log-Linear Regression Model" /><published>2020-11-11T00:00:00-06:00</published><updated>2020-11-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking%20log-linear%20regression%20model</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/regression/econometrics/2020/11/11/Checking-log-linear-regression-model.html">&lt;p&gt;당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.&lt;/p&gt;
 
