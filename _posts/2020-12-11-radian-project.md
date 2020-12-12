@@ -200,7 +200,7 @@ $$
 e^{\pi i} + 1 = 0
 $$
 
-이 항등식은 수학의 역사에서 가장 중요한 5개-- $e$, $\pi$, $i$, $0$, $1$--의 숫자 사이의 관계를 나타낸다.
+이 항등식은 수학의 역사에서 가장 중요한 5개--$e$, $\pi$, $i$, $0$, $1$--의 숫자 사이의 관계를 나타낸다.
 
 ### De Moivre's law 
 
@@ -264,7 +264,7 @@ $$
 
 3. $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTMxMDAzMywxNTk2MDUyMzkxLDEyNz
+eyJoaXN0b3J5IjpbLTg5MTIwMTkyOSwxNTk2MDUyMzkxLDEyNz
 UzNDc2NSwtMTMyNjc1MDk3LDMzMzcyOTk0LC0xNDI0ODk2MjQ5
 XX0=
 -->
