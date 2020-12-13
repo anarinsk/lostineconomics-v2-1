@@ -13,11 +13,9 @@ categories: [math, triagonometry]
 
 360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.  
 
-각도법은 중심에 위치한 관찰자의 위치를 반영한다.  
-
 ![degrees_vs_radians.png.webp (500×420) (betterexplained.com)](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-각도법은 중심에서 측정한 것이다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
+각도법은 중심에 위치한 관찰자의 위치를 반영한다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
 
 $$
 \theta = \dfrac{s}{r}
@@ -259,8 +257,8 @@ $e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 
 - $\cos \theta = \frac{6}{10}$, $\sin \theta = \frac{8}{10}$을 통해 $\theta$를 구할 수 있다. 
 - $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI1NjAzMjMsLTIwMTc5MTc4NDIsNT
-EyNTE3NjczLC0yMDc1MDgzNzk5LDE1OTYwNTIzOTEsMTI3NTM0
-NzY1LC0xMzI2NzUwOTcsMzMzNzI5OTQsLTE0MjQ4OTYyNDldfQ
-==
+eyJoaXN0b3J5IjpbLTY5ODY3MTAzMSwtMTY2MjU2MDMyMywtMj
+AxNzkxNzg0Miw1MTI1MTc2NzMsLTIwNzUwODM3OTksMTU5NjA1
+MjM5MSwxMjc1MzQ3NjUsLTEzMjY3NTA5NywzMzM3Mjk5NCwtMT
+QyNDg5NjI0OV19
 -->
