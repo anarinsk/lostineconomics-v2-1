@@ -28,7 +28,7 @@ $$
 \cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{||\mathbf a|| ||\mathbf b||}
 $$
 
-따라서, $\hat\mathbf b = \dfrac{\mathbf b}{||\mathbf b||}$라고 할 때 
+따라서, $\hat\mathbf b = \dfrac{\mathbf b}{|| \mathbf b|| }$라고 할 때 
 
 $$
 a_1 = {\cos \theta}{|| \mathbf a ||} = \dfrac{\mathbf a \cdot \mathbf b}{||\mathbf b||} = \mathbf a \cdot \hat\mathbf b
@@ -181,6 +181,6 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMD
-UzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOT
+c4NzkwOTcwLDMwNTM4NzQyNV19
 -->
