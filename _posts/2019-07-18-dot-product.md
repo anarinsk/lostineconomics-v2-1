@@ -41,6 +41,10 @@ $$
 
 ![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp)
 
+위 그림은 $2 \times 2$ 벡터의 닷 프로덕트를 각 요소로 분해한 것이다. 이중에서 $\dfrac{\pi}{2}$ 각을 이루고 있는 벡터는 서로 곱하면 0이 된다. 따라서 닷 프로덕트 계산에서는 $a_x b_x$와 $a_y b_y$가 남게 된다. 
+
+
+
 ### Symmetry
 
 $\mathbf{v}$ 벡터를 $\mathbf u$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf u}{\mathbf v}$)의 길이와 $\mathbf u$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다. 즉, 
@@ -152,6 +156,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTg1NTY0MCwxMDgwMjY2MjA4LDM3MT
+eyJoaXN0b3J5IjpbLTk0MzU1NDA1MiwxMDgwMjY2MjA4LDM3MT
 M1MDYwNSwtMjM0MjM2MTc4XX0=
 -->
