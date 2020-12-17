@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-17T06:44:42-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-17T06:51:37-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
 
@@ -385,7 +385,7 @@ QyNDg5NjI0OV19
 
 &lt;p&gt;회귀분석에서 구하는 $\beta$와 의 위 식에서 얻는 $\beta$는 동일할 수가 없다. 왜나하면, $y_i$는 지수 함수라는 비선형 함수이기 때문이다. 일단 이 점을 기억해두도록 하자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-coefficient&quot;&gt;The Coefficient&lt;/h2&gt;
 
@@ -410,7 +410,7 @@ QyNDg5NjI0OV19
 
 &lt;p&gt;결국 $\beta$의 값이 0 주변에 있다면 이 값은 $x_i$가 1단위 변화할 때 $y_i$의 변화율에 미치는 영향”으로 해석할 수 있다.&lt;/p&gt;
 
-&lt;h2 id=&quot;exact-math-for-the-percent-change&quot;&gt;Exact Math for the percent change&lt;/h2&gt;
+&lt;h2 id=&quot;exact-math-for-the-percent-change&quot;&gt;Exact Math for the Percent Change&lt;/h2&gt;
 
 &lt;p&gt;근사값을 쓰지 말고 % 변화율을 정확하게 계산해보자. 물론 이 값이 필요한 경우에 해당한다.&lt;/p&gt;
 
@@ -435,10 +435,11 @@ QyNDg5NjI0OV19
 &lt;p&gt;약 5% 정도 과소 평가 되었음을 알 수 있다. 이 크기의 의미나 중요성은 분석자가 선택할 문제다.&lt;/p&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjgwNTk2NSwtMjAzMjkzOTUxLC05Nj
-E3NTcxMjgsMjA1OTA5Njg3MywxNTc1OTgwNTk4LDE4MDExMjQ4
-ODMsNjc0NzQyNTEzLDU2OTYyMjc1NiwxMzEzMzAyNDg0LC0xNz
-M4NDQzNTg1LDQzMzg5NjQxNSwtMTkzMjI3NTM0OF19
+eyJoaXN0b3J5IjpbLTIyNTA0NzUwMiwtOTUyODA1OTY1LC0yMD
+MyOTM5NTEsLTk2MTc1NzEyOCwyMDU5MDk2ODczLDE1NzU5ODA1
+OTgsMTgwMTEyNDg4Myw2NzQ3NDI1MTMsNTY5NjIyNzU2LDEzMT
+MzMDI0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1
+MzQ4XX0=
 --&gt;
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
