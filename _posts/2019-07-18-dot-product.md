@@ -93,8 +93,6 @@ $$
  \mathbf u \cdot  \mathbf v = \lVert \mathbf u \rVert \lVert \mathbf v \rVert   \cos \theta = \lVert \mathbf v \rVert   ( \lVert \mathbf u \rVert \cos \theta) = \lVert \mathbf v \rVert \rVert \text{Proj}_{\mathbf v} \mathbf u \lVert
 $$
 
-
-
 ## Applications 
 
 ### Cosine similarity 
@@ -121,7 +119,43 @@ $$
   <img src="https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/hyperplane.jpg?raw=true" width="600">
 </kbd></p>
 
+## Appendix: Geometrically 
+
+기하적으로 도출하는 보다 복잡한 방법도 있다.[^2] 이해를 돕기 위해서 2차원 벡터공간으로 한정해서 논의하겠다. $n$ 차원으로 확대하는 것이 수학적으로 어렵지는 않다.  
+
+[^2]: 보다 상세한 내용은 [여기]((https://www.youtube.com/watch?v=LyGKycYT2v0&t=610s))를 참고하라. 
+
+일단 $\mathbf u$가 길이 1로 표준화된 벡터라고 정의를 살짝 바꾸겠다. 즉, 새로운 $\mathbf u$는  $\rVert \mathbf u \lVert$로 $\mathbf u$를 나눈 벡터다. 아래 그림처럼 이 벡터를 향해서 2차원 평면의 기저를 구성하는 $(1,0)(\equiv i)$과 $(0,1)(\equiv j)$에서 벡터로 프로젝션을 해보자. 
+
+이렇게 프로젝션을 하면 프로젝션된 지점의 $x$ 좌표는 공교롭게도 원점에서부터 해당 프로젝션된 지점까지의 벡터의 길이가 된다. $y$에 대해서도 마찬가지다. 
+
+<p align="center"><kbd>
+  <img src="https://github.com/anarinsk/public_writing/blob/master/assets/images/dot_1.jpg?raw=true " width="500">
+</kbd></p>
+
+<p align="center"><kbd>
+  <img src="https://github.com/anarinsk/public_writing/blob/master/assets/images/dot_2.jpg?raw=true" width="500">
+</kbd></p>
+
+이제 (1,1)에서 벡터 $\mathbf u$로 프로젝션을 해보자. (1,1)은 각각 두 개의 기저를 1의 가중치로 선형결합한 벡터다. 이 벡터의 프로젝션의 길이는 어떻게 구성될까? 그림에서 보듯이 $u_x + u_y$가 된다. 이를 일반적인 논리로 확장해보자. 어떤 임의의 벡터 $\mathbf v(=(x,y))$가 존재할 때 해당 벡터는 각각 두 개의 기저의 선형 결합으로 이해할 수 있다. 
+
+<p align="center"><kbd>
+  <img src="https://github.com/anarinsk/public_writing/blob/master/assets/images/dot_3.jpg?raw=true" width="500">
+</kbd></p>
+
+
+따라서 $\mathbf v$ 벡터를 $\mathbf u$로 프로젝션한 길이는 다음과 같다. 
+
+$$
+\underset{\mathbf u 프로젝션}{\left[\begin{array}{ll}{u_{x}} & { u_{y}}\end{array}\right]}\left[\begin{array}{l}{x} \\ {y}\end{array}\right]= u_{x} \cdot x + u_{y} \cdot y = \mathbf u \cdot \mathbf v
+$$
+
+벡터를 기저의 선형결합을 통해 나타낼 수 있듯이, 벡터의 프로젝션의 길이 역시 비슷한 방식의 선형결합을 동원해서 나타낼 수 있다. 앞서 $\mathbf u$가  표준화된 벡터라고 했다. 따라서 원래대로 돌려 놓으면 닷 프로덕트는 프로젝션된 지점까지의 벡터의 거리와 해당 벡터의 길이의 곱이 된다. 즉, 
+
+$$
+\mathbf u \cdot \mathbf v = \rVert \mathbf u \lVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
+$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTE5MzQ3LDEwODAyNjYyMDgsMzcxMz
-UwNjA1LC0yMzQyMzYxNzhdfQ==
+eyJoaXN0b3J5IjpbLTEyMzg0MzY1MzksMTA4MDI2NjIwOCwzNz
+EzNTA2MDUsLTIzNDIzNjE3OF19
 -->
