@@ -171,16 +171,16 @@ $$
 앞서 소개했던 회귀 분석에 관한 기하하적인 이해를 다시 보자. Origin--Observed Y--Fitted $\hat Y$이 만드는 삼각형을 보자. 직각 삼각형이다. 여기서 잔차에 해당하는 $e$는 $X$의 컬럼 스페이스와 항상 직교한다. 즉, $X' e = 0$이 성립한다. 그리고 $\hat Y = X \hat\beta$이므로 
 
 $$
-X'(Y - X \hat\beta) = 0
+X'(Y - \hat Y)  = X'(Y - X \hat\beta) = 0
 $$
 
 이를 노멀 방정식이라고 부른다. 앞서 평면과 직교하는 벡터를 노멀 벡터라고 불렀는데, 둘은 일맥상통한다.
 
 ## References 
 
-- Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*,Minireference, 2017 
+- Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDg4MDE4ODcsMTk3ODc5MDk3MCwzMD
-UzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbMjAwNjUyNDY3MCwxOTc4NzkwOTcwLDMwNT
+M4NzQyNV19
 -->
