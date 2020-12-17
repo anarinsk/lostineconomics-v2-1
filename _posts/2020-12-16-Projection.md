@@ -2,8 +2,8 @@
 layout: post
 toc: false
 comments: true
-title:  Personal Note on Triagonometry
-description: 삼각함수 복습용
+title:  Projection and Distance 
+description: 프로젝션과 거리 측정에 관해 알아보자.
 categories: [math, triagonometry]
 
 ---
@@ -181,5 +181,5 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*,Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTE4ODkxMTEsMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
 -->
