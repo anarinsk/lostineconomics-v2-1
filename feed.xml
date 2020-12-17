@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-17T03:11:56-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2020-12-17T03:13:20-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
 
@@ -50,6 +50,7 @@
   &lt;li&gt;If ${\mathbf v} \in S$, then $\Pi_S(\mathbf v) = \mathbf v$&lt;/li&gt;
   &lt;li&gt;If $\mathbf w \in S$, then $\Pi_S(\mathbf w) = \mathbf 0$&lt;/li&gt;
   &lt;li&gt;if $\mathbf u = \alpha \mathbf v + \beta \mathbf w$ where $\mathbf v \in S$, $\mathbf w \in S^{\perp}$, then $\Pi_S(\mathbf u) = \alpha \mathbf v$&lt;/li&gt;
+  &lt;li&gt;$\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) \Pi_S(\mathbf v) = \mathbf v$&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;projection-onto-line&quot;&gt;Projection onto line&lt;/h3&gt;
@@ -137,9 +138,10 @@
 &lt;/ul&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTQyODAsLTEyMTIzMTAzLDI0NzIyMT
-czNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMs
-LTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTc3MDE3OTcsLTEyMTIzMTAzLDI0Nz
+IyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2
+MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ
+==
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Projection: Scalar and Vector</summary></entry><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
 
 &lt;p&gt;360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.&lt;/p&gt;
