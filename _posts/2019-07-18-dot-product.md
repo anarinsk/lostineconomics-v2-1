@@ -31,19 +31,17 @@ $$
 
 쉽게 말해서 닷 프로덕트는 차원이 같은 두 개의 인풋 벡터를 하나의 스칼라로 바꿔주는 일종의 함수로 이해할 수 있다. 두 개의 벡터를 서로 연관 짓는데 이를 해당 벡터의 길이라는 정보로 압축한다고 보면 얼추 맞을 듯 싶다. 하나의 숫자로 요약된다는 뜻에서 스칼라 프로덕트라고도 불린다. 그림으로 나타내면 아래와 같다. 
 
-<p align="center"><kbd>
-  <img src="https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/perpendicularprojection.jpg?raw=true" width="400">
-</kbd></p>
+![](https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/perpendicularprojection.jpg?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 ### From Definition to Geometry 
 
 닷 프로덕트에 관한 설명은 정의에서 바로 코사인 법칙으로 넘어간다. 하지만 뭔가 분명하지 않다. 이걸 조금 더 풀어보자. 
 
-![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp)
+![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 위 그림은 $2 \times 2$ 벡터의 닷 프로덕트를 각 요소로 분해한 것이다. 이중에서 $\dfrac{\pi}{2}$ 각을 이루고 있는 벡터는 서로 곱하면 0이 된다. 따라서 닷 프로덕트 계산에서는 $a_x b_x$와 $a_y b_y$가 남게 된다. 
 
-![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_rotation.png.webp)
+![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_rotation.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 닷 프로덕트란 길이만 문제가 되므로 두 벡터를 한 방향으로 정렬하자.이렇게 되면, 파란색 높이가 $0$이 된다. 따라서 위 그림과 같은 코사인 법칙이 쉽게 도출된다. 
 
@@ -156,6 +154,6 @@ $$
 \mathbf u \cdot \mathbf v = \rVert \mathbf u \lVert \rVert \text{Proj}_{\mathbf u} \mathbf v \lVert
 $$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzg0MzY1MzksMTA4MDI2NjIwOCwzNz
+eyJoaXN0b3J5IjpbLTE1ODA2ODcwNTQsMTA4MDI2NjIwOCwzNz
 EzNTA2MDUsLTIzNDIzNjE3OF19
 -->
