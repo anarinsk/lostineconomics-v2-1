@@ -36,7 +36,7 @@ $$
 
 회귀분석에서 구하는 $\beta$와 의 위 식에서 얻는 $\beta$는 동일할 수가 없다. 왜나하면, $y_i$는 지수 함수라는 비선형 함수이기 때문이다. 일단 이 점을 기억해두도록 하자. 
 
- ![](https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
+ ![](https://dj1hlxw0wr920.cloudfront.net/userfiles/wyzfiles/7fd0a10d-1edf-487a-9d2a-4e52d68d181d.gif){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 
 ## The Coefficient 
 
@@ -67,7 +67,7 @@ $$
 
 결국 $\beta$의 값이 0 주변에 있다면 이 값은 $x_i$가 1단위 변화할 때 $y_i$의 변화율에 미치는 영향"으로 해석할 수 있다. 
 
-## Exact Math for the percent change
+## Exact Math for the Percent Change
 
 근사값을 쓰지 말고 % 변화율을 정확하게 계산해보자. 물론 이 값이 필요한 경우에 해당한다. 
 
@@ -97,8 +97,9 @@ $$
 
 [^1]: $z=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $z=0$ 인근에서 근사하는 이유는 $z=0$ 근처에서 $\frac{(z-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjgwNTk2NSwtMjAzMjkzOTUxLC05Nj
-E3NTcxMjgsMjA1OTA5Njg3MywxNTc1OTgwNTk4LDE4MDExMjQ4
-ODMsNjc0NzQyNTEzLDU2OTYyMjc1NiwxMzEzMzAyNDg0LC0xNz
-M4NDQzNTg1LDQzMzg5NjQxNSwtMTkzMjI3NTM0OF19
+eyJoaXN0b3J5IjpbLTIyNTA0NzUwMiwtOTUyODA1OTY1LC0yMD
+MyOTM5NTEsLTk2MTc1NzEyOCwyMDU5MDk2ODczLDE1NzU5ODA1
+OTgsMTgwMTEyNDg4Myw2NzQ3NDI1MTMsNTY5NjIyNzU2LDEzMT
+MzMDI0ODQsLTE3Mzg0NDM1ODUsNDMzODk2NDE1LC0xOTMyMjc1
+MzQ4XX0=
 -->
