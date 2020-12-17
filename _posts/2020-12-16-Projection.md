@@ -141,7 +141,7 @@ $$
 이제 이 직선과 $\mathbf p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
 
 $$
-d(l, \mathbf 0) = d(\mathbf p_0, l) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{|\mathbf v\lVert^2}\mathbf v \lVert
+d(l, \mathbf 0) = d(\mathbf p_0, l) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{\lVert \mathbf v\lVert^2}\mathbf v \lVert
 $$
 
 이제 아래와 같은 평면과 원점의 거리를 측정해보자. 
@@ -181,7 +181,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01Nj
-EzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4Nzkw
-OTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbNjM4OTQ4ODY0LDI0NzIyMTczNywtMTQ2Mz
+Q0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3
+ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
 -->
