@@ -39,11 +39,13 @@ $$
 
 닷 프로덕트에 관한 설명은 정의에서 바로 코사인 법칙으로 넘어간다. 하지만 뭔가 분명하지 않다. 이걸 조금 더 풀어보자. 
 
-![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp)
+![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp)
 
 위 그림은 $2 \times 2$ 벡터의 닷 프로덕트를 각 요소로 분해한 것이다. 이중에서 $\dfrac{\pi}{2}$ 각을 이루고 있는 벡터는 서로 곱하면 0이 된다. 따라서 닷 프로덕트 계산에서는 $a_x b_x$와 $a_y b_y$가 남게 된다. 
 
+![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_rotation.png.webp)
 
+닷 프로덕트란 길이만 문제가 되므로 두 벡터를 한 방향으로 정렬하자.이렇게 되면, 파란색 높이가 $0$이 된다. 따라서 위 그림과 같은 
 
 ### Symmetry
 
@@ -156,6 +158,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MzU1NDA1MiwxMDgwMjY2MjA4LDM3MT
-M1MDYwNSwtMjM0MjM2MTc4XX0=
+eyJoaXN0b3J5IjpbLTEyNDc0MjY0NDgsMTA4MDI2NjIwOCwzNz
+EzNTA2MDUsLTIzNDIzNjE3OF19
 -->
