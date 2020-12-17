@@ -38,7 +38,7 @@ $$
 
 ### Vector projection 
 
-스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. 따라서, 
+스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf $
 
 $$
 \rm proj_{{\mathbf b}}(\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
@@ -181,6 +181,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xND
-U5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbLTE3NDE5OTIwNjgsLTU2MTM1OTQ3NiwxND
+EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
+NDI1XX0=
 -->
