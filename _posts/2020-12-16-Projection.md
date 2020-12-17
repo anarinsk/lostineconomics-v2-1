@@ -53,8 +53,8 @@ $$
 $$
 S^\perp = \{ \mathbf w \in \mathbb R^n : w \cdot S = 0 \} 
 $$
--$\Pi_S$: 부분공간 $S$ 위로 프로젝션 
--$\Pi_{S^\perp}$: 부분공간 $S^\perp$ 위로 프로젝션
+- $\Pi_S$: 부분공간 $S$ 위로 프로젝션 
+- $\Pi_{S^\perp}$: 부분공간 $S^\perp$ 위로 프로젝션
 
 $\Pi_S$는 일종의 함수로서 다음과 같이 정의된다. 
 
@@ -181,7 +181,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxND
-EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
-NDI1XX0=
+eyJoaXN0b3J5IjpbMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01Nj
+EzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4Nzkw
+OTcwLDMwNTM4NzQyNV19
 -->
