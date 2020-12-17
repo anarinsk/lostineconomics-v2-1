@@ -69,6 +69,7 @@ $$
 - If ${\mathbf v} \in S$, then $\Pi_S(\mathbf v) = \mathbf v$
 - If $\mathbf w \in S$, then $\Pi_S(\mathbf w) = \mathbf 0$
 - if $\mathbf u = \alpha \mathbf v + \beta \mathbf w$ where $\mathbf v \in S$, $\mathbf w \in S^{\perp}$, then $\Pi_S(\mathbf u) = \alpha \mathbf v$
+- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) \Pi_S(\mathbf v) = \mathbf v$
 
 ### Projection onto line 
 
@@ -181,7 +182,8 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTQyODAsLTEyMTIzMTAzLDI0NzIyMT
-czNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMs
-LTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTc3MDE3OTcsLTEyMTIzMTAzLDI0Nz
+IyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2
+MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ
+==
 -->
