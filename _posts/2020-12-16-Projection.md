@@ -19,19 +19,19 @@ categories: [math, matrix-theory]
 스칼라 프로젝션 $a_1$의 정의는 다음과 같다. 
 
 $$
-a_1 ={\cos \theta}{|| \mathbf a ||} = || \mathbf a_1 || 
+a_1 ={\cos \theta}{\lVert \mathbf a \lVert} = \lVert \mathbf a_1 \lVert 
 $$
 
 각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 
 
 $$
-\cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{||\mathbf a|| ||\mathbf b||}
+\cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf a\lVert \lVert\mathbf b\lVert}
 $$
 
 따라서, $\hat\mathbf b = \dfrac{\mathbf b}{\lVert\mathbf b\lVert}$라고 할 때 
 
 $$
-a_1 = {\cos \theta}{|| \mathbf a ||} = \dfrac{\mathbf a \cdot \mathbf b}{||\mathbf b||} = \mathbf a \cdot \hat\mathbf b
+a_1 = {\cos \theta}{\lVert \mathbf a \lVert} = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} = \mathbf a \cdot \hat\mathbf b
 $$
 
 쉽게 말해서, $\mathbf a$ 벡터와 정규화된 $\mathbf b$의 닷프로덕트라고 생각하면 된다. 
@@ -41,7 +41,7 @@ $$
 스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. 따라서, 
 
 $$
-\rm proj_{{\mathbf b}}(\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{||\mathbf b||} \dfrac{\mathbf b}{||\mathbf b||}
+\rm proj_{{\mathbf b}}(\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
 $$
 
 말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
@@ -77,7 +77,7 @@ $$
 그림에서 $\mathbf u$의 $\mathbf v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\mathbf v$ 대신 $l$로 표기된 점에 유의하자. 
 
 $$
-\Pi_l(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf v}{||\mathbf v||^2} \mathbf v
+\Pi_l(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v
 $$
 
 이제 여기서 $\Pi_{l^{\perp}}$를 구해보자. 
@@ -86,10 +86,10 @@ $$
 \mathbf u = \Pi_{l} + \Pi_{l^{\perp}}
 $$
 
-따라서 둘 사이의 거리는 $||\Pi_{l^\perp}||$가 된다. 즉, 
+따라서 둘 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$가 된다. 즉, 
 
 $$
-|| \mathbf u - \dfrac{\mathbf u \cdot \mathbf v}{||\mathbf v||^2} \mathbf v||
+\lVert \mathbf u - \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v\lVert
 $$
 
 ### Projection onto plane 
@@ -113,13 +113,13 @@ $$
 그리고 $\mathbf n$을 알고 있으므로 
 
 $$
-\Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{||\mathbf n||}\dfrac{\mathbf n}{|| \mathbf n ||}
+\Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
 $$
 
 이를 그대로 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
-\Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{||\mathbf n||^2}{\mathbf n}
+\Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
 $$
 
 ## Distance in Vector Space 
@@ -141,7 +141,7 @@ $$
 이제 이 직선과 $\mathbf p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
 
 $$
-d(l, \mathbf 0) = d(\mathbf p_0, l) = || \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{|\mathbf v||^2}\mathbf v ||
+d(l, \mathbf 0) = d(\mathbf p_0, l) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{|\mathbf v\lVert^2}\mathbf v \lVert
 $$
 
 이제 아래와 같은 평면과 원점의 거리를 측정해보자. 
@@ -161,7 +161,7 @@ $$
 원점을 지나는 평면 $P_0$와 원래 평면을 지나는 어떤 점 $\mathbf p_0$가 있다고 하자. 이 둘 사이의 거리는 $\Pi_{P^\perp}$의 거리와 같다. 즉, 
 
 $$
-d(P, \mathbf 0) = d(P_0, \mathbf p_0) = ||  \dfrac{\mathbf p_0 \cdot \mathbf n}{||\mathbf n||}\dfrac{\mathbf n}{|| \mathbf n ||}|| = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{||\mathbf n||}
+d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
 $$
 
 ## Application: Regression Coefficient 
@@ -181,6 +181,6 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTk2MzIxNywxNDEwMjEyNjIzLC0xND
+eyJoaXN0b3J5IjpbLTU2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xND
 U5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3NDI1XX0=
 -->
