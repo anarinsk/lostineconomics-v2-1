@@ -38,10 +38,10 @@ $$
 
 ### Vector projection 
 
-스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf $
+스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf a$를 $\mathbf b$위로 프로젝션한 벡터 $\Pi_{\mathbf b} (\mathbf a)$는 다음과 같다. 
 
 $$
-\rm proj_{{\mathbf b}}(\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
+\Pi_{\mathbf b} (\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
 $$
 
 말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
@@ -181,7 +181,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDE5OTIwNjgsLTU2MTM1OTQ3NiwxND
+eyJoaXN0b3J5IjpbLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxND
 EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
 NDI1XX0=
 -->
