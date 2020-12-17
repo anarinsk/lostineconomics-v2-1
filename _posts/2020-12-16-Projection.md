@@ -22,7 +22,7 @@ $$
 a_1 ={\cos \theta}{\lVert \mathbf a \lVert} = \lVert \mathbf a_1 \lVert 
 $$
 
-각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 
+각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 [dot product](https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html)를 참고하라. 
 
 $$
 \cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf a\lVert \lVert\mathbf b\lVert}
@@ -182,7 +182,8 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3Mj
-IxNzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYy
-MywtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbMTAxMzk3NjEsLTI5MjMxMjU0NiwtMTIxMj
+MxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYs
+MTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNT
+M4NzQyNV19
 -->
