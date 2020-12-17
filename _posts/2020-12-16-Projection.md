@@ -1,3 +1,12 @@
+---
+layout: post
+toc: false
+comments: true
+title:  Personal Note on Triagonometry
+description: 삼각함수 복습용
+categories: [math, triagonometry]
+
+---
 
 ## Projection: Scalar and Vector  
 
@@ -172,5 +181,5 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*,Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbLTEwMTE4ODkxMTEsMzA1Mzg3NDI1XX0=
 -->
