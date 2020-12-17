@@ -41,7 +41,7 @@ $$
 스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf a$를 $\mathbf b$위로 프로젝션한 벡터 $\Pi_{\mathbf b} (\mathbf a)$는 다음과 같다. 
 
 $$
-\Pi_{\mathbf b} (\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
+\mathbf a_1 = \Pi_{\mathbf b} (\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
 $$
 
 말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
@@ -182,8 +182,8 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzk3NjEsLTI5MjMxMjU0NiwtMTIxMj
-MxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYs
-MTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNT
-M4NzQyNV19
+eyJoaXN0b3J5IjpbNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMT
+IzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2
+LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMD
+UzODc0MjVdfQ==
 -->
