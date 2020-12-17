@@ -35,11 +35,13 @@ $$
   <img src="https://github.com/anarinsk/lie-dot_product/blob/master/assets/images/perpendicularprojection.jpg?raw=true" width="400">
 </kbd></p>
 
-## From Definition to Geometry 
+### From Definition to Geometry 
 
 닷 프로덕트에 관한 설명은 정의에서 바로 코사인 법칙으로 넘어간다. 하지만 뭔가 분명하지 않다. 이걸 조금 더 풀어보자. 
 
-## Sy
+![enter image description here](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/dotproduct/dot_product_components.png.webp)
+
+### Symmetry
 
 $\mathbf{v}$ 벡터를 $\mathbf u$ 벡터 위에, 즉 이 벡터를 스크린 삼아 직각으로 쏜 프로젝션 벡터($\mathrm{Proj}_{\mathbf u}{\mathbf v}$)의 길이와 $\mathbf u$ 길이를 곱하면 그것이 $\mathbf u$와 $\mathbf v$의 닷 프로덕트가 된다. 어느 벡터로 프로젝션 하는지는 관계가 없다. 즉, 
 
@@ -150,6 +152,6 @@ $$
 </kbd></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzYxODc3MywxMDgwMjY2MjA4LDM3MT
+eyJoaXN0b3J5IjpbLTY1NTg1NTY0MCwxMDgwMjY2MjA4LDM3MT
 M1MDYwNSwtMjM0MjM2MTc4XX0=
 -->
