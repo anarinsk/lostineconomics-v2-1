@@ -12,7 +12,7 @@ categories: [math, matrix-theory]
 
 ### Definition 
 
-다음과 같은 두 개의 벡터를 일단 떠올려보자. 
+다음과 같은 두 개의 벡터, $\mathbf a$, $\mathbf b$를 일단 떠올려보자. 
 
 ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/9/98/Projection_and_rejection.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="300"}
 
@@ -182,8 +182,8 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOT
-IzMTI1NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2
-OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMT
-k3ODc5MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3Mz
+gyNTM2ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3
+LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMT
+Q1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
 -->
