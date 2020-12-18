@@ -22,7 +22,7 @@ $$
 a_1 ={\cos \theta}{\lVert \mathbf a \lVert} = \lVert \mathbf a_1 \lVert 
 $$
 
-각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 [dot product](https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html)를 참고하라. 
+각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 포스팅 [dot product](https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html)를 참고하라. 
 
 $$
 \cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf a\lVert \lVert\mathbf b\lVert}
@@ -182,8 +182,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3Mz
-gyNTM2ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3
-LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMT
-Q1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMD
+kyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEw
+MywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxND
+EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
+NDI1XX0=
 -->
