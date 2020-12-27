@@ -97,7 +97,7 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-이제 평면 위로의 프로젝션을 생각해보자. 기본적인 원리는 동일하다. 이에 앞서 평면을 벡터로 표현하는 방법에 대해 알아보자. 가장 편리한 방법은 노멀 벡터를 활용하는 것이다. 즉, 평면 $\mathbf {p_0}$를 지나는 $P$는 다음과 같이 정의할 수 있다. 
+이제 평면 위로의 프로젝션을 생각해보자. 기본적인 원리는 동일하다. 이에 앞서 평면을 벡터로 표현하는 방법에 대해 알아보자. 가장 편리한 방법은 노멀 벡터를 활용하는 것이다. 즉, 평면 위의 점 $\mathbf {p_0}$를 지나는 $P$는 다음과 같이 정의할 수 있다. 
 
 $$
 P = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf p_0) = 0 \}
@@ -184,9 +184,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00Nj
-UwMzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1
-NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNT
-YxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5
-MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1Mj
+MxMDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2
+ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xND
+YzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3
+Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
 -->
