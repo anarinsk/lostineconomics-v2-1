@@ -111,7 +111,7 @@ $$
 \mathbf u = \Pi_P(\mathbf u) + \Pi_{P^\perp}(\mathbf u)
 $$
 
-그리고 $\mathbf n$을 알고 있으므로 
+$\mathbf n$의 경우 $\Pi_{P \perp}$와 동일한 벡터이다. 따라서 $\mathbf u$의 해당 벡터로의 프로젝션은 $\mathbf n$의 길이를 조정하는 문제가 된다. 즉,  
 
 $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
@@ -184,9 +184,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1Mj
-MxMDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2
-ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xND
-YzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3
-Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbLTg1MDk0MjkxNSwtMTY3NjAyMzQzLDExNj
+IyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4
+NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyND
+cyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxNDEwMjEy
+NjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3NDI1XX
+0=
 -->
