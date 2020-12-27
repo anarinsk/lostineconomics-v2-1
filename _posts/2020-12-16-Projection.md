@@ -165,7 +165,7 @@ $$
 d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
 $$
 
-$\mathbf n$은 $\mathbf p_0$와 같은 나란한 방향에 놓인 벡터다. 따라서 $\cos 0=1$의 
+$\mathbf n$은 $\mathbf p_0$와 같은 나란한 방향에 놓인 벡터다. 따라서 $\cos 0=1$의 경우에 해당한다. 
 
 ## Application: Regression Coefficient 
 
@@ -184,9 +184,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTIyODAyMTEsMTUyMzEwMTc5NCwtND
-Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
-NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
-U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
-OTA5NzAsMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00Nj
+UwMzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1
+NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNT
+YxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5
+MDk3MCwzMDUzODc0MjVdfQ==
 -->
