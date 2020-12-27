@@ -103,7 +103,7 @@ $$
 P = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf p_0) = 0 \}
 $$
 
-여기서 노멀 벡터 $\mathbf n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원이 벡터는 3차원 공간에서 평면이 놓인 모습을 결정한다. 
+여기서 노멀 벡터 $\mathbf n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원의 경우 노멜 벡터는 3차원 공간에서 해당 평면이 놓인 모습을 결정한다. 
 
 위 그림에서 다음과 같은 관계를 쉽게 파악할 수 있다. 
 
@@ -142,7 +142,7 @@ $$
 이제 이 직선과 $\mathbf p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
 
 $$
-d(l, \mathbf 0) = d(\mathbf p_0, l) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{\lVert \mathbf v\lVert^2}\mathbf v \lVert
+d(l, \mathbf 0) = d(\mathbf p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{\lVert \mathbf v\lVert^2}\mathbf v \lVert
 $$
 
 이제 아래와 같은 평면과 원점의 거리를 측정해보자. 
@@ -153,7 +153,7 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/plane.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-이 역시 마찬가지로 이해해보자. 원점을 지나도록 평면을 이동시키고 평면이 지나는 점과 평면 사이의 거리를 측정하면 된다. 
+원점을 지나도록 평면을 이동시키고 평면의 노멀 벡터가 정의된 $p_0$ 과 평면 사이의 거리를 측정하면 된다. 
 
 $$
 P_0 = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf {0}) = 0 \}
@@ -182,9 +182,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTEyMDAwODYsMTUyMzEwMTc5NCwtND
-Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
-NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
-U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
-OTA5NzAsMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbMTE3MzQxNzI3NSwxNTIzMTAxNzk0LC00Nj
+UwMzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1
+NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNT
+YxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5
+MDk3MCwzMDUzODc0MjVdfQ==
 -->
