@@ -38,7 +38,7 @@ $$
 
 ### Vector projection 
 
-스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf a$를 $\mathbf b$위로 프로젝션한 벡터 $\Pi_{\mathbf b} (\mathbf a)$는 다음과 같다. 
+스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf a$를 $\mathbf b$ 위로 프로젝션한 벡터 $\Pi_{\mathbf b} (\mathbf a)$는 다음과 같다. 
 
 $$
 \mathbf a_1 = \Pi_{\mathbf b} (\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
@@ -69,7 +69,7 @@ $$
 - If ${\mathbf v} \in S$, then $\Pi_S(\mathbf v) = \mathbf v$
 - If $\mathbf w \in S$, then $\Pi_S(\mathbf w) = \mathbf 0$
 - if $\mathbf u = \alpha \mathbf v + \beta \mathbf w$ where $\mathbf v \in S$, $\mathbf w \in S^{\perp}$, then $\Pi_S(\mathbf u) = \alpha \mathbf v$
-- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) = \Pi_S(\mathbf v) = \mathbf v$
+- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) = \Pi_S(\mathbf v)$ (itempotent) 
 
 ### Projection onto line 
 
@@ -182,9 +182,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMD
-kyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEw
-MywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxND
-EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
-NDI1XX0=
+eyJoaXN0b3J5IjpbNDQyNzg5MzcxLDE1MjMxMDE3OTQsLTQ2NT
+AzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0
+NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01Nj
+EzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4Nzkw
+OTcwLDMwNTM4NzQyNV19
 -->
