@@ -153,13 +153,13 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/plane.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-원점을 지나도록 평면을 이동시키고 평면의 노멀 벡터가 정의된 $p_0$ 과 평면 사이의 거리를 측정하면 된다. 
+원점을 지나도록 평면을 이동시키고 평면의 노멀 벡터가 정의된 $p_0$와 원점을 지나는 평면 $P_0$ 사이의 거리를 측정하면 된다. 
 
 $$
 P_0 = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf {0}) = 0 \}
 $$
 
-원점을 지나는 평면 $P_0$와 원래 평면을 지나는 어떤 점 $\mathbf p_0$가 있다고 하자. 이 둘 사이의 거리는 $\Pi_{P^\perp}$의 거리와 같다. 즉, 
+이 둘 사이의 거리는 $\Pi_{P^\perp}$의 거리와 같다. 즉, 
 
 $$
 d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
@@ -182,9 +182,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MzQxNzI3NSwxNTIzMTAxNzk0LC00Nj
-UwMzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1
-NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNT
-YxMzU5NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5
-MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE1MTM1NDUyMjQsMTUyMzEwMTc5NCwtND
+Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
+NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
+U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
+OTA5NzAsMzA1Mzg3NDI1XX0=
 -->
