@@ -165,6 +165,8 @@ $$
 d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
 $$
 
+$\mathbf n$은 $\mathbf p_0$와 같은 나란한 방향에 놓인 벡터다. 따라서 $\cos 0=1$의 
+
 ## Application: Regression Coefficient 
 
 ![enter image description here](https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
@@ -182,7 +184,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTM1NDUyMjQsMTUyMzEwMTc5NCwtND
+eyJoaXN0b3J5IjpbLTE0MTIyODAyMTEsMTUyMzEwMTc5NCwtND
 Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
 NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
 U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
