@@ -69,7 +69,7 @@ $$
 - If ${\mathbf v} \in S$, then $\Pi_S(\mathbf v) = \mathbf v$
 - If $\mathbf w \in S$, then $\Pi_S(\mathbf w) = \mathbf 0$
 - if $\mathbf u = \alpha \mathbf v + \beta \mathbf w$ where $\mathbf v \in S$, $\mathbf w \in S^{\perp}$, then $\Pi_S(\mathbf u) = \alpha \mathbf v$
-- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) = \Pi_S(\mathbf v)$ (itempotent) 
+- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) = \Pi_S(\mathbf v)$ (idempotent) 
 
 ### Projection onto line 
 
@@ -103,7 +103,7 @@ $$
 P = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf p_0) = 0 \}
 $$
 
-여기서 노멀 벡터 $\mathbf n$은 평면 모두와 직교하는 성분을 나타낸다. 3차원이 벡터는 3차원 공간에서 평면이 놓인 모습을 결정한다. 
+여기서 노멀 벡터 $\mathbf n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원이 벡터는 3차원 공간에서 평면이 놓인 모습을 결정한다. 
 
 위 그림에서 다음과 같은 관계를 쉽게 파악할 수 있다. 
 
@@ -182,9 +182,9 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyNzg5MzcxLDE1MjMxMDE3OTQsLTQ2NT
-AzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0
-NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01Nj
-EzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4Nzkw
-OTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbLTIwOTEyMDAwODYsMTUyMzEwMTc5NCwtND
+Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
+NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
+U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
+OTA5NzAsMzA1Mzg3NDI1XX0=
 -->
