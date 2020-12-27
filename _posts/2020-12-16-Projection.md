@@ -165,7 +165,7 @@ $$
 d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
 $$
 
-$\mathbf n$은 $\mathbf p_0$와 같은 나란한 방향에 놓인 벡터다. 따라서 $\cos 0=1$의 경우에 해당한다. 
+다시 확인해보자. 노멀 벡터 $\mathbf n$은 $\mathbf p_0$와 같은 같은 방향에 있는 벡터다. 따라서 위의 식이 성립한다. 
 
 ## Application: Regression Coefficient 
 
@@ -184,7 +184,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDk0MjkxNSwtMTY3NjAyMzQzLDExNj
+eyJoaXN0b3J5IjpbLTMwODM5NTIyNywtMTY3NjAyMzQzLDExNj
 IyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4
 NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyND
 cyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxNDEwMjEy
