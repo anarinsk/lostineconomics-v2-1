@@ -78,7 +78,7 @@ $$
 그림에서 $\mathbf u$의 $\mathbf v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\mathbf v$ 대신 $l$로 표기된 점에 유의하자. 
 
 $$
-l: \{ \mathbf v \in \mathbb R^n : \}
+l: \{ \mathbf v \in \mathbb R^n \lvert \mathbf v = \mathbf 0 + t \mathbf v, t \in \mathbb R \}
 $$
 
 $$
@@ -188,10 +188,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDYzNjA4MCwtMzA4Mzk1MjI3LC0xNj
-c2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0
-NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLT
-EyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5
-NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MC
-wzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTEwNzQyNjQ3MDIsLTMwODM5NTIyNywtMT
+Y3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1
+NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC
+0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1
+OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5Nz
+AsMzA1Mzg3NDI1XX0=
 -->
