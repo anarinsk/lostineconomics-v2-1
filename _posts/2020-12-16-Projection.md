@@ -109,13 +109,13 @@ $$
 
 여기서 노멀 벡터 $\mathbf n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원의 경우 노멜 벡터는 3차원 공간에서 해당 평면이 놓인 모습을 결정한다. 
 
-위 그림에서 다음과 같은 관계를 쉽게 파악할 수 있다. 
+그림에서 보듯이 $\mathbf u$에서 $\mathbf n$으로의 프로젝션은 앞서 보았던 벡터에서 벡터로의 프로젝션이다. 따라서 앞서 구
 
 $$
 \mathbf u = \Pi_P(\mathbf u) + \Pi_{P^\perp}(\mathbf u)
 $$
 
-$\mathbf n$의 경우 $\Pi_{P \perp}$와 동일한 벡터이다. 따라서 $\mathbf u$의 해당 벡터로의 프로젝션은 $\mathbf n$의 길이를 조정하는 문제가 된다. 즉,  
+$\mathbf u$의 해당 벡터로의 프로젝션은 $\mathbf n$의 길이를 조정하는 문제가 된다. 즉,  
 
 $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
@@ -188,10 +188,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQyNjQ3MDIsLTMwODM5NTIyNywtMT
-Y3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1
-NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC
-0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1
-OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5Nz
-AsMzA1Mzg3NDI1XX0=
+eyJoaXN0b3J5IjpbMTg5NTQyMjUzNSwtMzA4Mzk1MjI3LC0xNj
+c2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0
+NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLT
+EyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5
+NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MC
+wzMDUzODc0MjVdfQ==
 -->
