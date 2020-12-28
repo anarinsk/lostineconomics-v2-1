@@ -78,6 +78,10 @@ $$
 그림에서 $\mathbf u$의 $\mathbf v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\mathbf v$ 대신 $l$로 표기된 점에 유의하자. 
 
 $$
+l: \{ \mathbf v \in \mathbb R^n : \}
+$$
+
+$$
 \Pi_l(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v
 $$
 
@@ -184,10 +188,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODM5NTIyNywtMTY3NjAyMzQzLDExNj
-IyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4
-NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyND
-cyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxNDEwMjEy
-NjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3NDI1XX
-0=
+eyJoaXN0b3J5IjpbLTU2MDYzNjA4MCwtMzA4Mzk1MjI3LC0xNj
+c2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0
+NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLT
+EyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5
+NDc2LDE0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MC
+wzMDUzODc0MjVdfQ==
 -->
