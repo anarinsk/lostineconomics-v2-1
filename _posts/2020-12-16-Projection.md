@@ -119,6 +119,10 @@ $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
 $$
 
+사실 이 대목이 약간 찜찜하다. 그런데 이렇게 생각해보면 쉽다. 
+
+
+
 이를 그대로 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
@@ -186,10 +190,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2Nz
-YwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2
-NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMT
-IxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0
-NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLD
-MwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMD
+gzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3
+OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLT
+I5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0
+MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OS
+wxOTc4NzkwOTcwLDMwNTM4NzQyNV19
 -->
