@@ -124,9 +124,7 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-
-
-이를 그대로 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
+그림처럼 $\Pi_{P \perp}$를 이동해보자. 그러면 벡터 프로젝션이 자연스럽다. 즉,  $\Pi_{P \perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P \perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
 \Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
@@ -193,10 +191,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzNDYxMDgsLTE1NTMxNTM3NjUsMj
-M4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4
-MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNi
-w3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIx
-NzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMy
-wtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbMjI4NTc5ODU5LC0xNTUzMTUzNzY1LDIzOD
+M4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2MDIzNDMsMTE2MjI0ODIw
+NywxNTIzMTAxNzk0LC00NjUwMzU0NjcsLTEwOTI4Njg1MzYsNz
+M4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMTIzMTAzLDI0NzIyMTcz
+NywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMsLT
+E0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
 -->
