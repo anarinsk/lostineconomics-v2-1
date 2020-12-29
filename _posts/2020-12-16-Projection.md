@@ -119,7 +119,10 @@ $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
 $$
 
-사실 이 대목이 약간 찜찜하다. 그런데 이렇게 생각해보면 쉽다. 
+사실 이 대목이 약간 찜찜하다. 프로젝션을 어떻게 하지, 라는 생각이 나처럼 들지도 모르겠다. 다음의 그림을 보자. 
+
+
+![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 
 
@@ -190,10 +193,10 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMD
-gzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3
-OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLT
-I5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0
-MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OS
-wxOTc4NzkwOTcwLDMwNTM4NzQyNV19
+eyJoaXN0b3J5IjpbLTE0MzIzNDYxMDgsLTE1NTMxNTM3NjUsMj
+M4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4
+MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNi
+w3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIx
+NzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMTQxMDIxMjYyMy
+wtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4NzQyNV19
 -->
