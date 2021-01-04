@@ -10,10 +10,13 @@ categories: [docker, data-science]
 ---
 
 
-## 아마도 이런 분들에게 유용할 것  
+## 아마도 이런 분들에게 유용할 것 
+# 허름한 도커 사용 
+
+## 사전 전제 
 
 - 도커에 관해서 대충 알고 있다. 
-- 도커를 써보기는 했다. 하지만... (막상 쓰려면...)
+- 도커를 써보기는 했헀다. 하지만... (막상 쓰려면...)
 
 ## 내가 도커를 쓰는 이유 
 
@@ -32,7 +35,9 @@ categories: [docker, data-science]
 
 내가 쓰는 특정 환경을 특정 시점에 이미지로 말아두었다고 치자. 당분간은 편리하게 필요할 때 끌어다 쓸 수 있을 것이다. 하지만 이렇게 '고정된' 이미지를 쓸 경우  도커 이미지 안에 속한 패키지나 구성요소들을 개별적으로 업데이트 해줘야 한다. 시간이 지날수록 업데이트해야 할 항목과 갯수가 늘어나게 된다. 
 
-한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 주기적으로 새로 끌어다쓰면 업데이트의 번거로움을 피할 수 있다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면, 특화된 이미지를 만들어 써도 좋을 것이다. 
+한편 도커 허브의 공식 이미지의 경우 필요한 업데이트를 이미지 관리자가 정기적으로 수행한다. 이 이미지를 주기적으로 새로 끌어다쓰면 업데이트의 번거로움을 피할 수 있다. 물론 팀별로 통일된 환경이 필요하고 이 환경을 조직에서 관리할 수 있다면,Finding Giants in Docker 
+
+도커를 써봤다면 빌드를 해봤을 것이다. 여러가지 바탕이 되는 OS나 패키지들을 끌어와서 자신에게 특화된 이미패키지를 만들어 써도 좋을 것이다. 
 
 파이썬으로 코딩을 하고 주피터 환경을 쓰고 싶다면, 주피터에서 공식적으로 운영하는 도커 이미지를 쓰자. R과 RStudio를 쓰고 싶다면, 역시 rocker라는 공식적인 도커 프로젝트가 있다. 개인이 제조한 사설 이미지 보다는 이런 공식 이미지가 대체로 편안하다. 
 
@@ -135,7 +140,9 @@ sudo docker-compose -f "\mnt\[YOUR-YML-DIRECTORY]" -p "[NAME-OF-PROJECT]" up -d
 
 ## 실제 사용해보자 
 
-앞서 말했듯이 도커 허브에는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 문과생이라면 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 이미지가 도커 컨테이터로 구동된 이후 범용 웹브라우저에서 다음과 같이 실행하자. 
+앞서 말했듯이 수 있다! 처음에는 이 개념이 환상적일 수 있다. 게다가 개인용 저장소만 만들지 않으면 도커허브에 그냥 올릴 수 있다. 하지만 이런 접근은 본인이 특화된 용도로 사용을 하거나 아니면 패키지 제조에 능숙하지 않다면 크게 권하고 싶지 않다. 당분간 별 문제가 없더라도 언젠가는 이상하게 탈이 난다. 
+
+다행스럽게 도커 허브에서는 여러가지 공식적으로 관리되고 업데이트되는 도커 이미지들이 많이 올라와 있다. 문과생이라면되도록 초반에는 이런 이미지들을 취사선택해서 활용하는 편을 권장한다. 주피터든 RStudio든 모두 웹 브라우저에서 돌아간다. 이미지가 도커 컨테이터로 구동된 이후 범용 웹브라우저에서 다음과 같이 실행하자. 
 
 - Juypterlab + Python: `localhost:8888`
 - RStudio + R: `localhost:8787`
@@ -166,17 +173,19 @@ RStudio도 그럴까? 그렇다. 원래 RStudio라는 IDE가 웹 기반으로 �
 
 아예 해당 이미지 및 컨테이너 데이터 전체를 리셋하는 방법도 있다. 
 
-![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="500"}
+![]({{ site.baseurl }}/images/docker-in-use/docker_2.png){: style="textalign:center; " width="500"}예를 들어보자. 파이썬으로 코딩을 한다면 그리고 주피터 환경을 써야 한다면 어떻게 하는 것이 좋을까? 주피터에서 공식적으로 운영하는 도커 이미지가 있다. 도커로 R을 쓰고 싶다면? 역시 rocker라는 공식적인 프로젝트가 있다. 개인이 제조한 사설 이미지보다는 이런 녀석들을 끌어다쓰는 편이 좋다. 
+
+이하에서는 내가 기본으로 사용하는 두 개의 이미지를 바탕에 깔고 설명을 진행하도록 하겠다. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MTQ4NDM2MCwtMTc5MTcwNzYxNCw4NT
-Y2ODc5MDcsMzQwNTQxOTg3LDE4MjI3ODAyNTgsLTEwMjI4NDYz
-MzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC0xMjMxNzQ3Mjk5LC
-0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0zNzcwMzQxODQsMzgw
-ODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMTQwLC01OTc1ODI4Nz
-ksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4MTk3MjM3NywxMDA0
-OTgyODk1XX0=
+eyJoaXN0b3J5IjpbLTIwMDc3ODkzNTAsLTk4MTQ4NDM2MCwtMT
+c5MTcwNzYxNCw4NTY2ODc5MDcsMzQwNTQxOTg3LDE4MjI3ODAy
+NTgsLTEwMjI4NDYzMzUsMTE5NDk5MjU3MSwxOTAxODkyOTc5LC
+0xMjMxNzQ3Mjk5LC0xNTk1OTg4NjY1LC0xODYwNjY3NzQxLC0z
+NzcwMzQxODQsMzgwODk3MTk3LC0xODI3ODc2ODEwLDkxNTExMT
+QwLC01OTc1ODI4NzksMTY0MzE2MTA1Nyw2MDc3MDQ3NjEsMTk4
+MTk3MjM3N119
 -->
