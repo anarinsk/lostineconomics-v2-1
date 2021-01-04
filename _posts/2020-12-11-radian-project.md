@@ -33,13 +33,13 @@ $$
 r (2 \pi)  \dfrac{d\degree}{360 \degree}
 $$
 
-이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다. 
+이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다.내보자. $\frac{d\degree}{360 \degree}$ 부분을 호도법으로 바꿔야 한다. 따라서 분자와 분모 모두를 호도로 고쳐보자.  
 
 $$
 360 \degree = \dfrac{r (2\pi)}{r} \rm radian = 2 \pi  ~\rm radian 
 $$
 
-$d\degree = \theta~\rm radian$이므로, 
+$d\degree = \theta~\rm radian$이므로,라고 하자.  
 
 $$
 r (2\pi) \dfrac{\theta}{2 \pi} = r \theta
@@ -257,8 +257,8 @@ $e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 
 - $\cos \theta = \frac{6}{10}$, $\sin \theta = \frac{8}{10}$을 통해 $\theta$를 구할 수 있다. 
 - $\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODY3MTAzMSwtMTY2MjU2MDMyMywtMj
-AxNzkxNzg0Miw1MTI1MTc2NzMsLTIwNzUwODM3OTksMTU5NjA1
-MjM5MSwxMjc1MzQ3NjUsLTEzMjY3NTA5NywzMzM3Mjk5NCwtMT
-QyNDg5NjI0OV19
+eyJoaXN0b3J5IjpbLTEzNjkxMjA2MjMsLTY5ODY3MTAzMSwtMT
+Y2MjU2MDMyMywtMjAxNzkxNzg0Miw1MTI1MTc2NzMsLTIwNzUw
+ODM3OTksMTU5NjA1MjM5MSwxMjc1MzQ3NjUsLTEzMjY3NTA5Ny
+wzMzM3Mjk5NCwtMTQyNDg5NjI0OV19
 -->
