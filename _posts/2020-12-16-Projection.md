@@ -91,7 +91,7 @@ $$
 \mathbf u = \Pi_{l} (\mathbf u) + \Pi_{l^{\perp}} (\mathbf u)
 $$
 
-잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $l$과 $\Pi_{l}(\mathbf u)$에서 직교하는 벡터로의 프로젝션이다. 그런데, 둘은 특정한 점에서 만난다.  프로젝션의 결과는 $\Pi_{l^{\perp}}(\mathbf u)$ 위에 존재한다. 
+잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $l$과 $\Pi_{l}(\mathbf u)$에서 직교하는 벡터로의 프로젝션이다. 그런데, 둘은 특정한 점에서 만난다. 따라서, 프로젝션의 결과는 $\Pi_{l^{\perp}}(\mathbf u)$ 위에 그대로 존재하게 된다. 아래 그림은 이를 나타낸다. 또한, $\mathbf u$라는 벡터가 두 개의 직교하는 성분의 결합을 통해 표현될 수 있다는 것을 나타내기도 한다. 
 
 따라서 둘 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$가 된다. 즉, 
 
@@ -193,11 +193,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NTI4NDA2LC0xMDc5MjIxMjU3LDIyOD
-U3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODczNjksLTMwODM5NTIy
-NywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtND
-Y1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEy
-NTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLT
-U2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3
-OTA5NzBdfQ==
+eyJoaXN0b3J5IjpbMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMj
+g1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUy
+MjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLT
+Q2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMx
+MjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC
+01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4
+NzkwOTcwXX0=
 -->
