@@ -121,12 +121,8 @@ $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
 $$
 
-사실 이 대목이 약간 찜찜하다. 프로젝션을 어떻게 하지, 라는 생각이 나처럼 들지도 모르겠다. 다음의 그림을 보자. 
 
-
-![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
-
-그림처럼 $\Pi_{P \perp}$를 이동해보자. 그러면 벡터 프로젝션이 자연스럽다. 즉,  $\Pi_{P \perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P \perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
+그림처럼 $\Pi_{P^\perp}$를 이동해보자. 그러면 벡터 프로젝션이 자연스럽다. 즉,  $\Pi_{P^\perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
 \Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
@@ -193,11 +189,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMj
-g1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUy
-MjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLT
-Q2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMx
-MjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC
-01NjEzNTk0NzYsMTQxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4
-NzkwOTcwXX0=
+eyJoaXN0b3J5IjpbMTgwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMD
+c5MjIxMjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODcz
+NjksLTMwODM5NTIyNywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMT
+UyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1
+MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLT
+E0NjM0NDQwNjksLTU2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5
+NTc2Nzg5XX0=
 -->
