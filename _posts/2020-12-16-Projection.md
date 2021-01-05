@@ -120,9 +120,9 @@ $$
 $$
 \Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
 $$
+![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-
-그림처럼 $\Pi_{P^\perp}$를 이동해보자. 그러면 벡터 프로젝션이 자연스럽다. 즉,  $\Pi_{P^\perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
+어차피 벡터는 점과 달리 상대적인 위칠 $\Pi_{P^\perp}$를 이동해보자. 그러면 벡터 프로젝션이 자연스럽다. 즉,  $\Pi_{P^\perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
 \Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
@@ -189,11 +189,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMD
-c5MjIxMjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODcz
-NjksLTMwODM5NTIyNywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMT
-UyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1
-MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLT
-E0NjM0NDQwNjksLTU2MTM1OTQ3NiwxNDEwMjEyNjIzLC0xNDU5
-NTc2Nzg5XX0=
+eyJoaXN0b3J5IjpbMTQ0NjE5NTY1NCwxODAzMzU1Mzk0LDEzOT
+cwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5ODU5LC0xNTUzMTUz
+NzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2MDIzNDMsMT
+E2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0NjcsLTEwOTI4
+Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMTIzMTAzLD
+I0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAy
+MTI2MjNdfQ==
 -->
