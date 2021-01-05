@@ -93,7 +93,7 @@ $$
 
 잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $\Pi_{l}(\mathbf u)$와 직교하는 벡터 프로젝션이다. 그런데, 둘은 $\Pi_{l^{\perp}}(\mathbf u)$ 만난다. 따라서, 프로젝션의 결과는 $\Pi_{l^{\perp}}(\mathbf u)$ 위에 있게 된다. 아래 그림은 이를 나타낸다. 또한, $\mathbf u$라는 벡터가 두 개의 직교하는 성분의 결합을 통해 표현될 수 있다는 것을 알 수 있다.  
 
-평면과 벡터 $\mathbf u$ 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$로 나타낼 수 있다. 그래서,  
+$l$과 벡터 $\mathbf u$ 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$로 나타낼 수 있다. 그래서,  
 
 $$
 \lVert \mathbf u - \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v\lVert
@@ -200,11 +200,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzI3Mzk0LC0xODAzNjkxNjkxLDE4MD
-MzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMjg1Nzk4
-NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLT
-E2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAz
-NTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0Ni
-wtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEz
-NTk0NzZdfQ==
+eyJoaXN0b3J5IjpbLTQxMjk0NzU4OSwtMTgwMzY5MTY5MSwxOD
+AzMzU1Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5
+ODU5LC0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC
+0xNjc2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUw
+MzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1ND
+YsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYx
+MzU5NDc2XX0=
 -->
