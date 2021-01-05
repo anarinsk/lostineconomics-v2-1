@@ -132,6 +132,10 @@ $$
 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
+\Pi_P(\mathbf u) + \Pi_{P^\perp} = \mathbf u 
+$$
+
+$$
 \Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
 $$
 
@@ -196,11 +200,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTE0NDIzNywtMTgwMzY5MTY5MSwxOD
-AzMzU1Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5
-ODU5LC0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC
-0xNjc2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUw
-MzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1ND
-YsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYx
-MzU5NDc2XX0=
+eyJoaXN0b3J5IjpbNTA3MjUwMTg5LC0xODAzNjkxNjkxLDE4MD
+MzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMjg1Nzk4
+NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLT
+E2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAz
+NTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0Ni
+wtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEz
+NTk0NzZdfQ==
 -->
