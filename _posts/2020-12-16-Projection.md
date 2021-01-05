@@ -88,8 +88,10 @@ $$
 이제 여기서 $\Pi_{l^{\perp}}$를 구해보자. 
 
 $$
-\mathbf u = \Pi_{l} + \Pi_{l^{\perp}}
+\mathbf u = \Pi_{l} (\mathbf u) + \Pi_{l^{\perp}} (\mathbf u)
 $$
+
+잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}$
 
 따라서 둘 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$가 된다. 즉, 
 
@@ -191,10 +193,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI4NTc5ODU5LC0xNTUzMTUzNzY1LDIzOD
-M4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2MDIzNDMsMTE2MjI0ODIw
-NywxNTIzMTAxNzk0LC00NjUwMzU0NjcsLTEwOTI4Njg1MzYsNz
-M4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMTIzMTAzLDI0NzIyMTcz
-NywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LDE0MTAyMTI2MjMsLT
-E0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUzODc0MjVdfQ==
+eyJoaXN0b3J5IjpbLTExODU5NzYzMjEsMjI4NTc5ODU5LC0xNT
+UzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2MDIz
+NDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0NjcsLT
+EwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMTIz
+MTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYxMzU5NDc2LD
+E0MTAyMTI2MjMsLTE0NTk1NzY3ODksMTk3ODc5MDk3MCwzMDUz
+ODc0MjVdfQ==
 -->
