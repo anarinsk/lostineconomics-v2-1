@@ -123,7 +123,7 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-벡터는 점과 달리 상대적인 위치로 정의된다. 벡터 연산은 그런 맥락에서 이루어진다. $\Pi_{P^\perp}$를 위 그림처럼 이동해 보자. 이렇게 보면 벡터 프로젝션이 자연스럽다. 어차피 상대적인 이동이 문제라면, ㅂ즉,  $\Pi_{P^\perp}$로 스칼라 프로젝션을 한 후 표준화된 벡터에 이를 곱해주면 된다. 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
+벡터는 점과 달리 상대적인 위치로 정의된다. 벡터 연산은 그런 맥락에서 이루어진다. $\Pi_{P^\perp}$를 위 그림처럼 이동해 보자. 이렇게 보면 벡터 프로젝션이 자연스럽다. P에서의 위치는 변하지 않고 노멀 벡터 쪽으로만 변화하므로 벡터 자체는 이동 전 벡터와 이동 후 벡터가 동일하다. 즉,  $\Pi_{P^\perp}$를 왼쪽으로 이동시킨 벡터에 대한 프로젝션을 구해도 무방하다. 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
 \Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
@@ -190,11 +190,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODg0NDA5MiwtMTgwMzY5MTY5MSwxOD
-AzMzU1Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5
-ODU5LC0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC
-0xNjc2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUw
-MzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1ND
-YsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYx
-MzU5NDc2XX0=
+eyJoaXN0b3J5IjpbLTE1MDE4OTEyODksLTE4MDM2OTE2OTEsMT
+gwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMDc5MjIxMjU3LDIyODU3
+OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODczNjksLTMwODM5NTIyNy
+wtMTY3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1
+MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNT
+Q2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2
+MTM1OTQ3Nl19
 -->
