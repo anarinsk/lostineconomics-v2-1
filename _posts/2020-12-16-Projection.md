@@ -91,7 +91,7 @@ $$
 \mathbf u = \Pi_{l} (\mathbf u) + \Pi_{l^{\perp}} (\mathbf u)
 $$
 
-잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $\mathbf v$와 직교하는 벡터로의 프로젝션이다. 그런데, 둘은 이미 만나고 있으므로 이는 사실상 
+잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $\mathbf v$와 직교하는 벡터로의 프로젝션이다. 그런데, 둘은 특정한 점에서 만난다. 즉, 두 프로젝션의 
 
 따라서 둘 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$가 된다. 즉, 
 
@@ -193,11 +193,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNjY1NzA4NywyMjg1Nzk4NTksLTE1NT
-MxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2NzYwMjM0
-MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2NywtMT
-A5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMTIxMjMx
-MDMsMjQ3MjIxNzM3LC0xNDYzNDQ0MDY5LC01NjEzNTk0NzYsMT
-QxMDIxMjYyMywtMTQ1OTU3Njc4OSwxOTc4NzkwOTcwLDMwNTM4
-NzQyNV19
+eyJoaXN0b3J5IjpbMzMzNTU0NzQyLDIyODU3OTg1OSwtMTU1Mz
+E1Mzc2NSwyMzgzODczNjksLTMwODM5NTIyNywtMTY3NjAyMzQz
+LDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMD
+kyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEw
+MywyNDcyMjE3MzcsLTE0NjM0NDQwNjksLTU2MTM1OTQ3NiwxND
+EwMjEyNjIzLC0xNDU5NTc2Nzg5LDE5Nzg3OTA5NzAsMzA1Mzg3
+NDI1XX0=
 -->
