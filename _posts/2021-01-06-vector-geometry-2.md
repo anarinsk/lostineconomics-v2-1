@@ -133,7 +133,7 @@ $$
 
 이 모든 걸 그림 하나로 정리하면 다음과 같다! 
 
-![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png)
+![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODI4MzcwN119
+eyJoaXN0b3J5IjpbLTIwNTIyMDE3NDAsLTgzODI4MzcwN119
 -->
