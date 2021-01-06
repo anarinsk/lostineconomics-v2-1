@@ -47,7 +47,7 @@ categories: [math, matrix-theory]
 
 ### Normal vector 
 
-노멀 벡터는 아래 플레인 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 플레인의 파라메트릭 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 이를 $\vec v = q - p$, $\vec w = r - p$라고 하자. 
+노멀 벡터는 아래 플레인 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 플레인의 파라메트릭 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다. 
 
 $$
 \vec n  = \vec v \times \vec w = (q-p) \times (r-p)
@@ -57,6 +57,6 @@ $$
 
 거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html)을 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjA5ODc3NCwtMTQwOTQ1MDc4LDE5MD
-Y3MTA4NjAsNjQyNjgzMjE1XX0=
+eyJoaXN0b3J5IjpbODU2MDI2MDQ3LC0xNDA5NDUwNzgsMTkwNj
+cxMDg2MCw2NDI2ODMyMTVdfQ==
 -->
