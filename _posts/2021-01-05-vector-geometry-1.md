@@ -43,6 +43,7 @@ categories: [math, matrix-theory]
 점과 벡터의 차이는 무엇일까? 점은 좌표계에서 원점을 기준으로 한 위치를 나타낸다. 반면, 벡터는 크기와 방향을 모두 나타낸다. 반면 벡터는 기준이 없다. 벡터를 점으로 나타내려면 어떻게 해야 할까? 두 점의 차이를 구하면 이는 벡터가 된다. 쉽게 생각해보자. 2차원 데카르트 좌표계에서 $(3,3)$이라는 위치를 생각해보자. $(3,3)$을 그냥 나타내면 점이다. 반면, $(3,3) - (0,0)$을 의미하면 $(3,3)$은 벡터가 된다. 그래프 상에서 $(0,0)$에서 $(3,3)$으로 화살표를 그리면 벡터가 된다. 아래 그림을 참고 하자. 
 
 ![enter image description here](https://notesclasses.com/wp-content/uploads/2020/04/Displacement-in-Physics-Explanation.png)
+{: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="400"}
 
 ### Normal vector 
 
@@ -56,6 +57,6 @@ $$
 
 거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html)을 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzMzODIzMCwtMTQwOTQ1MDc4LDE5MD
-Y3MTA4NjAsNjQyNjgzMjE1XX0=
+eyJoaXN0b3J5IjpbLTE2NTQzNzg4NDIsLTE0MDk0NTA3OCwxOT
+A2NzEwODYwLDY0MjY4MzIxNV19
 -->
