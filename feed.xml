@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-06T02:28:56-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-06T02:37:53-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
 
 &lt;p&gt;먼저 벡터 스페이스를 살펴보기 위해서 몇 가지 정의부터 보자.&lt;/p&gt;
 
@@ -272,15 +272,7 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;h3 id=&quot;rref-method&quot;&gt;RREF method&lt;/h3&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;사실 연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M&lt;/td&gt;
-      &lt;td&gt;\vec b]$를 RREF로 만들면, $[\text{rref}(M)&lt;/td&gt;
-      &lt;td&gt;\vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;사실 연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M \lvert \vec b]$를 RREF로 만들면, $[\text{rref}(M) \lvert \vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다.&lt;/p&gt;
 
 &lt;h2 id=&quot;two-transformation&quot;&gt;Two Transformation&lt;/h2&gt;
 
@@ -365,7 +357,8 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;p&gt;&lt;img src=&quot;https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTIyMDE3NDAsLTgzODI4MzcwN119
+eyJoaXN0b3J5IjpbMjA4ODA0MzM3NCwtMjA1MjIwMTc0MCwtOD
+M4MjgzNzA3XX0=
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Vector Space</summary></entry><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
