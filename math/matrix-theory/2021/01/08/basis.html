@@ -393,18 +393,18 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 
 <h2 id="similar-matrix">Similar Matrix</h2>
 
-<p>$N \in \mathbb R^{n \times n}$과 역행렬이 존재하는 매트릭스 $P \in \mathbb R^{n \times n}$이 있다고 하자. M은 다음과 같이 정의된다.</p>
+<p>$B \in \mathbb R^{n \times n}$과 역행렬이 존재하는 매트릭스 $P \in \mathbb R^{n \times n}$이 있다고 하자. A은 다음과 같이 정의된다.</p>
 
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>C</mi><mi>N</mi><msup><mi>C</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">M = C N C^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.864108em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>C</mi><mi>B</mi><msup><mi>C</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">A = C B C^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.864108em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.864108em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span>
 
-<p>$M$과 $N$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $M$과 $N$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $M^n = C N^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $N$이 어떤 매트릭스냐에 따라서 계산 상 편리함을 준다.</p>
+<p>$A$과 $B$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $A$과 $B$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $A^n = C B^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $B$가 어떤 매트릭스냐에 따라서 계산 상 편리함을 줄 수 있다.</p>
 
-<p>$C$에는 역행렬이 존재하기 때문에 $P$의 컬럼은 $\mathbb R^n$의 기저가 된다. 이렇게 보면 $P$는 change-of-basis와 같은 맥락에서 이해할 수 있다. 즉, 위의 기저를 바꾸는 식과 동일한 식이다. $M x$라는 변환을 이 맥락에서 다시 이해해보자.</p>
+<p>$C$가 역행렬을 지니기 때문에 $C$의 컬럼은 $\mathbb R^n$의 기저가 된다. 이렇게 보면 $P$는 change-of-basis와 같은 맥락에서 이해할 수 있다. 즉, 위의 기저를 바꾸는 식과 동일한 식이다. $M x$라는 변환을 이 맥락에서 다시 이해해보자.</p>
 
 <ol>
   <li>$C^{-1} x$는 $[x]_{\mathcal B}$로 $[x]$의 기저를 바꾸는 것이다.</li>
   <li>이 바뀐 기저에서 $N$이라는 변환을 수행한다. 즉, $[N]_{\mathcal B}$</li>
-  <li>$C$는 곱해 다시 통상적인 기저로 돌아</li>
+  <li>$C$는 곱해 다시 통상적인 기저로 돌아오게 된다.</li>
 </ol>
 
 <p><img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/basis/coord.png?raw=true" alt="enter image description here" /></p>
@@ -419,7 +419,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 </ol>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDE5ODU3NCwtMTU0NDkxMzE0OCwyMz
+eyJoaXN0b3J5IjpbLTg0OTk1NzQ2OSwtMTU0NDkxMzE0OCwyMz
 k2MTM4NTAsLTgzMjgyMDg2XX0=
 -->
 
