@@ -145,7 +145,7 @@ $$
 {\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda
 $$
 
-주의할 것은 ${\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i$는 대각화가 가능한 경우 뿐 아니라 일반적으로 성립한다. 즉, 특성방정식을 생각해보면, $\vert A - \lambda I \vert = 0$이다. 즉, 
+두 가지 속성은 ${\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i$는 대각화가 가능한 경우 뿐 아니라 일반적으로 성립한다. 즉, 특성방정식을 생각해보면, $\vert A - \lambda I \vert = 0$이다. 즉, 
 
 $$
 \begin{aligned}
@@ -260,5 +260,5 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODAwODcwOSw0NTIyMTY0ODddfQ==
+eyJoaXN0b3J5IjpbLTEyNjQwMDE0LDQ1MjIxNjQ4N119
 -->
