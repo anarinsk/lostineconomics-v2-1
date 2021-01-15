@@ -40,7 +40,7 @@ $$
 
 ### Algebraic vs geometric 
 
-대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 벡터 공간의 차원을 의미한다. 예를 들어보자. 
+대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자. 
 
 $$
 A = 
@@ -76,7 +76,7 @@ $$
 
 ### Defective eigenvalues
 
-${\rm GM}(\lambda) < {\rm AM}(\lambda)$의 $\lambda$를 defective eigenvalue라고 부른다. 즉, 해당 아이겐밸류가 생성하는 특정방정식의 널 스페이스의 차원이 AM보다 작다. 따라서 이 경우 아이겐벡터를 통해서 원래 매트릭스의 컬럼 스페이스를 생성할 수 없다.  
+${\rm GM}(\lambda) < {\rm AM}(\lambda)$를 만족하는 $\lambda$를 defective eigenvalue라고 부른다. 즉, 해당 아이겐밸류가 생성하는 특정방정식의 널 스페이스의 차원이 AM보다 작다. 따라서 이 경우 아이겐벡터를 통해서 원래 매트릭스의 컬럼 스페이스를 생성할 수 없다.  
 
 모든 아이겐밸류의 값이 다를 경우, 즉 아이겐밸류의 중복이 없을 경우 각각 아이겐밸류의 AM은 1이 된다. 이 경우 아이겐벡터들이 모두 선형 독립이기 때문에 해당 아이겐밸류의 기하적 중복도 역시 1이 된다.  따라서 반복되는 아이겐밸류가 없는 경우에는 defective eigenvalue는 없다. 
 
@@ -260,5 +260,5 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyMjE2NDg3XX0=
+eyJoaXN0b3J5IjpbLTIxMDA1MzI2ODMsNDUyMjE2NDg3XX0=
 -->
