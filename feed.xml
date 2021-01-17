@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-17T17:41:40-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-17T17:44:44-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
 
 &lt;p&gt;아이겐밸류, 아이겐벡터는 중요하다. 어디서나 튀어나온다. 그래서 친숙하지만 나는 이걸 제대로 알고 있는 것일까? 이번 포스팅에서는 아이겐 관련 내용을 아이겐 공간의 관점에서 이해해보고자 한다.&lt;/p&gt;
 
@@ -427,6 +427,10 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;p&gt;$f_i$가 직교행렬이 아니기 때문에, $c_i$ 역시 하나씩 결정될 수 없고 동시에 결정되어야 한다. 즉, 이는 연립방정식을 푸는 문제와 같다. 즉 $n$ 개의 미지수와 $n$ 개의 방정식을 푸는 문제다.&lt;/p&gt;
 
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;p&gt;$T: \mathbb R^2 \to $&lt;/p&gt;
+
 &lt;h2 id=&quot;change-of-basis&quot;&gt;Change of Basis&lt;/h2&gt;
 
 &lt;p&gt;한 벡터의 기저를 다른 기저로 바꾸는 것을 생각해보자. 일반적으로는 $T: V \to W$ 역시 $B_V$에서 $B_W$로 기저를 바꾸는 것이다. 매트릭스를 이해하는 매우 중요한 방법의 하나다. 이를 통해 역시 매트릭스 표현에 도달할 수 있다. 선형 번환 $T: V \to W$가 있다고 하자.&lt;/p&gt;
@@ -663,13 +667,13 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjI5NjI3NiwtMTMyNTQyNTA0MiwxMz
-Q3MzM5MDExLDk4OTU0NTg5MCwtMTM4NTYwNjYzNiwzNzIyNTc1
-NTYsLTY2MTczNjgzMCw2NTc2NzE2MDIsLTIxMDg5NDIyMDcsLT
-IwODI0NjMxOTYsMjA0MTI0NTg0NSwtMTI0NTQ5NzgyMSwyMDgx
-NDEyNDU5LC0xODE5NzQwOTc0LC0yMTA0NzE4MjUyLDM2NDc3Nj
-k2LDE2NzA2NzYzNjksLTE1NDQ5MTMxNDgsMjM5NjEzODUwLC04
-MzI4MjA4Nl19
+eyJoaXN0b3J5IjpbODk5Mjk5MzQ4LDExNTIyOTYyNzYsLTEzMj
+U0MjUwNDIsMTM0NzMzOTAxMSw5ODk1NDU4OTAsLTEzODU2MDY2
+MzYsMzcyMjU3NTU2LC02NjE3MzY4MzAsNjU3NjcxNjAyLC0yMT
+A4OTQyMjA3LC0yMDgyNDYzMTk2LDIwNDEyNDU4NDUsLTEyNDU0
+OTc4MjEsMjA4MTQxMjQ1OSwtMTgxOTc0MDk3NCwtMjEwNDcxOD
+I1MiwzNjQ3NzY5NiwxNjcwNjc2MzY5LC0xNTQ0OTEzMTQ4LDIz
+OTYxMzg1MF19
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts &amp;amp; Definition</summary></entry><entry><title type="html">Matrix as Linear Transformation</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html" rel="alternate" type="text/html" title="Matrix as Linear Transformation" /><published>2021-01-07T00:00:00-06:00</published><updated>2021-01-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html">&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/matrix_func.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위의 내용을 이해할 수 있다면, 더 할 것이 없다. 일단 잘 봐두도록 하자. 나중에 와서 다시 음미하면 의미가 와 닿을 것이다.&lt;/p&gt;
