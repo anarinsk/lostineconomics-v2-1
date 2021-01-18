@@ -235,7 +235,9 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.
 
 이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화한다. 
 
-왜 프빼기 형태로 들어갈까? 
+왜 프로젝션 벡터들의 빼기 형태로 들어갈까? 
+
+![enter image description here](https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720)
 
 
 ## Wrap-it-up 
@@ -261,7 +263,7 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1OTk3MjMyLDM1MTg4Nzg0MiwtNDI3OT
-c5NzE1LC0xMzY4NDk0MzE1LC04MDQ5NjkwMzgsNDUyMjE2NDg3
-XX0=
+eyJoaXN0b3J5IjpbMTE0MjQyMzIxNiwzNTE4ODc4NDIsLTQyNz
+k3OTcxNSwtMTM2ODQ5NDMxNSwtODA0OTY5MDM4LDQ1MjIxNjQ4
+N119
 -->
