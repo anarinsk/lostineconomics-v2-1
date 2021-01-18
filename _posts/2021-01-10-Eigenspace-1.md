@@ -99,13 +99,13 @@ Q =
 \end{bmatrix}
 $$
 
-앞서 아이겐 밸류가 일종의 축의 좌표 역할을 한다고 했다. 즉, 이 아이겐밸류는 B_S \leftarrow B_\lambda$  역할을 한다. 즉, 
+앞서 아이겐 밸류가 일종의 축의 좌표 역할을 한다고 했다. 즉, 이 아이겐밸류는 $B_S \leftarrow B_\lambda$  역할을 한다. 즉, 
 
 $$
 Q = \phantom{}_{B_S}[1]_{B_\lambda}
 $$
 
-$Q$를 기저 변환의 관점에서 보면 아이겐 공간의 좌표를 표준 좌표로 바뀌주는 역할을 한다. 따라서 $Q^{-1}$은 반대로 $B_{S} \to B_{\lambda}$의 역할을 한다. 즉, 
+$Q$를 기저 변환의 관점에서 보면 아이겐 공간의 좌표를 표준 좌표로 바뀌주는 역할을 한다. 따라서 $Q^{-1}$은 반대로 $B_{\lambda} \leftarrow B_{S}$의 역할을 한다. 즉, 
 
 $$
 Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}
@@ -260,6 +260,6 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTk1NTI0NiwtNDI3OTc5NzE1LC0xMz
+eyJoaXN0b3J5IjpbLTc4NjQ3OTgwMywtNDI3OTc5NzE1LC0xMz
 Y4NDk0MzE1LC04MDQ5NjkwMzgsNDUyMjE2NDg3XX0=
 -->
