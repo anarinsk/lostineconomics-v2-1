@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-18T14:45:28-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-18T14:47:10-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
 
 &lt;p&gt;아이겐밸류, 아이겐벡터는 중요하다. 어디서나 튀어나온다. 그래서 친숙하지만 나는 이걸 제대로 알고 있는 것일까? 이번 포스팅에서는 아이겐 관련 내용을 아이겐 공간의 관점에서 이해해보고자 한다.&lt;/p&gt;
 
@@ -266,7 +266,7 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
   &lt;li&gt;해당 벡터를 표준화한다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Orthogonal 기저는 어떻게 만들까? 프로&lt;/p&gt;
+&lt;p&gt;Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;$e_1 = v_1$&lt;/li&gt;
@@ -274,6 +274,8 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
   &lt;li&gt;$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$&lt;/li&gt;
   &lt;li&gt;$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;이후 $e_i = \dfrac{}{}$&lt;/p&gt;
 
 &lt;p&gt;말로 쉽게 이해해보자.&lt;/p&gt;
 
@@ -305,7 +307,7 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTExMDEwOCwzNTE4ODc4NDIsLTQyNz
+eyJoaXN0b3J5IjpbMTA2MjI3ODgzOSwzNTE4ODc4NDIsLTQyNz
 k3OTcxNSwtMTM2ODQ5NDMxNSwtODA0OTY5MDM4LDQ1MjIxNjQ4
 N119
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Why?</summary></entry><entry><title type="html">Basis</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html" rel="alternate" type="text/html" title="Basis" /><published>2021-01-08T00:00:00-06:00</published><updated>2021-01-08T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html">&lt;h2 id=&quot;concepts--definition&quot;&gt;Concepts &amp;amp; Definition&lt;/h2&gt;
