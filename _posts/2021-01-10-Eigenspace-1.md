@@ -245,8 +245,8 @@ $$
 v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
 $$
 
-즉, 원래 벡터에서 직교하는 
-d
+즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터로의 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다.  
+
 ## Wrap-it-up 
 
 행렬 대각화에 관해서 다시 한번 정리해보자. 때로는 혼동될 사안이라서 정리한다. 증명은 일단 생략한다. 
@@ -270,6 +270,5 @@ d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzI4MzYwODUsLTE5ODk0NTMxNzddfQ
-==
+eyJoaXN0b3J5IjpbMTE0NzY5NzY1OCwtMTk4OTQ1MzE3N119
 -->
