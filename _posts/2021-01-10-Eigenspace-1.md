@@ -246,7 +246,7 @@ v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
 $$
 
 즉, 원래 벡터에서 직교하는 
-
+d
 ## Wrap-it-up 
 
 행렬 대각화에 관해서 다시 한번 정리해보자. 때로는 혼동될 사안이라서 정리한다. 증명은 일단 생략한다. 
@@ -270,5 +270,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODk0NTMxNzddfQ==
+eyJoaXN0b3J5IjpbLTExNzI4MzYwODUsLTE5ODk0NTMxNzddfQ
+==
 -->
