@@ -84,9 +84,9 @@ $$
 \vec y = A \vec x = U \Sigma V^T \vec x
 $$
 
-- $V^T \vec x$: $V^T = \phantom{}_{B_{SVD}}[1]_{B_S}$. 즉, $B_{SVD} \leftarrow B_S$를 수행한다. 
+- $V^T \vec x$: $V^T = \phantom{}\_{B\_{SVD}}[1]\_{B_S}$. 즉, $B_{SVD} \leftarrow B_S$를 수행한다. 
 - $\Sigma$: 유사 대각행렬을 곱히 각 기저의 크기를 조절한다. 
-- $U$: $U = \phantom{}_{B_{S}}[1]_{B_{SVD}}$: $B_{S} \leftarrow B_{SVD}$
+- $U$: $U = \phantom{}\_{B_{S}}[1]\_{B\_{SVD}}$: $B_{S} \leftarrow B_{SVD}$
 
 즉, $B_S \to B_{SVD} \to B_S$를 수행한다. 
 
@@ -184,5 +184,5 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTA5NTM4XX0=
+eyJoaXN0b3J5IjpbNTAwNjAzMTgsLTgwOTA5NTM4XX0=
 -->
