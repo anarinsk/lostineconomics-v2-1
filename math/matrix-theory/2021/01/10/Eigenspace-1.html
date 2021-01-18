@@ -386,13 +386,13 @@ p(\lambda)  = &amp; {\rm det} (A - \lambda I) \\
   <li>해당 벡터를 표준화한다.</li>
 </ol>
 
-<p>Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표준화된 벡터를 나타낸다. 즉, $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$.</p>
+<p>Orthogonal 기저는 어떻게 만들까? 프로</p>
 
 <ul>
   <li>$e_1 = v_1$</li>
-  <li>$e_2 = v_2 - \Pi_{\hat e_1}(v_2)$</li>
-  <li>$e_3 = v_3 - \Pi_{\hat e_1}(v_3) - \Pi_{\hat e_2}(v_3)$</li>
-  <li>$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{\hat e_i}(v_n)$</li>
+  <li>$e_2 = v_2 - \Pi_{e_1}(v_2)$</li>
+  <li>$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$</li>
+  <li>$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$</li>
 </ul>
 
 <p>말로 쉽게 이해해보자.</p>
@@ -425,8 +425,9 @@ p(\lambda)  = &amp; {\rm det} (A - \lambda I) \\
 </ol>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxODg3ODQyLC00Mjc5Nzk3MTUsLTEzNj
-g0OTQzMTUsLTgwNDk2OTAzOCw0NTIyMTY0ODddfQ==
+eyJoaXN0b3J5IjpbMTMxMTExMDEwOCwzNTE4ODc4NDIsLTQyNz
+k3OTcxNSwtMTM2ODQ5NDMxNSwtODA0OTY5MDM4LDQ1MjIxNjQ4
+N119
 -->
 
   </div><!-- from https://github.com/utterance/utterances -->
