@@ -226,12 +226,12 @@ $$
 1. 일단 orthogonal 기저를 만든다. 
 2. 해당 벡터를 표준화한다. 
 
-Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표준화된 벡터를 나타낸다. 즉, $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$.
+Orthogonal 기저는 어떻게 만들까? 프로
 
 - $e_1 = v_1$
-- $e_2 = v_2 - \Pi_{\hat e_1}(v_2)$
-- $e_3 = v_3 - \Pi_{\hat e_1}(v_3) - \Pi_{\hat e_2}(v_3)$
-- $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{\hat e_i}(v_n)$ 
+- $e_2 = v_2 - \Pi_{e_1}(v_2)$
+- $e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
+- $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$ 
 
 말로 쉽게 이해해보자. 
 
@@ -262,6 +262,7 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxODg3ODQyLC00Mjc5Nzk3MTUsLTEzNj
-g0OTQzMTUsLTgwNDk2OTAzOCw0NTIyMTY0ODddfQ==
+eyJoaXN0b3J5IjpbMTMxMTExMDEwOCwzNTE4ODc4NDIsLTQyNz
+k3OTcxNSwtMTM2ODQ5NDMxNSwtODA0OTY5MDM4LDQ1MjIxNjQ4
+N119
 -->
