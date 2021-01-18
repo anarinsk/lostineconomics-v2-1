@@ -239,6 +239,7 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
+위 그림을 보면 알 수 
 
 ## Wrap-it-up 
 
@@ -263,7 +264,7 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5Njk2NjgxNSwzNTE4ODc4NDIsLTQyNz
+eyJoaXN0b3J5IjpbLTQ0MTQ2MTUzNywzNTE4ODc4NDIsLTQyNz
 k3OTcxNSwtMTM2ODQ5NDMxNSwtODA0OTY5MDM4LDQ1MjIxNjQ4
 N119
 -->
