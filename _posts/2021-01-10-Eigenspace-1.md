@@ -121,7 +121,9 @@ $$
 Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S} 
 $$
 
-행렬의 대각화란 일정한 변환 혹은 매트릭스를 아이겐 공간을 통해 다시 해석하는 과정이다. 대각 행렬 $\Lambda$를 보자. 이 대각행렬이란 아이겐벡터들로 구성된 기저의 크기를 나타낸다. 
+행렬의 대각화란 일정한 변환 혹은 매트릭스를 아이겐 공간을 통해 다시 해석하는 과정이다. 즉, $B_S \to B_\lambbda \to B_S$
+
+대각 행렬 $\Lambda$는 아이겐벡터들로 구성된 아이겐 공간의 기저(아이겐벡터)의 크기를 나타낸다. 
 
 ### Take this! 
 
@@ -260,6 +262,6 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NjQ3OTgwMywtNDI3OTc5NzE1LC0xMz
-Y4NDk0MzE1LC04MDQ5NjkwMzgsNDUyMjE2NDg3XX0=
+eyJoaXN0b3J5IjpbNTQxNDU1MTkxLC00Mjc5Nzk3MTUsLTEzNj
+g0OTQzMTUsLTgwNDk2OTAzOCw0NTIyMTY0ODddfQ==
 -->
