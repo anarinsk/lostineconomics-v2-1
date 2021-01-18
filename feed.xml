@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-17T18:25:59-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-17T18:30:43-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
 
 &lt;p&gt;아이겐밸류, 아이겐벡터는 중요하다. 어디서나 튀어나온다. 그래서 친숙하지만 나는 이걸 제대로 알고 있는 것일까? 이번 포스팅에서는 아이겐 관련 내용을 아이겐 공간의 관점에서 이해해보고자 한다.&lt;/p&gt;
 
@@ -523,7 +523,9 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;h2 id=&quot;change-of-basis&quot;&gt;Change of Basis&lt;/h2&gt;
 
-&lt;p&gt;한 벡터의 기저를 다른 기저로 바꾸는 것을 생각해보자. 일반적으로는 $T: V \to W$ 역시 $B_V$에서 $B_W$로 기저를 바꾸는 것이다. 차원이 바뀐다면 기저 역시 바뀐다. 매트릭스를 이해하는 매우 중요한 방법의 하나다. 이를 통해 역시 매트릭스 표현에 도달할 수 있다. 선형 번환 $T: V \to W$가 있다고 하자.&lt;/p&gt;
+&lt;p&gt;한 벡터의 기저를 다른 기저로 바꾸는 것을 생각해보자. 일반적으로는 $T: V \to W$ 역시 $B_V$에서 $B_W$로 기저를 바꾸는 것이다. 차원이 바뀐다면 기저 역시 바뀐다.&lt;/p&gt;
+
+&lt;p&gt;기저 변환(change-of-basis)은 매트릭스를 이해하는 매우 중요한 방법다. 이를 통해 역시 매트릭스 표현에 도달할 수 있다. 선형 번환 $T: V \to W$가 있다고 하자.&lt;/p&gt;
 
 &lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mtable rowspacing=&quot;0.24999999999999992em&quot; columnalign=&quot;right left&quot; columnspacing=&quot;0em&quot;&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;msub&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;{&lt;/mo&gt;&lt;msub&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mo&gt;…&lt;/mo&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;}&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;msub&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mi&gt;W&lt;/mi&gt;&lt;/msub&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&quot;0&quot; displaystyle=&quot;true&quot;&gt;&lt;mrow&gt;&lt;mrow&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;{&lt;/mo&gt;&lt;msub&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mo&gt;…&lt;/mo&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;msub&gt;&lt;mover accent=&quot;true&quot;&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;}&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\begin{aligned}
 B_V &amp;amp; = \{ \hat e_1, \dotsc, \hat e_n \} \\
@@ -757,13 +759,13 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODI5ODA3MiwtNTMyNDUxNTAzLC04Nz
-A0OTIyNDksMTIxNDA4MTc3NCwxNzg0Mjg1MzIxLDc3NzUwODAx
-MCwxMTUyMjk2Mjc2LC0xMzI1NDI1MDQyLDEzNDczMzkwMTEsOT
-g5NTQ1ODkwLC0xMzg1NjA2NjM2LDM3MjI1NzU1NiwtNjYxNzM2
-ODMwLDY1NzY3MTYwMiwtMjEwODk0MjIwNywtMjA4MjQ2MzE5Ni
-wyMDQxMjQ1ODQ1LC0xMjQ1NDk3ODIxLDIwODE0MTI0NTksLTE4
-MTk3NDA5NzRdfQ==
+eyJoaXN0b3J5IjpbMTAxOTI0OTY4OCwxMzY4Mjk4MDcyLC01Mz
+I0NTE1MDMsLTg3MDQ5MjI0OSwxMjE0MDgxNzc0LDE3ODQyODUz
+MjEsNzc3NTA4MDEwLDExNTIyOTYyNzYsLTEzMjU0MjUwNDIsMT
+M0NzMzOTAxMSw5ODk1NDU4OTAsLTEzODU2MDY2MzYsMzcyMjU3
+NTU2LC02NjE3MzY4MzAsNjU3NjcxNjAyLC0yMTA4OTQyMjA3LC
+0yMDgyNDYzMTk2LDIwNDEyNDU4NDUsLTEyNDU0OTc4MjEsMjA4
+MTQxMjQ1OV19
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts &amp;amp; Definition</summary></entry><entry><title type="html">Matrix as Linear Transformation</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html" rel="alternate" type="text/html" title="Matrix as Linear Transformation" /><published>2021-01-07T00:00:00-06:00</published><updated>2021-01-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html">&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/matrix_func.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위의 내용을 이해할 수 있다면, 더 할 것이 없다. 일단 잘 봐두도록 하자. 나중에 와서 다시 음미하면 의미가 와 닿을 것이다.&lt;/p&gt;
