@@ -22,13 +22,13 @@ $M_T$라는 $n \times n$ 변환이 특정한 벡터 아래서는 스칼라 곱�
 
 ## Eigenspace 
 
-아이겐 공간이란 무엇일까? 아이겐 공간이란 다음과 같이 정의될 수 있다. 
+아이겐 공간이란 무엇일까? 특정한 아이겐밸류 $\lambda_i$에 의해 파생되는 아이겐 공간은 다음과 같이 정의될 수 있다. 
 
 $$
 E_{\lambda_i}  \overset{\rm def}{=} \mathcal N (A - \lambda_i 1) = \{ \vec v | (A - \lambda_i ) \vec v = \vec 0 \}
 $$
 
-즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식의 의미도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 해당 변환이 서로 선형 종속이라는 뜻이다. 선형 독립이 아니라는 뜻은 곧 det = 0의 의미와 같다. 즉, 특성방정식이 여기서 도출된다. 
+즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식의 의미도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 해당 변환이 서로 선형 종속이라는 뜻이다. 즉 $\det = 0$의 의미와 같다. 특성방정식이 여기서 도출된다. 
 
 $$
 p(\lambda) = \vert A - \lambda 1 \vert = 0
@@ -260,6 +260,6 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMDc0NTg4LC04MDQ5NjkwMzgsNDUyMj
-E2NDg3XX0=
+eyJoaXN0b3J5IjpbLTEzNjg0OTQzMTUsLTgwNDk2OTAzOCw0NT
+IyMTY0ODddfQ==
 -->
