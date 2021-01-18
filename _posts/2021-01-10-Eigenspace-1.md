@@ -18,7 +18,7 @@ $$
 M_T \vec x = \lambda \vec x 
 $$ 
 
-$M_T$라는 $n \times n$ 변환이 특정한 벡터 아래서는 스칼라 곱의 문제로 환원된다. 이는 $M_T$라는 매트릭스가 지닌 일종의 숨은 축이다. 이 축 위에서 변환이 다시 축으로 환원되기 때문이다. 그렇다면, 아이겐 벡터들은 $M_T$를 재구조화할 수 있는 축이 되고, 아이겐 밸류는 해당 축이 지닌 가중치로 이해할 수 있다. 
+$M_T$라는 $n \times n$ 변환이 특정한 벡터 아래서는 스칼라 곱의 문제로 환원된다. 아이겐벡터는 $M_T$라는 매트릭스가 지닌 일종의 축이다. 이 축 위에서 변환이 다시 축으로 환원되기 때문이다. 그렇다면, 아이겐 벡터들은 $M_T$를 재구조화할 수 있는 축이 되고, 아이겐 밸류는 해당 축이 지닌 가중치로 이해할 수 있다. 
 
 ## Eigenspace 
 
@@ -260,5 +260,6 @@ Orthogonal 기저는 어떻게 만들까? 아래서 $\hat e_i$는 $e_i$의 표�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDk2OTAzOCw0NTIyMTY0ODddfQ==
+eyJoaXN0b3J5IjpbLTM0NzAzODA1NywtODA0OTY5MDM4LDQ1Mj
+IxNjQ4N119
 -->
