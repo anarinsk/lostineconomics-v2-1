@@ -109,10 +109,10 @@ $$
 - $\hat \Sigma \in \mathbb R^{3 \times 3}$
 - $\hat V^T \in \mathbb R^{3 \times 2000}$
 
-이렇게 근사값을 구하면 계산량이 많이 줄어들 것이다. $M$와 $\hat M$ 사이의 힐베르트 거리를 구하면, 
+이렇게 근사값을 구하면 계산량이 많이 줄어들 것이다. $M$와 $\hat M$ 사이의 힐베르트-슈미트 거리를 구하면, 
 
 $$
-\Vert M - \hat M \Vert = \sqrt{\sum_{i=4}^{1000} \sigma_i^2}
+\Vert M - \hat M \Vert_{\rm HS} = \sqrt{\sum_{i=4}^{1000} \sigma_i^2}
 $$
 
 이 값이 크지 않다면, $M \approx \hat M$을 활용할 수 있다. 실제로 이미지 압축 등에서 많이 사용되어온 방법이다. 
@@ -187,6 +187,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNT
-kyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbMTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMT
+YyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMzODg3NTAsMF19
 -->
