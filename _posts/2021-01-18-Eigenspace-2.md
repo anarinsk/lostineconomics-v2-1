@@ -155,9 +155,9 @@ $$
 $$
 A = 
 \begin{bmatrix}
-11 & -51 & 4 \\
-6 & 167 & - 68 \\
--4 & 24 & -41 
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33} 
 \end{bmatrix}
 $$
 
@@ -187,6 +187,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ
-==
+eyJoaXN0b3J5IjpbLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMD
+IzMzg4NzUwLDBdfQ==
 -->
