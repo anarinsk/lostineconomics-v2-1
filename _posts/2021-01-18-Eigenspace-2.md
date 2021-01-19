@@ -20,17 +20,19 @@ $$
 
 $$
 A = 
-\unders
+\underbrace{
 \begin{bmatrix}
 \vert & \dotsb & \vert \\
 u_1 & \dotsb & u_m \\
 \vert & \dotsb & \vert \\
-\end{bmatrix}
+\end{bmatrix}}_{m \times m}
+\overbrace{
 \begin{bmatrix}
 \sigma_1 & 0 & \dotsb \\
 0 & \sigma_2 & \dotsb \\
 0 & 0 & \dotsb \\
-\end{bmatrix}
+\end{bmatrix}}^{m \times n}
+\underbrace{
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
@@ -185,6 +187,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjcxNTI5NSwtMjAyMzM4ODc1MCwwXX
+eyJoaXN0b3J5IjpbLTc0NTU0NDQzNiwtMjAyMzM4ODc1MCwwXX
 0=
 -->
