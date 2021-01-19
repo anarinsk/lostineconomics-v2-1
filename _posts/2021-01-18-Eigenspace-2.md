@@ -76,7 +76,7 @@ $$
 이제  유사 대각행렬 $\Sigma$를 보자. 이 행렬은 $m \times n$ 형태다. 
 
 $$
-\sigma_i = \sqrt{\lambda_i}, \text{ where} \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A) 
+\sigma_i = \sqrt{\lambda_i}, \text{ where } \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A) 
 $$
 
 ### Change-of-basis 
@@ -187,6 +187,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMD
-IzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNT
+kyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
 -->
