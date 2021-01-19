@@ -37,7 +37,7 @@ u_1 & \dotsb & u_m \\
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix} =
+\end{bmatrix}}_{n \times n} =
 U \Sigma V^T
 $$
 
@@ -187,6 +187,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTU0NDQzNiwtMjAyMzM4ODc1MCwwXX
-0=
+eyJoaXN0b3J5IjpbNTkyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ
+==
 -->
