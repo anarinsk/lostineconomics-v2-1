@@ -20,6 +20,7 @@ $$
 
 $$
 A = 
+\unders
 \begin{bmatrix}
 \vert & \dotsb & \vert \\
 u_1 & \dotsb & u_m \\
@@ -184,5 +185,6 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbMTAwNjcxNTI5NSwtMjAyMzM4ODc1MCwwXX
+0=
 -->
