@@ -75,7 +75,13 @@ $$
 A(\vec v_1 + \vec v_2) = 2 \vec b
 $$ 
 
-따라서 $\vec b = \vec 0$가 아닌 한, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 엄밀하게 표현해보자. $A \vec v = \vec b$의 해 공간은 다음과 같은 집합이 될 것이다. $\{ \vec c + \vec v_n\}$ where $\vec v_n \in \mathcal N (A)$. 즉, 해 공간은 특수해(particular solution)와 널 스페이스에 속한 벡터의 합으로 구성된다. 해 공간의 원소 하나를 $\vec x_1 = \vec c + \vec v_1$이라고 하고 다른 하나를 $\vec x_2 = \vec c + \vec v_2$라고 하자. 이 둘을 더하면, $2 \vec c + \vec v_1 + \vec v_2$가 된다. 이것이 해 공간 안에 있어야 하는데, $\vec c \neq 0$이면 성립하지 않는다. 
+따라서 $\vec b = \vec 0$가 아니라면, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 엄밀하게 표현해보자. $A \vec v = \vec b$의 해 공간은 다음과 같은 집합이 될 것이다. 
+
+$$
+\{ \vec c + \vec v_n\} \text{ where }\vec v_n \in \mathcal N (A)
+$$
+
+즉, 해 공간은 특수해(particular solution)와 널 스페이스에 속한 벡터의 합으로 구성된다. 해 공간의 원소 하나를 $\vec x_1 = \vec c + \vec v_1$이라고 하고 다른 하나를 $\vec x_2 = \vec c + \vec v_2$라고 하자. 이 둘을 더하면, $2 \vec c + \vec v_1 + \vec v_2$가 된다. 이것이 해 공간 안에 있어야 하는데, $\vec c \neq 0$이면 성립하지 않는다. 
 
 $\mathcal N(M)$은 자연스럽게 벡터 공간을 이룬다. 더한 것도 $\vec 0$에 있고, 스칼라 곱 역시 마찬가지다. 
 
@@ -136,7 +142,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTUxNTMxODQsMTk3NTAzOTkzNSwtNj
-M2MjQxMTI3LC0xMjkwMDI1NTIyLDIwODgwNDMzNzQsLTIwNTIy
-MDE3NDAsLTgzODI4MzcwN119
+eyJoaXN0b3J5IjpbNTMwODk0NTAzLDE5NzUwMzk5MzUsLTYzNj
+I0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQzMzc0LC0yMDUyMjAx
+NzQwLC04MzgyODM3MDddfQ==
 -->
