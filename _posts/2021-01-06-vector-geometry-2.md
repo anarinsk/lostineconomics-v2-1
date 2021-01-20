@@ -99,21 +99,6 @@ $$
 
 사실 연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M \lvert \vec b]$를 RREF로 만들면, $[\text{rref}(M) \vert \vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다. 
 
-### Solutions 
-
-이 기회에 해의 종류를 한번 살펴보고 넘어가자. 
-
-1. Particular solution (특수해): RREF에서 free variables를 모두 0으로 두고 찾은 해를 뜻한다. 
-2. Homogenous soution (일반해): 일반해는 널 스페이스에 속하는 해를 뜻한다. 즉, $A \vec x = 0$을 만족시키는 $\vec x$를 의미한다. 
-3. Complete solution (완전해): 완전해란 특수해와 일반해를 더한 형태이다. 즉,  $x_c = x_p + c_h$
-
-이제 각각의 의미를 음미해보자. 
-
-$$
-A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}
-$$
-
-보다 자세한 사례는 [여기](https://m.blog.naver.com/crm06217/221674223212)를 참고하라. 
 
 ## Two Transformation 
 
@@ -151,7 +136,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTAzOTkzNSwtNjM2MjQxMTI3LC0xMj
-kwMDI1NTIyLDIwODgwNDMzNzQsLTIwNTIyMDE3NDAsLTgzODI4
-MzcwN119
+eyJoaXN0b3J5IjpbLTEzOTUxNTMxODQsMTk3NTAzOTkzNSwtNj
+M2MjQxMTI3LC0xMjkwMDI1NTIyLDIwODgwNDMzNzQsLTIwNTIy
+MDE3NDAsLTgzODI4MzcwN119
 -->
