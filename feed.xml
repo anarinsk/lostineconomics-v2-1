@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-19T23:17:48-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-19T23:17:46-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -1697,9 +1697,7 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;h3 id=&quot;point-vs-vector&quot;&gt;Point vs vector&lt;/h3&gt;
 
-&lt;p&gt;점과 벡터의 차이는 무엇일까? 점은 좌표계에서 원점을 기준으로 한 위치를 나타낸다. 벡터는 크기와 방향을 모두 나타내며, 벡터는 $(0,0)$ 같은 기준이 없다.&lt;/p&gt;
-
-&lt;p&gt;벡터를 점으로 나타내려면 어떻게 해야 할까? 두 점의 차이를 구하면 이는 벡터가 된다. 쉽게 생각해보자. 2차원 데카르트 좌표계에서 $(3,3)$이라는 위치를 생각해보자. $(3,3)$을 그냥 나타내면 점이다. 반면, $(3,3) - (0,0)$을 의미하면 $(3,3)$은 벡터가 된다. 그래프 상에서 $(0,0)$에서 $(3,3)$으로 화살표를 그리면 벡터가 된다. 아래 그림을 참고 하자.&lt;/p&gt;
+&lt;p&gt;점과 벡터의 차이는 무엇일까? 점은 좌표계에서 원점을 기준으로 한 위치를 나타낸다. 벡터는 크기와 방향을 모두 나타내며, 벡터는 $(0,0)$ 같은기준이 없다. 벡터를 점으로 나타내려면 어떻게 해야 할까? 두 점의 차이를 구하면 이는 벡터가 된다. 쉽게 생각해보자. 2차원 데카르트 좌표계에서 $(3,3)$이라는 위치를 생각해보자. $(3,3)$을 그냥 나타내면 점이다. 반면, $(3,3) - (0,0)$을 의미하면 $(3,3)$은 벡터가 된다. 그래프 상에서 $(0,0)$에서 $(3,3)$으로 화살표를 그리면 벡터가 된다. 아래 그림을 참고 하자.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://notesclasses.com/wp-content/uploads/2020/04/Displacement-in-Physics-Explanation.png&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
@@ -1731,8 +1729,8 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;p&gt;거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNTYwMTQzLC0yMTIxMjAzNTM5LC0xND
-A5NDUwNzgsMTkwNjcxMDg2MCw2NDI2ODMyMTVdfQ==
+eyJoaXN0b3J5IjpbMTA3NjUxNjA2MSwtMjEyMTIwMzUzOSwtMT
+QwOTQ1MDc4LDE5MDY3MTA4NjAsNjQyNjgzMjE1XX0=
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts</summary></entry><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
