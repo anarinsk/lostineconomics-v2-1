@@ -104,7 +104,12 @@ $$
 이 기회에 해의 종류를 한번 살펴보고 넘어가자. 
 
 1. Particular solution (특수해): RREF에서 free variables를 모두 0으로 두고 찾은 해를 뜻한다. 
-1. homogenous soution (일반해): 일반해는 널 스페이스에 속하는 해를 뜻한다. 
+2. Homogenous soution (일반해): 일반해는 널 스페이스에 속하는 해를 뜻한다. 즉, $A \vec x = 0$을 만족시키는 $\vec x$를 의미한다. 
+3. Complete solution (완전해): 완전해란 특수해와 일반해를 더한 형태이다. 즉, 
+
+$$
+x_c = x_p
+$$
 
 ## Two Transformation 
 
@@ -142,6 +147,6 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDg4MzMwNzUsLTEyOTAwMjU1MjIsMj
+eyJoaXN0b3J5IjpbLTE1NDIwNjM4NTMsLTEyOTAwMjU1MjIsMj
 A4ODA0MzM3NCwtMjA1MjIwMTc0MCwtODM4MjgzNzA3XX0=
 -->
