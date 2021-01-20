@@ -110,7 +110,7 @@ $$
 이제 각각의 의미를 음미해보자. 
 
 $$
-A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{n}
+A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}
 $$
 
 ## Two Transformation 
@@ -149,6 +149,6 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQ2MTMxMjgsLTEyOTAwMjU1MjIsMj
-A4ODA0MzM3NCwtMjA1MjIwMTc0MCwtODM4MjgzNzA3XX0=
+eyJoaXN0b3J5IjpbLTYzNjI0MTEyNywtMTI5MDAyNTUyMiwyMD
+g4MDQzMzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
 -->
