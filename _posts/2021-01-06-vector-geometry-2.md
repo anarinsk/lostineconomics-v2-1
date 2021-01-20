@@ -113,6 +113,8 @@ $$
 A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}
 $$
 
+보다 자세한 사례는 [여기](https://m.blog.naver.com/crm06217/221674223212)를 참고하라. 
+
 ## Two Transformation 
 
 $M \in \mathbb R^{m \times n}$이 편리한 이유는 $M$이 $\vec x \in \mathbb R^n$을 $\vec y \in \mathbb R^m$으로 바꾸는 선형 변환 모두를 표현할 수 있기 때문이다. 그렇다면, $M^T$는 어떨까? 이는 같은 맥락에서  $\vec a \in \mathbb R^m$을 $\vec b \in \mathbb R^n$으로 바꾸는 선형 변환을 표현한다. 즉, 
@@ -149,6 +151,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjI0MTEyNywtMTI5MDAyNTUyMiwyMD
-g4MDQzMzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
+eyJoaXN0b3J5IjpbMTk3NTAzOTkzNSwtNjM2MjQxMTI3LC0xMj
+kwMDI1NTIyLDIwODgwNDMzNzQsLTIwNTIyMDE3NDAsLTgzODI4
+MzcwN119
 -->
