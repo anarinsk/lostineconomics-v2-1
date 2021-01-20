@@ -77,7 +77,7 @@ $$
 
 $\vec b = \vec 0$가 아니라면, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 자세하게 표현해보자. 
 
-$A \vec v = \vec b$의 해 공간은 다음과 같은 완전해의 집합이 될 것이다. 
+$A \vec v = \vec b$의 해 공간은 다음과 같은 완전해의 집합이다. 
 
 $$
 \{ \vec c + \vec v_n\} \text{ where }\vec v_n \in \mathcal N (A)
@@ -158,7 +158,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4MTYyNTEwLDE5NzUwMzk5MzUsLTYzNj
-I0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQzMzc0LC0yMDUyMjAx
-NzQwLC04MzgyODM3MDddfQ==
+eyJoaXN0b3J5IjpbLTM1NTIwNjc4MywxOTc1MDM5OTM1LC02Mz
+YyNDExMjcsLTEyOTAwMjU1MjIsMjA4ODA0MzM3NCwtMjA1MjIw
+MTc0MCwtODM4MjgzNzA3XX0=
 -->
