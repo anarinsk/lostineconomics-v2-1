@@ -95,6 +95,13 @@ $$
 \vec x = \vec c + \text{span}(\vec v_1, \dotsc, \vec v_k) \text{ where } \text{span}(\vec v_1, \dotsc, \vec v_k) = \mathcal N(M)
 $$
 
+### Solutions 
+
+이 기회에 해의 종류를 한번 살펴보고 넘어가자. 
+
+1. particular Solution
+1. homogenous soution 
+
 ### RREF method 
 
 사실 연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M \lvert \vec b]$를 RREF로 만들면, $[\text{rref}(M) \vert \vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다. 
@@ -135,6 +142,6 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTAwMjU1MjIsMjA4ODA0MzM3NCwtMj
-A1MjIwMTc0MCwtODM4MjgzNzA3XX0=
+eyJoaXN0b3J5IjpbLTg4MjIwMTcyNSwtMTI5MDAyNTUyMiwyMD
+g4MDQzMzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
 -->
