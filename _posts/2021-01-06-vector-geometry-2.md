@@ -75,9 +75,9 @@ $$
 A(\vec v_1 + \vec v_2) = 2 \vec b
 $$ 
 
-$\vec b = \vec 0$가 아니라면, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 자세 표현해보자. 
+$\vec b = \vec 0$가 아니라면, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 자세하게 표현해보자. 
 
-$A \vec v = \vec b$의 해 공간은 다음과 같은 집합이 될 것이다. 
+$A \vec v = \vec b$의 해 공간은 다음과 같은 완전해의 집합이 될 것이다. 
 
 $$
 \{ \vec c + \vec v_n\} \text{ where }\vec v_n \in \mathcal N (A)
@@ -85,9 +85,23 @@ $$
 
 즉, 해 공간은 특수해(particular solution) $\vec c$와 널 스페이스에 속한 벡터의 합으로 구성된다. 해 공간의 원소 하나를 $\vec x_1 = \vec c + \vec v_1$이라고 하고 다른 하나를 $\vec x_2 = \vec c + \vec v_2$라고 하자. 이 둘을 더하면, $2 \vec c + \vec v_1 + \vec v_2$가 된다. 이것이 해 공간 안에 있어야 하는데, $\vec c \neq 0$이면 성립하지 않는다. 
 
-$\mathcal N(M)$은 자연스럽게 벡터 공간을 이룬다. 더한 것도 $\vec 0$에 있고, 스칼라 곱 역시 마찬가지다. 
+한편 $\mathcal N(M)$은 자연스럽게 벡터 공간을 이룬다. 더한 것도 $\vec 0$에 있고, 스칼라 곱 역시 마찬가지다. 참고로 아래에서 보겠지만, $\mathcal R(M)$, $\mathcal C(M)$, $\mathcal N(M)$, $\mathcal N(M^T)$를 네 개의 근본 서브 스페이스라고 부른다. 네 개는 밀접한 연관을 지니고 있다. 
 
-$\mathcal R(M)$, $\mathcal C(M)$, $\mathcal N(M)$, $\mathcal N(M^T)$를 네 개의 근본 서브 스페이스라고 부른다. 포 호스맨이다. 
+### Solutions 
+
+이 기회에 해의 종류를 한번 살펴보고 넘어가자. 
+
+1. Particular solution (특수해): RREF에서 free variables를 모두 0으로 두고 찾은 해를 뜻한다. 
+2. Homogenous soution (일반해): 일반해는 널 스페이스에 속하는 해를 뜻한다. 즉, $A \vec x = 0$을 만족시키는 $\vec x$를 의미한다. 
+3. Complete solution (완전해): 완전해란 특수해와 일반해를 더한 형태이다. 즉,  $x_c = x_p + c_h$
+
+이제 각각의 의미를 음미해보자. 
+
+$$
+A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}
+$$
+
+보다 자세한 사례는 [여기](https://m.blog.naver.com/crm06217/221674223212)를 참고하라. 
 
 ## System of Linear Equations
 
@@ -144,7 +158,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5OTE4MzcyLDE5NzUwMzk5MzUsLTYzNj
+eyJoaXN0b3J5IjpbODE4MTYyNTEwLDE5NzUwMzk5MzUsLTYzNj
 I0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQzMzc0LC0yMDUyMjAx
 NzQwLC04MzgyODM3MDddfQ==
 -->
