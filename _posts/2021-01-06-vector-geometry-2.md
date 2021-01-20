@@ -61,7 +61,7 @@ $$
 
 ### $\vec 0 \in V$
 
-벡터 스페이스가 되려면 $\vec 0$를 집합 내에 지니고 있어야 한다. 간단한 코멘트 같지만 의외로 중요하다. 일단 벡터 스페이스의 정의에서 $\alpha \vec v$가 들어가기 때문에 $\alpha=0$의 조건에 따라서 $\vec 0$는 포함되어야 한다. 생각해 볼만한 대목. 벡터 서브스페이스 역시 마찬가지로 $\vec 0$을 포함해야 한다. 
+벡터 스페이스가 되려면 $\vec 0$를 집합 내에 지니고 있어야 한다. 간단한 내용 같지만 참 중요하다. 일단 벡터 스페이스의 정의에서 $\alpha \vec v$가 들어가기 때문에 $\alpha=0$의 조건에 따라서 $\vec 0$는 포함되어야 한다. 생각해 볼만한 대목. 벡터 서브스페이스 역시 마찬가지로 $\vec 0$을 포함해야 한다. 2차원 벡터로 이야기한다면, $y = 2x + 1$ 같은 형태의 선은 벡터 (서브) 스페이스가 될 수 없다.  
 
 ### Subset vs subspace 
 
@@ -135,6 +135,6 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODA0MzM3NCwtMjA1MjIwMTc0MCwtOD
-M4MjgzNzA3XX0=
+eyJoaXN0b3J5IjpbMTQ5ODgyOTUzOCwyMDg4MDQzMzc0LC0yMD
+UyMjAxNzQwLC04MzgyODM3MDddfQ==
 -->
