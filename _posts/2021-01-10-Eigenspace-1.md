@@ -36,7 +36,7 @@ $$
 
 ### All distinct eigenvalues 
 
-실용적으로 접근해보자. 모든 아이겐밸류가 다르다면, 아이겐벡터는 선형독립이다. 따라서 아이겐밸류가 원래 매트릭스의 컬럼 벡터의 벡터 공간을 생성할 수 있다. 
+실용적으로 접근해보자. 모든 아이겐밸류가 다르다면, 아이겐벡터는 선형독립이다. 따라서 아이겐백터가 원래 매트릭스의 컬럼 벡터의 벡터 공간을 생성하는 기저가 될 수 있다. 
 
 ### Algebraic vs geometric 
 
@@ -270,5 +270,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NzY5NzY1OCwtMTk4OTQ1MzE3N119
+eyJoaXN0b3J5IjpbLTIwMTkyNTMyNjcsLTE5ODk0NTMxNzddfQ
+==
 -->
