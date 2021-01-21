@@ -111,7 +111,7 @@ $$
 M \vec x = \vec b
 $$
 
-먼저 $M$의 널 스페이스를 생각해보자. 여기 속한 $\vec x$는 $\mathbb R^n$ 집합에 속한다. 정의상 $M \vec x = 0$이므로 $\vec x$를 어떤 해에 더하면 이 값 역시 해가 된다. 따라서, $M \vec x = \vec b$를 만족하는 $\vec x = \vec c$라고 하자. 이를 특수 해라고 부른다. 여기에 널 스페이스에 속한 임의의 원소를 더하면 된다. 즉, 
+먼저 $M$의 널 스페이스를 생각해보자. 여기 속한 $\vec x$는 $\mathbb R^n$ 집합에 속한다. 정의상 $M \vec x = 0$이므로 $\vec x$를 어떤 해에 더하면 이 값 역시 해가 된다. 따라서, $M \vec x = \vec b$를 만족하는 $\vec x = \vec c$라고 하자. 이를 특수 해라고 부른다. 여기에 널 스페이스에 속한 임의의 원소를 더하면 완전해가 된다. 즉, 
 
 $$
 \vec x = \vec c + \text{span}(\vec v_1, \dotsc, \vec v_k) \text{ where } \text{span}(\vec v_1, \dotsc, \vec v_k) = \mathcal N(M)
@@ -119,7 +119,7 @@ $$
 
 ### RREF method 
 
-사실 연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M \lvert \vec b]$를 RREF로 만들면, $[\text{rref}(M) \vert \vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다. 
+연립방정식의 해를 구하는 가장 기초적인 방법, 즉 RREF, 기약 행사다리꼴 행렬을 만드는 과정이 이에 부합한다. 즉, $[M \lvert \vec b]$를 RREF로 만들면, $[\text{rref}(M) \vert \vec c]$의 형태가 된다. 이때, $\text{rref}(M)$는 $k$ 개의 자유 변수를 $n-k$ 개의 특수 해를 지니게 된다. 자유 변수에서 널 스페이스에 속하는 일반해를 얻을 수 있다. 
 
 
 ## Two Transformation 
@@ -158,7 +158,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3MDc2Njg2LC0zNTUyMDY3ODMsMTk3NT
+eyJoaXN0b3J5IjpbNzM3Nzc2MDM0LC0zNTUyMDY3ODMsMTk3NT
 AzOTkzNSwtNjM2MjQxMTI3LC0xMjkwMDI1NTIyLDIwODgwNDMz
 NzQsLTIwNTIyMDE3NDAsLTgzODI4MzcwN119
 -->
