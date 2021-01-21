@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T01:05:01-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T01:06:41-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -1035,10 +1035,10 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
 &lt;ol&gt;
   &lt;li&gt;$C^{-1} x$는 $[x]&lt;em&gt;{u}$의 기저를 $[x]&lt;/em&gt;{\mathcal B}$로 바꾸는 것이다. 즉, $\phantom{}&lt;em&gt;{\mathcal B}{1}&lt;/em&gt;{u}$&lt;/li&gt;
   &lt;li&gt;이 바뀐 기저에서 $B$이라는 변환을 수행한다. 즉, $\phantom{}&lt;em&gt;{\mathcal B}{B}&lt;/em&gt;{\mathcal B}$&lt;/li&gt;
-  &lt;li&gt;$C$는 곱해 다시 통상적인 기저로 돌아오게 된다. 즉,  $\phantom{}&lt;em&gt;{\mathcal B}{1}&lt;/em&gt;{u}$&lt;/li&gt;
+  &lt;li&gt;$C$는 곱해 다시 통상적인 기저로 돌아오게 된다. 즉,  $\phantom{}&lt;em&gt;{u}{1}&lt;/em&gt;{\mathcal B}$&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다.&lt;/p&gt;
+&lt;p&gt;아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. 기저의 변화를 살펴보면, $u \rightarrow \mathcal B \rightarrow B \righrarrow $&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/basis/coord.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
@@ -1052,13 +1052,13 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/&gt;&lt;/svg&gt;&
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzM4NDM0NSwtMTY3NjY1NDgzOSwtMT
-IyNDI4NzQxOSw5NjczNzcwLC0zNjE0NDg0NTUsLTE2MDE3OTUw
-OTksLTE5NDcxMjQ2NjMsMTU0MTUyNTQxMSwtMTIyMzEzMTkxNy
-wxMzY4Mjk4MDcyLC01MzI0NTE1MDMsLTg3MDQ5MjI0OSwxMjE0
-MDgxNzc0LDE3ODQyODUzMjEsNzc3NTA4MDEwLDExNTIyOTYyNz
-YsLTEzMjU0MjUwNDIsMTM0NzMzOTAxMSw5ODk1NDU4OTAsLTEz
-ODU2MDY2MzZdfQ==
+eyJoaXN0b3J5IjpbLTE0OTQyODMyNDcsLTE2NzY2NTQ4MzksLT
+EyMjQyODc0MTksOTY3Mzc3MCwtMzYxNDQ4NDU1LC0xNjAxNzk1
+MDk5LC0xOTQ3MTI0NjYzLDE1NDE1MjU0MTEsLTEyMjMxMzE5MT
+csMTM2ODI5ODA3MiwtNTMyNDUxNTAzLC04NzA0OTIyNDksMTIx
+NDA4MTc3NCwxNzg0Mjg1MzIxLDc3NzUwODAxMCwxMTUyMjk2Mj
+c2LC0xMzI1NDI1MDQyLDEzNDczMzkwMTEsOTg5NTQ1ODkwLC0x
+Mzg1NjA2NjM2XX0=
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts &amp;amp; Definition</summary></entry><entry><title type="html">Matrix as Linear Transformation</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html" rel="alternate" type="text/html" title="Matrix as Linear Transformation" /><published>2021-01-07T00:00:00-06:00</published><updated>2021-01-07T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/07/linear-transform-matrix.html">&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/matrix_func.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위의 내용을 이해할 수 있다면, 더 할 것이 없다. 일단 잘 봐두도록 하자. 나중에 돌아와서 음미하면 의미가 와 닿을 것이다.&lt;/p&gt;
