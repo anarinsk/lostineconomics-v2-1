@@ -10,7 +10,7 @@ categories: [math, matrix-theory]
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/matrix_func.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-위의 내용을 이해할 수 있다면, 더 할 것이 없다. 일단 잘 봐두도록 하자. 나중에 와서 다시 음미하면 의미가 와 닿을 것이다. 
+위의 내용을 이해할 수 있다면, 더 할 것이 없다. 일단 잘 봐두도록 하자. 나중에 돌아와서 음미하면 의미가 와 닿을 것이다. 
 
 선형 변환은 특별한 형태의 함수로 이해할 수 있다. 다만 투입과 산출이 다양한 차원(벡터)을 취할 수 있다. 그리고 이 선형 변환이 매트릭스로 표현될 수 있다. 왜 매트릭스 표현이 이렇게 강력할 수 있는지가, 이 대목에 있다. 선형 변환 함수를 구체적으로 표현해주는 것이 매트릭스다. 
 
@@ -107,5 +107,6 @@ $$
 
 이를 매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 조건은 $m=n$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4MTU4OTcsLTM5NTY2MTQ2MV19
+eyJoaXN0b3J5IjpbMTY1NjMwNTUsNTY4MTU4OTcsLTM5NTY2MT
+Q2MV19
 -->
