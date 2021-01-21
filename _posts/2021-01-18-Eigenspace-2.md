@@ -91,11 +91,11 @@ $$
 - $\Sigma$: 유사 대각행렬을 곱해 각 기저의 크기를 조절한다. 
 - $U$: $U = \phantom{}\_{B_{S}}[1]\_{B\_{SVD}}$: $B_{S} \leftarrow B_{SVD}$
 
-즉, $B_S \to B_{SVD} \to B_S$를 수행한다. 
+즉, $B_S \leftarrow B_{SVD} \leftarrow B_S$를 수행한다. 
 
 ### An application 
 
-이렇게 대각화를 할 때 어떤 이득이 있을까? 앞서 유사 행렬을 활용하면 행렬의 곱이 간단해진다는 점을 보았다. $SVD$에도 비슷한 이점이 있다. 이 외에 SVD를 써서 할 수 있는 중요한 이득이 있다. 계산량을 줄이는 것이다. 
+이렇게 대각화를 할 때 어떤 이득이 있을까? 앞서 유사 행렬을 활용하면 행렬의 곱이 간단해진다는 점을 보았다. SVD에도 비슷한 이점이 있다. 이 외에 SVD를 써서 할 수 있는 중요한 이득이 있다. 계산량을 줄이는 것이다. 
 
 $M \in \mathbb R^{1000 \times 2000}$의 변환이 있다고 하자. 이 변환의 싱귤러 밸류들 많아야 1000개가 나올 것이다. 만일 이 1000개 중에서 3개를 제외하고 나머지 값이 0에 가깝다고 하자.
 
@@ -187,6 +187,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMT
-YyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbLTE4NjQ5NzQ5MjksMTA2MTYwMTEzNywtMj
+EyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMz
+ODg3NTAsMF19
 -->
