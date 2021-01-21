@@ -115,7 +115,7 @@ $$
 \Vert M - \hat M \Vert_{\rm HS} = \sqrt{\sum_{i=4}^{1000} \sigma_i^2}
 $$
 
-이 값이 크지 않다면, $M \approx \hat M$을 활용할 수 있다. 실제로 이미지 압축 등에서 많이 사용되어온 방법이다. 
+이 값이 크지 않다면, $M \approx \hat M$으로 간주할 수 있다. 실제로 이미지 압축 등에서 많이 사용되는 방법이다. 
 
 ## LU 
 
@@ -187,7 +187,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ5NzQ5MjksMTA2MTYwMTEzNywtMj
-EyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMz
-ODg3NTAsMF19
+eyJoaXN0b3J5IjpbMTQ1MjU1NjgxMCwxMDYxNjAxMTM3LC0yMT
+I3MDQ0ODI5LC0xNjIxNjQ4MzY5LDU5MjgwMjAwMiwtMjAyMzM4
+ODc1MCwwXX0=
 -->
