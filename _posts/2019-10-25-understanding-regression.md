@@ -63,10 +63,11 @@ $$
 ${\mathbf X} {\boldsymbol \beta} = {\boldsymbol Y}$가 연립방정식이라면 해는 ${\mathbf X}^{-1}$을 구해서 얻을 수 있을 것이다. 하지만 ${\mathbf X} \in \mathbb R^{n \times k}$이므로 딱 떨어지는 특수해 1개를 구할 수 없다. 되도록 근사값의 해를 구하려면 어떻게 해야 할까? 
 
 $$
-{\mathbf X'} {\mathbf X} {\boldsymbol \hat\beta} = {\boldsymbol Y}
+\begin{aligned}
+{\mathbf X}'{\mathbf X} {\hat \boldsymbol \beta} = {\mathbf X}'{\boldsymbol Y}
 $$ 
 
-그리고 이 연산자를 reggressor의  모음인 col $\mathbf X$에 적용하면,  $\mathbf{X} \hat{\boldsymbol \beta}  =\hat{\mathbf Y}$이 계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 col $\mathbf X$의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $\hat{\mathbf Y} \in {\mathbb R}^n$ 벡터지만, col $\mathbf X(\in {\mathbb R}^k)$내에 위치하고 있다. $n$ 차원이 $k$ 차원으로 축소된 셈이다. 이것이 회귀분석의 핵심이다. 
+그리고 이 연산자를 reggressor의  모음인 col $\mathbf X$에 적용하면,  $\mathbf{X} \hat{\boldsymbol \beta}  =\hat{\mathbf Y}$이 {\mathbf X}'계산된다. 그림에서 보듯이 $\hat{\mathbf Y}$은 $\mathbf Y$와 col $\mathbf X$의 거리를 최소화하는 위치에 존재한다. $\hat{\mathbf Y}$는 어떤 벡터일까? $\hat{\mathbf Y} \in {\mathbb R}^n$ 벡터지만, col $\mathbf X(\in {\mathbb R}^k)$내에 위치하고 있다. $n$ 차원이 $k$ 차원으로 축소된 셈이다. 이것이 회귀분석의 핵심이다. 
 
 선형 대수의 관점에서 내용을 다시 음미해보자. $x_i \in {\mathbb R}^n$ (for $i = 1, \dotsc, k$) 벡터의 리그레서 $k$ 개를 선형 결합해서 초평면의 한점, 즉 원래의 관찰 $\mathbf Y$와 최소 거리를 지니는 벡터를 찾아야 한다. 이 거리를 최소화하는 $\beta_i$를 알고 있다면 이 벡터는 다음과 같이 표현된다. ${\mathbf X} = [x_1, \dotsc, x_k]$일 때, 
 
@@ -157,7 +158,7 @@ PCA에서 '분산 최대화'에 이르기까지 과정을 생략하다보면, PC
 
 회귀 분석과 PCA를 지도 학습(supervised learning), 비지도 학습(unsupervised learning)으로 구분할 수는 없다. 다만 이 구분과 어느 정도 비슷한 부분이 있다. 회귀  분석은 target이 있다. 이 타겟과의 거리를 최소화하는 feature 공간의 어떤 위치를 찾는 것이 목적이다. 반면, PCA에는 target이 없다. $k$ 개의 feature를 최소 거리로 투영할 수 있는 스크린 벡터를 찾는게 목적이다. 간단히 말해서 PCA는 target 없이 벡터의 거리가 1인 임의의 프로젝션 벡터를 찾는 것이 목적이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQ1OTkwMDYsLTE2MjY5OTA0MTcsLT
+eyJoaXN0b3J5IjpbLTEyMTY4NTgyMjksLTE2MjY5OTA0MTcsLT
 YwOTEyMzI2NCw1NDg4ODA4NTMsMTk5ODM4NDU5OSwtMTIyMzEy
 NjIwNywxODc4Njc3MDU0LC0xOTI3NDMzMDgzLC0xNTk1NjY2ND
 Q3LDM4NDQxNjUxNSwxODkyOTUwNzY5LDUyMjIwODQ1MCwtMjA3
