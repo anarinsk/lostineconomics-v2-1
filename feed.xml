@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T01:08:30-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T04:40:54-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -303,7 +303,7 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
 
 &lt;h3 id=&quot;all-distinct-eigenvalues&quot;&gt;All distinct eigenvalues&lt;/h3&gt;
 
-&lt;p&gt;실용적으로 접근해보자. 모든 아이겐밸류가 다르다면, 아이겐벡터는 선형독립이다. 따라서 아이겐밸류가 원래 매트릭스의 컬럼 벡터의 벡터 공간을 생성할 수 있다.&lt;/p&gt;
+&lt;p&gt;실용적으로 접근해보자. 모든 아이겐밸류가 다르다면, 아이겐벡터는 선형독립이다. 따라서 아이겐백터가 원래 매트릭스의 컬럼 벡터의 벡터 공간을 생성하는 기저가 될 수 있다.&lt;/p&gt;
 
 &lt;h3 id=&quot;algebraic-vs-geometric&quot;&gt;Algebraic vs geometric&lt;/h3&gt;
 
@@ -562,7 +562,8 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NzY5NzY1OCwtMTk4OTQ1MzE3N119
+eyJoaXN0b3J5IjpbLTIwMTkyNTMyNjcsLTE5ODk0NTMxNzddfQ
+==
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Why?</summary></entry><entry><title type="html">Basis</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html" rel="alternate" type="text/html" title="Basis" /><published>2021-01-08T00:00:00-06:00</published><updated>2021-01-08T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html">&lt;h2 id=&quot;concepts--definition&quot;&gt;Concepts &amp;amp; Definition&lt;/h2&gt;
 
 &lt;p&gt;벡터 공간 $V$의 기저 
