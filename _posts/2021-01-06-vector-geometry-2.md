@@ -132,7 +132,7 @@ $$
 
 이는 $M^T \vec a= \vec b$가 된다. 즉, $M^T$는 $M$의 좌 벡터 공간의 집합을 표현한다. 마찬가지로 $M$은 $M$의 우 벡터 공간의 집합을 표현한다. $M$의 좌 벡터 공간이 바로 로우 공간이고 우 벡터 공간이 컬럼 공간이다. 
 
-이제, $\mathcal N(M)$의 원소는 $\mathbb R^n$에 속한다. 이와 직교하는 공간은 어떤 공간일까? 좌 벡터 공간일까? 우 벡터 공간일까? 쉽게 생각하자. 직교 하기 위해서는 서로 차원이 같아야 한다. 우 벡터 공간은 $\mathbb R^m$에 속한다. 따라서 이는 좌 벡터 공간과 직교한다. 그럴까? $M \vec v_n = \vec 0_m$ where $\vec v_n \in \mathcal N(M)$ 가 성립한다. 이제 양번에 $\vec a^T$를 곱해보자. 
+이제, $\mathcal N(M)$의 원소는 $\mathbb R^n$에 속한다. 이와 직교하는 공간은 어떤 공간일까? 좌 벡터 공간일까? 우 벡터 공간일까? 쉽게 생각하자. 직교 하기 위해서는 서로 차원이 같아야 한다. 우 벡터 공간은 $\mathbb R^m$에 속한다. 따라서 직교한다면 좌 벡터 공간과 직교한다. 그럴까? $M \vec v_n = \vec 0_m$ where $\vec v_n \in \mathcal N(M)$ 가 성립한다. 이제 양번에 $\vec a^T$를 곱해보자. 
 
 $$
 \underbrace{(M^T \vec a)^T}_{\text{left space}} \vec v_n = \vec a^T M\vec v_n = \vec a^T \vec 0_m = 0
@@ -158,7 +158,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3Nzc2MDM0LC0zNTUyMDY3ODMsMTk3NT
-AzOTkzNSwtNjM2MjQxMTI3LC0xMjkwMDI1NTIyLDIwODgwNDMz
-NzQsLTIwNTIyMDE3NDAsLTgzODI4MzcwN119
+eyJoaXN0b3J5IjpbMTM0NDY4NDMwNywtMzU1MjA2NzgzLDE5Nz
+UwMzk5MzUsLTYzNjI0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQz
+Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
 -->
