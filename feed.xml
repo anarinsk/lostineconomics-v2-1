@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T05:34:10-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T05:44:20-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -141,11 +141,11 @@ c-16-25.333-24-45-24-59z'/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt
   &lt;li&gt;$U$: $U = \phantom{}_{B_{S}}[1]_{B_{SVD}}$: $B_{S} \leftarrow B_{SVD}$&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;즉, $B_S \to B_{SVD} \to B_S$를 수행한다.&lt;/p&gt;
+&lt;p&gt;즉, $B_S \leftarrow B_{SVD} \leftarrow B_S$를 수행한다.&lt;/p&gt;
 
 &lt;h3 id=&quot;an-application&quot;&gt;An application&lt;/h3&gt;
 
-&lt;p&gt;이렇게 대각화를 할 때 어떤 이득이 있을까? 앞서 유사 행렬을 활용하면 행렬의 곱이 간단해진다는 점을 보았다. $SVD$에도 비슷한 이점이 있다. 이 외에 SVD를 써서 할 수 있는 중요한 이득이 있다. 계산량을 줄이는 것이다.&lt;/p&gt;
+&lt;p&gt;이렇게 대각화를 할 때 어떤 이득이 있을까? 앞서 유사 행렬을 활용하면 행렬의 곱이 간단해진다는 점을 보았다. SVD에도 비슷한 이점이 있다. 이 외에 SVD를 써서 할 수 있는 중요한 이득이 있다. 계산량을 줄이는 것이다.&lt;/p&gt;
 
 &lt;p&gt;$M \in \mathbb R^{1000 \times 2000}$의 변환이 있다고 하자. 이 변환의 싱귤러 밸류들 많아야 1000개가 나올 것이다. 만일 이 1000개 중에서 3개를 제외하고 나머지 값이 0에 가깝다고 하자.&lt;/p&gt;
 
@@ -249,8 +249,9 @@ a_{31} &amp;amp; a_{32} &amp;amp; a_{33}
 
 &lt;p&gt;따라서 $R$은 $Q^T A$로 구할 수 있다. 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMT
-YyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbLTE4NjQ5NzQ5MjksMTA2MTYwMTEzNywtMj
+EyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMz
+ODg3NTAsMF19
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Singluar Value Decomposition</summary></entry><entry><title type="html">Eigenspace, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html" rel="alternate" type="text/html" title="Eigenspace, part 1" /><published>2021-01-10T00:00:00-06:00</published><updated>2021-01-10T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/10/Eigenspace-1.html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
 
 &lt;p&gt;아이겐밸류, 아이겐벡터는 중요하다. 어디서나 튀어나온다. 그래서 친숙하지만 나는 이걸 제대로 알고 있는 것일까? 이번 포스팅에서는 아이겐 관련 내용을 아이겐 공간의 관점에서 이해해보고자 한다.&lt;/p&gt;
