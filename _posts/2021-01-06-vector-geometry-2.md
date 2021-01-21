@@ -111,7 +111,7 @@ $$
 M \vec x = \vec b
 $$
 
-먼저 $M$의 널 스페이스를 생각해보자. 여기 속한 $\vec x$는 $\mathbb R^n$ 집합에 속한다. 정의상 $M \vec x = 0$이므로 $\vec x$를 어떤 해야 더하더라도 그 값 역시 해가 된다. 따라서, $M \vec x = \vec b$를 만족하는 $\vec x = \vec c$라고 하자. 이를 특수 해라고 부른다. 그렇다면 일반 해는 무엇일까? 여기에 널 스페이스에 속한 임의의 원소를 더하면 된다. 즉, 
+먼저 $M$의 널 스페이스를 생각해보자. 여기 속한 $\vec x$는 $\mathbb R^n$ 집합에 속한다. 정의상 $M \vec x = 0$이므로 $\vec x$를 어떤 해에 더하면 이 값 역시 해가 된다. 따라서, $M \vec x = \vec b$를 만족하는 $\vec x = \vec c$라고 하자. 이를 특수 해라고 부른다. 여기에 널 스페이스에 속한 임의의 원소를 더하면 된다. 즉, 
 
 $$
 \vec x = \vec c + \text{span}(\vec v_1, \dotsc, \vec v_k) \text{ where } \text{span}(\vec v_1, \dotsc, \vec v_k) = \mathcal N(M)
@@ -158,7 +158,7 @@ $$
 
 ![enter image description here](https://www.cs.utexas.edu/users/flame/laff/alaff-beta/images/Chapter04/FundamentalSpaces.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjU0NjI3NSwtMzU1MjA2NzgzLDE5Nz
-UwMzk5MzUsLTYzNjI0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQz
-Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
+eyJoaXN0b3J5IjpbMjY3MDc2Njg2LC0zNTUyMDY3ODMsMTk3NT
+AzOTkzNSwtNjM2MjQxMTI3LC0xMjkwMDI1NTIyLDIwODgwNDMz
+NzQsLTIwNTIyMDE3NDAsLTgzODI4MzcwN119
 -->
