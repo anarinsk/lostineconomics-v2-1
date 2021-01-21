@@ -25,7 +25,7 @@ categories: [math, matrix-theory]
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/matrix_func_fig.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-함수와 마찬가지로 위의 선형 변환에서 치역(Im($T$))와 커널(스칼라 함수에서는 $f(x) = 0$의 해)가 정의된다. 
+함수와 마찬가지로 위의 선형 변환에서 치역(Im($T$))와 커널(스칼라 함수에서는 $f(x) = 0$의 해)이 정의된다. 
 
 $$
 {\rm Im}(T) \overset{\rm def}{=} \{ \vec w \in W | \vec w = T(\vec v) \text{ for some } \vec v \} \subseteq W
@@ -107,6 +107,6 @@ $$
 
 이를 매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 조건은 $m=n$이다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjcwNDk0Niw1NjgxNTg5NywtMzk1Nj
-YxNDYxXX0=
+eyJoaXN0b3J5IjpbLTEzODg1NjUxNTgsNTY4MTU4OTcsLTM5NT
+Y2MTQ2MV19
 -->
