@@ -109,8 +109,28 @@ $$
 
 SVD 식을 다시 조립해보자. 
 
-
-
+$$
+A = 
+\underbrace{
+\begin{bmatrix}
+\vert & \dotsb & \vert \\
+u_1 & \dotsb & u_m \\
+\vert & \dotsb & \vert \\
+\end{bmatrix}}_{m \times m}
+\overbrace{
+\begin{bmatrix}
+\sigma_1 & 0 & \dotsb \\
+0 & \sigma_2 & \dotsb \\
+0 & 0 & \dotsb \\
+\end{bmatrix}}^{m \times n}
+\underbrace{
+\begin{bmatrix}
+-- & v_1^T & -- \\
+-- & \vdots & -- \\
+-- & v_n^T & -- \\
+\end{bmatrix}}_{n \times n} =
+U \Sigma V^T
+$$
 
 ### An application 
 
@@ -206,7 +226,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3MjYwMDYwLDEzNTIwNjAyMiwxNDUyNT
-U2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgz
-NjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbLTk0MzExMTUwNSwxMzUyMDYwMjIsMTQ1Mj
+U1NjgxMCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4
+MzY5LDU5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
 -->
