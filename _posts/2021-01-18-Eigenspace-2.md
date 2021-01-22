@@ -104,8 +104,13 @@ $$
 외적의 rank는 어떻게 될까? 1이다. 직관적으로는 이해가 안될 수 있다. 
 
 $$
-{\rm rank AB} \leq \min({\rm rank} A}, {\rm rank} B)
+{\rm rank} (AB) \leq \min({\rm rank}(A), {\rm rank} (B)) =  1
 $$
+
+SVD 식을 다시 조립해보자. 
+
+
+
 
 ### An application 
 
@@ -201,7 +206,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0Mjk3Nzg5LDEzNTIwNjAyMiwxNDUyNT
+eyJoaXN0b3J5IjpbNTY3MjYwMDYwLDEzNTIwNjAyMiwxNDUyNT
 U2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgz
 NjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
 -->
