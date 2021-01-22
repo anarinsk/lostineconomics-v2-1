@@ -123,13 +123,15 @@ u_1 & \dotsb & u_m \\
 $$
 
 $$
-\begin{}
-[u_1 \sigma_1,  \dotsb,  u_n \sigma_n, \dotsc,  u_m 0]
+\begin{bmatrix}
+\sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
+\end{bmatrix}
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix}
+\end{bmatrix} = 
+u_1 v_1^T \sigma_1
 $$
 
 ### An application 
@@ -226,8 +228,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzgzNTcxNTQsLTkxODg1MTY3OCwtOT
-QzMTExNTA1LDEzNTIwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDEx
-MzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC
-0yMDIzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbMTE2Nzc1Mzk0NCwtOTE4ODUxNjc4LC05ND
+MxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAsMTA2MTYwMTEz
+NywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLT
+IwMjMzODg3NTAsMF19
 -->
