@@ -119,11 +119,11 @@ u_1 & \dotsb & u_m \\
 \sigma_1 & 0 & \dotsb \\
 0 & \sigma_2 & \dotsb \\
 0 & 0 & \dotsb \\
-\end{bmatrix} = 
-u_1 \sigma_1 + \dotsb + u_n \sigma_n + \dotsb + u_m 0
+\end{bmatrix} 
 $$
 
 $$
+u_1 \sigma_1 + \dotsb + u_n \sigma_n + \dotsb + u_m 0
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
@@ -225,8 +225,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTQxNzAzLC05NDMxMTE1MDUsMTM1Mj
-A2MDIyLDE0NTI1NTY4MTAsMTA2MTYwMTEzNywtMjEyNzA0NDgy
-OSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMzODg3NTAsMF
-19
+eyJoaXN0b3J5IjpbLTkxODg1MTY3OCwtOTQzMTExNTA1LDEzNT
+IwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4
+MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLD
+BdfQ==
 -->
