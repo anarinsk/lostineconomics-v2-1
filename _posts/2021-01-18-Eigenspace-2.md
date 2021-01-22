@@ -137,7 +137,7 @@ $$
 = \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
 $$
 
-$u_i v_i^T$는 각각 1의 rank를 지니고 앞에 곱해진 singular value의 일종의 
+$u_i v_i^T$는 각각 1의 rank를 지니고 앞에 곱해진 singular value의 기저로 이해할 수 있다. 해당 기저들의 선형 결합으로 매트릭스 $A$를 다시 분해할 수 있다. 
 
 ### An application 
 
@@ -233,8 +233,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTMwODIwOCwtOTE4ODUxNjc4LC05ND
-MxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAsMTA2MTYwMTEz
-NywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLT
-IwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbOTIzMzYwNDU0LC05MTg4NTE2NzgsLTk0Mz
+ExMTUwNSwxMzUyMDYwMjIsMTQ1MjU1NjgxMCwxMDYxNjAxMTM3
+LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4MzY5LDU5MjgwMjAwMiwtMj
+AyMzM4ODc1MCwwXX0=
 -->
