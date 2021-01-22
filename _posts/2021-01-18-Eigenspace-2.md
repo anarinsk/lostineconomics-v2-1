@@ -110,26 +110,25 @@ $$
 SVD 식을 다시 조립해보자. 
 
 $$
-A = 
-\underbrace{
 \begin{bmatrix}
 \vert & \dotsb & \vert \\
 u_1 & \dotsb & u_m \\
 \vert & \dotsb & \vert \\
-\end{bmatrix}}_{m \times m}
-\overbrace{
+\end{bmatrix}
 \begin{bmatrix}
 \sigma_1 & 0 & \dotsb \\
 0 & \sigma_2 & \dotsb \\
 0 & 0 & \dotsb \\
-\end{bmatrix}}^{m \times n}
-\underbrace{
+\end{bmatrix} = 
+u_1 \sigma_1 + \dotsb + u_
+$$
+
+$$
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix}}_{n \times n} =
-U \Sigma V^T
+\end{bmatrix}
 $$
 
 ### An application 
@@ -226,7 +225,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MzExMTUwNSwxMzUyMDYwMjIsMTQ1Mj
-U1NjgxMCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4
-MzY5LDU5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
+eyJoaXN0b3J5IjpbMjE0MDA3MzM2MSwtOTQzMTExNTA1LDEzNT
+IwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4
+MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLD
+BdfQ==
 -->
