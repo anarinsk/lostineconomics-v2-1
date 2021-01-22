@@ -79,8 +79,6 @@ $$
 \sigma_i = \sqrt{\lambda_i}, \text{ where } \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A) 
 $$
 
-##
-
 ### Change-of-basis 
 
 기저를 바꾸는 관점에서 다시 음미해보자. 
@@ -94,6 +92,14 @@ $$
 - $U$: $U = \phantom{}\_{B_{S}}[1]\_{B\_{SVD}}$: $B_{S} \leftarrow B_{SVD}$
 
 즉, $B_S \leftarrow B_{SVD} \leftarrow B_S$를 수행한다. 
+
+### Outer product 
+
+외적의 관점에서 이해하는 것도 흥미롭다. 일단 외적에 관해서 간단히 살펴보자. 벡터 $u \in \mathbb R^m$, $v \in \mathbb R^n$이 있다고 할 때, 
+
+$$
+u 
+$$
 
 ### An application 
 
@@ -189,7 +195,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MjA2MDIyLDE0NTI1NTY4MTAsMTA2MT
-YwMTEzNywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIw
-MDIsLTIwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbMTY0NjY0ODczMCwxMzUyMDYwMjIsMTQ1Mj
+U1NjgxMCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4
+MzY5LDU5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
 -->
