@@ -98,7 +98,13 @@ $$
 외적의 관점에서 이해하는 것도 흥미롭다. 일단 외적에 관해서 간단히 살펴보자. 벡터 $u \in \mathbb R^m$, $v \in \mathbb R^n$이 있다고 할 때, 
 
 $$
-u 
+u v^T \in \mathbb R^{m \times n}
+$$
+
+외적의 rank는 어떻게 될까? 1이다. 직관적으로는 이해가 안될 수 있다. 
+
+$$
+{\rm rank AB} \leq \min({\rm rank} A}, {\rm rank} B)
 $$
 
 ### An application 
@@ -195,7 +201,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NjY0ODczMCwxMzUyMDYwMjIsMTQ1Mj
-U1NjgxMCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4
-MzY5LDU5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
+eyJoaXN0b3J5IjpbMzk0Mjk3Nzg5LDEzNTIwNjAyMiwxNDUyNT
+U2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgz
+NjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
 -->
