@@ -226,14 +226,14 @@ $$
 1. 일단 orthogonal 기저를 만든다. 
 2. 해당 벡터를 표준화한다. 
 
-Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자. 
+Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.   . 
 
 - $e_1 = v_1$
 - $e_2 = v_2 - \Pi_{e_1}(v_2)$
 - $e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
 - $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$ 
 
-이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화한다. 
+이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화한  직교 다. 
 
 왜 프로젝션 벡터들의 빼기 형태로 들어갈까? 
 
@@ -270,6 +270,6 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDA4MzE0NSw0ODA4MzEzNTQsLTIwMT
-kyNTMyNjcsLTE5ODk0NTMxNzddfQ==
+eyJoaXN0b3J5IjpbLTE1MTM5MTg2LDEyMTQwODMxNDUsNDgwOD
+MxMzU0LC0yMDE5MjUzMjY3LC0xOTg5NDUzMTc3XX0=
 -->
