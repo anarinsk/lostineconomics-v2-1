@@ -79,6 +79,8 @@ $$
 \sigma_i = \sqrt{\lambda_i}, \text{ where } \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A) 
 $$
 
+##
+
 ### Change-of-basis 
 
 기저를 바꾸는 관점에서 다시 음미해보자. 
@@ -187,7 +189,7 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjU1NjgxMCwxMDYxNjAxMTM3LC0yMT
-I3MDQ0ODI5LC0xNjIxNjQ4MzY5LDU5MjgwMjAwMiwtMjAyMzM4
-ODc1MCwwXX0=
+eyJoaXN0b3J5IjpbMTM1MjA2MDIyLDE0NTI1NTY4MTAsMTA2MT
+YwMTEzNywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIw
+MDIsLTIwMjMzODg3NTAsMF19
 -->
