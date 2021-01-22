@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T05:45:46-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-21T22:55:34-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -520,7 +520,7 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
   &lt;li&gt;해당 벡터를 표준화한다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.&lt;/p&gt;
+&lt;p&gt;Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.   .&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;$e_1 = v_1$&lt;/li&gt;
@@ -529,7 +529,7 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
   &lt;li&gt;$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화한다.&lt;/p&gt;
+&lt;p&gt;이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화한  직교 다.&lt;/p&gt;
 
 &lt;p&gt;왜 프로젝션 벡터들의 빼기 형태로 들어갈까?&lt;/p&gt;
 
@@ -563,8 +563,8 @@ p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
 &lt;/ol&gt;
 
 &lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDA4MzE0NSw0ODA4MzEzNTQsLTIwMT
-kyNTMyNjcsLTE5ODk0NTMxNzddfQ==
+eyJoaXN0b3J5IjpbLTE1MTM5MTg2LDEyMTQwODMxNDUsNDgwOD
+MxMzU0LC0yMDE5MjUzMjY3LC0xOTg5NDUzMTc3XX0=
 --&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Why?</summary></entry><entry><title type="html">Basis</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html" rel="alternate" type="text/html" title="Basis" /><published>2021-01-08T00:00:00-06:00</published><updated>2021-01-08T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html">&lt;h2 id=&quot;concepts--definition&quot;&gt;Concepts &amp;amp; Definition&lt;/h2&gt;
 
 &lt;p&gt;벡터 공간 $V$의 기저 
