@@ -130,9 +130,14 @@ $$
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix} = 
-\sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
+\end{bmatrix} 
 $$
+
+$$
+= \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
+$$
+
+$u_i v_i^T$는 각각 1의 rank를 지니고 앞에 곱해진 singular value의 일종의 
 
 ### An application 
 
@@ -228,8 +233,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA3MjQ2MDQsLTkxODg1MTY3OCwtOTQzMT
-ExNTA1LDEzNTIwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDExMzcs
-LTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMD
-IzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbLTQ5OTMwODIwOCwtOTE4ODUxNjc4LC05ND
+MxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAsMTA2MTYwMTEz
+NywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLT
+IwMjMzODg3NTAsMF19
 -->
