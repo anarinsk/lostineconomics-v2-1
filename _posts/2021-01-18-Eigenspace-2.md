@@ -123,7 +123,8 @@ u_1 & \dotsb & u_m \\
 $$
 
 $$
-u_1 \sigma_1 + \dotsb + u_n \sigma_n + \dotsb + u_m 0
+\begin{}
+[u_1 \sigma_1,  \dotsb,  u_n \sigma_n, \dotsc,  u_m 0]
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
@@ -225,8 +226,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODg1MTY3OCwtOTQzMTExNTA1LDEzNT
-IwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4
-MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLD
-BdfQ==
+eyJoaXN0b3J5IjpbLTE2NzgzNTcxNTQsLTkxODg1MTY3OCwtOT
+QzMTExNTA1LDEzNTIwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDEx
+MzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC
+0yMDIzMzg4NzUwLDBdfQ==
 -->
