@@ -107,7 +107,7 @@ $$
 {\rm rank} (AB) \leq \min({\rm rank}(A), {\rm rank} (B)) =  1
 $$
 
-SVD 식을 다시 조립해보자. 
+SVD 식을 다시 조립해보자. 일단 $m \geq n$을 가정하자. 
 
 $$
 \begin{bmatrix}
@@ -120,7 +120,7 @@ u_1 & \dotsb & u_m \\
 0 & \sigma_2 & \dotsb \\
 0 & 0 & \dotsb \\
 \end{bmatrix} = 
-u_1 \sigma_1 + \dotsb + u_
+u_1 \sigma_1 + \dotsb + u_n \sigma_n + \dotsb + u_m 0
 $$
 
 $$
@@ -225,8 +225,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDA3MzM2MSwtOTQzMTExNTA1LDEzNT
-IwNjAyMiwxNDUyNTU2ODEwLDEwNjE2MDExMzcsLTIxMjcwNDQ4
-MjksLTE2MjE2NDgzNjksNTkyODAyMDAyLC0yMDIzMzg4NzUwLD
-BdfQ==
+eyJoaXN0b3J5IjpbLTkzMTQxNzAzLC05NDMxMTE1MDUsMTM1Mj
+A2MDIyLDE0NTI1NTY4MTAsMTA2MTYwMTEzNywtMjEyNzA0NDgy
+OSwtMTYyMTY0ODM2OSw1OTI4MDIwMDIsLTIwMjMzODg3NTAsMF
+19
 -->
