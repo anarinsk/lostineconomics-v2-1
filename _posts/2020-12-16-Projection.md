@@ -48,10 +48,27 @@ $$
 
 ### Projection as outer product 
 
-$x$축 위로 프로젝션을 생각해보자. 이 역시 선형 변환이다. 기저를 생거
+$x$축 위로 프로젝션을 생각해보자. 이 역시 선형 변환이다. 기저를 생각하면 아래와 같다. 
 
 $$
-
+\Pi_{x}(
+\begin{bmatrix}
+1 \\
+0 \\
+\end{bmatrix}) = 
+\begin{bmatrix}
+1 \\
+0 \\
+\end{bmatrix}, ~
+\Pi_{x}(
+\begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}) = 
+\begin{bmatrix}
+0 \\
+0 \\
+\end{bmatrix}
 $$
 
 ## More Definition 
@@ -210,7 +227,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDQxNDg1OCwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbMTk2MzU1NTQ1OSwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
