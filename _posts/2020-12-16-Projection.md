@@ -71,6 +71,23 @@ $$
 \end{bmatrix}
 $$
 
+$$
+M_{\Pi_x} = 
+\begin{bmatrix}
+\Pi_{x}(
+\begin{bmatrix}
+1 \\
+0 \\
+\end{bmatrix}), 
+\Pi_{x}(
+\begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}) 
+\end{bmatrix} = 
+\begin
+$$
+
 ## More Definition 
 
 - $S \subseteq \mathbb R^n$: $S$는 벡터 부분공간이라고 하자. 
@@ -227,7 +244,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzU1NTQ1OSwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbMTg3NTcwMTc4NCwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
