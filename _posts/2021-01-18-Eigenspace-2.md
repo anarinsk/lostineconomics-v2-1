@@ -125,8 +125,8 @@ $$
 
 $$
 \begin{aligned}
-A & =
-
+A & = U \Sigma V^T \\
+& =
 \underbrace{
 \begin{bmatrix}
 \sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
@@ -236,8 +236,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTA4OTI1Nyw5MjMzNjA0NTQsLTkxOD
-g1MTY3OCwtOTQzMTExNTA1LDEzNTIwNjAyMiwxNDUyNTU2ODEw
-LDEwNjE2MDExMzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNT
-kyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
+eyJoaXN0b3J5IjpbNzAzMDc4NjM4LDkyMzM2MDQ1NCwtOTE4OD
+UxNjc4LC05NDMxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAs
+MTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OT
+I4MDIwMDIsLTIwMjMzODg3NTAsMF19
 -->
