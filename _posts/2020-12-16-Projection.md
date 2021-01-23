@@ -95,13 +95,16 @@ $M_{\Pi_x}$를 외적의 관점에서 표현해보자.
 
 $$
 \begin{aligned}
-\Pi_{x}(\vec v) & = (\hat i \cdot \vec v) \hat i = \hat i (\hat i \cdot \vec v) = \hat i (\hat i^T \vec v) = (\hat i \hat i^T)\vec v
+\Pi_{x}(\vec v) & = (\hat i \cdot \vec v) \hat i = \hat i (\hat i \cdot \vec v) = \hat i (\hat i^T \vec v) = (\hat i \hat i^T)\vec v \\
 & = 
 \begin{bmatrix}
-sdf
-\end{bmatrix}
+1 & 0 \\
+0 & 0
+\end{bmatrix} \vec v = M_{\Pi_x} \vec v
 \end{aligned}
 $$
+
+이 결과는 일반적인 벡터 $\vec a$ 
 
 ## More Definition 
 
@@ -259,7 +262,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTk2ODQ1OCwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbLTU3NzUwNDExOCwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
