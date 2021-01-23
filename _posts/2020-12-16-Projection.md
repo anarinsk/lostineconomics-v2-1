@@ -107,7 +107,7 @@ $$
 이 결과를 일반적인 벡터 $\vec b$에도 확장할 수 있다. $\vec b$로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat b$를 먼저 구해야 한다. 
 
 $$
-\hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} = \hat b \hat b^T a  
+\hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} \vec a = \hat b \hat b^T \vec a  
 $$  
 
 ## More Definition 
@@ -266,11 +266,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzg4MzkwNywxNDkxNTUxMzkxLC00MT
-I5NDc1ODksLTE4MDM2OTE2OTEsMTgwMzM1NTM5NCwxMzk3MDg3
-NTcxLC0xMDc5MjIxMjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NS
-wyMzgzODczNjksLTMwODM5NTIyNywtMTY3NjAyMzQzLDExNjIy
-NDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4NT
-M2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0xMjEyMzEwMywyNDcy
-MjE3MzddfQ==
+eyJoaXN0b3J5IjpbLTE2MDIwNjIyOCwxMjA3ODgzOTA3LDE0OT
+E1NTEzOTEsLTQxMjk0NzU4OSwtMTgwMzY5MTY5MSwxODAzMzU1
+Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5ODU5LC
+0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2
+MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0Nj
+csLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEy
+MTIzMTAzXX0=
 -->
