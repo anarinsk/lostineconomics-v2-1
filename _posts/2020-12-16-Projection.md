@@ -104,10 +104,10 @@ $$
 \end{aligned}
 $$
 
-이 결과를 일반적인 벡터 $\vec a$에도 확장할 수 있다. $\vec a$ 방향으로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat a$를 먼저 구해야 한다. 
+이 결과를 일반적인 벡터 $\vec b$에도 확장할 수 있다. $\vec b$ 방향으로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat a$를 먼저 구해야 한다. 
 
 $$
-\hat a = \dfrac{\vec a}{\Vert a \Vert},~M_{\Pi_{\hat a}} = \hat a \hat a^T  
+\hat a = \dfrac{\vec a}{\Vert a \Vert},~M_{\Pi_{\hat a}} \hat a = \hat a \hat a^T  
 $$  
 
 ## More Definition 
@@ -266,11 +266,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTU1MTM5MSwtNDEyOTQ3NTg5LC0xOD
-AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
-MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
-0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
-MDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2OD
-UsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYz
-NDQ0MDY5XX0=
+eyJoaXN0b3J5IjpbMjMzMTA4NjMzLDE0OTE1NTEzOTEsLTQxMj
+k0NzU4OSwtMTgwMzY5MTY5MSwxODAzMzU1Mzk0LDEzOTcwODc1
+NzEsLTEwNzkyMjEyNTcsMjI4NTc5ODU5LC0xNTUzMTUzNzY1LD
+IzODM4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2MDIzNDMsMTE2MjI0
+ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0NjcsLTEwOTI4Njg1Mz
+YsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEyMTIzMTAzLDI0NzIy
+MTczN119
 -->
