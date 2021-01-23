@@ -110,6 +110,8 @@ $$
 \hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} \vec a = \hat b \hat b^T \vec a  
 $$  
 
+$\vec a$를 인풋 벡터로 이해하면 이를 $\vec b$의 프로젝션 위치로 옮기는 선형 변환이 $\Pi_{\hat{}}$
+
 ## More Definition 
 
 - $S \subseteq \mathbb R^n$: $S$는 벡터 부분공간이라고 하자. 
@@ -266,11 +268,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDIwNjIyOCwxMjA3ODgzOTA3LDE0OT
-E1NTEzOTEsLTQxMjk0NzU4OSwtMTgwMzY5MTY5MSwxODAzMzU1
-Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5ODU5LC
-0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC0xNjc2
-MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUwMzU0Nj
-csLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1NDYsLTEy
-MTIzMTAzXX0=
+eyJoaXN0b3J5IjpbNzc4OTczOTg4LDEyMDc4ODM5MDcsMTQ5MT
+U1MTM5MSwtNDEyOTQ3NTg5LC0xODAzNjkxNjkxLDE4MDMzNTUz
+OTQsMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMjg1Nzk4NTksLT
+E1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2NzYw
+MjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2Ny
+wtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMTIx
+MjMxMDNdfQ==
 -->
