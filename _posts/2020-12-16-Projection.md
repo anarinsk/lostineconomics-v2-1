@@ -195,16 +195,18 @@ $$
 
 이를 노멀 방정식이라고 부른다. 앞서 평면과 직교하는 벡터를 노멀 벡터라고 불렀는데, 둘은 일맥상통한다.
 
+
+
 ## References 
 
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjk0NzU4OSwtMTgwMzY5MTY5MSwxOD
-AzMzU1Mzk0LDEzOTcwODc1NzEsLTEwNzkyMjEyNTcsMjI4NTc5
-ODU5LC0xNTUzMTUzNzY1LDIzODM4NzM2OSwtMzA4Mzk1MjI3LC
-0xNjc2MDIzNDMsMTE2MjI0ODIwNywxNTIzMTAxNzk0LC00NjUw
-MzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNjg1LC0yOTIzMTI1ND
-YsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2MzQ0NDA2OSwtNTYx
-MzU5NDc2XX0=
+eyJoaXN0b3J5IjpbNjU5Njk5NjE1LC00MTI5NDc1ODksLTE4MD
+M2OTE2OTEsMTgwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMDc5MjIx
+MjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODczNjksLT
+MwODM5NTIyNywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEw
+MTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NS
+wtMjkyMzEyNTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0
+NDQwNjldfQ==
 -->
