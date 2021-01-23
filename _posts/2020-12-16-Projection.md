@@ -104,7 +104,12 @@ $$
 \end{aligned}
 $$
 
-이 결과는 일반적인 벡터 $\vec a$ 
+이 결과를 일반적인 벡터 $\vec a$에도 확장할 수 있다. 
+
+$$
+\hat a = \dfrac{\vec a}{\Vert a \Vert},
+ M_{\Pi_\hat a} = 
+$$  
 
 ## More Definition 
 
@@ -262,7 +267,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzUwNDExOCwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbLTE4ODYwNjk3OCwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
