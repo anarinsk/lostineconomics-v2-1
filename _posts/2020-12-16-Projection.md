@@ -46,7 +46,13 @@ $$
 
 말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
 
-### Projection 
+### Projection as outer product 
+
+$x$축 위로 프로젝션을 생각해보자. 이 역시 선형 변환이다. 기저를 생거
+
+$$
+
+$$
 
 ## More Definition 
 
@@ -204,11 +210,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxMDM0NTkzLC00MTI5NDc1ODksLTE4MD
-M2OTE2OTEsMTgwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMDc5MjIx
-MjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODczNjksLT
-MwODM5NTIyNywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEw
-MTc5NCwtNDY1MDM1NDY3LC0xMDkyODY4NTM2LDczODI1MzY4NS
-wtMjkyMzEyNTQ2LC0xMjEyMzEwMywyNDcyMjE3MzcsLTE0NjM0
-NDQwNjldfQ==
+eyJoaXN0b3J5IjpbMjEyNDQxNDg1OCwtNDEyOTQ3NTg5LC0xOD
+AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
+MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
+0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
+MDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2OD
+UsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYz
+NDQ0MDY5XX0=
 -->
