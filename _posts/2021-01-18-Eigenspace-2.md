@@ -124,19 +124,20 @@ u_1 & \dotsb & u_m \\
 $$
 
 $$
+\begin{aligned}
+A & =
+
 \underbrace{
 \begin{bmatrix}
 \sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
-\end{bmatrix}}_{}
+\end{bmatrix}}_{U \Sigma}
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix}
-$$
-
-$$
-= \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
+\end{bmatrix} \\
+& =  \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
+\end{aligned}
 $$
 
 $u_i v_i^T$는 각각 1의 rank를 지니고 앞에 곱해진 singular value의 기저로 이해할 수 있다. 해당 기저들의 선형 결합으로 매트릭스 $A$를 다시 분해할 수 있다. 
@@ -235,8 +236,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNzM1MTQxLDkyMzM2MDQ1NCwtOTE4OD
-UxNjc4LC05NDMxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAs
-MTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OT
-I4MDIwMDIsLTIwMjMzODg3NTAsMF19
+eyJoaXN0b3J5IjpbMTc1OTA4OTI1Nyw5MjMzNjA0NTQsLTkxOD
+g1MTY3OCwtOTQzMTExNTA1LDEzNTIwNjAyMiwxNDUyNTU2ODEw
+LDEwNjE2MDExMzcsLTIxMjcwNDQ4MjksLTE2MjE2NDgzNjksNT
+kyODAyMDAyLC0yMDIzMzg4NzUwLDBdfQ==
 -->
