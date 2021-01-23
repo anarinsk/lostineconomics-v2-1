@@ -110,7 +110,7 @@ $$
 \hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} \vec a = \hat b \hat b^T \vec a  
 $$  
 
-$\vec a$를 인풋 벡터로 이해하면 이를 $\vec b$의 프로젝션 위치로 옮기는 선형 변환이 $\Pi_{\hat{}}$
+$\vec a$를 인풋 벡터로 이해하면 이를 $\vec b$의 프로젝션 위치로 옮기는 선형 변환이 $\Pi_{\hat b}$에 해당한다. 
 
 ## More Definition 
 
@@ -268,11 +268,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4OTczOTg4LDEyMDc4ODM5MDcsMTQ5MT
-U1MTM5MSwtNDEyOTQ3NTg5LC0xODAzNjkxNjkxLDE4MDMzNTUz
-OTQsMTM5NzA4NzU3MSwtMTA3OTIyMTI1NywyMjg1Nzk4NTksLT
-E1NTMxNTM3NjUsMjM4Mzg3MzY5LC0zMDgzOTUyMjcsLTE2NzYw
-MjM0MywxMTYyMjQ4MjA3LDE1MjMxMDE3OTQsLTQ2NTAzNTQ2Ny
-wtMTA5Mjg2ODUzNiw3MzgyNTM2ODUsLTI5MjMxMjU0NiwtMTIx
-MjMxMDNdfQ==
+eyJoaXN0b3J5IjpbLTE1ODc3NjU5MzMsMTIwNzg4MzkwNywxND
+kxNTUxMzkxLC00MTI5NDc1ODksLTE4MDM2OTE2OTEsMTgwMzM1
+NTM5NCwxMzk3MDg3NTcxLC0xMDc5MjIxMjU3LDIyODU3OTg1OS
+wtMTU1MzE1Mzc2NSwyMzgzODczNjksLTMwODM5NTIyNywtMTY3
+NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1ND
+Y3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0x
+MjEyMzEwM119
 -->
