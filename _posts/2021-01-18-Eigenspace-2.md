@@ -110,6 +110,7 @@ $$
 SVD 식을 다시 조립해보자. 일단 $m \geq n$을 가정하자. 
 
 $$
+U \Sigma = 
 \begin{bmatrix}
 \vert & \dotsb & \vert \\
 u_1 & \dotsb & u_m \\
@@ -123,6 +124,7 @@ u_1 & \dotsb & u_m \\
 $$
 
 $$
+\underscore{
 \begin{bmatrix}
 \sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
 \end{bmatrix}
@@ -130,7 +132,7 @@ $$
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix} 
+\end{bmatrix}}_{U \Siga}
 $$
 
 $$
@@ -233,8 +235,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzMzYwNDU0LC05MTg4NTE2NzgsLTk0Mz
-ExMTUwNSwxMzUyMDYwMjIsMTQ1MjU1NjgxMCwxMDYxNjAxMTM3
-LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4MzY5LDU5MjgwMjAwMiwtMj
-AyMzM4ODc1MCwwXX0=
+eyJoaXN0b3J5IjpbLTE2NDI0OTA4NDcsOTIzMzYwNDU0LC05MT
+g4NTE2NzgsLTk0MzExMTUwNSwxMzUyMDYwMjIsMTQ1MjU1Njgx
+MCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4MzY5LD
+U5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
 -->
