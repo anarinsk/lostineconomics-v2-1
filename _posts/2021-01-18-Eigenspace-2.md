@@ -124,15 +124,15 @@ u_1 & \dotsb & u_m \\
 $$
 
 $$
-\underscore{
+\underbrace{
 \begin{bmatrix}
 \sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
-\end{bmatrix}
+\end{bmatrix}}_{}
 \begin{bmatrix}
 -- & v_1^T & -- \\
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
-\end{bmatrix}}_{U \Siga}
+\end{bmatrix}
 $$
 
 $$
@@ -235,8 +235,8 @@ $$
 
 따라서 $R$은 $Q^T A$로 구할 수 있다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI0OTA4NDcsOTIzMzYwNDU0LC05MT
-g4NTE2NzgsLTk0MzExMTUwNSwxMzUyMDYwMjIsMTQ1MjU1Njgx
-MCwxMDYxNjAxMTM3LC0yMTI3MDQ0ODI5LC0xNjIxNjQ4MzY5LD
-U5MjgwMjAwMiwtMjAyMzM4ODc1MCwwXX0=
+eyJoaXN0b3J5IjpbMzMwNzM1MTQxLDkyMzM2MDQ1NCwtOTE4OD
+UxNjc4LC05NDMxMTE1MDUsMTM1MjA2MDIyLDE0NTI1NTY4MTAs
+MTA2MTYwMTEzNywtMjEyNzA0NDgyOSwtMTYyMTY0ODM2OSw1OT
+I4MDIwMDIsLTIwMjMzODg3NTAsMF19
 -->
