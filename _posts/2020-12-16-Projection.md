@@ -94,7 +94,7 @@ $$
 $M_{\Pi_x}$를 외적의 관점에서 표현해보자. 
 
 $$
-\Pi_{x}(\vec v) = (\hat i \cdot \vec v) \hat i = 
+\Pi_{x}(\vec v) = (\hat i \cdot \vec v) \hat i = \hat i (\hat i \cdot \vec v) = \hat i (\hat i^T \vec v) = 
 $$
 
 ## More Definition 
@@ -253,11 +253,11 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzUzOTE2MywtNDEyOTQ3NTg5LC0xOD
-AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
-MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
-0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
-MDE3OTQsLTQ2NTAzNTQ2NywtMTA5Mjg2ODUzNiw3MzgyNTM2OD
-UsLTI5MjMxMjU0NiwtMTIxMjMxMDMsMjQ3MjIxNzM3LC0xNDYz
-NDQ0MDY5XX0=
+eyJoaXN0b3J5IjpbLTEzMTYxNDIyNDMsLTQxMjk0NzU4OSwtMT
+gwMzY5MTY5MSwxODAzMzU1Mzk0LDEzOTcwODc1NzEsLTEwNzky
+MjEyNTcsMjI4NTc5ODU5LC0xNTUzMTUzNzY1LDIzODM4NzM2OS
+wtMzA4Mzk1MjI3LC0xNjc2MDIzNDMsMTE2MjI0ODIwNywxNTIz
+MTAxNzk0LC00NjUwMzU0NjcsLTEwOTI4Njg1MzYsNzM4MjUzNj
+g1LC0yOTIzMTI1NDYsLTEyMTIzMTAzLDI0NzIyMTczNywtMTQ2
+MzQ0NDA2OV19
 -->
