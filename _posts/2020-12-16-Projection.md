@@ -46,6 +46,8 @@ $$
 
 말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
 
+### Projection 
+
 ## More Definition 
 
 - $S \subseteq \mathbb R^n$: $S$는 벡터 부분공간이라고 하자. 
@@ -202,7 +204,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5Njk5NjE1LC00MTI5NDc1ODksLTE4MD
+eyJoaXN0b3J5IjpbNjUxMDM0NTkzLC00MTI5NDc1ODksLTE4MD
 M2OTE2OTEsMTgwMzM1NTM5NCwxMzk3MDg3NTcxLC0xMDc5MjIx
 MjU3LDIyODU3OTg1OSwtMTU1MzE1Mzc2NSwyMzgzODczNjksLT
 MwODM5NTIyNywtMTY3NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEw
