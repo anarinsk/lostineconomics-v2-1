@@ -78,7 +78,7 @@ M_{\Pi_x} =
 \begin{bmatrix}
 1 \\
 0 \\
-\end{bmatrix}), 
+\end{bmatrix}),~
 \Pi_{x}(
 \begin{bmatrix}
 0 \\
@@ -104,10 +104,10 @@ $$
 \end{aligned}
 $$
 
-이 결과를 일반적인 벡터 $\vec a$에도 확장할 수 있다. $\vec a$ 방향으로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat a$ $M_{\Pi_{\hat a}}$
+이 결과를 일반적인 벡터 $\vec a$에도 확장할 수 있다. $\vec a$ 방향으로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat a$를 먼저 구해야 한다. 
 
 $$
-\hat a = \dfrac{\vec a}{\Vert a \Vert}, M_{\Pi_{\hat a}} =  
+\hat a = \dfrac{\vec a}{\Vert a \Vert},~M_{\Pi_{\hat a}} = \hat a \hat a^T  
 $$  
 
 ## More Definition 
@@ -266,7 +266,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mjg3NTI1MSwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbMTQ5MTU1MTM5MSwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
