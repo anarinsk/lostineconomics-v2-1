@@ -85,8 +85,13 @@ M_{\Pi_x} =
 1 \\
 \end{bmatrix}) 
 \end{bmatrix} = 
-\begin
+\begin{bmatrix}
+1 & 0 \\
+0 & 0
+\end{bmatrix}
 $$
+
+$M_{\Pi_x}$를 외적의 관점에서 표현해보자. 
 
 ## More Definition 
 
@@ -244,7 +249,7 @@ $$
 - Ivan Savov, *No bullshit guide to linear algebra 2nd Edition*, Minireference, 2017 
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTcwMTc4NCwtNDEyOTQ3NTg5LC0xOD
+eyJoaXN0b3J5IjpbLTI2NjkzNjg5MSwtNDEyOTQ3NTg5LC0xOD
 AzNjkxNjkxLDE4MDMzNTUzOTQsMTM5NzA4NzU3MSwtMTA3OTIy
 MTI1NywyMjg1Nzk4NTksLTE1NTMxNTM3NjUsMjM4Mzg3MzY5LC
 0zMDgzOTUyMjcsLTE2NzYwMjM0MywxMTYyMjQ4MjA3LDE1MjMx
