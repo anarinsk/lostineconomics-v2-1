@@ -46,12 +46,13 @@ from matplotlib import rc, font_manager
 font_fname = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
 prop = font_manager.FontProperties(fname=font_fname)
 mpl.rcParams['font.family'] = 'NanumGothic'
+matplotlib.rcParams['axes.unicode_minus']  = False
 font_manager._rebuild()
 ```
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU5Nzc1OTcsMTIyODAxOTk1MywxND
-U4NTE4NTAsLTE4NzA2Nzk5NDIsMTgyMjczNzQzNiwxMjkyNTAx
-MTY0LC00ODk0MjQzNjZdfQ==
+eyJoaXN0b3J5IjpbMTc2MzE3OTkxNywtMTIxNTk3NzU5NywxMj
+I4MDE5OTUzLDE0NTg1MTg1MCwtMTg3MDY3OTk0MiwxODIyNzM3
+NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
 -->
