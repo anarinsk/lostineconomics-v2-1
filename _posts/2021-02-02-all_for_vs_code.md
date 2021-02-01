@@ -35,7 +35,7 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 
 ## 핵심 
 
-![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
 
 - VS Code의 익스텐션 `Remote-Container` 컨테이너 접속 기능을 활용해 `datascience-notebook` 컨테이너 접속한다. 
   - 오른쪽 하단에 `><` 표시된 부분을 클릭하자. 아래와 같은 그림을 볼 수 있다. 여기에서 "Attach to Running Container"를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 올려둔 datascience 컨테이너를 선택하자. 
@@ -124,7 +124,7 @@ pip install -U radian
 
 앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너 내엣 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다. 
 
-![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="300"}
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
 - `Extension` > `REMOTE EXPLORER` > `DETAILS` 탭의 설정을 클릭하자. 
 - json 형식의 설정이 뜰 것이다. 여기서 관련 extension 등의 설정을 지정할 수 있다. 
