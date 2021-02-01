@@ -31,7 +31,7 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 
 개별 소프트웨어를 로컬 머신이 깔아서 쓸 수도 있을 것이고 이 경우 역시 아래를 참고해 설정하는 데 킅 어려움은 없다. 여기서는 WSL 2를 통해 docker를 활성화하고 jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 활용할 것이다. 
 
-자세한 것은 앞서의 포스팅을 참고하라. 간단히 말해 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 이미지만 날려버리면 된다. 용량이 좀 크지만 상당히 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공하고 있다. 
+자세한 것은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html)을 참고하라. 간단히 말해 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 이미지만 날려버리면 된다. 용량이 좀 크지만 상당히 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공하고 있다. 
 
 ## 핵심 
 
@@ -87,9 +87,9 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 
 ## For Rstat
 
-- 확장 두 개를 깐다. 
-  - R Support: https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r
-  - R LSP Client: https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp
+- 익스텐션 두 개를 깐다. 
+  - [R Support](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r)
+  - [R LSP Client](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp)
 - 다음으로 R 내에서 LSP와 연결할 패키지를 설치한다. 
 
 ```r
