@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-02-01T17:42:31-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">VS Code로 천하통일!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html" rel="alternate" type="text/html" title="VS Code로 천하통일!" /><published>2021-02-02T00:00:00-06:00</published><updated>2021-02-02T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html">&lt;p&gt;각자 언어에 맞는 IDE가 있다. R에는 RStudio가 가장 잘 어울린다. 하지만 이렇게 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결하고 싶을 수 있다. 전문 프로그래머를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 이 사이에서 타협할 수 있는 무엇이 없을까?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-02-01T17:43:43-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">VS Code로 천하통일!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html" rel="alternate" type="text/html" title="VS Code로 천하통일!" /><published>2021-02-02T00:00:00-06:00</published><updated>2021-02-02T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html">&lt;p&gt;각자 언어에 맞는 IDE가 있다. R에는 RStudio가 가장 잘 어울린다. 하지만 이렇게 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결하고 싶을 수 있다. 전문 프로그래머를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 이 사이에서 타협할 수 있는 무엇이 없을까?&lt;/p&gt;
 
 &lt;p&gt;MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제시해준다. 각설하고 파이썬, 줄리아, R을 하나의 에디터 위에 조금 편하게 사용하기 위해 필요한 준비물부터 살펴보자.&lt;/p&gt;
 
@@ -35,7 +35,7 @@
 
 &lt;h2 id=&quot;핵심&quot;&gt;핵심&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;VS Code의 익스텐션 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote-Container&lt;/code&gt; 컨테이너 접속 기능을 활용해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;datascience-notebook&lt;/code&gt; 컨테이너 접속한다.
@@ -167,7 +167,7 @@
 
 &lt;p&gt;앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너 내엣 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Extension&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOTE EXPLORER&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DETAILS&lt;/code&gt; 탭의 설정을 클릭하자.&lt;/li&gt;
