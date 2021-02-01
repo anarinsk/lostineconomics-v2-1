@@ -1,4 +1,204 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-01-27T05:54:45-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-02-01T17:30:01-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">VS Code로 천하통일!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html" rel="alternate" type="text/html" title="VS Code로 천하통일!" /><published>2021-02-02T00:00:00-06:00</published><updated>2021-02-02T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html">&lt;p&gt;각자 언어에 맞는 IDE가 있다. R에는 RStudio가 가장 잘 어울린다. 하지만 이렇게 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결하고 싶을 수 있다. 전문 프로그래머를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 이 사이에서 타협할 수 있는 무엇이 없을까?&lt;/p&gt;
+
+&lt;p&gt;MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제시해준다. 각설하고 파이썬, 줄리아, R을 하나의 에디터 위에 조금 편하게 사용하기 위해 필요한 준비물부터 살펴보자.&lt;/p&gt;
+
+&lt;h2 id=&quot;필요-조건&quot;&gt;필요 조건&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Windows 10 with WSL 2&lt;/li&gt;
+  &lt;li&gt;VS Code
+    &lt;ul&gt;
+      &lt;li&gt;Global extension
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote-Container&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Container extension
+        &lt;ul&gt;
+          &lt;li&gt;Julia&lt;/li&gt;
+          &lt;li&gt;Jupyter&lt;/li&gt;
+          &lt;li&gt;Python&lt;/li&gt;
+          &lt;li&gt;R&lt;/li&gt;
+          &lt;li&gt;R LSP Client&lt;/li&gt;
+          &lt;li&gt;Radian&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Docker Desktop&lt;/li&gt;
+  &lt;li&gt;jupyter/datascience-notebook:latest (from dockerhub)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;개별 소프트웨어를 로컬 머신이 깔아서 쓸 수도 있을 것이고 이 경우 역시 아래를 참고해 설정하는 데 킅 어려움은 없다. 여기서는 WSL 2를 통해 docker를 활성화하고 jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 활용할 것이다.&lt;/p&gt;
+
+&lt;p&gt;자세한 것은 앞서의 포스팅을 참고하라. 간단히 말해 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 이미지만 날려버리면 된다. 용량이 좀 크지만 상당히 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공하고 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;핵심&quot;&gt;핵심&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;VS Code의 익스텐션 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Remote-Container&lt;/code&gt; 컨테이너 접속 기능을 활용해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;datascience-notebook&lt;/code&gt; 컨테이너 접속한다.
+    &lt;ul&gt;
+      &lt;li&gt;오른쪽 하단에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&amp;lt;&lt;/code&gt; 표시된 부분을 클릭하자. 아래와 같은 그림을 볼 수 있다. 여기에서 “Attach to Running Container”를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 올려둔 datascience 컨테이너를 선택하자.&lt;/li&gt;
+      &lt;li&gt;컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 올리면 된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;각각의 언어에 접근하기 위해서 필요한 VS Code Extension을 설치한다.
+    &lt;ul&gt;
+      &lt;li&gt;Julia, Python의 경우 공식 확장이므로 쓰면 된다.&lt;/li&gt;
+      &lt;li&gt;R의 경우 비공식 확장이지만, 약간의 세팅을 거치면 꽤 근사하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-julia&quot;&gt;For Julia&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;필요한 파일을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.jl&lt;/code&gt; 확장자로 만든다.&lt;/li&gt;
+  &lt;li&gt;VS Code가 알아서 잘 잡아서 줄리아 커널과 연결시켜준다.&lt;/li&gt;
+  &lt;li&gt;간략한 실행 명령 체계를 살펴보자. 자세한 내용은 &lt;a href=&quot;https://www.julia-vscode.org/docs/stable/userguide/runningcode/&quot;&gt;여기&lt;/a&gt;를 참고하자.
+    &lt;ul&gt;
+      &lt;li&gt;코드 셀 구분은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;##&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;CTRL + ENTER 해당 라인 실행&lt;/li&gt;
+      &lt;li&gt;ALT + ENTER 코드 블럭 실행 (드래그앤드롭 선택)&lt;/li&gt;
+      &lt;li&gt;SHIFT + ENTER 코드 셀 실행&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;패키지 설치는 두가지로 가능하다.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Julia 콘솔에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;]&lt;/code&gt;를 치면 패키지 관리 모드로 들어간다.&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;div class=&quot;language-julia highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pkg&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SOMETHING&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;이렇게 설치할 경우는 별도로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pkg&lt;/code&gt;를 호출하지 않도 설치가 가능하다.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;아래와 같이 설치할 수도 있다.&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;div class=&quot;language-julia highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pkg&lt;/span&gt; 
+  &lt;span class=&quot;n&quot;&gt;Pkg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Plots&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Pkg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PyPlot&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;)&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Julia는 JIT를 쓰기 때문에 패키지를 설치하고 명령을 구동하는 데 시간이 오래 걸린다. 이 과정을 작업을 시작하기 전에 미래 해두는 것이 좋다. 즉, 필요한 경우 미리 컴파일을 해놓는 것이 좋다.&lt;/li&gt;
+  &lt;li&gt;QuantEcon에 소개된 &lt;a href=&quot;https://julia.quantecon.org/getting_started_julia/julia_by_example.html&quot;&gt;사례&lt;/a&gt;를 따르자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-python&quot;&gt;For Python&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;필요한 파일을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.py&lt;/code&gt; 확장자로 만든다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;간략한 명령어&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Code 블럭의 구별은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#%%&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Python은 VS Code에서 거의 완벽하고 편리하게 지원이 된다.&lt;/li&gt;
+      &lt;li&gt;별다른 설명이 필요하지 않다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;for-rstat&quot;&gt;For Rstat&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;확장 두 개를 깐다.
+    &lt;ul&gt;
+      &lt;li&gt;R Support: https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r&lt;/li&gt;
+      &lt;li&gt;R LSP Client: https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;다음으로 R 내에서 LSP와 연결할 패키지를 설치한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;remotes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install_github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;REditorSupport/languageserver&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;마지막으로 Rstat에서 편리하게 사용할 터미널 앱을 깐다. 파이썬으로 제작되었다. 다행스럽게도 DS 도커는 이미 파이썬을 잘 지원하기 때문에 쉽게 쓸 수 있다. 주의할 것은 Rstat 내부가 아니라 그냥 docker의 bash에 접속한 상태에서 깔아야 한다는 것이다. Radian은 텍스트 상에서 모든 정보를 편리하게 보여주기 때문에 VS Code의 부족함을 잘 메워준다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; radian 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이제 VS Code에서 설정 몇 가지를 바로 잡아 줘야 한다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File &amp;gt; Preferences &amp;gt; Settings&lt;/code&gt;로 가자&lt;/li&gt;
+      &lt;li&gt;옆에 탭을 보면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Extensions&lt;/code&gt;가 있을 것이다. 여기서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;R&lt;/code&gt;로 찾아가자.&lt;/li&gt;
+      &lt;li&gt;Extension의 설정을
+        &lt;ul&gt;
+          &lt;li&gt;User, Remote, Workspace 등 상황에 맞게 다양하게 정할 수 있다.&lt;/li&gt;
+          &lt;li&gt;여기서는 Workspace에 하도록 하겠다.
+            &lt;ul&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;R: Bracketed Paste&lt;/code&gt; 항목 체크&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;R › Rterm: Linux&lt;/code&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/opt/conda/bin/radian&lt;/code&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;R: Session Watcher&lt;/code&gt; 항목 체크&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;설정 항목에서 json 파일로 한방에 해결할 수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;jupyterlab&quot;&gt;Jupyterlab&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipynb&lt;/code&gt;를 확장자로 해서 노트북을 쓰고 싶다면, 그냥 만들어 쓰면 된다!&lt;/li&gt;
+  &lt;li&gt;VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;setting-for-remote-connection&quot;&gt;Setting for Remote Connection&lt;/h2&gt;
+
+&lt;p&gt;앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너 내엣 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Extension&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOTE EXPLORER&lt;/code&gt; &amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DETAILS&lt;/code&gt; 탭의 설정을 클릭하자.&lt;/li&gt;
+  &lt;li&gt;json 형식의 설정이 뜰 것이다. 여기서 관련 extension 등의 설정을 지정할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;extensions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ikuyadeu.r&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;julialang.language-julia&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ms-python.python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ms-toolsai.jupyter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;REditorSupport.r-lsp&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;workspaceFolder&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/home/jovyan/github-anari&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;forwardPorts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43463&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;		
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;settings&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;jupyter.alwaysTrustNotebooks&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;r.bracketedPaste&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;r.sessionWatcher&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;r.rterm.linux&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/opt/conda/bin/radian&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위 내용을 보면 필요한 엑스텐션, 워크 스페이스 폴더, 포워딩 포트 그리고 내부에 설정을 모두 필요에 따라서 지정할 수 있다. 설정 역시 이용자, container, workspace에 대해서 별도로 지정이 가능하다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="coding" /><summary type="html">각자 언어에 맞는 IDE가 있다. R에는 RStudio가 가장 잘 어울린다. 하지만 이렇게 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결하고 싶을 수 있다. 전문 프로그래머를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 이 사이에서 타협할 수 있는 무엇이 없을까? MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제시해준다. 각설하고 파이썬, 줄리아, R을 하나의 에디터 위에 조금 편하게 사용하기 위해 필요한 준비물부터 살펴보자. 필요 조건 Windows 10 with WSL 2 VS Code Global extension Remote-Container Container extension Julia Jupyter Python R R LSP Client Radian Docker Desktop jupyter/datascience-notebook:latest (from dockerhub) 개별 소프트웨어를 로컬 머신이 깔아서 쓸 수도 있을 것이고 이 경우 역시 아래를 참고해 설정하는 데 킅 어려움은 없다. 여기서는 WSL 2를 통해 docker를 활성화하고 jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 활용할 것이다. 자세한 것은 앞서의 포스팅을 참고하라. 간단히 말해 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 이미지만 날려버리면 된다. 용량이 좀 크지만 상당히 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공하고 있다. 핵심 VS Code의 익스텐션 Remote-Container 컨테이너 접속 기능을 활용해 datascience-notebook 컨테이너 접속한다. 오른쪽 하단에 &amp;gt;&amp;lt; 표시된 부분을 클릭하자. 아래와 같은 그림을 볼 수 있다. 여기에서 “Attach to Running Container”를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 올려둔 datascience 컨테이너를 선택하자. 컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 올리면 된다. 각각의 언어에 접근하기 위해서 필요한 VS Code Extension을 설치한다. Julia, Python의 경우 공식 확장이므로 쓰면 된다. R의 경우 비공식 확장이지만, 약간의 세팅을 거치면 꽤 근사하다. For Julia 필요한 파일을 .jl 확장자로 만든다. VS Code가 알아서 잘 잡아서 줄리아 커널과 연결시켜준다. 간략한 실행 명령 체계를 살펴보자. 자세한 내용은 여기를 참고하자. 코드 셀 구분은 ## CTRL + ENTER 해당 라인 실행 ALT + ENTER 코드 블럭 실행 (드래그앤드롭 선택) SHIFT + ENTER 코드 셀 실행 패키지 설치는 두가지로 가능하다. Julia 콘솔에서 ]를 치면 패키지 관리 모드로 들어간다. &amp;gt;(pkg) add SOMETHING 이렇게 설치할 경우는 별도로 Pkg를 호출하지 않도 설치가 가능하다. 아래와 같이 설치할 수도 있다. using Pkg Pkg.add(&quot;Plots&quot;) Pkg.add(&quot;PyPlot&quot;) Julia는 JIT를 쓰기 때문에 패키지를 설치하고 명령을 구동하는 데 시간이 오래 걸린다. 이 과정을 작업을 시작하기 전에 미래 해두는 것이 좋다. 즉, 필요한 경우 미리 컴파일을 해놓는 것이 좋다. QuantEcon에 소개된 사례를 따르자. For Python 필요한 파일을 .py 확장자로 만든다. 간략한 명령어 Code 블럭의 구별은 #%% Python은 VS Code에서 거의 완벽하고 편리하게 지원이 된다. 별다른 설명이 필요하지 않다. For Rstat 확장 두 개를 깐다. R Support: https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r R LSP Client: https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp 다음으로 R 내에서 LSP와 연결할 패키지를 설치한다. remotes::install_github(&quot;REditorSupport/languageserver&quot;) 마지막으로 Rstat에서 편리하게 사용할 터미널 앱을 깐다. 파이썬으로 제작되었다. 다행스럽게도 DS 도커는 이미 파이썬을 잘 지원하기 때문에 쉽게 쓸 수 있다. 주의할 것은 Rstat 내부가 아니라 그냥 docker의 bash에 접속한 상태에서 깔아야 한다는 것이다. Radian은 텍스트 상에서 모든 정보를 편리하게 보여주기 때문에 VS Code의 부족함을 잘 메워준다. pip install -U radian 이제 VS Code에서 설정 몇 가지를 바로 잡아 줘야 한다. File &amp;gt; Preferences &amp;gt; Settings로 가자 옆에 탭을 보면 Extensions가 있을 것이다. 여기서 R로 찾아가자. Extension의 설정을 User, Remote, Workspace 등 상황에 맞게 다양하게 정할 수 있다. 여기서는 Workspace에 하도록 하겠다. R: Bracketed Paste 항목 체크 R › Rterm: Linux /opt/conda/bin/radian R: Session Watcher 항목 체크 설정 항목에서 json 파일로 한방에 해결할 수도 있다. Jupyterlab ipynb를 확장자로 해서 노트북을 쓰고 싶다면, 그냥 만들어 쓰면 된다! VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다. Setting for Remote Connection 앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너 내엣 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다. Extension &amp;gt; REMOTE EXPLORER &amp;gt; DETAILS 탭의 설정을 클릭하자. json 형식의 설정이 뜰 것이다. 여기서 관련 extension 등의 설정을 지정할 수 있다. { &quot;extensions&quot;: [ &quot;Ikuyadeu.r&quot;, &quot;julialang.language-julia&quot;, &quot;ms-python.python&quot;, &quot;ms-toolsai.jupyter&quot;, &quot;REditorSupport.r-lsp&quot; ], &quot;workspaceFolder&quot;: &quot;/home/jovyan/github-anari&quot;, &quot;forwardPorts&quot;: [ 43463, ], &quot;settings&quot;: { &quot;jupyter.alwaysTrustNotebooks&quot;: true, &quot;r.bracketedPaste&quot;: true, &quot;r.sessionWatcher&quot;: true, &quot;r.rterm.linux&quot;: &quot;/opt/conda/bin/radian&quot; } } } 위 내용을 보면 필요한 엑스텐션, 워크 스페이스 폴더, 포워딩 포트 그리고 내부에 설정을 모두 필요에 따라서 지정할 수 있다. 설정 역시 이용자, container, workspace에 대해서 별도로 지정이 가능하다.</summary></entry><entry><title type="html">Eigenspace, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html" rel="alternate" type="text/html" title="Eigenspace, part 2" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/18/Eigenspace-2.html">&lt;h2 id=&quot;singluar-value-decomposition&quot;&gt;Singluar Value Decomposition&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
@@ -2420,45 +2620,4 @@ MzQ4XX0=
       &lt;p&gt;$z=0$ 근방에서 테일러 급수를 1차까지 근사하면 저 값을 얻을 수 있다. $z=0$ 인근에서 근사하는 이유는 $z=0$ 근처에서 $\frac{(z-0)^k}{k!}$ for $k=2,3,\dotsc$과 같은 고차 항의 크기가 점점 줄어들기 때문이다. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="math" /><category term="regression" /><category term="econometrics" /><summary type="html">당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.</summary></entry><entry><title type="html">Viva, Binder!</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html" rel="alternate" type="text/html" title="Viva, Binder!" /><published>2020-10-27T00:00:00-05:00</published><updated>2020-10-27T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/coding-tool/2020/10/27/viva-binder.html">&lt;p&gt;내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?&lt;/p&gt;
-
-&lt;p&gt;예를 들어보자. Python으로 특정한 결과를 도출하는 코드를 짰다고 하자. 당연히 내가 작업한 환경에 의존할 것이다. 다른 환경에서 돌아갈지 아닐지 모르지만 어쨌든 의존성은 피할 수 없다. 상대를 불러서 내 컴퓨터에서 돌아가는 모습을 보여줄 수 있다면 좋겠지만 그럴 수 없는 경우가 많다. 내가 돌려본 환경을 그대로 상대가 볼 수 있게 할 수는 없는 것일까?&lt;/p&gt;
-
-&lt;p&gt;당장 떠오르는 솔루션이 클라우드다. 클라우드에 소프트웨어 환경을 세팅하고 내가 테스트해본다. 원하는 상대에게 url을 주고 같은 테스트를 반복 체험하게 한다. 물론 좋다. 사실 AWS 같은 곳에 Linux 서버를 깔고 주피터 관련 패키지나 RStudio 등을 설치하기는 쉽다. AWS를 비롯해 많은 클라우드 업체에서 원스톱 서비스까지 제공한다. 그런데, 문제가 있다. 비용이 든다. 사용량이 많아서 뽕을 뽑을 수 있다면 덜 아깝겠지만 코드 공유하고 결과를 확인하는 정도가 족하다면 많이 아깝다.&lt;/p&gt;
-
-&lt;p&gt;이런 용도로 활용할 수 있는 ‘무료’ 서비스가 Binder이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mybinder.org/&quot;&gt;https://mybinder.org&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;turn-a-git-repo-into&quot;&gt;Turn a Git repo into!&lt;/h2&gt;
-
-&lt;p&gt;서비스 참 시원시원하다. 로그인도 필요 없다. 깃헙 레포에 있는 코드를 받아서 가상 머신 위에 해당 결과를 구현해준다. R, Python, Julia를 지원한다. 세 언어 모두 기본 베이스로 Jupyter허브를 활용한다. 간편한 연동을 위해서는 깃헙 리포를 public으로 설정해야 한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/binder_1.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;: 깃헙 주소를 넣는다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Git branch, tag or commit&lt;/code&gt;: 관련된 깃 브렌치, 태그, 커밋 등을 넣는다.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path to a notebook file&lt;/code&gt;: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipynb&lt;/code&gt; 파일이 깃 내에 서브 디렉토리에 있다면 여기서 노트북 파일의 위치등을 지정해주면 된다.
-    &lt;ul&gt;
-      &lt;li&gt;RStudio나 Shiny를 쓰고 싶다면, “File” 대신 “URL”로 바꾸고 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rstudio&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shiny&lt;/code&gt; 등을 지정해주면 된다.
-        &lt;ul&gt;
-          &lt;li&gt;R의 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r-2020-10-26&lt;/code&gt; 식으로 날짜가 적힌 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;runtime.txt&lt;/code&gt; 파일 그리고 패키지를 미리 인스톨하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.R&lt;/code&gt; 파일 두 개를 준비하면 된다.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;아래 공유를 위한 주소도 떠 있으니 공유를 할 때는 해당 주소만 던져주면 된다. 이제 &lt;kbd&gt;launch&lt;/kbd&gt; 버튼을 누르자. 상당히 오랜 시간 동안 뭔가가 설치된다. 설치되는 내용을 보면 소프트웨어 구동에 필요한 개별 이미지를 빌드한 후 이를 클라우드에 띄워 구동한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/gwcho_7.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/lostineconomics-v2-1/images/binder/gwcho_5.png&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;장점은 충분히 많다. 코드가 제대로 구현되는지 확인하는 수준이거나 코드를 가끔 짧은 시간 동안 실행해야 하는 정도라면 더 이상 바랄 게 없다. 단점이라면 도커 이미지를 빌드하고 녀석을 푸시해 실행할 때까지 시간이 좀 걸린다는 것인데, 뭐 이 정도 시간 비용 쯤이야!&lt;/p&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjU4MTMzNCwtODA1MDgxMzQwLC01MD
-Y2MzQ5NDAsLTEyMTk1MzE2MTNdfQ==
---&gt;</content><author><name></name></author><category term="coding" /><category term="coding-tool" /><summary type="html">내가 보고 있는 것을 남이 그대로 봐야 의사 소통이 온전해지는 경우가 있다. 아마도 코드를 나누는 경우가 그렇지 않을까 싶다. 이 점에서 Github은 꽤 좋은 코드 나눔 도구다. 그런데 문제가 하나 있다. Github을 통해 배포하는 것이 패키지라면 각자 땡겨가서 쓰면 되겠지만, 특정하게 실현된 결과물이라면?</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="math" /><category term="regression" /><category term="econometrics" /><summary type="html">당연히 알고 있다고 생각하지만 모르는 게 생각보다 많다. 회귀 분석에서 로그-리니어 모델, 즉 종속 변수에 로그를 취하고 독립 변수가 선형인 모델을 어떻게 이해해야 할까? 찬찬히 따져보자.</summary></entry></feed>
