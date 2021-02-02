@@ -149,7 +149,6 @@ pip install -U radian
 		"r.rterm.linux": "/opt/conda/bin/radian"
 	}
 }
-}
 ```
 
 - 위 내용을 보면 필요한 엑스텐션, 워크 스페이스 폴더, 포워딩 포트 그리고 내부에 설정을 모두 필요에 따라서 지정할 수 있다. 설정 역시 이용자, container, workspace에 대해서 별도로 지정이 가능하다. 
