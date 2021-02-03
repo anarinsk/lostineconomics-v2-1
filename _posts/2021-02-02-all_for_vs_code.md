@@ -117,7 +117,7 @@ pip install -U radian
 ## Jupyterlab 
 
 - `ipynb`를 확장자로 해서 노트북을 쓰고 싶다면, 그냥 만들어 쓰면 된다!
-- VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다 (아래 그림의 1).  그림의 2에서 보듯이 jupyterlab과 거의 비슷한 인터페이스를 지니고 있다. 
+- VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다 (아래 그림의 오른쪽 상단 박스). jupyterlab과 거의 비슷한 인터페이스를 지니고 있다. 
 
 ![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_3.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
 
