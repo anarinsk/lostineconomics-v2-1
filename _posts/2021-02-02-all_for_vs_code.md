@@ -123,12 +123,16 @@ pip install -U radian
 
 ## Setting for Remote Connection 
 
-앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너 내엣 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다. 
+앞서 보았듯이 도커를 활용하면 윈도우 혹은 다른 플랫폼의 VS Code를 통해 네트워크로 도커 내의 컨테이너로 접근하게 된다. 따라서 작업을 마치고 나오게 되면 매번 해당 컨테이너에 다시 접속을 해주고 워크 스페이스 등 여러가지 작업을 해줘야 하는 번거로움이 있다. 항상 도커 컨테이너를 거쳐 작업한다면 그냥 한방에 작업하던 환경이 뜨는 편이 좋다면 아래와 같이 하면 된다. 
 
 ![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-- `Extension` > `REMOTE EXPLORER` > `DETAILS` 탭의 설정을 클릭하자. 
-- json 형식의 설정이 뜰 것이다. 여기서 관련 extension 등의 설정을 지정할 수 있다. 
+- 만일 위와 같은 화면에 Remote Exlorer에서 뜨지 않는다면 컨테이너가 부착되지 않는 것이다. 컨테이너를 부착하면 된다. 
+
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_4.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
+
+- `Extension` > `REMOTE EXPLORER` > `DETAILS` 탭에서 가운데 설정 모양이 "Open Container Configuration File"이다.
+- 옆 에디터 창에 json 형식의 설정이 뜬뜬다. 여기서 관련 extension 등의 설정을 지정할 수 있다. 이렇게 설정을 해두면 해당 컨테이너를 부착할 때 설정한 대로 자동으로 옵션들이 적용된다. 매우 편리하다. 
 
 ```json 
 {
@@ -152,4 +156,8 @@ pip install -U radian
 }
 ```
 
-- 위 내용을 보면 필요한 엑스텐션, 워크 스페이스 폴더, 포워딩 포트 그리고 내부에 설정을 모두 필요에 따라서 지정할 수 있다. 설정 역시 이용자, container, workspace에 대해서 별도로 지정이 가능하다. 
+
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_5.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
+
+- `File` > `Perefences` > `Settings`에서도 설정에 접근할 수 있다. 
+- VS Code의 설정은 두가지 축을 지닌다. 하나는 각 영역별 혹은 익스텐션 별로 지정이 가능하다. 이 하나의 판본을 아래 그림에서 보듯이 User, Remote(컨네이터), Workspace 별로 별도로 지정할 수도 있다. 
