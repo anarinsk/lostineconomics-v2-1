@@ -160,4 +160,4 @@ pip install -U radian
 ![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_5.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
 
 - `File` > `Perefences` > `Settings`에서도 설정에 접근할 수 있다. 
-- VS Code의 설정은 두가지 축을 지닌다. 하나는 각 영역별 혹은 익스텐션 별로 지정이 가능하다. 이 하나의 판본을 아래 그림에서 보듯이 User, Remote(컨네이터), Workspace 별로 별도로 지정할 수도 있다. 
+- VS Code의 설정은 두가지 축을 지닌다. 하나는 설정 전체를 담은 json 파일이다. 왼쪽 `>` 표시된 항목에서처럼 카테고리 별로 구별되어 쉽게 접근할 수 있다. 이 하나의 설정을 아래 그림에서 보듯이 User, Remote(컨네이터), Workspace 별로 별도로 지정해 활용할 수도 있다. 
