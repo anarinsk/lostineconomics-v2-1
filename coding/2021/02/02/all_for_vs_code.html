@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-02-02T00:00:00-06:00" />
 <script type="application/ld+json">
-{"headline":"VS Code로 천하통일!","dateModified":"2021-02-02T00:00:00-06:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html","datePublished":"2021-02-02T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html"},"description":"Python, Julia, R을 하나로 코딩하자.","@context":"https://schema.org"}</script>
+{"headline":"VS Code로 천하통일!","dateModified":"2021-02-02T00:00:00-06:00","datePublished":"2021-02-02T00:00:00-06:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/02/02/all_for_vs_code.html"},"description":"Python, Julia, R을 하나로 코딩하자.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -146,9 +146,14 @@ window.onload = wrap_img;
   <li>jupyter/datascience-notebook:latest (from dockerhub)</li>
 </ul>
 
-<p>개별 소프트웨어를 로컬 머신에 깔아서 쓸 수도 있고, 이 경우 역시 아래를 참고해 설정하는 데 별 어려움이 없으리라 본다. 여기서는 WSL 2를 통해 docker를 활성화하고 jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 VS Code를 통해 부리는 방법을 소개한다.</p>
+<p>개별 소프트웨어를 로컬 머신에 깔아서 쓸 수도 있고, 이 경우 역시 아래를 참고해 설정하는 데 어려움이 없으리라 본다. 여기서는</p>
 
-<p>자세한 것은 <a href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">이 포스팅</a>을 참고하라. 간단히 말해 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 이미지만 날려버리면 된다. 용량이 좀 크지만 상당히 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공하고 있다.</p>
+<ul>
+  <li>WSL 2를 통해 docker를 활성화하고</li>
+  <li>jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와</li>
+</ul>
+
+<p>VS Code를 통해 부리는 방법을 소개한다. 이 두 가지 사항은 <a href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html">이 포스팅</a>을 참고하라. 간단히 요약하자. 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 컨테이너만 날려버리면 된다. 위에 소개한 <code class="language-plaintext highlighter-rouge">jupyter/datascience</code> 컨테이너는 다소 큰 용량이지만 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공한다.</p>
 
 <h2 id="핵심">핵심</h2>
 
@@ -324,7 +329,7 @@ window.onload = wrap_img;
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">File</code> &gt; <code class="language-plaintext highlighter-rouge">Perefences</code> &gt; <code class="language-plaintext highlighter-rouge">Settings</code>에서도 설정에 접근할 수 있다.</li>
-  <li>VS Code의 설정은 두가지 축을 지닌다. 하나는 설정 전체를 담은 json 파일이다. 왼쪽 <code class="language-plaintext highlighter-rouge">&gt;</code> 표시된 항목에서처럼 카테고리 별로 구별되어 쉽게 접근할 수 있다. 이 하나의 설정을 아래 그림에서 보듯이 User, Remote(컨네이터), Workspace 별로 별도로 지정해 활용할 수도 있다.</li>
+  <li>VS Code의 설정은 두가지 축을 지닌다. 하나는 설정 전체를 담은 json 파일이다. 왼쪽 <code class="language-plaintext highlighter-rouge">&gt;</code> 표시된 항목에서처럼 카테고리 별로 구별되어 쉽게 접근할 수 있다. 이 하나의 설정을 위 그림에서 보듯이 User, Remote(컨네이터), Workspace 별로 별도로 지정해 활용할 수도 있다.</li>
 </ul>
 
   </div><!-- from https://github.com/utterance/utterances -->
