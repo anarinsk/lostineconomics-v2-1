@@ -38,14 +38,13 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 ![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_1.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
 
 - VS Code의 익스텐션 `Remote-Container` 컨테이너 접속 기능을 활용해 `datascience-notebook` 컨테이너 접속한다. 
-  - 오른쪽 하단에 `><` 표시된 부분을 클릭하자. 아래와 같은 그림을 볼 수 있다. 여기에서 "Attach to Running Container"를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 올려둔 datascience 컨테이너를 선택하자. 
-  - 컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 올리면 된다. 
+  - 오른쪽 하단에 `><` 표시된 부분을 클릭하자. 위의 그림을 볼 수 있다. 여기에서 "Remote-Containers: Attach to Running Container..."를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 docker를 통해 돌려 둔 datascience 컨테이너를 선택하자. 
+  - 이 컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 올리면 된다. 
 - 각각의 언어에 접근하기 위해서 필요한 VS Code Extension을 설치한다. 
-  - Julia, Python의 경우 공식 확장이므로 쓰면 된다. 
-  - R의 경우 비공식 확장이지만, 약간의 세팅을 거치면 꽤 근사하다. 
+  - Julia, Python의 경우 공식 확장이 있어서 그대로 쓰면 된다. 
+  - R의 경우 비공식 확장이지만 약간의 세팅을 거치면 꽤 근사하게 사용할 수 있다. 
 
 ## For Julia 
-
 
 - 필요한 파일을 `.jl` 확장자로 만든다. 
 - VS Code가 알아서 잘 잡아서 줄리아 커널과 연결시켜준다. 
@@ -118,7 +117,9 @@ pip install -U radian
 ## Jupyterlab 
 
 - `ipynb`를 확장자로 해서 노트북을 쓰고 싶다면, 그냥 만들어 쓰면 된다!
-- VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다.  
+- VS Code에 Jupyter 확장이 있기 때문에 보통의 웹 브라우저에서 쓰는 Jupyter 노트북과 거의 동일한 기능을 제공한다. 웹 노트북에서와 마찬가지로 파이썬, 줄리아, R의 커널을 선택하면 된다 (아래 그림의 1).  그림의 2에서 보듯이 jupyterlab과 거의 비슷한 인터페이스를 지니고 있다. 
+
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/all-in-vs_code/avscode_3.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="700"}
 
 ## Setting for Remote Connection 
 
