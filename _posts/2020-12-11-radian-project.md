@@ -11,11 +11,11 @@ categories: [math, triagonometry]
 
 ## Why Radian 
 
-360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까, 싶다. 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.  
+360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까? 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.  
 
 ![degrees_vs_radians.png.webp (500×420) (betterexplained.com)](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-각도법은 중심에 위치한 관찰자의 위치를 반영한다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
+그림에서 보듯 각도법은 중심에 위치한 관찰자의 위치를 반영한다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다. 
 
 $$
 \theta = \dfrac{s}{r}
@@ -33,7 +33,7 @@ $$
 r (2 \pi)  \dfrac{d\degree}{360 \degree}
 $$
 
-이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다.내보자. $\frac{d\degree}{360 \degree}$ 부분을 호도법으로 바꿔야 한다. 따라서 분자와 분모 모두를 호도로 고쳐보자.  
+이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다. $\frac{d\degree}{360 \degree}$ 부분을 호도법으로 바꿔야 한다. 따라서 분자와 분모 모두를 호도로 고쳐보자.  
 
 $$
 360 \degree = \dfrac{r (2\pi)}{r} \rm radian = 2 \pi  ~\rm radian 
@@ -45,36 +45,32 @@ $$
 r (2\pi) \dfrac{\theta}{2 \pi} = r \theta
 $$
 
-즉 호도법으로 원호의 길이는 $r \theta$로 간편하게 표기된다. 
-
-호의 면적 역시 마찬가지다. 
+즉 호도법으로 원호의 길이는 $r \theta$로 간편하게 표기된다. 호의 면적 역시 마찬가지다. 
 
 $$
 r^2 \pi  \dfrac{\theta}{2 \pi} = r^2 \dfrac{\theta}{2}
 $$
 
-가끔 혼동될 때가 있다. 이렇게 외우자. 
-
-- 원 주 공식: $r(2 \pi) = r \theta_f$
-- 원 면적 공식: $r^2 \pi = r^2\dfrac{\theta_f}{2}$
-
-원 전체일 때 $\theta_f=2 \pi$가 된다. 
 
 ## Limit of sin, cos
 
 ### Limit of sin 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Limit_circle_FbN.jpeg/220px-Limit_circle_FbN.jpeg){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/radian/lim_sin.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="300"}
 
 삼각형의 면적을 보자. 
 
-- $\triangle {\rm OAB} = \dfrac{1}{2}\overline{\rm BD} \cdot \overline{\rm OA} = \dfrac{1}{2}\sin \theta \cdot 1$ 
-- ${\rm OAB} = \dfrac{1}{2} 1^2  \theta$
-- $\triangle {\rm OAC} = \dfrac{1}{2}\overline{\rm OA} \cdot \overline{\rm AC} = \dfrac{1}{2}1\cdot \tan \theta$
+$$
+\begin{aligned}
+\triangle {\rm OAI} & = \dfrac{1}{2} {\rm height} \cdot \overline{\rm OI} = \dfrac{1}{2}\sin \theta \cdot 1 \\
+\frown{\rm OAB} &= \dfrac{1}{2} 1^2  \theta \\
+\triangle {\rm OTI} &= \dfrac{1}{2}\overline{\rm TI} \cdot \overline{\rm OI} = \dfrac{1}{2}1\cdot \tan \theta
+\end{aligned}
+$$
 
 이 사이에 아래와 같은 관계가 성립한다. 
 
 $$
-\triangle \rm OAB \leq \rm OAB \leq \triangle \rm OAC
+\triangle \rm OAB \leq \frown \rm OAB \leq \triangle \rm OAC
 $$
 
 $$
@@ -82,14 +78,18 @@ $$
 $$
 
 $$
-1 \leq \dfrac{\sin \theta}{\theta} \leq \dfrac{1}{\cos \theta}
+\dfrac{\sin \theta}{\sin \theta} \leq \dfrac{\theta}{\sin \theta} \leq \dfrac{\tan \theta}{\sin \theta} 
 $$
 
 $$
-1 \leq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \leq \lim_{\theta \to 0} \dfrac{1}{\cos \theta} (= 1)
+1 \geq \dfrac{\sin \theta}{\theta} \geq {\cos \theta}
 $$
 
-따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.
+$$
+1 \geq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \geq \lim_{\theta \to 0} \cos \theta (= 1)
+$$
+
+샌드위치 정리에 따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.
 
 ### Limit of cos 
 
@@ -134,7 +134,7 @@ $$
 
 ## Taylor Series for sin, cos 
 
-이제 $\sin \theta$, $\cos \theta$를 $\theta$로 전개해보자. 
+이제 $\sin \theta$, $\cos \theta$를 $\theta$로 0 근방에서 전개해보자. 
 
 $$
 \begin{aligned}
@@ -161,12 +161,12 @@ e^{i \theta} &= e^0 + i (\theta - 0) + \dfrac{(i)^2}{2} (\theta-0)^2 + \dotsb \\
 \end{aligned}
 $$
 
-이제 실수와 허수를 따로 모아주면, 
+실수와 허수를 따로 모아주면, 
 
 $$
 \begin{aligned}
 e^{i \theta} & = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dotsb) + (\theta - \dfrac{\theta^3}{3!} + \dfrac{\theta^5}{5!} - \dotsb)i \\
-& = \cos \theta + i \sin \theta
+& = \cos \theta + i \cdot \sin \theta
 \end{aligned}
 $$
 
@@ -189,7 +189,7 @@ $(a, b)$가 데카르트 좌표 위에서 표현하는 위치까지의 거리를
 앞서 본 결과는 다음과 같다. 
 
 $$
-e^{\theta i} = \sin\theta + \cos \theta {\;} i
+e^{\theta i} = \sin\theta + i \cdot \cos \theta
 $$
 
 $\theta$는 각이기 때문에 이 녀석을 $\pi$만큼 돌려보도록 하자. 그러면 데카르트 좌표에서 $(-1,0)$에 떨어진다. 이는 실수-허수 평면에서 실수 $-1$, 허수 $0$이다. 즉, 
@@ -205,11 +205,11 @@ $$
 드무아브르의 법칙 또한 그냥 자명하다. 
 
 $$
-e^{\theta i} = \sin\theta + \cos\theta i
+e^{\theta i} = \sin\theta + i \cdot \cos\theta
 $$
 
 $$
-(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + \cos n \theta i
+(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + i \cdot \cos n \theta 
 $$
 
 
@@ -220,18 +220,16 @@ $e^{\theta i}$의 $n$ 승이 단위원을 중심으로 계속 회전하며 값�
 위의 사실들을 활용하면 몇 가지 재미있는 계산을 할 수 있다. 
 
 $$
-e^i = \sin 1 + \cos 1 i
+e^i = \sin 1 + i \cdot \cos 1 
 $$ 
 
 $3^i$는 어떨까? 이상해보이는 숫자지만, $e$를 활용하면 된다. 
 
 $$
-(e^{\ln 3})^i = \sin \ln(3) + \cos \ln (3) i
+(e^{\ln 3})^i = \sin \ln 3 + i \cdot \cos \ln 3
 $$
 
-$i^i$는 어떨까? 하나 하나 차근차근 접근해보자. 
-
-우선 $i = e^{\frac{\pi}{2} i}$이다. 원 (1,0), 즉 $e^0$에서 90도 반시계방향으로 회전하면 $i$에 도달하게 된다. 
+$i^i$는 어떨까? $i = e^{\frac{\pi}{2} i}$이다. 원 (1,0), 즉 $e^0$에서 90도 각을 지니면 좌표에서 $i$에 도달하게 된다. 
 
 $$
 i^i = (e^{\frac{\pi}{2} i})^i = e^{-\frac{\pi}{2}} 
@@ -243,7 +241,12 @@ $$
 \ln i^i = i \ln i = -\dfrac{\pi}{2}
 $$
 
-양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2}$. 
+양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2} i$. 
+
+사실 모든 것이 오일러 항등식에서 파생되는 것이다. $e^{i \pi} = -1$에서 시작하자. 
+
+1. 양변에 $\ln$을 취한다. $\ln e^{i \pi} = i \pi = \ln (-1)$
+2. $-1^{1/2}$에 $\ln$를 취한다. $\ln (-1)^{\frac{1}{2}}  = \ln \sqrt{-1} = \ln i = \dfrac{1}{2} i \pi$
 
 ### Complex growth 
 
