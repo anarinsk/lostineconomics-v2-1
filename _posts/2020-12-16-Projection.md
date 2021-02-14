@@ -12,39 +12,39 @@ categories: [math, matrix-theory]
 
 ### Definition 
 
-다음과 같은 두 개의 벡터, $\mathbf a$, $\mathbf b$를 일단 떠올려보자. 
+다음과 같은 두 개의 벡터, $\vec a$, $\vec b$를 일단 떠올려보자. 
 
 ![enter image description here](https://upload.wikimedia.org/wikipedia/commons/9/98/Projection_and_rejection.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="300"}
 
 스칼라 프로젝션 $a_1$의 정의는 다음과 같다. 
 
 $$
-a_1 ={\cos \theta}{\lVert \mathbf a \lVert} = \lVert \mathbf a_1 \lVert 
+a_1 ={\cos \theta}{\lVert \vec a \lVert} = \lVert \vec a_1 \lVert 
 $$
 
 각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 포스팅 [dot product](https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html)를 참고하라. 
 
 $$
-\cos \theta = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf a\lVert \lVert\mathbf b\lVert}
+\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert\vec a\lVert \lVert\vec b\lVert}
 $$
 
-따라서, $\hat\mathbf b = \dfrac{\mathbf b}{\lVert\mathbf b\lVert}$라고 할 때 
+따라서, $\hat\vec b = \dfrac{\vec b}{\lVert\vec b\lVert}$라고 할 때 
 
 $$
-a_1 = {\cos \theta}{\lVert \mathbf a \lVert} = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} = \mathbf a \cdot \hat\mathbf b
+a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat\vec b
 $$
 
-쉽게 말해서, $\mathbf a$ 벡터와 정규화된 $\mathbf b$의 닷프로덕트라고 생각하면 된다. 
+쉽게 말해서, $\vec a$ 벡터와 정규화된 $\vec b$의 닷프로덕트라고 생각하면 된다. 
 
 ### Vector projection 
 
-스칼라 프로젝션의 크기로 $\mathbf b$의 벡터를 만든 것이 벡터 프로젝션이다. $\mathbf a$를 $\mathbf b$ 위로 프로젝션한 벡터 $\Pi_{\mathbf b} (\mathbf a)$는 다음과 같다. 
+스칼라 프로젝션의 크기로 $\vec b$의 벡터를 만든 것이 벡터 프로젝션이다. $\vec a$를 $\vec b$ 위로 프로젝션한 벡터 $\Pi_{\vec b} (\vec a)$는 다음과 같다. 
 
 $$
-\mathbf a_1 = \Pi_{\mathbf b} (\mathbf a) = a_1 \hat\mathbf b = \dfrac{\mathbf a \cdot \mathbf b}{\lVert\mathbf b\lVert} \dfrac{\mathbf b}{\lVert\mathbf b\lVert}
+\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat\vec b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
 $$
 
-말로 풀어보자. $\mathbf b$와 같은 방향성을 지니는 벡터를 $\mathbf a$와 $\mathbf b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
+말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
 
 ### Projection as outer product 
 
@@ -117,7 +117,7 @@ $\vec a$를 인풋 벡터로 이해하면 이를 $\vec b$의 프로젝션 위치
 - $S \subseteq \mathbb R^n$: $S$는 벡터 부분공간이라고 하자. 
 - $S^\perp$: $S$와 직교 벡터들의 집합이고 이 역시 벡터 부분공간이다. 
 $$
-S^\perp = \{ \mathbf w \in \mathbb R^n : w \cdot S = 0 \} 
+S^\perp = \{ \vec w \in \mathbb R^n : \vec w \cdot S = 0 \} 
 $$
 - $\Pi_S$: 부분공간 $S$ 위로 프로젝션 
 - $\Pi_{S^\perp}$: 부분공간 $S^\perp$ 위로 프로젝션
@@ -128,63 +128,60 @@ $$
 \Pi_S: \mathbb R^n \to S
 $$
 
- $\mathbf x \in \mathbb R^n$의 어떤 벡터가 $\Pi_S$를 거치면 $S$에 속하지 않는 나머지 부분은 사라지게 된다. 즉, $S$라는 화면 위로 자신의 이미지를 투영한다고 보면 된다. 그래서 프로젝션이다. 
+ $\vec x \in \mathbb R^n$의 어떤 벡터가 $\Pi_S$를 거치면 $S$에 속하지 않는 나머지 부분은 사라지게 된다. 즉, $S$라는 화면 위로 자신의 이미지를 투영한다고 보면 된다. 그래서 프로젝션이다. 
 
 몇가지 특징은 다음과 같다. 
 
-- If ${\mathbf v} \in S$, then $\Pi_S(\mathbf v) = \mathbf v$
-- If $\mathbf w \in S$, then $\Pi_S(\mathbf w) = \mathbf 0$
-- if $\mathbf u = \alpha \mathbf v + \beta \mathbf w$ where $\mathbf v \in S$, $\mathbf w \in S^{\perp}$, then $\Pi_S(\mathbf u) = \alpha \mathbf v$
-- $\Pi_S(\mathbf v) (\Pi_S(\mathbf v) ) = \Pi_S(\mathbf v)$ (idempotent) 
+- If ${\vec v} \in S$, then $\Pi_S(\vec v) = \vec v$
+- If $\vec w \in S^\perp$, then $\Pi_S(\vec w) = \vec 0$
+- if $\vec u = \alpha \vec v + \beta \vec w$ where $\vec v \in S$, $\vec w \in S^{\perp}$, then $\Pi_S(\vec u) = \alpha \vec v$
+- $\Pi_S(\vec v) (\Pi_S(\vec v) ) = \Pi_S(\vec v)$ (idempotent) 
 
 ### Projection onto line 
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-그림에서 $\mathbf u$의 $\mathbf v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\mathbf v$ 대신 $l$로 표기된 점에 유의하자. 
+그림에서 $\vec u$의 $\vec v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\vec v$ 대신 $l$로 표기된 점에 유의하자. 
 
 $$
-l: \{ \mathbf v \in \mathbb R^n \lvert \mathbf v = \mathbf 0 + t \mathbf v, t \in \mathbb R \}
+l: \{ \vec v' \in \mathbb R^n \lvert \vec v' = \vec 0 + t \vec v, t \in \mathbb R \}
 $$
 
 $$
-\Pi_l(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v
+\Pi_l(\vec u) = \dfrac{\vec u \cdot \vec v}{\lVert\vec v\lVert^2} \vec v
 $$
 
 이제 여기서 $\Pi_{l^{\perp}}$를 구해보자. 
 
 $$
-\mathbf u = \Pi_{l} (\mathbf u) + \Pi_{l^{\perp}} (\mathbf u)
+\vec u = \Pi_{l} (\vec u) + \Pi_{l^{\perp}} (\vec u)
 $$
 
-잠시 생각해볼 것이 있다. $\Pi_{l^{\perp}}(\mathbf u)$가 의미하는 것은 무엇일까? $\mathbf u$에서 $\Pi_{l}(\mathbf u)$와 직교하는 벡터 프로젝션이다. 그런데, 둘은 $\Pi_{l^{\perp}}(\mathbf u)$ 만난다. 따라서, 프로젝션의 결과는 $\Pi_{l^{\perp}}(\mathbf u)$ 위에 있게 된다. 아래 그림은 이를 나타낸다. 또한, $\mathbf u$라는 벡터가 두 개의 직교하는 성분의 결합을 통해 표현될 수 있다는 것을 알 수 있다.  
+잠시 생각해볼 것이 있다. 
 
-$l$과 벡터 $\mathbf u$ 사이의 거리는 $\lVert\Pi_{l^\perp}\lVert$로 나타낼 수 있다. 그래서,  
-
-$$
-\lVert \mathbf u - \dfrac{\mathbf u \cdot \mathbf v}{\lVert\mathbf v\lVert^2} \mathbf v\lVert
-$$
+- $\Pi_{l^{\perp}}(\vec u)$가 의미하는 것은 무엇일까? $\vec u$에서 $\Pi_{l}(\vec u)$와 직교하는 벡터 프로젝션이다. 그런데, 둘은 $\Pi_{l^{\perp}}(\vec u)$ 만난다. 따라서, 프로젝션의 결과는 $\Pi_{l^{\perp}}(\vec u)$ 위에 있게 된다.위 그림은 이를 나타낸다. 
+- $\vec u$라는 벡터가 두 개의 직교하는 성분의 결합을 통해 표현될 수 있다는 것을 알 수 있다. $\vec u = \Pi_{l}(\vec u) + \Pi_{l^\perp}(\vec u)$
 
 ### Projection onto plane 
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-이제 평면 위로의 프로젝션을 생각해보자. 기본적인 원리는 동일하다. 이에 앞서 평면을 벡터로 표현하는 방법에 대해 알아보자. 가장 편리한 방법은 노멀 벡터를 활용하는 것이다. 즉, 평면 위의 점 $\mathbf {p_0}$를 지나는 $P$는 다음과 같이 정의할 수 있다. 
+평면 위로의 프로젝션을 생각해보자. 기본적인 원리는 동일하다. 이에 앞서 평면을 벡터로 표현하는 방법에 대해 알아보자. 가장 편리한 방법은 노멀 벡터를 활용하는 것이다. 즉, 평면 위의 점 $\vec {p_0}$를 지나는 $P$는 다음과 같이 정의할 수 있다. 
 
 $$
-P = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf p_0) = 0 \}
+P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec p_0) = 0 \}
 $$
 
-여기서 노멀 벡터 $\mathbf n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원의 경우 노멜 벡터는 3차원 공간에서 해당 평면이 놓인 모습을 결정한다. 
+여기서 노멀 벡터 $\vec n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원의 경우 노멜 벡터는 3차원 공간에서 해당 평면이 놓인 모습을 결정한다. 
 
 $$
-\mathbf u = \Pi_P(\mathbf u) + \Pi_{P^\perp}(\mathbf u)
+\vec u = \Pi_P(\vec u) + \Pi_{P^\perp}(\vec u)
 $$
 
-그림에서 보듯이 $\mathbf u$에서 $\mathbf n$으로의 프로젝션은 앞서 보았던 벡터에서 벡터로의 프로젝션이다. 따라서 앞서 구한 공식을 그대로 활용하자.  즉,  
+그림에서 보듯이 $\vec u$에서 $\vec n$으로의 프로젝션은 앞서 보았던 벡터에서 벡터로의 프로젝션이다. 따라서 앞서 구한 공식을 그대로 활용하자.  즉,  
 
 $$
-\Pi_{P^\perp}(\mathbf u) = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}
+\Pi_{P^\perp}(\vec u) = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}
 $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
@@ -192,17 +189,17 @@ $$
 벡터는 점과 달리 상대적인 위치로 정의된다. 벡터 연산은 그런 맥락에서 이루어진다. $\Pi_{P^\perp}$를 위 그림처럼 이동해 보자. 이렇게 보면 벡터 프로젝션이 자연스럽다. P에서의 위치는 변하지 않고 노멀 벡터 쪽으로만 변화하므로 벡터 자체는 이동 전 벡터와 이동 후 벡터가 동일하다. 즉,  $\Pi_{P^\perp}$를 왼쪽으로 이동시킨 벡터에 대한 프로젝션과 $\Pi_{P^\perp}$이 같다. 
 
 $$
-\Pi_{P^\perp} = \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
+\Pi_{P^\perp} = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}
 $$
 
 이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉, 
 
 $$
-\Pi_P(\mathbf u) + \Pi_{P^\perp} = \mathbf u 
+\Pi_P(\vec u) + \Pi_{P^\perp} = \vec u 
 $$
 
 $$
-\Pi_P(\mathbf u)  = \mathbf u - \dfrac{\mathbf u \cdot \mathbf n}{\lVert\mathbf n\lVert^2}{\mathbf n}
+\Pi_P(\vec u)  = \vec u - \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}
 $$
 
 ## Distance in Vector Space 
@@ -210,27 +207,27 @@ $$
 프로젝션은 거리를 측정할 때 유용하다. 먼저 원점(굳이 원점일 필요는 없다)과 해당 벡터 공간을 지나는 선 사이의 거리를 구해보자. 
 
 $$
-l: \{ \mathbf p \in \mathbb R^n | \mathbf p = \mathbf{p}_0 + t \mathbf v, t \in \mathbb R \}
+l: \{ \vec p \in \mathbb R^n | \vec p = \mathbf {p}_0 + t \vec v, t \in \mathbb R \}
 $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/line.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-위 그림에서 원점과 $l$의 거리는 어떻게 나타낼 수 있을까? $l$이 지나가는 $\mathbf p_0$를 그대로 두고, $l$이 원점을 지나가도록 이동해보자. 즉, 
+위 그림에서 원점과 $l$의 거리는 어떻게 나타낼 수 있을까? $l$이 지나가는 $\vec p_0$를 그대로 두고, $l$이 원점을 지나가도록 이동해보자. 즉, 
 
 $$
-l_0 = \{  \mathbf p \in \mathbb R^n | \mathbf p = \mathbf{0} + t \mathbf v, t \in \mathbb R \}
+l_0 = \{  \vec p \in \mathbb R^n | \vec p = \mathbf {0} + t \vec v, t \in \mathbb R \}
 $$
 
-이제 이 직선과 $\mathbf p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
+이제 이 직선과 $\vec p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
 
 $$
-d(l, \mathbf 0) = d(\mathbf p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \mathbf v}{\lVert \mathbf v\lVert^2}\mathbf v \lVert
+d(l, \vec 0) = d(\vec p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \vec v}{\lVert \vec v\lVert^2}\vec v \lVert
 $$
 
 이제 아래와 같은 평면과 원점의 거리를 측정해보자. 
 
 $$
-P = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf {p}_0) = 0 \}
+P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {p}_0) = 0 \}
 $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/plane.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
@@ -238,16 +235,16 @@ $$
 원점을 지나도록 평면을 이동시키고 평면의 노멀 벡터가 정의된 $p_0$와 원점을 지나는 평면 $P_0$ 사이의 거리를 측정하면 된다. 
 
 $$
-P_0 = \{ \mathbf p \in \mathbb R^n : \mathbf n \cdot(\mathbf p - \mathbf {0}) = 0 \}
+P_0 = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {0}) = 0 \}
 $$
 
 이 둘 사이의 거리는 $\Pi_{P^\perp}$의 거리와 같다. 즉, 
 
 $$
-d(P, \mathbf 0) = d(P_0, \mathbf p_0) = \lVert  \dfrac{\mathbf p_0 \cdot \mathbf n}{\lVert\mathbf n\lVert}\dfrac{\mathbf n}{\lVert \mathbf n \lVert}\lVert = \dfrac{|\mathbf p_0 \cdot \mathbf n |}{\lVert\mathbf n\lVert}
+d(P, \vec 0) = d(P_0, \vec p_0) = \lVert  \dfrac{\vec p_0 \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}\lVert = \dfrac{|\vec p_0 \cdot \vec n |}{\lVert\vec n\lVert}
 $$
 
-다시 확인해보자. 노멀 벡터 $\mathbf n$은 $\mathbf p_0$와 같은 같은 방향에 있는 벡터다. 따라서 위의 식이 성립한다. 
+다시 확인해보자. 노멀 벡터 $\vec n$은 $\vec p_0$와 같은 같은 방향에 있는 벡터다. 따라서 위의 식이 성립한다. 
 
 ## Application: Regression Coefficient 
 

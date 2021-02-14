@@ -34,7 +34,7 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 * WSL 2를 통해 docker를 활성화하고 
 * jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 
 
-VS Code를 통해 부리는 방법을 소개한다. 이 두 가지 사항은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html)을 참고하라. 간단히 요약하자. 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 컨테이너만 날려버리면 된다. 위에 소개한 `jupyter/datascience` 컨테이너는 다소 큰 용량이지만 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공한다. 
+VS Code를 통해 부리는 방법을 소개한다. 이 두 가지 사항은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html)을 참고하라. 간단히 요약하자. 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 컨테이너만 날려버리면 된다. 위에 소개한 `jupyter/datascience` 컨테이너는 다소 큰 용량이지만 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공한다.
 
 ## 핵심
 
