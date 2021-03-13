@@ -146,7 +146,7 @@ window.onload = wrap_img;
 
 <p>이제 도커 컨테이너 안의 이용한 주피터 노트북에서 다음과 같이 실행하면 나눔고딕 폰트를 쓸 수 있게 된다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="p">.</span><span class="o">/</span><span class="n">install_nanum</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="p">.</span><span class="o">/</span><span class="n">install_nanum</span><span class="p">.</span><span class="n">sh</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="n">mpl</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rc</span><span class="p">,</span> <span class="n">font_manager</span>
@@ -156,14 +156,20 @@ window.onload = wrap_img;
 <span class="n">mpl</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s">'axes.unicode_minus'</span><span class="p">]</span>  <span class="o">=</span> <span class="bp">False</span>
 <span class="n">font_manager</span><span class="p">.</span><span class="n">_rebuild</span><span class="p">()</span>
 </code></pre></div></div>
+<p>첫줄은 Jupyter 안에서 스크립트를 실행하는 명령어다.
+혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다.</p>
 
-<p>혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
+<p>Docker 컨테이너 내에 설치된 폰트를 확인하고 싶다면, 아래를 참고하라.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">font_list</span> <span class="o">=</span> <span class="n">font_manager</span><span class="p">.</span><span class="n">findSystemFonts</span><span class="p">(</span><span class="n">fontpaths</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fontext</span><span class="o">=</span><span class="s">'ttf'</span><span class="p">)</span>
+<span class="n">font_list</span><span class="p">;</span>
+</code></pre></div></div>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MjkzNjI1NSwxNzYzMTc5OTE3LC0xMj
+eyJoaXN0b3J5IjpbMjA5MjY3NTA1NCwxNzYzMTc5OTE3LC0xMj
 E1OTc3NTk3LDEyMjgwMTk5NTMsMTQ1ODUxODUwLC0xODcwNjc5
 OTQyLDE4MjI3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX
 0=
---></p>
+-->
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
