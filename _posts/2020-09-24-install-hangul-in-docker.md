@@ -40,19 +40,21 @@ sudo fc-cache -fv
 이제 도커 컨테이너 안의 이용한 주피터 노트북에서 다음과 같이 실행하면 나눔고딕 폰트를 쓸 수 있게 된다. 
 
 ```python
+!./install_nanum
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from matplotlib import rc, font_manager
 font_fname = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
 prop = font_manager.FontProperties(fname=font_fname)
 mpl.rcParams['font.family'] = 'NanumGothic'
-matplotlib.rcParams['axes.unicode_minus']  = False
+mpl.rcParams['axes.unicode_minus']  = False
 font_manager._rebuild()
 ```
 
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MzE3OTkxNywtMTIxNTk3NzU5NywxMj
-I4MDE5OTUzLDE0NTg1MTg1MCwtMTg3MDY3OTk0MiwxODIyNzM3
-NDM2LDEyOTI1MDExNjQsLTQ4OTQyNDM2Nl19
+eyJoaXN0b3J5IjpbMTc4MjkzNjI1NSwxNzYzMTc5OTE3LC0xMj
+E1OTc3NTk3LDEyMjgwMTk5NTMsMTQ1ODUxODUwLC0xODcwNjc5
+OTQyLDE4MjI3Mzc0MzYsMTI5MjUwMTE2NCwtNDg5NDI0MzY2XX
+0=
 -->
