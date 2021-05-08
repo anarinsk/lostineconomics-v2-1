@@ -55,7 +55,7 @@ font_manager._rebuild()
 
 ### Updated 
 
-2021년 5월 8일 기준으로 `font_manager`에서 `_rebuild()`가 없어졌더라. 현재 시점으로는 보이지 않았다. `install_nanum.sh`에서 `rm -fr ~/.cache/matplotlib`를 추가로 하나 더 실행해주자. 캐시에 저장된 matplotlib의 폰트 리스트를 지워버리면 최초 실행될 때 자동으로 폰트 리스트를 빌드한다. 
+2021년 5월 8일 기준으로 `font_manager`에서 `_rebuild()` 모듈이 없어졌더라. 현재 시점으로는 보이지 않았다. `install_nanum.sh`에서 `sudo rm -fr ~/.cache/matplotlib`를 추가로 하나 더 실행해주자. 캐시에 저장된 matplotlib의 폰트 리스트를 지워버리면 최초 실행될 때 자동으로 폰트 리스트를 빌드한다. 이때 설치한 일련의 나눔 폰트가 폰트 리스트에 잡힌다.  
 
 Docker 컨테이너 내에 설치된 폰트를 확인하고 싶다면, 아래를 참고하라. 
 
