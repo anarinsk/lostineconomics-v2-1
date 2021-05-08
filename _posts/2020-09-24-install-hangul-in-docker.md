@@ -53,12 +53,17 @@ font_manager._rebuild()
 첫줄은 Jupyter 안에서 스크립트를 실행하는 명령어다.
 혹시 잘 보이지 않으면, 커널을 한번 리프레시 해주면 된다. 다른 폰트를 설정하고 싶다면 비슷하게 응용해 활용하면 되겠다. 
 
+### Updated 
+
+2021년 5월 8일 기준으로 `font_manager`에서 `_rebuild()`가 없어졌더라. 이때는 이렇게 하면 된다. `install_nanum.sh`에서 `rm -fr ~/.cache/matplotlib`를 추가로 실행해주자. 
+
 Docker 컨테이너 내에 설치된 폰트를 확인하고 싶다면, 아래를 참고하라. 
 
 ```python
 font_list = font_manager.findSystemFonts(fontpaths=None, fontext='ttf')
-font_list;
+font_list
 ```
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjA5MjY3NTA1NCwxNzYzMTc5OTE3LC0xMj
 E1OTc3NTk3LDEyMjgwMTk5NTMsMTQ1ODUxODUwLC0xODcwNjc5
