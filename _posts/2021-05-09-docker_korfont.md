@@ -10,9 +10,9 @@ categories: [coding, docker, jupyter]
 
 ## Build도 어렵지 않다! 
 
-이 글은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html)에서 이어진다. 별도의 `sh` 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까? 방법이 있더라. 
+이 글은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html)에서 이어진다. 별도의 sh 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까? 방법이 있더라. 
 
-사실 이 포스팅을 쓰게된 동기는 따로 있다. 글을 쓰는 시점에서 <kbd>`matplotlib.font_manager._rebuild()`</kdb>가 사라졌고, Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다. 
+사실 이 포스팅을 쓰게된 동기는 따로 있다. 글을 쓰는 시점에서 `matplotlib.font_manager._rebuild()`가 사라졌다! 그래서 Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다. 
 
 docker-compose로 필요한 이미지를 끌어올 때 단순히 이미지를 끌어오는 대신 적당한 방식으로 build를 할 수 있다. 이전 포스팅에서는 build 옵션을 택하지 않았다. 빌드가 꽤 거창하게 느껴졌기 때문이다. 일단 필요한 ubuntu 버전을 끌어오고 여기에 Python, Jupyter를 깔고... 이 빌드 과정이 꽤 험난하고 불필요해보였다. Jupyter의 경우 데이터사이언스를 위한 도커 이미지가 따로 있었고, 이를 그대로 쓰면 큰 문제는 없다. 
 
@@ -58,7 +58,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y fonts-nanum* && f
 
 ### docker-compose.yml 
 
-docker-compose를 위한 yml을 예시한다. 각자 환경에 맞게 조금씩 변형해서 쓰면 되겠다. 파일 이름을 <kbd>`docker-jupyter.yml`</kbd>이라고 하자. 
+docker-compose를 위한 yml을 예시한다. 각자 환경에 맞게 조금씩 변형해서 쓰면 되겠다. 파일 이름을 "docker-jupyter.yml"이라고 하자. 
 
 ```shell
 version: '3'
