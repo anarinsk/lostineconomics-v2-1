@@ -8,6 +8,9 @@ categories: [docker, data-science]
 
 ---
 
+## 다른 방법 
+
+이 [포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html)은 도커 컨테이너 안에서 한글 문제를 해결하는 다른 방법을 제시하고 있다. 같이 참고 하시라. 
 
 ## 왜 필요한가?
 
