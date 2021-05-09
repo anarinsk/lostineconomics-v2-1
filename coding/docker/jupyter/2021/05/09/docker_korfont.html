@@ -125,14 +125,14 @@ window.onload = wrap_img;
 
 <p>이 글은 <a href="https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html">이 포스팅</a>에서 이어진다. 별도의 <code class="language-plaintext highlighter-rouge">sh</code> 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까? 방법이 있더라.</p>
 
-<p>사실 이 포스팅을 쓰게된 동기는 따로 있다. 글을 쓰는 시점에서 <code class="language-plaintext highlighter-rouge">matplotlib.font_manager._rebuild()</code>가 사라졌고, Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다.</p>
+<p>사실 이 포스팅을 쓰게된 동기는 따로 있다. 글을 쓰는 시점에서 <kbd>`matplotlib.font_manager._rebuild()`&lt;/kdb&gt;가 사라졌고, Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다.</kbd></p>
 
-<p><code class="language-plaintext highlighter-rouge">docker-compose</code>로 필요한 이미지를 끌어올 때 단순히 이미지를 끌어오는 대신 적당한 방식으로 build를 할 수 있다. 이전 포스팅에서는 build 옵션을 택하지 않았다. 빌드가 꽤 거창하게 느껴졌기 때문이다. 일단 필요한 ubuntu 버전을 끌어오고 여기에 Python, Jupyter를 깔고… 이 빌드 과정이 꽤 험난하고 불필요해보였다. Jupyter의 경우 데이터사이언스를 위한 도커 이미지가 따로 있었고, 이를 그대로 쓰면 큰 문제는 없다.</p>
+<p>docker-compose로 필요한 이미지를 끌어올 때 단순히 이미지를 끌어오는 대신 적당한 방식으로 build를 할 수 있다. 이전 포스팅에서는 build 옵션을 택하지 않았다. 빌드가 꽤 거창하게 느껴졌기 때문이다. 일단 필요한 ubuntu 버전을 끌어오고 여기에 Python, Jupyter를 깔고… 이 빌드 과정이 꽤 험난하고 불필요해보였다. Jupyter의 경우 데이터사이언스를 위한 도커 이미지가 따로 있었고, 이를 그대로 쓰면 큰 문제는 없다.</p>
 
 <p>도커를 빌드할 때 이 이미지에 기반하고 여기에 필요한 몇 가지 명령만 수행하면 많은 문제를 해결할 수 있지 않을까?</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">docker-compose</code>를 쓸 때 이미지를 지정하는 <code class="language-plaintext highlighter-rouge">image</code> 부분을 제외한 나머지는 거의 그대로 재사용이 가능하다.</li>
+  <li>docker-compose를 쓸 때 이미지를 지정하는 image 부분을 제외한 나머지는 거의 그대로 재사용이 가능하다.</li>
   <li>당연한 말이지만 image를 끌어오는 시간이나 몇 가지 명령어를 넣어서 build를 하는 시간이 크게 차이가 없더라.</li>
 </ul>
 
@@ -141,7 +141,7 @@ window.onload = wrap_img;
 <p>본론이다.</p>
 
 <ol>
-  <li>docker-compose를 위한 file이 있는 디렉토리 아래 <code class="language-plaintext highlighter-rouge">dockerfiles</code>와 같은 디렉토리를 하나 더 만든다. 여기에 docker build를 위한 파일을 넣어어둔다.</li>
+  <li>docker-compose를 위한 file이 있는 디렉토리 아래 dockerfiles 디렉토리를 하나 더 만든다 (디렉토리 이름은 각자 알아서). 여기에 docker build를 위한 파일을 넣어어둔다.</li>
   <li>docker-compose용 파일을 약간 수정한다.</li>
 </ol>
 
@@ -181,7 +181,7 @@ RUN apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nt">-y
 
 <h3 id="docker-composeyml">docker-compose.yml</h3>
 
-<p>docker-compose를 위한 yml을 예시한다. 각자 환경에 맞게 조금씩 변형해서 쓰면 되겠다. 파일 이름을 <code class="language-plaintext highlighter-rouge">docker-jupyter.yml</code>이라고 하자.</p>
+<p>docker-compose를 위한 yml을 예시한다. 각자 환경에 맞게 조금씩 변형해서 쓰면 되겠다. 파일 이름을 <kbd>`docker-jupyter.yml`</kbd>이라고 하자.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: <span class="s1">'3'</span>
 <span class="c">#</span>
