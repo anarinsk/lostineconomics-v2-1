@@ -42,7 +42,7 @@ $dt-green-light: rgb(172, 229, 145);
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
     border-radius: 5px;
-    font-size: 95%;
+    font-size: 105%;
 }
 .output_area pre, .output_area div {
     margin-bottom:1rem !important;
@@ -133,6 +133,7 @@ $dt-green-light: rgb(172, 229, 145);
     .p {
          font-weight: bold;
          color: rgb(102, 217, 239);
+         font-size: 95%;
  }
   
     .ge {
