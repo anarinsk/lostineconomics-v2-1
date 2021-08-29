@@ -12,9 +12,7 @@ categories: [coding, docker, jupyter]
 
 이 글은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html)에서 이어진다. 컨테이너를 올린 뒤 컨테이너 내 터미널에서 sh 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까? 
 
-사실 이 포스팅을 쓰게 된 동기는 따로 있다. 글을 쓰는 시점에서 `matplotlib.font_manager._rebuild()`가 사라졌다! Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다. 
-
-docker-compose로 필요한 이미지를 끌어올 때 단순히 이미지를 끌어오는 대신 특화된 형태로 build를 할 수도 있다. 이전 포스팅에서 소개한 방법에서는 build 옵션을 사용하지 않았다. 
+사실 이 포스팅을 쓰게 된 동기는 따로 있다. 글을 쓰는 시점에서 `matplotlib.font_manager._rebuild()`가 사라졌다! Jupyter에서 폰트 목록을 다시 생성할 다른 방법을 찾아야 했다. docker-compose로 필요한 이미지를 끌어올 때 단순히 이미지를 끌어오는 대신 특화된 형태로 build를 할 수도 있다. 이전 포스팅에서 소개한 방법에서는 build 옵션을 사용하지 않았다. 
 
 Build가 꽤 거창하게 느껴졌기 때문이다. 일단 적당한 ubuntu 버전을 끌어오고 여기에 Python, Jupyter를 깔고... 이런 빌드 과정이 꽤 험난하고 불필요해 보였다. Jupyter의 경우 데이터사이언스를 위한 잘 갖춰진 도커 이미지가 이미 있고, 이를 그대로 쓰면 큰 문제는 없다. 
 
@@ -37,7 +35,7 @@ Build가 꽤 거창하게 느껴졌기 때문이다. 일단 적당한 ubuntu 버
 
 ### dockerfiles 
 
-데이터 사이언스를 위한 Jupyter 파일을 예시로 들겠다. 다른 이미지라면 응용해서 쓰면 된다. 
+데이터 사이언스를 위한 Jupyter docker 파일을 예시로 들겠다. 다른 이미지라면 응용해서 쓰면 된다. 
 
 ```shell
 FROM jupyter/datascience-notebook:latest
@@ -53,7 +51,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y fonts-nanum* && f
 + `USER root` 이미지 내에서 root 권한을 부여한다. 이후 sudo는 안 써도 된다. 
 + `RUN sed -i...` 끌어온 우분투 이미지가 미국 기준이기 때문에 업데이트 서버 주소 역시 미국이다. 이걸 국내에서 가장 안정적이고 빠른 카카오 서버로 바꾼다. 
 + `RUN apt-get update && apt-get -y upgrade...` 
-    + 우분투 배포판의 업데이트 및 업그레이드를 단행한다. 
+    + 우분투 배포판의 업데이트 및 업그레이드를 실행한다.  
     + 나눔 폰트를 깔아준다. 
     + docker 이미지 배포판의 폰트 캐시를 지운다. 
     + Jupyter의 폰트 캐시를 지운다. 
