@@ -476,11 +476,11 @@ pre code { font-size: 15px !important; }
 
 .highlight .kc { color: #ace591; }
 
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; font-size: 19px; }
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; }
 
 .highlight .gd { color: #ff5555; }
 
-p code { font-size: 19px; }
+p code { font-size: 10px; }
 
 .post-content p, .post-content li { font-family: "Nanum Gothic", normal; font-size: 15px; color: #515151; font-weight: 400; }
 
