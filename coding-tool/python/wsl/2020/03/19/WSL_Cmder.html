@@ -16,20 +16,29 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-19T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"WSL + Cmder + python","dateModified":"2020-03-19T00:00:00-05:00","url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html","datePublished":"2020-03-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html"},"description":"WSL의 파이썬을 부려볼까?","@context":"https://schema.org"}</script>
+{"url":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html","@type":"BlogPosting","headline":"WSL + Cmder + python","dateModified":"2020-03-19T00:00:00-05:00","datePublished":"2020-03-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/coding-tool/python/wsl/2020/03/19/WSL_Cmder.html"},"description":"WSL의 파이썬을 부려볼까?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-159914345-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link href="https://cdn.jsdelivr.net/npm/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+  gtag('config', 'UA-159914345-1');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement( document.body, {
@@ -133,7 +142,7 @@ window.onload = wrap_img;
 
 <h2 id="wsl">WSL</h2>
 
-<p>윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> 일단 프리뷰 프로그램에 가입되어 있다면, WSL 2를 쓸 수 있다. 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote">2</a></sup></p>
+<p>윈도우 10의 가장 뛰어난 무기라면 Windows System for Linux (WSL)이 아닐까 싶다. 가상 머신을 돌리는 차원을 넘어서 거의 네이티브에 가깝게 리눅스를 지원한다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> 일단 프리뷰 프로그램에 가입되어 있다면, WSL 2를 쓸 수 있다. 아래 화면에서 보듯이 Windows Store에 Ubuntu가 올라와 있어서 설치에도 크게 신경 쓸 것이 없다.<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">2</a></sup></p>
 
 <p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_1.png" alt="" style="textalign:center; " width="800" /></p>
 
@@ -214,7 +223,7 @@ alias pip=pip3
 
 <h3 id="better-way">Better way</h3>
 
-<p>리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote">3</a></sup> 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자. 만일 설정된 파이썬 실행 명령이 없다면 아무 것도 뜨지 않을 것이다.</p>
+<p>리눅스에는 심볼릭 링크를 관리할 수 있는 툴이 있다.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">3</a></sup> 윈도의 바로가기를 생각하면 쉬울 듯 싶다. 먼저 현재 파이썬 버전을 체크해보자. 만일 설정된 파이썬 실행 명령이 없다면 아무 것도 뜨지 않을 것이다.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>python <span class="nt">-V</span>
 Python 2.7.14
@@ -296,7 +305,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="nb">source</span> ~/.pyvenv/pandas/bin/activate
 </code></pre></div></div>
 
-<p>웬만하면 가상 환경의 이름은 <code class="language-plaintext highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해줘야 한다.  가상환경은 독립된 환경이고 애초에 생성된 pip 버전을 따르게 된다. 가상 환경 내에서 pip 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">4</a></sup></p>
+<p>웬만하면 가상 환경의 이름은 <code class="language-plaintext highlighter-rouge">~/.pyvenv</code>로 설정하자. 가상 환경을 활성화할 경우 pip를 다시 업데이트해줘야 한다.  가상환경은 독립된 환경이고 애초에 생성된 pip 버전을 따르게 된다. 가상 환경 내에서 pip 업데이트는 아래와 같이 하면 된다.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">4</a></sup></p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span><span class="o">(</span>|your-venv|<span class="o">)</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
 </code></pre></div></div>
@@ -308,7 +317,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 
 <h3 id="pip-review">pip-review</h3>
 
-<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">5</a></sup></p>
+<p>conda처럼 편리한 패키지 업데이트가 필요하다면 이 녀석을 설치하도록 하자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">5</a></sup></p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~<span class="nv">$ </span>pip <span class="nb">install </span>pip-review 
 </code></pre></div></div>
@@ -369,7 +378,7 @@ pip 20.0.2 from /usr/local/lib/python3.7/dist-packages/pip <span class="o">(</sp
 <p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_6.png" alt="" style="textalign:center; " width="500" /></p>
 
 <ul>
-  <li>이제 확장자 <code class="language-plaintext highlighter-rouge">*.py</code> 혹은 <code class="language-plaintext highlighter-rouge">*.ipynb</code> 파일을 불러오면, VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote">6</a></sup></li>
+  <li>이제 확장자 <code class="language-plaintext highlighter-rouge">*.py</code> 혹은 <code class="language-plaintext highlighter-rouge">*.ipynb</code> 파일을 불러오면, VS Code가 자신의 환경에서 파이썬을 구동하는 데 필요한 프로그램을 자동으로 깐다. 그냥 깔게 두면 된다.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">6</a></sup></li>
 </ul>
 
 <p><img src="/lostineconomics-v2-1/images/wsl-cmder/fig_5b.png" alt="" style="textalign:center; " width="500" /></p>
