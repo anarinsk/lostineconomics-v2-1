@@ -477,7 +477,7 @@ pre code { font-size: 15px !important; }
 
 .highlight .kc { color: #ace591; }
 
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; }
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; font-size: 95%; }
 
 .highlight .gd { color: #ff5555; }
 
