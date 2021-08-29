@@ -8,9 +8,9 @@ categories: [coding]
 
 ---
 
-각자 언어에 맞는 IDE가 있다. R에는 RStudio가 가장 잘 어울린다. 하지만 이렇게 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결하고 싶을 수 있다. 전문 프로그래머를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 이 사이에서 타협할 수 있는 무엇이 없을까? 
+각자 언어에 맞는 IDE가 있다. 예를 들어 R에는 RStudio가 가장 잘 어울린다. 언어 별로 별도의 IDE 보다는 모든 것을 한방에 해결할 수는 없을까? 이러한 목적에 복무하는 코더를 위한 좋은 에디터들이 많이 있다. 하지만 설정이 쉽지 않고 아무래도 나 같은 문송한 존재들에게는 접근성이 떨어진다. 그리고 대체로 유료다! 이 사이에서 타협할 수 있는 제품이 없을까? 
 
-MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제시해준다. 각설하고 파이썬, 줄리아, R을 하나의 에디터 위에 조금 편하게 사용하기 위해 필요한 준비물부터 살펴보자. 
+MS에서 제공하는 무료 (만능) 에디터 VS Code는 여기서 제법 괜찮은 대안이다. 각설하고 파이썬, 줄리아, R을 VS code로 부리는 데 필요한 준비물을 살펴보자. 
 
 
 ## 필요 조건 
@@ -34,7 +34,7 @@ MS에서 제공하는 무료 만능 에디터 VS Code는 좋은 해결책을 제
 * WSL 2를 통해 docker를 활성화하고 
 * jupyter 개발자가 직접 관리하는 Data Science 노트북을 끌어와 
 
-VS Code를 통해 부리는 방법을 소개한다. 이 두 가지 사항은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html)을 참고하라. 간단히 요약하자. 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 컨테이너만 날려버리면 된다. 위에 소개한 `jupyter/datascience` 컨테이너는 다소 큰 용량이지만 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공한다.
+VS Code를 통해 부리는 방법을 소개한다. 위의 적은 두 가지 사항은 [이 포스팅](https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/23/docker-humble-practice.html)을 참고하자. 간단히 결론만 요약하면 다음과 같다. 도커를 쓰면 별도의 인스톨이 필요 없고 뭔가 꼬였을 때 해당 컨테이너만 날려버리면 된다. 위에 소개한 `jupyter/datascience` 컨테이너는 다소 큰 용량이지만 잘 갖춰진 파이썬, 줄리아, R의 프리셋을 제공한다.
 
 ## 핵심
 
@@ -42,14 +42,14 @@ VS Code를 통해 부리는 방법을 소개한다. 이 두 가지 사항은 [�
 
 - VS Code의 익스텐션 `Remote-Container` 컨테이너 접속 기능을 활용해 `datascience-notebook` 컨테이너 접속한다. 
   - 오른쪽 하단에 `><` 표시된 부분을 클릭하자. 위의 그림을 볼 수 있다. 여기에서 "Remote-Containers: Attach to Running Container..."를 클릭하면 현재 돌아가고 있는 docker 컨테이너를 볼 수 있다. 미리 docker를 통해 돌려 둔 datascience 컨테이너를 선택하자. 
-  - 이 컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 올리면 된다. 
+  - 이 컨테이너는 안에 python, jupyterlab, R, Julia를 모두 갖고 있다. 따라서 이 녀석 하나만 도커에 올리면 된다. 
 - 각각의 언어에 접근하기 위해서 필요한 VS Code Extension을 설치한다. 
   - Julia, Python의 경우 공식 확장이 있어서 그대로 쓰면 된다. 
   - R의 경우 비공식 확장이지만 약간의 세팅을 거치면 꽤 근사하게 사용할 수 있다. 
 
 ## For Julia 
 
-- 필요한 파일을 `.jl` 확장자로 만든다. 
+- 필요한 줄리아 작업 파일을 `.jl` 확장자로 만든다. 
 - VS Code가 알아서 잘 잡아서 줄리아 커널과 연결시켜준다. 
 - 간략한 실행 명령 체계를 살펴보자. 자세한 내용은 [여기](https://www.julia-vscode.org/docs/stable/userguide/runningcode/)를 참고하자. 
   - 코드 셀 구분은 `##`
