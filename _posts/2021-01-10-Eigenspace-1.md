@@ -230,22 +230,29 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.   .
 
 - $e_1 = v_1$
 - $e_2 = v_2 - \Pi_{e_1}(v_2)$
-- $e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
-- $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$ 
 
-이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화하면 된다. $\hat e_i$는 orthonormal, 즉 직교 벡터이면서 노멀 벡터다. 
+![gram-schmidt 1](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gram%E2%80%93Schmidt_process.svg/450px-Gram%E2%80%93Schmidt_process.svg.png){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-왜 프로젝션 벡터들의 빼기 형태로 들어갈까? 
+위의 그림에서 보듯이 $v_2$는 $v_1$ 프로젝션된 벡터와 이와 직교하는 $e_2$와의 합으로 계산할 수 있다. 따라서 $e_2 = v_2 - \Pi_{e_1}(v_2)$가 성립한다. 벡터의 빼기 관점에서 생각해보면 어떨까? $v_2$와 $\Pi_{e_1}(v_2)$의 차이가 $e_2$다. 벡터는 방향과 크기로 정의된다는 점을 다시 기억하자. 같은 방식으로 아래 그림에서 보듯이 더 많은 축과 직교하는 벡터들을 구성할 수 있다. 
+
+이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 $e_i$를 표준화하면 된다. 
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
-
-위 그림을 보면 알 수 있다. $u_1$, $u_2$가 주어져 있을 때 두 프로젝션 벡터 모두에 대해서 직교하는 벡터다. 이를 $w$라고 하자.  
 
 $$
 v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
 $$
 
-즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터로의 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다.  
+즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서 
+
+
+- $e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
+
+&emsp;&emsp;&emsp;$\vdots$
+
+- $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$ 
+
+
 
 ## Wrap-it-up 
 
