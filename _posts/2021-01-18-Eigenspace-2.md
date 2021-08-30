@@ -70,7 +70,7 @@ V =
 -- & \vdots & -- \\
 -- & v_n^T & -- \\
 \end{bmatrix}, \text{~where}
-\{ (\lambda_i, u_i) = \text{eigenvects}(A^T A) \}
+\{ (\lambda_i, v_i) = \text{eigenvects}(A^T A) \}
 $$
 
 이제  유사 대각행렬 $\Sigma$를 보자. 이 행렬은 $m \times n$ 형태다. 
@@ -168,7 +168,7 @@ $$
 
 ## LU 
 
-스퀘어 행렬에 대해서 $A = LU$를 수행할 수 있다. $L$과 $U$는 하방삼각 행렬과 상방삼각 행렬이다. 이렇게 매트릭스를 쪼개는 이유를 각각에 관해서 역행렬을 구하기 힘들기 때문이다. 즉, 
+$n \times n$ 정방 행렬에 대해서 $A = LU$를 수행할 수 있다. $L$과 $U$는 하방삼각 행렬과 상방삼각 행렬이다. 이렇게 매트릭스를 쪼개는 이유를 각각에 관해서 역행렬을 구하기 힘들기 때문이다. 즉, 
 
 $$
 A \vec x = LU \vec x = b \Leftrightarrow U \vec x = L^{-1}b \Leftrightarrow \vec x = U^{-1}L^{-1}b
