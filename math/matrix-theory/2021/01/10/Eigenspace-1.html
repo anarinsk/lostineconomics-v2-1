@@ -108,7 +108,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -400,21 +400,29 @@ p(\lambda)  = &amp; {\rm det} (A - \lambda I) \\
 <ul>
   <li>$e_1 = v_1$</li>
   <li>$e_2 = v_2 - \Pi_{e_1}(v_2)$</li>
-  <li>$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$</li>
-  <li>$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$</li>
 </ul>
 
-<p>이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 표준화하면 된다. $\hat e_i$는 orthonormal, 즉 직교 벡터이면서 노멀 벡터다.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gram%E2%80%93Schmidt_process.svg/450px-Gram%E2%80%93Schmidt_process.svg.png" alt="gram-schmidt 1" style="margin: auto; display: block; border:1.5px solid #021a40;" width="500" /></p>
 
-<p>왜 프로젝션 벡터들의 빼기 형태로 들어갈까?</p>
+<p>위의 그림에서 보듯이 $v_2$는 $v_1$ 프로젝션된 벡터와 이와 직교하는 $e_2$와의 합으로 계산할 수 있다. 따라서 $e_2 = v_2 - \Pi_{e_1}(v_2)$가 성립한다. 벡터의 빼기 관점에서 생각해보면 어떨까? $v_2$와 $\Pi_{e_1}(v_2)$의 차이가 $e_2$다. 벡터는 방향과 크기로 정의된다는 점을 다시 기억하자. 같은 방식으로 아래 그림에서 보듯이 더 많은 축과 직교하는 벡터들을 구성할 수 있다.</p>
+
+<p>이후 $\hat e_i = \dfrac{e_i}{\Vert e_i \Vert}$로 $e_i$를 표준화하면 된다.</p>
 
 <p><img src="https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720" alt="enter image description here" style="margin: auto; display: block; border:1.5px solid #021a40;" width="500" /></p>
 
-<p>위 그림을 보면 알 수 있다. $u_1$, $u_2$가 주어져 있을 때 두 프로젝션 벡터 모두에 대해서 직교하는 벡터다. 이를 $w$라고 하자.</p>
-
 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">j</mi></mrow><msub><mi>u</mi><mn>1</mn></msub></msub><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>+</mo><msub><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">j</mi></mrow><msub><mi>u</mi><mn>2</mn></msub></msub><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>+</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.09424em;vertical-align:-0.34424em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathrm">p</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">j</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.05725199999999997em;"><span style="top:-2.45586em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.34424em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.09424em;vertical-align:-0.34424em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord mathrm">p</span><span class="mord mathrm">r</span><span class="mord mathrm">o</span><span class="mord mathrm">j</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.05725199999999997em;"><span style="top:-2.45586em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.34424em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span></span></span></span></span>
 
-<p>즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터로의 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다.</p>
+<p>즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서</p>
+
+<ul>
+  <li>$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$</li>
+</ul>
+
+<p>   $\vdots$</p>
+
+<ul>
+  <li>$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$</li>
+</ul>
 
 <h2 id="wrap-it-up">Wrap-it-up</h2>
 
