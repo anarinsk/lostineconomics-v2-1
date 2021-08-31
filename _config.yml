@@ -91,7 +91,7 @@ markdown: kramdown
 kramdown:
   #math_engine: katex
   #math_engine_opts: {fleqn: true}
-  math_engine: katex
+  math_engine: null
   input: GFM
   auto_ids: true
   hard_wrap: false
