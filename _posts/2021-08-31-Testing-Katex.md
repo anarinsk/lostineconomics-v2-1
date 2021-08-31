@@ -23,6 +23,7 @@ R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_
 $$
 ```
 
+This is rendered with default fastpage option in `_config.yml`; `math_engine: null`
 $$
 \begin{aligned}
 R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
@@ -44,6 +45,8 @@ kramdown:
 
 The result is 
 
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/etc/with_katex.png?raw=true)
+
 `_config.yml` is set as
 
 ```yml
@@ -57,5 +60,8 @@ kramdown:
 
 The result is 
 
-The equation in displaystyle is not **Italicized**, and font size is smaller than inline math. 
+
+![](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/etc/with_mathjax.png?raw=true)
+
+The equation with `katex` option is not **Italicized**, and the font size is smaller than the one with `null`. 
 
