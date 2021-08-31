@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css?family=Sunflower:500");
 .highlight .c { color: #998; font-style: italic; }
 
@@ -483,9 +483,7 @@ pre code { font-size: 15px !important; }
 
 p code { font-size: 13px; }
 
-.post-content p, .post-content li { font-family: "Nanum Gothic", normal; font-size: 15px; color: #515151; font-weight: 400; }
-
-.math { font-family: Sans-Serif; font-style: normal; }
+.post-content p, .post-content li { font-family: "Noto Sans KR", normal; font-size: 15px; color: #515151; font-weight: 400; }
 
 .post img { display: block; border: 1px solid #021a40; vertical-align: top; margin-left: auto; margin-right: auto; }
 
