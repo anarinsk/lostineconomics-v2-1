@@ -3,22 +3,18 @@
 @import "minima/fastpages-dracula-highlight"; 
 
 // font loading 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR')
 @import url('https://fonts.googleapis.com/css?family=Sunflower:500');
 
 // Add your styles below
 // make non-headings slightly lighter
 .post-content p, .post-content li {   
-   font-family: "Nanum Gothic", normal;
+   font-family: "Noto Sans KR", normal;
    font-size: 15px;
    color: #515151;
    font-weight: 400;
-}
-
-.math {
-  font-family: Sans-Serif;
-  font-style: normal;
 }
 
 .post img {
