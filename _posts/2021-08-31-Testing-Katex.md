@@ -9,7 +9,7 @@ categories: []
 
 ## Purpose 
 
-This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post disppaers. 
+This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted. 
 
 ## Setting 
 
