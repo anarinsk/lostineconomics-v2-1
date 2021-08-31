@@ -16,11 +16,11 @@ categories: [math, matrix-theory]
 - $\vec v = (v_x, v_y, v_z)$: $\vec v \in \mathbb R^3$
 - $\hat v = \dfrac{v}{\lVert v \lVert}$: Unit vector 
 - $p_0$를 지나는 무한의 1차원 선은 다음과 같이 정의된다. 
-	- Parametric equation: 
+	- Parametric equation
 	$$
 	l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}
 	$$
-	- Symetric equation: 
+	- Symetric equation
 	$$
 	l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}
 	$$ 
