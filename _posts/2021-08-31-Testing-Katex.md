@@ -23,6 +23,12 @@ R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_
 $$
 ```
 
+$$
+\begin{aligned}
+R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
+\end{aligned}
+$$
+
 ## Problem 
 
 `_config.yml` is set as
