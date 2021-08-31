@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T07:40:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T15:20:32-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -718,7 +718,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;대각 행렬 $\Lambda$는 아이겐벡터들로 구성된 아이겐 공간의 기저(아이겐벡터)의 크기를 나타낸다.&lt;/p&gt;
 
-&lt;h3 id=&quot;take-this&quot;&gt;Take this!&lt;/h3&gt;
+&lt;h3 id=&quot;eat-this&quot;&gt;Eat this!&lt;/h3&gt;
 
 &lt;p&gt;대각화를 통해서 아이겐밸류의 중요한 특성 두 가지를 다시 음미해보자.&lt;/p&gt;
 
@@ -871,7 +871,7 @@ $$&lt;/div&gt;
   &lt;li&gt;아이겐분해(eigendecomposition)이란 닮음 행렬을 통해서 기저를 바꾸는 과정인데, 이때 기저를 바꾸는 매트릭스로 동원되는 것이 아이겐벡터 매트릭스다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;eat-this&quot;&gt;Eat this!&lt;/h3&gt;
+&lt;h3 id=&quot;eat-this-1&quot;&gt;Eat this!&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;$A$ positive semidefinite $\Rightarrow$ 아이겐밸류는 비음이다.&lt;/li&gt;
@@ -1183,7 +1183,10 @@ $$&lt;/div&gt;
 &lt;p&gt;아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. $C B C^{-1}$의 기저의 변화를 살펴보면,&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
-\underbrace{u \rightarrow \mathcal B}_{C^{-1}} \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C}
+\begin{aligned}
+\underbrace{u \rightarrow \mathcal B}_{C^{-1}} &amp; \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C} \\
+&amp; \cdots A \cdots
+\end{aligned}
 $$&lt;/div&gt;
 
 &lt;p&gt;로 나타낼 수 있다.&lt;/p&gt;
@@ -1282,11 +1285,11 @@ T(\hat e_1) &amp; \cdots &amp; T(\hat e_n) \\
 \end{aligned}
 $$&lt;/div&gt;
 
-&lt;h2 id=&quot;take-this&quot;&gt;Take This!&lt;/h2&gt;
+&lt;h2 id=&quot;eat-this&quot;&gt;Eat This!&lt;/h2&gt;
 
 &lt;h3 id=&quot;mapping-spaces&quot;&gt;Mapping Spaces&lt;/h3&gt;
 
-&lt;p&gt;선형 변환을 다시 적어보자. $T: V \to W$ where $V \in \mathbb R^n$, $W \in \mathbb R^m$. 즉 이 변환은 $n$ 차원의 벡터를 $m$ 차원으로 바꿔주는 것이다. 따라서 변환의 투입의 차원을 생각해보자. $n$ 차원은 로우 공간이 생성하는 $\mathcal R (M_T)$와 널 공간으로 가는 $\mathcal N(M_T)$으로 나뉘게 된다. 그리고 이 공간은 서로 direct sum 관계다. 이를 요약하면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;선형 변환을 다시 적어보자. $T: V \to W$ where $V \in \mathbb R^n$, $W \in \mathbb R^m$. 즉 이 변환은 $n$ 차원의 벡터를 $m$ 차원으로 바꿔주는 것이다. 이 변환의 투입이 지니는 차원을 생각해보자. $n$ 차원은 로우 공간이 생성하는 $\mathcal R (M_T)$와 널 공간으로 가는 $\mathcal N(M_T)$으로 나뉘게 된다. 그리고 이 공간은 서로 직합(direct sum) 관계다. 이를 요약하면 다음과 같다.&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
 T: \mathcal R(M_T) \to \mathcal C(M_T),~  
@@ -1299,13 +1302,19 @@ $$&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/sur_inj.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;함수에서 전사 함수와 단사 함수의 개념을 그대로 적용할 수 있다. 다만 단사 함수의 판단은 쉽다. 만일, $\vec v_1 \neq \vec v_2$이고 $\vec v_1, \vec v_2 \in \mathcal R(M_T)$라면 이는 선형 변환의 정의에 따라서 서로 다른 $\vec w$로 매핑된다. 따라서 만일 단사 변환이 되려면, $\mathcal N(M_T) = { \vec 0 }$만 성립하면 된다. 전사 함수의 정의는 통상적인 정의와 같다. 즉, ${\rm Im} (T) = \mathbb R^m$이면 된다.&lt;/p&gt;
+&lt;p&gt;함수에서 전사 함수와 단사 함수의 개념을 그대로 적용할 수 있다. 선형 변환 혹은 행렬도 함수다.&lt;/p&gt;
 
-&lt;p&gt;이를 매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 조건은 $m=n$이다. 
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI3OTU0MDEsLTEzODg1NjUxNTgsNT
-Y4MTU4OTcsLTM5NTY2MTQ2MV19
---&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html"></summary></entry><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
+&lt;p&gt;만일, $\vec v_1 \neq \vec v_2$이고 $\vec v_1, \vec v_2 \in \mathcal R(M_T)$라면 이는 선형 변환의 정의에 따라서 서로 다른 $\vec w$로 매핑된다. 따라서 만일 단사 변환이 되려면, $\mathcal N(M_T) = { \vec 0 }$만 성립하면 된다.&lt;/p&gt;
+
+&lt;div class=&quot;kdmath&quot;&gt;$$
+Ay - Az = A(y-z)
+$$&lt;/div&gt;
+
+&lt;p&gt;단사 변환이란 오직 $x = y$일 때만 $Ax = Ay$가 성립한다는 뜻이다. 즉 위의 식에서 $A(x-y) = 0$이 $x=y$일 때만 성립하면 된다. 즉, $A x = 0$이 $x=0$일 때만 성립하면 된다. 전사 변환의 정의는 통상적인 정의와 같다; ${\rm Im} (T) = \mathbb R^m$.&lt;/p&gt;
+
+&lt;p&gt;매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 로우 스페이스의 차원이 컬럼 스페이스보다 커야 컬럼 스페이스 전체를 생성할 수 있다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 1-1 대응이 가능하려면 컬럼 스페이스의 크기가 로우 스페이스보다 커여 한다.&lt;/p&gt;
+
+&lt;p&gt;따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 필요 조건은 정방 행렬,  $m=n$이다.&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html"></summary></entry><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
 
 &lt;p&gt;먼저 벡터 스페이스를 살펴보기 위해서 몇 가지 정의부터 보자.&lt;/p&gt;
 
