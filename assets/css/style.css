@@ -456,7 +456,7 @@ pre code { font-size: 15px !important; }
 
 .highlight .err, .highlight .g, .highlight .l, .highlight .n, .highlight .x, .highlight .ge, .highlight .gr, .highlight .gh, .highlight .gi, .highlight .gp, .highlight .gs, .highlight .gu, .highlight .gt, .highlight .ld, .highlight .no, .highlight .nd, .highlight .pi, .highlight .ni, .highlight .ne, .highlight .nn, .highlight .nx, .highlight .py, .highlight .w, .highlight .bp { color: #f8f8f2; background-color: #323443 !important; }
 
-.highlight .p { font-weight: bold; color: #66d9ef; font-size: 110%; }
+.highlight .p { font-weight: bold; color: #66d9ef; }
 
 .highlight .ge { text-decoration: underline; }
 
@@ -480,7 +480,7 @@ pre code { font-size: 15px !important; }
 
 .highlight .gd { color: #ff5555; }
 
-p code { font-size: 13px; }
+p code { font-size: 19px; }
 
 .post-content p, .post-content li { font-size: 15px; color: #515151; font-weight: 400; }
 
