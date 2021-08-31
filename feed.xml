@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T15:20:32-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T15:30:42-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -1296,7 +1296,7 @@ T: \mathcal R(M_T) \to \mathcal C(M_T),~
 T: \mathcal N(M_T) \to \{ \vec 0 \}
 $$&lt;/div&gt;
 
-&lt;p&gt;즉 인풋 $\vec v \in \mathcal R(M_T)$이 하나씩 $\vec w \in \mathcal C(M_T)$로 일대일로 대응된다. 한편, $\vec v \in \mathcal N(M_T)$는 $\vec 0 \in W$으로 대응된다.&lt;/p&gt;
+&lt;p&gt;즉 함수처럼 인풋 $\vec v \in \mathcal R(M_T)$이 $\vec w \in \mathcal C(M_T)$로 대응된다. 한편, $\vec v \in \mathcal N(M_T)$는 $\vec 0 \in W$으로 대응된다.&lt;/p&gt;
 
 &lt;h3 id=&quot;surjective-and-injective&quot;&gt;Surjective and Injective&lt;/h3&gt;
 
@@ -1314,7 +1314,9 @@ $$&lt;/div&gt;
 
 &lt;p&gt;매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 로우 스페이스의 차원이 컬럼 스페이스보다 커야 컬럼 스페이스 전체를 생성할 수 있다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 1-1 대응이 가능하려면 컬럼 스페이스의 크기가 로우 스페이스보다 커여 한다.&lt;/p&gt;
 
-&lt;p&gt;따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 필요 조건은 정방 행렬,  $m=n$이다.&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html"></summary></entry><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
+&lt;p&gt;따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 필요 조건은 정방 행렬,  $m=n$이다.&lt;/p&gt;
+
+&lt;p&gt;보다 상세한 내용은 &lt;a href=&quot;https://textbooks.math.gatech.edu/ila/one-to-one-onto.html&quot;&gt;여기&lt;/a&gt;를 참고하자.&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html"></summary></entry><entry><title type="html">Vector Geometry, part 2</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html" rel="alternate" type="text/html" title="Vector Geometry, part 2" /><published>2021-01-06T00:00:00-06:00</published><updated>2021-01-06T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/06/vector-geometry-2.html">&lt;h2 id=&quot;vector-space&quot;&gt;Vector Space&lt;/h2&gt;
 
 &lt;p&gt;먼저 벡터 스페이스를 살펴보기 위해서 몇 가지 정의부터 보자.&lt;/p&gt;
 
