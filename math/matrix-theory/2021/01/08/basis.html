@@ -414,9 +414,9 @@ $$</div>
 A = C B C^{-1}
 $$</div>
 
-<p>$A$과 $B$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $A$과 $B$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $A^n = C B^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $B$가 어떤 매트릭스냐에 따라서 계산 상 편리함을 줄 수 있다.</p>
+<p>$A$과 $B$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $A$과 $B$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $A^n = C B^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $B$가 어떤 매트릭스냐에 따라서 계산 상 편리함을 줄 수 있다. 만일 $B$가 대각 행렬이라면 행렬의 $n$은 대각 원소의 $n$ 승만 수행하면 된다.</p>
 
-<p>$C$가 역행렬을 지니기 때문에 $C$의 컬럼은 $\mathbb R^n$의 기저가 된다. 이렇게 보면 $C$는 change-of-basis와 같은 맥락에서 이해할 수 있다. 즉, 위의 기저를 바꾸는 식과 동일한 식이 셈이다. $A x$라는 변환을 이 맥락에서 다시 이해해보자. 여기서 $\mathcal B$는 표준 기저($\hat e_i$)로 이해하면 된다.</p>
+<p>$C$가 역행렬을 지니기 때문에 $C$의 컬럼은 $\mathbb R^n$의 기저가 된다. 이렇게 보면 $C$는 change-of-basis와 같은 맥락에서 이해할 수 있다. 즉, 앞서 살펴 본 기저를 바꾸는 행렬과 동일한 행렬이다. $A x$라는 변환을 이 맥락에서 다시 이해해보자. 여기서 $\mathcal B$는 표준 기저($\hat e_i$)로 이해하면 된다.</p>
 
 <ol>
   <li>
@@ -430,7 +430,13 @@ $$</div>
   </li>
 </ol>
 
-<p>아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. $C B C^{-1}$의 기저의 변화를 살펴보면, $u \rightarrow \mathcal B \rightarrow B \rightarrow u$로 나타낼 수 있다.</p>
+<p>아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. $C B C^{-1}$의 기저의 변화를 살펴보면,</p>
+
+<div class="kdmath">$$
+\underbrace{u \rightarrow \mathcal B}_{C^{-1}} \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C}
+$$</div>
+
+<p>로 나타낼 수 있다.</p>
 
 <p><img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/basis/coord.png?raw=true" alt="enter image description here" style="margin: auto; display: block; border:1.5px solid #021a40;" width="500" /></p>
 
