@@ -482,7 +482,7 @@ pre code { font-size: 15px !important; }
 
 p code { font-size: 13px; }
 
-.post-content p, .post-content li { font-family: "Nanum Gothic", normal; font-size: 15px; color: #515151; font-weight: 400; }
+.post-content p, .post-content li { font-family: "Nanum Gothic"; font-size: 15px; color: #515151; font-weight: 400; }
 
 .post img { display: block; border: 1px solid #021a40; vertical-align: top; margin-left: auto; margin-right: auto; }
 
