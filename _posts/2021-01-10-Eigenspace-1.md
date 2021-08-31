@@ -43,13 +43,11 @@ $
 
 대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자. 
 
-$
-A = 
+$A = 
 \begin{bmatrix}
 1 & 2 \\
 0 & 1
-\end{bmatrix}
-$
+\end{bmatrix}$
 
 $A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?
 
@@ -271,13 +269,3 @@ $
 1. $A$ positive semidefinite $\Rightarrow$ 아이겐밸류는 비음이다. 
 2. $A$ symmetric $\Rightarrow$ 아이겐밸류는 실수 
 3. $A$ normal ($A^T A = A A^T$) $\Rightarrow$ $Q$를 직교 행렬 $O$로 고를 수 있다($O^T O = I$). 
-
-
-
-
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTM5MTg2LDEyMTQwODMxNDUsNDgwOD
-MxMzU0LC0yMDE5MjUzMjY3LC0xOTg5NDUzMTc3XX0=
--->
