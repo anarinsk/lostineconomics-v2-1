@@ -132,11 +132,10 @@ R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_
 $$
 </code></pre></div></div>
 
-<div class="kdmath">$$
-\begin{aligned}
+<p>This is rendered with default fastpage option in <code class="language-plaintext highlighter-rouge">_config.yml</code>; <code class="language-plaintext highlighter-rouge">math_engine: null</code>
+<span class="kdmath">$\begin{aligned}
 R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
-\end{aligned}
-$$</div>
+\end{aligned}$</span></p>
 
 <h2 id="problem">Problem</h2>
 
@@ -152,6 +151,8 @@ $$</div>
 
 <p>The result is</p>
 
+<p><img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/etc/with_katex.png?raw=true" alt="" /></p>
+
 <p><code class="language-plaintext highlighter-rouge">_config.yml</code> is set as</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kramdown</span><span class="pi">:</span>
@@ -164,7 +165,9 @@ $$</div>
 
 <p>The result is</p>
 
-<p>The equation in displaystyle is not <strong>Italicized</strong>, and font size is smaller than inline math.</p>
+<p><img src="https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/etc/with_mathjax.png?raw=true" alt="" /></p>
+
+<p>The equation with <code class="language-plaintext highlighter-rouge">katex</code> option is not <strong>Italicized</strong>, and the font size is smaller than the one with <code class="language-plaintext highlighter-rouge">null</code>.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
