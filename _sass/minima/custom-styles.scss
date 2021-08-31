@@ -3,7 +3,7 @@
 @import "minima/fastpages-dracula-highlight"; 
 
 // font loading 
-//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 @import url('https://fonts.googleapis.com/css?family=Sunflower:500');
@@ -26,5 +26,5 @@
 }
 
 h1, h2, h3, h4, h5, h6{
-   font-family:"Sunflower", normal; 
+   font-family:"Roboto Slab", normal; 
 }
