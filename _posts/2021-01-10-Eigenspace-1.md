@@ -3,8 +3,9 @@ layout: post
 toc: false
 comments: true
 title:  Eigenspace, part 1 
-use_math: true
 description: 아이겐 공간을 이해하자.  
+katex: 
+   - displayMode: true
 categories: [math, matrix-theory]
 
 ---
