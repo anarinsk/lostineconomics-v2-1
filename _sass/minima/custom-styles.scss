@@ -25,6 +25,12 @@
    margin-right: auto;
 }
 
+// # font 
 h1, h2, h3, h4, h5, h6{
    font-family:"Sunflower", normal; 
+}
+
+// inline code size (minima/fastpages-dracula-highlight.css)
+p code{
+  font-size: 13px;
 }
