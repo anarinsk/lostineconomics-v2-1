@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T06:23:43-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T07:17:33-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+
+&lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post disppaers.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting&quot;&gt;Setting&lt;/h2&gt;
+
+&lt;p&gt;I’m not touch anything in default setting for latest version of fastpage. Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;displaystyle&lt;/code&gt; by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
+\begin{aligned}
+R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
+\end{aligned}
+$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; is set as&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;kramdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;math_engine&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;katex&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GFM&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;auto_ids&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;hard_wrap&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;syntax_highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rouge&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The result is&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; is set as&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;kramdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;math_engine&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;null&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GFM&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;auto_ids&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;hard_wrap&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;syntax_highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rouge&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The result is&lt;/p&gt;
+
+&lt;p&gt;The equation in displaystyle is not &lt;strong&gt;Italicized&lt;/strong&gt;, and font size is smaller than inline math.&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post disppaers. Setting I’m not touch anything in default setting for latest version of fastpage. Using displaystyle by using $$. $$ \begin{aligned} R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2. \end{aligned} $$ Problem _config.yml is set as kramdown: math_engine: katex input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is _config.yml is set as kramdown: math_engine: null input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is The equation in displaystyle is not Italicized, and font size is smaller than inline math.</summary></entry><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
 
 &lt;p&gt;이 글은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html&quot;&gt;이 포스팅&lt;/a&gt;에서 이어진다. 컨테이너를 올린 뒤 컨테이너 내 터미널에서 sh 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까?&lt;/p&gt;
 
@@ -1727,263 +1768,4 @@ wtMTU1MzE1Mzc2NSwyMzgzODczNjksLTMwODM5NTIyNywtMTY3
 NjAyMzQzLDExNjIyNDgyMDcsMTUyMzEwMTc5NCwtNDY1MDM1ND
 Y3LC0xMDkyODY4NTM2LDczODI1MzY4NSwtMjkyMzEyNTQ2LC0x
 MjEyMzEwM119
---&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Projection: Scalar and Vector</summary></entry><entry><title type="html">Personal Note on Triagonometry</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html" rel="alternate" type="text/html" title="Personal Note on Triagonometry" /><published>2020-12-11T00:00:00-06:00</published><updated>2020-12-11T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/triagonometry/2020/12/11/radian-project.html">&lt;h2 id=&quot;why-radian&quot;&gt;Why Radian&lt;/h2&gt;
-
-&lt;p&gt;360$\degree$ 도법은 익숙하지만 다소 자의적이다. 사실 호도법을 도입하는 이유는 $\pi$를 계산에 통합하기 위해서가 아닐까? 호도법으로 표기하면 미분 등을 할 때 $\pi$가 튀어나오지 않는다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/angles/degrees_vs_radians.png.webp&quot; alt=&quot;degrees_vs_radians.png.webp (500×420) (betterexplained.com)&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;그림에서 보듯 각도법은 중심에 위치한 관찰자의 위치를 반영한다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\theta = \dfrac{s}{r}
-$$&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\theta$: 각도&lt;/li&gt;
-  &lt;li&gt;$s$: 원주에서 이동한 거리&lt;/li&gt;
-  &lt;li&gt;$r$: 반지름&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;circumvent-of-circle&quot;&gt;Circumvent of Circle&lt;/h2&gt;
-
-&lt;p&gt;$d\degree$의 각도를 지니는 호의 길이를 구해보자.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-r (2 \pi)  \dfrac{d\degree}{360 \degree}
-$$&lt;/div&gt;
-
-&lt;p&gt;이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다. $\frac{d\degree}{360 \degree}$ 부분을 호도법으로 바꿔야 한다. 따라서 분자와 분모 모두를 호도로 고쳐보자.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-360 \degree = \dfrac{r (2\pi)}{r} \rm radian = 2 \pi  ~\rm radian
-$$&lt;/div&gt;
-
-&lt;p&gt;$d\degree = \theta~\rm radian$이므로,라고 하자.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-r (2\pi) \dfrac{\theta}{2 \pi} = r \theta
-$$&lt;/div&gt;
-
-&lt;p&gt;즉 호도법으로 원호의 길이는 $r \theta$로 간편하게 표기된다. 호의 면적 역시 마찬가지다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-r^2 \pi  \dfrac{\theta}{2 \pi} = r^2 \dfrac{\theta}{2}
-$$&lt;/div&gt;
-
-&lt;h2 id=&quot;limit-of-sin-cos&quot;&gt;Limit of sin, cos&lt;/h2&gt;
-
-&lt;h3 id=&quot;limit-of-sin&quot;&gt;Limit of sin&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/radian/lim_sin.png?raw=true&quot; alt=&quot;&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;삼각형의 면적을 보자.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\triangle {\rm OAI} &amp; = \dfrac{1}{2} {\rm height} \cdot \overline{\rm OI} = \dfrac{1}{2}\sin \theta \cdot 1 \\
-\frown{\rm OAB} &amp;= \dfrac{1}{2} 1^2  \theta \\
-\triangle {\rm OTI} &amp;= \dfrac{1}{2}\overline{\rm TI} \cdot \overline{\rm OI} = \dfrac{1}{2}1\cdot \tan \theta
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;p&gt;이 사이에 아래와 같은 관계가 성립한다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\triangle \rm OAB \leq \frown \rm OAB \leq \triangle \rm OAC
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\sin \theta \leq \theta \leq \tan \theta
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\dfrac{\sin \theta}{\sin \theta} \leq \dfrac{\theta}{\sin \theta} \leq \dfrac{\tan \theta}{\sin \theta}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-1 \geq \dfrac{\sin \theta}{\theta} \geq {\cos \theta}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-1 \geq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \geq \lim_{\theta \to 0} \cos \theta (= 1)
-$$&lt;/div&gt;
-
-&lt;p&gt;샌드위치 정리에 따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.&lt;/p&gt;
-
-&lt;h3 id=&quot;limit-of-cos&quot;&gt;Limit of cos&lt;/h3&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\dfrac{\cos \theta -1}{\theta} \cdot \dfrac{\cos \theta + 1}{\cos \theta +1} &amp;= \dfrac{\cos^2 \theta - 1}{\theta(\cos \theta +1)} \\ 
-&amp;= \dfrac{-\sin^2 \theta}{\theta(\cos \theta + 1)} \\
-&amp; = \dfrac{-\sin \theta}{\theta} \dfrac{\sin \theta}{\cos \theta + 1}
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta} = (-1) \cdot 0 = 0
-$$&lt;/div&gt;
-
-&lt;h2 id=&quot;derivative-of-sin&quot;&gt;Derivative of Sin&lt;/h2&gt;
-
-&lt;p&gt;정의를 그대로 활용하면 된다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\dfrac{d}{d \theta} \sin \theta &amp; = \lim_{\delta \to 0} \dfrac{\sin (\theta+\delta) - \sin \theta }{\delta} \\
-&amp; = \lim_{\delta \to 0} \dfrac{\sin \theta \cos \delta +\sin \delta \cos \theta - \sin \theta }{\delta} \\
-&amp; = \cos \theta \lim_{\delta \to 0} \dfrac{\sin \delta}{\delta} \\
-&amp; = \cos \theta
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\dfrac{d}{d \theta} \cos \theta &amp; = \lim_{\delta \to 0} \dfrac{\cos (\theta+\delta) - \cos \theta }{\delta} \\
-&amp; = \lim_{\delta \to 0} \dfrac{\cos \theta \cos \delta -\sin \delta \sin \theta - \cos \theta }{\delta} \\
-&amp; = \lim_{\delta \to 0}\dfrac{\cos \theta(\cos \delta -1)-\sin\delta \sin\theta}{\delta} \\
-&amp; = 0 - (1) \sin \theta \\
-&amp; = - \sin \theta
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;h2 id=&quot;taylor-series-for-sin-cos&quot;&gt;Taylor Series for sin, cos&lt;/h2&gt;
-
-&lt;p&gt;이제 $\sin \theta$, $\cos \theta$를 $\theta$로 0 근방에서 전개해보자.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\sin \theta &amp; = \sin 0 + \sin' 0(\theta - 0) + \dfrac{\sin'' 0}{2!}(\theta - 0)^2 +  \dfrac{\sin''' 0}{3!}(\theta - 0)^3 + \dotsb \\
-&amp; = 0 + \theta  + \dfrac{(-1)}{3!} \theta^3 + \dotsb \\
-&amp; = \theta  - \dfrac{1}{3!} \theta^3 + \dfrac{1}{5!} \theta^5 -\dotsb 
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\cos \theta &amp; = \cos 0 + \cos' 0(\theta - 0) + \dfrac{\cos'' 0}{2!}(\theta - 0)^2 + \dfrac{\cos''' 0}{3!}(\theta - 0)^3 + \dotsb \\
-&amp; = 1 + (-\sin 0)\theta  + \dfrac{(-\cos\theta)}{2!} \theta^2 + \dotsb \\
-&amp; = 1 - \dfrac{1}{2!} \theta^2 + \dfrac{1}{4!} \theta^4 - \dotsb 
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;h2 id=&quot;taylor-series-ei-theta&quot;&gt;Taylor Series $e^{i \theta}$&lt;/h2&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-e^{i \theta} &amp;= e^0 + i (\theta - 0) + \dfrac{(i)^2}{2} (\theta-0)^2 + \dotsb \\
-&amp; = 1 + i \theta - \dfrac{\theta^2}{2!} - i \dfrac{\theta^3}{3!} + \dfrac{\theta^4}{4!} + i \dfrac{\theta^5}{5!}
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;p&gt;실수와 허수를 따로 모아주면,&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-e^{i \theta} &amp; = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dotsb) + (\theta - \dfrac{\theta^3}{3!} + \dfrac{\theta^5}{5!} - \dotsb)i \\
-&amp; = \cos \theta + i \cdot \sin \theta
-\end{aligned}
-$$&lt;/div&gt;
-
-&lt;h2 id=&quot;polar-representation&quot;&gt;Polar Representation&lt;/h2&gt;
-
-&lt;p&gt;허수를 나타내는 가장 신박한 방법일지 모르겠다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.kastatic.org/ka-perseus-images/1559d8785a298fdd0bac0443388b3812c4327ec3.png&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;허수를 $x-y$로 구성된 데카르트 평면에 표시한다고 하자. 이때, 일반적으로 $x + i y$는 위의 그림과 같이 표시된다. 이를 극좌표로 나타내는 방법은 해당 벡터까지의 거리와 각도로 다시 표기하는 것이다. 즉,&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-z = x +  yi = |z| \angle{\theta} = \underbrace{|z| \cos \theta}_{x} + \underbrace{|z| \sin\theta}_{y} i
-$$&lt;/div&gt;
-
-&lt;p&gt;$(a, b)$가 데카르트 좌표 위에서 표현하는 위치까지의 거리를 스케일링하는데, 이는 원의 반지름과 같은 의미가 된다. 원 위에서의 위치는 $\theta$로 나타낼 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;euler-formula-and-identity&quot;&gt;Euler Formula and Identity&lt;/h2&gt;
-
-&lt;p&gt;앞서 본 결과는 다음과 같다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e^{\theta i} = \sin\theta + i \cdot \cos \theta
-$$&lt;/div&gt;
-
-&lt;p&gt;$\theta$는 각이기 때문에 이 녀석을 $\pi$만큼 돌려보도록 하자. 그러면 데카르트 좌표에서 $(-1,0)$에 떨어진다. 이는 실수-허수 평면에서 실수 $-1$, 허수 $0$이다. 즉,&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e^{\pi i} + 1 = 0
-$$&lt;/div&gt;
-
-&lt;p&gt;이 항등식은 수학의 역사에서 가장 중요한 5개–$e$, $\pi$, $i$, $0$, $1$–의 숫자 사이의 관계를 나타낸다.&lt;/p&gt;
-
-&lt;h3 id=&quot;de-moivres-law&quot;&gt;De Moivre’s law&lt;/h3&gt;
-
-&lt;p&gt;드무아브르의 법칙 또한 그냥 자명하다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e^{\theta i} = \sin\theta + i \cdot \cos\theta
-$$&lt;/div&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + i \cdot \cos n \theta
-$$&lt;/div&gt;
-
-&lt;p&gt;$e^{\theta i}$의 $n$ 승이 단위원을 중심으로 계속 회전하며 값을 지니게 된다는 사실을 쉽게 알 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;some-exercises&quot;&gt;Some Exercises&lt;/h2&gt;
-
-&lt;p&gt;위의 사실들을 활용하면 몇 가지 재미있는 계산을 할 수 있다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e^i = \sin 1 + i \cdot \cos 1
-$$&lt;/div&gt;
-
-&lt;p&gt;$3^i$는 어떨까? 이상해보이는 숫자지만, $e$를 활용하면 된다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-(e^{\ln 3})^i = \sin \ln 3 + i \cdot \cos \ln 3
-$$&lt;/div&gt;
-
-&lt;p&gt;$i^i$는 어떨까? $i = e^{\frac{\pi}{2} i}$이다. 원 (1,0), 즉 $e^0$에서 90도 각을 지니면 좌표에서 $i$에 도달하게 된다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-i^i = (e^{\frac{\pi}{2} i})^i = e^{-\frac{\pi}{2}}
-$$&lt;/div&gt;
-
-&lt;p&gt;$\ln i$도 자연스럽게 구할 수 있다.&lt;/p&gt;
-
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\ln i^i = i \ln i = -\dfrac{\pi}{2}
-$$&lt;/div&gt;
-
-&lt;p&gt;양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2} i$.&lt;/p&gt;
-
-&lt;p&gt;사실 모든 것이 오일러 항등식에서 파생되는 것이다. $e^{i \pi} = -1$에서 시작하자.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;양변에 $\ln$을 취한다. $\ln e^{i \pi} = i \pi = \ln (-1)$&lt;/li&gt;
-  &lt;li&gt;$-1^{1/2}$에 $\ln$를 취한다. $\ln (-1)^{\frac{1}{2}}  = \ln \sqrt{-1} = \ln i = \dfrac{1}{2} i \pi$&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;complex-growth&quot;&gt;Complex growth&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://betterexplained.com/wp-content/webp-express/webp-images/uploads/euler/complex_growth.png.webp&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;$e^x$에서 $x$가 각각 실수부와 허수부일 때 해당 부분은 실수 증가와 회전으로 나누어 볼 수 있다. 위의 그림과 같다. 이 말을 좀 더 풀어보자.&lt;/p&gt;
-
-&lt;p&gt;임의의 허수 $6 + 8i$가 있다고 하자. 이 허수를 나타내는 $e^{a+bi}$를 찾을 수 있다는 의미이기도 하다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;먼저 길이를 찾는다. $\sqrt{6^2 + 8^2} = 10$. $e^a = 10$을 만족하는 a를 찾는다. 양변에 $\ln$을 취해주면 된다.&lt;/li&gt;
-  &lt;li&gt;$\cos \theta = \frac{6}{10}$, $\sin \theta = \frac{8}{10}$을 통해 $\theta$를 구할 수 있다.&lt;/li&gt;
-  &lt;li&gt;$\ln 10 \approx 2.3$, $\theta \approx 0.93$이므로 $e^{2.3 + 0.93 i}$로 나타낼 수 있다. 
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjkxMjA2MjMsLTY5ODY3MTAzMSwtMT
-Y2MjU2MDMyMywtMjAxNzkxNzg0Miw1MTI1MTc2NzMsLTIwNzUw
-ODM3OTksMTU5NjA1MjM5MSwxMjc1MzQ3NjUsLTEzMjY3NTA5Ny
-wzMzM3Mjk5NCwtMTQyNDg5NjI0OV19
---&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="math" /><category term="triagonometry" /><summary type="html">Why Radian</summary></entry></feed>
+--&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Projection: Scalar and Vector</summary></entry></feed>
