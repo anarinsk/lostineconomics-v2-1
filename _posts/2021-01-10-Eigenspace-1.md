@@ -31,7 +31,10 @@ $
 
 즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 $A - \lambda_i 1$라는 변환이 서로 선형 종속이라는 뜻이다. 즉 $\det (A - \lambda_i 1) = 0$의 의미와 같다. 아이겐밸류를 구하는 특성방정식이 여기서 도출된다. 
 
-$$p(\lambda) = \vert A - \lambda 1 \vert = 0$$
+$$
+p(\lambda) = \vert A - \lambda 1 \vert = 0
+$$
+
 
 ### All distinct eigenvalues 
 
@@ -41,29 +44,33 @@ $$p(\lambda) = \vert A - \lambda 1 \vert = 0$$
 
 대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자. 
 
-$$A = 
+$$
+A = 
 \begin{bmatrix}
 1 & 2 \\
 0 & 1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 $A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?
 
-$$A - \lambda I = 
+$$
+A - \lambda I = 
 \begin{bmatrix}
 0 & 2 \\
 0 & 0 \\
-\end{bmatrix} x = 0$$
+\end{bmatrix} x = 0
+$$
 
 이를 만족하는 널 스페이스 $x$는 아래 벡터 하나다. 
 
-$
+$$
 x = \alpha
 \begin{bmatrix}
 1 \\
 0
 \end{bmatrix}
-$ 
+$$ 
 
 따라서 $\lambda=1$의 GM은 1이 된다. 
 
@@ -79,42 +86,42 @@ ${\rm GM}(\lambda) < {\rm AM}(\lambda)$가 되는 $\lambda$를 defective eigenva
 
 아이겐벡터와 아이겐밸류를 동원해서 매트릭스를 분해하는 것을 대각화라고도 부른다. 
 
-$
+$$
 A = Q \Lambda Q^{-1}
-$
+$$
 
 이렇게 분해될 때 가운데 매트릭스 $\Lambda$가 아이겐밸류의 대각 행렬로 구성되기 때문이다. $Q$는 다음과 같이 정의된다. 
 
-$
+$$
 Q = 
 \begin{bmatrix}
 \vert & \vert & \vert \\
 \vec e_{\lambda_1} & \dotsc & \vec e_{\lambda_n} \\
 \vert & \vert & \vert \\
 \end{bmatrix}
-$
+$$
 
 앞서 아이겐벡터가 일종의 축의 역할을 한다고 했다. 즉, 이 아이겐벡터는 매트릭스의 인풋으로 아이겐 스페이스 벡터를 받고 이를 현재의 표준 스페이스로 바꿔준다.$B_S \leftarrow B_\lambda$  역할을 한다. 즉, 
 
-$
+$$
 Q = \phantom{}_{B_S}[1]_{B_\lambda}
-$
+$$
 
 $Q$를 기저 변환의 관점에서 보면 아이겐 공간의 좌표를 표준 좌표로 바뀌주는 역할을 한다. $Q^{-1}$은 반대로 $B_{\lambda} \leftarrow B_{S}$의 역할을 한다. 즉, 
 
-$
+$$
 Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}
-$
+$$
 
 이 관점에서 보면 행렬의 대각화가 새롭게 보인다. 
 
-$
+$$
 [\vec w]_{B_S} = \phantom{}_{B_S}[A]_{B_S} [\vec v]_{B_S} = Q \Lambda Q^{-1}[\vec v]_{B_S}
-$
+$$
 
-$
+$$
 Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S} 
-$
+$$
 
 행렬의 대각화란 일정한 변환 혹은 매트릭스를 아이겐 공간을 통해 다시 해석하는 과정이다. 즉, $B_S \to B_\lambda \to B_S$의 과정을 거친다. 
 
@@ -124,33 +131,33 @@ $
 
 대각화를 통해서 아이겐밸류의 중요한 특성 두 가지를 다시 음미해보자. 
 
-$
+$$
 {\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i
-$
+$$
 
-$
+$$
 {\rm Tr}(A) = \sum_{i} a_{ii} = \sum_{i} \lambda_i
-$
+$$
 
 논리는 아래와 같이 간단하다. 
 
-$
+$$
 \vert A \vert = \vert Q \Lambda Q^{-1} \vert =  \vert Q \vert \vert \Lambda \vert \vert Q^{-1} \vert = \vert Q \vert \vert Q^{-1} \vert \vert \Lambda \vert = \dfrac{\vert Q \vert}{\vert Q^{} \vert} \vert \Lambda \vert = \vert \Lambda \vert
-$
+$$
 
-$
+$$
 {\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda_i
-$
+$$
 
 두 가지 속성은 ${\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i$는 대각화가 가능한 경우 뿐 아니라 일반적으로 성립한다. 첫번째 속성만 살펴보자. 특성방정식을 생각해보면, $\vert A - \lambda I \vert = 0$이다. 즉, 
 
-$
+$$
 \begin{aligned}
 p(\lambda)  = & {\rm det} (A - \lambda I) \\
 & (-1)^n (\lambda - \lambda_1) \dotsb  (\lambda - \lambda_n) \\
 & (\lambda_1 - \lambda)\dotsb(\lambda_n - \lambda)
 \end{aligned}
-$ 
+$$ 
 
 따라서, $\det (A) = \lambda_1 \dotsb \lambda_n$.
 
@@ -158,11 +165,11 @@ $
 
 매트릭스 $A$가 노멀이라면, 이는 $A^T A = A A^T$를 만족하는 경우를 뜻한다. 모든 노멀 매트릭스는 대각화가 가능하고 아울러 $Q$를 직교 행렬(orthgonal matrix or orthonormal matrix) $O$ 로 택할 수 있다. 이는 $Q^{-1}$의 계산이 간단해진다는 뜻이다.  즉, 
 
-$
+$$
 OO^T = I = O^T O
-$
+$$
 
-$
+$$
 O^TO = 
 \begin{bmatrix}
 -- & \hat e_1 & -- \\
@@ -174,7 +181,7 @@ O^TO =
 \hat e_1 & \dotsc & \hat e_n \\
 \vert & & \vert \\
 \end{bmatrix} = I
-$
+$$
 
 ## Gram-Schmidt Orthogonalization 
 
@@ -190,31 +197,31 @@ orthnormal, orthogonal, generic 세 가지 기저의 품질을 따져보자. 당
 - Length: $\Vert v \Vert = \langle v, v \rangle$
 - Projection operation: Projection of $u$ onto $e$: 
 
-$
+$$
 \Pi_e(u) = \dfrac{\langle u, e \rangle}{\Vert e \Vert^2}e
-$
+$$
 
 - The projection complement of projection $\Pi_e(u)$ is $w$
 
-$
+$$
 \Pi_e(u) + w = u ~~~\Rightarrow~~~w = u - \Pi_e(u)  
-$
+$$
 
 ### Orthonormal basis is nice 
 
 어떤 벡터 $v$든 orthonormal 기저를 통해 간편하게 나타낼 수 있다. 즉, 
 
-$
+$$
 v = \langle v, \hat e_1 \rangle  \hat e_1 + \dotsb + \langle v, \hat e_n \rangle \hat e_n
-$
+$$
 
 ### Orthogonalization 
 
 일단 기억해야 할 것은 generic 기저 $\{v_i\}$가 생성하는 벡터 공간과 $\{ \hat e_i \}$가 생성하는 벡터 공간이 동일하다는 것이다. 즉, 
 
-$
+$$
 \text{span}(v_1, \dotsc, v_n) = V = \text{span}(\hat e_1, \dotsc, \hat e_n) 
-$
+$$
 
 그람-슈미트 알고리듬은 다음과 같다. 
 
@@ -234,9 +241,9 @@ Orthogonal 기저는 어떻게 만들까? 먼저 과정을 살펴보자.   .
 
 ![enter image description here](https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-$
+$$
 v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
-$
+$$
 
 즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서 
 
