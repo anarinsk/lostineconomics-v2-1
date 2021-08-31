@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T16:01:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T16:22:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -1481,9 +1481,9 @@ Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
   &lt;li&gt;$\hat v = \dfrac{v}{\lVert v \lVert}$: Unit vector&lt;/li&gt;
   &lt;li&gt;$p_0$를 지나는 무한의 1차원 선은 다음과 같이 정의된다.
     &lt;ul&gt;
-      &lt;li&gt;Parametric equation: 
+      &lt;li&gt;Parametric equation
   &lt;span class=&quot;kdmath&quot;&gt;$l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}$&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;Symetric equation: 
+      &lt;li&gt;Symetric equation
   &lt;span class=&quot;kdmath&quot;&gt;$l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}$&lt;/span&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
