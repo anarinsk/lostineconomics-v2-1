@@ -90,6 +90,7 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   math_engine: katex
+  math_engine_opts: {displayMode: true, fleqn: true}
   input: GFM
   auto_ids: true
   hard_wrap: false
