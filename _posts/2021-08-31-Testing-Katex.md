@@ -23,7 +23,7 @@ R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_
 $$
 ```
 
-This is rendered with default fastpage option in `_config.yml`; `math_engine: null`
+This is rendered with default fastpage option in `_config.yml`; `math_engine: null`.
 $$
 \begin{aligned}
 R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
