@@ -54,13 +54,11 @@ $
 
 $A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?
 
-$
-A - \lambda I = 
+$$A - \lambda I = 
 \begin{bmatrix}
 0 & 2 \\
 0 & 0 \\
-\end{bmatrix} x = 0
-$
+\end{bmatrix} x = 0$$
 
 이를 만족하는 널 스페이스 $x$는 아래 벡터 하나다. 
 
