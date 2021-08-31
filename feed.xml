@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T03:01:53-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T03:07:36-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
 
 &lt;p&gt;이 글은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html&quot;&gt;이 포스팅&lt;/a&gt;에서 이어진다. 컨테이너를 올린 뒤 컨테이너 내 터미널에서 sh 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까?&lt;/p&gt;
 
@@ -650,13 +650,11 @@ $&lt;/p&gt;
 
 &lt;p&gt;대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자.&lt;/p&gt;
 
-&lt;p&gt;$
-A = 
+&lt;p&gt;$A = 
 \begin{bmatrix}
 1 &amp;amp; 2 &lt;br /&gt;
 0 &amp;amp; 1
-\end{bmatrix}
-$&lt;/p&gt;
+\end{bmatrix}$&lt;/p&gt;
 
 &lt;p&gt;$A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?&lt;/p&gt;
 
@@ -890,12 +888,7 @@ $&lt;/p&gt;
   &lt;li&gt;$A$ positive semidefinite $\Rightarrow$ 아이겐밸류는 비음이다.&lt;/li&gt;
   &lt;li&gt;$A$ symmetric $\Rightarrow$ 아이겐밸류는 실수&lt;/li&gt;
   &lt;li&gt;$A$ normal ($A^T A = A A^T$) $\Rightarrow$ $Q$를 직교 행렬 $O$로 고를 수 있다($O^T O = I$).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTM5MTg2LDEyMTQwODMxNDUsNDgwOD
-MxMzU0LC0yMDE5MjUzMjY3LC0xOTg5NDUzMTc3XX0=
---&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Why?</summary></entry><entry><title type="html">Basis</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html" rel="alternate" type="text/html" title="Basis" /><published>2021-01-08T00:00:00-06:00</published><updated>2021-01-08T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html">&lt;h2 id=&quot;concepts--definition&quot;&gt;Concepts &amp;amp; Definition&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Why?</summary></entry><entry><title type="html">Basis</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html" rel="alternate" type="text/html" title="Basis" /><published>2021-01-08T00:00:00-06:00</published><updated>2021-01-08T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/08/basis.html">&lt;h2 id=&quot;concepts--definition&quot;&gt;Concepts &amp;amp; Definition&lt;/h2&gt;
 
 &lt;p&gt;벡터 공간 $V$의 기저&lt;/p&gt;
 
