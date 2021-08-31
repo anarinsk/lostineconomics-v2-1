@@ -97,7 +97,7 @@ T: \mathcal R(M_T) \to \mathcal C(M_T),~
 T: \mathcal N(M_T) \to \{ \vec 0 \}
 $$
 
-즉 인풋 $\vec v \in \mathcal R(M_T)$이 하나씩 $\vec w \in \mathcal C(M_T)$로 일대일로 대응된다. 한편, $\vec v \in \mathcal N(M_T)$는 $\vec 0 \in W$으로 대응된다. 
+즉 함수처럼 인풋 $\vec v \in \mathcal R(M_T)$이 $\vec w \in \mathcal C(M_T)$로 대응된다. 한편, $\vec v \in \mathcal N(M_T)$는 $\vec 0 \in W$으로 대응된다. 
 
 ### Surjective and Injective 
 
@@ -116,3 +116,5 @@ $$
 매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 로우 스페이스의 차원이 컬럼 스페이스보다 커야 컬럼 스페이스 전체를 생성할 수 있다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 1-1 대응이 가능하려면 컬럼 스페이스의 크기가 로우 스페이스보다 커여 한다.
 
 따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 필요 조건은 정방 행렬,  $m=n$이다. 
+
+보다 상세한 내용은 [여기](https://textbooks.math.gatech.edu/ila/one-to-one-onto.html)를 참고하자. 
