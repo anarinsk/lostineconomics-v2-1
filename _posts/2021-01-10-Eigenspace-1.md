@@ -31,9 +31,7 @@ $
 
 즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 $A - \lambda_i 1$라는 변환이 서로 선형 종속이라는 뜻이다. 즉 $\det (A - \lambda_i 1) = 0$의 의미와 같다. 아이겐밸류를 구하는 특성방정식이 여기서 도출된다. 
 
-$
-p(\lambda) = \vert A - \lambda 1 \vert = 0
-$
+$$p(\lambda) = \vert A - \lambda 1 \vert = 0$$
 
 ### All distinct eigenvalues 
 
