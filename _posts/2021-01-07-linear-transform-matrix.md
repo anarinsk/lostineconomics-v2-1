@@ -86,11 +86,11 @@ T(\hat e_1) & \cdots & T(\hat e_n) \\
 \end{aligned}
 $$
 
-## Take This!  
+## Eat This!  
 
 ### Mapping Spaces 
 
-선형 변환을 다시 적어보자. $T: V \to W$ where $V \in \mathbb R^n$, $W \in \mathbb R^m$. 즉 이 변환은 $n$ 차원의 벡터를 $m$ 차원으로 바꿔주는 것이다. 따라서 변환의 투입의 차원을 생각해보자. $n$ 차원은 로우 공간이 생성하는 $\mathcal R (M_T)$와 널 공간으로 가는 $\mathcal N(M_T)$으로 나뉘게 된다. 그리고 이 공간은 서로 direct sum 관계다. 이를 요약하면 다음과 같다. 
+선형 변환을 다시 적어보자. $T: V \to W$ where $V \in \mathbb R^n$, $W \in \mathbb R^m$. 즉 이 변환은 $n$ 차원의 벡터를 $m$ 차원으로 바꿔주는 것이다. 이 변환의 투입이 지니는 차원을 생각해보자. $n$ 차원은 로우 공간이 생성하는 $\mathcal R (M_T)$와 널 공간으로 가는 $\mathcal N(M_T)$으로 나뉘게 된다. 그리고 이 공간은 서로 직합(direct sum) 관계다. 이를 요약하면 다음과 같다. 
 
 $$
 T: \mathcal R(M_T) \to \mathcal C(M_T),~  
@@ -103,10 +103,16 @@ $$
 
 ![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/linear-transform/sur_inj.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
 
-함수에서 전사 함수와 단사 함수의 개념을 그대로 적용할 수 있다. 다만 단사 함수의 판단은 쉽다. 만일, $\vec v_1 \neq \vec v_2$이고 $\vec v_1, \vec v_2 \in \mathcal R(M_T)$라면 이는 선형 변환의 정의에 따라서 서로 다른 $\vec w$로 매핑된다. 따라서 만일 단사 변환이 되려면, $\mathcal N(M_T) = \{ \vec 0 \}$만 성립하면 된다. 전사 함수의 정의는 통상적인 정의와 같다. 즉, ${\rm Im} (T) = \mathbb R^m$이면 된다. 
+함수에서 전사 함수와 단사 함수의 개념을 그대로 적용할 수 있다. 선형 변환 혹은 행렬도 함수다. 
 
-이를 매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 조건은 $m=n$이다. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI3OTU0MDEsLTEzODg1NjUxNTgsNT
-Y4MTU4OTcsLTM5NTY2MTQ2MV19
--->
+만일, $\vec v_1 \neq \vec v_2$이고 $\vec v_1, \vec v_2 \in \mathcal R(M_T)$라면 이는 선형 변환의 정의에 따라서 서로 다른 $\vec w$로 매핑된다. 따라서 만일 단사 변환이 되려면, $\mathcal N(M_T) = \{ \vec 0 \}$만 성립하면 된다. 
+
+$$
+Ay - Az = A(y-z)
+$$
+
+단사 변환이란 오직 $x = y$일 때만 $Ax = Ay$가 성립한다는 뜻이다. 즉 위의 식에서 $A(x-y) = 0$이 $x=y$일 때만 성립하면 된다. 즉, $A x = 0$이 $x=0$일 때만 성립하면 된다. 전사 변환의 정의는 통상적인 정의와 같다; ${\rm Im} (T) = \mathbb R^m$. 
+
+매트릭스의 맥락에서 다시 음미해보자. 만일 전사(surjective) 변환이 되려면 $n \geq m$이 성립해야 한다. 로우 스페이스의 차원이 컬럼 스페이스보다 커야 컬럼 스페이스 전체를 생성할 수 있다. 반면 단사(injective) 변환이 되려면 $n \leq m$이 되어야 한다. 1-1 대응이 가능하려면 컬럼 스페이스의 크기가 로우 스페이스보다 커여 한다.
+
+따라서 전단사 변환이 되기 위한 조건은 $m=n$이다. 함수에서 역함수가 존재하려면 전단사 함수여야 한다. 선형 변환도 마찬가지다. 역행렬이 존재하기 위한 필요 조건은 정방 행렬,  $m=n$이다. 

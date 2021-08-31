@@ -5,7 +5,6 @@ comments: true
 title:  Eigenspace, part 2
 description: 아이겐 공간을 이해하자.  
 categories: [math, matrix-theory]
-
 ---
 
 ## Singluar Value Decomposition
