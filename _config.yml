@@ -89,7 +89,7 @@ titles_from_headings:
 highlighter: rouge
 markdown: kramdown
 kramdown:
-  math_engine: null
+  math_engine: mathjax
   math_engine_opts: {text-align: left}
   #math_engine: katex
   #math_engine_opts: {fleqn: true}
