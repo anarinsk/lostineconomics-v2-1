@@ -372,15 +372,13 @@ $$</div>
 
 <p>즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서</p>
 
-<ul>
-  <li>
-    <p>$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
-   $\vdots$</p>
-  </li>
-  <li>
-    <p>$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$</p>
-  </li>
-</ul>
+<div class="kdmath">$$
+\begin{aligned}
+e_3 & = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3) \\
+&~~~\vdots \\
+e_n & = v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)
+\end{aligned}
+$$</div>
 
 <h2 id="wrap-it-up">Wrap-it-up</h2>
 

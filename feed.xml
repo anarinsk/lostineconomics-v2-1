@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-01T05:29:38-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-01T08:30:26-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -844,15 +844,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;$e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
-   $\vdots$&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;$e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;kdmath&quot;&gt;$$
+\begin{aligned}
+e_3 &amp; = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3) \\
+&amp;~~~\vdots \\
+e_n &amp; = v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)
+\end{aligned}
+$$&lt;/div&gt;
 
 &lt;h2 id=&quot;wrap-it-up&quot;&gt;Wrap-it-up&lt;/h2&gt;
 
