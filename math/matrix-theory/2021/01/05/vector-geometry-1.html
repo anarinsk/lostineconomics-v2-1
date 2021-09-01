@@ -129,17 +129,17 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <h2 id="concepts">Concepts</h2>
 
-<p>편의상 3차원 공간을 예시하도록 한다. $n$ 차원으로 확장은 쉽게 된다.</p>
+<p>편의상 3차원 공간까지 예시하도록 한다. $n$ 차원으로 확장은 쉽게 된다.</p>
 
 <ul>
   <li>$p = (p_x, p_y, p_z)$: $p \in \mathbb R^3$</li>
   <li>$\vec v = (v_x, v_y, v_z)$: $\vec v \in \mathbb R^3$</li>
   <li>$\hat v = \dfrac{v}{\lVert v \lVert}$: Unit vector</li>
-  <li>$p_0$를 지나는 무한의 1차원 선은 다음과 같이 정의된다.
+  <li>$p_0$를 지나는 무한의 1차원 벡터는 다음과 같이 정의된다.
     <ul>
-      <li>Parametric equation
+      <li>Parametric equation: 
   <span class="kdmath">$l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}$</span></li>
-      <li>Symetric equation
+      <li>Symetric equation: 
   <span class="kdmath">$l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}$</span></li>
     </ul>
   </li>
@@ -165,7 +165,7 @@ window.onload = wrap_img;
 
 <h3 id="normal-vector">Normal vector</h3>
 
-<p>노멀 벡터는 아래 플레인 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 플레인의 파라메트릭 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다.</p>
+<p>노멀 벡터는 아래 평면(plane) 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 평면 $P$의 parametric 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다.</p>
 
 <div class="kdmath">$$
 \vec n  = \vec v \times \vec w = (q-p) \times (r-p)
@@ -173,11 +173,7 @@ $$</div>
 
 <h2 id="distance">Distance</h2>
 
-<p>거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? <a href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">이 포스팅</a>을 참고하라. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNTYwMTQzLC0yMTIxMjAzNTM5LC0xND
-A5NDUwNzgsMTkwNjcxMDg2MCw2NDI2ODMyMTVdfQ==
---></p>
+<p>거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? <a href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">이 포스팅</a>을 참고하라.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"

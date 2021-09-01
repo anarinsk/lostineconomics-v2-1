@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T16:22:13-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-08-31T20:31:54-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -1473,17 +1473,17 @@ UwMzk5MzUsLTYzNjI0MTEyNywtMTI5MDAyNTUyMiwyMDg4MDQz
 Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
 --&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Vector Space</summary></entry><entry><title type="html">Vector Geometry, part 1</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/05/vector-geometry-1.html" rel="alternate" type="text/html" title="Vector Geometry, part 1" /><published>2021-01-05T00:00:00-06:00</published><updated>2021-01-05T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/05/vector-geometry-1</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2021/01/05/vector-geometry-1.html">&lt;h2 id=&quot;concepts&quot;&gt;Concepts&lt;/h2&gt;
 
-&lt;p&gt;편의상 3차원 공간을 예시하도록 한다. $n$ 차원으로 확장은 쉽게 된다.&lt;/p&gt;
+&lt;p&gt;편의상 3차원 공간까지 예시하도록 한다. $n$ 차원으로 확장은 쉽게 된다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;$p = (p_x, p_y, p_z)$: $p \in \mathbb R^3$&lt;/li&gt;
   &lt;li&gt;$\vec v = (v_x, v_y, v_z)$: $\vec v \in \mathbb R^3$&lt;/li&gt;
   &lt;li&gt;$\hat v = \dfrac{v}{\lVert v \lVert}$: Unit vector&lt;/li&gt;
-  &lt;li&gt;$p_0$를 지나는 무한의 1차원 선은 다음과 같이 정의된다.
+  &lt;li&gt;$p_0$를 지나는 무한의 1차원 벡터는 다음과 같이 정의된다.
     &lt;ul&gt;
-      &lt;li&gt;Parametric equation
+      &lt;li&gt;Parametric equation: 
   &lt;span class=&quot;kdmath&quot;&gt;$l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}$&lt;/span&gt;&lt;/li&gt;
-      &lt;li&gt;Symetric equation
+      &lt;li&gt;Symetric equation: 
   &lt;span class=&quot;kdmath&quot;&gt;$l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}$&lt;/span&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -1509,7 +1509,7 @@ Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
 
 &lt;h3 id=&quot;normal-vector&quot;&gt;Normal vector&lt;/h3&gt;
 
-&lt;p&gt;노멀 벡터는 아래 플레인 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 플레인의 파라메트릭 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다.&lt;/p&gt;
+&lt;p&gt;노멀 벡터는 아래 평면(plane) 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 평면 $P$의 parametric 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다.&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
 \vec n  = \vec v \times \vec w = (q-p) \times (r-p)
@@ -1517,11 +1517,7 @@ $$&lt;/div&gt;
 
 &lt;h2 id=&quot;distance&quot;&gt;Distance&lt;/h2&gt;
 
-&lt;p&gt;거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라. 
-&lt;!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNTYwMTQzLC0yMTIxMjAzNTM5LC0xND
-A5NDUwNzgsMTkwNjcxMDg2MCw2NDI2ODMyMTVdfQ==
---&gt;&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts</summary></entry><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
+&lt;p&gt;거리 역시 세 가지로 나누어 이해해보자. 점과 점 사이의 유클리드 거리는 생략하겠다. 벡터와 점의 거리는 어떻게 구할까? 플레인과 점의 거리는 어떻게 구할까? &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html&quot;&gt;이 포스팅&lt;/a&gt;을 참고하라.&lt;/p&gt;</content><author><name></name></author><category term="math" /><category term="matrix-theory" /><summary type="html">Concepts</summary></entry><entry><title type="html">Projection and Distance</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html" rel="alternate" type="text/html" title="Projection and Distance" /><published>2020-12-16T00:00:00-06:00</published><updated>2020-12-16T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/math/matrix-theory/2020/12/16/Projection.html">&lt;h2 id=&quot;projection-scalar-and-vector&quot;&gt;Projection: Scalar and Vector&lt;/h2&gt;
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
 
