@@ -133,9 +133,7 @@ window.onload = wrap_img;
 
 <p>사실 아이겐 공간은 $n \times n$ 매트릭스의 숨은 구조(뼈대)와 같다. 아이겐밸류를 구하는 식을 떠올려보자.</p>
 
-<div class="kdmath">$$
-M_T \vec x = \lambda \vec x
-$$</div>
+\[M_T \vec x = \lambda \vec x\]
 
 <p>$M_T$라는 $n \times n$ 변환이 특정한 벡터 아래서는 스칼라 곱의 문제로 환원된다. 이런 의미에서 아이겐벡터는 $M_T$라는 매트릭스가 지닌 일종의 축이다. 이 축 위에서 변환이 다시 축으로 환원되기 때문이다. $M_T$의 원래 기저와 상관 없이, 이 아이겐벡터로 다시 기저를 구성한다고 생각해보자. 이때 아이겐밸류는 해당 축의 크기(길이)로 이해할 수 있다.</p>
 
@@ -143,15 +141,11 @@ $$</div>
 
 <p>아이겐 공간이란 무엇일까? 특정한 아이겐밸류 $\lambda_i$에 의해 파생되는 아이겐 공간은 다음과 같이 정의될 수 있다.</p>
 
-<div class="kdmath">$$
-E_{\lambda_i}  \overset{\rm def}{=} \mathcal N (A - \lambda_i 1) = \{ \vec v | (A - \lambda_i ) \vec v = \vec 0 \}
-$$</div>
+\[E_{\lambda_i}  \overset{\rm def}{=} \mathcal N (A - \lambda_i 1) = \{ \vec v | (A - \lambda_i ) \vec v = \vec 0 \}\]
 
 <p>즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 $A - \lambda_i 1$라는 변환이 서로 선형 종속이라는 뜻이다. 즉 $\det (A - \lambda_i 1) = 0$의 의미와 같다. 아이겐밸류를 구하는 특성방정식이 여기서 도출된다.</p>
 
-<div class="kdmath">$$
-p(\lambda) = \vert A - \lambda 1 \vert = 0
-$$</div>
+\[p(\lambda) = \vert A - \lambda 1 \vert = 0\]
 
 <h3 id="all-distinct-eigenvalues">All distinct eigenvalues</h3>
 
@@ -161,33 +155,27 @@ $$</div>
 
 <p>대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자.</p>
 
-<div class="kdmath">$$
-A = 
+\[A = 
 \begin{bmatrix}
-1 & 2 \\
-0 & 1
-\end{bmatrix}
-$$</div>
+1 &amp; 2 \\
+0 &amp; 1
+\end{bmatrix}\]
 
 <p>$A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?</p>
 
-<div class="kdmath">$$
-A - \lambda I = 
+\[A - \lambda I = 
 \begin{bmatrix}
-0 & 2 \\
-0 & 0 \\
-\end{bmatrix} x = 0
-$$</div>
+0 &amp; 2 \\
+0 &amp; 0 \\
+\end{bmatrix} x = 0\]
 
 <p>이를 만족하는 널 스페이스 $x$는 아래 벡터 하나다.</p>
 
-<div class="kdmath">$$
-x = \alpha
+\[x = \alpha
 \begin{bmatrix}
 1 \\
 0
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
 <p>따라서 $\lambda=1$의 GM은 1이 된다.</p>
 
@@ -203,42 +191,30 @@ $$</div>
 
 <p>아이겐벡터와 아이겐밸류를 동원해서 매트릭스를 분해하는 것을 대각화라고도 부른다.</p>
 
-<div class="kdmath">$$
-A = Q \Lambda Q^{-1}
-$$</div>
+\[A = Q \Lambda Q^{-1}\]
 
 <p>이렇게 분해될 때 가운데 매트릭스 $\Lambda$가 아이겐밸류의 대각 행렬로 구성되기 때문이다. $Q$는 다음과 같이 정의된다.</p>
 
-<div class="kdmath">$$
-Q = 
+\[Q = 
 \begin{bmatrix}
-\vert & \vert & \vert \\
-\vec e_{\lambda_1} & \dotsc & \vec e_{\lambda_n} \\
-\vert & \vert & \vert \\
-\end{bmatrix}
-$$</div>
+\vert &amp; \vert &amp; \vert \\
+\vec e_{\lambda_1} &amp; \dotsc &amp; \vec e_{\lambda_n} \\
+\vert &amp; \vert &amp; \vert \\
+\end{bmatrix}\]
 
 <p>앞서 아이겐벡터가 일종의 축의 역할을 한다고 했다. 즉, 이 아이겐벡터는 매트릭스의 인풋으로 아이겐 스페이스 벡터를 받고 이를 현재의 표준 스페이스로 바꿔준다.$B_S \leftarrow B_\lambda$  역할을 한다. 즉,</p>
 
-<div class="kdmath">$$
-Q = \phantom{}_{B_S}[1]_{B_\lambda}
-$$</div>
+\[Q = \phantom{}_{B_S}[1]_{B_\lambda}\]
 
 <p>$Q$를 기저 변환의 관점에서 보면 아이겐 공간의 좌표를 표준 좌표로 바뀌주는 역할을 한다. $Q^{-1}$은 반대로 $B_{\lambda} \leftarrow B_{S}$의 역할을 한다. 즉,</p>
 
-<div class="kdmath">$$
-Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}
-$$</div>
+\[Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}\]
 
 <p>이 관점에서 보면 행렬의 대각화가 새롭게 보인다.</p>
 
-<div class="kdmath">$$
-[\vec w]_{B_S} = \phantom{}_{B_S}[A]_{B_S} [\vec v]_{B_S} = Q \Lambda Q^{-1}[\vec v]_{B_S}
-$$</div>
+\[[\vec w]_{B_S} = \phantom{}_{B_S}[A]_{B_S} [\vec v]_{B_S} = Q \Lambda Q^{-1}[\vec v]_{B_S}\]
 
-<div class="kdmath">$$
-Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S}
-$$</div>
+\[Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S}\]
 
 <p>행렬의 대각화란 일정한 변환 혹은 매트릭스를 아이겐 공간을 통해 다시 해석하는 과정이다. 즉, $B_S \to B_\lambda \to B_S$의 과정을 거친다.</p>
 
@@ -248,33 +224,23 @@ $$</div>
 
 <p>대각화를 통해서 아이겐밸류의 중요한 특성 두 가지를 다시 음미해보자.</p>
 
-<div class="kdmath">$$
-{\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i
-$$</div>
+\[{\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i\]
 
-<div class="kdmath">$$
-{\rm Tr}(A) = \sum_{i} a_{ii} = \sum_{i} \lambda_i
-$$</div>
+\[{\rm Tr}(A) = \sum_{i} a_{ii} = \sum_{i} \lambda_i\]
 
 <p>논리는 아래와 같이 간단하다.</p>
 
-<div class="kdmath">$$
-\vert A \vert = \vert Q \Lambda Q^{-1} \vert =  \vert Q \vert \vert \Lambda \vert \vert Q^{-1} \vert = \vert Q \vert \vert Q^{-1} \vert \vert \Lambda \vert = \dfrac{\vert Q \vert}{\vert Q^{} \vert} \vert \Lambda \vert = \vert \Lambda \vert
-$$</div>
+\[\vert A \vert = \vert Q \Lambda Q^{-1} \vert =  \vert Q \vert \vert \Lambda \vert \vert Q^{-1} \vert = \vert Q \vert \vert Q^{-1} \vert \vert \Lambda \vert = \dfrac{\vert Q \vert}{\vert Q^{} \vert} \vert \Lambda \vert = \vert \Lambda \vert\]
 
-<div class="kdmath">$$
-{\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda_i
-$$</div>
+\[{\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda_i\]
 
 <p>두 가지 속성은 ${\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i$는 대각화가 가능한 경우 뿐 아니라 일반적으로 성립한다. 첫번째 속성만 살펴보자. 특성방정식을 생각해보면, $\vert A - \lambda I \vert = 0$이다. 즉,</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-p(\lambda)  = & {\rm det} (A - \lambda I) \\
-& (-1)^n (\lambda - \lambda_1) \dotsb  (\lambda - \lambda_n) \\
-& (\lambda_1 - \lambda)\dotsb(\lambda_n - \lambda)
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+p(\lambda)  = &amp; {\rm det} (A - \lambda I) \\
+&amp; (-1)^n (\lambda - \lambda_1) \dotsb  (\lambda - \lambda_n) \\
+&amp; (\lambda_1 - \lambda)\dotsb(\lambda_n - \lambda)
+\end{aligned}\]
 
 <p>따라서, $\det (A) = \lambda_1 \dotsb \lambda_n$.</p>
 
@@ -282,23 +248,19 @@ $$</div>
 
 <p>매트릭스 $A$가 노멀이라면, 이는 $A^T A = A A^T$를 만족하는 경우를 뜻한다. 모든 노멀 매트릭스는 대각화가 가능하고 아울러 $Q$를 직교 행렬(orthgonal matrix or orthonormal matrix) $O$ 로 택할 수 있다. 이는 $Q^{-1}$의 계산이 간단해진다는 뜻이다.  즉,</p>
 
-<div class="kdmath">$$
-OO^T = I = O^T O
-$$</div>
+\[OO^T = I = O^T O\]
 
-<div class="kdmath">$$
-O^TO = 
+\[O^TO = 
 \begin{bmatrix}
--- & \hat e_1 & -- \\
-   & \vdots & \\
--- & \hat e_n & -- \\
+-- &amp; \hat e_1 &amp; -- \\
+   &amp; \vdots &amp; \\
+-- &amp; \hat e_n &amp; -- \\
 \end{bmatrix}
 \begin{bmatrix}
-\vert &  & \vert \\
-\hat e_1 & \dotsc & \hat e_n \\
-\vert & & \vert \\
-\end{bmatrix} = I
-$$</div>
+\vert &amp;  &amp; \vert \\
+\hat e_1 &amp; \dotsc &amp; \hat e_n \\
+\vert &amp; &amp; \vert \\
+\end{bmatrix} = I\]
 
 <h2 id="gram-schmidt-orthogonalization">Gram-Schmidt Orthogonalization</h2>
 
@@ -316,33 +278,25 @@ $$</div>
   <li>Projection operation: Projection of $u$ onto $e$:</li>
 </ul>
 
-<div class="kdmath">$$
-\Pi_e(u) = \dfrac{\langle u, e \rangle}{\Vert e \Vert^2}e
-$$</div>
+\[\Pi_e(u) = \dfrac{\langle u, e \rangle}{\Vert e \Vert^2}e\]
 
 <ul>
   <li>The projection complement of projection $\Pi_e(u)$ is $w$</li>
 </ul>
 
-<div class="kdmath">$$
-\Pi_e(u) + w = u ~~~\Rightarrow~~~w = u - \Pi_e(u)
-$$</div>
+\[\Pi_e(u) + w = u ~~~\Rightarrow~~~w = u - \Pi_e(u)\]
 
 <h3 id="orthonormal-basis-is-nice">Orthonormal basis is nice</h3>
 
 <p>어떤 벡터 $v$든 orthonormal 기저를 통해 간편하게 나타낼 수 있다. 즉,</p>
 
-<div class="kdmath">$$
-v = \langle v, \hat e_1 \rangle  \hat e_1 + \dotsb + \langle v, \hat e_n \rangle \hat e_n
-$$</div>
+\[v = \langle v, \hat e_1 \rangle  \hat e_1 + \dotsb + \langle v, \hat e_n \rangle \hat e_n\]
 
 <h3 id="orthogonalization">Orthogonalization</h3>
 
 <p>일단 기억해야 할 것은 generic 기저 ${v_i}$가 생성하는 벡터 공간과 ${ \hat e_i }$가 생성하는 벡터 공간이 동일하다는 것이다. 즉,</p>
 
-<div class="kdmath">$$
-\text{span}(v_1, \dotsc, v_n) = V = \text{span}(\hat e_1, \dotsc, \hat e_n)
-$$</div>
+\[\text{span}(v_1, \dotsc, v_n) = V = \text{span}(\hat e_1, \dotsc, \hat e_n)\]
 
 <p>그람-슈미트 알고리듬은 다음과 같다.</p>
 
@@ -366,9 +320,7 @@ $$</div>
 
 <p><img src="https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720" alt="enter image description here" style="margin: auto; display: block; border:1.5px solid #021a40;" width="500" /></p>
 
-<div class="kdmath">$$
-v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
-$$</div>
+\[v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w\]
 
 <p>즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서</p>
 

@@ -170,44 +170,34 @@ window.onload = wrap_img;
 
 <p>대체로 통계학의 알고리듬은 목적 함수를 최적화하는 형태이다. PCA도 마찬가지다. 관찰 대상 $i$(for $i = 1, \dotsc, n$)에 관한 $k$ 차원의 피처 벡터 $x_i$가 있다고 하자. $x_i$는 $k \times 1$의 칼럼 벡터이다. 앞으로 특별한 언급이 없는 이상 앞으로 $x_i$ 벡터는 $n$개의 관찰에 대한 평균으로 구성된 벡터 $\mu = [\mu^1~\mu^2~\dotsc~\mu^k]^T$를 뺀 값이라고 간주하자. 즉, $X_i$가 평균을 빼지 않은 $i$ 라고 할 때,</p>
 
-<div class="kdmath">$$
-\underset{k \times 1}{x_i} = \left[\begin{array}{c}{X^1_i - \mu^1} \\ {X^2_i - \mu^2} \\ {\vdots} \\ {X^k_i - \mu^k}\end{array}\right]
-$$</div>
+\[\underset{k \times 1}{x_i} = \left[\begin{array}{c}{X^1_i - \mu^1} \\ {X^2_i - \mu^2} \\ {\vdots} \\ {X^k_i - \mu^k}\end{array}\right]\]
 
 <p>이제 해당 피쳐를 쏠 스크린으로 활용할 유닛 벡터를 $w$라고 하자. 유닛 벡터란 $w \cdot w = 1$를 의미한다. 여기서 스크린이라는 의미는 개별 관찰이 지니는 특징을 이 벡터로 프로젝션해서 그 특징을 요약하겠다는 것이다. 우리에게 익숙한 회귀분석 역시 $y_i$라는 관찰을 설명변수 $\mathbf X$가 형성하는 선형 부분공간으로 프로젝션하는 방법이다. $x_i$를 $w$로 프로젝션 하면 다음과 같다.</p>
 
-<div class="kdmath">$$
-\operatorname{Proj}_{w}(x_i) = \dfrac{w \cdot x_i}{\Vert w \Vert} = w \cdot x_ i
-$$</div>
+\[\operatorname{Proj}_{w}(x_i) = \dfrac{w \cdot x_i}{\Vert w \Vert} = w \cdot x_ i\]
 
 <p>이 프로젝션의 벡터 $w$ 위의 이미지는 $(w \cdot x_i) w$가 된다.</p>
 
 <p>이 프로젝션 스칼라 값 혹은 프로젝션 벡터의  기댓값은  아래와 같이 0이 된다.
-<span class="kdmath">$\dfrac{1}{n} \sum^n_{i=1} (w \cdot x_i) = \left( \dfrac{1}{n} \sum_{i=1}^n x_i \right)\cdot w = \boldsymbol{0} \cdot w = 0$</span></p>
+\(\dfrac{1}{n} \sum^n_{i=1} (w \cdot x_i) = \left( \dfrac{1}{n} \sum_{i=1}^n x_i \right)\cdot w = \boldsymbol{0} \cdot w = 0\)</p>
 
 <p>벡터 $x_i$와 이 프로젝션 이미지 사이의 유클리드 거리를 구해보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \Vert x_i - (w \cdot x_i) w \Vert^2 &amp; = \Vert x_i \Vert^2 - 2 (w \cdot x_i)(w \cdot x_i) +  \Vert w \Vert^2 \\
 &amp; = \Vert x_i \Vert^2 - 2 (w \cdot x_i)^2 +  1
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>모든 관찰 수 $n$에 대해서 거리를 구해 더하면 이것이 일종의 MSE(Mean Squared Error)가 된다.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \mathrm{MSE}(w) &amp; = \dfrac{1}{n}\sum_{i=1}^n \left( \Vert x_i \Vert^2 - 2(w \cdot x_i)^2 + 1 \right)  \\
 &amp; = \underbrace{1 +  \dfrac{1}{n}\sum_{i=1}^n \Vert x_i \Vert^2}_{(\ast)}  - 2\dfrac{1}{n}\sum_{i=1}^n  (w \cdot x_i)^2
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>MSE를 최소화하는 게 목표라고 하자. 목적함수를 최적화 하기 위해서는 $w$를 조정할 수 있다. $(*)$는 $w$를 포함하고 있지 않으므로 나머지 부분을 최소화하면 MSE가 극대화된다.</p>
 
-<div class="kdmath">$$
-\dfrac{1}{n} \sum_{i=1}^n (w \cdot x_i)^2 = \left(\dfrac{1}{n}  \sum_{i=1}^n w \cdot x_i \right)^2 + \underset{i}{\mathrm{Var}}[w \cdot x_i]
-$$</div>
+\[\dfrac{1}{n} \sum_{i=1}^n (w \cdot x_i)^2 = \left(\dfrac{1}{n}  \sum_{i=1}^n w \cdot x_i \right)^2 + \underset{i}{\mathrm{Var}}[w \cdot x_i]\]
 
 <p>이 식이 성립하는 이유는 일반적으로 $\mathrm{Var}(y)= \mathrm{E}(y^2) - (\mathrm{E}(y))^2$이 성립하기 때문이다.  그리고 앞에서 보았듯이 $\mathrm{E} (w \cdot x_i) = 0$ 성립한다. 따라서 MSE를 최소화한다는 것은 $\mathrm{Var}_i [\cdot]$을 최대화하는 것과 같게 된다. PCA에 분산에 관한 이야기가 자꾸 나오는 것은 이 때문이다.</p>
 
@@ -219,8 +209,7 @@ $$</div>
 
 <p>왜 분산이 등장하는지를 파악했으니 분산 최대화를 계산해볼 차례다.  아래 행렬 $X$를 통해 쉽게 분산-공분산 행렬을  나타낼 수 있다. $x_i^j$ 에서 $i (=1,2,\dotsc, n)$는 관찰을, $j(=1,2,\dotsc,k)$는 피쳐를 나타낸다.</p>
 
-<div class="kdmath">$$
-\underset{n \times k}{X} = 
+\[\underset{n \times k}{X} = 
  \begin{bmatrix}
     {x_1}^T \\
     {x_2}^T  \\
@@ -232,72 +221,55 @@ $$</div>
 {x_2^1} &amp; {x_2^2} &amp; {\cdots} &amp; {x_2^k}\\ 
 {\vdots} &amp; {\vdots} &amp; {\ddots} &amp; {\vdots} \\ 
 {x_n^1} &amp; {x_n^2} &amp; {\cdots} &amp; {x_n^k}
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \dfrac{1}{n-1} \underset{(k \times n) (n \times k)}{X^{T} X} = 
 \begin{bmatrix}
 \text{cov}(x^1, x^1) &amp; \text{cov}(x^1, x^2) &amp; \cdots &amp; \text{cov}(x^1, x^k) \\
 \text{cov}(x^2, x^1) &amp; \text{cov}(x^2, x^2) &amp; \cdots &amp; \text{cov}(x^2, x^k) \\
 \text{cov}(x^k, x^1) &amp; \text{cov}(x^k, x^2) &amp; \cdots &amp; \text{cov}(x^k, x^k)
 \end{bmatrix} = \Sigma, \text{~where}
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
-<div class="kdmath">$$
-\text{cov}(x^i, x^j) = \dfrac{1}{n-1}\sum_{k=1}^{n} x^i_k x^j_k
-$$</div>
+\[\text{cov}(x^i, x^j) = \dfrac{1}{n-1}\sum_{k=1}^{n} x^i_k x^j_k\]
 
 <h3 id="eigenvalue는-어떻게-등장하나">
 <a class="anchor" href="#eigenvalue%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%93%B1%EC%9E%A5%ED%95%98%EB%82%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>eigenvalue는 어떻게 등장하나?</h3>
 
 <p>임의의 단위 벡터 $w$와 그 프로젝션을 다시 적어보자. 표기를 간단히 하기 위해서 상첨자는 생략한다. 이제 하나의 벡터가 아니라 $X$라는 매트릭스 전체에 대해서 프로젝션을 하면 아래와 같다.</p>
 
-<div class="kdmath">$$
-\operatorname{Proj}_{w} (X) = \dfrac{X w}{\Vert w \Vert} \in {\mathbb R}^{n \times 1}
-$$</div>
+\[\operatorname{Proj}_{w} (X) = \dfrac{X w}{\Vert w \Vert} \in {\mathbb R}^{n \times 1}\]
 
 <p>이제 극대화의 목적은 이렇게 프로젝션된 이미지의 분산을 가장 크게 만드는 것이다.  앞서의 가정에 따라서 $\mathrm{E}(X) = 0$가 성립함을 기억해두자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \mathrm{Var}(X {w}) &amp;= \frac{1}{n-1}(X {w})^{T}(X {w}) \\
 &amp;=\frac{1}{n-1} {w}^{T} X^{T} X {w} =\frac{1}{n-1} {w}^{T}\left(X^{T} X\right) {w} \\
 &amp;={w}^{T}\left(\frac{X^{T} X}{n-1}\right) {w} \\
 &amp;={w}^{T} \Sigma {w}
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>그런데, $w$는 단위벡터임으로 $w \cdot w = 1$이다. 이를 제약 조건으로 두고 제약 하의 극대화 문제를 정식화하면 다음과 같다.</p>
 
-<div class="kdmath">$$
-{\mathcal L} =w^{\operatorname T} \Sigma w - \lambda (w \cdot w -1)
-$$</div>
+\[{\mathcal L} =w^{\operatorname T} \Sigma w - \lambda (w \cdot w -1)\]
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \dfrac{\partial \mathcal L}{\partial w} &amp; = 0 = 2 \Sigma w - 2\lambda w \\
 \dfrac{\partial \mathcal L}{\partial \lambda} &amp; = 0 = w \cdot w - 1
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>1계 조건을 다시 보자.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">1</a></sup> $\Sigma w = \lambda w$ 조건이 흥미롭다. 1계 조건이 정확하게 아이겐밸류(eigenvalue, 고유값)와 아이겐벡터(eigenvector, 고유벡터)를 구하는 방법이다. 어떤 매트릭스가 있을 때 해당 매트릭스의 분산-공분산 행렬의 아이겐밸류와 아이겐벡터를 구하면 그 아이겐밸류와 벡터가 바로 MSE를 최적화해주는 값이 된다. 이때 $w$는 아이겐벡터이며 $\lambda$는 아이겐밸류가 된다.  아이겐밸류는 아래 식에서 보듯이 분산이다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
 
-<div class="kdmath">$$
-\operatorname{Var}(X w) = w^{\mathrm T} \Sigma w =  w^{\mathrm T} (\lambda w)  = \lambda w \cdot w = \lambda
-$$</div>
+\[\operatorname{Var}(X w) = w^{\mathrm T} \Sigma w =  w^{\mathrm T} (\lambda w)  = \lambda w \cdot w = \lambda\]
 
 <p>아마도 최적화 공부를 해본 사람이라면 갸우뚱할지 모르겠다. 1계 조건은 필요 조건이다. 즉, 극대화, 극소화 모두를 그 안에 담고 있을 수 있다. 그렇다면 2계 충분 조건을 따져야 하지 않을까? 그런데, 위 식에 대해서 사실 2계 충분 조건을 따지는 것이 쉽지 않다. 다만 이 문제는 다행스럽게도 지름길이 있다. 위에서 보듯이 1계 조건을 만족하는 $w$는 $\Sigma$의 아이겐벡터다. 따라서 이 아이겐벡터에서만 극대값과 극소값이 존재한다. 1계 조건을 만족하는 아이겐벡터를 $\omega$라고 하자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 {\mathcal L}(\omega) &amp; =\omega^{T} \Sigma \omega - \lambda (\omega \cdot \omega -1) \\
 &amp; = \omega^T (\Sigma w - \lambda w) + \lambda \\
 &amp; = \lambda 
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>즉, 1계 조건을 만족하는 값에서 목적 함수의 값은 아이겐밸류 $\lambda$가 된다. 그리고 위에서 보았듯이 $\lambda$는 $Xw$의 분산이 되기 때문에 분산이 큰 값의 아이겐벡터가 목적 함수를 극대화하는 $w$가 된다.</p>
 
@@ -327,11 +299,9 @@ $$</div>
 
 <p>$\Sigma$는 준양정행렬(positive semi-definite) 행렬이다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">4</a></sup> 즉,</p>
 
-<div class="kdmath">$$
-x^T \Sigma x \geq 0 ~\text{for any $x$.}
-$$</div>
+\[x^T \Sigma x \geq 0 ~\text{for any $x$.}\]
 
-<p><span class="kdmath">$w^T X^T X w = \underset{\text{닷 프로덕트}}{ (Xw)^T (Xw) } \geq 0$</span></p>
+<p>\(w^T X^T X w = \underset{\text{닷 프로덕트}}{ (Xw)^T (Xw) } \geq 0\)</p>
 
 <p>이 경우 모든 아이겐밸류의 값은 음수가 되지 않는다. 앞서 아이겐밸류가 분산이 된다는 사실을 보았다. 아이겐밸류가 음수가 될 수 없고 따라서 분산이 될 수 있다.</p>
 
@@ -346,9 +316,7 @@ $$</div>
 
 <p>프로젝션의 스크린으로 동원되는 벡터가 $w^1, w^2, \dotsc, w^k$라고 하자. 이 프로젝션을 통해 생성되는 벡터들이 이루는 부분공간은 다음과 같이 나타낼 수 있다.</p>
 
-<div class="kdmath">$$
-\sum_{j=1}^k \underset{\mathrm{가중치}}{( x_i \cdot w^j) } w^j
-$$</div>
+\[\sum_{j=1}^k \underset{\mathrm{가중치}}{( x_i \cdot w^j) } w^j\]
 
 <p>$x_i$와 $w^j$ 모두 $k \times 1$ 벡터임을 확인하고 가자. 이 녀석과 $x_i$의 MSE를 최소화하는 문제는 어떻게 될까? 계산이 다소 복잡하니 직관만 짚고 넘어가자.</p>
 
@@ -358,9 +326,7 @@ $$</div>
   <li>스크린을 이루는 축들과 $x_i$의 크로스 프로덕트 값의 분산($\mathrm{Var} (x_i \cdot w^j)$)을 더한 값을 최대화하는 것이 MSE를 극소화 문제가 된다. 즉, 각각 $w^j$와 $x_i$의 닷 프로덕트의 분산을 최대화하면 된다. 즉,</li>
 </ol>
 
-<div class="kdmath">$$
-\underset{i}{\text{Var}}[\sum_{j=1}^k {( x_i \cdot w^j) } w^j] = \sum_{j=1}^k {\lambda^j}
-$$</div>
+\[\underset{i}{\text{Var}}[\sum_{j=1}^k {( x_i \cdot w^j) } w^j] = \sum_{j=1}^k {\lambda^j}\]
 
 <h2 id="마침내-차원-축소">
 <a class="anchor" href="#%EB%A7%88%EC%B9%A8%EB%82%B4-%EC%B0%A8%EC%9B%90-%EC%B6%95%EC%86%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>마침내 차원 축소</h2>

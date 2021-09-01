@@ -139,23 +139,17 @@ window.onload = wrap_img;
   <li>이 상태에서 적당한 매트릭스 $\mathbf A$를 G-J 프로세스에 따라서 U 매트릭스(상삼각 행렬), 즉 Upper Triangular Matrix로 바꾼다고 해보자.</li>
 </ul>
 
-<div class="kdmath">$$
-E_1 \dotsb E_k {\mathbf A} = {\mathbf U}
-$$</div>
+\[E_1 \dotsb E_k {\mathbf A} = {\mathbf U}\]
 
 <p>이제 $\mathbf A$ 앞에 붙은 오퍼레이터들의 역행렬을 왼쪽으로 곱해보자.</p>
 
-<div class="kdmath">$$
-{\mathbf A} = \underbrace{E_k^{-1} \dotsb E_1^{-1}}_{\ast} {\mathbf U}
-$$</div>
+\[{\mathbf A} = \underbrace{E_k^{-1} \dotsb E_1^{-1}}_{\ast} {\mathbf U}\]
 
 <ul>
   <li>$\ast$ 부분이 바로 $\mathbf L$ 매트릭스가 된다! 즉,</li>
 </ul>
 
-<div class="kdmath">$$
-{\mathbf A} = {\mathbf L} {\mathbf U} =  {\mathbf L} {\mathbf D}{\mathbf U^\prime}
-$$</div>
+\[{\mathbf A} = {\mathbf L} {\mathbf U} =  {\mathbf L} {\mathbf D}{\mathbf U^\prime}\]
 
 <ul>
   <li>LU 분해란 매트릭스 $\mathbf A$를 $\mathbf U$로 만드는 과정에서 자연스럽게 등장한다.</li>
@@ -178,9 +172,7 @@ $$</div>
   <li>for Invertible $\mathbf A$,</li>
 </ul>
 
-<div class="kdmath">$$
-\mathbf{PA = LU}
-$$</div>
+\[\mathbf{PA = LU}\]
 
 <ul>
   <li>P is identity matrix which reordered rows.
@@ -190,12 +182,10 @@ $$</div>
   </li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
-\mathbf P^{-1} & = \mathbf P^\mathrm T \\
-\mathbf P^\mathrm T \mathbf P & = \mathbf I
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\mathbf P^{-1} &amp; = \mathbf P^\mathrm T \\
+\mathbf P^\mathrm T \mathbf P &amp; = \mathbf I
+\end{aligned}\]
 
 <h2 id="transpose">Transpose</h2>
 
@@ -205,9 +195,7 @@ $$</div>
 
 <h2 id="symmetric">Symmetric</h2>
 
-<div class="kdmath">$$
-\mathbf A^\mathrm T = \mathbf A
-$$</div>
+\[\mathbf A^\mathrm T = \mathbf A\]
 
 <ul>
   <li>$\mathbf R^\mathrm T \mathbf R$ is always symmetric.

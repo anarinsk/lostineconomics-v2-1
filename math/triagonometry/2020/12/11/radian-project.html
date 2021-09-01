@@ -135,9 +135,7 @@ window.onload = wrap_img;
 
 <p>그림에서 보듯 각도법은 중심에 위치한 관찰자의 위치를 반영한다. 반면 호도법은 반지름 대비 원주 상에서 이동한 거리로 각을 표시한다.  호도법으로 각도를 나타내는 법은 다음과 같다.</p>
 
-<div class="kdmath">$$
-\theta = \dfrac{s}{r}
-$$</div>
+\[\theta = \dfrac{s}{r}\]
 
 <ul>
   <li>$\theta$: 각도</li>
@@ -149,27 +147,19 @@ $$</div>
 
 <p>$d\degree$의 각도를 지니는 호의 길이를 구해보자.</p>
 
-<div class="kdmath">$$
-r (2 \pi)  \dfrac{d\degree}{360 \degree}
-$$</div>
+\[r (2 \pi)  \dfrac{d\degree}{360 \degree}\]
 
 <p>이를 호도법으로 나타나면 다음과 같다. 우선 각도를 호로 바꿔야 한다. $\frac{d\degree}{360 \degree}$ 부분을 호도법으로 바꿔야 한다. 따라서 분자와 분모 모두를 호도로 고쳐보자.</p>
 
-<div class="kdmath">$$
-360 \degree = \dfrac{r (2\pi)}{r} \rm radian = 2 \pi  ~\rm radian
-$$</div>
+\[360 \degree = \dfrac{r (2\pi)}{r} \rm radian = 2 \pi  ~\rm radian\]
 
 <p>$d\degree = \theta~\rm radian$이므로,라고 하자.</p>
 
-<div class="kdmath">$$
-r (2\pi) \dfrac{\theta}{2 \pi} = r \theta
-$$</div>
+\[r (2\pi) \dfrac{\theta}{2 \pi} = r \theta\]
 
 <p>즉 호도법으로 원호의 길이는 $r \theta$로 간편하게 표기된다. 호의 면적 역시 마찬가지다.</p>
 
-<div class="kdmath">$$
-r^2 \pi  \dfrac{\theta}{2 \pi} = r^2 \dfrac{\theta}{2}
-$$</div>
+\[r^2 \pi  \dfrac{\theta}{2 \pi} = r^2 \dfrac{\theta}{2}\]
 
 <h2 id="limit-of-sin-cos">Limit of sin, cos</h2>
 
@@ -178,116 +168,86 @@ $$</div>
 
 <p>삼각형의 면적을 보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-\triangle {\rm OAI} & = \dfrac{1}{2} {\rm height} \cdot \overline{\rm OI} = \dfrac{1}{2}\sin \theta \cdot 1 \\
-\frown{\rm OAB} &= \dfrac{1}{2} 1^2  \theta \\
-\triangle {\rm OTI} &= \dfrac{1}{2}\overline{\rm TI} \cdot \overline{\rm OI} = \dfrac{1}{2}1\cdot \tan \theta
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\triangle {\rm OAI} &amp; = \dfrac{1}{2} {\rm height} \cdot \overline{\rm OI} = \dfrac{1}{2}\sin \theta \cdot 1 \\
+\frown{\rm OAB} &amp;= \dfrac{1}{2} 1^2  \theta \\
+\triangle {\rm OTI} &amp;= \dfrac{1}{2}\overline{\rm TI} \cdot \overline{\rm OI} = \dfrac{1}{2}1\cdot \tan \theta
+\end{aligned}\]
 
 <p>이 사이에 아래와 같은 관계가 성립한다.</p>
 
-<div class="kdmath">$$
-\triangle \rm OAB \leq \frown \rm OAB \leq \triangle \rm OAC
-$$</div>
+\[\triangle \rm OAB \leq \frown \rm OAB \leq \triangle \rm OAC\]
 
-<div class="kdmath">$$
-\sin \theta \leq \theta \leq \tan \theta
-$$</div>
+\[\sin \theta \leq \theta \leq \tan \theta\]
 
-<div class="kdmath">$$
-\dfrac{\sin \theta}{\sin \theta} \leq \dfrac{\theta}{\sin \theta} \leq \dfrac{\tan \theta}{\sin \theta}
-$$</div>
+\[\dfrac{\sin \theta}{\sin \theta} \leq \dfrac{\theta}{\sin \theta} \leq \dfrac{\tan \theta}{\sin \theta}\]
 
-<div class="kdmath">$$
-1 \geq \dfrac{\sin \theta}{\theta} \geq {\cos \theta}
-$$</div>
+\[1 \geq \dfrac{\sin \theta}{\theta} \geq {\cos \theta}\]
 
-<div class="kdmath">$$
-1 \geq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \geq \lim_{\theta \to 0} \cos \theta (= 1)
-$$</div>
+\[1 \geq \lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} \geq \lim_{\theta \to 0} \cos \theta (= 1)\]
 
 <p>샌드위치 정리에 따라서 $\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta} =1$.</p>
 
 <h3 id="limit-of-cos">Limit of cos</h3>
 
-<div class="kdmath">$$
-\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta}
-$$</div>
+\[\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta}\]
 
-<div class="kdmath">$$
-\begin{aligned}
-\dfrac{\cos \theta -1}{\theta} \cdot \dfrac{\cos \theta + 1}{\cos \theta +1} &= \dfrac{\cos^2 \theta - 1}{\theta(\cos \theta +1)} \\ 
-&= \dfrac{-\sin^2 \theta}{\theta(\cos \theta + 1)} \\
-& = \dfrac{-\sin \theta}{\theta} \dfrac{\sin \theta}{\cos \theta + 1}
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\dfrac{\cos \theta -1}{\theta} \cdot \dfrac{\cos \theta + 1}{\cos \theta +1} &amp;= \dfrac{\cos^2 \theta - 1}{\theta(\cos \theta +1)} \\ 
+&amp;= \dfrac{-\sin^2 \theta}{\theta(\cos \theta + 1)} \\
+&amp; = \dfrac{-\sin \theta}{\theta} \dfrac{\sin \theta}{\cos \theta + 1}
+\end{aligned}\]
 
-<div class="kdmath">$$
-\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta} = (-1) \cdot 0 = 0
-$$</div>
+\[\lim_{\theta \to 0} \dfrac{\cos \theta -1}{\theta} = (-1) \cdot 0 = 0\]
 
 <h2 id="derivative-of-sin">Derivative of Sin</h2>
 
 <p>정의를 그대로 활용하면 된다.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-\dfrac{d}{d \theta} \sin \theta & = \lim_{\delta \to 0} \dfrac{\sin (\theta+\delta) - \sin \theta }{\delta} \\
-& = \lim_{\delta \to 0} \dfrac{\sin \theta \cos \delta +\sin \delta \cos \theta - \sin \theta }{\delta} \\
-& = \cos \theta \lim_{\delta \to 0} \dfrac{\sin \delta}{\delta} \\
-& = \cos \theta
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\dfrac{d}{d \theta} \sin \theta &amp; = \lim_{\delta \to 0} \dfrac{\sin (\theta+\delta) - \sin \theta }{\delta} \\
+&amp; = \lim_{\delta \to 0} \dfrac{\sin \theta \cos \delta +\sin \delta \cos \theta - \sin \theta }{\delta} \\
+&amp; = \cos \theta \lim_{\delta \to 0} \dfrac{\sin \delta}{\delta} \\
+&amp; = \cos \theta
+\end{aligned}\]
 
-<div class="kdmath">$$
-\begin{aligned}
-\dfrac{d}{d \theta} \cos \theta & = \lim_{\delta \to 0} \dfrac{\cos (\theta+\delta) - \cos \theta }{\delta} \\
-& = \lim_{\delta \to 0} \dfrac{\cos \theta \cos \delta -\sin \delta \sin \theta - \cos \theta }{\delta} \\
-& = \lim_{\delta \to 0}\dfrac{\cos \theta(\cos \delta -1)-\sin\delta \sin\theta}{\delta} \\
-& = 0 - (1) \sin \theta \\
-& = - \sin \theta
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\dfrac{d}{d \theta} \cos \theta &amp; = \lim_{\delta \to 0} \dfrac{\cos (\theta+\delta) - \cos \theta }{\delta} \\
+&amp; = \lim_{\delta \to 0} \dfrac{\cos \theta \cos \delta -\sin \delta \sin \theta - \cos \theta }{\delta} \\
+&amp; = \lim_{\delta \to 0}\dfrac{\cos \theta(\cos \delta -1)-\sin\delta \sin\theta}{\delta} \\
+&amp; = 0 - (1) \sin \theta \\
+&amp; = - \sin \theta
+\end{aligned}\]
 
 <h2 id="taylor-series-for-sin-cos">Taylor Series for sin, cos</h2>
 
 <p>이제 $\sin \theta$, $\cos \theta$를 $\theta$로 0 근방에서 전개해보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-\sin \theta & = \sin 0 + \sin' 0(\theta - 0) + \dfrac{\sin'' 0}{2!}(\theta - 0)^2 +  \dfrac{\sin''' 0}{3!}(\theta - 0)^3 + \dotsb \\
-& = 0 + \theta  + \dfrac{(-1)}{3!} \theta^3 + \dotsb \\
-& = \theta  - \dfrac{1}{3!} \theta^3 + \dfrac{1}{5!} \theta^5 -\dotsb 
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\sin \theta &amp; = \sin 0 + \sin' 0(\theta - 0) + \dfrac{\sin'' 0}{2!}(\theta - 0)^2 +  \dfrac{\sin''' 0}{3!}(\theta - 0)^3 + \dotsb \\
+&amp; = 0 + \theta  + \dfrac{(-1)}{3!} \theta^3 + \dotsb \\
+&amp; = \theta  - \dfrac{1}{3!} \theta^3 + \dfrac{1}{5!} \theta^5 -\dotsb 
+\end{aligned}\]
 
-<div class="kdmath">$$
-\begin{aligned}
-\cos \theta & = \cos 0 + \cos' 0(\theta - 0) + \dfrac{\cos'' 0}{2!}(\theta - 0)^2 + \dfrac{\cos''' 0}{3!}(\theta - 0)^3 + \dotsb \\
-& = 1 + (-\sin 0)\theta  + \dfrac{(-\cos\theta)}{2!} \theta^2 + \dotsb \\
-& = 1 - \dfrac{1}{2!} \theta^2 + \dfrac{1}{4!} \theta^4 - \dotsb 
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\cos \theta &amp; = \cos 0 + \cos' 0(\theta - 0) + \dfrac{\cos'' 0}{2!}(\theta - 0)^2 + \dfrac{\cos''' 0}{3!}(\theta - 0)^3 + \dotsb \\
+&amp; = 1 + (-\sin 0)\theta  + \dfrac{(-\cos\theta)}{2!} \theta^2 + \dotsb \\
+&amp; = 1 - \dfrac{1}{2!} \theta^2 + \dfrac{1}{4!} \theta^4 - \dotsb 
+\end{aligned}\]
 
 <h2 id="taylor-series-ei-theta">Taylor Series $e^{i \theta}$</h2>
 
-<div class="kdmath">$$
-\begin{aligned}
-e^{i \theta} &= e^0 + i (\theta - 0) + \dfrac{(i)^2}{2} (\theta-0)^2 + \dotsb \\
-& = 1 + i \theta - \dfrac{\theta^2}{2!} - i \dfrac{\theta^3}{3!} + \dfrac{\theta^4}{4!} + i \dfrac{\theta^5}{5!}
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+e^{i \theta} &amp;= e^0 + i (\theta - 0) + \dfrac{(i)^2}{2} (\theta-0)^2 + \dotsb \\
+&amp; = 1 + i \theta - \dfrac{\theta^2}{2!} - i \dfrac{\theta^3}{3!} + \dfrac{\theta^4}{4!} + i \dfrac{\theta^5}{5!}
+\end{aligned}\]
 
 <p>실수와 허수를 따로 모아주면,</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-e^{i \theta} & = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dotsb) + (\theta - \dfrac{\theta^3}{3!} + \dfrac{\theta^5}{5!} - \dotsb)i \\
-& = \cos \theta + i \cdot \sin \theta
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+e^{i \theta} &amp; = (1 - \dfrac{\theta^2}{2!} + \dfrac{\theta^4}{4!} - \dotsb) + (\theta - \dfrac{\theta^3}{3!} + \dfrac{\theta^5}{5!} - \dotsb)i \\
+&amp; = \cos \theta + i \cdot \sin \theta
+\end{aligned}\]
 
 <h2 id="polar-representation">Polar Representation</h2>
 
@@ -297,9 +257,7 @@ $$</div>
 
 <p>허수를 $x-y$로 구성된 데카르트 평면에 표시한다고 하자. 이때, 일반적으로 $x + i y$는 위의 그림과 같이 표시된다. 이를 극좌표로 나타내는 방법은 해당 벡터까지의 거리와 각도로 다시 표기하는 것이다. 즉,</p>
 
-<div class="kdmath">$$
-z = x +  yi = |z| \angle{\theta} = \underbrace{|z| \cos \theta}_{x} + \underbrace{|z| \sin\theta}_{y} i
-$$</div>
+\[z = x +  yi = |z| \angle{\theta} = \underbrace{|z| \cos \theta}_{x} + \underbrace{|z| \sin\theta}_{y} i\]
 
 <p>$(a, b)$가 데카르트 좌표 위에서 표현하는 위치까지의 거리를 스케일링하는데, 이는 원의 반지름과 같은 의미가 된다. 원 위에서의 위치는 $\theta$로 나타낼 수 있다.</p>
 
@@ -307,15 +265,11 @@ $$</div>
 
 <p>앞서 본 결과는 다음과 같다.</p>
 
-<div class="kdmath">$$
-e^{\theta i} = \sin\theta + i \cdot \cos \theta
-$$</div>
+\[e^{\theta i} = \sin\theta + i \cdot \cos \theta\]
 
 <p>$\theta$는 각이기 때문에 이 녀석을 $\pi$만큼 돌려보도록 하자. 그러면 데카르트 좌표에서 $(-1,0)$에 떨어진다. 이는 실수-허수 평면에서 실수 $-1$, 허수 $0$이다. 즉,</p>
 
-<div class="kdmath">$$
-e^{\pi i} + 1 = 0
-$$</div>
+\[e^{\pi i} + 1 = 0\]
 
 <p>이 항등식은 수학의 역사에서 가장 중요한 5개–$e$, $\pi$, $i$, $0$, $1$–의 숫자 사이의 관계를 나타낸다.</p>
 
@@ -323,13 +277,9 @@ $$</div>
 
 <p>드무아브르의 법칙 또한 그냥 자명하다.</p>
 
-<div class="kdmath">$$
-e^{\theta i} = \sin\theta + i \cdot \cos\theta
-$$</div>
+\[e^{\theta i} = \sin\theta + i \cdot \cos\theta\]
 
-<div class="kdmath">$$
-(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + i \cdot \cos n \theta
-$$</div>
+\[(e^{\theta i})^n = e^{n\theta i} = \sin n \theta + i \cdot \cos n \theta\]
 
 <p>$e^{\theta i}$의 $n$ 승이 단위원을 중심으로 계속 회전하며 값을 지니게 된다는 사실을 쉽게 알 수 있다.</p>
 
@@ -337,27 +287,19 @@ $$</div>
 
 <p>위의 사실들을 활용하면 몇 가지 재미있는 계산을 할 수 있다.</p>
 
-<div class="kdmath">$$
-e^i = \sin 1 + i \cdot \cos 1
-$$</div>
+\[e^i = \sin 1 + i \cdot \cos 1\]
 
 <p>$3^i$는 어떨까? 이상해보이는 숫자지만, $e$를 활용하면 된다.</p>
 
-<div class="kdmath">$$
-(e^{\ln 3})^i = \sin \ln 3 + i \cdot \cos \ln 3
-$$</div>
+\[(e^{\ln 3})^i = \sin \ln 3 + i \cdot \cos \ln 3\]
 
 <p>$i^i$는 어떨까? $i = e^{\frac{\pi}{2} i}$이다. 원 (1,0), 즉 $e^0$에서 90도 각을 지니면 좌표에서 $i$에 도달하게 된다.</p>
 
-<div class="kdmath">$$
-i^i = (e^{\frac{\pi}{2} i})^i = e^{-\frac{\pi}{2}}
-$$</div>
+\[i^i = (e^{\frac{\pi}{2} i})^i = e^{-\frac{\pi}{2}}\]
 
 <p>$\ln i$도 자연스럽게 구할 수 있다.</p>
 
-<div class="kdmath">$$
-\ln i^i = i \ln i = -\dfrac{\pi}{2}
-$$</div>
+\[\ln i^i = i \ln i = -\dfrac{\pi}{2}\]
 
 <p>양변에 $i$를 곱하면, $\ln i = \dfrac{\pi}{2} i$.</p>
 

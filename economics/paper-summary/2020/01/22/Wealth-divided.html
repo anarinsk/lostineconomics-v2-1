@@ -198,7 +198,7 @@ window.onload = wrap_img;
 <h3 id="decomposing-wealth-premium">
 <a class="anchor" href="#decomposing-wealth-premium" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decomposing wealth premium</h3>
 
-<p><span class="kdmath">$\dfrac{\overline{W}_{e,t}}{\overline{W}_{e,71}} = \dfrac{\sum^{3}_{i=1} s_{e,i,t} \overline{W}_{e,i,t}}{\overline{W}_{e,71}} = \sum^{3}_{i=1} s_{e,i,t} \dfrac{\overline{W}_{e,i,71}}{\overline{W}_{e,71}} \dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}$</span></p>
+<p>\(\dfrac{\overline{W}_{e,t}}{\overline{W}_{e,71}} = \dfrac{\sum^{3}_{i=1} s_{e,i,t} \overline{W}_{e,i,t}}{\overline{W}_{e,71}} = \sum^{3}_{i=1} s_{e,i,t} \dfrac{\overline{W}_{e,i,71}}{\overline{W}_{e,71}} \dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}\)</p>
 <ul>
   <li>변수
     <ul>
@@ -221,10 +221,8 @@ window.onload = wrap_img;
   <li>분해 식을 통해서 크게 세가지 변동을 구분할 수 있다.
     <ul>
       <li>$s$의 변화</li>
-      <li>
-<span class="kdmath">$\dfrac{\overline{W}_{e,i,71}}{\overline{W}_{e,71}}$</span>: 기준 연도의 부 계층의 차이</li>
-      <li>
-<span class="kdmath">$\dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}$</span>: 기준 연도 대비 특정 부 계층의 연도별 변화</li>
+      <li>\(\dfrac{\overline{W}_{e,i,71}}{\overline{W}_{e,71}}\): 기준 연도의 부 계층의 차이</li>
+      <li>\(\dfrac{\overline{W}_{e,i,t}}{\overline{W}_{e,i,71}}\): 기준 연도 대비 특정 부 계층의 연도별 변화</li>
     </ul>
   </li>
   <li>
@@ -232,11 +230,11 @@ window.onload = wrap_img;
   </li>
   <li>
     <p>Counterfactual 1
-<span class="kdmath">$\dfrac{\overline{W}_{x,i,t}}{\overline{W}_{x,i,71}} = 
+\(\dfrac{\overline{W}_{x,i,t}}{\overline{W}_{x,i,71}} = 
 \begin{cases}
 \dfrac{\overline{W}_{nc,i,t}}{\overline{W}_{nc,i,71}} &amp; \text{if $x = \rm{c}$} \\
 \dfrac{\overline{W}_{c,i,t}}{\overline{W}_{c,i,71}}  &amp; \text{if $x = \rm{nc}$} 
-\end{cases}$</span></p>
+\end{cases}\)</p>
   </li>
   <li>Counterfactual 2
     <ul>
@@ -310,9 +308,7 @@ window.onload = wrap_img;
   <li>질문은 무엇이 c의 빠른 부의 축적을 낳았는가, 하는 대목이다. 일반 기본적으로 살펴본 회귀 식은 다음과 같다.</li>
 </ul>
 
-<div class="kdmath">$$
-W_{it} = \alpha_0 + \underbrace{\beta_1 c_{it}}_{A} + \underbrace{\sum_{t &gt; 1956} \beta_{2,t}~\mathbb{I}_{year = t} \cdot c_t}_{B} +  \underbrace{\sum_{t &gt; 1956} \beta_{3,t}~\mathbb{I}_{year = t}}_{C} + \underbrace{\Gamma' X_{it}}_{D} + \xi_{it}
-$$</div>
+\[W_{it} = \alpha_0 + \underbrace{\beta_1 c_{it}}_{A} + \underbrace{\sum_{t &gt; 1956} \beta_{2,t}~\mathbb{I}_{year = t} \cdot c_t}_{B} +  \underbrace{\sum_{t &gt; 1956} \beta_{3,t}~\mathbb{I}_{year = t}}_{C} + \underbrace{\Gamma' X_{it}}_{D} + \xi_{it}\]
 
 <ul>
   <li>회귀분석의 각 부분을 간략하게 살펴보자.

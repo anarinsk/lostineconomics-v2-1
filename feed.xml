@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-01T03:48:58-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-01T04:00:42-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -15,11 +15,9 @@ $$
 
 &lt;p&gt;This is rendered with default fastpage option in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;math_engine: null&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
+\[\begin{aligned}
 R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2.
-\end{aligned}
-$$&lt;/div&gt;
+\end{aligned}\]
 
 &lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 
@@ -51,7 +49,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/etc/with_mathjax.png?raw=true&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The equation with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;katex&lt;/code&gt; option is not &lt;strong&gt;Italicized&lt;/strong&gt;, and the font size is smaller than the one with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted. Setting I’m not touch anything in default setting for latest version of fastpage. Using displaystyle by using $$. $$ \begin{aligned} R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2. \end{aligned} $$ This is rendered with default fastpage option in _config.yml; math_engine: null. $$ \begin{aligned} R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2. \end{aligned} $$ Problem _config.yml is set as kramdown: math_engine: katex input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is _config.yml is set as kramdown: math_engine: null input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is The equation with katex option is not Italicized, and the font size is smaller than the one with null.</summary></entry><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
+&lt;p&gt;The equation with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;katex&lt;/code&gt; option is not &lt;strong&gt;Italicized&lt;/strong&gt;, and the font size is smaller than the one with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Purpose This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted. Setting I’m not touch anything in default setting for latest version of fastpage. Using displaystyle by using $$. $$ \begin{aligned} R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2. \end{aligned} $$ This is rendered with default fastpage option in _config.yml; math_engine: null. \[\begin{aligned} R^*=\underset{RR^t=I,\det(R)=1}{\operatorname{argmin}}\sum_{i=1}^n|RX_i-Y_i\|^2_2. \end{aligned}\] Problem _config.yml is set as kramdown: math_engine: katex input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is _config.yml is set as kramdown: math_engine: null input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rouge The result is The equation with katex option is not Italicized, and the font size is smaller than the one with null.</summary></entry><entry><title type="html">Docker + Jupyter + 한글 폰트</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html" rel="alternate" type="text/html" title="Docker + Jupyter + 한글 폰트" /><published>2021-05-09T00:00:00-05:00</published><updated>2021-05-09T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/docker/jupyter/2021/05/09/docker_korfont.html">&lt;h2 id=&quot;build도-어렵지-않다&quot;&gt;Build도 어렵지 않다!&lt;/h2&gt;
 
 &lt;p&gt;이 글은 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/docker/data-science/2020/09/24/install-hangul-in-docker.html&quot;&gt;이 포스팅&lt;/a&gt;에서 이어진다. 컨테이너를 올린 뒤 컨테이너 내 터미널에서 sh 스크립트를 실행하지 않고 한글 문제 처음부터 해결할 수 없을까?&lt;/p&gt;
 
@@ -366,79 +364,65 @@ services:
 
 &lt;p&gt;$A \in \mathbb C^{m \times n}$을 생각해보자. 이런 조건에서 아이겐 분해를 어떻게 활용할 수 있을까? 일단 $A$를 정방행렬로 만들어주어야 할 것이고, 이에는 두 가지 방법이 있다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\underbrace{A^T A}_{n \times n}, \overbrace{A A^T}^{m \times m}
-$$&lt;/div&gt;
+\[\underbrace{A^T A}_{n \times n}, \overbrace{A A^T}^{m \times m}\]
 
 &lt;p&gt;아울러, $(A^T A)^T = A^T A$, $(AA^T)^T = A A^T$가 성립하기 때문에 두 매트릭스 모두 normal 매트릭스다. 따라서 아래와 같은 개념화가 가능하다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = 
+\[A = 
 \underbrace{
 \begin{bmatrix}
-\vert &amp; \dotsb &amp; \vert \\
-u_1 &amp; \dotsb &amp; u_m \\
-\vert &amp; \dotsb &amp; \vert \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
+u_1 &amp;amp; \dotsb &amp;amp; u_m \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
 \end{bmatrix}}_{m \times m}
 \overbrace{
 \begin{bmatrix}
-\sigma_1 &amp; 0 &amp; \dotsb \\
-0 &amp; \sigma_2 &amp; \dotsb \\
-0 &amp; 0 &amp; \dotsb \\
+\sigma_1 &amp;amp; 0 &amp;amp; \dotsb \\
+0 &amp;amp; \sigma_2 &amp;amp; \dotsb \\
+0 &amp;amp; 0 &amp;amp; \dotsb \\
 \end{bmatrix}}^{m \times n}
 \underbrace{
 \begin{bmatrix}
--- &amp; v_1^T &amp; -- \\
--- &amp; \vdots &amp; -- \\
--- &amp; v_n^T &amp; -- \\
+-- &amp;amp; v_1^T &amp;amp; -- \\
+-- &amp;amp; \vdots &amp;amp; -- \\
+-- &amp;amp; v_n^T &amp;amp; -- \\
 \end{bmatrix}}_{n \times n} =
-U \Sigma V^T
-$$&lt;/div&gt;
+U \Sigma V^T\]
 
 &lt;p&gt;$U$를 통해 분해되는 부분을과 $V$를 통해 분해되는 부분을 다음과 같이 나타내보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-A A^T &amp; = U \Lambda_l U^T \\
-A^T A &amp; = V \Lambda_r V^T \\
-\end{aligned}
-$$&lt;/div&gt;
+\[\begin{aligned}
+A A^T &amp;amp; = U \Lambda_l U^T \\
+A^T A &amp;amp; = V \Lambda_r V^T \\
+\end{aligned}\]
 
 &lt;p&gt;소문자의 $l$와 $r$은 각각 left, right를 뜻한다. $U$와 $V^T$를 명시적으로 적어보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-U = 
+\[U = 
 \begin{bmatrix}
-\vert &amp; \dotsb &amp; \vert \\
-u_1 &amp; \dotsb &amp; u_m \\
-\vert &amp; \dotsb &amp; \vert \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
+u_1 &amp;amp; \dotsb &amp;amp; u_m \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
 \end{bmatrix}, \text{~where}
-\{ (\lambda_i, u_i) = \text{eigenvects}(A A^T) \}
-$$&lt;/div&gt;
+\{ (\lambda_i, u_i) = \text{eigenvects}(A A^T) \}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-V = 
+\[V = 
 \begin{bmatrix}
--- &amp; v_1^T &amp; -- \\
--- &amp; \vdots &amp; -- \\
--- &amp; v_n^T &amp; -- \\
+-- &amp;amp; v_1^T &amp;amp; -- \\
+-- &amp;amp; \vdots &amp;amp; -- \\
+-- &amp;amp; v_n^T &amp;amp; -- \\
 \end{bmatrix}, \text{~where}
-\{ (\lambda_i, v_i) = \text{eigenvects}(A^T A) \}
-$$&lt;/div&gt;
+\{ (\lambda_i, v_i) = \text{eigenvects}(A^T A) \}\]
 
 &lt;p&gt;이제  유사 대각행렬 $\Sigma$를 보자. 이 행렬은 $m \times n$ 형태다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\sigma_i = \sqrt{\lambda_i}, \text{ where } \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A)
-$$&lt;/div&gt;
+\[\sigma_i = \sqrt{\lambda_i}, \text{ where } \lambda_i = \text{eigenvals}(A A^T) = \text{eigenvals}(A^T A)\]
 
 &lt;h3 id=&quot;change-of-basis&quot;&gt;Change-of-basis&lt;/h3&gt;
 
 &lt;p&gt;기저를 바꾸는 관점에서 다시 음미해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec y = A \vec x = U \Sigma V^T \vec x
-$$&lt;/div&gt;
+\[\vec y = A \vec x = U \Sigma V^T \vec x\]
 
 &lt;ul&gt;
   &lt;li&gt;$V^T \vec x$: $V^T = \phantom{}_{B_{SVD}}[1]_{B_S}$. 즉, $B_{SVD} \leftarrow B_S$를 수행한다.&lt;/li&gt;
@@ -452,48 +436,40 @@ $$&lt;/div&gt;
 
 &lt;p&gt;외적의 관점에서 이해하는 것도 흥미롭다. 일단 외적에 관해서 간단히 살펴보자. 벡터 $u \in \mathbb R^m$, $v \in \mathbb R^n$이 있다고 할 때,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-u v^T \in \mathbb R^{m \times n}
-$$&lt;/div&gt;
+\[u v^T \in \mathbb R^{m \times n}\]
 
 &lt;p&gt;외적의 rank는 어떻게 될까? 1이다. 직관적으로는 이해가 안될 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm rank} (AB) \leq \min({\rm rank}(A), {\rm rank} (B)) =  1
-$$&lt;/div&gt;
+\[{\rm rank} (AB) \leq \min({\rm rank}(A), {\rm rank} (B)) =  1\]
 
 &lt;p&gt;SVD 식을 다시 조립해보자. 일단 $m \geq n$을 가정하자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-U \Sigma = 
+\[U \Sigma = 
 \begin{bmatrix}
-\vert &amp; \dotsb &amp; \vert \\
-u_1 &amp; \dotsb &amp; u_m \\
-\vert &amp; \dotsb &amp; \vert \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
+u_1 &amp;amp; \dotsb &amp;amp; u_m \\
+\vert &amp;amp; \dotsb &amp;amp; \vert \\
 \end{bmatrix}
 \begin{bmatrix}
-\sigma_1 &amp; 0 &amp; \dotsb \\
-0 &amp; \sigma_2 &amp; \dotsb \\
-0 &amp; 0 &amp; \dotsb \\
-\end{bmatrix}
-$$&lt;/div&gt;
+\sigma_1 &amp;amp; 0 &amp;amp; \dotsb \\
+0 &amp;amp; \sigma_2 &amp;amp; \dotsb \\
+0 &amp;amp; 0 &amp;amp; \dotsb \\
+\end{bmatrix}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-A &amp; = U \Sigma V^T \\
-&amp; =
+\[\begin{aligned}
+A &amp;amp; = U \Sigma V^T \\
+&amp;amp; =
 \underbrace{
 \begin{bmatrix}
 \sigma_1 u_1, \dotsb,  \sigma_n u_n, \dotsc,  0 u_m
 \end{bmatrix}}_{U \Sigma}
 \begin{bmatrix}
--- &amp; v_1^T &amp; -- \\
--- &amp; \vdots &amp; -- \\
--- &amp; v_n^T &amp; -- \\
+-- &amp;amp; v_1^T &amp;amp; -- \\
+-- &amp;amp; \vdots &amp;amp; -- \\
+-- &amp;amp; v_n^T &amp;amp; -- \\
 \end{bmatrix} \\
-&amp; =  \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
-\end{aligned}
-$$&lt;/div&gt;
+&amp;amp; =  \sigma_1 u_1 v_1^T + \dotsb + \sigma_n u_n v_n^T + \dotsb + 0 u_m v_m^T
+\end{aligned}\]
 
 &lt;p&gt;$u_i v_i^T$는 각각 1의 rank를 지니고 앞에 곱해진 singular value의 기저로 이해할 수 있다. 해당 기저들의 선형 결합으로 매트릭스 $A$를 다시 분해할 수 있다.&lt;/p&gt;
 
@@ -505,9 +481,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$M$이라는 변환의 근사값을 구하고 싶다면, 0에 가까운 값을 모두 0으로 둔다. 이렇게 바꾸면,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-M \approx \hat M = \hat U \hat \Sigma \hat V^T
-$$&lt;/div&gt;
+\[M \approx \hat M = \hat U \hat \Sigma \hat V^T\]
 
 &lt;ul&gt;
   &lt;li&gt;$\hat U \in \mathbb R^{1000 \times 3}$&lt;/li&gt;
@@ -517,9 +491,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;이렇게 근사값을 구하면 계산량이 많이 줄어들 것이다. $M$와 $\hat M$ 사이의 힐베르트-슈미트 거리를 구하면,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Vert M - \hat M \Vert_{\rm HS} = \sqrt{\sum_{i=4}^{1000} \sigma_i^2}
-$$&lt;/div&gt;
+\[\Vert M - \hat M \Vert_{\rm HS} = \sqrt{\sum_{i=4}^{1000} \sigma_i^2}\]
 
 &lt;p&gt;이 값이 크지 않다면, $M \approx \hat M$으로 간주할 수 있다. 실제로 이미지 압축 등에서 많이 사용되는 방법이다.&lt;/p&gt;
 
@@ -527,9 +499,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$n \times n$ 정방 행렬에 대해서 $A = LU$를 수행할 수 있다. $L$과 $U$는 하방삼각 행렬과 상방삼각 행렬이다. 이렇게 매트릭스를 쪼개는 이유를 각각에 관해서 역행렬을 구하기 힘들기 때문이다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A \vec x = LU \vec x = b \Leftrightarrow U \vec x = L^{-1}b \Leftrightarrow \vec x = U^{-1}L^{-1}b
-$$&lt;/div&gt;
+\[A \vec x = LU \vec x = b \Leftrightarrow U \vec x = L^{-1}b \Leftrightarrow \vec x = U^{-1}L^{-1}b\]
 
 &lt;p&gt;우선 LU가 가능하라면 $A$가 RREF으로 열의 교환 없이 환원될 수 있어야 한다.&lt;/p&gt;
 
@@ -537,17 +507,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$A$가 대칭이고 PSD 매트릭스라면 $LU$ 분해는 더욱 단순해진다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = L L^T \text{ or } A = U^T U
-$$&lt;/div&gt;
+\[A = L L^T \text{ or } A = U^T U\]
 
 &lt;h2 id=&quot;qr&quot;&gt;QR&lt;/h2&gt;
 
 &lt;p&gt;$A \in \mathbb R^{n \times n}$일 때 이 매트릭스를 쪼개는 강력한 방법은 G-S 알고리듬을 활용하는 것이다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = O U
-$$&lt;/div&gt;
+\[A = O U\]
 
 &lt;ul&gt;
   &lt;li&gt;$O$: orthogonal matrix&lt;/li&gt;
@@ -560,38 +526,28 @@ $$&lt;/div&gt;
 
 &lt;p&gt;실제로는 어떻게 하는지 살펴보자. 먼저 $A$의 각 컬럼들을 두고, 두번째 열은 첫번째에 직교하게, 세번째는 첫번째와 두번째에 직교하게 행렬을 변형한다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = 
+\[A = 
 \begin{bmatrix}
-a_{11} &amp; a_{12} &amp; a_{13} \\
-a_{21} &amp; a_{22} &amp; a_{23} \\
-a_{31} &amp; a_{32} &amp; a_{33} 
-\end{bmatrix}
-$$&lt;/div&gt;
+a_{11} &amp;amp; a_{12} &amp;amp; a_{13} \\
+a_{21} &amp;amp; a_{22} &amp;amp; a_{23} \\
+a_{31} &amp;amp; a_{32} &amp;amp; a_{33} 
+\end{bmatrix}\]
 
 &lt;p&gt;$O$ 혹은 $Q$를 구해보자. G-S 알고리듬을 활용하자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = [a_1, a_2, a_3]
-$$&lt;/div&gt;
+\[A = [a_1, a_2, a_3]\]
 
 &lt;p&gt;$a_1$과 직교하는 $e_2$를 구하면 아래와 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e_2 = a_2 - \dfrac{a_2 \cdot a_1}{\Vert a_1 \Vert^2}
-$$&lt;/div&gt;
+\[e_2 = a_2 - \dfrac{a_2 \cdot a_1}{\Vert a_1 \Vert^2}\]
 
 &lt;p&gt;다음으로 $e_3$는 $a_1$과 직교하고 동시에 $e_2$와 직교해야 한다. 따라서,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-e_3 = a_3 - \dfrac{a_3 \cdot a_1}{\Vert a_1 \Vert^2} - \dfrac{a_3 \cdot e_2}{\Vert e_2 \Vert^2}
-$$&lt;/div&gt;
+\[e_3 = a_3 - \dfrac{a_3 \cdot a_1}{\Vert a_1 \Vert^2} - \dfrac{a_3 \cdot e_2}{\Vert e_2 \Vert^2}\]
 
 &lt;p&gt;이를 다시 길이 1로 표준화하면 $Q$를 구할 수 있다. 그리고&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Q^T A = Q^T Q R = 1 R
-$$&lt;/div&gt;
+\[Q^T A = Q^T Q R = 1 R\]
 
 &lt;p&gt;따라서 $R$은 $Q^T A$로 구할 수 있다. 
 &lt;!--stackedit_data:
@@ -605,9 +561,7 @@ I4MDIwMDIsLTIwMjMzODg3NTAsMF19
 
 &lt;p&gt;사실 아이겐 공간은 $n \times n$ 매트릭스의 숨은 구조(뼈대)와 같다. 아이겐밸류를 구하는 식을 떠올려보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-M_T \vec x = \lambda \vec x
-$$&lt;/div&gt;
+\[M_T \vec x = \lambda \vec x\]
 
 &lt;p&gt;$M_T$라는 $n \times n$ 변환이 특정한 벡터 아래서는 스칼라 곱의 문제로 환원된다. 이런 의미에서 아이겐벡터는 $M_T$라는 매트릭스가 지닌 일종의 축이다. 이 축 위에서 변환이 다시 축으로 환원되기 때문이다. $M_T$의 원래 기저와 상관 없이, 이 아이겐벡터로 다시 기저를 구성한다고 생각해보자. 이때 아이겐밸류는 해당 축의 크기(길이)로 이해할 수 있다.&lt;/p&gt;
 
@@ -615,15 +569,11 @@ $$&lt;/div&gt;
 
 &lt;p&gt;아이겐 공간이란 무엇일까? 특정한 아이겐밸류 $\lambda_i$에 의해 파생되는 아이겐 공간은 다음과 같이 정의될 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-E_{\lambda_i}  \overset{\rm def}{=} \mathcal N (A - \lambda_i 1) = \{ \vec v | (A - \lambda_i ) \vec v = \vec 0 \}
-$$&lt;/div&gt;
+\[E_{\lambda_i}  \overset{\rm def}{=} \mathcal N (A - \lambda_i 1) = \{ \vec v | (A - \lambda_i ) \vec v = \vec 0 \}\]
 
 &lt;p&gt;즉, $A - \lambda_i 1$의 널 스페이스다. 사실 여기서 아이겐밸류를 구하는 공식도 파생된다. 아이겐벡터가 $A - \lambda_i 1$의 널 스페이스에 있다는 것은 $A - \lambda_i 1$라는 변환이 서로 선형 종속이라는 뜻이다. 즉 $\det (A - \lambda_i 1) = 0$의 의미와 같다. 아이겐밸류를 구하는 특성방정식이 여기서 도출된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-p(\lambda) = \vert A - \lambda 1 \vert = 0
-$$&lt;/div&gt;
+\[p(\lambda) = \vert A - \lambda 1 \vert = 0\]
 
 &lt;h3 id=&quot;all-distinct-eigenvalues&quot;&gt;All distinct eigenvalues&lt;/h3&gt;
 
@@ -633,33 +583,27 @@ $$&lt;/div&gt;
 
 &lt;p&gt;대수적 중복도(algebraic multiplicity: AM)란 특성 방정식에서 특정한 아이겐밸류 $\lambda$가 몇 번 나타나는지를 표시한다. 한편 기하적 중복도(geometric multiplicity: GM)란 $\lambda$의 아이겐벡터가 생성하는 널 공간의 차원을 의미한다. 예를 들어보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = 
+\[A = 
 \begin{bmatrix}
-1 &amp; 2 \\
-0 &amp; 1
-\end{bmatrix}
-$$&lt;/div&gt;
+1 &amp;amp; 2 \\
+0 &amp;amp; 1
+\end{bmatrix}\]
 
 &lt;p&gt;$A$ 특성방정식을 구하면 $p(\lambda) = (1-\lambda)^2$이다. 따라서 아이겐밸류 1의 AM는 2이다. GM은 어떨까?&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A - \lambda I = 
+\[A - \lambda I = 
 \begin{bmatrix}
-0 &amp; 2 \\
-0 &amp; 0 \\
-\end{bmatrix} x = 0
-$$&lt;/div&gt;
+0 &amp;amp; 2 \\
+0 &amp;amp; 0 \\
+\end{bmatrix} x = 0\]
 
 &lt;p&gt;이를 만족하는 널 스페이스 $x$는 아래 벡터 하나다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-x = \alpha
+\[x = \alpha
 \begin{bmatrix}
 1 \\
 0
-\end{bmatrix}
-$$&lt;/div&gt;
+\end{bmatrix}\]
 
 &lt;p&gt;따라서 $\lambda=1$의 GM은 1이 된다.&lt;/p&gt;
 
@@ -675,42 +619,30 @@ $$&lt;/div&gt;
 
 &lt;p&gt;아이겐벡터와 아이겐밸류를 동원해서 매트릭스를 분해하는 것을 대각화라고도 부른다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = Q \Lambda Q^{-1}
-$$&lt;/div&gt;
+\[A = Q \Lambda Q^{-1}\]
 
 &lt;p&gt;이렇게 분해될 때 가운데 매트릭스 $\Lambda$가 아이겐밸류의 대각 행렬로 구성되기 때문이다. $Q$는 다음과 같이 정의된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Q = 
+\[Q = 
 \begin{bmatrix}
-\vert &amp; \vert &amp; \vert \\
-\vec e_{\lambda_1} &amp; \dotsc &amp; \vec e_{\lambda_n} \\
-\vert &amp; \vert &amp; \vert \\
-\end{bmatrix}
-$$&lt;/div&gt;
+\vert &amp;amp; \vert &amp;amp; \vert \\
+\vec e_{\lambda_1} &amp;amp; \dotsc &amp;amp; \vec e_{\lambda_n} \\
+\vert &amp;amp; \vert &amp;amp; \vert \\
+\end{bmatrix}\]
 
 &lt;p&gt;앞서 아이겐벡터가 일종의 축의 역할을 한다고 했다. 즉, 이 아이겐벡터는 매트릭스의 인풋으로 아이겐 스페이스 벡터를 받고 이를 현재의 표준 스페이스로 바꿔준다.$B_S \leftarrow B_\lambda$  역할을 한다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Q = \phantom{}_{B_S}[1]_{B_\lambda}
-$$&lt;/div&gt;
+\[Q = \phantom{}_{B_S}[1]_{B_\lambda}\]
 
 &lt;p&gt;$Q$를 기저 변환의 관점에서 보면 아이겐 공간의 좌표를 표준 좌표로 바뀌주는 역할을 한다. $Q^{-1}$은 반대로 $B_{\lambda} \leftarrow B_{S}$의 역할을 한다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}
-$$&lt;/div&gt;
+\[Q^{-1} = \phantom{}_{B_\lambda}[1]_{B_S}\]
 
 &lt;p&gt;이 관점에서 보면 행렬의 대각화가 새롭게 보인다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-[\vec w]_{B_S} = \phantom{}_{B_S}[A]_{B_S} [\vec v]_{B_S} = Q \Lambda Q^{-1}[\vec v]_{B_S}
-$$&lt;/div&gt;
+\[[\vec w]_{B_S} = \phantom{}_{B_S}[A]_{B_S} [\vec v]_{B_S} = Q \Lambda Q^{-1}[\vec v]_{B_S}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S}
-$$&lt;/div&gt;
+\[Q \Lambda Q^{-1}[\vec v]_{B_S} = \underbrace{\phantom{}_{B_S}[1]_{B_\lambda}}_{Q}\phantom{}_{B_\lambda}[\Lambda]_{B_\lambda}\overbrace{\phantom{}_{B_\lambda}[1]_{B_S}}^{Q^{-1}}[\vec v]_{B_S}\]
 
 &lt;p&gt;행렬의 대각화란 일정한 변환 혹은 매트릭스를 아이겐 공간을 통해 다시 해석하는 과정이다. 즉, $B_S \to B_\lambda \to B_S$의 과정을 거친다.&lt;/p&gt;
 
@@ -720,33 +652,23 @@ $$&lt;/div&gt;
 
 &lt;p&gt;대각화를 통해서 아이겐밸류의 중요한 특성 두 가지를 다시 음미해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i
-$$&lt;/div&gt;
+\[{\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm Tr}(A) = \sum_{i} a_{ii} = \sum_{i} \lambda_i
-$$&lt;/div&gt;
+\[{\rm Tr}(A) = \sum_{i} a_{ii} = \sum_{i} \lambda_i\]
 
 &lt;p&gt;논리는 아래와 같이 간단하다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vert A \vert = \vert Q \Lambda Q^{-1} \vert =  \vert Q \vert \vert \Lambda \vert \vert Q^{-1} \vert = \vert Q \vert \vert Q^{-1} \vert \vert \Lambda \vert = \dfrac{\vert Q \vert}{\vert Q^{} \vert} \vert \Lambda \vert = \vert \Lambda \vert
-$$&lt;/div&gt;
+\[\vert A \vert = \vert Q \Lambda Q^{-1} \vert =  \vert Q \vert \vert \Lambda \vert \vert Q^{-1} \vert = \vert Q \vert \vert Q^{-1} \vert \vert \Lambda \vert = \dfrac{\vert Q \vert}{\vert Q^{} \vert} \vert \Lambda \vert = \vert \Lambda \vert\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda_i
-$$&lt;/div&gt;
+\[{\rm Tr}(Q \Lambda Q^{-1}) = {\rm Tr}(\Lambda Q Q^{-1}) = {\rm Tr}(\Lambda 1) = {\rm Tr}(\Lambda) = \sum_{i} \lambda_i\]
 
 &lt;p&gt;두 가지 속성은 ${\rm det}(A) = \vert A \vert = \prod_{i} \lambda_i$는 대각화가 가능한 경우 뿐 아니라 일반적으로 성립한다. 첫번째 속성만 살펴보자. 특성방정식을 생각해보면, $\vert A - \lambda I \vert = 0$이다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-p(\lambda)  = &amp; {\rm det} (A - \lambda I) \\
-&amp; (-1)^n (\lambda - \lambda_1) \dotsb  (\lambda - \lambda_n) \\
-&amp; (\lambda_1 - \lambda)\dotsb(\lambda_n - \lambda)
-\end{aligned}
-$$&lt;/div&gt;
+\[\begin{aligned}
+p(\lambda)  = &amp;amp; {\rm det} (A - \lambda I) \\
+&amp;amp; (-1)^n (\lambda - \lambda_1) \dotsb  (\lambda - \lambda_n) \\
+&amp;amp; (\lambda_1 - \lambda)\dotsb(\lambda_n - \lambda)
+\end{aligned}\]
 
 &lt;p&gt;따라서, $\det (A) = \lambda_1 \dotsb \lambda_n$.&lt;/p&gt;
 
@@ -754,23 +676,19 @@ $$&lt;/div&gt;
 
 &lt;p&gt;매트릭스 $A$가 노멀이라면, 이는 $A^T A = A A^T$를 만족하는 경우를 뜻한다. 모든 노멀 매트릭스는 대각화가 가능하고 아울러 $Q$를 직교 행렬(orthgonal matrix or orthonormal matrix) $O$ 로 택할 수 있다. 이는 $Q^{-1}$의 계산이 간단해진다는 뜻이다.  즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-OO^T = I = O^T O
-$$&lt;/div&gt;
+\[OO^T = I = O^T O\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-O^TO = 
+\[O^TO = 
 \begin{bmatrix}
--- &amp; \hat e_1 &amp; -- \\
-   &amp; \vdots &amp; \\
--- &amp; \hat e_n &amp; -- \\
+-- &amp;amp; \hat e_1 &amp;amp; -- \\
+   &amp;amp; \vdots &amp;amp; \\
+-- &amp;amp; \hat e_n &amp;amp; -- \\
 \end{bmatrix}
 \begin{bmatrix}
-\vert &amp;  &amp; \vert \\
-\hat e_1 &amp; \dotsc &amp; \hat e_n \\
-\vert &amp; &amp; \vert \\
-\end{bmatrix} = I
-$$&lt;/div&gt;
+\vert &amp;amp;  &amp;amp; \vert \\
+\hat e_1 &amp;amp; \dotsc &amp;amp; \hat e_n \\
+\vert &amp;amp; &amp;amp; \vert \\
+\end{bmatrix} = I\]
 
 &lt;h2 id=&quot;gram-schmidt-orthogonalization&quot;&gt;Gram-Schmidt Orthogonalization&lt;/h2&gt;
 
@@ -788,33 +706,25 @@ $$&lt;/div&gt;
   &lt;li&gt;Projection operation: Projection of $u$ onto $e$:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_e(u) = \dfrac{\langle u, e \rangle}{\Vert e \Vert^2}e
-$$&lt;/div&gt;
+\[\Pi_e(u) = \dfrac{\langle u, e \rangle}{\Vert e \Vert^2}e\]
 
 &lt;ul&gt;
   &lt;li&gt;The projection complement of projection $\Pi_e(u)$ is $w$&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_e(u) + w = u ~~~\Rightarrow~~~w = u - \Pi_e(u)
-$$&lt;/div&gt;
+\[\Pi_e(u) + w = u ~~~\Rightarrow~~~w = u - \Pi_e(u)\]
 
 &lt;h3 id=&quot;orthonormal-basis-is-nice&quot;&gt;Orthonormal basis is nice&lt;/h3&gt;
 
 &lt;p&gt;어떤 벡터 $v$든 orthonormal 기저를 통해 간편하게 나타낼 수 있다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-v = \langle v, \hat e_1 \rangle  \hat e_1 + \dotsb + \langle v, \hat e_n \rangle \hat e_n
-$$&lt;/div&gt;
+\[v = \langle v, \hat e_1 \rangle  \hat e_1 + \dotsb + \langle v, \hat e_n \rangle \hat e_n\]
 
 &lt;h3 id=&quot;orthogonalization&quot;&gt;Orthogonalization&lt;/h3&gt;
 
 &lt;p&gt;일단 기억해야 할 것은 generic 기저 ${v_i}$가 생성하는 벡터 공간과 ${ \hat e_i }$가 생성하는 벡터 공간이 동일하다는 것이다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\text{span}(v_1, \dotsc, v_n) = V = \text{span}(\hat e_1, \dotsc, \hat e_n)
-$$&lt;/div&gt;
+\[\text{span}(v_1, \dotsc, v_n) = V = \text{span}(\hat e_1, \dotsc, \hat e_n)\]
 
 &lt;p&gt;그람-슈미트 알고리듬은 다음과 같다.&lt;/p&gt;
 
@@ -838,9 +748,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/2334554B591BF2B720&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w
-$$&lt;/div&gt;
+\[v = {\rm proj}_{u_1} (v) + {\rm proj}_{u_2}(v) + w\]
 
 &lt;p&gt;즉, 원래 벡터($v$)에서 이미 확립된 직교 벡터에서 $v$로 쏜 프로젝션 벡터를 빼주면 원하는 새로운 직교 벡터를 얻을 수 있다. 따라서&lt;/p&gt;
 
@@ -877,9 +785,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;벡터 공간 $V$의 기저&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-B = \{ \vec{e_1}, \dotsc, \vec{e_n} \}
-$$&lt;/div&gt;
+\[B = \{ \vec{e_1}, \dotsc, \vec{e_n} \}\]
 
 &lt;p&gt;는 다음의 두 특성을 만족한다.&lt;/p&gt;
 
@@ -887,9 +793,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;모든 $v \in V$는 다음과 같이 기저의 선형 결합으로 표현된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-v = v_1 \vec{e_1} + \dotsc + v_n \vec{e_n}
-$$&lt;/div&gt;
+\[v = v_1 \vec{e_1} + \dotsc + v_n \vec{e_n}\]
 
 &lt;h3 id=&quot;linear-independence-property&quot;&gt;Linear Independence property&lt;/h3&gt;
 
@@ -897,37 +801,25 @@ $$&lt;/div&gt;
 
 &lt;h3 id=&quot;orthonomal-basis&quot;&gt;Orthonomal basis&lt;/h3&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-B_{\hat{e}} = \{ \hat{e_1}, \dotsc, \hat{e_n} \} \text{~with}
-$$&lt;/div&gt;
+\[B_{\hat{e}} = \{ \hat{e_1}, \dotsc, \hat{e_n} \} \text{~with}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{cases}
-\hat{e_i} \cdot \hat{e_j} = 1 &amp; \text{if $i = j$} \\
-\hat{e_i} \cdot \hat{e_j} = 0 &amp; \text{if $i \neq j$} 
-\end{cases}
-$$&lt;/div&gt;
+\[\begin{cases}
+\hat{e_i} \cdot \hat{e_j} = 1 &amp;amp; \text{if $i = j$} \\
+\hat{e_i} \cdot \hat{e_j} = 0 &amp;amp; \text{if $i \neq j$} 
+\end{cases}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-(a_1, \dotsc, a_n)_{B_{\hat{e}}} = \underbrace{(\vec{a} \cdot \hat{e_i})}_{a_1} \hat{e_i} + \dotsb + (\vec{a} \cdot \hat{e_n}) \hat{e_n}
-$$&lt;/div&gt;
+\[(a_1, \dotsc, a_n)_{B_{\hat{e}}} = \underbrace{(\vec{a} \cdot \hat{e_i})}_{a_1} \hat{e_i} + \dotsb + (\vec{a} \cdot \hat{e_n}) \hat{e_n}\]
 
 &lt;h2 id=&quot;orthogonal-basis&quot;&gt;Orthogonal basis&lt;/h2&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-B_{e} = \{ e_1, \dotsc, e_n \} \text{~with}
-$$&lt;/div&gt;
+\[B_{e} = \{ e_1, \dotsc, e_n \} \text{~with}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{cases}
-e_i \cdot e_j \neq 0 &amp; \text{if $i = j$} \\
-e_i \cdot e_j = 0 &amp; \text{if $i \neq j$} 
-\end{cases}
-$$&lt;/div&gt;
+\[\begin{cases}
+e_i \cdot e_j \neq 0 &amp;amp; \text{if $i = j$} \\
+e_i \cdot e_j = 0 &amp;amp; \text{if $i \neq j$} 
+\end{cases}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-(b_1, \dotsc, b_n)_{B_e} = \underbrace{(\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert})}_{b_1} e_1 + \dotsb + (\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert}) e_n
-$$&lt;/div&gt;
+\[(b_1, \dotsc, b_n)_{B_e} = \underbrace{(\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert})}_{b_1} e_1 + \dotsb + (\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert}) e_n\]
 
 &lt;p&gt;$b_i$의 값을 제대로 반영하기 위해서는 정규화된 orthorgonal basis가 필요하고, $\frac{e_i}{\Vert e_i \Vert}$가 내적 계산에 들어간다.&lt;/p&gt;
 
@@ -937,17 +829,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;서로 직교하지 않는 기저,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\{ \vec f_1, \dotsc, \vec f_n \}
-$$&lt;/div&gt;
+\[\{ \vec f_1, \dotsc, \vec f_n \}\]
 
 &lt;p&gt;가 있다고 하자. $\vec c$를 이 기저로 어떻게 표현할 수 있을까?&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
+\[\begin{aligned}
 c_1 f_1 + \dotsb + c_n f_n = \vec c
-\end{aligned}
-$$&lt;/div&gt;
+\end{aligned}\]
 
 &lt;p&gt;$f_i$가 직교행렬이 아니기 때문에, $c_i$ 역시 하나씩 결정될 수 없고 동시에 결정되어야 한다. 즉, 이는 연립방정식을 푸는 문제와 같다. 즉 $n$ 개의 미지수와 $n$ 개의 방정식을 푸는 문제다.&lt;/p&gt;
 
@@ -955,14 +843,11 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$T: \mathbb R^2 \to \mathbb R^2$의 변환을 생각해보자. 어떤 이유에서인가 $T$를 기본 기저가 아닌 다른 기저로 표현해야 한다고 하자. 두 개의 기저를 아래와 같이 두자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\\{ \vec v_1 = (v_{1x}, v_{1y})^T, \vec v_2 = (v_{2x}, v_{2y})^T \\}
-$$&lt;/div&gt;
+\[\\{ \vec v_1 = (v_{1x}, v_{1y})^T, \vec v_2 = (v_{2x}, v_{2y})^T \\}\]
 
 &lt;p&gt;이 기저는 $T$에 의해서 다음과 같이 변형된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-T(\vec v_1) = 
+\[T(\vec v_1) = 
 \begin{bmatrix}
 t_{1x} \\
 t_{1y}
@@ -971,39 +856,33 @@ T(\vec v_2) =
 \begin{bmatrix}
 t_{2x} \\
 t_{2y}
-\end{bmatrix}
-$$&lt;/div&gt;
+\end{bmatrix}\]
 
 &lt;p&gt;이걸 매트릭스로 표현하면 어떻게 될까? $2 \times 2$로 이 변형이 표현될 수 있기 때문에,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-M_T = 
+\[M_T = 
 \begin{bmatrix}
-m_{11} &amp; m_{12} \\
-m_{21} &amp; m_{22} 
-\end{bmatrix}
-$$&lt;/div&gt;
+m_{11} &amp;amp; m_{12} \\
+m_{21} &amp;amp; m_{22} 
+\end{bmatrix}\]
 
 &lt;p&gt;앞서 변형을 그대로 적어보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-m_{11} v_{1x} + m_{12} v_{1y} &amp; = t_{1x} \\
-m_{21} v_{1x} + m_{22} v_{1y} &amp; = t_{1y} \\
-m_{11} v_{2x} + m_{12} v_{2y} &amp; = t_{2x} \\
-m_{21} v_{2x} + m_{22} v_{2y} &amp; = t_{2y} \\
-\end{aligned}
-$$&lt;/div&gt;
+\[\begin{aligned}
+m_{11} v_{1x} + m_{12} v_{1y} &amp;amp; = t_{1x} \\
+m_{21} v_{1x} + m_{22} v_{1y} &amp;amp; = t_{1y} \\
+m_{11} v_{2x} + m_{12} v_{2y} &amp;amp; = t_{2x} \\
+m_{21} v_{2x} + m_{22} v_{2y} &amp;amp; = t_{2y} \\
+\end{aligned}\]
 
 &lt;p&gt;여기서 미지수는 $m_{\cdot}$이다. 즉 4개의 미지수를 지니는 연립방정식이 된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A \vec m = \vec t ~\Leftrightarrow~
+\[A \vec m = \vec t ~\Leftrightarrow~
 \begin{bmatrix}
-v_{1x} &amp; v_{1y} &amp; 0 &amp; 0 \\
-v_{1x} &amp; v_{1y} &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; v_{2x} &amp; v_{2y} \\
-0 &amp; 0 &amp; v_{2x} &amp; v_{2y} \\
+v_{1x} &amp;amp; v_{1y} &amp;amp; 0 &amp;amp; 0 \\
+v_{1x} &amp;amp; v_{1y} &amp;amp; 0 &amp;amp; 0 \\
+0 &amp;amp; 0 &amp;amp; v_{2x} &amp;amp; v_{2y} \\
+0 &amp;amp; 0 &amp;amp; v_{2x} &amp;amp; v_{2y} \\
 \end{bmatrix} 
 \begin{bmatrix}
 m_{11} \\
@@ -1016,8 +895,7 @@ t_{1x} \\
 t_{1y} \\
 t_{2x} \\
 t_{2y}
-\end{bmatrix}
-$$&lt;/div&gt;
+\end{bmatrix}\]
 
 &lt;h2 id=&quot;change-of-basis&quot;&gt;Change of Basis&lt;/h2&gt;
 
@@ -1025,48 +903,41 @@ $$&lt;/div&gt;
 
 &lt;p&gt;기저 변환(change-of-basis)은 매트릭스를 이해하는 매우 중요한 방식이다. 이를 통해 역시 매트릭스 표현에 도달할 수 있다. 선형 번환 $T: V \to W$가 있다고 하자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-B_V &amp; = \{ \hat e_1, \dotsc, \hat e_n \} \\
-B_W &amp; =  \{ \hat b_1, \dotsc, \hat b_m \} 
-\end{aligned}
-$$&lt;/div&gt;
+\[\begin{aligned}
+B_V &amp;amp; = \{ \hat e_1, \dotsc, \hat e_n \} \\
+B_W &amp;amp; =  \{ \hat b_1, \dotsc, \hat b_m \} 
+\end{aligned}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-[M_T]_{B_V} \vec v_{B_V} &amp; =
+\[\begin{aligned}
+[M_T]_{B_V} \vec v_{B_V} &amp;amp; =
 \begin{bmatrix}
-\vert &amp; \vert &amp; \vert \\
-T(\hat e_1) &amp; \dotsc &amp; T(\hat e_n) \\
-\vert &amp; \vert &amp; \vert \\
+\vert &amp;amp; \vert &amp;amp; \vert \\
+T(\hat e_1) &amp;amp; \dotsc &amp;amp; T(\hat e_n) \\
+\vert &amp;amp; \vert &amp;amp; \vert \\
 \end{bmatrix}_{B_V} 
 \begin{bmatrix}
 v_1 \\
 \vdots \\
 v_n \\
 \end{bmatrix}_{B_V} \\
-&amp; = T(\hat e_1) v_1 + \dotsb + T(\hat e_n) v_n \\
-&amp; = T(v_1 \hat e_1 + \dotsb + v_n \hat e_n) \\
-&amp;  = T(\vec v) \\
-&amp; = \vec w_{B_W}
-\end{aligned}
-$$&lt;/div&gt;
+&amp;amp; = T(\hat e_1) v_1 + \dotsb + T(\hat e_n) v_n \\
+&amp;amp; = T(v_1 \hat e_1 + \dotsb + v_n \hat e_n) \\
+&amp;amp;  = T(\vec v) \\
+&amp;amp; = \vec w_{B_W}
+\end{aligned}\]
 
 &lt;p&gt;이제 $T(\hat e_1)$ 하나만 구체적으로 풀어보자. $T$를 통해서 기저는 $B_V$에서 $B_W$로 바뀐다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-T(\hat e_1) = 
+\[T(\hat e_1) = 
 \begin{bmatrix}
 c_{11} \\
 \vdots \\
 c_{m1}
-\end{bmatrix}_{B_W} = c_{11} \hat b_1 + \dotsb + c_{m1} \hat b_m
-$$&lt;/div&gt;
+\end{bmatrix}_{B_W} = c_{11} \hat b_1 + \dotsb + c_{m1} \hat b_m\]
 
 &lt;p&gt;이를 모든 행에 대해서 적용하면, 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\phantom{}_{B_W}M_{B_V} = 
+\[\phantom{}_{B_W}M_{B_V} = 
 \vphantom{
 \begin{bmatrix}
 \\
@@ -1075,78 +946,61 @@ $$&lt;/div&gt;
 \end{bmatrix}
 }_{B_W}
 \begin{bmatrix}
-c_{11} &amp; \cdots &amp; c_{1n} \\
-&amp;\cdots&amp;\\
-c_{m1}  &amp; \cdots &amp; c_{mn} \\
-\end{bmatrix}_{B_V}
-$$&lt;/div&gt;
+c_{11} &amp;amp; \cdots &amp;amp; c_{1n} \\
+&amp;amp;\cdots&amp;amp;\\
+c_{m1}  &amp;amp; \cdots &amp;amp; c_{mn} \\
+\end{bmatrix}_{B_V}\]
 
 &lt;p&gt;정리하면 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-[T(\vec v)]_{B_W} = \phantom{}_{B_W} [M_T]_{B_V} [\vec v]_{B_V}
-$$&lt;/div&gt;
+\[[T(\vec v)]_{B_W} = \phantom{}_{B_W} [M_T]_{B_V} [\vec v]_{B_V}\]
 
 &lt;h3 id=&quot;change-of-basis-1&quot;&gt;Change-of-basis&lt;/h3&gt;
 
 &lt;p&gt;이제 하나의 같은 벡터의 기저를 $B_v \to B_{v^{\prime}}$으로 바꾸는 것을 살펴보자. 즉 $T: V \to V$의 경우에 해당한다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec v = (v_1, v_2, v_3)_B = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3
-$$&lt;/div&gt;
+\[\vec v = (v_1, v_2, v_3)_B = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3\]
 
 &lt;p&gt;이제 기저를 $B \to B^\prime$으로 바꾸는 어떤 변환이 있다고 하자. 이 변환을 $\phantom{}_{B^{\prime}}[1]_B$라고 표기하자. 이 표기의 뜻은 매트릭스의 인풋(오른쪽)이 원래의 기저 $B$이고 변환을 통해 산출되는 기저를 $B^{\prime}$으로 나타낸 것이다. $1$의 의미는 벡터의 기저만 바뀌었을 뿐 동일한 벡터의 변환이라는 의미를 지닌다 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-(v^{\prime}_1, v^{\prime}_2, v^{\prime}_3) = v^{\prime}_1 \hat e^{\prime}_1 +  + v_2 \hat e^{\prime}_2 + v_3 \hat e^{\prime}_3 = \vec v = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3
-$$&lt;/div&gt;
+\[(v^{\prime}_1, v^{\prime}_2, v^{\prime}_3) = v^{\prime}_1 \hat e^{\prime}_1 +  + v_2 \hat e^{\prime}_2 + v_3 \hat e^{\prime}_3 = \vec v = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3\]
 
 &lt;p&gt;$_{B^{\prime}}1_B$을 찾기 위해서 $\hat e_1$을 $B^{\prime}$ 기저로 표현해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\hat e_1 = (\hat e^{\prime}_1 \cdot \hat e_1) e^{\prime}_1 + (\hat e^{\prime}_2 \cdot \hat e_1) e^{\prime}_2 + (\hat e^{\prime}_3 \cdot \hat e_1) e^{\prime}_3 = ( \hat e^{\prime}_1 \cdot \hat e_1,  \hat e^{\prime}_2 \cdot \hat e_1 ,  \hat e^{\prime}_3 \cdot \hat e_1  )_{B^{\prime}}
-$$&lt;/div&gt;
+\[\hat e_1 = (\hat e^{\prime}_1 \cdot \hat e_1) e^{\prime}_1 + (\hat e^{\prime}_2 \cdot \hat e_1) e^{\prime}_2 + (\hat e^{\prime}_3 \cdot \hat e_1) e^{\prime}_3 = ( \hat e^{\prime}_1 \cdot \hat e_1,  \hat e^{\prime}_2 \cdot \hat e_1 ,  \hat e^{\prime}_3 \cdot \hat e_1  )_{B^{\prime}}\]
 
 &lt;p&gt;따라서 기저 변환을 위한 매트릭스는 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{bmatrix}
-e^{\prime}_1 &amp; e^{\prime}_2 &amp; e^{\prime}_3 
+\[\begin{bmatrix}
+e^{\prime}_1 &amp;amp; e^{\prime}_2 &amp;amp; e^{\prime}_3 
 \end{bmatrix} = 
 \begin{bmatrix}
-e^{\prime}_1 \cdot \hat e_1  &amp; e^{\prime}_1 \cdot \hat e_2 &amp; e^{\prime}_1 \cdot \hat e_3 \\
-e^{\prime}_2 \cdot \hat e_1  &amp; e^{\prime}_2 \cdot \hat e_2 &amp; e^{\prime}_2 \cdot \hat e_3 \\
-e^{\prime}_3 \cdot \hat e_1  &amp; e^{\prime}_3 \cdot \hat e_2 &amp; e^{\prime}_3 \cdot \hat e_3 \\ 
+e^{\prime}_1 \cdot \hat e_1  &amp;amp; e^{\prime}_1 \cdot \hat e_2 &amp;amp; e^{\prime}_1 \cdot \hat e_3 \\
+e^{\prime}_2 \cdot \hat e_1  &amp;amp; e^{\prime}_2 \cdot \hat e_2 &amp;amp; e^{\prime}_2 \cdot \hat e_3 \\
+e^{\prime}_3 \cdot \hat e_1  &amp;amp; e^{\prime}_3 \cdot \hat e_2 &amp;amp; e^{\prime}_3 \cdot \hat e_3 \\ 
 \end{bmatrix} = 
-\phantom{}_{B^{\prime}}[1]_B
-$$&lt;/div&gt;
+\phantom{}_{B^{\prime}}[1]_B\]
 
 &lt;h3 id=&quot;back-to-generic-bases&quot;&gt;Back to generic bases&lt;/h3&gt;
 
 &lt;p&gt;다시 위에서 살펴보았던 날 기저(generic basis) $f$ 의 문제로 돌아와보자. $\phantom{}_S1_f$는 어떻게 구할 수 있을까? 위의 식을 참고하면 된다. $B_S = {(1,0,0), (0,1,0), (0,0,1)}$이라고 하자. 표기의 편의상 $B_S$ 각각을 $i$, $j$, $\hat i$, $\hat j$, $\hat k$ 라고 하자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\phantom{}_S[1]_f = 
+\[\phantom{}_S[1]_f = 
 \begin{bmatrix}
-\vec f_1 \cdot \hat i  &amp; \vec f_2 \cdot \hat i  &amp; \vec f_3 \cdot \hat i \\
-\vec f_1 \cdot \hat j  &amp; \vec f_2 \cdot \hat j  &amp; \vec f_3 \cdot \hat j \\
-\vec f_1 \cdot \hat k &amp; \vec f_2 \cdot \hat k &amp; \vec f_3 \cdot \hat k \\ 
-\end{bmatrix}
-$$&lt;/div&gt;
+\vec f_1 \cdot \hat i  &amp;amp; \vec f_2 \cdot \hat i  &amp;amp; \vec f_3 \cdot \hat i \\
+\vec f_1 \cdot \hat j  &amp;amp; \vec f_2 \cdot \hat j  &amp;amp; \vec f_3 \cdot \hat j \\
+\vec f_1 \cdot \hat k &amp;amp; \vec f_2 \cdot \hat k &amp;amp; \vec f_3 \cdot \hat k \\ 
+\end{bmatrix}\]
 
 &lt;p&gt;$\phantom{}_S[1]_f$ 매트릭스는 $B_f$ 기저의 벡터를 $B_S$ 기저의 벡터로 바꿔주는 매트릭스다. 이를 적용하면 $B_S$ 기저의 매트리스 벡터가 나온다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\underbrace{\phantom{}_S[1]_f}_{B_S \leftarrow B_f} \vec v_{B_f} = \vec v_{B_S}
-$$&lt;/div&gt;
+\[\underbrace{\phantom{}_S[1]_f}_{B_S \leftarrow B_f} \vec v_{B_f} = \vec v_{B_S}\]
 
 &lt;h3 id=&quot;transformation-with-change-of-basis&quot;&gt;Transformation with change-of-basis&lt;/h3&gt;
 
 &lt;p&gt;이제 $\phantom{}_B[M_T]_B$ 가 주어져 있다고 하자. 이를 $\phantom{}_{B^{\prime}}[M^T]_{B^{\prime}}\phantom{}$로 어떻게 교체할 수 있을까? 개념적으로는 이럴 것이다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\phantom{}_{B^{\prime}}{[M^T]}_{B^{\prime}} = \underbrace{\phantom{}_{B^{\prime}}{[1]}_{B}}_{B^\prime \leftarrow B}\phantom{}_{B}{[M^T]}_{B}\overbrace{\phantom{}_{B}{[1]}_{B^{\prime}}}^{B \leftarrow B^\prime}
-$$&lt;/div&gt;
+\[\phantom{}_{B^{\prime}}{[M^T]}_{B^{\prime}} = \underbrace{\phantom{}_{B^{\prime}}{[1]}_{B}}_{B^\prime \leftarrow B}\phantom{}_{B}{[M^T]}_{B}\overbrace{\phantom{}_{B}{[1]}_{B^{\prime}}}^{B \leftarrow B^\prime}\]
 
 &lt;p&gt;$\phantom{}_{B^{\prime}}{[1]}_{B}$과 $\phantom{}_{B}{[1]}_{B^{\prime}}$이 서로 역행렬의 관계이 있음을 기억해두자.&lt;/p&gt;
 
@@ -1154,9 +1008,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$B \in \mathbb R^{n \times n}$과 역행렬이 존재하는 매트릭스 $C \in \mathbb R^{n \times n}$가 있다고 하자. A은 다음과 같이 정의된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A = C B C^{-1}
-$$&lt;/div&gt;
+\[A = C B C^{-1}\]
 
 &lt;p&gt;$A$과 $B$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $A$과 $B$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $A^n = C B^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $B$가 어떤 매트릭스냐에 따라서 계산 상 편리함을 줄 수 있다. 만일 $B$가 대각 행렬이라면 행렬의 $n$은 대각 원소의 $n$ 승만 수행하면 된다.&lt;/p&gt;
 
@@ -1176,12 +1028,10 @@ $$&lt;/div&gt;
 
 &lt;p&gt;아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. $C B C^{-1}$의 기저의 변화를 살펴보면,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\underbrace{u \rightarrow \mathcal B}_{C^{-1}} &amp; \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C} \\
-&amp; \cdots A \cdots
-\end{aligned}
-$$&lt;/div&gt;
+\[\begin{aligned}
+\underbrace{u \rightarrow \mathcal B}_{C^{-1}} &amp;amp; \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C} \\
+&amp;amp; \cdots A \cdots
+\end{aligned}\]
 
 &lt;p&gt;로 나타낼 수 있다.&lt;/p&gt;
 
@@ -1218,34 +1068,24 @@ $$&lt;/div&gt;
 
 &lt;p&gt;함수와 마찬가지로 위의 선형 변환에서 치역(Im($T$))와 커널(스칼라 함수에서는 $f(x) = 0$의 해)이 정의된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm Im}(T) \overset{\rm def}{=} \{ \vec w \in W | \vec w = T(\vec v) \text{ for some } \vec v \} \subseteq W
-$$&lt;/div&gt;
+\[{\rm Im}(T) \overset{\rm def}{=} \{ \vec w \in W | \vec w = T(\vec v) \text{ for some } \vec v \} \subseteq W\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm Ker}(T) \overset{\rm def}{=} \{ \vec v \in V | T(\vec v) = \vec 0 \} \subseteq V
-$$&lt;/div&gt;
+\[{\rm Ker}(T) \overset{\rm def}{=} \{ \vec v \in V | T(\vec v) = \vec 0 \} \subseteq V\]
 
 &lt;h2 id=&quot;matrix-representation&quot;&gt;Matrix Representation&lt;/h2&gt;
 
 &lt;p&gt;인풋, 아웃풋의 기저 벡터를 다음과 같이 두자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-B_V = \{ \vec e_1, \dotsc, \vec e_n \}
-$$&lt;/div&gt;
+\[B_V = \{ \vec e_1, \dotsc, \vec e_n \}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-B_W = \{ \vec b_1, \dotsc, \vec b_m \}
-$$&lt;/div&gt;
+\[B_W = \{ \vec b_1, \dotsc, \vec b_m \}\]
 
 &lt;ul&gt;
   &lt;li&gt;$M_T \in \mathbb R^{m \times n}$은 선형 변환 $T$의 매트릭스 표현이다.&lt;/li&gt;
   &lt;li&gt;보다 정확하게 표현해보자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\phantom{}_{B_W}[M]_{B_V}
-$$&lt;/div&gt;
+\[\phantom{}_{B_W}[M]_{B_V}\]
 
 &lt;p&gt;즉, $V$의 기저로 표현되는 인풋을 $W$의 기저로 표현되는 아웃풋으로 바꿔준다.&lt;/p&gt;
 
@@ -1257,27 +1097,23 @@ $$&lt;/div&gt;
 
 &lt;p&gt;즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-T(\alpha_1 \vec v_1 + \alpha_2 \vec v_2) = \alpha_1 T(\vec v_1) + \alpha_2 T(\vec v_2) = \alpha_1 \vec w_1 + \alpha_2 \vec w_2
-$$&lt;/div&gt;
+\[T(\alpha_1 \vec v_1 + \alpha_2 \vec v_2) = \alpha_1 T(\vec v_1) + \alpha_2 T(\vec v_2) = \alpha_1 \vec w_1 + \alpha_2 \vec w_2\]
 
 &lt;h2 id=&quot;matrix-as-linear-transformation&quot;&gt;Matrix as Linear Transformation&lt;/h2&gt;
 
 &lt;p&gt;왜 매트릭스가 선형 변환을 나타낼 수 있는지를 좀 더 들여다보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-T(\vec v)  &amp;=  T(v_1{\hat e_1} + \dotsb + v_n{\hat e_n} ) \\
-&amp; =  v_1 T(\hat e_1) + \dotsb+ v_n T(\hat e_n)  \\
-&amp; = 
+\[\begin{aligned}
+T(\vec v)  &amp;amp;=  T(v_1{\hat e_1} + \dotsb + v_n{\hat e_n} ) \\
+&amp;amp; =  v_1 T(\hat e_1) + \dotsb+ v_n T(\hat e_n)  \\
+&amp;amp; = 
 \begin{bmatrix}
-\vert &amp; \vert &amp; \vert \\
-T(\hat e_1) &amp; \cdots &amp; T(\hat e_n) \\
-\vert &amp; \vert &amp; \vert
+\vert &amp;amp; \vert &amp;amp; \vert \\
+T(\hat e_1) &amp;amp; \cdots &amp;amp; T(\hat e_n) \\
+\vert &amp;amp; \vert &amp;amp; \vert
 \end{bmatrix} \vec v \\
-&amp; = M_T \vec v
-\end{aligned}
-$$&lt;/div&gt;
+&amp;amp; = M_T \vec v
+\end{aligned}\]
 
 &lt;h2 id=&quot;eat-this&quot;&gt;Eat This!&lt;/h2&gt;
 
@@ -1285,10 +1121,8 @@ $$&lt;/div&gt;
 
 &lt;p&gt;선형 변환을 다시 적어보자. $T: V \to W$ where $V \in \mathbb R^n$, $W \in \mathbb R^m$. 즉 이 변환은 $n$ 차원의 벡터를 $m$ 차원으로 바꿔주는 것이다. 이 변환의 투입이 지니는 차원을 생각해보자. $n$ 차원은 로우 공간이 생성하는 $\mathcal R (M_T)$와 널 공간으로 가는 $\mathcal N(M_T)$으로 나뉘게 된다. 그리고 이 공간은 서로 직합(direct sum) 관계다. 이를 요약하면 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-T: \mathcal R(M_T) \to \mathcal C(M_T),~  
-T: \mathcal N(M_T) \to \{ \vec 0 \}
-$$&lt;/div&gt;
+\[T: \mathcal R(M_T) \to \mathcal C(M_T),~  
+T: \mathcal N(M_T) \to \{ \vec 0 \}\]
 
 &lt;p&gt;즉 함수처럼 인풋 $\vec v \in \mathcal R(M_T)$이 $\vec w \in \mathcal C(M_T)$로 대응된다. 한편, $\vec v \in \mathcal N(M_T)$는 $\vec 0 \in W$으로 대응된다.&lt;/p&gt;
 
@@ -1300,9 +1134,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;만일, $\vec v_1 \neq \vec v_2$이고 $\vec v_1, \vec v_2 \in \mathcal R(M_T)$라면 이는 선형 변환의 정의에 따라서 서로 다른 $\vec w$로 매핑된다. 따라서 만일 단사 변환이 되려면, $\mathcal N(M_T) = { \vec 0 }$만 성립하면 된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-Ay - Az = A(y-z)
-$$&lt;/div&gt;
+\[Ay - Az = A(y-z)\]
 
 &lt;p&gt;단사 변환이란 오직 $x = y$일 때만 $Ax = Ay$가 성립한다는 뜻이다. 즉 위의 식에서 $A(x-y) = 0$이 $x=y$일 때만 성립하면 된다. 즉, $A x = 0$이 $x=0$일 때만 성립하면 된다. 전사 변환의 정의는 통상적인 정의와 같다; ${\rm Im} (T) = \mathbb R^m$.&lt;/p&gt;
 
@@ -1319,7 +1151,7 @@ $$&lt;/div&gt;
   &lt;li&gt;$\vec v \in V$&lt;/li&gt;
   &lt;li&gt;$W$ is vector subspace $W \subseteq V$&lt;/li&gt;
   &lt;li&gt;span: 벡터의 선형 결합을 통해 생성되는 벡터 집합 
-&lt;span class=&quot;kdmath&quot;&gt;$\text{span}(\vec v_1, \dotsc, \vec v_n) = \{\vec v | \vec v = \alpha_1 \vec v_1 + \dotsb + \alpha_n \vec v_n, \alpha_i \in \mathbb R \}$&lt;/span&gt;&lt;/li&gt;
+\(\text{span}(\vec v_1, \dotsc, \vec v_n) = \{\vec v | \vec v = \alpha_1 \vec v_1 + \dotsb + \alpha_n \vec v_n, \alpha_i \in \mathbb R \}\)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;행렬 $M \in \mathbb R^{m \times n}$이 있다고 할 때&lt;/p&gt;
@@ -1328,39 +1160,29 @@ $$&lt;/div&gt;
   &lt;li&gt;$\mathcal R(M) \subseteq \mathbb R^n$: $M$의 로우 스페이스, 즉 $M$의 행들의 모든 가능한 선형 결합이 나타내는 벡터 공간&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal R (M) \overset{\rm def}{=} \{ \vec v \in \mathbb R^n | \vec v = \vec w^T M \text{ for some } \vec w \in \mathbb R^m \}
-$$&lt;/div&gt;
+\[\mathcal R (M) \overset{\rm def}{=} \{ \vec v \in \mathbb R^n | \vec v = \vec w^T M \text{ for some } \vec w \in \mathbb R^m \}\]
 
 &lt;ul&gt;
   &lt;li&gt;$\mathcal C(M) \subseteq \mathbb R^m$: $M$의 컬럼 스페이스, 즉 $M$의 열들의 모든 가능한 선형 결합이 나타내는 벡터 공간&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal C (M) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | \vec w = M v \text{ for some } \vec v \in \mathbb R^n \}
-$$&lt;/div&gt;
+\[\mathcal C (M) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | \vec w = M v \text{ for some } \vec v \in \mathbb R^n \}\]
 
 &lt;ul&gt;
   &lt;li&gt;$\mathcal N(M) \subseteq \mathbb R^n$: $M$의 널 스페이스. 즉, 오른쪽에 곱해졌을 때 $\vec 0_{m}$이 되는 벡터의 집합 
-&lt;span class=&quot;kdmath&quot;&gt;$\mathcal N(M) \overset{\rm def}{=} \{ \vec v \in \mathbb R^n | M \vec v = \vec 0 \}$&lt;/span&gt;&lt;/li&gt;
+\(\mathcal N(M) \overset{\rm def}{=} \{ \vec v \in \mathbb R^n | M \vec v = \vec 0 \}\)&lt;/li&gt;
   &lt;li&gt;$\mathcal N(M^T) \subseteq \mathbb R^n$: $M$의 좌 널 스페이스. 즉, 왼쪽에 곱해졌을 때 $\vec 0_{n}$이 되는 벡터의 집합&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal N(M^T) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | \vec w^T M  = \vec 0^T \}
-$$&lt;/div&gt;
+\[\mathcal N(M^T) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | \vec w^T M  = \vec 0^T \}\]
 
 &lt;p&gt;혹은&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal N(M^T) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | M^T \vec w = \vec 0 \}
-$$&lt;/div&gt;
+\[\mathcal N(M^T) \overset{\rm def}{=} \{ \vec w \in \mathbb R^m | M^T \vec w = \vec 0 \}\]
 
 &lt;p&gt;$M$의 랭크는 컬럼 스페이스의 차원 그리고 로우 스페이스의 차원과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-r(M) = \dim(\mathcal R (M)) = \dim(\mathcal C(M))
-$$&lt;/div&gt;
+\[r(M) = \dim(\mathcal R (M)) = \dim(\mathcal C(M))\]
 
 &lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
 
@@ -1376,17 +1198,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$A \vec v_1 = \vec b$와 $A \vec v_2 = \vec b$를 생각해보자. $A(\vec v_1 + \vec v_2)$는 원래의 벡터 스페이스에 들어 있는가?&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A(\vec v_1 + \vec v_2) = 2 \vec b
-$$&lt;/div&gt;
+\[A(\vec v_1 + \vec v_2) = 2 \vec b\]
 
 &lt;p&gt;$\vec b = \vec 0$가 아니라면, $\vec v_1 + \vec v_2$는 해가 될 수 없다. 조금 더 자세하게 표현해보자.&lt;/p&gt;
 
 &lt;p&gt;$A \vec v = \vec b$의 해 공간은 다음과 같은 완전해의 집합이다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\{ \vec c + \vec v_n\} \text{ where }\vec v_n \in \mathcal N (A)
-$$&lt;/div&gt;
+\[\{ \vec c + \vec v_n\} \text{ where }\vec v_n \in \mathcal N (A)\]
 
 &lt;p&gt;즉, 해 공간은 특수해(particular solution) $\vec c$와 널 스페이스에 속한 벡터의 합으로 구성된다. 해 공간의 원소 하나를 $\vec x_1 = \vec c + \vec v_1$이라고 하고 다른 하나를 $\vec x_2 = \vec c + \vec v_2$라고 하자. 이 둘을 더하면, $2 \vec c + \vec v_1 + \vec v_2$가 된다. 이것이 해 공간 안에 있어야 하는데, $\vec c \neq 0$이면 성립하지 않는다.&lt;/p&gt;
 
@@ -1404,9 +1222,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;이제 각각의 의미를 음미해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}
-$$&lt;/div&gt;
+\[A \vec x = A x_c = A(x_p + x_h) = A x_p + A x_h = A x_p + \vec 0_{m}\]
 
 &lt;p&gt;보다 자세한 사례는 &lt;a href=&quot;https://m.blog.naver.com/crm06217/221674223212&quot;&gt;여기&lt;/a&gt;를 참고하라.&lt;/p&gt;
 
@@ -1414,15 +1230,11 @@ $$&lt;/div&gt;
 
 &lt;p&gt;다음 방정식의 해 공간을 생각해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-M \vec x = \vec b
-$$&lt;/div&gt;
+\[M \vec x = \vec b\]
 
 &lt;p&gt;먼저 $M$의 널 스페이스를 생각해보자. 여기 속한 $\vec x$는 $\mathbb R^n$ 집합에 속한다. 정의상 $M \vec x = 0$이므로 $\vec x$를 어떤 해에 더하면 이 값 역시 해가 된다. 따라서, $M \vec x = \vec b$를 만족하는 $\vec x = \vec c$라고 하자. 이를 특수 해라고 부른다. 여기에 널 스페이스에 속한 임의의 원소를 더하면 완전해가 된다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec x = \vec c + \text{span}(\vec v_1, \dotsc, \vec v_k) \text{ where } \text{span}(\vec v_1, \dotsc, \vec v_k) = \mathcal N(M)
-$$&lt;/div&gt;
+\[\vec x = \vec c + \text{span}(\vec v_1, \dotsc, \vec v_k) \text{ where } \text{span}(\vec v_1, \dotsc, \vec v_k) = \mathcal N(M)\]
 
 &lt;h3 id=&quot;rref-method&quot;&gt;RREF method&lt;/h3&gt;
 
@@ -1432,33 +1244,23 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$M \in \mathbb R^{m \times n}$이 편리한 이유는 $M$이 $\vec x \in \mathbb R^n$을 $\vec y \in \mathbb R^m$으로 바꾸는 선형 변환 모두를 표현할 수 있기 때문이다. 그렇다면, $M^T$는 어떨까? 이는 같은 맥락에서  $\vec a \in \mathbb R^m$을 $\vec b \in \mathbb R^n$으로 바꾸는 선형 변환을 표현한다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec a^T M = \vec b
-$$&lt;/div&gt;
+\[\vec a^T M = \vec b\]
 
 &lt;p&gt;이는 $M^T \vec a= \vec b$가 된다. 즉, $M^T$는 $M$의 좌 벡터 공간의 집합을 표현한다. 마찬가지로 $M$은 $M$의 우 벡터 공간의 집합을 표현한다. $M$의 좌 벡터 공간이 바로 로우 공간이고 우 벡터 공간이 컬럼 공간이다.&lt;/p&gt;
 
 &lt;p&gt;이제, $\mathcal N(M)$의 원소는 $\mathbb R^n$에 속한다. 이와 직교하는 공간은 어떤 공간일까? 좌 벡터 공간일까? 우 벡터 공간일까? 쉽게 생각하자. 직교 하기 위해서는 서로 차원이 같아야 한다. 우 벡터 공간은 $\mathbb R^m$에 속한다. 따라서 직교한다면 좌 벡터 공간과 한다. 확인해보자. $M \vec v_n = \vec 0_m$ where $\vec v_n \in \mathcal N(M)$ 가 성립한다. 이제 양번에 $\vec a^T$를 곱해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\underbrace{(M^T \vec a)^T}_{\text{left space}} \vec v_n = \vec a^T M\vec v_n = \vec a^T \vec 0_m = 0
-$$&lt;/div&gt;
+\[\underbrace{(M^T \vec a)^T}_{\text{left space}} \vec v_n = \vec a^T M\vec v_n = \vec a^T \vec 0_m = 0\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal R(M) \oplus \mathcal N(M) = \mathbb R^n
-$$&lt;/div&gt;
+\[\mathcal R(M) \oplus \mathcal N(M) = \mathbb R^n\]
 
 &lt;p&gt;한편 같은 논리로&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\mathcal C(M) \oplus \mathcal N(M^T) = \mathbb R^m
-$$&lt;/div&gt;
+\[\mathcal C(M) \oplus \mathcal N(M^T) = \mathbb R^m\]
 
 &lt;p&gt;앞서 보았듯이 ${\rm rank} (M) =\dim(\mathcal R(M)) = \dim(\mathcal C(M))$다. $\dim(\mathcal N(M)) = {\rm nullity} (M)$이라고 하면,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-{\rm rank} (M) + {\rm nullity} (M) = n = \dim(\mathbb R^n)
-$$&lt;/div&gt;
+\[{\rm rank} (M) + {\rm nullity} (M) = n = \dim(\mathbb R^n)\]
 
 &lt;p&gt;이 모든 걸 그림 하나로 정리하면 다음과 같다!&lt;/p&gt;
 
@@ -1485,17 +1287,13 @@ Mzc0LC0yMDUyMjAxNzQwLC04MzgyODM3MDddfQ==
   &lt;li&gt;Parametric equation:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}
-$$&lt;/div&gt;
+\[l : \{ (x, y, z) \in \mathbb R^3 | p_0 + t \vec v, t \in \mathbb R\}\]
 
 &lt;ul&gt;
   &lt;li&gt;Symetric equation:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}
-$$&lt;/div&gt;
+\[l: \{  (x, y, z) \in \mathbb R^3 | \dfrac{x - p_{0x}}{v_x} = \dfrac{y - p_{0y}}{v_y}  =  \dfrac{z - p_{0z}}{v_z} \}\]
 
 &lt;h3 id=&quot;plane&quot;&gt;Plane&lt;/h3&gt;
 
@@ -1505,25 +1303,19 @@ $$&lt;/div&gt;
   &lt;li&gt;General equation&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P: \{ (x, y, z) \in \mathbb R^3 | Ax + By + Cz = D \}
-$$&lt;/div&gt;
+\[P: \{ (x, y, z) \in \mathbb R^3 | Ax + By + Cz = D \}\]
 
 &lt;ul&gt;
   &lt;li&gt;Parametric equation&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P : \{ (x, y, z) \in \mathbb R^3 | p_0 + s \vec v + t \vec w, s,t \in \mathbb R \}
-$$&lt;/div&gt;
+\[P : \{ (x, y, z) \in \mathbb R^3 | p_0 + s \vec v + t \vec w, s,t \in \mathbb R \}\]
 
 &lt;ul&gt;
   &lt;li&gt;Geometric equation&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P : \{ (x, y, z) \in \mathbb R^3 | \vec n \cdot [(x,y,z) - p_0] = 0 \} \text{~with normal vector $\vec n$}
-$$&lt;/div&gt;
+\[P : \{ (x, y, z) \in \mathbb R^3 | \vec n \cdot [(x,y,z) - p_0] = 0 \} \text{~with normal vector $\vec n$}\]
 
 &lt;h3 id=&quot;point-vs-vector&quot;&gt;Point vs vector&lt;/h3&gt;
 
@@ -1537,9 +1329,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;노멀 벡터는 아래 평면(plane) 혹은 벡터과 직교하는 성분의 벡터다. 이 녀석을 어떻게 구할까? 평면 $P$의 parametric 식을 보자. 2차원 플레인을 구성하는 두 벡터 $\vec v$, $\vec w$가 있다. 노멀 벡터는 이 두 성분 모두와 직교하는 성분의 벡터이다. 이는 바로 크로스 프로덕트의 정의를 그대로 따른다. 평면위의 어떤 세 점 $p, q, r$이 있다고 하자. 평면 위에 존재하는 벡터 두 개를 $\vec v = q - p$, $\vec w = r - p$과 같이 만들자. 이 벡터와 직교하는 벡터 $\vec n$은 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec n  = \vec v \times \vec w = (q-p) \times (r-p)
-$$&lt;/div&gt;
+\[\vec n  = \vec v \times \vec w = (q-p) \times (r-p)\]
 
 &lt;h2 id=&quot;distance&quot;&gt;Distance&lt;/h2&gt;
 
@@ -1553,21 +1343,15 @@ $$&lt;/div&gt;
 
 &lt;p&gt;스칼라 프로젝션 $a_1$의 정의는 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-a_1 ={\cos \theta}{\lVert \vec a \lVert} = \lVert \vec a_1 \lVert
-$$&lt;/div&gt;
+\[a_1 ={\cos \theta}{\lVert \vec a \lVert} = \lVert \vec a_1 \lVert\]
 
 &lt;p&gt;각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 포스팅 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html&quot;&gt;dot product&lt;/a&gt;를 참고하라.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert\vec a\lVert \lVert\vec b\lVert}
-$$&lt;/div&gt;
+\[\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert\vec a\lVert \lVert\vec b\lVert}\]
 
 &lt;p&gt;따라서, $\hat\vec b = \dfrac{\vec b}{\lVert\vec b\lVert}$라고 할 때&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat\vec b
-$$&lt;/div&gt;
+\[a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat\vec b\]
 
 &lt;p&gt;쉽게 말해서, $\vec a$ 벡터와 정규화된 $\vec b$의 닷프로덕트라고 생각하면 된다.&lt;/p&gt;
 
@@ -1575,9 +1359,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;스칼라 프로젝션의 크기로 $\vec b$의 벡터를 만든 것이 벡터 프로젝션이다. $\vec a$를 $\vec b$ 위로 프로젝션한 벡터 $\Pi_{\vec b} (\vec a)$는 다음과 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat\vec b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
-$$&lt;/div&gt;
+\[\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat\vec b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}\]
 
 &lt;p&gt;말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다.&lt;/p&gt;
 
@@ -1585,8 +1367,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;$x$축 위로 프로젝션을 생각해보자. 이 역시 선형 변환이다. 기저를 생각하면 아래와 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_{x}(
+\[\Pi_{x}(
 \begin{bmatrix}
 1 \\
 0 \\
@@ -1603,11 +1384,9 @@ $$&lt;/div&gt;
 \begin{bmatrix}
 0 \\
 0 \\
-\end{bmatrix}
-$$&lt;/div&gt;
+\end{bmatrix}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-M_{\Pi_x} = 
+\[M_{\Pi_x} = 
 \begin{bmatrix}
 \Pi_{x}(
 \begin{bmatrix}
@@ -1621,29 +1400,24 @@ M_{\Pi_x} =
 \end{bmatrix}) 
 \end{bmatrix} = 
 \begin{bmatrix}
-1 &amp; 0 \\
-0 &amp; 0
-\end{bmatrix}
-$$&lt;/div&gt;
+1 &amp;amp; 0 \\
+0 &amp;amp; 0
+\end{bmatrix}\]
 
 &lt;p&gt;$M_{\Pi_x}$를 외적의 관점에서 표현해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\begin{aligned}
-\Pi_{x}(\vec v) &amp; = (\hat i \cdot \vec v) \hat i = \hat i (\hat i \cdot \vec v) = \hat i (\hat i^T \vec v) = (\hat i \hat i^T)\vec v \\
-&amp; = 
+\[\begin{aligned}
+\Pi_{x}(\vec v) &amp;amp; = (\hat i \cdot \vec v) \hat i = \hat i (\hat i \cdot \vec v) = \hat i (\hat i^T \vec v) = (\hat i \hat i^T)\vec v \\
+&amp;amp; = 
 \begin{bmatrix}
-1 &amp; 0 \\
-0 &amp; 0
+1 &amp;amp; 0 \\
+0 &amp;amp; 0
 \end{bmatrix} \vec v = M_{\Pi_x} \vec v
-\end{aligned}
-$$&lt;/div&gt;
+\end{aligned}\]
 
 &lt;p&gt;이 결과를 일반적인 벡터 $\vec b$에도 확장할 수 있다. $\vec b$로의 프로젝션을 구현하기 위해서는 표준화된 벡터 $\hat b$를 먼저 구해야 한다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} \vec a = \hat b \hat b^T \vec a
-$$&lt;/div&gt;
+\[\hat b = \dfrac{\vec b}{\Vert b \Vert},~M_{\Pi_{\hat b}} \vec a = \hat b \hat b^T \vec a\]
 
 &lt;p&gt;$\vec a$를 인풋 벡터로 이해하면 이를 $\vec b$의 프로젝션 위치로 옮기는 선형 변환이 $\Pi_{\hat b}$에 해당한다.&lt;/p&gt;
 
@@ -1652,16 +1426,14 @@ $$&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;$S \subseteq \mathbb R^n$: $S$는 벡터 부분공간이라고 하자.&lt;/li&gt;
   &lt;li&gt;$S^\perp$: $S$와 직교 벡터들의 집합이고 이 역시 벡터 부분공간이다. 
-&lt;span class=&quot;kdmath&quot;&gt;$S^\perp = \{ \vec w \in \mathbb R^n : \vec w \cdot S = 0 \}$&lt;/span&gt;&lt;/li&gt;
+\(S^\perp = \{ \vec w \in \mathbb R^n : \vec w \cdot S = 0 \}\)&lt;/li&gt;
   &lt;li&gt;$\Pi_S$: 부분공간 $S$ 위로 프로젝션&lt;/li&gt;
   &lt;li&gt;$\Pi_{S^\perp}$: 부분공간 $S^\perp$ 위로 프로젝션&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;$\Pi_S$는 일종의 함수로서 다음과 같이 정의된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_S: \mathbb R^n \to S
-$$&lt;/div&gt;
+\[\Pi_S: \mathbb R^n \to S\]
 
 &lt;p&gt;$\vec x \in \mathbb R^n$의 어떤 벡터가 $\Pi_S$를 거치면 $S$에 속하지 않는 나머지 부분은 사라지게 된다. 즉, $S$라는 화면 위로 자신의 이미지를 투영한다고 보면 된다. 그래서 프로젝션이다.&lt;/p&gt;
 
@@ -1680,19 +1452,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;그림에서 $\vec u$의 $\vec v$로의 프로젝션은 앞서 살펴본 벡터 프로젝션이다. $\vec v$ 대신 $l$로 표기된 점에 유의하자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-l: \{ \vec v' \in \mathbb R^n \lvert \vec v' = \vec 0 + t \vec v, t \in \mathbb R \}
-$$&lt;/div&gt;
+\[l: \{ \vec v' \in \mathbb R^n \lvert \vec v' = \vec 0 + t \vec v, t \in \mathbb R \}\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_l(\vec u) = \dfrac{\vec u \cdot \vec v}{\lVert\vec v\lVert^2} \vec v
-$$&lt;/div&gt;
+\[\Pi_l(\vec u) = \dfrac{\vec u \cdot \vec v}{\lVert\vec v\lVert^2} \vec v\]
 
 &lt;p&gt;이제 여기서 $\Pi_{l^{\perp}}$를 구해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec u = \Pi_{l} (\vec u) + \Pi_{l^{\perp}} (\vec u)
-$$&lt;/div&gt;
+\[\vec u = \Pi_{l} (\vec u) + \Pi_{l^{\perp}} (\vec u)\]
 
 &lt;p&gt;잠시 생각해볼 것이 있다.&lt;/p&gt;
 
@@ -1707,81 +1473,57 @@ $$&lt;/div&gt;
 
 &lt;p&gt;평면 위로의 프로젝션을 생각해보자. 기본적인 원리는 동일하다. 이에 앞서 평면을 벡터로 표현하는 방법에 대해 알아보자. 가장 편리한 방법은 노멀 벡터를 활용하는 것이다. 즉, 평면 위의 점 $\vec {p_0}$를 지나는 $P$는 다음과 같이 정의할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec p_0) = 0 \}
-$$&lt;/div&gt;
+\[P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec p_0) = 0 \}\]
 
 &lt;p&gt;여기서 노멀 벡터 $\vec n$은 프로젝션된 지점에서 평면과 직교하는 성분을 나타낸다. 3차원의 경우 노멜 벡터는 3차원 공간에서 해당 평면이 놓인 모습을 결정한다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\vec u = \Pi_P(\vec u) + \Pi_{P^\perp}(\vec u)
-$$&lt;/div&gt;
+\[\vec u = \Pi_P(\vec u) + \Pi_{P^\perp}(\vec u)\]
 
 &lt;p&gt;그림에서 보듯이 $\vec u$에서 $\vec n$으로의 프로젝션은 앞서 보았던 벡터에서 벡터로의 프로젝션이다. 따라서 앞서 구한 공식을 그대로 활용하자.  즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_{P^\perp}(\vec u) = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}
-$$&lt;/div&gt;
+\[\Pi_{P^\perp}(\vec u) = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}\]
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/vector_proj_2a.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;벡터는 점과 달리 상대적인 위치로 정의된다. 벡터 연산은 그런 맥락에서 이루어진다. $\Pi_{P^\perp}$를 위 그림처럼 이동해 보자. 이렇게 보면 벡터 프로젝션이 자연스럽다. P에서의 위치는 변하지 않고 노멀 벡터 쪽으로만 변화하므로 벡터 자체는 이동 전 벡터와 이동 후 벡터가 동일하다. 즉,  $\Pi_{P^\perp}$를 왼쪽으로 이동시킨 벡터에 대한 프로젝션과 $\Pi_{P^\perp}$이 같다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_{P^\perp} = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}
-$$&lt;/div&gt;
+\[\Pi_{P^\perp} = \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}\]
 
 &lt;p&gt;이제 $\Pi_{P^\perp}$ 대입하면 $\Pi_{P}$를 쉽게 구할 수 있다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_P(\vec u) + \Pi_{P^\perp} = \vec u
-$$&lt;/div&gt;
+\[\Pi_P(\vec u) + \Pi_{P^\perp} = \vec u\]
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-\Pi_P(\vec u)  = \vec u - \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}
-$$&lt;/div&gt;
+\[\Pi_P(\vec u)  = \vec u - \dfrac{\vec u \cdot \vec n}{\lVert\vec n\lVert^2}{\vec n}\]
 
 &lt;h2 id=&quot;distance-in-vector-space&quot;&gt;Distance in Vector Space&lt;/h2&gt;
 
 &lt;p&gt;프로젝션은 거리를 측정할 때 유용하다. 먼저 원점(굳이 원점일 필요는 없다)과 해당 벡터 공간을 지나는 선 사이의 거리를 구해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-l: \{ \vec p \in \mathbb R^n | \vec p = \mathbf {p}_0 + t \vec v, t \in \mathbb R \}
-$$&lt;/div&gt;
+\[l: \{ \vec p \in \mathbb R^n | \vec p = \mathbf {p}_0 + t \vec v, t \in \mathbb R \}\]
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/line.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위 그림에서 원점과 $l$의 거리는 어떻게 나타낼 수 있을까? $l$이 지나가는 $\vec p_0$를 그대로 두고, $l$이 원점을 지나가도록 이동해보자. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-l_0 = \{  \vec p \in \mathbb R^n | \vec p = \mathbf {0} + t \vec v, t \in \mathbb R \}
-$$&lt;/div&gt;
+\[l_0 = \{  \vec p \in \mathbb R^n | \vec p = \mathbf {0} + t \vec v, t \in \mathbb R \}\]
 
 &lt;p&gt;이제 이 직선과 $\vec p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-d(l, \vec 0) = d(\vec p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \vec v}{\lVert \vec v\lVert^2}\vec v \lVert
-$$&lt;/div&gt;
+\[d(l, \vec 0) = d(\vec p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \vec v}{\lVert \vec v\lVert^2}\vec v \lVert\]
 
 &lt;p&gt;이제 아래와 같은 평면과 원점의 거리를 측정해보자.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {p}_0) = 0 \}
-$$&lt;/div&gt;
+\[P = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {p}_0) = 0 \}\]
 
 &lt;p&gt;&lt;img src=&quot;https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/plane.png?raw=true&quot; alt=&quot;enter image description here&quot; style=&quot;margin: auto; display: block; border:1.5px solid #021a40;&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;원점을 지나도록 평면을 이동시키고 평면의 노멀 벡터가 정의된 $p_0$와 원점을 지나는 평면 $P_0$ 사이의 거리를 측정하면 된다.&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-P_0 = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {0}) = 0 \}
-$$&lt;/div&gt;
+\[P_0 = \{ \vec p \in \mathbb R^n : \vec n \cdot(\vec p - \vec {0}) = 0 \}\]
 
 &lt;p&gt;이 둘 사이의 거리는 $\Pi_{P^\perp}$의 거리와 같다. 즉,&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-d(P, \vec 0) = d(P_0, \vec p_0) = \lVert  \dfrac{\vec p_0 \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}\lVert = \dfrac{|\vec p_0 \cdot \vec n |}{\lVert\vec n\lVert}
-$$&lt;/div&gt;
+\[d(P, \vec 0) = d(P_0, \vec p_0) = \lVert  \dfrac{\vec p_0 \cdot \vec n}{\lVert\vec n\lVert}\dfrac{\vec n}{\lVert \vec n \lVert}\lVert = \dfrac{|\vec p_0 \cdot \vec n |}{\lVert\vec n\lVert}\]
 
 &lt;p&gt;다시 확인해보자. 노멀 벡터 $\vec n$은 $\vec p_0$와 같은 같은 방향에 있는 벡터다. 따라서 위의 식이 성립한다.&lt;/p&gt;
 
@@ -1791,9 +1533,7 @@ $$&lt;/div&gt;
 
 &lt;p&gt;앞서 소개했던 회귀 분석에 관한 포스팅 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/econometrics/regression/2019/10/25/understanding-regression.html&quot;&gt;Understanding Regression&lt;/a&gt;을 다시 보자. Origin–Observed Y–Fitted $\hat Y$이 만드는 삼각형을 보자. 직각 삼각형이다. 여기서 잔차에 해당하는 $e$는 $X$의 컬럼 스페이스와 항상 직교한다. 즉, $X’ e = 0$이 성립한다. 그리고 $\hat Y = X \hat\beta$이므로&lt;/p&gt;
 
-&lt;div class=&quot;kdmath&quot;&gt;$$
-X'(Y - \hat Y)  = X'(Y - X \hat\beta) = 0
-$$&lt;/div&gt;
+\[X'(Y - \hat Y)  = X'(Y - X \hat\beta) = 0\]
 
 &lt;p&gt;이를 노멀 방정식이라고 부른다. 앞서 평면과 직교하는 벡터를 노멀 벡터라고 불렀는데, 둘은 일맥상통한다.&lt;/p&gt;
 

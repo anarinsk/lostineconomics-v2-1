@@ -108,7 +108,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      6 min read
     
 </span></p>
 
@@ -169,14 +169,12 @@ window.onload = wrap_img;
 
 <p>투입-산출 모형을 생각해보자. $a_{ij}$는 $j$ 재화 1 단위를 생산하는 데 필요한 $i$ 재화의 양, 이라고 하자. 이렇게 되면, 열 벡터 $A_j$는 아래과 같다. 그 의미는 $j$ 재화 1단위를 생산하는 데 필요한 $1, \dotsc, n$ 까지 필요한 재화의 양이다.</p>
 
-<div class="kdmath">$$
-A_j = 
+\[A_j = 
 \begin{bmatrix}
 a_{1j} \\
 \vdots \\
 a_{nj}
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
 <p>여기서 두 가지를 더 가정하겠다.</p>
 
@@ -187,30 +185,22 @@ $$</div>
 
 <p>이제 $j$ 재화를 $x_j$ 만큼 생산하는 데 필요한 투입량은 $x_j A_j$가 된다. 생산하려는 생산량을 $x_1, \dotsc, x_n$이라고 하면 충 투입 벡터는 아래와 같다.</p>
 
-<div class="kdmath">$$
-x_1 A_1 + \dotsc + x_n A_n = A x,~\text{where $x = [x_1, \cdots, x_n]^T$}
-$$</div>
+\[x_1 A_1 + \dotsc + x_n A_n = A x,~\text{where $x = [x_1, \cdots, x_n]^T$}\]
 
 <h3 id="productive-economy">
 <a class="anchor" href="#productive-economy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Productive economy</h3>
 
 <p>생산물 벡터 $x$를 생산하는 데 투입 벡터 $Ax$가 필요하다면 순 생산물 벡터는 아래와 같다.</p>
 
-<div class="kdmath">$$
-x - Ax = (I-A)x
-$$</div>
+\[x - Ax = (I-A)x\]
 
 <p>순생산물 벡터 $b$를 얻게 위해서는 아래의 식이 성립해야 한다.</p>
 
-<div class="kdmath">$$
-(I-A) x = b
-$$</div>
+\[(I-A) x = b\]
 
 <p>만일 $(I-A)$가 가역이라면 유일한 해 $x$가 존재하게 된다. 문제는 $x \geq 0$를 보장할 수 있는지, 이다. 즉, 어떤 경제가 생산적이라는 정의는 아래와 같다.</p>
 
-<div class="kdmath">$$
-x = (I-A)^{-1} b \geq 0
-$$</div>
+\[x = (I-A)^{-1} b \geq 0\]
 
 <h3 id="productive-matrix">
 <a class="anchor" href="#productive-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Productive matrix</h3>
@@ -244,51 +234,35 @@ $$</div>
 
 <p>증명해보자. 일단 A가 생산적 행렬이라는 조건에서, 아래와 같이 주장할 수 있다.</p>
 
-<div class="kdmath">$$
-x &gt; Ax \geq 0
-$$</div>
+\[x &gt; Ax \geq 0\]
 
 <p>$A$와 $x$ 모두 비음이라는 점을 떠올리면 된다. 이것이 성립한다면, $0 &lt; \lambda &lt; 1$의 $\lambda$가 존재하고 이는 다음을 만족한다.</p>
 
-<div class="kdmath">$$
-\lambda x &gt; A x \geq 0
-$$</div>
+\[\lambda x &gt; A x \geq 0\]
 
 <p>여기에 다시 $A$를 앞 곱하면 다음과 같다.</p>
 
-<div class="kdmath">$$
-\lambda(Ax) &gt; A^2 x \geq 0
-$$</div>
+\[\lambda(Ax) &gt; A^2 x \geq 0\]
 
 <p>한편, 먼저 식에 이번에는 $\lambda$를 곱하면, 다음과 같다.</p>
 
-<div class="kdmath">$$
-\lambda^2 x &gt; \lambda(Ax) \geq 0
-$$</div>
+\[\lambda^2 x &gt; \lambda(Ax) \geq 0\]
 
 <p>이제 이렇게 곱한 두 결과를 합치면, 다음과 같다.</p>
 
-<div class="kdmath">$$
-\lambda^2 x &gt; A^2 x \geq 0
-$$</div>
+\[\lambda^2 x &gt; A^2 x \geq 0\]
 
 <p>이를 일반화하면,</p>
 
-<div class="kdmath">$$
-\lambda^k x &gt; A^k x \geq 0
-$$</div>
+\[\lambda^k x &gt; A^k x \geq 0\]
 
 <p>$k \to \infty$에 따라서, $\lambda^k \to 0$ 가 되기 때문에</p>
 
-<div class="kdmath">$$
-\lim_{k \to \infty} A^k x =0
-$$</div>
+\[\lim_{k \to \infty} A^k x =0\]
 
 <p>벡터 $A^k x$의 $i$ 번째 벡터는 다음과 같다.</p>
 
-<div class="kdmath">$$
-\lim_{k \to \infty} \sum_{j=1}^n a^k_{ij} x_j = 0
-$$</div>
+\[\lim_{k \to \infty} \sum_{j=1}^n a^k_{ij} x_j = 0\]
 
 <p>이는 임의의 $x_j \geq 0$에 대해서 항상 성립해야 한다. 따라서, $\lim_{k \to \infty} a^k_{ij} = 0$이 성립해야 한다.</p>
 
@@ -301,15 +275,11 @@ $$</div>
 
 <p>앞서 Lemma 2와 비슷한 논리로 다음과 같이 적을 수 있다.</p>
 
-<div class="kdmath">$$
-x \geq Ax \geq A^2x \geq \dotsb \geq A^k x.
-$$</div>
+\[x \geq Ax \geq A^2x \geq \dotsb \geq A^k x.\]
 
 <p>즉, $x \geq A^k x$. $k \to \infty$일 때 Lemma 2에 따라서,</p>
 
-<div class="kdmath">$$
-x \geq \lim_{k \to \infty} A^k x = 0.
-$$</div>
+\[x \geq \lim_{k \to \infty} A^k x = 0.\]
 
 <h3 id="lemma-4">
 <a class="anchor" href="#lemma-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lemma 4</h3>
@@ -325,9 +295,7 @@ $$</div>
 
 <p>비음의 벡터 $d$가 있을 때, $A$가 생산적일 때,</p>
 
-<div class="kdmath">$$
-(I-A)x = d
-$$</div>
+\[(I-A)x = d\]
 
 <p>는 유니크한 비음의 해를 지닌다.</p>
 
@@ -335,7 +303,7 @@ $$</div>
 <a class="anchor" href="#proof" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proof</h4>
 <p>Lemma 4에 따르면, $(I-A)$는 비특이(nonsingular) 행렬이다. 따라서 위 시스템의 해 $x^*$는 유니크하다. 아울러, $d \geq 0$이므로,</p>
 
-<p><span class="kdmath">$(I-A) x^*  \geq 0$</span>
+<p>\((I-A) x^*  \geq 0\)
 가 성립한다. $A$는 생산적이고 위 식이 성립하므로 Lemma 3에 따라서 $x^* \geq 0$.</p>
 
 <h2 id="hawkins-simon-condition-1">
@@ -356,46 +324,32 @@ $$</div>
 
 <p>A가 생산적 행렬이며, Lemma 4에 의해서 $(I-A)^{-1}$이 존재함을 알 수 있다.</p>
 
-<div class="kdmath">$$
-\Phi_s = I + A + \dotsc + A^s
-$$</div>
+\[\Phi_s = I + A + \dotsc + A^s\]
 
 <p>라고 하자. 이때,</p>
 
-<div class="kdmath">$$
-A \Phi_s = A + A^2 + \dotsc + A^{s+1}.
-$$</div>
+\[A \Phi_s = A + A^2 + \dotsc + A^{s+1}.\]
 
-<div class="kdmath">$$
-(I - A) \Phi_s = I - A^{s+1}.
-$$</div>
+\[(I - A) \Phi_s = I - A^{s+1}.\]
 
 <p>앙변에 극한값을 취하면,</p>
 
-<div class="kdmath">$$
-\lim_{s \to \infty} [(I-A) \Phi_s ] = I
-$$</div>
+\[\lim_{s \to \infty} [(I-A) \Phi_s ] = I\]
 
 <p>이 성립한다. 이는 Lemma 2에 의해서 $\lim_{s \to \infty} A^{s+1} \to 0$가 성립하기 때문이다.</p>
 
-<div class="kdmath">$$
-\lim_{s \to \infty} \Phi_s = (I-A)^{-1}
-$$</div>
+\[\lim_{s \to \infty} \Phi_s = (I-A)^{-1}\]
 
 <p>$A \geq 0$이기 때문에, $\Phi_s \geq 0$가 항상 성립한다. 따라서,</p>
 
-<div class="kdmath">$$
-(I-A)^{-1} \geq 0
-$$</div>
+\[(I-A)^{-1} \geq 0\]
 
 <h3 id="1--2-1">
 <a class="anchor" href="#1--2-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 ← 2</h3>
 
 <p>$(I-A)^{-1} \geq 0$가 성립한다고 하자. 임의의 $d &gt; 0$를 잡으면 $x = (I-A)^{-1} d \geq 0$ 가 성립한다. 이때,</p>
 
-<div class="kdmath">$$
-x = A x + d &gt; Ax
-$$</div>
+\[x = A x + d &gt; Ax\]
 
 <p>가 성립하므로 1이 만족한다.</p>
 
@@ -406,15 +360,11 @@ $$</div>
 
 <p>이제 생산적 행렬의 아이겐밸류와 아이겐벡터를 고민해보도록 하자. 생산적 행렬의 정의 $x - Ax &gt; 0$에서 출발해보자. 만일 아이겐밸류 $\lambda$가 존재한다면 그 값은 어때야 할까? 즉,</p>
 
-<div class="kdmath">$$
-\lambda x - Ax = \lambda x - x &lt; 0
-$$</div>
+\[\lambda x - Ax = \lambda x - x &lt; 0\]
 
 <p>따라서 $\lambda &lt; 1$이 된다. 아울러, 비음 행렬의 P-F 정리에 따르면 가장 아이겐밸류가 존재할 때 가장 큰 값 $\lambda_{\rm pf}$가 존재하는데, 이 역시 $\lambda_{\rm pf} &lt; 1$이 된다. 따라서 이에 상응하는 아이겐벡터 $x_{\rm pf}$는 다음을 만족시켜야 한다. $(I-A) x_{\rm pf} \geq 0$.</p>
 
-<div class="kdmath">$$
-(I-A) x_{\rm pf} = (\lambda_{\rm pf} I - A ) x_{\rm pf} + (1 - \lambda_{\rm pf}) x_{\rm pf} = (1-\lambda_{\rm pf}) x_{\rm pf} \geq 0
-$$</div>
+\[(I-A) x_{\rm pf} = (\lambda_{\rm pf} I - A ) x_{\rm pf} + (1 - \lambda_{\rm pf}) x_{\rm pf} = (1-\lambda_{\rm pf}) x_{\rm pf} \geq 0\]
 
 <p>식의 마지막은 각각 $\lambda_{\rm pf} &lt; 1$ 그리고 $x_{\rm pf} \geq 0$로부터 성립한다.</p>
 
@@ -426,27 +376,19 @@ $$</div>
 
 <p>투입계수 행렬 $A$를 지닌 어떤 경제를 상정하자. $A$가 생산적 행렬이라고 하자. 그리고 금기 초의 투입물 벡터를 $x_0$라고 하자. 금기 말에 생산물 벡터를 $x_1$이라고 하면, 아래의 관계가 성립한다.</p>
 
-<div class="kdmath">$$
-x_0 = A x_1
-$$</div>
+\[x_0 = A x_1\]
 
 <p>보통 함수를 적을 때 왼쪽에 산출을 오른쪽에 투입을 적어서 약간 의아할 수 있다. 하지만,</p>
 
-<div class="kdmath">$$
-A = [A_1, \dotsc, A_i, \dotsc, A_n]
-$$</div>
+\[A = [A_1, \dotsc, A_i, \dotsc, A_n]\]
 
 <p>$A_i$는 $A$의 컬럼 벡터를 나타난다. $a_{ij}$는 $j$ 한단위를 생산하기 위해 필요한 투입 $i$를 나타낸다. 따라서,</p>
 
-<div class="kdmath">$$
-Ax = a_1 x_1 + \dotsb + a_i x_i + \dotsb + a_n x_n
-$$</div>
+\[Ax = a_1 x_1 + \dotsb + a_i x_i + \dotsb + a_n x_n\]
 
 <p>는 $x_i$를 얻기 위해 필요한 투입 벡터들의 선형결합으로 이해하면 쉽다. 따라서 $x_0 = A x_1$이 성립한다. 이제 $x_0$가 $g$의 성장률로 성장한다고 하자. 즉, $x_0 = (1+g) x_0$이다. 이를 정리해서 쓰면 다음과 같다.</p>
 
-<div class="kdmath">$$
-A x_0 = \dfrac{1}{1+g} x_0
-$$</div>
+\[A x_0 = \dfrac{1}{1+g} x_0\]
 
 <p>이때 $\dfrac{1}{1+g}$는 아이겐밸류, $x_0$는 아이겐벡터임을 알 수 있다. $A$가 생산적 행렬이기 때문에 아이겐밸류는 $[0,1)$ 사이에 존재하게 된다. 따라서, $g = \dfrac{1}{\lambda}-1 &gt; 0$로 성장하게 된다.</p>
 
@@ -455,21 +397,15 @@ $$</div>
 
 <p>투입계수 행렬이 $A$인 경제를 생각하자. 각 재화를 생산하는 기업의 이윤율이 모두 $\pi$로 동일하다고 하자. 이때 가격 백터 $p = [p_1, \dotsc, p_n]^T$가 균형 가격이 되기 위한 조건은 무엇일까? 우선 $i$ 기업의 이윤을 따져보자. $i$ 기업이 생산물 1 단위를 생산하기 위해 필요한 원자재는 ($i$ 자신의 물건을 포함해) $n$ 개이고 그 각각 필요량은 $a_{1i}, \dotsc, a_{ni}$가 된다. 이들을 시장가격 $p_\cdot$으로 조달해와야 하므로 1단위당 원자재의 가격은 $a_{1i} p_1 + \dotsc + a_{ni} p_n$이 된다. 이제 원료 가격에 마크업 $\pi$를 붙이면 이것이 해당 기업이 설정한 균형 가격이 된다. 즉,</p>
 
-<div class="kdmath">$$
-p_i = (1+\pi)(a_{1i} p_1 + \dotsc + a_{ni} p_n)
-$$</div>
+\[p_i = (1+\pi)(a_{1i} p_1 + \dotsc + a_{ni} p_n)\]
 
 <p>이를 행렬로 나타나면 다음과 같다.</p>
 
-<div class="kdmath">$$
-p = (1 + \pi) A^T p
-$$</div>
+\[p = (1 + \pi) A^T p\]
 
 <p>위 식에서 $p$는 $A^T$의 아이겐벡터이고 균등 이윤과 해당 아이겐밸류는 다음과 같다.</p>
 
-<div class="kdmath">$$
-\dfrac{1}{1+\pi} = \lambda_{\rm pf}
-$$</div>
+\[\dfrac{1}{1+\pi} = \lambda_{\rm pf}\]
 
 <p>아이겐벡터는 스케일링이 가능하다. 즉, 가격 벡터는 다루기 편한 방식으로 정규화화면 된다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
 
