@@ -36,7 +36,6 @@ p code{
 }
 
 // mathjax options 
-
-mjx-container{ 
-   text-align: left!important; 
-}
+.MathJax_Display, /* MathJax 2 */
+mjx-container     /* MathJax 3 */
+{ text-align: left!important; }
