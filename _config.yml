@@ -89,10 +89,10 @@ titles_from_headings:
 highlighter: rouge
 markdown: kramdown
 kramdown:
-  #math_engine: mathjax
-  #math_engine_opts: {text-align: left}
-  math_engine: katex
-  math_engine_opts: {fleqn: true,  font-size: 1.1em}
+  math_engine: null
+  math_engine_opts: {text-align: left}
+  #math_engine: katex
+  #math_engine_opts: {fleqn: true}
   input: GFM
   auto_ids: true
   hard_wrap: false
