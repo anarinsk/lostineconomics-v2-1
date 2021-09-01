@@ -249,8 +249,7 @@ $$
 
 
 - $e_3 = v_3 - \Pi_{e_1}(v_3) - \Pi_{e_2}(v_3)$
-
-- &emsp;&emsp;&emsp;$\vdots$
+&emsp;&emsp;&emsp;$\vdots$
 
 - $e_n= v_n - \sum_{i=1}^{n-1} \Pi_{e_i}(v_n)$ 
 
