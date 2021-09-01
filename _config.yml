@@ -89,7 +89,7 @@ titles_from_headings:
 highlighter: rouge
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
+  math_engine: mathjax-node
   #math_engine_opts: {fleqn: true}
   #math_engine: null
   input: GFM
