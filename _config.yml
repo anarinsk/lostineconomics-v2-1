@@ -89,8 +89,8 @@ titles_from_headings:
 highlighter: rouge
 markdown: kramdown
 kramdown:
-  math_engine: sskatex
-  math_engine_opts: {fleqn: true}
+  math_engine: mathjax
+  #math_engine_opts: {fleqn: true}
   #math_engine: null
   input: GFM
   auto_ids: true
