@@ -131,9 +131,7 @@ window.onload = wrap_img;
 
 <p>벡터 공간 $V$의 기저</p>
 
-<div class="kdmath">$$
-B = \{ \vec{e_1}, \dotsc, \vec{e_n} \}
-$$</div>
+\[B = \{ \vec{e_1}, \dotsc, \vec{e_n} \}\]
 
 <p>는 다음의 두 특성을 만족한다.</p>
 
@@ -141,9 +139,7 @@ $$</div>
 
 <p>모든 $v \in V$는 다음과 같이 기저의 선형 결합으로 표현된다.</p>
 
-<div class="kdmath">$$
-v = v_1 \vec{e_1} + \dotsc + v_n \vec{e_n}
-$$</div>
+\[v = v_1 \vec{e_1} + \dotsc + v_n \vec{e_n}\]
 
 <h3 id="linear-independence-property">Linear Independence property</h3>
 
@@ -151,37 +147,25 @@ $$</div>
 
 <h3 id="orthonomal-basis">Orthonomal basis</h3>
 
-<div class="kdmath">$$
-B_{\hat{e}} = \{ \hat{e_1}, \dotsc, \hat{e_n} \} \text{~with}
-$$</div>
+\[B_{\hat{e}} = \{ \hat{e_1}, \dotsc, \hat{e_n} \} \text{~with}\]
 
-<div class="kdmath">$$
-\begin{cases}
-\hat{e_i} \cdot \hat{e_j} = 1 & \text{if $i = j$} \\
-\hat{e_i} \cdot \hat{e_j} = 0 & \text{if $i \neq j$} 
-\end{cases}
-$$</div>
+\[\begin{cases}
+\hat{e_i} \cdot \hat{e_j} = 1 &amp; \text{if $i = j$} \\
+\hat{e_i} \cdot \hat{e_j} = 0 &amp; \text{if $i \neq j$} 
+\end{cases}\]
 
-<div class="kdmath">$$
-(a_1, \dotsc, a_n)_{B_{\hat{e}}} = \underbrace{(\vec{a} \cdot \hat{e_i})}_{a_1} \hat{e_i} + \dotsb + (\vec{a} \cdot \hat{e_n}) \hat{e_n}
-$$</div>
+\[(a_1, \dotsc, a_n)_{B_{\hat{e}}} = \underbrace{(\vec{a} \cdot \hat{e_i})}_{a_1} \hat{e_i} + \dotsb + (\vec{a} \cdot \hat{e_n}) \hat{e_n}\]
 
 <h2 id="orthogonal-basis">Orthogonal basis</h2>
 
-<div class="kdmath">$$
-B_{e} = \{ e_1, \dotsc, e_n \} \text{~with}
-$$</div>
+\[B_{e} = \{ e_1, \dotsc, e_n \} \text{~with}\]
 
-<div class="kdmath">$$
-\begin{cases}
-e_i \cdot e_j \neq 0 & \text{if $i = j$} \\
-e_i \cdot e_j = 0 & \text{if $i \neq j$} 
-\end{cases}
-$$</div>
+\[\begin{cases}
+e_i \cdot e_j \neq 0 &amp; \text{if $i = j$} \\
+e_i \cdot e_j = 0 &amp; \text{if $i \neq j$} 
+\end{cases}\]
 
-<div class="kdmath">$$
-(b_1, \dotsc, b_n)_{B_e} = \underbrace{(\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert})}_{b_1} e_1 + \dotsb + (\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert}) e_n
-$$</div>
+\[(b_1, \dotsc, b_n)_{B_e} = \underbrace{(\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert})}_{b_1} e_1 + \dotsb + (\vec b \cdot \dfrac{e_i}{\Vert e_i \Vert}) e_n\]
 
 <p>$b_i$의 값을 제대로 반영하기 위해서는 정규화된 orthorgonal basis가 필요하고, $\frac{e_i}{\Vert e_i \Vert}$가 내적 계산에 들어간다.</p>
 
@@ -191,17 +175,13 @@ $$</div>
 
 <p>서로 직교하지 않는 기저,</p>
 
-<div class="kdmath">$$
-\{ \vec f_1, \dotsc, \vec f_n \}
-$$</div>
+\[\{ \vec f_1, \dotsc, \vec f_n \}\]
 
 <p>가 있다고 하자. $\vec c$를 이 기저로 어떻게 표현할 수 있을까?</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 c_1 f_1 + \dotsb + c_n f_n = \vec c
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>$f_i$가 직교행렬이 아니기 때문에, $c_i$ 역시 하나씩 결정될 수 없고 동시에 결정되어야 한다. 즉, 이는 연립방정식을 푸는 문제와 같다. 즉 $n$ 개의 미지수와 $n$ 개의 방정식을 푸는 문제다.</p>
 
@@ -209,14 +189,11 @@ $$</div>
 
 <p>$T: \mathbb R^2 \to \mathbb R^2$의 변환을 생각해보자. 어떤 이유에서인가 $T$를 기본 기저가 아닌 다른 기저로 표현해야 한다고 하자. 두 개의 기저를 아래와 같이 두자.</p>
 
-<div class="kdmath">$$
-\\{ \vec v_1 = (v_{1x}, v_{1y})^T, \vec v_2 = (v_{2x}, v_{2y})^T \\}
-$$</div>
+\[\\{ \vec v_1 = (v_{1x}, v_{1y})^T, \vec v_2 = (v_{2x}, v_{2y})^T \\}\]
 
 <p>이 기저는 $T$에 의해서 다음과 같이 변형된다.</p>
 
-<div class="kdmath">$$
-T(\vec v_1) = 
+\[T(\vec v_1) = 
 \begin{bmatrix}
 t_{1x} \\
 t_{1y}
@@ -225,39 +202,33 @@ T(\vec v_2) =
 \begin{bmatrix}
 t_{2x} \\
 t_{2y}
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
 <p>이걸 매트릭스로 표현하면 어떻게 될까? $2 \times 2$로 이 변형이 표현될 수 있기 때문에,</p>
 
-<div class="kdmath">$$
-M_T = 
+\[M_T = 
 \begin{bmatrix}
-m_{11} & m_{12} \\
-m_{21} & m_{22} 
-\end{bmatrix}
-$$</div>
+m_{11} &amp; m_{12} \\
+m_{21} &amp; m_{22} 
+\end{bmatrix}\]
 
 <p>앞서 변형을 그대로 적어보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-m_{11} v_{1x} + m_{12} v_{1y} & = t_{1x} \\
-m_{21} v_{1x} + m_{22} v_{1y} & = t_{1y} \\
-m_{11} v_{2x} + m_{12} v_{2y} & = t_{2x} \\
-m_{21} v_{2x} + m_{22} v_{2y} & = t_{2y} \\
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+m_{11} v_{1x} + m_{12} v_{1y} &amp; = t_{1x} \\
+m_{21} v_{1x} + m_{22} v_{1y} &amp; = t_{1y} \\
+m_{11} v_{2x} + m_{12} v_{2y} &amp; = t_{2x} \\
+m_{21} v_{2x} + m_{22} v_{2y} &amp; = t_{2y} \\
+\end{aligned}\]
 
 <p>여기서 미지수는 $m_{\cdot}$이다. 즉 4개의 미지수를 지니는 연립방정식이 된다.</p>
 
-<div class="kdmath">$$
-A \vec m = \vec t ~\Leftrightarrow~
+\[A \vec m = \vec t ~\Leftrightarrow~
 \begin{bmatrix}
-v_{1x} & v_{1y} & 0 & 0 \\
-v_{1x} & v_{1y} & 0 & 0 \\
-0 & 0 & v_{2x} & v_{2y} \\
-0 & 0 & v_{2x} & v_{2y} \\
+v_{1x} &amp; v_{1y} &amp; 0 &amp; 0 \\
+v_{1x} &amp; v_{1y} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; v_{2x} &amp; v_{2y} \\
+0 &amp; 0 &amp; v_{2x} &amp; v_{2y} \\
 \end{bmatrix} 
 \begin{bmatrix}
 m_{11} \\
@@ -270,8 +241,7 @@ t_{1x} \\
 t_{1y} \\
 t_{2x} \\
 t_{2y}
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
 <h2 id="change-of-basis">Change of Basis</h2>
 
@@ -279,48 +249,41 @@ $$</div>
 
 <p>기저 변환(change-of-basis)은 매트릭스를 이해하는 매우 중요한 방식이다. 이를 통해 역시 매트릭스 표현에 도달할 수 있다. 선형 번환 $T: V \to W$가 있다고 하자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-B_V & = \{ \hat e_1, \dotsc, \hat e_n \} \\
-B_W & =  \{ \hat b_1, \dotsc, \hat b_m \} 
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+B_V &amp; = \{ \hat e_1, \dotsc, \hat e_n \} \\
+B_W &amp; =  \{ \hat b_1, \dotsc, \hat b_m \} 
+\end{aligned}\]
 
-<div class="kdmath">$$
-\begin{aligned}
-[M_T]_{B_V} \vec v_{B_V} & =
+\[\begin{aligned}
+[M_T]_{B_V} \vec v_{B_V} &amp; =
 \begin{bmatrix}
-\vert & \vert & \vert \\
-T(\hat e_1) & \dotsc & T(\hat e_n) \\
-\vert & \vert & \vert \\
+\vert &amp; \vert &amp; \vert \\
+T(\hat e_1) &amp; \dotsc &amp; T(\hat e_n) \\
+\vert &amp; \vert &amp; \vert \\
 \end{bmatrix}_{B_V} 
 \begin{bmatrix}
 v_1 \\
 \vdots \\
 v_n \\
 \end{bmatrix}_{B_V} \\
-& = T(\hat e_1) v_1 + \dotsb + T(\hat e_n) v_n \\
-& = T(v_1 \hat e_1 + \dotsb + v_n \hat e_n) \\
-&  = T(\vec v) \\
-& = \vec w_{B_W}
-\end{aligned}
-$$</div>
+&amp; = T(\hat e_1) v_1 + \dotsb + T(\hat e_n) v_n \\
+&amp; = T(v_1 \hat e_1 + \dotsb + v_n \hat e_n) \\
+&amp;  = T(\vec v) \\
+&amp; = \vec w_{B_W}
+\end{aligned}\]
 
 <p>이제 $T(\hat e_1)$ 하나만 구체적으로 풀어보자. $T$를 통해서 기저는 $B_V$에서 $B_W$로 바뀐다.</p>
 
-<div class="kdmath">$$
-T(\hat e_1) = 
+\[T(\hat e_1) = 
 \begin{bmatrix}
 c_{11} \\
 \vdots \\
 c_{m1}
-\end{bmatrix}_{B_W} = c_{11} \hat b_1 + \dotsb + c_{m1} \hat b_m
-$$</div>
+\end{bmatrix}_{B_W} = c_{11} \hat b_1 + \dotsb + c_{m1} \hat b_m\]
 
 <p>이를 모든 행에 대해서 적용하면, 다음과 같다.</p>
 
-<div class="kdmath">$$
-\phantom{}_{B_W}M_{B_V} = 
+\[\phantom{}_{B_W}M_{B_V} = 
 \vphantom{
 \begin{bmatrix}
 \\
@@ -329,78 +292,61 @@ $$</div>
 \end{bmatrix}
 }_{B_W}
 \begin{bmatrix}
-c_{11} & \cdots & c_{1n} \\
-&\cdots&\\
-c_{m1}  & \cdots & c_{mn} \\
-\end{bmatrix}_{B_V}
-$$</div>
+c_{11} &amp; \cdots &amp; c_{1n} \\
+&amp;\cdots&amp;\\
+c_{m1}  &amp; \cdots &amp; c_{mn} \\
+\end{bmatrix}_{B_V}\]
 
 <p>정리하면 다음과 같다.</p>
 
-<div class="kdmath">$$
-[T(\vec v)]_{B_W} = \phantom{}_{B_W} [M_T]_{B_V} [\vec v]_{B_V}
-$$</div>
+\[[T(\vec v)]_{B_W} = \phantom{}_{B_W} [M_T]_{B_V} [\vec v]_{B_V}\]
 
 <h3 id="change-of-basis-1">Change-of-basis</h3>
 
 <p>이제 하나의 같은 벡터의 기저를 $B_v \to B_{v^{\prime}}$으로 바꾸는 것을 살펴보자. 즉 $T: V \to V$의 경우에 해당한다.</p>
 
-<div class="kdmath">$$
-\vec v = (v_1, v_2, v_3)_B = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3
-$$</div>
+\[\vec v = (v_1, v_2, v_3)_B = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3\]
 
 <p>이제 기저를 $B \to B^\prime$으로 바꾸는 어떤 변환이 있다고 하자. 이 변환을 $\phantom{}_{B^{\prime}}[1]_B$라고 표기하자. 이 표기의 뜻은 매트릭스의 인풋(오른쪽)이 원래의 기저 $B$이고 변환을 통해 산출되는 기저를 $B^{\prime}$으로 나타낸 것이다. $1$의 의미는 벡터의 기저만 바뀌었을 뿐 동일한 벡터의 변환이라는 의미를 지닌다 즉,</p>
 
-<div class="kdmath">$$
-(v^{\prime}_1, v^{\prime}_2, v^{\prime}_3) = v^{\prime}_1 \hat e^{\prime}_1 +  + v_2 \hat e^{\prime}_2 + v_3 \hat e^{\prime}_3 = \vec v = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3
-$$</div>
+\[(v^{\prime}_1, v^{\prime}_2, v^{\prime}_3) = v^{\prime}_1 \hat e^{\prime}_1 +  + v_2 \hat e^{\prime}_2 + v_3 \hat e^{\prime}_3 = \vec v = v_1 \hat e_1 + v_2 \hat e_2 + v_3 \hat e_3\]
 
 <p>$_{B^{\prime}}1_B$을 찾기 위해서 $\hat e_1$을 $B^{\prime}$ 기저로 표현해보자.</p>
 
-<div class="kdmath">$$
-\hat e_1 = (\hat e^{\prime}_1 \cdot \hat e_1) e^{\prime}_1 + (\hat e^{\prime}_2 \cdot \hat e_1) e^{\prime}_2 + (\hat e^{\prime}_3 \cdot \hat e_1) e^{\prime}_3 = ( \hat e^{\prime}_1 \cdot \hat e_1,  \hat e^{\prime}_2 \cdot \hat e_1 ,  \hat e^{\prime}_3 \cdot \hat e_1  )_{B^{\prime}}
-$$</div>
+\[\hat e_1 = (\hat e^{\prime}_1 \cdot \hat e_1) e^{\prime}_1 + (\hat e^{\prime}_2 \cdot \hat e_1) e^{\prime}_2 + (\hat e^{\prime}_3 \cdot \hat e_1) e^{\prime}_3 = ( \hat e^{\prime}_1 \cdot \hat e_1,  \hat e^{\prime}_2 \cdot \hat e_1 ,  \hat e^{\prime}_3 \cdot \hat e_1  )_{B^{\prime}}\]
 
 <p>따라서 기저 변환을 위한 매트릭스는 다음과 같다.</p>
 
-<div class="kdmath">$$
-\begin{bmatrix}
-e^{\prime}_1 & e^{\prime}_2 & e^{\prime}_3 
+\[\begin{bmatrix}
+e^{\prime}_1 &amp; e^{\prime}_2 &amp; e^{\prime}_3 
 \end{bmatrix} = 
 \begin{bmatrix}
-e^{\prime}_1 \cdot \hat e_1  & e^{\prime}_1 \cdot \hat e_2 & e^{\prime}_1 \cdot \hat e_3 \\
-e^{\prime}_2 \cdot \hat e_1  & e^{\prime}_2 \cdot \hat e_2 & e^{\prime}_2 \cdot \hat e_3 \\
-e^{\prime}_3 \cdot \hat e_1  & e^{\prime}_3 \cdot \hat e_2 & e^{\prime}_3 \cdot \hat e_3 \\ 
+e^{\prime}_1 \cdot \hat e_1  &amp; e^{\prime}_1 \cdot \hat e_2 &amp; e^{\prime}_1 \cdot \hat e_3 \\
+e^{\prime}_2 \cdot \hat e_1  &amp; e^{\prime}_2 \cdot \hat e_2 &amp; e^{\prime}_2 \cdot \hat e_3 \\
+e^{\prime}_3 \cdot \hat e_1  &amp; e^{\prime}_3 \cdot \hat e_2 &amp; e^{\prime}_3 \cdot \hat e_3 \\ 
 \end{bmatrix} = 
-\phantom{}_{B^{\prime}}[1]_B
-$$</div>
+\phantom{}_{B^{\prime}}[1]_B\]
 
 <h3 id="back-to-generic-bases">Back to generic bases</h3>
 
 <p>다시 위에서 살펴보았던 날 기저(generic basis) $f$ 의 문제로 돌아와보자. $\phantom{}_S1_f$는 어떻게 구할 수 있을까? 위의 식을 참고하면 된다. $B_S = {(1,0,0), (0,1,0), (0,0,1)}$이라고 하자. 표기의 편의상 $B_S$ 각각을 $i$, $j$, $\hat i$, $\hat j$, $\hat k$ 라고 하자.</p>
 
-<div class="kdmath">$$
-\phantom{}_S[1]_f = 
+\[\phantom{}_S[1]_f = 
 \begin{bmatrix}
-\vec f_1 \cdot \hat i  & \vec f_2 \cdot \hat i  & \vec f_3 \cdot \hat i \\
-\vec f_1 \cdot \hat j  & \vec f_2 \cdot \hat j  & \vec f_3 \cdot \hat j \\
-\vec f_1 \cdot \hat k & \vec f_2 \cdot \hat k & \vec f_3 \cdot \hat k \\ 
-\end{bmatrix}
-$$</div>
+\vec f_1 \cdot \hat i  &amp; \vec f_2 \cdot \hat i  &amp; \vec f_3 \cdot \hat i \\
+\vec f_1 \cdot \hat j  &amp; \vec f_2 \cdot \hat j  &amp; \vec f_3 \cdot \hat j \\
+\vec f_1 \cdot \hat k &amp; \vec f_2 \cdot \hat k &amp; \vec f_3 \cdot \hat k \\ 
+\end{bmatrix}\]
 
 <p>$\phantom{}_S[1]_f$ 매트릭스는 $B_f$ 기저의 벡터를 $B_S$ 기저의 벡터로 바꿔주는 매트릭스다. 이를 적용하면 $B_S$ 기저의 매트리스 벡터가 나온다.</p>
 
-<div class="kdmath">$$
-\underbrace{\phantom{}_S[1]_f}_{B_S \leftarrow B_f} \vec v_{B_f} = \vec v_{B_S}
-$$</div>
+\[\underbrace{\phantom{}_S[1]_f}_{B_S \leftarrow B_f} \vec v_{B_f} = \vec v_{B_S}\]
 
 <h3 id="transformation-with-change-of-basis">Transformation with change-of-basis</h3>
 
 <p>이제 $\phantom{}_B[M_T]_B$ 가 주어져 있다고 하자. 이를 $\phantom{}_{B^{\prime}}[M^T]_{B^{\prime}}\phantom{}$로 어떻게 교체할 수 있을까? 개념적으로는 이럴 것이다.</p>
 
-<div class="kdmath">$$
-\phantom{}_{B^{\prime}}{[M^T]}_{B^{\prime}} = \underbrace{\phantom{}_{B^{\prime}}{[1]}_{B}}_{B^\prime \leftarrow B}\phantom{}_{B}{[M^T]}_{B}\overbrace{\phantom{}_{B}{[1]}_{B^{\prime}}}^{B \leftarrow B^\prime}
-$$</div>
+\[\phantom{}_{B^{\prime}}{[M^T]}_{B^{\prime}} = \underbrace{\phantom{}_{B^{\prime}}{[1]}_{B}}_{B^\prime \leftarrow B}\phantom{}_{B}{[M^T]}_{B}\overbrace{\phantom{}_{B}{[1]}_{B^{\prime}}}^{B \leftarrow B^\prime}\]
 
 <p>$\phantom{}_{B^{\prime}}{[1]}_{B}$과 $\phantom{}_{B}{[1]}_{B^{\prime}}$이 서로 역행렬의 관계이 있음을 기억해두자.</p>
 
@@ -408,9 +354,7 @@ $$</div>
 
 <p>$B \in \mathbb R^{n \times n}$과 역행렬이 존재하는 매트릭스 $C \in \mathbb R^{n \times n}$가 있다고 하자. A은 다음과 같이 정의된다.</p>
 
-<div class="kdmath">$$
-A = C B C^{-1}
-$$</div>
+\[A = C B C^{-1}\]
 
 <p>$A$과 $B$은 서로 닮은 꼴의 매트릭스다. 위 식을 만족하는 매트릭스 $A$과 $B$을 similar matrix라고 정의한다. 우선 두 매트릭스가 서로 닮은 꼴일 때에는 $n \geq 1$에 대해서 $A^n = C B^n C^{-1}$이 성립한다. 이는 아이겐 분해에서 보듯이 $B$가 어떤 매트릭스냐에 따라서 계산 상 편리함을 줄 수 있다. 만일 $B$가 대각 행렬이라면 행렬의 $n$은 대각 원소의 $n$ 승만 수행하면 된다.</p>
 
@@ -430,12 +374,10 @@ $$</div>
 
 <p>아래 그림에서 보듯이, $Ax$라는 변환과 $B[x]_{\mathcal B}$라는 변환은 좌표계만 다를 뿐 동일한 변환이다. $C B C^{-1}$의 기저의 변화를 살펴보면,</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-\underbrace{u \rightarrow \mathcal B}_{C^{-1}} & \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C} \\
-& \cdots A \cdots
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+\underbrace{u \rightarrow \mathcal B}_{C^{-1}} &amp; \cdots B \cdots \underbrace{\mathcal B \rightarrow u}_{C} \\
+&amp; \cdots A \cdots
+\end{aligned}\]
 
 <p>로 나타낼 수 있다.</p>
 

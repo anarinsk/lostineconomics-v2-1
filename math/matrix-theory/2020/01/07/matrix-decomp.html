@@ -245,21 +245,17 @@ window.onload = wrap_img;
 
 <p>$A x = b$와 같은 적당한 선형 연립방정식이 있다고 하자. 이때</p>
 
-<div class="kdmath">$$
-P A= LU
-$$</div>
+\[P A= LU\]
 
 <ul>
   <li>P는 행과 열을 적당히 재배치하는 데 동원되는 순열 행렬이며, 0과 1만 원소로 지닌다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup>
 </li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 P A x &amp; = P b \\
 LU x &amp; = Pb
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>이때, $Ux =y$라고 두고 문제를 한번 풀고, $Ly = Pb$라고 두고 문제를 다시 한번 풀면 해를 쉽게 구할 수 있다.</p>
 
@@ -268,13 +264,11 @@ $$</div>
 
 <p>$A = P^{-1} L U$ 를 만족하고,</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \det A &amp; = \det P^{-1} \det L \det U \\
 &amp; = \det P (\prod _{i=1}^{n} l_{ii}) (\prod _{i=1}^{n} u_{ii}) \\
 &amp; = (-1)^S (\prod _{i=1}^{n} l_{ii}) (\prod _{i=1}^{n} u_{ii})
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <ul>
   <li>$S$는 행이 교환된 횟수를 나타낸다.</li>
@@ -290,23 +284,19 @@ $$</div>
   <li>에르미트 행렬(Hermite matrix)이란 $A$가 그 켤레 전치(conjugate transpose) 행렬($A^*$)과 같은 행렬이다.</li>
 </ul>
 
-<p><span class="kdmath">$A = A^*,~\text{where}~A_{ij} = \overline{A_{ji}}$</span></p>
+<p>\(A = A^*,~\text{where}~A_{ij} = \overline{A_{ji}}\)</p>
 <ul>
   <li>이때 에르미트 행렬이고 양정부호 행렬 $A$가 있을 때 숄레스키 분해는 다음과 같다.</li>
 </ul>
 
-<div class="kdmath">$$
-A = L L^*
-$$</div>
+\[A = L L^*\]
 
 <ul>
   <li>$L$은 LTM이며, $L^*$는 UTM이다. 한편 $L$의 대각성분은 모두 양의 실수가 된다.</li>
   <li>만일 $A \in {\mathbb R}^{n \times n}$이라면,</li>
 </ul>
 
-<div class="kdmath">$$
-A = L L^T
-$$</div>
+\[A = L L^T\]
 
 <ul>
   <li>LU 분해의 특별한 경우라고 볼 수 있다. 알고리듬의 관점에서보면, LU에 비해 숄레스키 분해가 2~3 배 빠르다.</li>
@@ -333,22 +323,18 @@ $$</div>
 <h3 id="gram-schmidt-processing">
 <a class="anchor" href="#gram-schmidt-processing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gram-Schmidt processing</h3>
 
-<div class="kdmath">$$
-A = 
+\[A = 
 \begin{bmatrix}
 \vert ~ &amp; \dotsc &amp; ~ \vert \\
 v_1 ~ &amp; \dotsc &amp; ~ v_n \\
  \vert ~ &amp; \dotsc &amp; ~ \vert \\
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 u_1 = v_1, &amp; ~e_1 = \dfrac{u_1}{\Vert u_1 \Vert} \\
 u_2 = v_2 - (v_2 \cdot e_1) e_1, &amp;~e_2 = \dfrac{u_2}{\Vert u_2 \Vert} \\
 v_{k+1} = v_{k+1} - (v_{k+1} \cdot e_1) e_1 - \dotsb-(v_{k+1} \cdot e_k)e_k,&amp;~e_{k+1} = \dfrac{u_{k+1}}{\Vert u_{k+1} \Vert}
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p align="center"><kbd>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gram%E2%80%93Schmidt_process.svg/1200px-Gram%E2%80%93Schmidt_process.svg.png" width="400">
@@ -363,8 +349,7 @@ $$</div>
   </li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 A &amp; = \begin{bmatrix}
 \vert ~ &amp; \dotsc &amp; ~ \vert \\
 v_1 ~ &amp; \dotsc &amp; ~ v_n \\
@@ -378,8 +363,7 @@ v_1 \cdot e_1 &amp; v_2 \cdot e_1 &amp; \dotsc &amp; v_n \cdot e_1 \\
 \vdots &amp;  \vdots &amp; \ddots  &amp; \vdots \\
 0 &amp;  0 &amp; \dotsc  &amp; v_n \cdot e_n \\
 \end{bmatrix}}_{R}
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <ul>
   <li>$e_1, \dotsc, e_n$만 구하면 쉽게 분해를 달성할 수 있음을 알 수 있다. 그리고 이렇게 분해가 가능한 이유는 G-S 알고리듬 때문이다.</li>
@@ -394,13 +378,11 @@ $$</div>
 
 <p>먼저 $A \in {\mathbb R}^{m \times n}$ ($m \geq n$)이라고 하자. 이때 다음과 같은 QR 분해가 존재하다.</p>
 
-<div class="kdmath">$$
-A = Q 
+\[A = Q 
 \begin{bmatrix}
 R \\
 0
-\end{bmatrix}
-$$</div>
+\end{bmatrix}\]
 
 <ul>
   <li>$Q \in {\mathbb R}^{n \times n}$의 직교행렬(즉, $Q^{-1} =Q^T$), $R \in {\mathbb R}^{m \times m}$의 UTM(upper triangular matrix, 상삼각행렬)이다.</li>
@@ -408,18 +390,15 @@ $$</div>
   <li>이제 $A$가 full-column rank(즉, ${\rm rank}(A) = n$)라고 하면, A의 QR 분해는 아래와 같이 쓸 수 있다.</li>
 </ul>
 
-<div class="kdmath">$$
-A = [Q_1, Q_2] 
+\[A = [Q_1, Q_2] 
 \begin{bmatrix}
 R \\
 0
-\end{bmatrix} = Q_1 R
-$$</div>
+\end{bmatrix} = Q_1 R\]
 
 <p>이제 최소자승법의 목적함수를 다음과 같이 써보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \Vert A x - b \Vert^2_2 &amp; = \Vert Q^T(Ax-b) \Vert \\
 &amp; = \Vert 
 \begin{bmatrix}
@@ -427,14 +406,11 @@ R \\
 0
 \end{bmatrix}  x - Q^T b \Vert  \\
 &amp; = \underbrace{\Vert Rx - d_1 \Vert}_{(\ast)} + \Vert d_2 \Vert
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>이때 $\Vert d_2 \Vert$는 상수이므로, 극소화 문제는 $(\ast)$를 최소화하면 된다. 그리고 저 거리를 최소화해주는 것은 당연하게</p>
 
-<div class="kdmath">$$
-x = R^{-1} d_1
-$$</div>
+\[x = R^{-1} d_1\]
 
 <ul>
   <li>이 해는 normal equation을 최소화하여 얻은 해와 같음을 알 수 있다.</li>
@@ -447,9 +423,7 @@ $$</div>
   <li>$M \in \mathbb{C}^{m \times n}$</li>
 </ul>
 
-<div class="kdmath">$$
-M = U \boldsymbol{\Sigma} V^*
-$$</div>
+\[M = U \boldsymbol{\Sigma} V^*\]
 
 <ul>
   <li>eigendecomposition를 보다 일반화했다고 보면 좋겠다.</li>
@@ -531,9 +505,7 @@ $$</div>
 
 <p>보통 $A \in {\mathbb R}^{m \times n}$ ($m &gt; n$)인 경우 역행렬을 구할 수 없다. 이때 역행렬과 최대한 비슷한 행렬을 찾는 것이 목표다. 만일 $Ax = b$에서 역행렬이 존재한다면 $x = A^{-1}b$로 쉽게 구할 수 있다. 하지만 역행렬이 존재하지 않는다면 어떤 $x$를 구하는 게 좋을까?  $\Vert  Ax - b \Vert$를 최소화하는 $x$를 구한다고 할 때, 이를 달성해주는 $A^+$를 $A$의 유사역행렬이라고 부른다. 즉,</p>
 
-<div class="kdmath">$$
-x = A^+ b
-$$</div>
+\[x = A^+ b\]
 
 <p>SVD는 이 유사역행렬을 구하는 과정에서 활용될 수 있다. 즉, $A =  U \boldsymbol{\Sigma} V^<em>$이라면 $A^+ =  V \boldsymbol{\Sigma}^+ U^</em>$라고 둘 수 있다. 여기서</p>
 
@@ -541,8 +513,7 @@ $$</div>
   <li>$\boldsymbol{\Sigma}^+$는 $\boldsymbol{\Sigma}$의 대각 원소 중 0이 아닌 것들의 역수를 넣은 후 이를 전치한 행렬을 뜻한다. 즉,</li>
 </ul>
 
-<div class="kdmath">$$
-A = \underbrace{U}_{m \times m}
+\[A = \underbrace{U}_{m \times m}
 \underbrace{
 \begin{bmatrix}
 \sigma_1 ~\dotsb~ 0 \\
@@ -553,11 +524,9 @@ A = \underbrace{U}_{m \times m}
 0 ~~\dotsb ~~ 0 \\
 \end{bmatrix}
 }_{m \times n}
-\underbrace{V^T}_{n \times n}
-$$</div>
+\underbrace{V^T}_{n \times n}\]
 
-<div class="kdmath">$$
-A^+ = \underbrace{V}_{n \times n}
+\[A^+ = \underbrace{V}_{n \times n}
 \underbrace{
 \begin{bmatrix}
 \frac{1}{\sigma_1} ~\dotsb~ 0~0 ~ \dotsb ~ 0\\
@@ -565,21 +534,16 @@ A^+ = \underbrace{V}_{n \times n}
 0 ~\dotsb ~ \frac{1}{\sigma_s} ~ 0 ~ \dotsb ~ 0 \\
 \end{bmatrix}
 }_{n \times m}
-\underbrace{U^T}_{m \times m}
-$$</div>
+\underbrace{U^T}_{m \times m}\]
 
 <ul>
   <li>이는 사실 최소자승법과 같은 해를 구해준다.</li>
   <li>$A^{-1}$은 행렬의 좌곱과 우곱이 동일한 단위 행렬을 생성한다. 반면,</li>
 </ul>
 
-<div class="kdmath">$$
-A^+ A = ( V \boldsymbol{\Sigma}^+ U^T)  (U \boldsymbol{\Sigma} V^T) = V V^T = I_n
-$$</div>
+\[A^+ A = ( V \boldsymbol{\Sigma}^+ U^T)  (U \boldsymbol{\Sigma} V^T) = V V^T = I_n\]
 
-<div class="kdmath">$$
-AA^+ =  (U \boldsymbol{\Sigma} V^T) ( V \boldsymbol{\Sigma}^+ U^T) = U U^T = I_m
-$$</div>
+\[AA^+ =  (U \boldsymbol{\Sigma} V^T) ( V \boldsymbol{\Sigma}^+ U^T) = U U^T = I_m\]
 
 <h2 id="sources">
 <a class="anchor" href="#sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sources</h2>

@@ -160,9 +160,7 @@ window.onload = wrap_img;
 
 <p>잠시 이항 분포를 떠올려보자. 아마도 모든 확률 관련 수업에서 제일 처음 배우는 분포가 아닐까 한다. 이항 분포란, 1회 시행 시 발생할 확률이 $p\;$인 어떤 사건을 $n$ 번 시행할 때 해당 사건이 $k$ 번 발생할 확률의 분포를 나타낸다. 개별적으로 존재하는 사건이니까 당연히 이산 확률 분포에 속한다. 수학적으로는 아래와 같다.</p>
 
-<div class="kdmath">$$
-B(k;  n,p)  =  {n \choose k}  p^k(1-p)^{n-k}
-$$</div>
+\[B(k;  n,p)  =  {n \choose k}  p^k(1-p)^{n-k}\]
 
 <p>위 정의를 말로 풀어보자. n번 시행 중에 사건이 발생한 경우 $k$ 개를 뽑는다. 즉, 이런 경우가 $n$ 번 중에서 얼마나 발생할 수 있는지 따진다. 그리고 해당 경우의 수가 발생할  확률을 곱해준 것이다.</p>
 
@@ -188,21 +186,17 @@ $$</div>
   <li>$n$이 무한대로 갈 때 이항 분포의 확률 밀도 함수의 극한값을 도출한다.</li>
 </ol>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \lim_{n \to \infty} B(k; n, p) = &amp; \lim_{n \to \infty}  {n \choose k }  p^k(1-p)^{n-k} \\
 = &amp; \lim_{n \to \infty}  \dfrac{n!}{k!(n-k)!}(\dfrac{\lambda}{n})^k  (1-\dfrac{\lambda}{n})^{n-k}  \\
 = &amp; \lim_{n \to \infty}  \underbrace{\left[  \dfrac{n!}{(n-k)!  n^k} \right]}_{(가)}  \left[  \dfrac{\lambda^k}{k!}  (1-\dfrac{\lambda}{n})^{n}  \right]  \underbrace{\left[  (1-\dfrac{\lambda}{n})^{-k}\right]}_{(나)}  \\
 = &amp;  1\left[  \dfrac{\lambda^k}{k!}  e^{-\lambda}\right] 1 \\
 = &amp; f(k; \lambda)
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>푸아송 분포 확률 질량 함수 $f(k; \lambda)$ 앞 뒤로 붙은 극한값 (가)와 (나)에 관해 사족을 덧붙여보자. 먼저 (가)는 아래와 같다.</p>
 
-<div class="kdmath">$$
-\lim_{n \to \infty} \dfrac{n!}{(n-k)!  n^k} =  \lim_{n \to \infty}  \dfrac{n(n-1)\dotsb(n-(k-1))}{n^k}  = 1
-$$</div>
+\[\lim_{n \to \infty} \dfrac{n!}{(n-k)!  n^k} =  \lim_{n \to \infty}  \dfrac{n(n-1)\dotsb(n-(k-1))}{n^k}  = 1\]
 
 <p>분자와 분모 모두 가장 높은 $n$의 차수는 $k$이고, 그 계수가 모두 1이므로 극한값은 1이다. (나)의 극한값은 쉽게 알 수 있으니 생략하자.</p>
 

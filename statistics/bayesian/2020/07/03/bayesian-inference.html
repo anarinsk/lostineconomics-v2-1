@@ -136,12 +136,10 @@ window.onload = wrap_img;
 
 <h2 id="bayes-theorem">Bayes’ theorem</h2>
 
-<div class="kdmath">$$
-\begin{aligned}
-P(A\lvert B) & = \dfrac{P(B\lvert A) P(A)}{P(B)} \\
-& = \underbrace{\left( \dfrac{P(B\lvert A)}{P(B)} \right)}_{\rm updating}  \overbrace{P(A)}^{\rm base}
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+P(A\lvert B) &amp; = \dfrac{P(B\lvert A) P(A)}{P(B)} \\
+&amp; = \underbrace{\left( \dfrac{P(B\lvert A)}{P(B)} \right)}_{\rm updating}  \overbrace{P(A)}^{\rm base}
+\end{aligned}\]
 
 <p>$P(A)$는 prior, 즉 사전 확률이다. 즉, $A$의 발생 확률에 관한 사전적인 기대 혹은 지식이다. 때로는 기저 확률이라고도 부른다. 이 지식을 $B$라는 증거(evidence)를 통해서 업데이트하는 것이 베이즈 정리다. 이때 업데이트하는  $( )$ 부분이다.</p>
 
@@ -157,11 +155,9 @@ $$</div>
   <li>추정이란 모집단에서 얻은 샘플을 통해서 모집단 분포의 특성(파라미터)를 추측하는 과정이다. 추정을 위해서 필요한 것은 ‘분포’다. 베이즈 정리에 기반해 사후 분포를 구하는 방법은 아래와 같다.</li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 p(\theta\lvert data) = \dfrac{p(data \lvert \theta) p(\theta)}{P(data)} = \dfrac{ \overbrace{ {\mathcal L} (\theta\lvert data)}^{\rm Likelihood}  \overbrace{p(\theta)}^{\rm prior}}{ \underbrace{P(data)}_{\rm evidence} } 
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>각각 나누어 살펴보자.</p>
 
@@ -192,21 +188,15 @@ $$</div>
 
 <p>예를 들어보자. 동전을 던져서 HH를 관찰했다고 하자. 동전의 앞면이 나올 확률이 $p$라고 하고 독립 시행이라면, 이는 $p^2$가 이 관찰 결과의 ‘우도’이다. 물론 이는 HH라는 결과를 얻을 확률이기도 하다.</p>
 
-<div class="kdmath">$$
-P(HH\lvert p=0.5) = 0.5^2
-$$</div>
+\[P(HH\lvert p=0.5) = 0.5^2\]
 
 <p>이렇게 표현해보자. 이는 HH가 관찰되었을 때 $p=0.5$라는 파라미터의 가능도가 $0.5^2$라는 뜻이다. 즉,</p>
 
-<div class="kdmath">$$
-\mathcal{L} (p=0.5 \lvert  HH) = 0.5^2
-$$</div>
+\[\mathcal{L} (p=0.5 \lvert  HH) = 0.5^2\]
 
 <p>사족이지만,  HH가 관찰되었을 때 $p=0.5$일 확률이 $0.25$이라는 말은 아니다. 즉,</p>
 
-<div class="kdmath">$$
-\mathcal{L} (p=0.5 \lvert  HH) \neq P (p=0.5 \lvert  HH)
-$$</div>
+\[\mathcal{L} (p=0.5 \lvert  HH) \neq P (p=0.5 \lvert  HH)\]
 
 <h4 id="연속-분포에서-확률-neq-우도">연속 분포에서 확률 $\neq$ 우도?</h4>
 
@@ -216,9 +206,7 @@ $$</div>
 
 <p>관찰이 1개라면 앞서 보았듯이 우도는 pmf 그리고 pdf가 된다. pdf가 된다는 것은 무슨 의미일까? 파라미터 공간 전체에 대해서 합하면 혹은 적분하면 1이 되어야 한다. 그래서 pdf다. 그런데 일반적으로 우도를 적분을 한다고 해서 1이 되지 않는다. 앞서 보았던 예로 가보자.</p>
 
-<div class="kdmath">$$
-\int_0^1 p^{1/2} dp \neq 1
-$$</div>
+\[\int_0^1 p^{1/2} dp \neq 1\]
 
 <p>그렇다면 사후 분포 $P(\theta\lvert data)$는 혹은 pmf인가 pdf인가? 그렇다. $\int_\theta P(\theta\lvert data) d \theta$를 구하면 1이다.</p>
 
@@ -228,11 +216,9 @@ $$</div>
   <li>베이즈 추론에서 아래의 표현을 많이 접하게 된다.</li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 p(\theta\lvert data) = \dfrac{\mathcal L(data \lvert  \theta) p(\theta)}{P(data)} \propto {\mathcal L}(\theta\lvert data) p(\theta)
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>왜 온전한 $p(\theta\lvert data)$를 구하지 않고 분모를 제외하려고 할까?</p>
 
@@ -259,9 +245,7 @@ $$</div>
 
 <p>MAP 혹은 MLE 형태의 ‘추정치’만을 얻고 싶었다면 여기서 더 고민할 게 없다. 하지만 추정치를 얻었다면 검정을 해야 한다. 베이즈 추론의 강점은 파라미터를 직접 추정하고 이 추정치가 참일 확률을 직접 계산할 수 있다는 데 있다. 빈도주의 추론처럼 빙빙 돌리지 않는 것이 베이즈 추론의 강점이다. 그런데 이것을 하려면 $\theta$의 분포가 필요하다…</p>
 
-<div class="kdmath">$$
-P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta
-$$</div>
+\[P(data) = \int_{\theta}  {\mathcal L}(\theta\lvert data) p(\theta) d \theta\]
 
 <p>문제는 위 식의 적분, 특히 $p(\theta)$ 분포를 포함한 적분이 쉽지 않다는 데 있다. Prior가 계산 가능한 수준이라고 해도 $\theta$가 $n$ 차원의 벡터일 수 있다. 이를 정확하게 계산해서 해석 해(analytic solutions)를 얻는 것은 대체로 가능하지 않다.</p>
 
@@ -271,15 +255,11 @@ $$</div>
 
 <p>이해를 돕기 위해서 일변수 함수로 다시 표현해보자. 어떤 함수 $f(x)$를 계산할 수 있고 $p(x)$를 샘플링할 수 있다고 하자. 우리가 구하고 싶은 것은 아래의 적분 값이다.</p>
 
-<div class="kdmath">$$
-\int f(x) p(x) dx
-$$</div>
+\[\int f(x) p(x) dx\]
 
 <p>해석 해가 불가능해도 샘플링이 가능하면 해석 해의 근사치를 얻을 수 있다. 즉, 적당히 많은 수,  즉 $N$ 개의 $X_i$를  샘플링해서 $f(X_i)$를 얻어 평균값을 구하면 된다. 즉,</p>
 
-<div class="kdmath">$$
-\int f(x) p(x) dx \approx \sum_{i=1}^{N} \dfrac{f(X_i)}{N}
-$$</div>
+\[\int f(x) p(x) dx \approx \sum_{i=1}^{N} \dfrac{f(X_i)}{N}\]
 
 <h3 id="second-mc-markov-chain">Second MC: Markov Chain</h3>
 
@@ -303,15 +283,11 @@ $$</div>
 
 <p>해법은 임의의 적절한 밀도 함수가 파리미터의 분포를 따를 수 있도록 규칙을 부여해주는 것이다. 이 역할을 수행하는 것이 Metropolis 알고리듬, M-H(Metropolis-Hastings) 알고리듬이다. 다행스럽게도 이 규칙들이 복잡하지 않고 간단하다.  이것이 마법이다! 이렇게 임의로 만들어진 밀도 함수가 원하는 파라미터의 분포를 유일한 수렴 분포로 지니기 위해서는 마르코프  연쇄의 어떤 속성들을 지니고 있어야 한다. 이는 이른바 detailed balance 조건을 통해 보장된다. 즉,</p>
 
-<div class="kdmath">$$
-\pi(x) T(y\lvert x) = \pi(y) T(x\lvert y)
-$$</div>
+\[\pi(x) T(y\lvert x) = \pi(y) T(x\lvert y)\]
 
 <p>이를 앞서 적은 식의 맥락에서 다시 풀어보자.</p>
 
-<div class="kdmath">$$
-p(\theta^i\lvert data) p(\theta^j\lvert \theta^i) = p(\theta^j\lvert data) p(\theta^i\lvert \theta^j).
-$$</div>
+\[p(\theta^i\lvert data) p(\theta^j\lvert \theta^i) = p(\theta^j\lvert data) p(\theta^i\lvert \theta^j).\]
 
 <p>여기서 $\theta^k$는 마르코프 연쇄 위에서 얻은 $\theta$의 수열을 뜻한다. 정리하면 파라미터의 사후 분포를 수렴 분포로 지니는 마르코프 연쇄의 어떤 밀도 함수(이행 행렬)를 구성하고, 이 밀도 함수가 detailed balance를 만족시키면 되겠다.</p>
 
@@ -321,20 +297,16 @@ $$</div>
   <li>이행 행렬로 임의의 밀도 함수 $Q(\theta^i \lvert  \theta^{i-1})$를 정하자. 이를 밀도함수로 받아들일지 여부를 아래와 같은 확률로 결정한다. 이를 수용확률이라고 부른다.</li>
 </ul>
 
-<div class="kdmath">$$
-r = \min \left( \dfrac{\pi(\theta^i)}{\pi(\theta^{i-1})}, 1 \right)
-$$</div>
+\[r = \min \left( \dfrac{\pi(\theta^i)}{\pi(\theta^{i-1})}, 1 \right)\]
 
 <ul>
   <li>즉, 이전값($\theta^{i-1}$)보다 새로운 값($\theta^i$)이 더 큰 확률을 주면, 이 밀도함수를 1의 확률로 받아 들인다. 반면 그렇지 않으면 확률의 크기에 따라서 이를 수용한다. 이제 $\theta^{i-1} = \theta^a$에서 $\theta^i = \theta^b$, 즉 $\theta^a \to \theta^b$ 로 이행할 확률을 구해보자. 만일 $\pi(\theta^a\lvert data) \leq \pi(\theta^b\lvert data)$라고 해보자.</li>
 </ul>
 
-<div class="kdmath">$$
-\begin{aligned}
-P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  & = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(\theta^{a})}, 1 \right)}^{(\ast\ast)} \\
-& = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) \cdot 1
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+P(\theta^i = \theta^b \lvert  \theta^{i-1} = \theta^a)  &amp; = \underbrace{\pi(\theta^a \lvert  data)}_{(\ast)} \overbrace{Q(\theta^b \lvert  \theta^a) \min \left( \dfrac{\pi(\theta^b\lvert data)}{\pi(\theta_{a}\lvert data)}{\pi(\theta^{a})}, 1 \right)}^{(\ast\ast)} \\
+&amp; = \pi(\theta^a\lvert data) Q(\theta^b\lvert \theta^a) \cdot 1
+\end{aligned}\]
 
 <ul>
   <li>$\pi(\theta^a)$, 즉 $(\ast)$ 그냥 prior를 통해 쉽게 구할 수 있다. $(\ast\ast)$ 역시 어렵지 않게 구할 수 있다.</li>
@@ -342,13 +314,11 @@ $$</div>
 
 <p>이번에는 detailed balance를 살펴보기 위해서 반대로 $\theta^b \to \theta^a$를 구해보자.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
-P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  & = \pi(\theta^b\lvert data) Q(\theta^a\lvert \theta^b) \min \left( \dfrac{\pi(\theta^a\lvert data)}{\pi(\theta^b\lvert data)}, 1 \right) \\
-& = \pi(\theta^b\lvert data) Q(\theta^b\lvert \theta^a) \cdot \dfrac{\pi(\theta^a\lvert data)}{\pi(\theta^b\lvert data)} \\
-& = Q(\theta^a\lvert \theta^b)  \pi(\theta^a\lvert data)
-\end{aligned}
-$$</div>
+\[\begin{aligned}
+P(\theta^i = \theta^a \lvert  \theta^{i-1} = \theta^b)  &amp; = \pi(\theta^b\lvert data) Q(\theta^a\lvert \theta^b) \min \left( \dfrac{\pi(\theta^a\lvert data)}{\pi(\theta^b\lvert data)}, 1 \right) \\
+&amp; = \pi(\theta^b\lvert data) Q(\theta^b\lvert \theta^a) \cdot \dfrac{\pi(\theta^a\lvert data)}{\pi(\theta^b\lvert data)} \\
+&amp; = Q(\theta^a\lvert \theta^b)  \pi(\theta^a\lvert data)
+\end{aligned}\]
 
 <ul>
   <li>메트로폴리스 알고리듬의 가정 중 하나는 이행 행렬이 대칭이라는 것이다. 즉, $Q(\theta^b\lvert \theta^a)  = Q(\theta^a\lvert \theta^b)$. 따라서 detailed balance가 성립한다. $\pi(\theta^a\lvert data) &gt; \pi(\theta^b\lvert data)$인 경우에 대해서도 비슷하게 도출할 수 있다.</li>
@@ -360,9 +330,7 @@ $$</div>
   <li>M-H 알고리듬은 임의의 밀도 함수, 즉 $Q(\cdot)$가 대칭이라는 제약도 풀어버린 것이다. 수용 확률 $r$ 이 다음과 같이 정의된다.</li>
 </ul>
 
-<div class="kdmath">$$
-r = \min \left( \dfrac{\dfrac{\pi(\theta^i \lvert  data)}{Q(\theta^i\lvert \theta^{i-1})} }{\dfrac{\pi(\theta^{i-1} \lvert  data)}{Q(\theta^{i-1}\lvert \theta^i)} }, 1 \right)
-$$</div>
+\[r = \min \left( \dfrac{\dfrac{\pi(\theta^i \lvert  data)}{Q(\theta^i\lvert \theta^{i-1})} }{\dfrac{\pi(\theta^{i-1} \lvert  data)}{Q(\theta^{i-1}\lvert \theta^i)} }, 1 \right)\]
 
 <ul>
   <li>Metropolis 알고리듬의 사례에 제시된 바를 따라가보면 대칭이라는 조건 없이 detailed balance를 만족한다는 사실을 쉽게 계산해볼 수 있다.</li>

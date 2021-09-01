@@ -168,9 +168,7 @@ window.onload = wrap_img;
 
 <p>회귀분석의 목적함수와 극소화는 아래와 같다.</p>
 
-<div class="kdmath">$$
-\min_{\beta} (y - X \beta)^T (y - X \beta).
-$$</div>
+\[\min_{\beta} (y - X \beta)^T (y - X \beta).\]
 
 <p>여기서 각각 행렬 및 벡터의 크기를 확인해보자.</p>
 
@@ -180,8 +178,7 @@ $$</div>
 
 <p>개념적으로 말하면 regression은 일종의 목표 변수인 $y$와 이를 설명하기 위한 설명 변수인 regressors로 구성된 벡터 공간의  한 점 사이의 거리를 최소화하는 $\beta$를 찾는 것이다. 기하학적으로 보면 이 최소화는 $n$ 차원인 한 점에서 $y$에서 $k$ 차원인 $X$로 구성된 초평면으로 수선의 발을 내릴 경우 달성된다.</p>
 
-<div class="kdmath">$$
-X \beta = 
+\[X \beta = 
 \begin{bmatrix}
 x^1 ~ \dotsc ~ x^k
 \end{bmatrix}
@@ -190,17 +187,14 @@ x^1 ~ \dotsc ~ x^k
 \vdots \\
 \beta_k
 \end{bmatrix} = 
-\beta_1 x^1 + \dotsb + \beta_k x^k,
-$$</div>
+\beta_1 x^1 + \dotsb + \beta_k x^k,\]
 
 <p>where $x^j = [x_1^j, \dotsc, x_n^j]^T$ for $j = 1, \dotsc, k$. 즉 $x^j \in {\mathbb R}^n$ 벡터 $k$ 개로 이루어진 벡터 공간, 즉 $X$의 열 공간(column space)으로 $y$를 투영(project)한다는 의미이다. 이 열 공간은 $n$ 차원 안에 속한 $k$ 차원의 초평면이라는 점을 기억해두자. 아래 그림을 참고하자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup></p>
 
 <p align="center"><kbd>  <img src="https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/reg-in-vectorspace.png?raw=true" width="350"></kbd></p>
 <p>한편 위의 식을 연립방정식의 관점에서 바라보자.</p>
 
-<div class="kdmath">$$
-X \beta = y
-$$</div>
+\[X \beta = y\]
 
 <p>$X \in {\mathbb n \times k}$의 경우 $n &gt; k$이므로, 위 연립방정식의 해 $\beta$는 일반적으로 존재할 수 없다.  따라서 해 대신에 MSE를 극소화하는 새로운 목적 함수를 잡았다고 보면 좋다.</p>
 
@@ -209,22 +203,20 @@ $$</div>
 
 <p>한편, PCA의 최소화는 다음의 목적 함수로 구현된다.</p>
 
-<p><span class="kdmath">$\begin{aligned}
+<p>\(\begin{aligned}
 \min_{w} &amp; \dfrac{1}{n}\sum_{i=1}^n \left( \Vert x_i \Vert^2 - 2(w \cdot x_i)^2 + 1 \right),
-\end{aligned}$</span></p>
+\end{aligned}\)</p>
 <ul>
   <li>$w \in  {\mathbb R}^{k}$, $x_i \in  {\mathbb R}^{k}$</li>
 </ul>
 
 <p>목적 함수의 괄호 부분은 아래와 같이 도출된다.</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 \Vert x_i - (w \cdot x_i) w \Vert^2 &amp; =  
 \Vert x_i \Vert^2 - 2 (w \cdot x_i)(w \cdot x_i) +  \Vert w \Vert^2 \\
 &amp; = \Vert x_i \Vert^2 - 2(w \cdot x_i)^2 + 1
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>역시 개념적으로 말하면 PCA는 $k$ 차원의 벡터가 $n$ 개 있을 때, $n$ 개의 벡터들을 길이 1의 유닛 벡터 $w( \in {\mathbb R}^{k})$로 프로젝션할 때, 그 거리 제곱의 합을 최소화하는 $w$를 찾는 것이다.</p>
 
@@ -264,13 +256,11 @@ $$</div>
 
 <p>PCA 분석에서 등장하는 아이겐벡터는 너무 좋은 특징을 지니고 있다. 우선, 해당 아이겐벡터는 서로 직교한다. 즉,</p>
 
-<div class="kdmath">$$
-w^i \cdot w^j = 
+\[w^i \cdot w^j = 
 \begin{cases}
 1 &amp; \text{for $i = j$} \\
 0 &amp; \text{for $i \neq j$}
-\end{cases}
-$$</div>
+\end{cases}\]
 
 <p>아마도 PCA를 2차원에 도해할 경우 아래와 같은 그림을 많이 봤을 것이다.</p>
 
@@ -289,37 +279,29 @@ $$</div>
 
 <p>이렇게 보자. 앞서 보았던 대로 $X \in {\mathbb R}^{$는 $(n \times k}$ 행렬다. 이를 행 벡터로 잘라서 보자. 즉,</p>
 
-<div class="kdmath">$$
-X = 
+\[X = 
 \begin{bmatrix}
 x_1 \\
 \vdots \\
 x_n 
 \end{bmatrix},~\text{where~} 
-x_i = [x^1,~\dotsc~, x^k].
-$$</div>
+x_i = [x^1,~\dotsc~, x^k].\]
 
 <p>즉. 행 벡터는 $k$ 개의 피처를 지닌 하나의 관찰이 된다. 이제 앞서 우리가 구한 아이겐벡터를 여기에 적용해보자. 편의상 1개로 차원 축소를 한 경우를 가정하겠다. 이때 차원 축소에 활용되는 아이겐벡터는 아이겐밸류가 가장 큰 값에 해당하는 벡터 $w^1$라고 하자. $w^1 \in {\mathbb R}^{k}$이다. 이제,</p>
 
-<div class="kdmath">$$
-X w^1 = \underset{n \times 1}{\rm{PC}^1}
-$$</div>
+\[X w^1 = \underset{n \times 1}{\rm{PC}^1}\]
 
 <p>첫번째 PC로 변환된 $X$는 $k$ 개의 피처에서 1개의 피처로 변환된다. 만일 주성분(PC)으로 $l$ 개를 택했다면 아이겐밸류가 큰 순서대로 위와 같은 과정을 거치면 되겠다. 각 아이겐밸류와 아이겐벡터의 쌍이 $w^j$, $\lambda^j$라고 할 때,</p>
 
-<div class="kdmath">$$
-\begin{aligned}
+\[\begin{aligned}
 X w^1 &amp; ={\rm PC}^1 \\
 &amp;~\vdots \\
 X w^l &amp; ={\rm PC}^l,~\text{where $\lambda^1 &gt; \dotsc &gt; \lambda^l$. }
-\end{aligned}
-$$</div>
+\end{aligned}\]
 
 <p>그리고 이 PC 값들을 모으면 $k$ 개에서 $l$ 개로 차원이 축소된 행렬을 얻을 수 있다.</p>
 
-<div class="kdmath">$$
-\underset{n \times l}{ [{\rm PC}^1,~\dotsc~,{\rm PC}^l] }
-$$</div>
+\[\underset{n \times l}{ [{\rm PC}^1,~\dotsc~,{\rm PC}^l] }\]
 
 <h2 id="question-three">
 <a class="anchor" href="#question-three" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question Three</h2>
