@@ -35,7 +35,13 @@ p code{
   font-size: 13px;
 }
 
-// mathjax options 
+// mathjax options // Not working 
 .MathJax_Display, /* MathJax 2 */
 mjx-container     /* MathJax 3 */
 { text-align: left!important; }
+
+<script>
+    MathJax.Hub.Config({
+        displayAlign: 'left'
+    });
+</script>
