@@ -108,7 +108,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -158,25 +158,33 @@ window.onload = wrap_img;
   <li>대각화가 가능한 행렬 $A$가 있고, 그 아이겐벡터를 열 벡터로 하는 행렬을 $Q$라고 하면</li>
 </ul>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 A Q &amp; = A[x_1, \dotsc, x_n] \\
 &amp; = [\lambda_1 x_1, \cdots, \lambda_n x_n] \\
 &amp;= Q \boldsymbol{\lambda}
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
-\[AQ Q^{-1} = A = Q \boldsymbol{\lambda}Q^{-1}\]
+<div class="kdmath">$$
+AQ Q^{-1} = A = Q \boldsymbol{\lambda}Q^{-1}
+$$</div>
 
 <ul>
   <li>대각화가 가능하기 위해서는 우선 행렬 $Q$가 비특이(non-singular) 행렬이어야 한다. $Q$는 아이겐벡터의 조합이기 때문에 서로 다른 아이겐밸류를 지니거나 혹은 아이겐벡터의 선형독립이 성립해야 한다.</li>
   <li>대칭 행렬의 경우 모든 아이겐밸류가 실수이고, $Q$는 직교 행렬(orthogonal matrix)이 된다. 이 경우</li>
 </ul>
 
-\[A = Q\boldsymbol{\lambda}Q^T\]
+<div class="kdmath">$$
+A = Q\boldsymbol{\lambda}Q^T
+$$</div>
 
 <h2 id="definition">
 <a class="anchor" href="#definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definition</h2>
 
-\[\underset{(n \times n)}{\boldsymbol{A}} \underset{(n \times 1)}{x} = \lambda x, \text{ for $x \neq 0$}\]
+<div class="kdmath">$$
+\underset{(n \times n)}{\boldsymbol{A}} \underset{(n \times 1)}{x} = \lambda x, \text{ for $x \neq 0$}
+$$</div>
 
 <p>벡터 $x(\in {\mathbb R}^n)$가 있다고 하자. $\boldsymbol{A}$는 일종의 함수이고 이는 $x$를 변형시키게 된다. 이 변형이 그 다시 자신이 되고 벡터의 크기만 조정해주는 형태가 될 때, $\lambda$를 아이겐밸류 그리고 그 벡터 $x$를 아이겐벡터라고 한다. 잠깐! 여기서 아이겐 벡터는 우 아이겐벡터다. 왜냐하면, 벡터가 매트릭스의 오른쪽에 곱해지기 때문이다. 우(right) 아이겐벡터를 보통 아이겐벡터라고 쓴다. 하지만 좌(left) 아이겐벡터도 있다. 일단 이 점만 지적해두도록 하자.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
 
@@ -206,11 +214,15 @@ A Q &amp; = A[x_1, \dotsc, x_n] \\
 
 <p>아이겐밸류의 아이겐벡터를 구하는 과정은 다음과 같다.</p>
 
-\[|(\boldsymbol{A} - \lambda I)|  = 0\]
+<div class="kdmath">$$
+|(\boldsymbol{A} - \lambda I)|  = 0
+$$</div>
 
 <p>즉, 임의의아이겐밸류, 아이겐벡터 정의에서 $\boldsymbol 0$ 벡터가 아닌 매트릭스 $x$를 $\boldsymbol 0$ 벡터로 만들기 위해서는 위의 행렬식 값이 0이어야 한다. 행렬식이 $\lambda$의 $n$ 차 방정식이고, $n$차 방정식의 근이 각각 아이겐밸류가 된다. 즉,</p>
 
-\[|(\boldsymbol{A} - \lambda {\boldsymbol I})|  = (\lambda_1 - \lambda) \cdot  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda)\]
+<div class="kdmath">$$
+|(\boldsymbol{A} - \lambda {\boldsymbol I})|  = (\lambda_1 - \lambda) \cdot  (\lambda_2 - \lambda) \dotsb  (\lambda_n - \lambda)
+$$</div>
 
 <p>위의 식에서 두가지 사실을 알 수 있다.</p>
 
@@ -224,7 +236,9 @@ A Q &amp; = A[x_1, \dotsc, x_n] \\
 
 <p>원래 행렬의 행렬식과 전치행렬의 행렬식은 같다. 이를 아이겐밸류 계산에 응용해보자.</p>
 
-\[|\boldsymbol{A}^T - \lambda {\boldsymbol I}| = |(\boldsymbol{A}-\lambda {\boldsymbol I})^T| = |\boldsymbol{A}-\lambda {\boldsymbol I}|\]
+<div class="kdmath">$$
+|\boldsymbol{A}^T - \lambda {\boldsymbol I}| = |(\boldsymbol{A}-\lambda {\boldsymbol I})^T| = |\boldsymbol{A}-\lambda {\boldsymbol I}|
+$$</div>
 
 <p>즉, 원래 행렬 $\boldsymbol{A}$와 전치 행렬 $\boldsymbol{A}^T$는 같은 아이겐밸류를 갖는다.</p>
 
@@ -233,26 +247,33 @@ A Q &amp; = A[x_1, \dotsc, x_n] \\
 
 <p>아이겐밸류와 아이겐벡터가 가장 많이 사용되는 경우는 행렬의 대각화이다. 여기서 대각화란, 정방 행렬의 대각에 위치한 원소, $a_{ii}$를 제외한 나머지 원소가 모두 0인 행렬, 즉 대각 행렬을 품는 변형을 의미한다. 대각 행렬은 여러가지로 쓸모가 많다. 특히 행렬의 $k$ 제곱이 필요한 경우 대각행렬은 그냥 해당 대각원소의 $k$ 제곱과 동일해진다. 행렬의 대각화를 살펴보자.</p>
 
-\[y = \boldsymbol{A} x\]
+<div class="kdmath">$$
+y = \boldsymbol{A} x
+$$</div>
 
 <p>기본적으로 행렬은 함수다. 즉, 벡터 $x$를 투입(input)으로 보면 이를 선형 결합을 통해서 다른 어떤 산출(output) 벡터로 보내는 것이다. 일단 설명의 편의를 위해서 $x$가 2차원 벡터라고 두고 설명해보자. 즉,</p>
 
-\[x = 
+<div class="kdmath">$$
+x = 
 \begin{bmatrix}  
 x_1 \\  
 x_2
-\end{bmatrix}.\]
+\end{bmatrix}.
+$$</div>
 
 <p>$\boldsymbol{A}$에 의해 변형된 결과를 아이겐벡터 $v_1$과 $v_2$를 통해서 표현할 수 있다고 가정하자. $v_1$, $v_2$를 통해 $x$, $y$를 표현하면 다음과 같다.</p>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 x &amp; = w_1 v_1 + w_2 v_2 \\
 y &amp; = z_1 v_1 + z_2 v_2 
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <p>이때, $w_\cdot$, $z_\cdot$은 스칼라 값임에 유의하자. 이를 매트릭스로 표시하면 다음과 같다.</p>
 
-\[x = 
+<div class="kdmath">$$
+x = 
 \boldsymbol{Q}
 \begin{bmatrix}  
 w_1 \\  
@@ -263,36 +284,47 @@ y =
  \begin{bmatrix}  
 z_1 \\  
 z_2
-\end{bmatrix}, \text{where}\]
+\end{bmatrix}, \text{where}
+$$</div>
 
-\[\boldsymbol{Q} = 
+<div class="kdmath">$$
+\boldsymbol{Q} = 
 \begin{bmatrix}  
 v_1, v_2
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <p>$v_i’ v_i = 1(i = 1,2)$ 이고, $v_1 \cdot v_2 = 0$ 이라고 가정하자. 즉, $Q$가 직교행렬이라고 가정하자.</p>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 \boldsymbol{Q}z &amp; = \boldsymbol{A} \boldsymbol{Q} w \\
 z &amp; = \boldsymbol{Q}^{-1} \boldsymbol{A} \boldsymbol{Q} w \\
 z &amp; = \boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} w 
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <p>직교행렬의 경우 $\boldsymbol{Q}^{-1} = \boldsymbol{Q}^T$가 성립한다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup> 이때</p>
 
-\[\boldsymbol{A} \boldsymbol{Q} = [A v_1, A v_2] = [\lambda_1 v_1, \lambda_2 v_2] = [v_1, v_2] 
+<div class="kdmath">$$
+\boldsymbol{A} \boldsymbol{Q} = [A v_1, A v_2] = [\lambda_1 v_1, \lambda_2 v_2] = [v_1, v_2] 
  \begin{bmatrix}  
   \lambda_1 &amp; 0 \\  
   0 &amp; \lambda_2 
-\end{bmatrix} = \boldsymbol{Q} \boldsymbol{\lambda}.\]
+\end{bmatrix} = \boldsymbol{Q} \boldsymbol{\lambda}.
+$$</div>
 
 <p>따라서,</p>
 
-\[z = \boldsymbol{Q}^T \boldsymbol{Q} \boldsymbol{\lambda} w\]
+<div class="kdmath">$$
+z = \boldsymbol{Q}^T \boldsymbol{Q} \boldsymbol{\lambda} w
+$$</div>
 
 <p>여기서 대각화의 핵심은</p>
 
-\[\boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} = \boldsymbol{\lambda}\text{ or }\boldsymbol{A} = \boldsymbol{Q}\boldsymbol{\lambda}\boldsymbol{Q}^T\]
+<div class="kdmath">$$
+\boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} = \boldsymbol{\lambda}\text{ or }\boldsymbol{A} = \boldsymbol{Q}\boldsymbol{\lambda}\boldsymbol{Q}^T
+$$</div>
 
 <p>즉, 어떤 매트릭스의 아이겐벡터가 서로 직교하면 이를 통해 직교행렬 $\boldsymbol{Q}$를 얻을 수 있다. 이를 원래 매트릭스의 좌우로 곱하면 아이겐밸류를 대각원소로 갖는 대각행렬을 얻을 수 있다.</p>
 
@@ -301,16 +333,20 @@ z &amp; = \boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} w
 
 <p>일반화 해보자. 대각화는 다음과 같다.</p>
 
-\[\boldsymbol{AQ} = \boldsymbol{A} [x_1, \dotsc, x_n] = [\lambda_1 x_1, \dotsc, \lambda_n x_n] = [x_1, \dotsc, x_n] 
+<div class="kdmath">$$
+\boldsymbol{AQ} = \boldsymbol{A} [x_1, \dotsc, x_n] = [\lambda_1 x_1, \dotsc, \lambda_n x_n] = [x_1, \dotsc, x_n] 
 \begin{bmatrix}
 \lambda_1&amp; \dotsc &amp; 0  \\
 \vdots&amp; \ddots&amp; \vdots \\
 0&amp; \dotsc&amp; \lambda_n
-\end{bmatrix} = \boldsymbol{Q} \boldsymbol{\lambda}\]
+\end{bmatrix} = \boldsymbol{Q} \boldsymbol{\lambda}
+$$</div>
 
 <p>행렬의 인수분해(factorization)은 다음을 의미한다.</p>
 
-\[\boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1}\]
+<div class="kdmath">$$
+\boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1}
+$$</div>
 
 <h2 id="diagonalizable">
 <a class="anchor" href="#diagonalizable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diagonalizable</h2>
@@ -331,22 +367,28 @@ z &amp; = \boldsymbol{Q}^T \boldsymbol{A} \boldsymbol{Q} w
 
 <p>이를 종합하면 아래와 같다.</p>
 
-\[\boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1} =  \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{T}\]
+<div class="kdmath">$$
+\boldsymbol{A} = \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{-1} =  \boldsymbol{Q} \boldsymbol{\lambda} \boldsymbol{Q}^{T}
+$$</div>
 
 <h3 id="graphic-interpretation-with-vector-space">
 <a class="anchor" href="#graphic-interpretation-with-vector-space" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphic interpretation with vector space</h3>
 
 <p>앞서의 식을 다시 음미해보자.</p>
 
-\[AQ = A[x_1, \dotsc, x_n]\]
+<div class="kdmath">$$
+AQ = A[x_1, \dotsc, x_n]
+$$</div>
 
 <p>$A x_i$는 $A$라는 일종의 함수에 의해 선형 변형된 벡터를 나타낸다. 이러한 벡터를 모아 놓은 것이 $AQ$이다. 이는 벡터 (서브) 스페이스를 형성한다.</p>
 
-\[Q \lambda = [x_1, \dotsc, x_n] \begin{bmatrix}
+<div class="kdmath">$$
+Q \lambda = [x_1, \dotsc, x_n] \begin{bmatrix}
 \lambda_1&amp; \dotsc &amp; 0  \\
 \vdots&amp; \ddots&amp; \vdots \\
 0&amp; \dotsc&amp; \lambda_n
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <p>이것 역시 벡터 (서브) 스페이스를 형성한다. 여기서 서브 스페이스의 축은 아이겐벡터가 되고, 그 크기를 좌우하는 것은 아이겐벡터가 된다. 이렇게 살펴보면, 왜 아이겐벡터-아이겐밸류가 선형 변환 함수 $A$의 축과 크기를 바꾸는 것인지 이해할 수 있다.</p>
 

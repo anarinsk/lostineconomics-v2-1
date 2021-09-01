@@ -143,17 +143,21 @@ window.onload = wrap_img;
   <li>흔히 아는 연립방정식의 형태를 행렬식으로 표시해보자.</li>
 </ul>
 
-\[A x = b\]
+<div class="kdmath">$$
+A x = b
+$$</div>
 
 <ul>
   <li>$A \in {\mathbb R}^{m \times n}$, $b \in  {\mathbb R}^{m \times 1}$</li>
   <li>이때 $b$를 계수 행렬 $A$의 한 열로 편입한 형태를 augmented form이라고 부른다. 즉,</li>
 </ul>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 A ~\vert ~ b
 \end{bmatrix}
-\in {\mathbb R}^{m \times (n +1)}\]
+\in {\mathbb R}^{m \times (n +1)}
+$$</div>
 
 <ul>
   <li>해가 존재하면 일치성이 있다고 말하고 해가 존재하지 않으면 일치성이 없다고 말한다.</li>
@@ -190,7 +194,8 @@ A ~\vert ~ b
   <li>아래의 예를 확인하자.</li>
 </ul>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 1 &amp; 0 &amp; \ast &amp; 0 &amp; \ast &amp; \ast &amp; 0 &amp; 0 &amp; \ast \\
 0 &amp; 1 &amp; \ast &amp; 0 &amp; \ast &amp; \ast &amp; 0 &amp; 0 &amp; \ast     \\
 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; \ast &amp; 0 &amp; 0 &amp; \ast   \\
@@ -198,7 +203,8 @@ A ~\vert ~ b
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; \ast   \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0   \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0  
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>이 매트릭스에서 피봇이 되는 열의 경우 해당 열의 유일한 0이 아닌 원소는 1이 된다.</li>
@@ -243,15 +249,21 @@ A ~\vert ~ b
   <li>앞서 매트릭스 연산을 행렬로 나타낸 행렬을 기본 행렬(elementary matrix)라고 한다.</li>
 </ul>
 
-\[AX = I\]
+<div class="kdmath">$$
+AX = I
+$$</div>
 
 <p>이때 $X = A^{-1}$로 둘 수 있다. 식의 양변에 동시에 기본 행렬 연산 $r$ 번을 전개한다고 하자.</p>
 
-\[\underbrace{E_r E_{r-1} \dotsb E_1}_{(*)} A X = E_r E_{r-1} \dotsb E_1 I\]
+<div class="kdmath">$$
+\underbrace{E_r E_{r-1} \dotsb E_1}_{(*)} A X = E_r E_{r-1} \dotsb E_1 I
+$$</div>
 
 <p>이때 이 연산의 결과 식의 좌변이 $IX$로 바뀐다고 하자. 이는 다시 아래와 같다.</p>
 
-\[E_r E_{r-1} \dotsb E_1 A X = E_r E_{r-1} \dotsb E_1 I = IX\]
+<div class="kdmath">$$
+E_r E_{r-1} \dotsb E_1 A X = E_r E_{r-1} \dotsb E_1 I = IX
+$$</div>
 
 <p>$X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.</p>
 

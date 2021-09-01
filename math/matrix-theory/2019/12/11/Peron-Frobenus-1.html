@@ -108,7 +108,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -178,13 +178,19 @@ $A$는 다음의 조건을 만족할 때 정칙 행렬(regular matrix)이라고 
 
 <h4 id="not-regular">Not regular</h4>
 
-\[\begin{bmatrix} 1&amp; 1 \\0&amp; 1 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 1& 1 \\0& 1 \end{bmatrix}
+$$</div>
 
-\[\begin{bmatrix} 0&amp; 1 \\1&amp; 0 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 0& 1 \\1& 0 \end{bmatrix}
+$$</div>
 
 <h4 id="regular">Regular</h4>
 
-\[\begin{bmatrix} 1&amp; 1&amp; 0 \\0&amp; 0&amp; 1\\ 1&amp;0&amp;0 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 1& 1& 0 \\0& 0& 1\\ 1&0&0 \end{bmatrix}
+$$</div>
 
 <ul>
   <li>정칙 행렬이 아닌 경우에는 $A^k(k \geq 1)$을 하더라도 같은 자리에 0이 남게 된다.</li>
@@ -224,23 +230,29 @@ $A$는 다음의 조건을 만족할 때 정칙 행렬(regular matrix)이라고 
 
 <p>페론-프로베니우스 정리가 가장 아름답게 활용되는 사례는 마르코프 체인 모델이다. 확률 과정(stochastic process) $X_0, X_1, \dotsc, X_n$이 아래와 같은 과정을 따른다고 하자.</p>
 
-\[{\rm Prob}(X_{t+1} = j \vert X_t =i) = p_{ij}\]
+<div class="kdmath">$$
+{\rm Prob}(X_{t+1} = j \vert X_t =i) = p_{ij}
+$$</div>
 
 <p>즉, 이는 $i \to j$의 확률, 즉 $i$ 상태에서 $j$ 상태로 옮겨갈 확률을 의미한다. 마르코프 체인의 특징은 $(t+1)$ 기의 상태를 결정하는 것은 오직 $t$ 기의 상태다. 즉, $t-k$ for $k=1, \dots, t$ 는 $(t+1)$의 상태를 결정하는 데 영향을 주지 않는다. $P$는 이행 행렬(transition matrix) 혹은 확률 행렬(stochastic matrix)라고 부른다.</p>
 
-\[P = 
+<div class="kdmath">$$
+P = 
 \begin{bmatrix} 
-p_{11}&amp; p_{12}&amp; \dotsc&amp; p_{1n} \\
-p_{21}&amp; p_{22}&amp; \dotsc&amp; p_{2n}  \\ 
- \vdots &amp;\vdots&amp;\ddots&amp;\vdots \\
-p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn} 
-\end{bmatrix}\]
+p_{11}& p_{12}& \dotsc& p_{1n} \\
+p_{21}& p_{22}& \dotsc& p_{2n}  \\ 
+ \vdots &\vdots&\ddots&\vdots \\
+p_{n1}& p_{n2}& \dotsc& p_{nn} 
+\end{bmatrix}
+$$</div>
 
 <p>$P$의 각 행의 합은 1이 된다는 점을 새겨두자. $t$ 기에 $i$ 상태에 있었다면, $(t+1)$ 기에는 $1, 2, \dotsc, n$ 중 어느 하나로는 상태를 변경해야 한다.</p>
 
 <p>행 벡터 $p_t \in \mathbb{R}^n$ 를 $X_t$의 분포라고 하자.</p>
 
-\[{(p_t^T)}_i = {\rm Prob}(X_t = i)\]
+<div class="kdmath">$$
+{(p_t^T)}_i = {\rm Prob}(X_t = i)
+$$</div>
 
 <p>를 의미한다. 즉, $t$ 기에 $i$ 상태가 실현될 혹은 존재할 확률이다. $(t+1)$ 기의 확률 분포를 벡터로 표현하면 다음과 같다. $p_{t+1} = p_t P$.</p>
 
@@ -265,11 +277,15 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>1의 아이겐밸류가 존재한다. 어떻게 알 수 있을까?</p>
 
-\[P {\boldsymbol 1}_n = (1){\boldsymbol 1}_n\]
+<div class="kdmath">$$
+P {\boldsymbol 1}_n = (1){\boldsymbol 1}_n
+$$</div>
 
 <p>확률 행렬 $P$에 대해서 모든 원소가 1인 $n$ 차원의 열 벡터 ${\boldsymbol 1}_n$에 관해서 위의 식이 당연히 성립한다. 즉, 확률 행렬 $P$의 우 아이겐벡터는 ${\boldsymbol 1}_n$이고 그때의 아이겐밸류는 $1$이다. 그러면 아이겐밸류 1에 해당하는 좌 아이겐벡터 $\pi$ 가 존재한다고 하자. 이를 적으면 다음과 같다.</p>
 
-\[\pi P = \pi (1)\]
+<div class="kdmath">$$
+\pi P = \pi (1)
+$$</div>
 
 <p>앞서 페론-프로베니우스의 정리에 따라서 아이겐밸류 1에 해당하는 유일한 좌 아이겐벡터 $\pi$가 존재한다. 이 좌 아이겐벡터는 당연히 아이겐벡터의 특성을 지니고 있다. 즉, 어떤 상태 $\pi$에서 한번의 확률 과정을 거치더라도 여전히 그 상태에 머물러 있게 된다.</p>
 
@@ -281,7 +297,9 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>만일 1 이외의 아이겐밸류 $\hat \lambda &gt; 1$가 존재한다고 하자. 이제 어떤 열 벡터 $x$에 속하는 최대값을 $x_{\max}$라고 하자. 이때 $P x$의 결과 생산되는 열 벡터의 각 원소는 $x_i$ for $i = 1, 2, \dotsc, n$의 컨벡스 결합이다.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup> 따라서 $Px = x^c$에 속한 어떤 원소 $x_i^c$도 $x_{\max}$ 보다 클 수 없다. 즉,</p>
 
-\[x^c_i \leq x_{\max}\]
+<div class="kdmath">$$
+x^c_i \leq x_{\max}
+$$</div>
 
 <p>그런데 $P x = \hat \lambda x$가 성립하고 $\hat \lambda &gt;1$이기 때문에, $x_{\max} \hat \lambda &gt; x_{\max}$가 성립해야 한다. 즉 모순이다. 따라서 $\lambda \leq 1$이고, $\lambda_{\rm pf} = 1$이다.</p>
 
@@ -301,11 +319,15 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
 
 <p>확률 분포 $\pi = [\pi_0, \pi_1, \pi_2, \dotsc, \pi_k]$는 아래 조건을 만족할 때 마르코프 체인 $P_n$의 극한 분포라고 부른다. 만일</p>
 
-\[\pi_j = \lim_{n \to \infty} P(X_n = j | X_0 = i) ,~\forall i, j \in S\]
+<div class="kdmath">$$
+\pi_j = \lim_{n \to \infty} P(X_n = j | X_0 = i) ,~\forall i, j \in S
+$$</div>
 
 <p>이고</p>
 
-\[\sum_{j \in S} \pi_j = 1.\]
+<div class="kdmath">$$
+\sum_{j \in S} \pi_j = 1.
+$$</div>
 
 <p>몇 가지 점만 확인해보자.</p>
 
@@ -314,23 +336,27 @@ p_{n1}&amp; p_{n2}&amp; \dotsc&amp; p_{nn}
   <li>만일 극한 분포가 존재한다면, 아래 같은 식이 성립한다.</li>
 </ul>
 
-\[\lim_{n \to \infty} P^n = 
+<div class="kdmath">$$
+\lim_{n \to \infty} P^n = 
 \begin{bmatrix}
 \pi \\
 \vdots \\
 \pi
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <h2 id="limiting-behavior-of-markov-chain">Limiting Behavior of Markov Chain</h2>
 
 <p>마르코프 체인은 어떻게 $\pi^*$로 수렴하게 될까? 확률 행렬 $P$의 아이겐밸류 $1 = \lambda_1 &gt; \lambda_2 \geq \dotsc \geq \lambda_n &gt; 0$, 각각에 대응하는 아이겐벡터를 $v_1, v_2, \dotsc, v_n$이라고 하자. 아이겐벡터가 각각 선형독립이라고 가정하자. 이때 아이겐벡터로 구성된 행렬 $Q$는 가역이다. $\pi^T_t  = Q y_t$ 로 나타낼 수 있다. 즉 $Q$의 선형결합을 통해 $n$ 차원의 임의의 벡터를 표현할 수 있다. $\pi$가 열 벡터이기 떄문에 이를 행 벡터로 바꿨다는 점에 유의하자.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">2</a></sup> 한편,</p>
 
-\[\begin{aligned}
-\pi_{t+1}^T &amp; = P^T \pi_t^T \\
-Q y_{t+1} &amp; = P^T Q_{t} y_t \\
-Q^{-1} Q y_{t+1} &amp; = Q^{-1}P^T Q_{t} y_t \\
-y_{t+1} &amp; = D y_t
-\end{aligned}\]
+<div class="kdmath">$$
+\begin{aligned}
+\pi_{t+1}^T & = P^T \pi_t^T \\
+Q y_{t+1} & = P^T Q_{t} y_t \\
+Q^{-1} Q y_{t+1} & = Q^{-1}P^T Q_{t} y_t \\
+y_{t+1} & = D y_t
+\end{aligned}
+$$</div>
 
 <p>두 가지를 상기하자.</p>
 
@@ -341,30 +367,36 @@ y_{t+1} &amp; = D y_t
 
 <p>앞서 본 바에 따라서 $\lambda_1 =1$이다.</p>
 
-\[y_t =
+<div class="kdmath">$$
+y_t =
 \begin{bmatrix}
-\lambda_1&amp; \dotsc&amp; 0 \\
-\vdots&amp; \ddots&amp; \vdots \\
-0&amp; \dotsc&amp; \lambda_n
-\end{bmatrix} y_{t-1}.\]
+\lambda_1& \dotsc& 0 \\
+\vdots& \ddots& \vdots \\
+0& \dotsc& \lambda_n
+\end{bmatrix} y_{t-1}.
+$$</div>
 
 <p>이 차분방정식의 해는 아래와 같다.</p>
 
-\[y_t =
+<div class="kdmath">$$
+y_t =
 \begin{bmatrix}
-\lambda_1&amp; \dotsc&amp; 0 \\
-\vdots&amp; \ddots&amp;\vdots \\
-0&amp; \dotsc&amp; \lambda_n
+\lambda_1& \dotsc& 0 \\
+\vdots& \ddots&\vdots \\
+0& \dotsc& \lambda_n
 \end{bmatrix}^t y_{0} = 
 \begin{bmatrix}
-\lambda_1^t&amp; \dotsc&amp; 0 \\
-\vdots&amp; \ddots&amp; \vdots \\
-0&amp; \dotsc&amp; \lambda_n^t
-\end{bmatrix} y_0\]
+\lambda_1^t& \dotsc& 0 \\
+\vdots& \ddots& \vdots \\
+0& \dotsc& \lambda_n^t
+\end{bmatrix} y_0
+$$</div>
 
 <p>$y_0 = [c_1, \dotsc, c_n]^T$라고 두면, $y_t = [c_1 \lambda_1^t, \dotsc, c_1 \lambda_n^t]^T$가 된다.</p>
 
-\[\pi_t^T \equiv Q y_t = c_1 \lambda_1^t v_1 +  \dotsb + c_1 \lambda_n^t v_n.\]
+<div class="kdmath">$$
+\pi_t^T \equiv Q y_t = c_1 \lambda_1^t v_1 +  \dotsb + c_1 \lambda_n^t v_n.
+$$</div>
 
 <p>이제 $t \to \infty$를 적용해보자. $\lambda_i &lt; \lambda_1 = 1$ for $i = 2, 3, \dotsc, n$이므로, $\pi_{\infty}^T = c_1 v_1$가 된다. $v_1$이 표준화된 확률 분포 벡터이므로 $c_1 =1$이어야 한다.</p>
 
@@ -378,23 +410,31 @@ y_{t+1} &amp; = D y_t
 
 <p>$P$가 확률 행렬이라고 할 때, 상태 $x$, $y$에 대해서 양의 실수 $j$, $k$가 존재하면, 두 상태는 서로 교류할 수 있다고 칭한다.</p>
 
-\[P^j (x, y) &gt; 0~~\text{and}~~P^k(y,x) &gt; 0\]
+<div class="kdmath">$$
+P^j (x, y) > 0~~\text{and}~~P^k(y,x) > 0
+$$</div>
 
 <p>이 정의의 의미는 무엇일까? 일정한 상태를 거치면 $x \to y$ 그리고 $y \to x$로 옮기는 것이 확률적으로 가능하다는 뜻이다. 기약성이란 모든 상태가 교류할 수 있는 상태를 뜻한다. 다시 말하면 어떤 상태에 들어가서 여기서 빠져나올 수 없는 경우가 발생한 가능성이 없을 때 기약성이 성립한다.</p>
 
 <h4 id="irreducible">Irreducible</h4>
 
-\[\begin{bmatrix} 0.9&amp; 0.1&amp; 0.0 \\0.4&amp; 0.4&amp; 0.2\\ 0.1&amp; 0.1&amp; 0.8 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 0.9& 0.1& 0.0 \\0.4& 0.4& 0.2\\ 0.1& 0.1& 0.8 \end{bmatrix}
+$$</div>
 
 <h4 id="reducible">Reducible</h4>
 
-\[\begin{bmatrix} 1.0&amp; 0.0&amp; 0.0 \\0.1&amp; 0.8&amp; 0.1\\ 0.0&amp; 0.2&amp; 0.8 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 1.0& 0.0& 0.0 \\0.1& 0.8& 0.1\\ 0.0& 0.2& 0.8 \end{bmatrix}
+$$</div>
 
 <h3 id="aperiodic-matrix">Aperiodic matrix</h3>
 
 <p>대충 말하면 마르코프 체인 위의 이동이 예측 가능한 형태로 이루어질 수 있으면 안된다. 먼저 예를 보도록 하자.</p>
 
-\[\begin{bmatrix} 0&amp; 1&amp; 0 \\0&amp; 0&amp; 1\\ 1&amp; 0&amp; 0 \end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix} 0& 1& 0 \\0& 0& 1\\ 1& 0& 0 \end{bmatrix}
+$$</div>
 
 <p align="center"><kbd> <img src="https://python.quantecon.org/_static/lecture_specific/finite_markov/mc_aperiodicity1.png" width="400" /> </kbd></p>
 
@@ -406,7 +446,9 @@ y_{t+1} &amp; = D y_t
 
 <p>주기성(periodicity)의 수학적인 정의는 다음과 같다.</p>
 
-\[k = {\rm gcd} \{ n &gt; 0~|~{\rm Pr}(X_n = i | X_0 = i) &gt; 0 \}\]
+<div class="kdmath">$$
+k = {\rm gcd} \{ n > 0~|~{\rm Pr}(X_n = i | X_0 = i) > 0 \}
+$$</div>
 
 <p>gcd란 greatest common divisor, 즉 최대공약수를 의미한다. 만일 해당 상태로 ${ 6, 8, 12, \dotsc }$ 번에 돌아갈 확률이 양이라면, gcd는 2가 된다.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
 
@@ -427,7 +469,9 @@ y_{t+1} &amp; = D y_t
 
 <p>정칙 행렬이면 $P^k &gt; 0$이다. $P^{k+1}$의 $i$ 행 $j$ 열의 원소는 다음과 같다.</p>
 
-\[p_{ij}^{k+1} = \sum_{t=1}^{n} p_{it} p_{tj}^k &gt; 0\]
+<div class="kdmath">$$
+p_{ij}^{k+1} = \sum_{t=1}^{n} p_{it} p_{tj}^k > 0
+$$</div>
 
 <p>위의 식이 성립하는 이유는 정칙 행렬의 경우 적어도 하나의 $t$에 관해서 $p_{it} &gt; 0$이 성립해야 한다. 만일 이것이 성립하지 않으면 정칙 행렬이 될 수 없다. 즉, $P^{k+1} &gt;0$이고, $P^{k+2}, P^{k+3}, \dotsc$모두 양이다.</p>
 
@@ -449,34 +493,38 @@ y_{t+1} &amp; = D y_t
 
 <p>극한 분포 존재에 비주기성은 왜 필요할까? 만일 이 조건이 성립하지 않으면 극한 분포로 계산된 것이 사실은 극한 분포라고 할 수 없게 된다. 즉,</p>
 
-\[\lim_{n \to \infty} P^n  \neq
+<div class="kdmath">$$
+\lim_{n \to \infty} P^n  \neq
 \begin{bmatrix}
 \pi \\
 \vdots \\
 \pi
-\end{bmatrix}.\]
+\end{bmatrix}.
+$$</div>
 
 <p>예를 들어보자. 상태 2개이고 확률 행렬이 아래와 같다고 하자.</p>
 
-<p>\(P = 
+<p><span class="kdmath">$P = 
 \begin{bmatrix}
-0 &amp;1 \\
-1 &amp; 0
-\end{bmatrix}\)
+0 &1 \\
+1 & 0
+\end{bmatrix}$</span>
 극한 분포를 계산하면 $[\dfrac{1}{2}, \dfrac{1}{2}]$이 나온다. 상태 1에서 출발했다면, 상태 1이 ${2, 4, 6}$ 번에 나타나게 되고, 이때 gcd는 2가 된다.  이때 확률 행렬의 곱을 살펴보면 아래와 같다.  $k = 1, 2,\cdots$에 대해서</p>
 
-\[\begin{aligned}
-P^n &amp; = 
+<div class="kdmath">$$
+\begin{aligned}
+P^n & = 
 \begin{bmatrix}
-0 &amp; 1 \\
-1 &amp; 0
+0 & 1 \\
+1 & 0
 \end{bmatrix},~\text{for}~n = 2k-1 \\
-P^n &amp; = 
+P^n & = 
 \begin{bmatrix}
-1 &amp; 0 \\
-0 &amp; 1
+1 & 0 \\
+0 & 1
 \end{bmatrix},~\text{for}~n = 2k
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <p>따라서 $\lim_{n \to \infty} P^n$은 수렴하지 않는다. 앞서 계산한 극한 분포는 두 극단의 평균일 뿐이다. 이때 극한 분포 역시 존재하지 않는다.</p>
 

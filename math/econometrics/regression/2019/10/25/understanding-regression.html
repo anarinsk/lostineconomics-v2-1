@@ -148,7 +148,9 @@ window.onload = wrap_img;
 
 <p>먼저 우리에게 익숙한 회귀분석 모델을 매트릭스로 적어보자.</p>
 
-\[\underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\boldsymbol \gamma}} = \underset{n \times k}{\phantom{\boldsymbol \gamma} \mathbf{X} \phantom{\boldsymbol \gamma} }\underset{k \times 1}{\boldsymbol \beta} + \underset{n \times 1}{\phantom{\boldsymbol \beta} \boldsymbol \varepsilon \phantom{\boldsymbol \gamma} }\]
+<div class="kdmath">$$
+\underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\boldsymbol \gamma}} = \underset{n \times k}{\phantom{\boldsymbol \gamma} \mathbf{X} \phantom{\boldsymbol \gamma} }\underset{k \times 1}{\boldsymbol \beta} + \underset{n \times 1}{\phantom{\boldsymbol \beta} \boldsymbol \varepsilon \phantom{\boldsymbol \gamma} }
+$$</div>
 
 <p>식에 관한 자세한 설명 역시 생략한다. 대충 $n$ 개의 관찰 수과 $k$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
 
@@ -172,16 +174,20 @@ window.onload = wrap_img;
 
 <p>회귀분석의 목표는 regressor를 통해서, 더 정확하게는 regressor의 집합이 생성하는 공간을 통해서 regressand를 ‘가장’ 잘 설명하는 것이다. 회귀분석이란 regressand와 ‘닮은’ 것 col $\mathbf X$에서 찾는 것이다. 즉 $\mathbf Y$와 닮은 무엇을 $\mathbf X$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $\mathbf Y$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $\mathbf Y$에서 $\mathbf X$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $\mathbf X$의 지점이다. col $\mathbf X$ 내에 있는 이런 지점을 찾는 연산자(operator)가 회귀분석 계수 $\hat{\boldsymbol \beta}$이다. 즉,</p>
 
-\[\hat{\boldsymbol \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)\]
+<div class="kdmath">$$
+\hat{\boldsymbol \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)
+$$</div>
 
 <p>정석은 아니지만 이 연산자를 이해하는 흥미로운 방법이 있다.</p>
 
 <p>${\mathbf X} {\boldsymbol \beta} = {\boldsymbol Y}$가 연립방정식이라면 해는 ${\mathbf X}^{-1}$을 구해서 얻을 수 있을 것이다. 하지만 ${\mathbf X} \in \mathbb R^{n \times k}$이므로 딱 떨어지는 특수해 1개를 구할 수 없다. 되도록 근사값의 해를 구하려면 어떻게 해야 할까?</p>
 
-\[\begin{aligned}
-{\mathbf X}'{\mathbf X} {\hat \boldsymbol \beta} &amp; = {\mathbf X}'{\boldsymbol Y} \\
-{\hat \boldsymbol \beta} &amp; = ({\mathbf X}'{\mathbf X})^{-1}{\mathbf X}'{\boldsymbol Y}
-\end{aligned}\]
+<div class="kdmath">$$
+\begin{aligned}
+{\mathbf X}'{\mathbf X} {\hat \boldsymbol \beta} & = {\mathbf X}'{\boldsymbol Y} \\
+{\hat \boldsymbol \beta} & = ({\mathbf X}'{\mathbf X})^{-1}{\mathbf X}'{\boldsymbol Y}
+\end{aligned}
+$$</div>
 
 <p>이 $\hat \boldsymbol \beta$가 왠지 원래 식의 근사값으로 기능할 것 같지 않은가? (실제로 그렇다)</p>
 
@@ -189,17 +195,19 @@ window.onload = wrap_img;
 
 <p>선형 대수의 관점에서 내용을 다시 음미해보자. $x_i \in {\mathbb R}^n$ (for $i = 1, \dotsc, k$) 벡터의 리그레서 $k$ 개를 선형 결합해서 초평면의 한점, 즉 원래의 관찰 $\mathbf Y$와 최소 거리를 지니는 벡터를 찾아야 한다. 이 거리를 최소화하는 $\beta_i$를 알고 있다면 이 벡터는 다음과 같이 표현된다. ${\mathbf X} = [x_1, \dotsc, x_k]$일 때,</p>
 
-\[\begin{aligned}
-\underset{(n \times 1)}{\hat{\mathbf Y}} &amp; = X\beta \\
-&amp; = [x_1, \dotsc, x_k]
+<div class="kdmath">$$
+\begin{aligned}
+\underset{(n \times 1)}{\hat{\mathbf Y}} & = X\beta \\
+& = [x_1, \dotsc, x_k]
 \begin{bmatrix}
 \beta_1 \\
 \vdots \\
 \beta_k
 \end{bmatrix} \\
-&amp;= 
+&= 
 x_1 \beta_1 + \dotsc + x_k \beta_k
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <p>아래 그림을 참고하자.</p>
 
@@ -218,17 +226,23 @@ https://github.com/anarinsk/lie-regression/blob/master/assets/imgs/regression-ve
 
 <p>그림에서 보듯이 세 개의 벡터가 직각삼각형을 이루고 있으므로 아래의 식이 성립한다.</p>
 
-\[\underset{\text{TSS}}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2} = \underset{\text{RSS}}{\Vert \mathbf Y - \hat{\mathbf Y} \Vert^2} + \underset{\text{ESS}}{\Vert \hat{\mathbf Y} - \overline{\mathbf Y} \Vert^2}\]
+<div class="kdmath">$$
+\underset{\text{TSS}}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2} = \underset{\text{RSS}}{\Vert \mathbf Y - \hat{\mathbf Y} \Vert^2} + \underset{\text{ESS}}{\Vert \hat{\mathbf Y} - \overline{\mathbf Y} \Vert^2}
+$$</div>
 
 <p>흔한 피타고라스의 정리다. 그런데 이것 어디서 많이 보던 식이다. 회귀분석 배우면 언제나 나오는 식이다. Regressand의 평균과 관찰의 이른바 총 제곱의 합(TSS: Total Sum of Squares)은 설명된 제곱의 합(ESS: Explained Sum of Squares)과 잔차 제곱의 합(RSS:Residual Sum of Squares)와 같다. 대체로 복잡하게 소개되는 이 식이 기하학적으로 보면 그냥 피타고라스의 공식에 불과한 것이다.</p>
 
 <p>양변을 $\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2$으로 나누면 다음과 같다.</p>
 
-\[1 =  \dfrac{\Vert \mathbf Y - \hat{\mathbf Y} \Vert^2}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2} + \dfrac{\Vert \hat{\mathbf Y} - \overline{\mathbf Y} \Vert^2}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2}\]
+<div class="kdmath">$$
+1 =  \dfrac{\Vert \mathbf Y - \hat{\mathbf Y} \Vert^2}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2} + \dfrac{\Vert \hat{\mathbf Y} - \overline{\mathbf Y} \Vert^2}{\Vert \mathbf Y - \overline{\mathbf Y} \Vert^2}
+$$</div>
 
 <p>정의에 따라서 $1 = \dfrac{\text{RSS}} {\text{TSS}} +  {\mathrm R}^2$가 된다. 즉,</p>
 
-\[{\mathrm R}^2 = 1 - \dfrac{\text{RSS}}{\text{TSS}}\]
+<div class="kdmath">$$
+{\mathrm R}^2 = 1 - \dfrac{\text{RSS}}{\text{TSS}}
+$$</div>
 
 <p>사실 $\textrm R^2$는 가끔 회귀분석의 성과 지표로 남용되는 경우가 있다. 이렇게 기하학적으로 보면 col $\mathbf X$ 내에 표현된 $\hat{\mathbf Y}$ 가 $\mathbf Y$와 얼마나 가깝게 있는지를 $\overline{\mathbf Y}$를 기준으로 지표화한 것에 불과하다.</p>
 

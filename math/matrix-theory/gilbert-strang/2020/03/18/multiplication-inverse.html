@@ -138,37 +138,47 @@ window.onload = wrap_img;
 
 <h3 id="standard">Standard</h3>
 
-\[\underbrace{ \mathbf A }_{m \times n} \underbrace{\mathbf B}_{n \times p} = {\mathbf C}\]
+<div class="kdmath">$$
+\underbrace{ \mathbf A }_{m \times n} \underbrace{\mathbf B}_{n \times p} = {\mathbf C}
+$$</div>
 
 <ul>
   <li>$c_{ij}$는 뭘까? $\mathbf A$의 $i$ 행 벡터와 $\mathbf B$의 $j$ 열 벡터의 곱이다. 즉,</li>
 </ul>
 
-\[c_{ij} = \sum_{k}^n a_{ik} b_{kj}\]
+<div class="kdmath">$$
+c_{ij} = \sum_{k}^n a_{ik} b_{kj}
+$$</div>
 
 <p><img src="/lostineconomics-v2-1/images/GS-LA/fig_1.png" alt="" style="textalign:center; " width="500" /></p>
 
 <h2 id="combination-of-columns-of-a">Combination of Columns of A</h2>
 
-\[[A_1 \dotsc A_n] 
+<div class="kdmath">$$
+[A_1 \dotsc A_n] 
 \begin{bmatrix}
 b_{11} \\
 \vdots \\
 b_{n1}
-\end{bmatrix} = b_{11} A_1 + \dotsc + b_{n1} A_n = C_1\]
+\end{bmatrix} = b_{11} A_1 + \dotsc + b_{n1} A_n = C_1
+$$</div>
 
 <ul>
   <li>즉, 매트릭스 $A$의 열 벡터 $A_i$가 있을 때 이를 B의 각 열 벡터로 선형결합한 것이 $\mathbf C$의 각 열을 구성하게 된다.</li>
 </ul>
 
-\[[A_1 \dotsc A_n] 
+<div class="kdmath">$$
+[A_1 \dotsc A_n] 
 \begin{bmatrix}
 b_{1i} \\
 \vdots \\
 b_{ni}
-\end{bmatrix} = b_{1i} A_1 + \dotsc + b_{ni} A_n = \text{col } C_i, \text{for } i = 1, \dotsc, p.\]
+\end{bmatrix} = b_{1i} A_1 + \dotsc + b_{ni} A_n = \text{col } C_i, \text{for } i = 1, \dotsc, p.
+$$</div>
 
-\[{\mathbf C} = [\text{col }C_1 \dotsc \text{col } C_p]\]
+<div class="kdmath">$$
+{\mathbf C} = [\text{col }C_1 \dotsc \text{col } C_p]
+$$</div>
 
 <p><img src="/lostineconomics-v2-1/images/GS-LA/fig_2.png" alt="" style="textalign:center; " width="500" /></p>
 
@@ -178,19 +188,23 @@ b_{ni}
   <li>위의 해석과 거의 같다. 다만, $A$와 $B$의 역할을 바꾼 형태다. 즉,</li>
 </ul>
 
-\[[a_{i1} \dotsc a_{in}] 
+<div class="kdmath">$$
+[a_{i1} \dotsc a_{in}] 
 \begin{bmatrix}
 B_{1} \\
 \vdots \\
 B_{n}
-\end{bmatrix} = a_{11} B_1 + \dotsc + a_{in} B_n = \text{row } C_i, \text{for } i = 1, \dotsc, m\]
+\end{bmatrix} = a_{11} B_1 + \dotsc + a_{in} B_n = \text{row } C_i, \text{for } i = 1, \dotsc, m
+$$</div>
 
-\[{\mathbf C} =
+<div class="kdmath">$$
+{\mathbf C} =
 \begin{bmatrix} 
 \text{row } C_1 \\
 \vdots \\
 \text{row } C_m
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <p><img src="/lostineconomics-v2-1/images/GS-LA/fig_3.png" alt="" style="textalign:center; " width="500" /></p>
 
@@ -200,12 +214,14 @@ B_{n}
   <li>가장 급진적인 형태? 흥미롭게 생각해볼 수 있는 것은 각 개별 행렬의 rank다. 각각은 모두 1이다.</li>
 </ul>
 
-\[[A_1 \dotsc A_n]
+<div class="kdmath">$$
+[A_1 \dotsc A_n]
 \begin{bmatrix}
 B_{1} \\
 \vdots \\
 B_{n}
-\end{bmatrix} = \underbrace{A_1 B_1}_{(m \times 1) \times (1 \times p)} + \dotsb + A_n B_n\]
+\end{bmatrix} = \underbrace{A_1 B_1}_{(m \times 1) \times (1 \times p)} + \dotsb + A_n B_n
+$$</div>
 
 <p><img src="/lostineconomics-v2-1/images/GS-LA/fig_4.png" alt="" style="textalign:center; " width="500" /></p>
 
@@ -219,7 +235,9 @@ B_{n}
   <li>정의상 보면, 정방행렬 $A$에 대해서 역행렬 $A^{-1}$은</li>
 </ul>
 
-\[{\mathbf A} {\mathbf A}^{-1} = {\mathbf I}, \text{ also } {\mathbf A}^{-1} {\mathbf A} = {\mathbf I}\]
+<div class="kdmath">$$
+{\mathbf A} {\mathbf A}^{-1} = {\mathbf I}, \text{ also } {\mathbf A}^{-1} {\mathbf A} = {\mathbf I}
+$$</div>
 
 <ul>
   <li>역행렬이 존재하는 정방행렬을 non-singluar or invertible matrices라고 부른다.
@@ -230,7 +248,9 @@ B_{n}
   <li>역행렬을 구하는 과정을 따져보자.</li>
 </ul>
 
-\[{\mathbf A} [A^{-1}_1, \dotsc A^{-1}_n] = {\mathbf I}\]
+<div class="kdmath">$$
+{\mathbf A} [A^{-1}_1, \dotsc A^{-1}_n] = {\mathbf I}
+$$</div>
 
 <ul>
   <li>$A^{-1}_i$는 역행렬 ${\mathbf A}^{-1}$의 컬럼 벡터</li>
@@ -265,117 +285,131 @@ B_{n}
 
 <h3 id="example">Example</h3>
 
-\[[{\mathbf A}|{\mathbf I}] = 
+<div class="kdmath">$$
+[{\mathbf A}|{\mathbf I}] = 
 \begin{bmatrix}
-3 &amp;-2 &amp; 4 &amp; \vert &amp; 1 &amp; 0 &amp; 0\\ 
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0\\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-\end{bmatrix}\]
+3 &-2 & 4 & \vert & 1 & 0 & 0\\ 
+1 & 0 & 2 & \vert & 0 & 1 & 0\\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>첫번째 행과 두번째 행을 바꾼다.</li>
 </ul>
 
-\[[{\mathbf A}|{\mathbf I}]  \sim 
+<div class="kdmath">$$
+[{\mathbf A}|{\mathbf I}]  \sim 
 {\tilde E}_{12} [{\mathbf A}|{\mathbf I}]  = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-3 &amp;-2 &amp; 4 &amp; \vert &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1 
-\end{bmatrix}\]
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+3 &-2 & 4 & \vert & 1 & 0 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1 
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>두번째 행과 세번째 행을 바꾼다.</li>
 </ul>
 
-\[[{\mathbf A}|{\mathbf I}] \sim
+<div class="kdmath">$$
+[{\mathbf A}|{\mathbf I}] \sim
 {\tilde E_{23}} [{\mathbf A}|{\mathbf I}] = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-3 &amp;-2 &amp; 4 &amp; \vert &amp; 1 &amp; 0 &amp; 0
-\end{bmatrix}\]
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+3 &-2 & 4 & \vert & 1 & 0 & 0
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>첫번째 행에 $-3$을 곱하고 이를 세번째 행과 더한 후 세번째 행에 둔다.</li>
 </ul>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 [{\mathbf A}|{\mathbf I}] \sim
-E_{13} [{\mathbf A}|{\mathbf I}] &amp; = 
+E_{13} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-3+(-3) &amp;-2 + 0 &amp; 4 + (-6)&amp; \vert &amp; 1 + 0 &amp; 0 + (-3) &amp; 0 + 0
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+3+(-3) &-2 + 0 & 4 + (-6)& \vert & 1 + 0 & 0 + (-3) & 0 + 0
 \end{bmatrix} \\
-&amp; = 
+& = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp;-2 &amp; -2 &amp; \vert &amp; 1 &amp; -3 &amp;  0
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 &-2 & -2 & \vert & 1 & -3 &  0
 \end{bmatrix}
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <ul>
   <li>두번째 행에 2를 곱한 후 이를 세번째 행에 더하여 세번째 행에 둔다.</li>
 </ul>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 [{\mathbf A}|{\mathbf I}] \sim
-E_{23} [{\mathbf A}|{\mathbf I}] &amp; = 
+E_{23} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 + 0 &amp;-2 + 2 &amp; -2 + 0&amp; \vert &amp; 1 + 0 &amp; -3 + 0 &amp;  0 + 2
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 + 0 &-2 + 2 & -2 + 0& \vert & 1 + 0 & -3 + 0 &  0 + 2
 \end{bmatrix} \\
-&amp; = 
+& = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 2 &amp; \vert &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; -2 &amp; \vert &amp; 1 &amp; -3 &amp;  2
+1 & 0 & 2 & \vert & 0 & 1 & 0 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 & \vert & 1 & -3 &  2
 \end{bmatrix}
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <ul>
   <li>첫번째 행과 세번째 행을 더한 후 이를 첫번째 행에 둔다.</li>
 </ul>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 [{\mathbf A}|{\mathbf I}] \sim
-E_{31} [{\mathbf A}|{\mathbf I}] &amp; = 
+E_{31} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
-1 + 0 &amp; 0 + 0 &amp; 2 + (-2) &amp; \vert &amp; 0 + 1 &amp; 1 + (-3) &amp; 0 + 2\\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; -2 &amp; \vert &amp; 1 &amp; -3 &amp;  2
+1 + 0 & 0 + 0 & 2 + (-2) & \vert & 0 + 1 & 1 + (-3) & 0 + 2\\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 & \vert & 1 & -3 &  2
 \end{bmatrix} \\
-&amp; = 
+& = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; \vert &amp; 1 &amp; -2 &amp; 2 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; -2 &amp; \vert &amp; 1 &amp; -3 &amp;  2
+1 & 0 & 0 & \vert & 1 & -2 & 2 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 & \vert & 1 & -3 &  2
 \end{bmatrix}
-\end{aligned}\]
+\end{aligned}
+$$</div>
 
 <ul>
   <li>세번째 행에 $-1/2$을 곱한다.</li>
 </ul>
 
-\[\begin{aligned}
+<div class="kdmath">$$
+\begin{aligned}
 [{\mathbf A}|{\mathbf I}] \sim
-E_{3} [{\mathbf A}|{\mathbf I}] &amp; = 
+E_{3} [{\mathbf A}|{\mathbf I}] & = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; \vert &amp; 1 &amp; -2 &amp; 2 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; -2 * (-\frac{1}{2}) &amp; \vert &amp; \frac{1}{2} &amp; -3*(-\frac{1}{2}) &amp; -\frac{2}{2}
+1 & 0 & 0 & \vert & 1 & -2 & 2 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & -2 * (-\frac{1}{2}) & \vert & \frac{1}{2} & -3*(-\frac{1}{2}) & -\frac{2}{2}
 \end{bmatrix} \\
-&amp; = 
+& = 
 \begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; \vert &amp; 1 &amp; -2 &amp; 2 \\
-0 &amp; 1 &amp; 0 &amp; \vert &amp; 0 &amp; 0 &amp; 1\\
-0 &amp; 0 &amp; 1 &amp; \vert &amp; -\frac{1}{2} &amp; \frac{3}{2} &amp;  1
+1 & 0 & 0 & \vert & 1 & -2 & 2 \\
+0 & 1 & 0 & \vert & 0 & 0 & 1\\
+0 & 0 & 1 & \vert & -\frac{1}{2} & \frac{3}{2} &  1
 \end{bmatrix} \\
-&amp; = [{\mathbf I} \vert {\mathbf A}^{-1}]
-\end{aligned}\]
+& = [{\mathbf I} \vert {\mathbf A}^{-1}]
+\end{aligned}
+$$</div>
 
 <ul>
   <li>이 식을 얻기 위한 가우스-조르단 프로세스는 $E_3 E_{31} E_{23} E_{13} {\tilde E_{23}} {\tilde E}_{12}$으로 나타낼 수 있다.</li>

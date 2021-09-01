@@ -153,7 +153,9 @@ window.onload = wrap_img;
 
 <p>그냥 영 공간이라고 하면 컬럼 스페이스를 기준으로 나타낸다. 정의상</p>
 
-\[\mathbf A x = 0\]
+<div class="kdmath">$$
+\mathbf A x = 0
+$$</div>
 
 <p>을 만족하는 $x$의 집합이다.</p>
 
@@ -169,23 +171,29 @@ window.onload = wrap_img;
   <li>로우 스페이스, 즉 $\mathbf A^T$의 컬럼 스페이스와 $\mathbf A$의 영 공간이 직교해야(orthogonal) 한다. 왜 그럴까?</li>
 </ul>
 
-\[\mathcal C (\mathbf A^T ) = \alpha_1 r_1 + \dotsb + \alpha_m r_m\]
+<div class="kdmath">$$
+\mathcal C (\mathbf A^T ) = \alpha_1 r_1 + \dotsb + \alpha_m r_m
+$$</div>
 
 <p>where $r_i$ is $i$’th row vector of $\mathbf A$ (or $i$’th column vector of $\mathbf A^T$) and $a_i \in \mathbb R$.</p>
 
 <p>한편 컬럼 스페이스의 영 공간의 정의에 따라서 $\mathbf A x = 0$이 성립해야 한다. 즉,</p>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 r_1 \\
 \vdots \\
 r_m
-\end{bmatrix} x = 0\]
+\end{bmatrix} x = 0
+$$</div>
 
 <p>즉, $r_i^T  x = 0$.</p>
 
 <p>이제 보여야하는 것은</p>
 
-\[(\alpha_1 r_1 + \dotsb + \alpha_m r_m)^T x = 0\]
+<div class="kdmath">$$
+(\alpha_1 r_1 + \dotsb + \alpha_m r_m)^T x = 0
+$$</div>
 
 <p>이는 자명하다.</p>
 
@@ -226,39 +234,45 @@ r_m
 
 <h4 id="basis-for-matrices">Basis for matrices</h4>
 
-\[\begin{bmatrix}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
+<div class="kdmath">$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0 \\
 \end{bmatrix}, 
 \begin{bmatrix}
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
+0 & 1 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0 \\
 \end{bmatrix}, \dotsc ,
 \begin{bmatrix}
-0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-\end{bmatrix}\]
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix}
+$$</div>
 
 <h2 id="rank-one-matrix">Rank One Matrix</h2>
 
-\[\begin{bmatrix}
-1 &amp; 4 &amp; 5 \\
-2 &amp; 8 &amp; 10 
-\end{bmatrix}\]
+<div class="kdmath">$$
+\begin{bmatrix}
+1 & 4 & 5 \\
+2 & 8 & 10 
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>dim $\mathcal C(\mathbf A) =r (\mathbf A)$ = dim $\mathcal C(\mathbf A^T)$</li>
 </ul>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 1 \\ 2 \\
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 4 &amp; 5
-\end{bmatrix}\]
+1 & 4 & 5
+\end{bmatrix}
+$$</div>
 
 <ul>
   <li>rank one matrices can be represented by $\mathbb A = u v^T$</li>
@@ -268,13 +282,15 @@ r_m
 
 <p>In $\mathbb R^4$,</p>
 
-\[v = 
+<div class="kdmath">$$
+v = 
 \begin{bmatrix}
 v_1 \\
 v_2 \\
 v_3 \\
 v_4 
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <p>$S$ is all $v$ with $v_1 + v_2 + v_3 + v_4 = 0$</p>
 
@@ -294,7 +310,8 @@ v_4
   </li>
 </ul>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 \mathrm O \\
 1 \\
 0 \\
@@ -311,19 +328,22 @@ v_4
 0 \\
 0 \\
 1 
-\end{bmatrix}\]
+\end{bmatrix}
+$$</div>
 
 <p>각각에 대해서 O를 채우면 되겠다. 모든 경우 O는 $-1$이다. 예를 들어,</p>
 
-\[\begin{bmatrix}
+<div class="kdmath">$$
+\begin{bmatrix}
 x \\
 1 \\
 0 \\
 0 
 \end{bmatrix}
 \begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; 1 \\
-\end{bmatrix} = 0\]
+1 & 1 & 1 & 1 \\
+\end{bmatrix} = 0
+$$</div>
 
 <ul>
   <li>Column space of $\mathbf A$?
