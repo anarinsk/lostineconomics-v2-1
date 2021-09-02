@@ -25,13 +25,19 @@ $$
 각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 포스팅 [dot product](https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html)를 참고하라. 
 
 $$
-\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert\vec a\lVert \lVert\vec b\lVert}
+\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert \vec a \lVert \lVert \vec b \lVert}
 $$
 
-따라서, $\hat\vec b = \dfrac{\vec b}{\lVert\vec b\lVert}$라고 할 때 
+그리고 
 
 $$
-a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat\vec b
+\hat b = \dfrac{\vec b}{\lVert \vec b \lVert}
+$$
+
+라고 할 때, 
+
+$$
+a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat b
 $$
 
 쉽게 말해서, $\vec a$ 벡터와 정규화된 $\vec b$의 닷프로덕트라고 생각하면 된다. 
@@ -41,10 +47,10 @@ $$
 스칼라 프로젝션의 크기로 $\vec b$의 벡터를 만든 것이 벡터 프로젝션이다. $\vec a$를 $\vec b$ 위로 프로젝션한 벡터 $\Pi_{\vec b} (\vec a)$는 다음과 같다. 
 
 $$
-\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat\vec b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
+\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
 $$
 
-말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 
+말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 영상을 화면 위로 쏘는 행위를 떠올려보자. 이때 스크린에 해당하는 것이 $\vec b$이고 여기에 투영되는 상이 $\vec a$이다. 
 
 ### Projection as outer product 
 
