@@ -8,16 +8,16 @@ categories: [latex, rstat, doc-tech]
 
 ---
 
-박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만... 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 까는 것이 내키는 일은 아니다. 
+박사 논문을 $\LaTeX$(이하 그냥 레이텍 혹은 텍이라고 쓰겠다)으로 썼지만... 역시 안 쓰면 잊는다. 갑자기 텍을 다시 써볼까, 라는 생각이 드는 순간 갑갑하더라. 윈도를 쓰건 맥을 쓰건 용량이 적지 않고 관리가 쉽지 않은 텍라이브를 깔게 되지는 않는다. 물론 당신이 논문을 쓰고 있다면... 
 
 - 좀 쉽게 쓸 수 있는 방법이 없을까? 
 - 가볍게 쓸 수 있는 방법은 없을까? 
 
-이 두 가지를 놓고 해결책을 찾아봤다. 세 가지 정도 해법이 있다. 
+이 두 가지를 놓고 해결책을 찾아봤다. 세 가지 정도 해법이 있더라. 
 
 ## tinytex with R
 
-R의 문서 관련 패키지를 거의 혼자 만들고 있는 谢益辉(사익휘, 시에-이-휘)가 R에서 텍을 컴파일할 수 있도록 아주 가벼운 패키지 [tinytex](https://yihui.org/tinytex/)을 만들었다. R을 쓴다면, RStudio를 쓸 것이고 편집기로서 역할 역시 훌륭하다. 그냥 RStuido 자체를 텍 문서를 만들고 컴파일하는 용도로 써도 크게 부족함은 없을 것이다. 
+R의 문서 관련 패키지를 거의 혼자 만들고 있는 谢益辉(사익휘, 시에-이-휘)가 R에서 텍을 컴파일할 수 있도록 아주 가벼운 패키지 [tinytex](https://yihui.org/tinytex/)을 만들었다. R을 쓴다면 RStudio를 쓸 것이고, 이 녀석은 편집기로서 역할 역시 모자라지 않다.  
 
 ```R
 install.packages('devtools')
@@ -77,7 +77,7 @@ tinytex::tlmgr_update()
 
 ## WSL + Tinytex + VS Code 
 
-사이휘는 tinytex을 R에서만 쓰도록 만들지 않았다. 리눅스 인스톨러를 제공한다. 이 블로그를 보신 분은 잘 알겠지만, 나는 WSL의 광팬이다. WSL에 tinytex을 깔고 녀석을 VS Code에 얹어서 쓰면 된다. 물론 맥OS, 윈도 인스톨러도 제공하니 관심이 있으시면 직접 확인을 하시면 되겠다. [홈페이지](https://yihui.org/tinytex/) 인스톨 섹션에서 확인하면 되겠다. 
+사이휘는 tinytex을 R에서만 쓰도록 만들지 않았다. 리눅스 인스톨러를 제공한다. 이 블로그를 보신 분은 잘 알고 계시리라. 나는 WSL의 광팬이다! WSL에 tinytex을 깔고 녀석을 VS Code에 붙여서 쓰면 된다. 물론 맥OS, 윈도 인스톨러도 제공하니 관심이 있으시면 직접 확인을 하시면 되겠다. [홈페이지](https://yihui.org/tinytex/) 인스톨 섹션에서 확인하면 되겠다. 
 
 WSL 터미널에서 다음과 같이 실행하자. 
 
@@ -93,7 +93,7 @@ VS Code에서의 활용은 아래 섹션을 참고하자.
 
 ## TexLive with Docker! 
 
-본격적으로 텍을 쓰는 사람이라면 어찌해야 하나? Tinytex은 임시 방편이고 많이 부족해 보일 것이다. Texlive를 온전하게 쓰고 싶다면? 역시 OS 별로 텍라이브를 까는 방법 밖에 없나? 이럴 때 손쉽게 동원할 수 있는 게 docker이다. 사실 unix 기본으로 설계되서 텍을 맥OS에 까는 것도 부담스럽고, 윈도는 더하다. 그냥 필요할 때 불러서 쓰고 치워버리는 게 최고다. 도커는 이런 용도로 쓰기에도 아주 적합하다. 
+본격적으로 텍을 쓰는 사람이라면 어찌해야 하나? Tinytex이 많이 부족해 보일 수 있다. Texlive를 온전하게 쓰고 싶다면 역시 OS 별로 텍라이브를 까는 방법 밖에 없나? 이럴 때 손쉽게 동원할 수 있는 게 docker이다. 비슷한 계열의 OS라도 텍라이브를 전부 까는 것이 편하지는 않다. 윈도는 더 부담스럽다. 그냥 필요할 때 불러서 쓰고 잊을 수 있다면 좋지 않을까? 도커는 이런 용도로 쓰기에도 좋다. 
 
 내가 검색해본 바로는 공인 이미지는 없는 것 같다. 다양한 사용자 이미지 중에서 꽤 관리가 잘되는 것을 골라서 쓰면 되겠다. 내가 활용하는 이미지는 다음과 같다. 
 
@@ -200,12 +200,3 @@ tlmgr update --all
 
 
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Mjg3OTcwNiwxNzE3NjMzNjgsMTQ4OT
-Q1NTY5LC0xOTkzNDY2ODgwLDMzNjQ0MzY1NCwxNDM4ODYwOTU3
-LDE5NjY2NDI0MzIsOTEyMTMwMjg2LC03Nzk3NjM1MjgsLTE5MD
-gzNjk1NTEsMTkzMTI2NDk1Myw4MTIxNDI3NjMsLTE2OTg1NTg1
-NDYsMzA5NzA2ODM1LC00NjkxOTUxNDUsLTEwMzYzMTY5MiwtMT
-I1MTk4Mzk0NywtMTQ2NDIyMzAyMywxNDc0Mzk1NjY3LDUyNzE3
-NTIzXX0=
--->
