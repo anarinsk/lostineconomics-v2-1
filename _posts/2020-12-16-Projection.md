@@ -224,7 +224,9 @@ $$
 l_0 = \{  \vec p \in \mathbb R^n | \vec p = \mathbf {0} + t \vec v, t \in \mathbb R \}
 $$
 
-이제 이 직선과 $\vec p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
+![enter image description here](https://github.com/anarinsk/lostineconomics-v2-1/blob/master/images/projection/line_2.png?raw=true){: style="margin: auto; display: block; border:1.5px solid #021a40;"}{: width="500"}
+
+이제 이 벡터과 $\vec p_0$ 사이의 거리를 구하면 된다 .이는 앞서 제시한 벡터 프로젝션의 수직 벡터의 길이와 같다. 즉, 
 
 $$
 d(l, \vec 0) = d(\vec p_0, l_0) = \lVert \mathbf p_0 - \dfrac{\mathbf p_0 \cdot \vec v}{\lVert \vec v\lVert^2}\vec v \lVert
