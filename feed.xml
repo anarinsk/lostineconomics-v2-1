@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-02T02:57:50-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-02T03:29:02-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
 
 &lt;p&gt;This post serves only to show the problem of Katex in fastpages. If the problem is solved, this post will be deleted.&lt;/p&gt;
 
@@ -1558,13 +1558,19 @@ $$&lt;/div&gt;
 &lt;p&gt;각 $\theta$에 관해서 다음과 같이 정의할 수 있다. 혹시 리마인드가 필요하면 포스팅 &lt;a href=&quot;https://anarinsk.github.io/lostineconomics-v2-1/math/2019/07/18/dot-product.html&quot;&gt;dot product&lt;/a&gt;를 참고하라.&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
-\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert\vec a\lVert \lVert\vec b\lVert}
+\cos \theta = \dfrac{\vec a \cdot \vec b}{\lVert \vec a \lVert \lVert \vec b \lVert}
 $$&lt;/div&gt;
 
-&lt;p&gt;따라서, $\hat\vec b = \dfrac{\vec b}{\lVert\vec b\lVert}$라고 할 때&lt;/p&gt;
+&lt;p&gt;그리고&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
-a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat\vec b
+\hat b = \dfrac{\vec b}{\lVert \vec b \lVert}
+$$&lt;/div&gt;
+
+&lt;p&gt;라고 할 때,&lt;/p&gt;
+
+&lt;div class=&quot;kdmath&quot;&gt;$$
+a_1 = {\cos \theta}{\lVert \vec a \lVert} = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} = \vec a \cdot \hat b
 $$&lt;/div&gt;
 
 &lt;p&gt;쉽게 말해서, $\vec a$ 벡터와 정규화된 $\vec b$의 닷프로덕트라고 생각하면 된다.&lt;/p&gt;
@@ -1574,10 +1580,10 @@ $$&lt;/div&gt;
 &lt;p&gt;스칼라 프로젝션의 크기로 $\vec b$의 벡터를 만든 것이 벡터 프로젝션이다. $\vec a$를 $\vec b$ 위로 프로젝션한 벡터 $\Pi_{\vec b} (\vec a)$는 다음과 같다.&lt;/p&gt;
 
 &lt;div class=&quot;kdmath&quot;&gt;$$
-\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat\vec b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
+\vec a_1 = \Pi_{\vec b} (\vec a) = a_1 \hat b = \dfrac{\vec a \cdot \vec b}{\lVert\vec b\lVert} \dfrac{\vec b}{\lVert\vec b\lVert}
 $$&lt;/div&gt;
 
-&lt;p&gt;말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다.&lt;/p&gt;
+&lt;p&gt;말로 풀어보자. $\vec b$와 같은 방향성을 지니는 벡터를 $\vec a$와 $\vec b$ 간의 스칼라 프로젝션의 크기로 만들어주는 것이 벡터 프로젝션이다. 영상을 화면 위로 쏘는 행위를 떠올려보자. 이때 스크린에 해당하는 것이 $\vec b$이고 여기에 투영되는 상이 $\vec a$이다.&lt;/p&gt;
 
 &lt;h3 id=&quot;projection-as-outer-product&quot;&gt;Projection as outer product&lt;/h3&gt;
 
