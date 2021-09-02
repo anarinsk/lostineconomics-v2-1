@@ -2,9 +2,9 @@
 layout: post
 toc: false
 comments: true
-title:  Personal Note on Triagonometry
+title:  Note on Triagonometry
 description: 삼각함수 복습용
-categories: [math, triagonometry]
+categories: [math, triagonometry, personal-use]
 
 ---
 
