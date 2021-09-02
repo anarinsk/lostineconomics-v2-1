@@ -4,19 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Standard Error, Limiting Behavior | lostineconomics.com</title>
+<title>Standard Error | lostineconomics.com</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Standard Error, Limiting Behavior" />
+<meta property="og:title" content="Standard Error" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="표준 오차는 표준 편차로 수렴할까?" />
-<meta property="og:description" content="표준 오차는 표준 편차로 수렴할까?" />
+<meta name="description" content="표준 오차에 관한 개인적인 정리" />
+<meta property="og:description" content="표준 오차에 관한 개인적인 정리" />
 <link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" />
 <meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html" />
 <meta property="og:site_name" content="lostineconomics.com" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-17T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html","@type":"BlogPosting","headline":"Standard Error, Limiting Behavior","dateModified":"2020-10-17T00:00:00-05:00","datePublished":"2020-10-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html"},"description":"표준 오차는 표준 편차로 수렴할까?","@context":"https://schema.org"}</script>
+{"url":"https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html","@type":"BlogPosting","headline":"Standard Error","dateModified":"2020-10-17T00:00:00-05:00","datePublished":"2020-10-17T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/statistics/2020/10/17/SE.html"},"description":"표준 오차에 관한 개인적인 정리","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -102,7 +102,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Standard Error, Limiting Behavior</h1><p class="page-description">표준 오차는 표준 편차로 수렴할까?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-17T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Standard Error</h1><p class="page-description">표준 오차에 관한 개인적인 정리</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-17T00:00:00-05:00" itemprop="datePublished">
         Oct 17, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -132,40 +132,40 @@ window.onload = wrap_img;
 
 <p>독립적인 무작위 추출로 크기 $n$의 표본 $x_1, \dotsc, x_n$을 얻었다고 하자. $x_i$가 모평균 $\mu$와 모 표준편차 $\sigma$를 따른다고 할 때, 표본 평균은 다음과 같다.</p>
 
-<p><span class="kdmath">$\overline{X} = \sum_{i=1}^n x_i.$</span></p>
+<p><span class="kdmath">$\overline{X}_n = \sum_{i=1}^n x_i.$</span></p>
 <ul>
-  <li>$\mathbb E(\overline x) = \mu$</li>
-  <li>${\rm Var} (\overline x) = {\sigma^2}/{n}$</li>
+  <li>$\mathbb E(\overline X_n) = \mu$</li>
+  <li>${\rm Var} (\overline X_n) = {\sigma^2}/{n}$</li>
 </ul>
 
 <p>덤으로 Central Limit Theorem에 따르면 다음에 성립한다.</p>
 
 <ul>
-  <li>$\overline x \sim {\rm N} (\mu, {\sigma^2}/{n})$</li>
+  <li>$\overline X_n \sim {\rm N} (\mu, {\sigma^2}/{n})$</li>
 </ul>
 
 <h3 id="standard-error">Standard Error</h3>
 
-<p>어떤 통계량의 표준 오차는 (표본) 통계량의 표준 편차를 의미한다. 위 식에서 ${\rm Var} (\overline x)$을 의미한다. 많이 사용되는 표본 평균의 표준 오차는 SEM(Standard Error of the Mean)이라고도 한다. 표본 평균 $\overline X$의 표준 편차를 생각해보자. $\sigma^2 &lt; \infty$를 가정할 때,</p>
+<p>어떤 통계량의 표준 오차는 (표본) 통계량의 표준 편차를 의미한다. 위 식에서 ${\rm Var} (\overline x)$을 의미한다. 많이 사용되는 표본 평균의 표준 오차는 SEM(Standard Error of the Mean)이라고도 한다. 표본 평균 $\overline X_n$의 표준 편차를 생각해보자. $\sigma^2 &lt; \infty$를 가정할 때,</p>
 
 <div class="kdmath">$$
-\mathbb E(\overline{X} - \mu)^2 = \mathbb E (\dfrac{\sum(x_i -\mu)}{n})^2 = \dfrac{1}{n^2} n \sigma^2 = \dfrac{\sigma^2}{n}
+\mathbb E(\overline X_n - \mu)^2 = \mathbb E (\dfrac{\sum(x_i -\mu)}{n})^2 = \dfrac{1}{n^2} n \sigma^2 = \dfrac{\sigma^2}{n}
 $$</div>
 
-<p>그런데 우리는 $\sigma$를 알 도리가 없다. 즉, SEM은 $\sigma/\sqrt{n}$이지만 $\sigma$를 알도리가 없으므로 이 값 역시 추정의 대상이다. 얼른 생각할 수 있는 추정량 $S$는 다음과 같다.</p>
+<p>그런데 우리는 $\sigma$를 알 도리가 없다. 즉, SEM은 $\sigma/\sqrt{n}$이지만 $\sigma$를 알도리가 없으므로 이 값 역시 추정의 대상이다. 얼른 생각할 수 있는 추정량 $S_n$는 다음과 같다.</p>
 
 <div class="kdmath">$$
-S^2 = \dfrac{1}{n-1} \sum_{i=1}^{n} (x_i - \overline{x})^2
+S^2_n = \dfrac{1}{n-1} \sum_{i=1}^{n} (x_i - \overline{x})^2
 $$</div>
 
-<p>몇가지 가정이 필요하지만, 대수의 법칙에 따라서 $S^2 \to \sigma^2$가 성립하고, $S^2$은 $\sigma^2$의 일치 추정량이다. 이 문제는 조금 뒤에 다시 살펴보자.</p>
+<p>몇가지 가정이 필요하지만, 대수의 법칙에 따라서 $S_n^2 \overset{P}{\longrightarrow} \sigma^2$가 성립하고, $S^2$은 $\sigma^2$의 일치 추정량이다. 이 문제는 조금 뒤에 다시 살펴보자. $\overset{P}{\longrightarrow}$는 확률적인 수렴, 즉 probability limit을 뜻한다.</p>
 
 <h3 id="unbiased-and-consistent">Unbiased and Consistent</h3>
 
 <ul>
-  <li>표본 평균은 모평균의 불편 추정량이다. 즉, $\mathbb E(\overline{X}) = \mu$</li>
-  <li>표본 평균은 모평균의 일치 추정량이다. 즉, $\sigma^2$의 값은 모르지만 $n$이 커짐에 따라서 표본 평균의 분산이 0이 된다. 우선 대수의 법칙에 따라서 다음의 결과가 성립한다.  $\lim_{n \to \infty} \overline{X} = \mu$.</li>
-  <li>대수의 법칙 없이 설명한다면? $\mathbb E (\overline{X}) = \mu$가 성립한다. 즉, $\overline{X}$의 분포를 고려할 때 표본 평균의 기댓값은 $\mu$이다. 이때, 표본 평균의 분산은 앞서 계산한 표준오차의 제곱이다. 즉, $\rm Var(\overline{X}) = \frac{\sigma^2}{n}$. $\sigma^2$의 값에 관계 없이 이 값은 $n$이 증가함에 따라서 0으로 수렴한다. 따라서 $\overline{X}$는 일치 추정량이다.</li>
+  <li>표본 평균은 모평균의 불편 추정량이다. 즉, $\mathbb E(\overline X_n) = \mu$</li>
+  <li>표본 평균은 모평균의 일치 추정량이다. 즉, $\sigma^2$의 값은 모르지만 $n$이 커짐에 따라서 표본 평균의 분산이 0이 된다. 우선 대수의 법칙에 따라서 다음의 결과가 성립한다.  $\lim_{n \to \infty} \overline X_n = \mu$.</li>
+  <li>대수의 법칙 없이 설명한다면? $\mathbb E (\overline X_n) = \mu$가 성립한다. 즉, $\overline X_n$의 분포를 고려할 때 표본 평균의 기댓값은 $\mu$이다. 이때, 표본 평균의 분산은 앞서 계산한 표준오차의 제곱이다. 즉, $\rm Var(\overline X_n) = \dfrac{\sigma^2}{n}$. 모분산 $\sigma^2 &lt; \infty$를 가정했기 때문에 $n$이 증가함에 따라서 $\rm Var$이 0으로 수렴한다. 따라서 $\overline{X}$는 일치 추정량이다.</li>
 </ul>
 
 <h2 id="more-on-s2">More on $S^2$</h2>
@@ -329,7 +329,7 @@ $$</div>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>자세한 내용은 아래 책의 해당 부분을 참고하라. http://www.utstat.toronto.edu/~brunner/oldclass/413f08/handouts/STA413Ch4.pdf <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>자세한 내용은 <a href="http://www.utstat.toronto.edu/~brunner/oldclass/413f08/handouts/STA413Ch4.pdf">여기</a> 책의 해당 부분을 참고하라. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
