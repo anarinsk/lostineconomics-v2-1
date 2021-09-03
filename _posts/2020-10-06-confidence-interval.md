@@ -5,7 +5,7 @@ toc: false
 comments: true
 title:  Confidence Interval 
 description:  신뢰구간을 정리해보자. 
-categories: [statistics]
+categories: [statistics, personal-use]
 
 ---
 

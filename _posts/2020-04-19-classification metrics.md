@@ -3,8 +3,8 @@ layout: post
 toc: false
 comments: true
 title:  Metrics for Binary Classification 
-description:  이항 분류 지표, 함 정리하고 가즈아~ 
-categories: [machine-learning, basics]
+description:  이항 분류 지표 정리
+categories: [machine-learning, basics, personal-use]
 
 ---
 
@@ -20,8 +20,8 @@ categories: [machine-learning, basics]
 - 한가지 외우는 팁을 알아보자. 앞에 붙은 True/False의 형용사는 실제 속성(컬럼)에 따라서 결정된다. 반면 뒤에 오는 Positive/Negative는 예측 모델의 예측(로)을 따른다. 즉, 
 	- True Positive: Positive라는 예측이 맞는 경우다. 즉, 컨퓨전 매트릭스에서 2사분면을 나타낸다. 
 	- True Negative: Negative라는 예측이 맞는 경우다. 즉 4사분면을 나타난다. 
-	- False Positive: Positive라는 예측이 틀리는 경우다. 즉 1사분면을 나타낸다. 
-	- False Negative: Negative라는 예측이 틀리는 경우다. 즉 3사분면을 나타낸다. 
+	- False Positive: Positive라는 예측이 틀리는 경우다. 즉 1사분면을 나타낸다. 오탐이라고도 쓴다. 
+	- False Negative: Negative라는 예측이 틀리는 경우다. 즉 3사분면을 나타낸다. 미탐이라도고 쓴다. 
 
 ## Basic Three 
 
