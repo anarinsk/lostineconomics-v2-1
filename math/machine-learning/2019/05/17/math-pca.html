@@ -174,18 +174,18 @@ window.onload = wrap_img;
 \underset{k \times 1}{x_i} = \left[\begin{array}{c}{X^1_i - \mu^1} \\ {X^2_i - \mu^2} \\ {\vdots} \\ {X^k_i - \mu^k}\end{array}\right]
 $$</div>
 
-<p>이제 해당 피쳐를 쏠 스크린으로 활용할 유닛 벡터를 $w$라고 하자. 유닛 벡터란 $w \cdot w = 1$를 의미한다. 여기서 스크린이라는 의미는 개별 관찰이 지니는 특징을 이 벡터로 프로젝션해서 그 특징을 요약하겠다는 것이다. 우리에게 익숙한 회귀분석 역시 $y_i$라는 관찰을 설명변수 $\mathbf X$가 형성하는 선형 부분공간으로 프로젝션하는 방법이다. $x_i$를 $w$로 프로젝션 하면 다음과 같다.</p>
+<p>이제 해당 피쳐를 쏠 스크린으로 활용할 유닛 벡터를 $w$라고 하자. 유닛 벡터란 $w \cdot w = 1$를 의미한다. 여기서 스크린이라는 의미는 개별 관찰이 지니는 특징을 이 벡터로 프로젝션해서 그 특징을 요약하겠다는 것이다. 우리에게 익숙한 회귀분석 역시 $y_i$라는 관찰을 설명변수 $\mathbf X$가 형성하는 선형 부분공간으로 프로젝션하는 방법이다. $x_i$를 $w$로 스칼라 프로젝션 하면 다음과 같다.</p>
 
 <div class="kdmath">$$
-\operatorname{Proj}_{w}(x_i) = \dfrac{w \cdot x_i}{\Vert w \Vert} = w \cdot x_ i
+\operatorname{Proj}_{w}(x_i) = \dfrac{w}{\Vert w \Vert} \cdot x_i = w \cdot x_ i
 $$</div>
 
-<p>이 프로젝션의 벡터 $w$ 위의 이미지는 $(w \cdot x_i) w$가 된다.</p>
+<p>이 스칼라 프로젝션의 벡터 $w$ 위의 이미지, 즉 벡터 프로젝션은 $(w \cdot x_i) \dfrac{w}{\Vert w \Vert}$이다. $\Vert w \Vert = 1$이므로 결국 벡터 프로젝션은 $(w \cdot x_i) w$가 된다.</p>
 
 <p>이 프로젝션 스칼라 값 혹은 프로젝션 벡터의  기댓값은  아래와 같이 0이 된다.
 <span class="kdmath">$\dfrac{1}{n} \sum^n_{i=1} (w \cdot x_i) = \left( \dfrac{1}{n} \sum_{i=1}^n x_i \right)\cdot w = \boldsymbol{0} \cdot w = 0$</span></p>
 
-<p>벡터 $x_i$와 이 프로젝션 이미지 사이의 유클리드 거리를 구해보자.</p>
+<p>벡터 $x_i$와 이 프로젝션 벡터 사이의 유클리드 거리를 구해보자.</p>
 
 <div class="kdmath">$$
 \begin{aligned}
@@ -217,7 +217,7 @@ $$</div>
 <h3 id="variance-covariance-matrix">
 <a class="anchor" href="#variance-covariance-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variance-covariance matrix</h3>
 
-<p>왜 분산이 등장하는지를 파악했으니 분산 최대화를 계산해볼 차례다.  아래 행렬 $X$를 통해 쉽게 분산-공분산 행렬을  나타낼 수 있다. $x_i^j$ 에서 $i (=1,2,\dotsc, n)$는 관찰을, $j(=1,2,\dotsc,k)$는 피쳐를 나타낸다.</p>
+<p>왜 분산이 등장하는지 그리고 왜 분산이 최대화되어야 하는지 파악했으니, 이제 이를 계산해볼 차례다. 아래 행렬 $X$를 통해 쉽게 분산-공분산 행렬을  나타낼 수 있다. $x_i^j$ 에서 $i (=1,2,\dotsc, n)$는 관찰을, $j(=1,2,\dotsc,k)$는 피쳐를 나타낸다.</p>
 
 <div class="kdmath">$$
 \underset{n \times k}{X} = 
