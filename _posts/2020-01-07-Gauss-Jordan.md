@@ -34,7 +34,7 @@ $$
 - '열 사다리꼴' 행렬이라고 부른다. 정의는 다음과 같다 .
 
 - 각 행에 0이 아닌 첫번째 원소를 "선행 원소" 혹은 피벗이라고 부른다. 
-	- 선행원소 1을 조건으로 두는 경우가 있다. 이는 행 내에서 스케일링의 문제이므로 큰 문제는 아니다.  
+	- 선행원소 1을 조건으로 두는 경우가 있다. 이는 행 내에서 스케일링의 문제이다. 
 - 각 선행원소는 앞선 행의 선행 원소보다 오른편에 위치해야 한다. 
 	- 선행 원소가 없는 경우는 상관 없다.  
 - 모든 행이 0인 행은 0이 아닌 행을 포함한 행보다 뒤쪽에 위치해야 한다. 
@@ -109,8 +109,3 @@ $X = E_r E_{r-1} \dotsb E_1$이 되고, 이것이 곧 역행렬이다.
 ## Reference 
 
 [https://en.wikipedia.org/wiki/Gaussian_elimination](https://en.wikipedia.org/wiki/Gaussian_elimination)
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODU0MTYwNCwtODg1MDg1OTk0LDE0Nj
-E2MzUyNTQsLTE1NTM5NzU5MjldfQ==
--->
