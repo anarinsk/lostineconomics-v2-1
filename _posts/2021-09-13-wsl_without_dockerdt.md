@@ -41,9 +41,9 @@ categories: [coding]
 
 ## References 
 
-- https://wbhegedus.me/running-podman-on-wsl2/ 
+- [LINK](https://wbhegedus.me/running-podman-on-wsl2/)
     + 잘 되어 있지만 진행 순서에 살짝 오류가 있어서 아래 수정했다. 
-- https://podman.io/getting-started/installation#installing-development-versions-of-podman
+- [LINK](https://podman.io/getting-started/installation#installing-development-versions-of-podman)
 
 
 ## Basics
@@ -108,8 +108,8 @@ docker desktop에서 제일 좋았던 것이 nvidia GPU에 관한 지원이다. 
 
 ## Reference
 
-- https://nvidia.github.io/nvidia-docker/
-- https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8
+- [LINK](https://nvidia.github.io/nvidia-docker/)
+- [LINK](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8)
 
 ## Installation 
 
@@ -179,7 +179,7 @@ podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody n
 
 ## Reference 
 
-https://github.com/arkane-systems/genie
+[LINK](https://github.com/arkane-systems/genie)
 
 ## Problem 
 
@@ -239,7 +239,7 @@ $ sudo apt install docker-compose
 1. systemctl 명령을 통해서 podman의 소켓을 개시하는 것이다. 소켓의 상태를 보고 싶다면, `start` &rarr; `status`로 바뀌 실행해보자. 
 2. docker를 지웠으므로 이를 대신할 가상화 앱을 지정해야 한다. 이를 포드맨 소켓과 연결한다. 
 
-이 상태에서 `docker-comppose`를 실행하면 잘 돌아간다. 
+이 상태에서 `docker-compose`를 실행하면 잘 돌아간다. 
 
 - WSL-Ubuntu 부팅 시 자동으로 준비가 되게 하려면 1,2를 .bashrc에 넣는다. 
     + 단 `wsl genie -s` 상태가 아니라면 systemd 사용이 제한되기 때문에 아래 같은 경고 메시지를 볼 수 있다.  
