@@ -294,7 +294,7 @@ CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담�
 
 위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다. 
 
-# Problem Left 
+# Problems Left 
 
 아직 해결되지 않은 이슈도 있다. 
 
