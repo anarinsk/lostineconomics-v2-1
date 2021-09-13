@@ -13,7 +13,7 @@ categories: [coding]
 
 WSL 내에서 컨테이너를 돌리고 이 서비스를 윈도우에서 웹브라우저로 끌어다 쓰는 형태가 내 일상적인 작업 환경이다. Docker Desktop이 중요한 역할을 하고 있던 터라서, 이 기회에 대안을 시도해보기로 했다. 
 
-WSL 내에서 도커를 쓰는 것이 약간 '가짜'인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 석연치 않은 점이 있다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 두 개 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다. 
+WSL 내에서 도커를 쓰는 것이 약간 '가짜'인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 조금 복잡하다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다. 
 
 docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.[^1] podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용 이미지도 그대로 사용할 수 있다. 
 
@@ -94,7 +94,7 @@ events_logger="file"
 cgroup_manager="cgroupfs"
 ```
 
-- 그런데 굳이 고치지 않아도 컨테이너를 돌리는 데 큰 이슈는 없었다. 
+- 그런데 굳이 고치지 않아도 컨테이너를 돌리는 데 큰 이슈는 없는 듯 싶다.
 
 ## Testrun 
 
