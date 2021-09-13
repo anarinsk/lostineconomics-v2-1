@@ -191,7 +191,7 @@ WSL이 Ubuntu의 중요 요소인 systemd를 활성화하지 않고 docker나 do
 
 - 먼저 런타임을 설치해야 한다. 
 
-```
+```shell
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
