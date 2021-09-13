@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>WSL without Docker Desktop | lostineconomics.com</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="WSL without Docker Desktop" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Docker Desktop 없이 콘테이트 쓰기" />
+<meta property="og:description" content="Docker Desktop 없이 콘테이트 쓰기" />
+<link rel="canonical" href="https://anarinsk.github.io/lostineconomics-v2-1/2021/09/13/wsl_without_dockerdt.html" />
+<meta property="og:url" content="https://anarinsk.github.io/lostineconomics-v2-1/2021/09/13/wsl_without_dockerdt.html" />
+<meta property="og:site_name" content="lostineconomics.com" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-13T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://anarinsk.github.io/lostineconomics-v2-1/2021/09/13/wsl_without_dockerdt.html","@type":"BlogPosting","headline":"WSL without Docker Desktop","dateModified":"2021-09-13T00:00:00-05:00","datePublished":"2021-09-13T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://anarinsk.github.io/lostineconomics-v2-1/2021/09/13/wsl_without_dockerdt.html"},"description":"Docker Desktop 없이 콘테이트 쓰기","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lostineconomics-v2-1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" title="lostineconomics.com" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159914345-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159914345-1');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/lostineconomics-v2-1/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lostineconomics-v2-1/">lostineconomics.com</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lostineconomics-v2-1/about/">About</a><a class="page-link" href="/lostineconomics-v2-1/search/">Search</a><a class="page-link" href="/lostineconomics-v2-1/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">WSL without Docker Desktop</h1><p class="page-description">Docker Desktop 없이 콘테이트 쓰기</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-13T00:00:00-05:00" itemprop="datePublished">
+        Sep 13, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="from-docker-to-podman">From Docker to Podman</h1>
+
+<p>도커 데스크탑의 유료화 정책이 발표되었다. 아마도 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요가 있다. 여러 프로덕트가 복잡하게 의존하는, 즉 발목이 단단히 잡힌 상황이 아니라면 다른 길을 찾는게 맞다.</p>
+
+<p>평소의 작업 환경이 WSL 내에서 컨테이너를 돌리고 이를 윈도우에서 웹브라우저로 끌어다 쓰고 있던 터라서 대안을 한번 시도해보기로 했다. WSL 내에서 도커를 쓰는 것이 약간 ‘가짜’인 듯한 느낌이 없진 않았다. 도커 데스크탑은 WSL을 거의 완벽하게 지원한다. 그런데 구조를 약간 뜯어보면 석연치 않은 점이 있다. 우선 도커 데스크탑이 자체로 도커를 위한 컨테이너를 두개 만들고 이 컨테이너와 WSL을 연결한다. WSL 내 OS에서 돌고 있지 않다는 뜻이다. 뭔가 원도를 통한 지원을 완벽하게 구현하기 위해서 꼼수를 사용한 듯한 느낌이 없지 않았다.</p>
+
+<p>현재 대안으로 제시되고 있는 podman은 OCI(Open Container Initiative)의 표준을 준수하면서도 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 기존에 사용하던 이미지도 그대로 올릴 수 있다. 비유를 하자면 컨테이너를 운반하는 배가 배(동물?)이 바뀔 뿐 컨테이너 자체는 그대로 운용된다. podman을 쓰면 Docker Desktop처럼 복잡한 구조를 걸치지 않아도 된다. WSL 내에 설치된 OS에서만 운용되기 때문이다.</p>
+
+<p>그리고 무엇보다도 docker의 다른 요소들과 호환성도 뛰어납니다. 내 경우 작업 환경을 유지하는데 docker-compose가 핵심적이었는데, 이 역시 podman에 그냥 붙여서 쓸 수 있었다. 그럼 각설하고 내용으로 바로 들어가보자.</p>
+
+<h1 id="problems">Problems</h1>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>WSL 2가 잘 깔려 있고 설정되어 있다.</li>
+  <li>Ubuntu 20.04가 깔여 있고 업데이트도 잘 되어 있다.</li>
+  <li>Docker Desktop이 깨끗하게 언인스톨되어 있다.</li>
+</ul>
+
+<p>위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 좋은 포스팅이 많이 나올 것이다. MS의 공식 가이드도 더할 나위 없이 잘 되어 있다.</p>
+
+<p>내가 풀고 싶은 문제는 세 가지다.</p>
+
+<ol>
+  <li>docker를 podman으로 대체하기</li>
+  <li>podman으로 nvidia gpu 부리기</li>
+  <li>podman과 함께 docker-composer 쓰기</li>
+</ol>
+
+<p>1, 2의 해결책은 Ubuntu 20.04에서 그대로 활용할 수 있다. 3의 경우 WSL의 특성 때문에 몇 가지 추가적인 작업이 필요하지만 비교적 잘 해결된다.</p>
+
+<h1 id="enter-the-podman">Enter the podman</h1>
+
+<p>출처를 먼저 적어 두었으니 바로 보셔도 좋겠다.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>https://wbhegedus.me/running-podman-on-wsl2/
+    <ul>
+      <li>잘 되어 있지만 진행 순서에 살짝 오류가 있어서 아래 수정했다.</li>
+    </ul>
+  </li>
+  <li>https://podman.io/getting-started/installation#installing-development-versions-of-podman</li>
+</ul>
+
+<h2 id="basics">Basics</h2>
+
+<p>최신 버전의 podman을 설치하기 위해서는 apt 저장소의 주소를 별도로 업데이트해줘야 한다. 20.10 이후부터는 공식적으로 지원한다고 하니, 다음번 LTS가 나오면 ppa를 추가하는 이슈는 해소될 것 같다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1$ cat /etc/lsb-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.2 LTS"
+
+2$ export VERSION_ID="20.04"
+
+echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get -y install podman
+</code></pre></div></div>
+
+<ul>
+  <li>셸 스크립트에서 <code class="language-plaintext highlighter-rouge">숫자$</code>라고 되어 있는 부분은 설명이 필요한 부분이다.
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">1$</code>은 현재 설치된 Ubuntu의 버전 등을 알아내는 대목이다.</li>
+      <li>이를 통해 <code class="language-plaintext highlighter-rouge">VERSION_ID</code> 변수를 설정한다.</li>
+    </ol>
+  </li>
+  <li>나머지 부분은 PPA를 설정하고 패키지 저장소를 업데이트하고 포드맨을 설치하기 위한 작업이다.</li>
+</ul>
+
+<h2 id="setting">Setting</h2>
+
+<p>많은 가이드를 보면 아래 두 파일 중 하나의 내용을 수정할 것을 권고하고 있다. 후자의 파일은 없기 때문에 생성하면 된다.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/usr/share/containers/containers.conf</code></li>
+  <li><code class="language-plaintext highlighter-rouge">~/.config/containers/containers.conf</code></li>
+</ul>
+
+<p>수정 혹은 생성 내용은 아래와 같다.</p>
+
+<pre><code class="language-txt">[engine]
+events_logger="file"
+cgroup_manager="cgroupfs"
+</code></pre>
+
+<ul>
+  <li>그런데 굳이 고치지 않아도 컨테이너를 돌리는 데 큰 이슈는 없었다.</li>
+</ul>
+
+<h2 id="testrun">Testrun</h2>
+
+<p>podman이 잘 깔렸는데 아래와 같이 테스트해보자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podman run hello-world 
+</code></pre></div></div>
+
+<p>docker의 hello-world를 테스트로 사용하면 된다. 잘 되었다면 잘 깔린 것이다.</p>
+
+<h1 id="podman--nvidia-gpu">Podman + nvidia GPU</h1>
+
+<p>docker desktop에서 제일 좋았던 것이 nvidia GPU에 관한 지원이다. docker에서 <code class="language-plaintext highlighter-rouge">gpu</code> 옵션이 지원되서 nvidia docker를 별도로 깔지 않아도 되었다.</p>
+
+<p>왜 이게 중요할까? 컨테이너를 쓰는 이유가 각종 복잡한 설정을 우회해서 바로 올려서 쓰기 위해서다. Ubuntu에서 GPU를 부리기 위한 준비는 간단하지 않다. 각종 드라이버 및 API를 설치하는 수고로움을 피하기 위해서 해당 준비가 갖춰진 컨테이너를 올려 쓰고 싶은 것이다. Podman에서 이게 어렵다면 매력이 떨어지지 않을까?</p>
+
+<p>다행스럽게도 nvidia에서 컨테이너를 위한 런타임을 제공한다. 이 녀석을 깔면 podman과 nvidia GPU를 어렵지 않게 연결할 수 있다.</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+  <li>https://nvidia.github.io/nvidia-docker/</li>
+  <li>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>컨테이너 툴킷 설치를 위해서 먼저 PPA를 설정하자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-s</span> <span class="nt">-L</span> https://nvidia.github.io/nvidia-docker/gpgkey | <span class="nb">sudo </span>apt-key add -
+<span class="nv">distribution</span><span class="o">=</span><span class="si">$(</span><span class="nb">.</span> /etc/os-release<span class="p">;</span><span class="nb">echo</span> <span class="nv">$ID$VERSION_ID</span><span class="si">)</span>
+curl <span class="nt">-s</span> <span class="nt">-L</span> https://nvidia.github.io/nvidia-docker/<span class="nv">$distribution</span>/nvidia-docker.list | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/nvidia-docker.list
+<span class="nb">sudo </span>apt-get update
+</code></pre></div></div>
+
+<p>컨테이너 툴킷을 설치한다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> nvidia-container-toolkit
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">/usr/share/containers/oci/hooks.d/oci-nvidia-hook.json</code> 파일이 있는지 확인해본다. 없으면 생성하고 아래의 내용을 담도록 하자.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hook"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/usr/bin/nvidia-container-toolkit"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"nvidia-container-toolkit"</span><span class="p">,</span><span class="w"> </span><span class="s2">"prestart"</span><span class="p">],</span><span class="w">
+        </span><span class="nl">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"always"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"commands"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">".*"</span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"stages"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"prestart"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">config.toml</code> 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회하도록 했다. <code class="language-plaintext highlighter-rouge">no-cgroups = true</code>가 설정되어 있으면 제대로 된 것이다. 해당 위치의 파일을 열어 직접 수정해도 된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo sed -i 's/^#no-cgroups = false/no-cgroups = true/;' /etc/nvidia-container-runtime/config.toml
+$ cat /etc/nvidia-container-runtime/config.toml
+</code></pre></div></div>
+
+<p>부팅을 한번 다시 해주자. WSL에서 부팅이란 그냥 셸을 껐다가 다시 켜면 된다.</p>
+
+<h2 id="testrun-1">Testrun</h2>
+
+<p>아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 별도로 nvidia driver를 설치하지 않았을 것이다. 컨테이너를 통해서 드라이버가 설정된 이미지를 이렇게 돌릴 수 있는 것이다. 하드웨어와 직접 접촉하는 윈도 드라이버만 WSL을 지원하는 버전으로 잘 깔아주면 된다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podman run <span class="nt">--rm</span> <span class="nt">--security-opt</span><span class="o">=</span><span class="nv">label</span><span class="o">=</span>disable nvidia/cuda:11.0-base nvidia-smi
+</code></pre></div></div>
+
+<p>조금 허전하니 nbody problem도 돌려보자.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podman run <span class="nt">--env</span> <span class="nv">NVIDIA_DISABLE_REQUIRE</span><span class="o">=</span>1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody <span class="nt">-gpu</span> <span class="nt">-benchmark</span>
+</code></pre></div></div>
+
+<h1 id="podman--docker-compose">Podman + Docker Compose</h1>
+
+<p>도커의 여러가지 요소가 집약된 데스크탑이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 각종 요소가 유료화되는 것은 아니다. 라이선스 상 이 개별 요소들이 유료화되긴 힘들 것이다.</p>
+
+<p>도커에서 편리한 앱 중 하나가 컴포즈다. 여러 개의 컨테이너를 올려 놓고 돌려 쓰기에 딱 좋다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow 세 개 정도의 컨테이너를 돌려 놓고 돌려가며 쓴다. 각종 설정을 한방에 잡아주기에는 컴포즈 만큼 편한 게 없다.</p>
+
+<h2 id="reference-1">Reference</h2>
+
+<p>https://github.com/arkane-systems/genie</p>
+
+<h2 id="problem">Problem</h2>
+
+<p>WSL이 Ubuntu의 중요 요소인 systemd를 활성화하지 않고 docker나 docker의 요소를 데스크탑을 거치지 않고 깔아서 쓸 때 문제가 된다. systemd가 활성화되지 않으면 이를 활성화해주면 된다. 위 링크에 그 절차가 자세하게 소개되어 있다.</p>
+
+<h2 id="solution">Solution</h2>
+
+<h3 id="runtime">Runtime</h3>
+
+<ul>
+  <li>먼저 런타임을 설치해야 한다.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+</code></pre></div></div>
+
+<h3 id="wsl-transdevian">wsl-transdevian</h3>
+
+<ul>
+  <li>이 녀석을 설치하기 위해서 먼저 lsb를 설치하자.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>lsb 
+</code></pre></div></div>
+
+<ul>
+  <li>sudo로 실행되어야 하는 항목에서 이를 타이핑하는 번거로움을 피하기 위해서 <code class="language-plaintext highlighter-rouge">sudo -s</code>를 실행하자. 이후 아래 스크립트를 실행한다.</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-O</span> /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
+<span class="nb">chmod </span>a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
+
+<span class="nb">cat</span> <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh"> &gt; /etc/apt/sources.list.d/wsl-transdebian.list
+deb https://arkane-systems.github.io/wsl-transdebian/apt/ </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="sh"> main
+deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="sh"> main
+</span><span class="no">EOF
+
+</span>apt update
+</code></pre></div></div>
+
+<h3 id="genie--docker-compose">genie &amp; docker-compose</h3>
+
+<p>이제 마지막으로 genie와 docker-compose를 설치해준다.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> systemd-genie
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>docker-compose
+</code></pre></div></div>
+
+<h3 id="setting-1">Setting</h3>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1<span class="nv">$ </span>systemctl <span class="nt">--user</span> start podman.socket
+2<span class="nv">$ </span><span class="nb">export </span><span class="nv">DOCKER_HOST</span><span class="o">=</span>unix://<span class="nv">$XDG_RUNTIME_DIR</span>/podman/podman.sock
+</code></pre></div></div>
+
+<ol>
+  <li>systemctl 명령을 통해서 podman의 소켓을 개시하는 것이다. 소켓의 상태를 보고 싶다면, <code class="language-plaintext highlighter-rouge">start</code> → <code class="language-plaintext highlighter-rouge">status</code>로 바뀌 실행해보자.</li>
+  <li>docker를 지웠으므로 이를 대신할 가상화 앱을 지정해야 한다. 이를 포드맨 소켓과 연결한다.</li>
+</ol>
+
+<p>이 상태에서 <code class="language-plaintext highlighter-rouge">docker-comppose</code>를 실행하면 잘 돌아간다.</p>
+
+<ul>
+  <li>WSL-Ubuntu 부팅 시 자동으로 준비가 되게 하려면 1,2를 .bashrc에 넣는다.
+    <ul>
+      <li>단 <code class="language-plaintext highlighter-rouge">wsl genie -s</code> 상태가 아니라면 systemd 사용이 제한되기 때문에 아래 같은 경고 메시지를 볼 수 있다.</li>
+      <li><code class="language-plaintext highlighter-rouge">Failed to connect to bus: No such file or directory</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="testrun-2">Testrun</h2>
+
+<ul>
+  <li>현재 위치(대체로는 유저 홈)에 아래와 같이 docker-compose.yml 파일을 생성하자.</li>
+  <li>현재 위치에 <code class="language-plaintext highlighter-rouge">data</code>디렉토리를 생성하자.</li>
+</ul>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3'</span>
+<span class="c1">#</span>
+<span class="na">services</span><span class="pi">:</span>
+    <span class="na">tf-gpu</span><span class="pi">:</span>
+        <span class="na">image</span><span class="pi">:</span> <span class="s">tensorflow/tensorflow:latest-gpu-jupyter</span>
+        <span class="na">environment</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">NVIDIA_DISABLE_REQUIRE=1</span>
+            <span class="pi">-</span> <span class="s">GRANT_SUDO=yes</span>
+            <span class="pi">-</span> <span class="s">JUPYTER_ENABLE_LAB=yes</span>
+            <span class="pi">-</span> <span class="s">JUPYTER_TOKEN=1234</span>
+        <span class="na">volumes</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s2">"</span><span class="s">./data:/mnt/space/ml"</span>
+        <span class="na">ports</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s2">"</span><span class="s">8888:8888"</span>
+        <span class="c1"># deploy:</span>
+        <span class="c1">#     resources:</span>
+        <span class="c1">#         reservations:</span>
+        <span class="c1">#             devices:</span>
+        <span class="c1">#                 - driver: nvidia</span>
+        <span class="c1">#                   device_ids: ['all']</span>
+        <span class="c1">#                   capabilities: [gpu]</span>
+        <span class="na">container_name</span><span class="pi">:</span> <span class="s">tf_gpu</span>
+</code></pre></div></div>
+
+<p>이제 다음을 실행하자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose up 
+</code></pre></div></div>
+
+<p>잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 확인할 수 있는데, 노트북을 열고 다음과 같이 쳐보자.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">tf</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">get_visible_devices</span><span class="p">(</span>
+    <span class="n">device_type</span><span class="o">=</span><span class="bp">None</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보기 바란다.</p>
+
+<p>위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다.</p>
+
+<h1 id="problem-left">Problem Left</h1>
+
+<p>아직 해결되지 않은 이슈도 있다.</p>
+
+<ul>
+  <li>nvidia-container-toolkit의 호환성이 조금 떨어지는 경우가 있는 것 같다.</li>
+  <li>도커 데스크탑에서는 VS Code의 container 접속을 통해서 바로 컨테이너 접속이 가능했다. 도커 데스크탑이 별도의 컨테이너를 운용했기 때문에 가능한 일이었다. 그런데 이제 WSL-Ubuntu 안에서 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오지 않을까 기대해본다.</li>
+</ul>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="anarinsk/lostineconomics-v2-1"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/lostineconomics-v2-1/2021/09/13/wsl_without_dockerdt.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lostineconomics-v2-1/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lostineconomics-v2-1/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A useless and aimless blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/anarinsk" title="anarinsk"><svg class="svg-icon grey"><use xlink:href="/lostineconomics-v2-1/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
