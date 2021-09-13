@@ -244,3 +244,59 @@ $ sudo apt install docker-compose
 - WSL-Ubuntu 부팅 시 자동으로 준비가 되게 하려면 1,2를 .bashrc에 넣는다. 
     + 단 `wsl genie -s` 상태가 아니라면 systemd 사용이 제한되기 때문에 아래 같은 경고 메시지를 볼 수 있다.  
     + `Failed to connect to bus: No such file or directory`
+
+## Testrun 
+
+- 현재 위치(대체로는 유저 홈)에 아래와 같이 docker-compose.yml 파일을 생성하자.
+- 현재 위치에 `data`디렉토리를 생성하자.  
+
+```yml
+version: '3'
+#
+services:
+    tf-gpu:
+        image: tensorflow/tensorflow:latest-gpu-jupyter
+        environment:
+            - NVIDIA_DISABLE_REQUIRE=1
+            - GRANT_SUDO=yes
+            - JUPYTER_ENABLE_LAB=yes
+            - JUPYTER_TOKEN=1234
+        volumes:
+            - "./data:/mnt/space/ml"
+        ports:
+            - "8888:8888"
+        # deploy:
+        #     resources:
+        #         reservations:
+        #             devices:
+        #                 - driver: nvidia
+        #                   device_ids: ['all']
+        #                   capabilities: [gpu]
+        container_name: tf_gpu
+```
+
+이제 다음을 실행하자. 
+
+```
+$ docker-compose up 
+```
+
+잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 확인할 수 있는데, 노트북을 열고 다음과 같이 쳐보자. 
+
+```python
+import tensorflow as tf
+tf.config.get_visible_devices(
+    device_type=None
+)
+```
+
+CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보기 바란다. 
+
+위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다. 
+
+# Problem Left 
+
+아직 해결되지 않은 이슈도 있다. 
+
+- nvidia-container-toolkit의 호환성이 조금 떨어지는 경우가 있는 것 같다. 
+- 도커 데스크탑에서는 VS Code의 container 접속을 통해서 바로 컨테이너 접속이 가능했다. 도커 데스크탑이 별도의 컨테이너를 운용했기 때문에 가능한 일이었다. 그런데 이제 WSL-Ubuntu 안에서 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오지 않을까 기대해본다. 
