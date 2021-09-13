@@ -280,8 +280,8 @@ curl <span class="nt">-s</span> <span class="nt">-L</span> https://nvidia.github
 
 <p><code class="language-plaintext highlighter-rouge">config.toml</code> 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회하도록 했다. <code class="language-plaintext highlighter-rouge">no-cgroups = true</code>가 설정되어 있으면 제대로 된 것이다. 해당 위치의 파일을 열어 직접 수정해도 된다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo sed -i 's/^#no-cgroups = false/no-cgroups = true/;' /etc/nvidia-container-runtime/config.toml
-$ cat /etc/nvidia-container-runtime/config.toml
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/^#no-cgroups = false/no-cgroups = true/;'</span> /etc/nvidia-container-runtime/config.toml
+<span class="nv">$ </span><span class="nb">cat</span> /etc/nvidia-container-runtime/config.toml
 </code></pre></div></div>
 
 <p>부팅을 한번 다시 해주자. WSL에서 부팅이란 그냥 셸을 껐다가 다시 켜면 된다.</p>
