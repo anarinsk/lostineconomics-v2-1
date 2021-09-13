@@ -108,7 +108,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -132,9 +132,9 @@ window.onload = wrap_img;
 
 <p>WSL 내에서 도커를 쓰는 것이 약간 ‘가짜’인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 조금 복잡하다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다.</p>
 
-<p>docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용 이미지도 그대로 사용할 수 있다.</p>
+<p>docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용하는 이미지도 그대로 쓸 수 있다.</p>
 
-<p>비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자.</p>
+<p>비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
 
 <h1 id="problems">Problems</h1>
 
@@ -148,7 +148,7 @@ window.onload = wrap_img;
   <li>Docker Desktop이 깨끗하게 언인스톨되어 있다.</li>
 </ul>
 
-<p>위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. WSL에 관해서는 <a href="https://docs.microsoft.com/ko-kr/windows/wsl/install-win10">MS의 공식 가이드</a>도 더할 나위 없이 잘 되어 있다.</p>
+<p>이 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. WSL에 관해서는 <a href="https://docs.microsoft.com/ko-kr/windows/wsl/install-win10">MS의 공식 가이드</a>도 더할 나위 없이 잘 되어 있다.</p>
 
 <p>podman에 관해 내가 풀고 싶은 문제는 세 가지다.</p>
 
@@ -446,7 +446,10 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ </span><span class
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>podman에 관한 개략적인 기술적 설명은 <a href="https://naleejang.tistory.com/m/227">LINK</a>를 참고하자. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>podman에 관한 기술적 설명은 <a href="https://naleejang.tistory.com/m/227">LINK</a>, <a href="https://www.s-core.co.kr/insight/view/oci%EC%99%80-cri-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%9E%AC%ED%8E%B8%EB%90%98%EB%8A%94-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%9D%94%EB%93%A4%EB%A6%AC%EB%8A%94/">LINK</a>를 참고하자. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>윈도에서 Docker Desktop 버전을 사용하는 대신 Docker CE 버전을 WSL-Ubuntu에 깔아서 사용할 수 있다. 이 글을 관심은 docker를 대체하는 데 있으니, 이에 관한 내용은 다루지 않는다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

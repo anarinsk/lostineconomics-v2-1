@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T15:54:54-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T17:05:46-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
 
 &lt;p&gt;도커 데스크탑의 유료화 정책이 발표되었다. 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요는 없다. 여러 프로젝트가 복잡하게 의존하는, 즉 발목 잡힌 상황이 아니라면 다른 길을 찾으면 된다.&lt;/p&gt;
 
@@ -6,9 +6,9 @@
 
 &lt;p&gt;WSL 내에서 도커를 쓰는 것이 약간 ‘가짜’인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 조금 복잡하다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다.&lt;/p&gt;
 
-&lt;p&gt;docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용 이미지도 그대로 사용할 수 있다.&lt;/p&gt;
+&lt;p&gt;docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용하는 이미지도 그대로 쓸 수 있다.&lt;/p&gt;
 
-&lt;p&gt;비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자.&lt;/p&gt;
+&lt;p&gt;비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;problems&quot;&gt;Problems&lt;/h1&gt;
 
@@ -22,7 +22,7 @@
   &lt;li&gt;Docker Desktop이 깨끗하게 언인스톨되어 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. WSL에 관해서는 &lt;a href=&quot;https://docs.microsoft.com/ko-kr/windows/wsl/install-win10&quot;&gt;MS의 공식 가이드&lt;/a&gt;도 더할 나위 없이 잘 되어 있다.&lt;/p&gt;
+&lt;p&gt;이 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. WSL에 관해서는 &lt;a href=&quot;https://docs.microsoft.com/ko-kr/windows/wsl/install-win10&quot;&gt;MS의 공식 가이드&lt;/a&gt;도 더할 나위 없이 잘 되어 있다.&lt;/p&gt;
 
 &lt;p&gt;podman에 관해 내가 풀고 싶은 문제는 세 가지다.&lt;/p&gt;
 
@@ -320,7 +320,10 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ &lt;/span&gt;&lt;s
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;podman에 관한 개략적인 기술적 설명은 &lt;a href=&quot;https://naleejang.tistory.com/m/227&quot;&gt;LINK&lt;/a&gt;를 참고하자. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;podman에 관한 기술적 설명은 &lt;a href=&quot;https://naleejang.tistory.com/m/227&quot;&gt;LINK&lt;/a&gt;, &lt;a href=&quot;https://www.s-core.co.kr/insight/view/oci%EC%99%80-cri-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%9E%AC%ED%8E%B8%EB%90%98%EB%8A%94-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%9D%94%EB%93%A4%EB%A6%AC%EB%8A%94/&quot;&gt;LINK&lt;/a&gt;를 참고하자. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;윈도에서 Docker Desktop 버전을 사용하는 대신 Docker CE 버전을 WSL-Ubuntu에 깔아서 사용할 수 있다. 이 글을 관심은 docker를 대체하는 데 있으니, 이에 관한 내용은 다루지 않는다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><category term="coding" /><summary type="html">From Docker to Podman</summary></entry><entry><title type="html">Test of Katex in Fastpages</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html" rel="alternate" type="text/html" title="Test of Katex in Fastpages" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/2021/08/31/Testing-Katex.html">&lt;h2 id=&quot;purpose&quot;&gt;Purpose&lt;/h2&gt;
