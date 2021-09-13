@@ -11,11 +11,15 @@ categories: [coding]
 
 도커 데스크탑의 유료화 정책이 발표되었다. 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요는 없다. 여러 프로젝트가 복잡하게 의존하는, 즉 발목 잡힌 상황이 아니라면 다른 길을 찾으면 된다. 
 
-내 일상적인 작업 환경이 WSL 내에서 컨테이너를 돌리고 이를 윈도우에서 웹브라우저로 끌어다 쓰고 있던 터라서, 이 기회에 대안을 시도해보기로 했다. 사실 WSL 내에서 도커를 쓰는 것이 약간 '가짜'인 듯한 느낌이 없진 않았다. 도커 데스크탑은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 석연치 않은 점이 있다. 
+WSL 내에서 컨테이너를 돌리고 이 서비스를 윈도우에서 웹브라우저로 끌어다 쓰는 형태가 내 일상적인 작업 환경이다. Docker Desktop이 중요한 역할을 하고 있던 터라서, 이 기회에 대안을 시도해보기로 했다. 
 
-도커 데스크탑이 도커를 사용하기 위한 자체의 컨테이너를 두 개 만들고, 이 둘과 WSL을 연결한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위해서 꼼수를 사용한 듯한 느낌이다. 
+WSL 내에서 도커를 쓰는 것이 약간 '가짜'인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 석연치 않은 점이 있다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 두 개 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다. 
 
-현재 docker의 대안으로 제시되고 있는 podman은 OCI(Open Container Initiative)의 표준을 준수한다. 그리고 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 기존에 사용하던 이미지도 그대로 활용할 수 있다. 비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 내에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 docker의 다른 요소들과 호환성이 뛰어나다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요했는데, 이를 podman에 그냥 붙여서 쓸 수 있었다. 각설하고 내용으로 바로 들어가보자. 
+docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.[^1] podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용 이미지도 그대로 사용할 수 있다. 
+
+[^1]: podman에 관한 개략적인 기술적 설명은 [LINK](https://naleejang.tistory.com/m/227)를 참고하자. 
+
+비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자. 
 
 # Problems 
 
@@ -27,7 +31,7 @@ categories: [coding]
 - Ubuntu 20.04가 깔여 있고 업데이트도 잘 되어 있다. 
 - Docker Desktop이 깨끗하게 언인스톨되어 있다.
 
-위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. MS의 공식 가이드도 더할 나위 없이 잘 되어 있다. 
+위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. WSL에 관해서는 [MS의 공식 가이드](https://docs.microsoft.com/ko-kr/windows/wsl/install-win10)도 더할 나위 없이 잘 되어 있다. 
 
 podman에 관해 내가 풀고 싶은 문제는 세 가지다. 
 
@@ -35,11 +39,11 @@ podman에 관해 내가 풀고 싶은 문제는 세 가지다.
 2. podman으로 nvidia gpu 부리기 
 3. podman과 함께 docker-composer 쓰기 
 
-1, 2의 해결책은 Ubuntu 20.04에서 그대로 활용할 수 있다. 3의 경우 WSL이 지니는 OS 구조의 특성 때문에 몇 가지 추가적인 작업이 필요하다.  
+1, 2의 방법은 Ubuntu 20.04에서 그대로 활용할 수 있다. 3의 경우 WSL이 지니는 OS 구조의 특성 때문에 몇 가지 추가적인 작업이 필요하다.  
 
 # Enter the podman 
 
-출처를 먼저 적어 두었으니 바로 보셔도 좋겠다. 
+출처를 먼저 적어 두었으니 필요한 경우 바로 참고하면 되겠다. 
 
 ## References 
 
@@ -50,7 +54,7 @@ podman에 관해 내가 풀고 싶은 문제는 세 가지다.
 
 ## Basics
 
-최신 버전의 podman을 설치하기 위해서는 apt 저장소의 주소를 별도로 업데이트해줘야 한다. 20.10 이후부터는 공식적으로 지원한다고 하니, 다음번 LTS가 나오면 ppa를 추가하는 이슈는 해소될 것 같다. 
+최신 버전의 podman을 설치하기 위해서는 apt 저장소의 주소를 별도로 업데이트해줘야 한다. 20.10 이후부터는 podman을 공식적으로 지원하고 있다. 다음번 Ubuntu LTS 버전이 나오면 PPA를 추가하는 이슈는 해소될 듯 싶다. 
 
 ```shell
 1$ cat /etc/lsb-release
@@ -69,8 +73,10 @@ sudo apt-get -y install podman
 ```
 
 - 셸 스크립트에서 `숫자$`라고 되어 있는 부분은 설명이 필요한 부분이다. 
-    1. `1$`은 현재 설치된 Ubuntu의 버전 등을 알아내는 대목이다. 
-    2. 이를 통해 `VERSION_ID` 변수를 설정한다. 
+
+1. `1$`은 현재 설치된 Ubuntu의 버전 등을 알아내는 대목이다. 
+2. 이를 통해 `VERSION_ID` 변수를 설정한다. 
+
 - 나머지 부분은 PPA를 설정하고 패키지 저장소를 업데이트하고 포드맨을 설치하기 위한 작업이다. 
 
 ## Setting 
@@ -102,20 +108,20 @@ docker의 hello-world를 테스트로 사용하면 된다. 잘 되었다면 잘 
 
 # Podman + nvidia GPU 
 
-docker desktop에서 제일 좋았던 것이 nvidia GPU에 관한 지원이다. docker에서 `gpu` 옵션이 지원되서 nvidia docker를 별도로 깔지 않아도 되었다. 
+Docker Desktop을 쓰면서 제일 좋았던 대목이 nvidia GPU에 관한 지원이다. docker에서 `gpu` 옵션이 지원되서 nvidia docker를 별도로 깔 필요가 없다. 
 
-왜 이게 중요할까? 컨테이너를 쓰는 이유가 각종 복잡한 설정을 우회해서 바로 올려서 쓰기 위해서다. Ubuntu에서 GPU를 부리기 위한 준비는 간단하지 않다. 각종 드라이버 및 API를 설치하는 수고로움을 피하기 위해서 해당 준비가 갖춰진 컨테이너를 올려 쓰고 싶은 것이다. Podman에서 이게 어렵다면 매력이 떨어지지 않을까? 
+왜 이게 편리할까? 컨테이너를 쓰면 각종 복잡한 설정을 우회해서 바로 필요한 상태를 올릴 수 있다. Ubuntu에서 GPU를 부리기 위한 준비가 간단하지 않다. 각종 드라이버 및 API를 설치하는 수고로움을 피하기 위해서 해당 준비가 갖춰진 컨테이너를 올려 쓰면 된다. Podman에서 이게 어렵다면 그 매력이 떨어지지 않을까? 
 
-다행스럽게도 nvidia에서 컨테이너를 위한 런타임을 제공한다. 이 녀석을 깔면 podman과 nvidia GPU를 어렵지 않게 연결할 수 있다. 
+다행스럽게도 nvidia에서 컨테이너를 위한 런타임을 제공한다. 이 녀석을 설정해주면 podman과 nvidia GPU를 쉽게 연결할 수 있다. 
 
-## Reference
+## References
 
 - [LINK](https://nvidia.github.io/nvidia-docker/)
 - [LINK](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8)
 
 ## Installation 
 
-컨테이너 툴킷 설치를 위해서 먼저 PPA를 설정하자. 
+nvidia 컨테이너 툴킷 설치를 위해서 먼저 PPA를 설정하자. 
 
 ```shell
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
@@ -150,24 +156,24 @@ sudo apt install -y nvidia-container-toolkit
 }
 ```
 
-`config.toml` 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회하도록 했다. `no-cgroups = true`가 설정되어 있으면 제대로 된 것이다. 해당 위치의 파일을 열어 직접 수정해도 된다. 
+`config.toml` 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회한다. `no-cgroups = true`를 설정하면 된다. 해당 위치의 파일을 열어 직접 수정해도 된다. 
 
 ```shell
 $ sudo sed -i 's/^#no-cgroups = false/no-cgroups = true/;' /etc/nvidia-container-runtime/config.toml
 $ cat /etc/nvidia-container-runtime/config.toml
 ```
 
-부팅을 한번 다시 해주자. WSL에서 부팅이란 그냥 셸을 껐다가 다시 켜면 된다. 
+부팅을 다시 해주자. WSL에서 나갔다가 다시 들어가면 된다. 셸 자체를 껐다가 다시 켜도 된다. 
 
 ## Testrun 
 
-아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 별도로 nvidia driver를 설치하지 않았을 것이다. 컨테이너를 통해서 드라이버가 설정된 이미지를 이렇게 돌릴 수 있는 것이다. 하드웨어와 직접 접촉하는 윈도 드라이버만 WSL을 지원하는 버전으로 잘 깔아주면 된다. 
+아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. WSL이 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 nvidia driver를 설치하지 않았을 것다. 컨테이너를 통해서 드라이버가 설정된 이미지에 진입해 GPU를 쓸 수 있다고 보면 되겠다. 하드웨어와 직접 소통하는 윈도 드라이버가 WSL을 지원하는 버전인지 여부는 꼭 확인하시라.  
 
 ```shell
 podman run --rm --security-opt=label=disable nvidia/cuda:11.0-base nvidia-smi
 ```
 
-조금 허전하니 nbody problem도 돌려보자. 
+조금 허전하니 nbody example도 돌려보자. 
 
 ```shell
 podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
@@ -175,9 +181,9 @@ podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody n
 
 # Podman + Docker Compose 
 
-도커의 여러가지 요소가 집약된 데스크탑이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 각종 요소가 유료화되는 것은 아니다. 라이선스 상 이 개별 요소들이 유료화되긴 힘들 것이다. 
+docker의 여러가지 요소가 변형되고 집약된 Docker Desktop이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계의 각종 요소가 유료화되는 것은 아니다. 오픈소스 라이선스의 특징상 이 개별 요소들이 유료화되긴 힘들 것이다. 
 
-도커에서 편리한 앱 중 하나가 컴포즈다. 여러 개의 컨테이너를 올려 놓고 돌려 쓰기에 딱 좋다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow 세 개 정도의 컨테이너를 돌려 놓고 돌려가며 쓴다. 각종 설정을 한방에 잡아주기에는 컴포즈 만큼 편한 게 없다. 
+도커에서 편리한 앱 중 하나가 docker-compose다. 여러 개의 컨테이너를 한번에 올려 놓고 필요할 때 선택해서 쓰는 용도에 딱 맞다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다. 
 
 ## Reference 
 
@@ -185,13 +191,13 @@ podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody n
 
 ## Problem 
 
-WSL이 Ubuntu의 중요 요소인 systemd를 활성화하지 않고 docker나 docker의 요소를 데스크탑을 거치지 않고 깔아서 쓸 때 문제가 된다. systemd가 활성화되지 않으면 이를 활성화해주면 된다. 위 링크에 그 절차가 자세하게 소개되어 있다. 
+WSL이 Ubuntu의 systemd를 기본 상태에서 활성화하지 않는다. 그래서 docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. 그래서 systemd를 먼저 활성화해야 한다. 
 
 ## Solution 
 
 ### Runtime 
 
-- 먼저 런타임을 설치해야 한다. 
+- 먼저 런타임을 설치하자. 
 
 ```shell
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -238,13 +244,13 @@ $ sudo apt install docker-compose
 2$ export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
 ```
 
-1. systemctl 명령을 통해서 podman의 소켓을 개시하는 것이다. 소켓의 상태를 보고 싶다면, `start` &rarr; `status`로 바뀌 실행해보자. 
-2. docker를 지웠으므로 이를 대신할 가상화 앱을 지정해야 한다. 이를 포드맨 소켓과 연결한다. 
+1. `systemctl...` 명령을 통해서 podman의 소켓을 시작한다. 소켓의 상태를 보고 싶다면 `start` &rarr; `status`로 바뀌 실행해보자. 
+2. docker가 설치되지 않았기 때문에 docker-compose가 쓸 수 있는 가상화 앱을 지정해야 한다. 이를 위에 열어준 포드맨 소켓과 연결한다. 
 
-이 상태에서 `docker-compose`를 실행하면 잘 돌아간다. 
+여기까지 마치면 docker-compose가 잘 돌아간다. 
 
-- WSL-Ubuntu 부팅 시 자동으로 준비가 되게 하려면 1,2를 .bashrc에 넣는다. 
-    + 단 `wsl genie -s` 상태가 아니라면 systemd 사용이 제한되기 때문에 아래 같은 경고 메시지를 볼 수 있다.  
+- WSL-Ubuntu 부팅 시 자동으로 이 상태가 갖춰지길 원하면 1,2를 `.bashrc`에 넣으면 된다. 
+    + 단 `wsl genie -s`으로 실행한 상태가 아니라면 systemd 사용이 제한되기 때문에 아래 같은 경고 메시지를 볼 수 있다.  
     + `Failed to connect to bus: No such file or directory`
 
 ## Testrun 
@@ -283,7 +289,7 @@ services:
 $ docker-compose up 
 ```
 
-잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 확인할 수 있는데, 노트북을 열고 다음과 같이 쳐보자. 
+잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자. 
 
 ```python
 import tensorflow as tf
@@ -292,7 +298,7 @@ tf.config.get_visible_devices(
 )
 ```
 
-CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보기 바란다. 
+CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보시라. 
 
 위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다. 
 
@@ -301,4 +307,4 @@ CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담�
 아직 해결되지 않은 이슈도 있다. 
 
 - nvidia-container-toolkit의 호환성이 조금 떨어지는 경우가 있는 것 같다. 
-- 도커 데스크탑에서는 VS Code의 container 접속을 통해서 바로 컨테이너 접속이 가능했다. 도커 데스크탑이 별도의 컨테이너를 운용했기 때문에 가능한 일이었다. 그런데 이제 WSL-Ubuntu 안에서 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오지 않을까 기대해본다. 
+- Docker Desktop에서는 VS Code의 container 접속을 통해서 바로 컨테이너 접속이 가능했다. Docker Desktop이 별도의 컨테이너를 운용했기 때문에 가능하지 않았나 싶다. 그런데 이제 WSL-Ubuntu 안에서만 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오지 않을까 기대해본다. 
