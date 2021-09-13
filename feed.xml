@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T03:07:57-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T03:16:15-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
 
 &lt;p&gt;도커 데스크탑의 유료화 정책이 발표되었다. 아마도 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요가 있다. 여러 프로덕트가 복잡하게 의존하는, 즉 발목이 단단히 잡힌 상황이 아니라면 다른 길을 찾는게 맞다.&lt;/p&gt;
 
@@ -37,12 +37,12 @@
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;https://wbhegedus.me/running-podman-on-wsl2/
+  &lt;li&gt;&lt;a href=&quot;https://wbhegedus.me/running-podman-on-wsl2/&quot;&gt;LINK&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;잘 되어 있지만 진행 순서에 살짝 오류가 있어서 아래 수정했다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;https://podman.io/getting-started/installation#installing-development-versions-of-podman&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://podman.io/getting-started/installation#installing-development-versions-of-podman&quot;&gt;LINK&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;basics&quot;&gt;Basics&lt;/h2&gt;
@@ -114,8 +114,8 @@ cgroup_manager=&quot;cgroupfs&quot;
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;https://nvidia.github.io/nvidia-docker/&lt;/li&gt;
-  &lt;li&gt;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nvidia.github.io/nvidia-docker/&quot;&gt;LINK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#id8&quot;&gt;LINK&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
@@ -180,7 +180,7 @@ $ cat /etc/nvidia-container-runtime/config.toml
 
 &lt;h2 id=&quot;reference-1&quot;&gt;Reference&lt;/h2&gt;
 
-&lt;p&gt;https://github.com/arkane-systems/genie&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/arkane-systems/genie&quot;&gt;LINK&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 
@@ -243,7 +243,7 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ &lt;/span&gt;&lt;s
   &lt;li&gt;docker를 지웠으므로 이를 대신할 가상화 앱을 지정해야 한다. 이를 포드맨 소켓과 연결한다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;이 상태에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-comppose&lt;/code&gt;를 실행하면 잘 돌아간다.&lt;/p&gt;
+&lt;p&gt;이 상태에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose&lt;/code&gt;를 실행하면 잘 돌아간다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;WSL-Ubuntu 부팅 시 자동으로 준비가 되게 하려면 1,2를 .bashrc에 넣는다.
