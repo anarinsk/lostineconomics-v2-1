@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T09:40:28-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T09:42:29-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
 
 &lt;p&gt;도커 데스크탑의 유료화 정책이 발표되었다. 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요는 없다. 여러 프로젝트가 복잡하게 의존하는, 즉 발목 잡힌 상황이 아니라면 다른 길을 찾으면 된다.&lt;/p&gt;
 
@@ -10,6 +10,8 @@
 
 &lt;h1 id=&quot;problems&quot;&gt;Problems&lt;/h1&gt;
 
+&lt;p&gt;내용을 살펴보기 전에 아래와 같은 내용을 가정한다.&lt;/p&gt;
+
 &lt;h2 id=&quot;assumptions&quot;&gt;Assumptions&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -18,9 +20,9 @@
   &lt;li&gt;Docker Desktop이 깨끗하게 언인스톨되어 있다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 좋은 포스팅이 많이 나올 것이다. MS의 공식 가이드도 더할 나위 없이 잘 되어 있다.&lt;/p&gt;
+&lt;p&gt;위 가정에 관해서는 별도로 설명하지 않겠다. 구글 검색을 하시면 관련한 좋은 포스팅이 많이 나올 것이다. MS의 공식 가이드도 더할 나위 없이 잘 되어 있다.&lt;/p&gt;
 
-&lt;p&gt;내가 풀고 싶은 문제는 세 가지다.&lt;/p&gt;
+&lt;p&gt;podman에 관해 내가 풀고 싶은 문제는 세 가지다.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;docker를 podman으로 대체하기&lt;/li&gt;
@@ -28,7 +30,7 @@
   &lt;li&gt;podman과 함께 docker-composer 쓰기&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;1, 2의 해결책은 Ubuntu 20.04에서 그대로 활용할 수 있다. 3의 경우 WSL의 특성 때문에 몇 가지 추가적인 작업이 필요하지만 비교적 잘 해결된다.&lt;/p&gt;
+&lt;p&gt;1, 2의 해결책은 Ubuntu 20.04에서 그대로 활용할 수 있다. 3의 경우 WSL이 지니는 OS 구조의 특성 때문에 몇 가지 추가적인 작업이 필요하다.&lt;/p&gt;
 
 &lt;h1 id=&quot;enter-the-podman&quot;&gt;Enter the podman&lt;/h1&gt;
 
