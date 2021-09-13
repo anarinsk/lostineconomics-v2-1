@@ -50,7 +50,7 @@ categories: [coding]
 
 최신 버전의 podman을 설치하기 위해서는 apt 저장소의 주소를 별도로 업데이트해줘야 한다. 20.10 이후부터는 공식적으로 지원한다고 하니, 다음번 LTS가 나오면 ppa를 추가하는 이슈는 해소될 것 같다. 
 
-```
+```shell
 1$ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=20.04
