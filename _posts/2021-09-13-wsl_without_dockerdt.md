@@ -175,7 +175,7 @@ $ cat /etc/nvidia-container-runtime/config.toml
 podman run --rm --security-opt=label=disable nvidia/cuda:11.0-base nvidia-smi
 ```
 
-조금 허전하니 nbody example도 돌려보자. 
+CUDA를 활용한 nbody example도 돌려보자. 
 
 ```shell
 podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
@@ -183,9 +183,9 @@ podman run --env NVIDIA_DISABLE_REQUIRE=1 nvcr.io/nvidia/k8s/cuda-sample:nbody n
 
 # Podman + Docker Compose 
 
-docker의 여러가지 요소가 변형되고 집약된 Docker Desktop이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계의 각종 요소가 유료화되는 것은 아니다. 오픈소스 라이선스의 특징상 이 개별 요소들이 유료화되긴 힘들 것이다. 
+Docker Desktop은 docker 생태계를 구성하는 컨테이너 관련 구성물을 윈도 및 여타 OS에 맞게 변형하고 집약한 제품이다. 이것이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계를 구성하는 각종 요소가 모두 유료화되는 것은 아니다. 오픈소스 라이선스의 특성을 생각할 때, 이러한 개별 요소들이 모두 유료화되지는 못할 것이다.  
 
-도커에서 편리한 앱 중 하나가 docker-compose다. 여러 개의 컨테이너를 한번에 올려 놓고 필요할 때 선택해서 쓰는 용도에 딱 맞다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다. 
+docker 생태계의 편리한 앱 중 하나가 docker-compose다. 이 녀석이 여러 개의 컨테이너를 각각의 조건을 걸어 한번에 올려 놓고 선택해서 쓰는 용도에 딱 맞다. 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다. 
 
 ## Reference 
 
@@ -193,13 +193,13 @@ docker의 여러가지 요소가 변형되고 집약된 Docker Desktop이 유료
 
 ## Problem 
 
-WSL이 Ubuntu의 systemd를 기본 상태에서 활성화하지 않는다. 그래서 docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. 그래서 systemd를 먼저 활성화해야 한다. 
+WSL이 Ubuntu의 systemd를 처음부터 활성화하지 않는다. docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. systemd를 먼저 활성화해야 한다. 
 
 ## Solution 
 
 ### Runtime 
 
-- 먼저 런타임을 설치하자. 
+- 먼저 MS 런타임을 설치하자. 
 
 ```shell
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -287,11 +287,11 @@ services:
 
 이제 다음을 실행하자. 
 
-```
+```shell
 $ docker-compose up 
 ```
 
-잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자. 
+잘 실행되었다면 주피터 서버가 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자. 
 
 ```python
 import tensorflow as tf
@@ -300,9 +300,9 @@ tf.config.get_visible_devices(
 )
 ```
 
-CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보시라. 
+CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 마음껏 시험해보시라. 
 
-위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다. 
+yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다. 
 
 # Problems Left 
 
