@@ -3,7 +3,7 @@ layout: post
 toc: false
 comments: true
 title:  WSL without Docker Desktop
-description: Docker Desktop 없이 콘테이트 쓰기 
+description: Docker Desktop 없이 콘테이너 돌리기
 categories: [coding]
 ---
 
