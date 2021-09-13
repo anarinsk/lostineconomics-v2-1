@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T17:05:46-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T17:25:05-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
 
 &lt;p&gt;도커 데스크탑의 유료화 정책이 발표되었다. 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요는 없다. 여러 프로젝트가 복잡하게 의존하는, 즉 발목 잡힌 상황이 아니라면 다른 길을 찾으면 된다.&lt;/p&gt;
 
@@ -174,16 +174,16 @@ curl &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;nt&qu
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;podman run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--security-opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;disable nvidia/cuda:11.0-base nvidia-smi
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;조금 허전하니 nbody example도 돌려보자.&lt;/p&gt;
+&lt;p&gt;CUDA를 활용한 nbody example도 돌려보자.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;podman run &lt;span class=&quot;nt&quot;&gt;--env&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;NVIDIA_DISABLE_REQUIRE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody &lt;span class=&quot;nt&quot;&gt;-gpu&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-benchmark&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;podman--docker-compose&quot;&gt;Podman + Docker Compose&lt;/h1&gt;
 
-&lt;p&gt;docker의 여러가지 요소가 변형되고 집약된 Docker Desktop이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계의 각종 요소가 유료화되는 것은 아니다. 오픈소스 라이선스의 특징상 이 개별 요소들이 유료화되긴 힘들 것이다.&lt;/p&gt;
+&lt;p&gt;Docker Desktop은 docker 생태계를 구성하는 컨테이너 관련 구성물을 윈도 및 여타 OS에 맞게 변형하고 집약한 제품이다. 이것이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계를 구성하는 각종 요소가 모두 유료화되는 것은 아니다. 오픈소스 라이선스의 특성을 생각할 때, 이러한 개별 요소들이 모두 유료화되지는 못할 것이다.&lt;/p&gt;
 
-&lt;p&gt;도커에서 편리한 앱 중 하나가 docker-compose다. 여러 개의 컨테이너를 한번에 올려 놓고 필요할 때 선택해서 쓰는 용도에 딱 맞다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다.&lt;/p&gt;
+&lt;p&gt;docker 생태계의 편리한 앱 중 하나가 docker-compose다. 이 녀석이 여러 개의 컨테이너를 각각의 조건을 걸어 한번에 올려 놓고 선택해서 쓰는 용도에 딱 맞다. 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다.&lt;/p&gt;
 
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 
@@ -191,14 +191,14 @@ curl &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;nt&qu
 
 &lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
 
-&lt;p&gt;WSL이 Ubuntu의 systemd를 기본 상태에서 활성화하지 않는다. 그래서 docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. 그래서 systemd를 먼저 활성화해야 한다.&lt;/p&gt;
+&lt;p&gt;WSL이 Ubuntu의 systemd를 처음부터 활성화하지 않는다. docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. systemd를 먼저 활성화해야 한다.&lt;/p&gt;
 
 &lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
 
 &lt;h3 id=&quot;runtime&quot;&gt;Runtime&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;먼저 런타임을 설치하자.&lt;/li&gt;
+  &lt;li&gt;먼저 MS 런타임을 설치하자.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; packages-microsoft-prod.deb
@@ -294,10 +294,10 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ &lt;/span&gt;&lt;s
 
 &lt;p&gt;이제 다음을 실행하자.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ docker-compose up 
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker-compose up 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자.&lt;/p&gt;
+&lt;p&gt;잘 실행되었다면 주피터 서버가 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_visible_devices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
@@ -305,9 +305,9 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ &lt;/span&gt;&lt;s
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보시라.&lt;/p&gt;
+&lt;p&gt;CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 마음껏 시험해보시라.&lt;/p&gt;
 
-&lt;p&gt;위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다.&lt;/p&gt;
+&lt;p&gt;yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다.&lt;/p&gt;
 
 &lt;h1 id=&quot;problems-left&quot;&gt;Problems Left&lt;/h1&gt;
 

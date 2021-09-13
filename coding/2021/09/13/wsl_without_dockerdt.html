@@ -300,16 +300,16 @@ curl <span class="nt">-s</span> <span class="nt">-L</span> https://nvidia.github
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podman run <span class="nt">--rm</span> <span class="nt">--security-opt</span><span class="o">=</span><span class="nv">label</span><span class="o">=</span>disable nvidia/cuda:11.0-base nvidia-smi
 </code></pre></div></div>
 
-<p>조금 허전하니 nbody example도 돌려보자.</p>
+<p>CUDA를 활용한 nbody example도 돌려보자.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>podman run <span class="nt">--env</span> <span class="nv">NVIDIA_DISABLE_REQUIRE</span><span class="o">=</span>1 nvcr.io/nvidia/k8s/cuda-sample:nbody nbody <span class="nt">-gpu</span> <span class="nt">-benchmark</span>
 </code></pre></div></div>
 
 <h1 id="podman--docker-compose">Podman + Docker Compose</h1>
 
-<p>docker의 여러가지 요소가 변형되고 집약된 Docker Desktop이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계의 각종 요소가 유료화되는 것은 아니다. 오픈소스 라이선스의 특징상 이 개별 요소들이 유료화되긴 힘들 것이다.</p>
+<p>Docker Desktop은 docker 생태계를 구성하는 컨테이너 관련 구성물을 윈도 및 여타 OS에 맞게 변형하고 집약한 제품이다. 이것이 유료화되는 것이지 CE 버전 및 리눅스 배포판에서 쓸 수 있는 도커 생태계를 구성하는 각종 요소가 모두 유료화되는 것은 아니다. 오픈소스 라이선스의 특성을 생각할 때, 이러한 개별 요소들이 모두 유료화되지는 못할 것이다.</p>
 
-<p>도커에서 편리한 앱 중 하나가 docker-compose다. 여러 개의 컨테이너를 한번에 올려 놓고 필요할 때 선택해서 쓰는 용도에 딱 맞다. 여러 가지 용도가 있겠지만 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다.</p>
+<p>docker 생태계의 편리한 앱 중 하나가 docker-compose다. 이 녀석이 여러 개의 컨테이너를 각각의 조건을 걸어 한번에 올려 놓고 선택해서 쓰는 용도에 딱 맞다. 내 경우는 Jupyter, RStudio, Tensflow-Jupyter 세 개의 컨테이너를 올려 놓고 돌려가며 쓴다.</p>
 
 <h2 id="reference">Reference</h2>
 
@@ -317,14 +317,14 @@ curl <span class="nt">-s</span> <span class="nt">-L</span> https://nvidia.github
 
 <h2 id="problem">Problem</h2>
 
-<p>WSL이 Ubuntu의 systemd를 기본 상태에서 활성화하지 않는다. 그래서 docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. 그래서 systemd를 먼저 활성화해야 한다.</p>
+<p>WSL이 Ubuntu의 systemd를 처음부터 활성화하지 않는다. docker CE 버전을 데스크탑을 거치지 않고 WSL 안에서 깔아서 쓸 때 이게 문제가 된다. systemd를 먼저 활성화해야 한다.</p>
 
 <h2 id="solution">Solution</h2>
 
 <h3 id="runtime">Runtime</h3>
 
 <ul>
-  <li>먼저 런타임을 설치하자.</li>
+  <li>먼저 MS 런타임을 설치하자.</li>
 </ul>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb <span class="nt">-O</span> packages-microsoft-prod.deb
@@ -420,10 +420,10 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ </span><span class
 
 <p>이제 다음을 실행하자.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker-compose up 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker-compose up 
 </code></pre></div></div>
 
-<p>잘 실행되었다면 주피터 노트북이 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자.</p>
+<p>잘 실행되었다면 주피터 서버가 생성되었을 것이다. 접속 주소는 웹브라우저에서 localhost:8888을 치면 된다. 토큰(비밀번호)은 1234로 설정해두었다. GPU가 잘 돌아가고 있음을 직접 확인해보자. 노트북의 Cell을 열고 아래 내용을 실행해보자.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
 <span class="n">tf</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="n">get_visible_devices</span><span class="p">(</span>
@@ -431,9 +431,9 @@ deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ </span><span class
 <span class="p">)</span>
 </code></pre></div></div>
 
-<p>CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 시험해보시라.</p>
+<p>CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담긴 fashion mnist 등의 예제를 마음껏 시험해보시라.</p>
 
-<p>위 yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다.</p>
+<p>yml 파일에서 눈치를 챘을지 모르겠지만, deploy 항목은 docker에서만 실행되는 항목이다. 이를 주석처리 하지 않고 podman에서 돌리면 에러가 발생한다.</p>
 
 <h1 id="problems-left">Problems Left</h1>
 
