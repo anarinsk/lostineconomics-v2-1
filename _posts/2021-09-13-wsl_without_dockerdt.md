@@ -4,7 +4,7 @@ toc: false
 comments: true
 title:  WSL without Docker Desktop
 description: Docker Desktop 없이 콘테이트 쓰기 
-categories: []
+categories: [coding]
 ---
 
 # From Docker to Podman 
