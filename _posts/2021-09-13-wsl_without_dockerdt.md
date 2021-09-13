@@ -306,5 +306,5 @@ CPU 이외에 GPU가 보이면 잘 설정된 것이다. 컨테이너 안에 담�
 
 아직 해결되지 않은 이슈도 있다. 
 
-- nvidia-container-toolkit의 호환성이 조금 떨어지는 경우가 있는 것 같다. 
-- Docker Desktop에서는 VS Code의 container 접속을 통해서 바로 컨테이너 접속이 가능했다. Docker Desktop이 별도의 컨테이너를 운용했기 때문에 가능하지 않았나 싶다. 그런데 이제 WSL-Ubuntu 안에서만 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오지 않을까 기대해본다. 
+- nvidia-container-toolkit의 호환성이 떨어지는 경우가 있는 것 같다. 
+- Docker Desktop을 쓰면 윈도10의 VS Code에서 지원하는 container 접속을 통해서 바로 컨테이너 접근할 수 있다. Docker Desktop이 별도의 컨테이너를 운용했기 때문에 가능하지 않았나 싶다. 그런데 이제 WSL-Ubuntu 안에서만 컨테이너가 돌기 때문에 VS Code에서 바로 접속이 불가능해졌다. 조만간 해결책이 나오기를 기대한다. 
