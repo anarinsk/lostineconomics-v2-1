@@ -150,7 +150,7 @@ sudo apt install -y nvidia-container-toolkit
 
 `config.toml` 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회하도록 했다. `no-cgroups = true`가 설정되어 있으면 제대로 된 것이다. 해당 위치의 파일을 열어 직접 수정해도 된다. 
 
-```
+```shell
 $ sudo sed -i 's/^#no-cgroups = false/no-cgroups = true/;' /etc/nvidia-container-runtime/config.toml
 $ cat /etc/nvidia-container-runtime/config.toml
 ```
