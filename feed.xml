@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T08:33:20-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-09-13T08:35:11-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">WSL without Docker Desktop</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html" rel="alternate" type="text/html" title="WSL without Docker Desktop" /><published>2021-09-13T00:00:00-05:00</published><updated>2021-09-13T00:00:00-05:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/09/13/wsl_without_dockerdt.html">&lt;h1 id=&quot;from-docker-to-podman&quot;&gt;From Docker to Podman&lt;/h1&gt;
 
 &lt;p&gt;도커 데스크탑의 유료화 정책이 발표되었다. 아마도 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요가 있다. 여러 프로덕트가 복잡하게 의존하는, 즉 발목이 단단히 잡힌 상황이 아니라면 다른 길을 찾는게 맞다.&lt;/p&gt;
 
@@ -49,19 +49,19 @@
 
 &lt;p&gt;최신 버전의 podman을 설치하기 위해서는 apt 저장소의 주소를 별도로 업데이트해줘야 한다. 20.10 이후부터는 공식적으로 지원한다고 하니, 다음번 LTS가 나오면 ppa를 추가하는 이슈는 해소될 것 같다.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1$ cat /etc/lsb-release
-DISTRIB_ID=Ubuntu
-DISTRIB_RELEASE=20.04
-DISTRIB_CODENAME=focal
-DISTRIB_DESCRIPTION=&quot;Ubuntu 20.04.2 LTS&quot;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /etc/lsb-release
+&lt;span class=&quot;nv&quot;&gt;DISTRIB_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Ubuntu
+&lt;span class=&quot;nv&quot;&gt;DISTRIB_RELEASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;20.04
+&lt;span class=&quot;nv&quot;&gt;DISTRIB_CODENAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;focal
+&lt;span class=&quot;nv&quot;&gt;DISTRIB_DESCRIPTION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ubuntu 20.04.2 LTS&quot;&lt;/span&gt;
 
-2$ export VERSION_ID=&quot;20.04&quot;
+2&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;VERSION_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;20.04&quot;&lt;/span&gt;
 
-echo &quot;deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /&quot; | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
-curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y install podman
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;VERSION_ID&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/ /&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sudo tee&lt;/span&gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+curl &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;VERSION_ID&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;/Release.key | &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-key add -
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; upgrade
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;podman
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
