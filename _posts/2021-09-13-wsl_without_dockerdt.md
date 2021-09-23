@@ -172,7 +172,7 @@ $ cat /etc/nvidia-container-runtime/config.toml
 아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. WSL이 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 nvidia driver를 설치하지 않았을 것다. 컨테이너를 통해서 드라이버가 설정된 이미지에 진입해 GPU를 쓸 수 있다고 보면 되겠다. 하드웨어와 직접 소통하는 윈도 드라이버가 WSL을 지원하는 버전인지 여부는 꼭 확인하시라.  
 
 ```shell
-podman run --rm --security-opt=label=disable nvidia/cuda:11.0-base nvidia-smi
+podman run --rm --security-opt=label=disable nvidia/cuda nvidia-smi
 ```
 
 CUDA를 활용한 nbody example도 돌려보자. 
