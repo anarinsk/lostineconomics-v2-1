@@ -156,7 +156,7 @@ sudo apt install -y nvidia-container-toolkit
 }
 ```
 
-`config.toml` 파일을 수정하도록 하자. 아래 코드는 파일에서 필요한 부분을 수정하고 제대로 수정되었는지 조회한다. `no-cgroups = true`를 설정하면 된다. 해당 위치의 파일을 열어 직접 수정해도 된다. 
+`/etc/nvidia-container-runtime/config.toml` 파일을 수정하도록 하자. 아래 코드를 통해, config.toml에서 필요한 부분을 수정하고 제대로 수정되었는지 조회한다. `no-cgroups = true`를 설정하는 것이 핵심이다. 파일을 에디터로 열어 직접 수정해도 된다. 
 
 ```shell
 $ sudo sed -i 's/^#no-cgroups = false/no-cgroups = true/;' /etc/nvidia-container-runtime/config.toml
@@ -167,7 +167,7 @@ $ cat /etc/nvidia-container-runtime/config.toml
 
 ## Testrun 
 
-아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. WSL이 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 nvidia driver를 설치하지 않았을 것다. 컨테이너를 통해서 드라이버가 설정된 이미지에 진입해 GPU를 쓸 수 있다고 보면 되겠다. 하드웨어와 직접 소통하는 윈도 드라이버가 WSL을 지원하는 버전인지 여부는 꼭 확인하시라.  
+아래 예는 nvidia-smi 명령을 통해서 OS에 드라이버가 제대로 설정되어 있는지 확인하는 명령어이다. WSL이 깨끗하게 설치된 상태라면 WSL-Ubuntu에는 nvidia driver가 설치되어 있지 않다. 컨테이너를 통해서 드라이버가 설정된 이미지에 진입해 GPU를 부리는 것이라고 보면 되겠다. 단 하드웨어와 직접 소통하는 윈도 드라이버가 WSL2을 지원하는 버전인지 여부는 꼭 확인하시라. 최신 버전은 대체로 WSL2를 잘 자원한다.   
 
 ```shell
 podman run --rm --security-opt=label=disable nvidia/cuda nvidia-smi
