@@ -11,15 +11,13 @@ categories: [coding]
 
 도커 데스크탑의 유료화 정책이 발표되었다. 대부분의 사용자나 회사에게는 해당 사항이 없겠지만, 오픈소스로 시작한 회사의 정책이라고 보기에는 뭔가 께름칙하다. 대안이 있는데도 굳이 고집할 필요는 없다. 여러 프로젝트가 복잡하게 의존하는, 즉 발목 잡힌 상황이 아니라면 다른 길을 찾으면 된다. 
 
-WSL 내에서 컨테이너를 돌리고 이 서비스를 윈도우에서 웹브라우저로 끌어다 쓰는 형태가 내 일상적인 작업 환경이다. Docker Desktop이 중요한 역할을 하고 있던 터라서, 이 기회에 대안을 시도해보기로 했다. 
+WSL 내에서 컨테이너를 돌리고 이 서비스를 윈도우에서 웹브라우저로 끌어다 쓰는 형태가 내 일상적인 작업 환경이다. Docker Desktop이 중요한 역할을 하고 있지만 발목은 잡힐 것이 없기에 대안을 시도해보기로 했다. 사실 WSL 내에서 도커를 쓰면 약간 '가짜'인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 조금 복잡하다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다. 
 
-WSL 내에서 도커를 쓰는 것이 약간 '가짜'인 듯한 기분이 들 때가 있다. Docker Desktop은 WSL을 거의 완벽에 가깝게 지원한다. 그런데 구조를 뜯어보면 조금 복잡하다. Docker Desktop이 docker 엔진 활용을 위한 두 개의 자체의 컨테이너를 만들고, 이 둘이 WSL과 통신한다. 즉 도커 컨테이너가 WSL 안의 OS에서 돌고 있지 않다는 뜻이다. Windows 및 WSL 지원을 구현하기 위한 궁여지책을 사용하는 느낌이다. 
-
-docker 엔진의 대안으로 합의를 이루고 있는 녀석이 podman이다.[^1] podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용하는 이미지도 그대로 쓸 수 있다. 
+docker 엔진 대신 나름 쓸만한 녀석이 podman이다.[^1] podman은 OCI(Open Container Initiative)의 표준을 준수하며 docker와 거의 모든 면에서 호환된다. docker의 명령어 뿐 아니라 docker에서 활용하는 이미지도 그대로 쓸 수 있다. 
 
 [^1]: podman에 관한 기술적 설명은 [LINK](https://naleejang.tistory.com/m/227), [LINK](https://www.s-core.co.kr/insight/view/oci%EC%99%80-cri-%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C-%EC%9E%AC%ED%8E%B8%EB%90%98%EB%8A%94-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%83%9D%ED%83%9C%EA%B3%84-%ED%9D%94%EB%93%A4%EB%A6%AC%EB%8A%94/)를 참고하자. 
 
-비유를 하자면 컨테이너를 운반하는 배(동물?)가 바뀔 뿐 컨테이너 자체는 그대로 운용된다. 아울러 podman을 쓰면 Docker Desktop처럼 복잡한 구조를 통하지 않아도 된다. podman은 WSL 에 설치된 OS 안에서 운용되기 때문이다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 하는데, 이 녀석이 podman과도 잘 맞더라. 각설하고 내용으로 바로 들어가보자.[^2] 
+비유를 하자면 컨테이너를 운반하는 배가 바뀔 뿐 컨테이너 자체는 그대로 운용할 수 있다. 아울러 podman을 쓰면 앞서 말한 Docker Desktop의 복잡한 구조가 필요 없다. podman은 WSL 에 설치된 OS 안에서 운용된다. 그리고 podman은 엔진을 제외한 docker 생태계의 다른 요소들과 함께 쓸 수도 있다. 내 경우 작업 환경을 유지하는데 docker-compose가 중요한 역할을 한다. 이 녀석도 podman과도 잘 어울렸다. 각설하고 내용으로 바로 들어가보자.[^2] 
 
 [^2]: 윈도에서 Docker Desktop 버전을 사용하는 대신 Docker CE 버전을 WSL-Ubuntu에 깔아서 사용할 수 있다. 이 글을 관심은 docker를 대체하는 데 있으니, 이에 관한 내용은 다루지 않는다. 
 
@@ -74,7 +72,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install podman
 ```
 
-- 셸 스크립트에서 `숫자$`라고 되어 있는 부분은 설명이 필요한 부분이다. 
+- 셸 스크립트에서 `1$`, `2$`라고 되어 있는 부분은 설명이 필요한 부분이다. 실행을 할 때는 `$`이후만 필요하다.  
 
 1. `1$`은 현재 설치된 Ubuntu의 버전 등을 알아내는 대목이다. 
 2. 이를 통해 `VERSION_ID` 변수를 설정한다. 
