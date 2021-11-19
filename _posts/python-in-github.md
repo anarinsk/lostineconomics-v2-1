@@ -2,4 +2,33 @@
 
 이런 상황을 생각해보자. 
 
-- 파이썬을 
+- 파이썬을 갑자기 써야한다! 
+- 그런데 조건상 클라이언트에 깔 상황이 안된다! 
+
+이럴 때 쓸 수 있는 도구가 몇 개 있다. 대표적으로 아래 구글 코랩이 있다. 
+
+- 구글 드라이브와 연동되는 구글 코랩 https://colab.research.google.com/?
+
+그런데 많은 회사에서 구글 서비스를 막아두는 경우가 있다. 그렇다면 어떻게 할까? 
+
+# Github.dev! 
+
+최근 깃헙에서 제공하는 온라인 vs code 서비스 github.dev를 쉽게 주피터 클라이언트로 바꿔 파이썬을 돌리는 용도로 활용할 수 있다. 방법은 아래와 같다. 
+
+1. github를 dev 모드로 돌린다. 웹 브라우저 리포지터리 창에서 `.` 버튼을 누르거나 `.dev` 주소로 접근하면 된다. 
+2. 익숙한 vs code 화면에 보일 것이다. 
+
+이제 아래 왼쪽 탭 화면에서 extension을 찾으면 된다. 아래 그림처럼 생겼다.  
+
+![](https://code.visualstudio.com/assets/docs/editor/extension-marketplace/extensions-view-icon.png)
+
+3. 검색에서 아래 익스텐션을 찾아서 설치해준다. 
+
+https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide
+
+- 이 익스텐션은 주피터에서 브라우저 기반으로 파이썬을 돌리는 Pyodide를 구현한다. 
+
+4. 이제 `.ipynb`로 시작하는 파일을 만들고 늘상 쓰듯이 jupyter를 쓰면 된다. 
+
+
+
