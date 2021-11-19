@@ -1,4 +1,13 @@
-# Python이 갑자기 필요하다면? 
+---
+layout: post
+toc: false
+comments: true
+title: Python without any local install 
+description: 브라우저에서 파이썬을 돌린다굽쇼? 
+categories: [coding]
+---
+
+ # Python이 갑자기 필요하다면? 
 
 이런 상황을 생각해보자. 
 
