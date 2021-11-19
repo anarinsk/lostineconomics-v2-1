@@ -16,7 +16,7 @@ categories: [coding]
 
 이럴 때 쓸 수 있는 도구가 몇 개 있다. 대표적으로 아래 구글 코랩이 있다. 
 
-- 구글 드라이브와 연동되는 구글 코랩 https://colab.research.google.com/?
+- 구글 드라이브와 연동되는 [구글 코랩]( https://colab.research.google.com/)
 
 그런데 많은 회사에서 구글 서비스를 막아두는 경우가 있다. 그렇다면 어떻게 할까? 
 
@@ -33,7 +33,7 @@ categories: [coding]
 
 3. 검색에서 아래 익스텐션을 찾아서 설치해준다. 
 
-https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide
+[exteion: vscode-pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide)
 
 - 이 익스텐션은 주피터에서 브라우저 기반으로 파이썬을 돌리는 Pyodide를 구현한다. 
 
