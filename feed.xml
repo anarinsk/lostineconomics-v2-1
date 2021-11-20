@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-11-18T22:22:01-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Python without any local install</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github.html" rel="alternate" type="text/html" title="Python without any local install" /><published>2021-11-19T00:00:00-06:00</published><updated>2021-11-19T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github.html">&lt;p&gt;# Python이 갑자기 필요하다면?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://anarinsk.github.io/lostineconomics-v2-1/feed.xml" rel="self" type="application/atom+xml" /><link href="https://anarinsk.github.io/lostineconomics-v2-1/" rel="alternate" type="text/html" /><updated>2021-11-19T19:27:21-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/feed.xml</id><title type="html">lostineconomics.com</title><subtitle>A useless and aimless blog</subtitle><entry><title type="html">Python without any local install</title><link href="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github.html" rel="alternate" type="text/html" title="Python without any local install" /><published>2021-11-19T00:00:00-06:00</published><updated>2021-11-19T00:00:00-06:00</updated><id>https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github</id><content type="html" xml:base="https://anarinsk.github.io/lostineconomics-v2-1/coding/2021/11/19/python-in-github.html">&lt;p&gt;# Python이 갑자기 필요하다면?&lt;/p&gt;
 
 &lt;p&gt;이런 상황을 생각해보자.&lt;/p&gt;
 
@@ -17,7 +17,7 @@
 
 &lt;h1 id=&quot;githubdev&quot;&gt;Github.dev!&lt;/h1&gt;
 
-&lt;p&gt;최근 깃헙에서 제공하는 온라인 vs code 서비스 github.dev를 쉽게 주피터 클라이언트로 바꿔 파이썬을 돌리는 용도로 활용할 수 있다. 방법은 아래와 같다.&lt;/p&gt;
+&lt;p&gt;최근 깃헙에서 제공하는 온라인 vs code 서비스 github.dev을 활용해보자. vs code의 익스텐션을 깔면 파이썬을 위한 주피터 클라이언트를 활성화할 수 있다.&lt;/p&gt;
 
 &lt;h2 id=&quot;dev-모드-진입&quot;&gt;dev 모드 진입&lt;/h2&gt;
 &lt;p&gt;github를 dev 모드로 돌린다. 웹 브라우저 리포지터리 창에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; 버튼을 누르거나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dev&lt;/code&gt; 주소로 접근하면 된다. 
